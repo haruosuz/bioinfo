@@ -29,8 +29,19 @@ https://twitter.com/KEIOUP/status/972295148850696192
 https://biosciencedbc.jp/about-us/nbdc-news/925-20180226-02
 2018年度「統合データベース講習会：AJACS」受入れ機関の募集を開始しました。 - バイオサイエンスデータベースセンター - NBDC
 
+http://data.dbcls.jp/~bono/lectures.html
+Dr. Bono's website
+Lectures
+講義や講演
+
 ----------
+
+
 ### 2018-01
+
+https://twitter.com/hashtag/museomejp
+https://sites.google.com/site/museumbioinfo/meetings/20180125
+第08回研究会 2018/01/25 - Japan Museum Bioinformatics (Museomics) Working Group
 
 https://twitter.com/hkanekane/status/953209719010635776
 hkane on Twitter: "バイオインフォ トレーニング用ワークブック 使いやすい https://t.co/vI99OcpgEq"
@@ -50,6 +61,17 @@ Taro Maeda umiushi on Twitter: "ゲノム間比較の話し。mummerはドット
 ゲノム間比較の話し。mummerはドットプロット図が不評だったのでlastzを使って、AliTVで図にする形になりそう。https://alitvteam.github.io/AliTV/d3/AliTV.html 12:33 AM - 10 Jan 2018
 
 ----------
+
+2018/04/14(Sat)
+https://connpass.com/event/75699/
+Dr. Bonoの生命科学データ解析-読書会 @大阪
+
+### 2017-12
+
+2017/12/16(Sat)
+https://connpass.com/event/69633/
+Dr. Bonoの生命科学データ解析-読書会
+
 ### 2017-11
 
 4:00 AM - 10 Nov 2017
@@ -169,8 +191,13 @@ https://www.nature.com/nbt/journal/v35/n5/full/nbt.3868.html
 Living in a microbial world
 09 May 2017
 
+----------
+### 2015
 
-
+2015年1月号
+https://www.natureasia.com/ja-jp/ndigest/v12/n1/誰もが%26ldquo%3Bバイオインフォマティシャン%26rdquo%3Bの時代/59368
+誰もが“バイオインフォマティシャン”の時代 
+中村 保一、坊農 秀雅、粕川 雄也、仲里 猛留
 
 ----------
 
