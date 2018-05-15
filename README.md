@@ -12,6 +12,7 @@ Last Update: 2018-05-12
 - [E-utilities](#e-utilities)
 - [gff3](#gff3)
 - [link](#link)
+- [refseq](#refseq)
 
 ----------
 ## Updates
@@ -134,5 +135,31 @@ Lectures
 講義や講演
 
 ----------
+## refseq
+
+https://bi.biopapyrus.jp/db/refseq.html
+RefSeq | 詳細な注釈づけられている冗長性のない核酸データベース
+
+NC_	DNA	1 個体のデータから集められた完全なゲノム配列
+NZ_	DNA	不完全なショットガン配列
+
+http://d.hatena.ne.jp/yuifu/20110426/1303820667
+Entrez Gene と RefSeq の関係 - micro*macro
+
+NC_	Genomic	Complete genomic molecule, reference assembly
+NZ_b	Genomic	Unfinished WGS
+
+https://www.biostars.org/p/209159/
+What is the difference between NZ_ and NC_ identifiers at NCBI?
+
+NC - "Complete genomic molecule, usually reference assembly"
+NZ - "Unfinished WGS"
+
+https://www.ncbi.nlm.nih.gov/books/NBK21091/table/ch18.T.refseq_accession_numbers_and_mole/
+NC_	Genomic	Complete genomic molecule, usually reference assembly
+NZ_b	Genomic	Complete genomes and unfinished WGS data
+
+----------
+
 
 
