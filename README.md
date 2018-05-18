@@ -13,6 +13,7 @@ Last Update: 2018-05-12
 - [gff3](#gff3)
 - [link](#link)
 - [refseq](#refseq)
+- [jsbi-nintei](#jsbi-nintei)
 
 ----------
 ## Updates
@@ -107,15 +108,6 @@ GFF3形式ファイルの例(シロイヌナズナ; TAIR10_GFF3_genes.gff)
 http://bioinfo-dojo.net
 バイオインフォ 道場 [bioinfo-Dojo] – 日々、バイオインフォマティクス修行。
 
-https://www.jsbi.org/nintei/
-Japanese Society for Bioinformatics - JSBi :: バイオインフォマティクス技術者認定試験
-
-http://www.jsbi.org/nintei/books/
-Japanese Society for Bioinformatics - JSBi :: 参考図書
-
-https://twitter.com/KEIOUP/status/972295148850696192
-慶應義塾大学出版会 on Twitter: "学会初の公式教科書。『バイオインフォマティクス入門』（日本バイオインフォマティクス学会 編）厳選80項目と練習問題80題は、認定試験の全範囲をカバー！　https://t.co/t7T2A3IXgM"
-
 https://twitter.com/hashtag/museomejp
 https://sites.google.com/site/museumbioinfo/
 Japan Museum Bioinformatics (Museomics) Working Group
@@ -158,6 +150,122 @@ NZ - "Unfinished WGS"
 https://www.ncbi.nlm.nih.gov/books/NBK21091/table/ch18.T.refseq_accession_numbers_and_mole/
 NC_	Genomic	Complete genomic molecule, usually reference assembly
 NZ_b	Genomic	Complete genomes and unfinished WGS data
+
+----------
+
+
+https://osdn.net/projects/jambo/docs/emboss_tutorial/...
+EMBOSS を用いた配列解析への手引き
+
+http://emboss.open-bio.org/html/use/ch04s03.html
+4.3. Working with Alignments
+Prev 	Chapter 4. EMBOSS User Tutorial
+
+4.3.3. Exercise: Making a Dotplot
+
+% dottup
+
+http://www.iu.a.u-tokyo.ac.jp/~kadota/bioinfo_ngs_sokushu_2014/20140905_2-1_bono.pdf
+2-1. 配列解析基礎
+Basic Sequence Analysis
+坊農 秀雅 
+
+dottup
+
+
+----------
+
+
+
+https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#pairwise-sequence-alignment
+
+- DDBJ [配列の記載に用いる略号](http://www.ddbj.nig.ac.jp/sub/code-j.html)
+  - [塩基](https://www.ddbj.nig.ac.jp/ddbj/code.html#nucleotide)
+  - [アミノ酸](https://www.ddbj.nig.ac.jp/ddbj/code.html#amino)
+- 2017.06.03 [配列解析 | 塩基配列解析とアミノ酸配列解析](https://bi.biopapyrus.jp/seq/)
+  - 配列
+    - [置換行列 | スコアマトリックスの作り方](https://bi.biopapyrus.jp/seq/score-matrix.html)
+  - [アラインメント | 核酸あるいはアミノ酸配列を複数並べ類縁度を可視化](https://bi.biopapyrus.jp/seq/alignment/)
+    - [グローバルアライメントを求める Needleman–Wunsch アルゴリズム](https://bi.biopapyrus.jp/seq/alignment/needleman–wunsch.html)
+    - [ローカルアラインメントを求める Smith-Waterman アルゴリズム](https://bi.biopapyrus.jp/seq/alignment/smith-waterman.html)
+- [2-1. 配列解析基礎 Basic Sequence Analysis 坊農 秀雅](http://www.iu.a.u-tokyo.ac.jp/~kadota/bioinfo_ngs_sokushu_2014/20140905_2-1_bono.pdf)
+- 24 July 2012 [Aritalab:Lecture/Bioinformatics/Alignment - Metabolomics.JP](http://metabolomics.jp/wiki/Aritalab:Lecture/Bioinformatics/Alignment)
+
+- 2009.9.12 [バイオインフォマティクス基礎講座 配列解析 川端 猛](http://www.jst.go.jp/nbdc/bird/jinzai/literacy/streaming/h21_3_1.pdf)
+- [バイオインフォマティクス-ゲノム配列から機能解析へ-第3章3.4節配列アラインメントにおけるスコア行列とギャップペナルティの使用方法](http://qiita.com/kino-tohoku/items/d4e0441e7ed6222106fa)
+
+https://www.dna.bio.keio.ac.jp/lecture/bioinfo/bioinformatics-3.pdf
+バイオインフォマティクス (第3回)
+慶應義塾大学生命情報学科 榊原康文
+
+
+
+----------
+## jsbi-nintei
+
+https://twitter.com/KEIOUP/status/972295148850696192
+慶應義塾大学出版会 on Twitter: "学会初の公式教科書。『バイオインフォマティクス入門』（日本バイオインフォマティクス学会 編）厳選80項目と練習問題80題は、認定試験の全範囲をカバー！　https://t.co/t7T2A3IXgM"
+
+https://www.jsbi.org/nintei/
+Japanese Society for Bioinformatics - JSBi :: バイオインフォマティクス技術者認定試験
+
+http://www.jsbi.org/nintei/books/
+Japanese Society for Bioinformatics - JSBi :: 参考図書
+
+
+
+https://www.jsbi.org/nintei/29/
+３．平成２９年度問題と解説
+問題と解答(PDF形式)
+
+
+https://www.jsbi.org/nintei/28/
+３．平成２８年度問題と解説
+問題と解答(PDF形式) 
+解説（PDF形式）
+
+https://www.jsbi.org/nintei/27/ 
+３．平成２７年度問題と解説
+問題と解答(PDF形式) 
+解説（PDF型式） 
+
+https://www.jsbi.org/nintei/26/
+３．平成２６年度試験問題＆解答
+問題と解答 1.5MB
+解説集371KB
+
+https://www.jsbi.org/nintei/25/
+３．平成２５年度試験問題＆解答
+問題と解答 11MB
+解説集 287KB
+
+https://www.jsbi.org/nintei/24/
+３．平成２４年度試験問題＆解答
+問題と解答 2.5MB
+解説集 275KB
+
+https://www.jsbi.org/nintei/23/
+３．平成２３年度試験問題＆解答
+問題と解答 3.0MB
+解説集 1.1MB
+
+https://www.jsbi.org/nintei/22/
+３．平成２２年度試験問題＆解答
+問題と解答
+解説集
+
+https://www.jsbi.org/nintei/h21/
+３．平成２１年度試験問題＆解答
+問題と解答
+解説集
+
+https://www.jsbi.org/nintei/h20/
+３．平成２０年度試験問題＆解答
+問題と解答
+
+https://www.jsbi.org/nintei/h19/
+３．平成19年度試験問題＆解答
+問題と解答
 
 ----------
 
