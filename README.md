@@ -23,6 +23,11 @@ Last Update: 2018-05-12
 ----------
 ## books
 
+http://apprize.info/data/bioinformatics/index.html
+Bioinformatics Data Skills (2015)
+
+https://github.com/haruosuz/books/blob/master/bds/README.md
+
 ### 2004/05/10
 ![](https://www.kspub.co.jp/book/detail/images/153855-1.gif)
 
