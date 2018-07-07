@@ -1,5 +1,5 @@
 Haruo Suzuki (haruo[at]g-language[dot]org)  
-Last Update: 2018-05-12
+Last Update: 2018-07-07
 
 ----------
 
@@ -9,6 +9,8 @@ Last Update: 2018-05-12
 ## Table of Contents
 - [Updates](#updates)
 - [books](#books)
+- [BLAST](#blast)
+- [EMBOSS](#emboss)
 - [E-utilities](#e-utilities)
 - [gff3](#gff3)
 - [link](#link)
@@ -51,6 +53,52 @@ https://www.ncbi.nlm.nih.gov/pubmed/10871367
 Nucleic Acids Res. 2000 Jun 15;28(12):2353-62.
 Bacterial cryptochrome and photolyase: characterization of two photolyase-like genes of Synechocystis sp. PCC6803.
 Hitomi K1, Okamoto K, Daiyasu H, Miyashita H, Iwai S, Toh H, Ishiura M, Todo T.
+
+
+----------
+## emboss
+
+https://osdn.net/projects/jambo/docs/emboss_tutorial/...
+EMBOSS を用いた配列解析への手引き
+
+http://emboss.open-bio.org/html/use/ch04s03.html
+4.3. Working with Alignments
+Prev 	Chapter 4. EMBOSS User Tutorial
+
+4.3.3. Exercise: Making a Dotplot
+
+% dottup
+
+http://www.iu.a.u-tokyo.ac.jp/~kadota/bioinfo_ngs_sokushu_2014/20140905_2-1_bono.pdf
+2-1. 配列解析基礎
+Basic Sequence Analysis
+坊農 秀雅 
+
+dottup
+
+----------
+## BLAST
+
+http://togotv.dbcls.jp/ja/genome.html#p3
+自分のマシンでBLAST検索をする
+
+http://doi.org/10.7875/togotv.2017.023
+NCBI BLASTの使い方 〜基本編〜 2017
+
+http://doi.org/10.7875/togotv.2017.031
+Local BLAST の使い方〜導入・準備編(MacOSX版)〜 2017
+
+http://doi.org/10.7875/togotv.2017.045
+Local BLAST の使い方 〜検索実行・オプション〜 (MacOSX版) 2017
+
+https://bonohu.wordpress.com/2014/11/14/yet2another-blastdbcmd/
+自家製BLAST用DBから必要な配列エントリバッチ取得 | ぼうのブログ(Backup)
+
+https://bonohu.wordpress.com/2014/08/08/yetanother-blastdbcmd/
+自家製BLAST用DBから必要な配列エントリ取得 | ぼうのブログ(Backup)
+
+https://bonohu.wordpress.com/2013/07/25/genetablebylocalblast/
+localBLASTで遺伝子対応表作成 | ぼうのブログ(Backup)
 
 ----------
 ## E-utilities
@@ -156,31 +204,8 @@ https://www.ncbi.nlm.nih.gov/books/NBK21091/table/ch18.T.refseq_accession_number
 NC_	Genomic	Complete genomic molecule, usually reference assembly
 NZ_b	Genomic	Complete genomes and unfinished WGS data
 
-----------
-
-
-https://osdn.net/projects/jambo/docs/emboss_tutorial/...
-EMBOSS を用いた配列解析への手引き
-
-http://emboss.open-bio.org/html/use/ch04s03.html
-4.3. Working with Alignments
-Prev 	Chapter 4. EMBOSS User Tutorial
-
-4.3.3. Exercise: Making a Dotplot
-
-% dottup
-
-http://www.iu.a.u-tokyo.ac.jp/~kadota/bioinfo_ngs_sokushu_2014/20140905_2-1_bono.pdf
-2-1. 配列解析基礎
-Basic Sequence Analysis
-坊農 秀雅 
-
-dottup
-
 
 ----------
-
-
 
 https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#pairwise-sequence-alignment
 
@@ -274,5 +299,12 @@ https://www.jsbi.org/nintei/h19/
 
 ----------
 
+https://github.com/lexnederbragt/developments-in-next-generation-sequencing
+Developments in next generation sequencing
+
+![](https://flxlexblog.files.wordpress.com/2016/07/developments_in_high_throughput_sequencing.jpg)
+
+
+----------
 
 
