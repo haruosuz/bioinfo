@@ -8,6 +8,16 @@ Last Update: 2018-07-05
 
 ## 2018-07
 
+http://bonohu.jp/blog/navigating-metabolism.html
+Navigating Metabolism
+代謝ナビゲーション
+
+2018年7月10日
+https://github.com/AJACS-training/AJACS70/tree/master/02_bono
+ゲノムデータベースとそれを活用した配列解析入門 at AJACS筑波4
+https://github.com/AJACS-training/AJACS70/tree/master/02_bono#blast
+BLAST
+
 https://twitter.com/maskot1977/status/1014390683346485248
 バイオインフォ講義３ https://www.slideshare.net/maskot3/ss-104162667 … @SlideShareさんから
 2:09 AM - 4 Jul 2018
