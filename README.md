@@ -1,5 +1,5 @@
 Haruo Suzuki (haruo[at]g-language[dot]org)  
-Last Update: 2018-07-07
+Last Update: 2018-09-27
 
 ----------
 
@@ -7,9 +7,9 @@ Last Update: 2018-07-07
 バイオインフォマティクス
 
 ## Table of Contents
-- [Updates](#updates)
+- [updates](#updates)
+- [blast](#blast)
 - [books](#books)
-- [BLAST](#blast)
 - [EMBOSS](#emboss)
 - [E-utilities](#e-utilities)
 - [gff3](#gff3)
@@ -18,9 +18,84 @@ Last Update: 2018-07-07
 - [jsbi-nintei](#jsbi-nintei)
 
 ----------
-## Updates
+## updates
 - [2018](https://github.com/haruosuz/bioinfo/tree/master/2018)
 - [2016](https://github.com/haruosuz/bioinfo/tree/master/2016)
+
+----------
+## blast
+
+https://twitter.com/search?q=max_target_seqs
+
+https://twitter.com/pathogenomenick/status/1044992493606129664
+Nick Loman on Twitter: "This statement illustrates the in(s)anity of trying to assign taxonomic ID from BLAST best-hit though ... you basically cannot do this.… https://t.co/5CxW2CLGwm"
+12:50 PM - 26 Sep 2018
+
+https://twitter.com/Tyu_Shi/status/1044945487550238720
+Tyu_Shi on Twitter: "いい加減blastallからblast+に移行しないといけないかなと思ってた数年前にPeterさんのこの記事読んでまだしばらくはblastall使っていようと考え直したわけである。その後しばらくしたらそもそもBLAST/BLAST+を使う機会自体が減った。"
+9:43 AM - 26 Sep 2018
+
+https://twitter.com/pjacock/status/1044941938036756480
+Peter Cock on Twitter: "Well past time @NCBI - fixing the output format-specific switches was on my 2014 BLAST+ Christmas wish list https://t.co/GbIPPU3eHG - the discovery about what max_target_seqs really did came a year later https://t.co/FOpO7RKz2K… https://t.co/GtAneLvB2y"
+9:29 AM - 26 Sep 2018
+
+https://twitter.com/macmanes/status/1044922332425408512
+Matt MacManes on Twitter: "Maybe it's time for NCBI to give us a flag for returning only the best hit, since we now know not to use "-max_target_seqs 1"."
+8:11 AM - 26 Sep 2018
+
+https://twitter.com/windowmoon/status/1044942161295200256
+窓月㌠・CC-BY on Twitter: "BLASTの「--max_target_seqs N」オプションは、「トップNヒット」を返すオプションではない！これ知ってる人どれだけいるのかな。私は知ってるのでNを1になんてしません。トップヒットがほしいときは、100とか1000くらいにして、得られた結果の中からスコア最大のものを選ぶことにしています。"
+9:29 AM - 26 Sep 2018
+
+https://twitter.com/enuroi/status/1044856329884626944
+Ken Kuroki on Twitter: "BLASTでmax_target_seqsの引数を設定すると、ベストn件のヒットじゃなくて、閾値を超えた（ベストとは限らない）最初のn件を返してくるから気をつけましょうねという話です。… "
+3:48 AM - 26 Sep 2018
+
+なお「最初のn件」というのはデータベースに入っている順番で決まるとのこと。まあそうでしょうけど。
+
+https://twitter.com/sjackman/status/1044730788128800768
+Shaun Jackman on Twitter: ""Misunderstood parameter of NCBI BLAST impacts the correctness of bioinformatics workflows" tl;dr > The invocation using the parameter "-max_target_seqs 1" simply returns the first good hit found in the database, not the best hit as one would assume. https://t.co/gaNgMCEer0"
+7:30 PM - 25 Sep 2018
+
+https://twitter.com/strnr/status/1044684254347767808
+Stephen Turner on Twitter: "Misunderstood parameter of NCBI BLAST impacts the correctness of bioinformatics workflows https://t.co/gtbYgY5y4i Seems the importance of this can't be understated: 1/n… https://t.co/buZ54l2aki"
+4:25 PM - 25 Sep 2018
+
+http://togotv.dbcls.jp/ja/genome.html#p1
+塩基配列やIDを取得したい
+
+http://doi.org/10.7875/togotv.2007.023
+BLAST検索でヒットしたエントリ群のmulti fastaファイルを取得する
+
+http://togotv.dbcls.jp/ja/genome.html#p2
+似ている配列があるか調べたい
+
+http://doi.org/10.7875/togotv.2017.023
+NCBI BLASTの使い方 〜基本編〜 2017
+
+http://doi.org/10.7875/togotv.2011.066
+PSI-BLASTで類縁の配列を調べ倒す 2011
+
+http://togotv.dbcls.jp/ja/genome.html#p3
+自分のマシンでBLAST検索をする
+
+http://doi.org/10.7875/togotv.2017.031
+Local BLAST の使い方〜導入・準備編(MacOSX版)〜 2017
+
+http://doi.org/10.7875/togotv.2017.045
+Local BLAST の使い方 〜検索実行・オプション〜 (MacOSX版) 2017
+
+
+
+https://bonohu.wordpress.com/2014/11/14/yet2another-blastdbcmd/
+自家製BLAST用DBから必要な配列エントリバッチ取得 | ぼうのブログ(Backup)
+
+https://bonohu.wordpress.com/2014/08/08/yetanother-blastdbcmd/
+自家製BLAST用DBから必要な配列エントリ取得 | ぼうのブログ(Backup)
+
+https://bonohu.wordpress.com/2013/07/25/genetablebylocalblast/
+localBLASTで遺伝子対応表作成 | ぼうのブログ(Backup)
+
 
 ----------
 ## books
@@ -75,30 +150,6 @@ Basic Sequence Analysis
 坊農 秀雅 
 
 dottup
-
-----------
-## BLAST
-
-http://togotv.dbcls.jp/ja/genome.html#p3
-自分のマシンでBLAST検索をする
-
-http://doi.org/10.7875/togotv.2017.023
-NCBI BLASTの使い方 〜基本編〜 2017
-
-http://doi.org/10.7875/togotv.2017.031
-Local BLAST の使い方〜導入・準備編(MacOSX版)〜 2017
-
-http://doi.org/10.7875/togotv.2017.045
-Local BLAST の使い方 〜検索実行・オプション〜 (MacOSX版) 2017
-
-https://bonohu.wordpress.com/2014/11/14/yet2another-blastdbcmd/
-自家製BLAST用DBから必要な配列エントリバッチ取得 | ぼうのブログ(Backup)
-
-https://bonohu.wordpress.com/2014/08/08/yetanother-blastdbcmd/
-自家製BLAST用DBから必要な配列エントリ取得 | ぼうのブログ(Backup)
-
-https://bonohu.wordpress.com/2013/07/25/genetablebylocalblast/
-localBLASTで遺伝子対応表作成 | ぼうのブログ(Backup)
 
 ----------
 ## E-utilities
