@@ -1,5 +1,4 @@
-
-
+ 
 ----------
 ## 2018-10-18
 **Microbial Bioinformatics (Haruo Suzuki)**
@@ -19,26 +18,6 @@ Q. Draw relationships of organisms
 
 系統樹ハンターの狩猟記録 [archief voor stambomen](http://leeswijzer.hatenablog.com/)
 
-![https://natgeo.nikkeibp.co.jp/nng/article/20130411/347208/?P=4](https://natgeo.nikkeibp.co.jp/nng/article/20130411/347208/07.jpg)
-
-## AMR
-
-[抗生物質が効かない悪魔のスーパーバグがどれくらい怖い存在なのか理解できるムービー「The Antibiotic Apocalypse Explained」 - GIGAZINE](https://gigazine.net/news/20160318-antibiotic-apocalypse-explained/)
-
-
-
-## MoBE
-**Microbiology of the Built Environment**
-
-[: ジェシカ・グリーン「微生物を正しく取り除くために」](https://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes?language=ja) |
-[Jessica Green: Are we filtering the wrong microbes?](https://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes?language=en)
-
-
-建造環境の微生物群集とメンタルヘルス
-[The microbiome of the built environment and mental health.](https://www.ncbi.nlm.nih.gov/pubmed/26674771)
-
-![http://www.microbe.net/2015/12/23/near-perfect-balance-in-a-microbiome-paper-hopeful-yet-no-hype-the-microbiome-of-the-built-environment-and-mental-health/](https://microbe.net/wp-content/uploads/2015/12/Screen-Shot-2015-12-23-at-8.17.31-AM.png)
-
 ## BBS
 
 [Building bioinformatics solutions | Chapter 1](http://fdslive.oup.com/www.oup.com/academic/pdf/13/9780199658558_chapter1.pdf)
@@ -57,7 +36,32 @@ GLASSANDCLYDE
 ### [Protein BLAST: search protein databases using a protein query](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE=Proteins)
 
 
+
+## AMR
+
+[抗生物質が効かない悪魔のスーパーバグがどれくらい怖い存在なのか理解できるムービー「The Antibiotic Apocalypse Explained」 - GIGAZINE](https://gigazine.net/news/20160318-antibiotic-apocalypse-explained/)
+
+## microbe
+
 https://github.com/haruosuz/microbe
 
+https://github.com/haruosuz/microbe/blob/master/README.md#2017-05-01
+I Contain Multitudes — Ed Yong
+
+[Welcome to 'I Contain Multitudes' - YouTube](https://www.youtube.com/watch?v=aye91D0oTTw&t=10s)
+
+https://github.com/haruosuz/microbe/blob/master/README.md#video
+
+TED Talk
+[: ジェシカ・グリーン「微生物を正しく取り除くために」](https://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes?language=ja) |
+[Jessica Green: Are we filtering the wrong microbes?](https://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes?language=en)
+
+## MoBE
+**Microbiology of the Built Environment**
+
+https://github.com/haruosuz/metasub
+
+建造環境の微生物群集とメンタルヘルス
+[The microbiome of the built environment and mental health.](https://www.ncbi.nlm.nih.gov/pubmed/26674771)
 
 
