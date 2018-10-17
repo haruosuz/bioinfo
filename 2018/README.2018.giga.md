@@ -14,11 +14,11 @@ ENVIRONMENT AND INFORMATION STUDIES (GIGA)
 
 ## life
 
-** Q. Relationships of life **
+**Q. Relationships of life**
 
 系統樹ハンターの狩猟記録 [archief voor stambomen](http://leeswijzer.hatenablog.com/)
 
-** Q. How many species on Earth? **
+**Q. How many species on Earth?**
 
 https://github.com/haruosuz/evolve/blob/master/references/README.jargon.md#species
 
@@ -43,7 +43,7 @@ https://twitter.com/itotakat/status/1010436919677710336 itotaka on Twitter: "Hap
 - [MetaSUB Introductory Video on Vimeo](https://vimeo.com/171773795)
 - 2016-06-17 [Weill Cornell Medical College Uncovers Bacteria in NYC Subways](https://www.youtube.com/watch?v=jgCywdEMzBo)
 
-** Assignment: Sampling & Metadata **
+**Assignment: Sampling & Report Metadata**
 
 ## BBS
 
