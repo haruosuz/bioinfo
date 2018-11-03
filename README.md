@@ -15,7 +15,15 @@ Last Update: 2018-09-27
 - [gff3](#gff3)
 - [link](#link)
 - [refseq](#refseq)
+- [uniprot](#uniprot)
 - [jsbi-nintei](#jsbi-nintei)
+
+----------
+
+https://github.com/lexnederbragt/developments-in-next-generation-sequencing
+Developments in next generation sequencing
+
+![](https://flxlexblog.files.wordpress.com/2016/07/developments_in_high_throughput_sequencing.jpg)
 
 ----------
 ## updates
@@ -24,6 +32,14 @@ Last Update: 2018-09-27
 
 ----------
 ## blast
+
+
+https://twitter.com/pjacock/status/1058404683922968576
+Peter Cock on Twitter: "More on BLAST and the maximum alignment limits settings (-max_target_seqs and friends) https://t.co/kYUf4RlF76 - can anyone reproduce the claim in Shar et al. (2018) about database order affecting BLAST output?"
+1:05 PM - 2 Nov 2018
+
+https://blastedbio.blogspot.com/2018/11/blast-max-alignment-limits-repartee-two.html
+Blasted Bioinformatics!?: BLAST max alignment limits repartee - part two
 
 https://twitter.com/search?q=max_target_seqs
 
@@ -60,6 +76,12 @@ Shaun Jackman on Twitter: ""Misunderstood parameter of NCBI BLAST impacts the co
 https://twitter.com/strnr/status/1044684254347767808
 Stephen Turner on Twitter: "Misunderstood parameter of NCBI BLAST impacts the correctness of bioinformatics workflows https://t.co/gtbYgY5y4i Seems the importance of this can't be understated: 1/n… https://t.co/buZ54l2aki"
 4:25 PM - 25 Sep 2018
+
+https://twitter.com/AstrobioMike/status/1044680662530187264
+Mike Lee on Twitter: "This is important for those of us using command-line BLAST. `-max_target_seqs` not doing what most of us think: https://t.co/8BfQooNsDe"
+4:10 PM - 25 Sep 2018
+
+Good old "blastall -v 1 -b 1" seems to work as expected  and returns the best hit.
 
 http://togotv.dbcls.jp/ja/genome.html#p1
 塩基配列やIDを取得したい
@@ -195,10 +217,6 @@ http://kazumaxneo.hatenablog.com/entry/2017/07/25/234808
 BEDOPSを使いVCF, GTF, GFF などを BED に変換 する。 - macでインフォマティクス
 GFF（GFF3）をbedに変換する。
 
-2017-06-10
-http://kazumaxneo.hatenablog.com/entry/2017/06/10/160701
-GTFとGFFフォーマット - macでインフォマティクス
-
 Apr 23 2014
 門田幸二(かどた こうじ)
 http://www.iu.a.u-tokyo.ac.jp/~kadota/20140423_kadota.pdf
@@ -207,7 +225,28 @@ GFF3形式ファイルの例(シロイヌナズナ; TAIR10_GFF3_genes.gff)
 遺伝子ごとに、どの染色体 のどの座標上に存在するの かなどの情報を含むタブ区 切りテキストファイル
 
 ----------
+## GTF
+
+2017.06.11
+https://bi.biopapyrus.jp/rnaseq/mapping/gtf.html
+GTFファイル | 遺伝子アノテーションファイルの処理
+
+2017-06-10
+http://kazumaxneo.hatenablog.com/entry/2017/06/10/160701
+GTFとGFFフォーマット - macでインフォマティクス
+
+http://staffblog.amelieff.jp/entry/2015/07/31/143358
+フォーマットもいろいろ - アメリエフのブログ
+
+https://cell-innovation.nig.ac.jp/surfers/GTF_difference.html
+GTFファイルの細かな違い
+
+----------
 ## link
+
+
+https://biopapyrus.jp
+
 
 http://bioinfo-dojo.net
 バイオインフォ 道場 [bioinfo-Dojo] – 日々、バイオインフォマティクス修行。
@@ -255,8 +294,49 @@ https://www.ncbi.nlm.nih.gov/books/NBK21091/table/ch18.T.refseq_accession_number
 NC_	Genomic	Complete genomic molecule, usually reference assembly
 NZ_b	Genomic	Complete genomes and unfinished WGS data
 
+----------
+## uniprot
+
+### uniref
+
+http://www.uniprot.org/help/uniref
+UniRef90 is built by clustering UniRef100 sequences with 11 or more residues using the CD-HIT algorithm (Li W. and Godzik A., Bioinformatics, 22: 1658-1659, 2006) such that each cluster is composed of sequences that have at least 90% sequence identity to and 80% overlap with the longest sequence (a.k.a. seed sequence) of the cluster.
+
+https://ja.wikipedia.org/wiki/Swiss-Prot
+UniProtの冗長性のないリファレンス (UniRef) のデータベース群[8]
+UniRef は、高速な類似性検索に供するため類縁性の強い配列を単一の配列データにまとめたデータベース群である。 
+
+http://www.uniprot.org/help/fasta-headers
+UniRef
+
+	>UniqueIdentifier ClusterName n=Members Tax=TaxonName TaxID=TaxonIdentifier RepID=RepresentativeMember
+
+- TaxonName is the scientific name of the lowest common taxon shared by all UniRef cluster members.
+
+### uniref90
+
+Here are some reference papers.
+
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4029085/ Paramecium bursaria transcriptome
+We performed similarity searches of the 10,557 P. bursaria unigenes against the Swiss-Prot and UniRef90 protein sequence databases [21] using BLASTX [22] with the E-value cutoff of 1e-5 and assigned the functional annotations of the most similar protein sequences. Of the 10,557 unigenes, 7,051 (67%) had matches with 4,102 unique records in the Swiss-Prot database; 9,536 (90%) had matches with 8,189 unique records in the UniRef90 database. The species distribution of the BLASTX best hits in the UniRef90 database showed that 8,710 (91.7%) of the 9,502 hits had top matches with sequences from P. tetraurelia, followed by Tetrahymena thermophila with 153 (1.6%) best BLASTX hits.
+
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3993339/ Lactobacillus
+We assigned functional annotations to each protein family by merging all the functional annotations of proteins belonging to the same protein family (deleting uninformative annotations such as “hypothetical protein”). We used multiple databases as follows: Clusters of Orthologous Groups (COG [http://www.ncbi.nlm.nih.gov/COG/; 40]), JCVI/CMR [http://cmr.jcvi.org/; 41]), SEED (http://www.theseed.org/ [42]), UniProtKB/Uniref90 (http://www.uniprot.org), Virulence Factors Database (VFDB) (http://www.mgc.ac.cn/VFs/ [43]), Pfam (http://pfam.sanger.ac.uk), and Gene Ontology (GO) (http://www.geneontology.org). We performed a similarity search of the 136,962 Lactobacillus proteins against the Uniref90 and VFDB protein sequence databases using BLASTP (E-value < 1e−5 and >50% coverage) and assigned the functional annotations of the most similar protein sequences. We searched protein sequences against the Pfam library of hidden Markov models (HMMs) using HMMER (http://hmmer.janelia.org/) and converted Pfam accession numbers to GO terms using “pfam2go” mapping (http://www.geneontology.org/external2go/pfam2go).
+
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4462011/ Clostridium difficile and Clostridium sordellii
+Gene functional annotation
+
+We assigned functional annotations to each protein family by merging all the functional annotations of proteins belonging to the same family. To gain different aspects and maximize coverage, protein families were annotated by multiple databases. We performed BLASTP searches of protein sequences against NCBI nr (non-redundant) database, COG [62], KEGG [39], UniProtKB/Uniref90 [96], Virulence Factors Database (VFDB) [60], and assigned the functional annotations of the most similar protein sequences in each database. We converted protein_ID to subsystems (Category, Subcategory, Subsystem, and Role) in SEED database [97]. We also searched protein sequences against the Pfam library of hidden Markov models (HMMs) [98] using HMMER, and mapped Gene Ontology (GO) terms to Pfam entries using the ‘pfam2go’ mapping provided by the GO consortium [99].
+
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2940326/ Campylobacter Pan-Genomes
+Annotation and Enrichment Tests
+
+Gene ontology (Ashburner et al. 2000) (GO) annotations were obtained for each orthologous cluster using HMMER searches (Eddy 2008) on the Pfam A and B databases (Finn et al. 2010) and using Blast against the Uniref90 database (Suzek et al. 2007). Best hits were then mapped to GO terms using the pfam2go mapping (Hunter et al. 2009) and the GOA database (Barrell et al. 2009), respectively. GO enrichment tests were conducted using GO::TermFinder (Boyle et al. 2004) with false discovery rate (FDR) correction and a 5% significance level.
+
+
 
 ----------
+
 
 https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#pairwise-sequence-alignment
 
@@ -284,21 +364,16 @@ https://www.dna.bio.keio.ac.jp/lecture/bioinfo/bioinformatics-3.pdf
 ----------
 ## jsbi-nintei
 
-https://twitter.com/KEIOUP/status/972295148850696192
-慶應義塾大学出版会 on Twitter: "学会初の公式教科書。『バイオインフォマティクス入門』（日本バイオインフォマティクス学会 編）厳選80項目と練習問題80題は、認定試験の全範囲をカバー！　https://t.co/t7T2A3IXgM"
-
 https://www.jsbi.org/nintei/
 Japanese Society for Bioinformatics - JSBi :: バイオインフォマティクス技術者認定試験
 
 http://www.jsbi.org/nintei/books/
 Japanese Society for Bioinformatics - JSBi :: 参考図書
 
-
-
 https://www.jsbi.org/nintei/29/
 ３．平成２９年度問題と解説
 問題と解答(PDF形式)
-
+解説(PDF形式)
 
 https://www.jsbi.org/nintei/28/
 ３．平成２８年度問題と解説
@@ -347,13 +422,6 @@ https://www.jsbi.org/nintei/h20/
 https://www.jsbi.org/nintei/h19/
 ３．平成19年度試験問題＆解答
 問題と解答
-
-----------
-
-https://github.com/lexnederbragt/developments-in-next-generation-sequencing
-Developments in next generation sequencing
-
-![](https://flxlexblog.files.wordpress.com/2016/07/developments_in_high_throughput_sequencing.jpg)
 
 
 ----------
