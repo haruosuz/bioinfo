@@ -203,8 +203,7 @@ Ruby／Rubyの基礎知識
 APIからJSONデータを取得する(2ページ目)
 
 ----------
-## gff
-gff3
+## [gff](http://genome.ucsc.edu/FAQ/FAQformat.html#format3)
 
 2017年08月05日
 https://qiita.com/MaedaTaro_Umiushi/items/48c628ca332abade1e98
