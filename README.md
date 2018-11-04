@@ -1,5 +1,5 @@
 Haruo Suzuki (haruo[at]g-language[dot]org)  
-Last Update: 2018-09-27
+Last Update: 2018-11
 
 ----------
 
@@ -12,7 +12,8 @@ Last Update: 2018-09-27
 - [books](#books)
 - [EMBOSS](#emboss)
 - [E-utilities](#e-utilities)
-- [gff3](#gff3)
+- [gff](#gff)
+- [gtf](#gtf)
 - [link](#link)
 - [refseq](#refseq)
 - [uniprot](#uniprot)
@@ -202,7 +203,8 @@ Ruby／Rubyの基礎知識
 APIからJSONデータを取得する(2ページ目)
 
 ----------
-## gff3
+## gff
+gff3
 
 2017年08月05日
 https://qiita.com/MaedaTaro_Umiushi/items/48c628ca332abade1e98
@@ -225,7 +227,7 @@ GFF3形式ファイルの例(シロイヌナズナ; TAIR10_GFF3_genes.gff)
 遺伝子ごとに、どの染色体 のどの座標上に存在するの かなどの情報を含むタブ区 切りテキストファイル
 
 ----------
-## GTF
+## gtf
 
 2017.06.11
 https://bi.biopapyrus.jp/rnaseq/mapping/gtf.html
