@@ -6,6 +6,12 @@ Last Update: 2018-07-05
 
 ----------
 
+
+https://www.ncbi.nlm.nih.gov/pubmed/30239587
+Brief Bioinform. 2018 Sep 18. doi: 10.1093/bib/bby090. [Epub ahead of print]
+Sequence clustering in bioinformatics: an empirical study.
+Zou Q1,2, Lin G1, Jiang X3, Liu X4, Zeng X4.
+
 ## 2018-07
 
 http://bonohu.jp/blog/navigating-metabolism.html
