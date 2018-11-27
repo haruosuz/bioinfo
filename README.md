@@ -225,7 +225,7 @@ GFF3形式ファイルの例(シロイヌナズナ; TAIR10_GFF3_genes.gff)
 遺伝子ごとに、どの染色体 のどの座標上に存在するの かなどの情報を含むタブ区 切りテキストファイル
 
 ----------
-## gtf
+## [gtf](http://genome.ucsc.edu/FAQ/FAQformat.html#format4)
 
 2017.06.11
 https://bi.biopapyrus.jp/rnaseq/mapping/gtf.html
