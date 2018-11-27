@@ -221,7 +221,6 @@ GFF（GFF3）をbedに変換する。
 Apr 23 2014
 門田幸二(かどた こうじ)
 http://www.iu.a.u-tokyo.ac.jp/~kadota/20140423_kadota.pdf
-
 GFF3形式ファイルの例(シロイヌナズナ; TAIR10_GFF3_genes.gff)
 遺伝子ごとに、どの染色体 のどの座標上に存在するの かなどの情報を含むタブ区 切りテキストファイル
 
