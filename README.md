@@ -238,6 +238,11 @@ GTFとGFFフォーマット - macでインフォマティクス
 http://staffblog.amelieff.jp/entry/2015/07/31/143358
 フォーマットもいろいろ - アメリエフのブログ
 
+21 of November, 2013
+http://cell-innovation.nig.ac.jp/wiki/tiki-index.php?page=GTF
+NGS Surfer's Wiki | GTF
+
+2013-02-05
 https://cell-innovation.nig.ac.jp/surfers/GTF_difference.html
 GTFファイルの細かな違い
 
