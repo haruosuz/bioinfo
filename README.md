@@ -1,5 +1,5 @@
 Haruo Suzuki (haruo[at]g-language[dot]org)  
-Last Update: 2018-11
+Last Update: 2018-12
 
 ----------
 
@@ -8,6 +8,7 @@ Last Update: 2018-11
 
 ## Table of Contents
 - [updates](#updates)
+- [bird](#bird)
 - [blast](#blast)
 - [books](#books)
 - [EMBOSS](#emboss)
@@ -32,8 +33,18 @@ Developments in next generation sequencing
 - [2016](https://github.com/haruosuz/bioinfo/tree/master/2016)
 
 ----------
-## blast
+## bird
 
+http://www.jst.go.jp/nbdc/bird/jinzai/literacy/streaming/
+ストリーミング配信 - BIRD
+平成21年度ゲノムリテラシー講座
+講師：村上　勝彦
+分子系統解析（講義３）
+https://www.youtube.com/watch?v=K9Fy1LrtGco
+http://www.jst.go.jp/nbdc/bird/jinzai/literacy/streaming/h21_4_3.pdf
+
+----------
+## blast
 
 https://twitter.com/pjacock/status/1058404683922968576
 Peter Cock on Twitter: "More on BLAST and the maximum alignment limits settings (-max_target_seqs and friends) https://t.co/kYUf4RlF76 - can anyone reproduce the claim in Shar et al. (2018) about database order affecting BLAST output?"
