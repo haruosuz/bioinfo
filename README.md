@@ -46,6 +46,10 @@ http://www.jst.go.jp/nbdc/bird/jinzai/literacy/streaming/h21_4_3.pdf
 ----------
 ## blast
 
+https://twitter.com/pjacock/status/1071006136093081600
+Peter Cock on Twitter: "BLAST+ uses database order is tie-breaker, but its a bit backwards https://t.co/SXkELN8PxN - continuing the saga of just how -max_target_seqs can surprise you, and the Shah et al 2018 letter"
+6:38 AM - 7 Dec 2018
+
 https://twitter.com/pjacock/status/1058404683922968576
 Peter Cock on Twitter: "More on BLAST and the maximum alignment limits settings (-max_target_seqs and friends) https://t.co/kYUf4RlF76 - can anyone reproduce the claim in Shar et al. (2018) about database order affecting BLAST output?"
 1:05 PM - 2 Nov 2018
