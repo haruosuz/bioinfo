@@ -38,7 +38,7 @@ Last Update: 2018-12
     - [生物学の哲学入門](http://www.keisoshobo.co.jp/book/b239975.html) 田中　泉吏 著 | 種と分類, 微生物と本質主義
 - バイオインフォマティクス bioinformatics
   - [基礎バイオインフォマティクス](https://github.com/haruosuz/introBI/tree/master/2018) 再現可能な研究
-  - [生命動態のデータサイエンス / 生命情報解析(GIGA)](https://github.com/haruosuz/DS4GD/tree/master/2018giga) DNA配列解析
+  - [生命動態のデータサイエンス / 生命情報解析(GIGA)](https://github.com/haruosuz/DS4GD/tree/master/2018giga) DNA配列解析 protein/DNA sequence data analysis
   - [統合TV](https://togotv.dbcls.jp/) [生命科学データベース・ウェブツール](https://www.medsi.co.jp/books/products/detail.php?product_id=3665) | PubMedで論文検索
 - 歴史記述的科学
   - 音楽の進化 (GIGA/GG/GI) サベジ，　パトリック
