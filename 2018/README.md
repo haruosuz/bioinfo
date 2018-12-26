@@ -1,11 +1,115 @@
 Haruo Suzuki (haruo[at]g-language[dot]org)  
-Last Update: 2018-07-05
+Last Update: 2018-12
 
 ----------
 # 2018
 
+ 
+----------
+## 2018-10-18
+**Microbial Bioinformatics (Haruo Suzuki)**
+
+http://vu.sfc.keio.ac.jp/course_u/data/2018/title.html
+
+ENVIRONMENT AND INFORMATION STUDIES (GIGA)
+[Syllabus](https://vu.sfc.keio.ac.jp/course2014/summary/syll_view_c.cgi?yc=2018_38387&ks=B1002&lang=en)
+
+## course
+- [INTRODUCTION TO BIOINFORMATICS](https://github.com/haruosuz/introBI/tree/master/2018)
+- [DATA SCIENCE FOR GENOME DYNAMICS / GENOME INFORMATICS(GIGA)](https://github.com/haruosuz/DS4GD/tree/master/2018giga)
+
+## life
+
+**Q. Relationships of life**
+
+系統樹ハンターの狩猟記録 [archief voor stambomen](http://leeswijzer.hatenablog.com/)
+
+**Q. How many species on Earth?**
+
+https://github.com/haruosuz/evolve/blob/master/references/README.jargon.md#species
+
+## microbe
+
+https://github.com/haruosuz/microbe/blob/master/README.md#amr
+
+動画 [The Antibiotic Apocalypse Explained - YouTube](https://www.youtube.com/watch?v=xZbcwi7SfZE)
+
+https://github.com/haruosuz/microbe/blob/master/README.md#video
+
+動画 TED Talk [: ジェシカ・グリーン「微生物を正しく取り除くために」](https://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes?language=ja) | [Jessica Green: Are we filtering the wrong microbes?](https://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes?language=en)
+
+## [MoBE](https://github.com/haruosuz/microbe/blob/master/references/README.MoBE.md)
+**Microbiology of the Built Environment**
+
+https://github.com/haruosuz/metasub
+
+https://twitter.com/itotakat/status/1010436919677710336 itotaka on Twitter: "Happy swabbing :) #MetaSUB #gCSD18 #YCAM #YCAMBioResearch… " 4:18 AM - 23 Jun 2018
+
+動画 https://github.com/haruosuz/metasub/tree/master/references#video
+- [MetaSUB Introductory Video on Vimeo](https://vimeo.com/171773795)
+- 2016-06-17 [Weill Cornell Medical College Uncovers Bacteria in NYC Subways](https://www.youtube.com/watch?v=jgCywdEMzBo)
+
+**Assignment: Sampling & Report Metadata**
+
+## BBS
+
+[Building bioinformatics solutions | Chapter 1](http://fdslive.oup.com/www.oup.com/academic/pdf/13/9780199658558_chapter1.pdf)
+
+恐竜のDNA? [Putative dinosaur genomic DNA, partial sequence](https://www.ncbi.nlm.nih.gov/nuccore/U41319.1)  
+"Analyze this sequence" -> "Run BLAST"
+
+[ワイアードが初公開：合成ゲノムに隠された暗号を解読｜WIRED.jp](https://wired.jp/2008/01/29/ワイアードが初公開：合成ゲノムに隠された暗号/)
+[Wired Science Reveals Secret Codes in Craig Venter’s Artificial Genome | WIRED](https://www.wired.com/2008/01/venter-institut/)
+VENTERINSTITVTE
+CRAIGVENTER
+HAMSMITH
+CINDIANDCLYDE
+GLASSANDCLYDE
+
+### [Protein BLAST: search protein databases using a protein query](https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE=Proteins)
+
+
+## memo
+
+https://github.com/haruosuz/microbe
+
+https://github.com/haruosuz/microbe/blob/master/README.md#2017-05-01
+I Contain Multitudes — Ed Yong
+
+[Welcome to 'I Contain Multitudes' - YouTube](https://www.youtube.com/watch?v=aye91D0oTTw&t=10s)
+
+
+建造環境の微生物群集とメンタルヘルス
+[The microbiome of the built environment and mental health.](https://www.ncbi.nlm.nih.gov/pubmed/26674771)
+
+## plasmid
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Plasmid_%28english%29.svg/300px-Plasmid_%28english%29.svg.png)
+
 ----------
 
+
+https://www.ncbi.nlm.nih.gov/pubmed/30541063
+Bioinformatics. 2018 Dec 12. doi: 10.1093/bioinformatics/bty1019. [Epub ahead of print]
+ModL: exploring and restoring regularity when testing for positive selection.
+Mingrone J1,2, Susko E1,2, Bielawski J1,2,3.
+https://github.com/jehops/codeml_modl
+
+## 2018-10
+
+https://twitter.com/hornistyf/status/1055691382088622080
+Y. Furuta on Twitter: "計算生物学に用いられるツールをランダムにピックアップし、インストールできるか調べた話。28%はインストールできなかった。anaconda経由で入るツールは100%インストール可能だった。そして、インストール可能なツールの方が引用数も大きい。… https://t.co/ntXYsdLaJX"
+1:23 AM - 26 Oct 2018
+
+https://twitter.com/serghei_mangul/status/1055614153136590848
+Serghei Mangul on Twitter: "The preprint about software crisis I have mentioned is now live. https://t.co/dafHwsEM0K We have performed a review of usability and archival stability of published omics tools and resources. We have found that 28% of the tools are impossible to install.… https://t.co/BzWh5yWXJk"
+8:16 PM - 25 Oct 2018
+
+https://twitter.com/serghei_mangul/status/1055561147431043072
+Serghei Mangul on Twitter: "1/5 Our preprint about software crisis in computational biology is live! We have performed a review of usability and archival stability of published omics tools and resources. We have found that 28% of the tools are impossible to install. https://t.co/TSCawbvU1T… https://t.co/jaCoYWQfHM"
+4:46 PM - 25 Oct 2018
+
+## 2018-09
 
 https://www.ncbi.nlm.nih.gov/pubmed/30239587
 Brief Bioinform. 2018 Sep 18. doi: 10.1093/bib/bby090. [Epub ahead of print]
