@@ -4,7 +4,33 @@ Last Update: 2018-12
 ----------
 # 2018
 
+## 2018-12-26
+
+- バイオインフォマティクス bioinformatics
+  - 生物学 biology
+  - 計算機科学 computer science
+  - 統計学 statistics
+
+### [Bioinformatics](http://blog.thegrandlocus.com/2015/06/what-is-bioinformatics-about)
  
+![http://blog.thegrandlocus.com/2015/06/what-is-bioinformatics-about](http://blog.thegrandlocus.com/img/bioinformatic_word_cloud.png)
+
+### [Bioinformatician](http://blog.fejes.ca/?p=2418)
+
+![http://blog.fejes.ca/?p=2418](http://blog.fejes.ca/wp-content/uploads/2014/01/bioinformatics_chart1.png)
+
+### [Bioinformatics Research](https://github.com/haruosuz/books/tree/master/bbs#13-principal-applications-of-bioinformatics)
+
+![http://www.metabolomics.bbsrc.ac.uk/background.htm](http://www.metabolomics.bbsrc.ac.uk/background_files/image038.gif)
+
+**[Microbiomes of the built environment](https://en.wikipedia.org/wiki/Microbiomes_of_the_built_environment)**
+
+![https://www.biomedcentral.com/collections/builtenvironment](https://resource-cms.springernature.com/springer-cms/rest/v1/content/6629006/data/v1)
+
+
+
+
+
 ----------
 ## 2018-10-18
 **Microbial Bioinformatics (Haruo Suzuki)**
