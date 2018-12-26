@@ -21,6 +21,8 @@ Last Update: 2018-12
   - R
   - 統計基礎 基盤-データサイエンス-DS1 馬場　国博
   - 統計解析 基盤-データサイエンス-DS2 馬場　国博
+  - 統計基礎 基盤-データサイエンス-DS1 竹内　円雅
+  - 医療・健康のデータサイエンス 基盤-データサイエンス-DS2 竹内　円雅
   - 国際社会のデータサイエンス 基盤-データサイエンス-DS2 中室　牧子 | 「因果推論」因果関係と相関関係
   - エビデンスに基づく健康政策とコミュニケーション 先端-総合政策系 秋山 美紀・武林 亨 | 因果関係を確かめる研究デザイン
   - 実験計画, メタアナリシス, 
@@ -28,6 +30,8 @@ Last Update: 2018-12
     - [統計思考の世界 ～曼荼羅で読み解くデータ解析の基礎](https://gihyo.jp/book/2018/978-4-7741-9753-1) 三中信宏　著
 - 計算機科学 computer science
   - 言語 R, Perl, Python, SQL
+  - データベース概論　基盤-共通　清木　康
+  - データベース構築法 (GIGA/GI) 清木　康
 - 生物学 biology
   - [基礎分子生物学 4](https://github.com/haruosuz/ksbn/blob/master/2018/README.2018.4.md)
   - 鶴岡タウンキャンパス (TTCK) 開講科目 [バイオキャンプ](https://orf.sfc.keio.ac.jp/2017/exhibition/b35/)
@@ -37,12 +41,15 @@ Last Update: 2018-12
   - [基礎バイオインフォマティクス](https://github.com/haruosuz/introBI/tree/master/2018) 再現可能な研究
   - [生命動態のデータサイエンス / 生命情報解析(GIGA)](https://github.com/haruosuz/DS4GD/tree/master/2018giga) DNA配列解析 protein/DNA sequence data analysis
   - [統合TV](https://togotv.dbcls.jp/) [生命科学データベース・ウェブツール](https://www.medsi.co.jp/books/products/detail.php?product_id=3665) | PubMedで論文検索
+- 群集生態学
+  - 都市と環境 先端-環境情報系 一ノ瀬　友博
+  - 生態学フィールド調査法 先端-環境情報系 一ノ瀬　友博
+  - 生物多様性科学特論 プログラム 佐々木　恵子
+  - 生物群集解析 Statistical Analysis of Microbiome Data with R
 - 歴史記述的科学
   - 音楽の進化 (GIGA/GG/GI) サベジ，　パトリック
   - 生命と知能の進化 先端-環境情報系 冨田　勝
   - 比較言語学
-- unclassified
-  - 生物群集解析 Statistical Analysis of Microbiome Data with R
 
 2011 年度・玉川大学
 http://cse.naro.affrc.go.jp/minaka/cladist/tamagawa2011-4.pdf
