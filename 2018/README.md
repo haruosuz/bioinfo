@@ -6,11 +6,6 @@ Last Update: 2018-12
 
 ## 2018-12-26
 
-- バイオインフォマティクス bioinformatics
-  - 生物学 biology
-  - 計算機科学 computer science
-  - 統計学 statistics
-
 ### [Bioinformatics](http://blog.thegrandlocus.com/2015/06/what-is-bioinformatics-about)
  
 ![http://blog.thegrandlocus.com/2015/06/what-is-bioinformatics-about](http://blog.thegrandlocus.com/img/bioinformatic_word_cloud.png)
@@ -19,16 +14,22 @@ Last Update: 2018-12
 
 ![http://blog.fejes.ca/?p=2418](http://blog.fejes.ca/wp-content/uploads/2014/01/bioinformatics_chart1.png)
 
-### [Bioinformatics Research](https://github.com/haruosuz/books/tree/master/bbs#13-principal-applications-of-bioinformatics)
+### 科目
+- バイオインフォマティクス bioinformatics
+- [基礎バイオインフォマティクス](https://github.com/haruosuz/introBI/tree/master/2018) 再現可能な研究
+- [生命動態のデータサイエンス / 生命情報解析(GIGA)](https://github.com/haruosuz/DS4GD/tree/master/2018giga) 生物DNA配列解析
+- 生物学 biology
+  - [生物学の哲学入門](http://www.keisoshobo.co.jp/book/b239975.html) 種と分類, 微生物と本質主義
+- 計算機科学 computer science
+- 統計学 statistics
+  - R
+  - 統計基礎 基盤-データサイエンス-DS1 馬場　国博
+  - 統計解析 基盤-データサイエンス-DS2 馬場　国博
 
-![http://www.metabolomics.bbsrc.ac.uk/background.htm](http://www.metabolomics.bbsrc.ac.uk/background_files/image038.gif)
 
-**[Microbiomes of the built environment](https://en.wikipedia.org/wiki/Microbiomes_of_the_built_environment)**
-
-![https://www.biomedcentral.com/collections/builtenvironment](https://resource-cms.springernature.com/springer-cms/rest/v1/content/6629006/data/v1)
-
-
-
+http://www.flet.keio.ac.jp/faculty/philosophy/
+教員：[慶應義塾大学文学部]
+田中　泉吏
 
 
 ----------
