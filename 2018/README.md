@@ -29,7 +29,8 @@ Last Update: 2018-12
     - [自然科学研究のためのR入門―再現可能なレポート執筆実践―](https://www.kyoritsu-pub.co.jp/bookdetail/9784320112445) | 実験計画法と分散分析
     - [統計思考の世界 ～曼荼羅で読み解くデータ解析の基礎](https://gihyo.jp/book/2018/978-4-7741-9753-1) 三中信宏　著
 - 計算機科学 computer science
-  - データベース概論　基盤-共通　清木　康　	2	96157			kiyoki@sfc.keio.ac.jp,kiyoki@mdbl.sfc.keio.ac.jp
+  - 言語 R, Perl, Python, SQL
+  - データベース概論　基盤-共通　清木　康
   - データベース構築法 (GIGA/GI) 清木　康
 - 生物学 biology
   - [基礎分子生物学 4](https://github.com/haruosuz/ksbn/blob/master/2018/README.2018.4.md)
@@ -76,18 +77,16 @@ page 52 of 135
 
 『カンタベリー物語』の系譜
 
-2018年2月3日 12:34
-http://www.okinawatimes.co.jp/articles/-/204534
-沖縄・奄美の言語、どう広がった？　琉球語の系統樹作成へ　狩俣琉大教授ら | 沖縄タイムス＋プラス　ニュース | 沖縄タイムス＋プラス
-
-![](http://www.okinawatimes.co.jp/mwimgs/4/a/-/img_4a2f259131cda6a55ab955da6613276b79738.jpg)
-
-
 http://kokorohaitsumo15sai.la.coocan.jp/bonotegami.htm
 山本弘のＳＦ秘密基地
 これが「棒の手紙」だ！
 ![](http://kokorohaitsumo15sai.la.coocan.jp/bonotegami031.JPG)
 
+2018年2月3日 12:34
+http://www.okinawatimes.co.jp/articles/-/204534
+沖縄・奄美の言語、どう広がった？　琉球語の系統樹作成へ　狩俣琉大教授ら | 沖縄タイムス＋プラス　ニュース | 沖縄タイムス＋プラス
+
+![](http://www.okinawatimes.co.jp/mwimgs/4/a/-/img_4a2f259131cda6a55ab955da6613276b79738.jpg)
 
 
 http://www.flet.keio.ac.jp/faculty/philosophy/
