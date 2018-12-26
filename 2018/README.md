@@ -35,8 +35,9 @@ Last Update: 2018-12
 - 生物学 biology
   - [基礎分子生物学 4](https://github.com/haruosuz/ksbn/blob/master/2018/README.2018.4.md)
   - 鶴岡タウンキャンパス (TTCK) 開講科目 [バイオキャンプ](https://orf.sfc.keio.ac.jp/2017/exhibition/b35/)
-  - 生物の定義、種とは、ウイルスは生きているのか
-    - [生物学の哲学入門](http://www.keisoshobo.co.jp/book/b239975.html) 田中　泉吏 著 | 種と分類, 微生物と本質主義
+  - 生物の分類と系統
+    - 認知科学
+    - [生物学の哲学入門](http://www.keisoshobo.co.jp/book/b239975.html) 田中　泉吏 著 | 種と分類、微生物と本質主義
 - バイオインフォマティクス bioinformatics
   - [基礎バイオインフォマティクス](https://github.com/haruosuz/introBI/tree/master/2018) 再現可能な研究
   - [生命動態のデータサイエンス / 生命情報解析(GIGA)](https://github.com/haruosuz/DS4GD/tree/master/2018giga) DNA配列解析 protein/DNA sequence data analysis
