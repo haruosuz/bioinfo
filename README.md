@@ -32,6 +32,31 @@ Developments in next generation sequencing
 - [2018](https://github.com/haruosuz/bioinfo/tree/master/2018)
 - [2016](https://github.com/haruosuz/bioinfo/tree/master/2016)
 
+
+https://twitter.com/NIBB_Public/status/1062911424635105281
+基礎生物学研究所広報室 on Twitter: "基礎生物学研究所 ゲノムインフォマティクス・トレーニングコース2019春「RNA-seq入門 - NGSの基礎からde novo 解析まで」申し込み受付中です。準備編と実践編がございます。https://t.co/vANmoL9BHX"
+10:33 PM - 14 Nov 2018
+http://www.nibb.ac.jp/gitc/2019-1st/
+http://www.nibb.ac.jp/collabo/trainingcourse/course.html
+１．準備編 ： UNIX・R・NGSの基本 -- 2019年2月21日（木）10:00～ 22日（金）17:30 
+２．実践編 ： RNA-seq解析パイプライン -- 2019年3月14日（木） 10:00～ 15日（金）17:30 
+
+2018-08-04
+https://qiita.com/antiplastics/items/add3f8438cbe6b2b594e
+どの生物種までGO解析ができるか
+
+https://twitter.com/3Bgoripachi/status/1025225950902931456
+ゴリぱち on Twitter: "ゲノム解析を学びたい人にとって有益な情報が詰まっている記事でした。 「NGSデータから新たな知識を導出するためのデータ解析リテラシー」 https://t.co/t5GGcj7mNC"
+11:44 PM - 2 Aug 2018
+
+https://twitter.com/eyemiyake/status/1023007444669095936
+三宅正裕 MD, PhD, MPH @ 眼科 on Twitter: "eLIFE, 2018 ゲノムデータを操作変数として用いることで観察研究データから因果関係を評価するMendelian Randomization。そろそろやってみたいのでとりあえずこの論文で勉強しています
+臨床、ゲノム、疫学のいずれもに知見とデータがあるうちの強みにマッチしそう。 https://t.co/CMSPLf3Dfk"
+8:49 PM - 27 Jul 2018
+
+https://wired.jp/2018/03/13/solve-genomics-with-blockchain/
+「ゲノム解析」のデータはブロックチェーンで守れるか｜WIRED.jp
+
 ----------
 ## bird
 
@@ -44,7 +69,39 @@ https://www.youtube.com/watch?v=K9Fy1LrtGco
 http://www.jst.go.jp/nbdc/bird/jinzai/literacy/streaming/h21_4_3.pdf
 
 ----------
+
+https://binf.snipcademy.com/lessons/pairwise-alignment/identity-similarity
+Identity and Similarity - a quantitative measure
+
+https://www.biostars.org/p/195017/
+Question: BLAST: Identity % and Similarity %
+
+----------
 ## blast
+
+https://twitter.com/pjacock/status/1082030796301615104
+Peter Cock on Twitter: "Oh, will check later but multiple HSPs for a single hit is a different issue and too be expected. BLAST+ 2.8.1 has new experimental setting -subject_besthit) which may be of interest… https://t.co/P4blPbWaVS"
+4:46 PM - 6 Jan 2019  
+
+https://twitter.com/NCBI/status/1081248978417668101
+NCBI Staff on Twitter: "BLAST+ 2.8.1 is released with new databases and better performance https://t.co/17Dho3S0gE"
+1:00 PM - 4 Jan 2019
+https://ncbiinsights.ncbi.nlm.nih.gov/2019/01/04/blast-2-8-1-with-new-databases-and-better-performance/
+A new option (-subject_besthit)
+-max_target_seqs option
+
+https://twitter.com/enuroi/status/1077399713542893574
+Ken Kuroki on Twitter: "BLASTのベストヒットに関して開発側からの返答 1.特にギャップ多い配列でヒットを取りこぼす→バグで2.8.1で修正 2.同じスコアならDB上の順番で並ぶ(max_target_seqs指定していたらヒットが変わる)→仕様 3.evalueカットオフは複数ステップで絞り込む仕組み→ややずれることがあるが、これは別の問題… https://t.co/lzMiQfr16U"
+10:04 PM - 24 Dec 2018
+https://twitter.com/tom6931/status/1077243599019040768
+Tom Madden on Twitter: "Read our reply to "Misunderstood parameters of NCBI BLAST impacts the correctness of bioinformatics workflows." https://t.co/zWjL9UaHhW"
+11:44 AM - 24 Dec 2018
+https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/bty1026/5259186
+Reply to the paper: Misunderstood parameters of NCBI BLAST impacts the correctness of bioinformatics workflows | Bioinformatics | Oxford Academic
+
+https://twitter.com/RaulGoch/status/1072832901182439425
+Raúl González-Pech on Twitter: "Remember all the commotion around the -max_target_seqs option from @NCBI #BLAST? Well, it turns out that something similar happens with #evalue... If you wanna know more about it have a look at our (@timstep1383 @dorkyM) just published letter: https://t.co/O1EboWEdOq"
+7:37 AM - 12 Dec 2018
 
 https://twitter.com/pjacock/status/1071006136093081600
 Peter Cock on Twitter: "BLAST+ uses database order is tie-breaker, but its a bit backwards https://t.co/SXkELN8PxN - continuing the saga of just how -max_target_seqs can surprise you, and the Shah et al 2018 letter"
