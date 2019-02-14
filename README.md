@@ -33,6 +33,14 @@ Developments in next generation sequencing
 - [2016](https://github.com/haruosuz/bioinfo/tree/master/2016)
 
 
+https://twitter.com/ecSeq/status/982476057805754368
+ecSeq Bioinformatics on Twitter: "NGS Code Snippet: Convert FASTQ to FASTA on the command line https://t.co/xsdzmU52LS"
+12:32 AM - 7 Apr 2018
+https://www.ecseq.com/support/ngs-snippets/convert-fastq-to-fasta-on-the-command-line
+```
+paste - - - - < file.fq | cut -f 1,2 | sed 's/^@/>/' | tr "\t" "\n" > file.fa
+```
+
 https://twitter.com/NIBB_Public/status/1062911424635105281
 基礎生物学研究所広報室 on Twitter: "基礎生物学研究所 ゲノムインフォマティクス・トレーニングコース2019春「RNA-seq入門 - NGSの基礎からde novo 解析まで」申し込み受付中です。準備編と実践編がございます。https://t.co/vANmoL9BHX"
 10:33 PM - 14 Nov 2018
