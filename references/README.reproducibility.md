@@ -1,0 +1,275 @@
+Haruo Suzuki (haruo[at]g-language[dot]org)  
+Last Update: 2019-05
+
+----------
+# Reproducibility
+**再現性**
+
+## Table of Contents
+- [updates](#updates)
+[2019](#2019)
+[2018](#2018)
+[2017](#2017)
+[2016](#2016)
+[2015](#2015)
+- [references](#references)
+
+----------
+## updates
+
+[Twitter Search](https://twitter.com/search?q=再現性%20(研究%20OR%20科学)&src=typd)
+
+https://ja.wikipedia.org/wiki/Galaxy_(計算生物学)
+再現性
+透明性
+
+### 2019
+
+### 2019-05
+
+https://twitter.com/yutakashino/status/1124480078568726528
+Yuta Kashino on Twitter: "”学術雑誌に発表された実験のおよそ90%が再現できないという衝撃の事実…研究者たちは生き残りをかけて、少ない予算資源をめぐる熾烈な分捕り合戦を繰り広げ…今や、科学者の目的は真実の追求ではなく、研究助成金を獲得することに変質してしまった“ | 生命科学クライシス https://t.co/W7fbURsyKi"
+9:05 PM - 3 May 2019
+この本の90%の研究で再現性が失敗したというのは，がん研究の再現性について調べた有名な Begley&Ellis 2012 https://www.nature.com/articles/483531a … で示された，インパクトのある研究の53の論文のうち47が再現不能だったというものですね．
+
+https://ceron.jp/url/www.nikkei.com/article/DGXMZO44129200U9A420C1MY7000/
+Ceron - 生命科学クライシス　リチャード・ハリス著　過剰競争が招く研究の衰退　:日本経済新聞
+
+### 2019-04
+
+2019年04月27日
+https://honz.jp/articles/-/45180
+衝撃！ ”生命科学クライシス－新薬開発の危ない現場” - HONZ
+
+2019年04月02日
+http://blog.livedoor.jp/shinshi8848/archives/5041908.html
+manager's-blog : 書評　『生命科学クライシス－新薬開発の危ない現場』
+
+2019年03月22日
+https://honz.jp/articles/-/45142
+『生命科学クライシス─新薬開発の危ない現場』着実に進むために、急がば回れ - HONZ
+
+https://huyukiitoichi.hatenadiary.jp/entry/2019/03/19/080000
+間違いだらけの論文──『生命科学クライシス―新薬開発の危ない現場』 - 基本読書
+
+
+https://wired.jp/2019/04/27/darpa-wants-to-solve-sciences-replication-crisis-with-robots/
+科学の「再現性の危機」に、DARPAは人工知能で対抗する｜WIRED.jp
+
+2019.04.25
+https://www.jsbi.org/news/topics/190425/
+日本バイオインフォマティクス学会ニュースレター 第35号
+■ 特集「データの再現性・信頼性とその向上に向けた取り組み」
+
+![](https://www.msz.co.jp/_cover/front/08788.jpg)
+
+https://www.msz.co.jp/book/detail/08788.html
+心理学の7つの大罪：みすず書房
+心理学が透明性と再現性を高め、真の科学でありつづけるためには、いま何をすべきか？
+
+https://twitter.com/yutakashino/status/1113949347270615040
+Yuta Kashino on Twitter: "心理学の7つの大罪 | クリス・チェインバーズ https://t.co/3KWWdAFr8Q repligate/replication crisis https://t.co/hax06vEIxU と呼ばれる心理学の有名な実験が再現不能であることに関する状況の整理（図の通り）と原因を追及した本の邦訳．HARK, p値ハッキング，発表バイアスなど相当根が深いです…… https://t.co/IrX28pdTZf"
+7:39 PM - 4 Apr 2019
+![](https://pbs.twimg.com/media/D3WLBxwXkAI2fTS.jpg)
+
+### 2018
+
+https://twitter.com/EnagoJapan/status/1038945772085997573
+【エナゴ学術英語アカデミー更新】科学研究において「再現性」は、基本中の基本です。誰がその研究を試みても同様の結果を導くことができるーはずですが、実は、この「再現性」が科学界の信頼性を脅かすほどの問題となっています。https://www.enago.jp/academy/if-lose-confidence-in-your-research/ …　#エナゴアカデミー
+8:22 PM - 9 Sep 2018
+
+https://twitter.com/NatureJapan/status/1034347192054501377
+Nature Human Behaviour 「Nature誌やScience誌に発表された社会科学研究に再現性はあるか？」21件の実験社会科学研究を対象に、当初の研究の約5倍の標本数を用いて検出力の高い再現実験を試みた結果、再現実験の62％で当初の研究と同じ方向の効果が見られた。
+3:49 AM - 28 Aug 2018
+
+July 13, 2018
+https://peerj.com/articles/5072/
+Reproducible research and GIScience: an evaluation using AGILE conference papers [PeerJ]
+
+![https://twitter.com/thePeerJ/status/1017795797608554496](https://pbs.twimg.com/media/Dh_v4k8XcAIO6Xa.jpg)
+
+11 June 2018
+https://www.natureindex.com/news-blog/when-it-comes-to-reproducible-science-git-is-code-for-success
+
+https://www.ncbi.nlm.nih.gov/pubmed/29871915
+MBio. 2018 Jun 5;9(3). pii: e00525-18. doi: 10.1128/mBio.00525-18.
+Identifying and Overcoming Threats to Reproducibility, Replicability, Robustness, and Generalizability in Microbiome Research.
+Schloss PD1.
+
+https://twitter.com/PatSchloss/status/976090623676682240
+Pat Schoss on Twitter: "I've been developing a tutorial series for those microbiome researchers interested in improving the reproducibility of their analyses. The introductory video is up on YouTube and new videos will be dropping every Tuesday and Thursday. https://t.co/ywezPTuaYA"
+9:38 AM - 20 Mar 2018
+http://www.riffomonas.org/reproducible_research/
+
+MARCH 18, 2018
+http://microbiology.github.io/blog/com-bio-tech/
+1. Docker
+2. Julia
+3. Reproducible Documents
+
+2018年3月17日
+http://on-sociology.blogspot.jp/2018/03/blog-post_17.html
+計量分析を用いた論文も社会的な構築物なのか？：経済学と政治学の再現性ポリシーの違い
+
+![](https://2.bp.blogspot.com/-fdzAVQMP7sQ/Wq0fMeYk8OI/AAAAAAAACMk/QOBlAa3M46wFOPfaebg4kUHPrcsHCOcHgCLcBGAs/s640/Framework.png)
+
+https://twitter.com/arcatdmz/status/974500312013680640
+arc@dmz on Twitter: "HCI分野の研究者が研究再現性問題とどう向き合うべきか、ヒューマンインタフェース学会誌に寄稿しました。再現性の話が縦糸とすると、横糸でHCI分野概論になったと思います。この機会に昔の話もまとめました。 / “メタ科学 | jun…” https://t.co/Blre1F9qBp"
+12:19 AM - 16 Mar 2018
+
+https://junkato.jp/ja/science/
+
+https://twitter.com/ufsoc/status/974482463975067649
+Fumiya Uchikoshi on Twitter: "How to make replication the norm https://t.co/FMzmY3ECpS 経済学の主要誌はほぼ再現性ポリシーを採用しているはずだが、この報告では9誌に掲載された203の経験的な研究論文のうち、24％がデータやコードを全く提出していなかったという。完全に再現できたのは15％。… https://t.co/jW9YpUj9nl"
+11:08 PM - 15 Mar 2018
+
+![](https://pbs.twimg.com/media/DYYOaZxVQAA-qCZ.jpg)
+
+21 FEBRUARY 2018
+https://www.nature.com/articles/d41586-018-02108-9
+How to make replication the norm
+
+
+March 13, 2018
+http://www.pnas.org/content/115/11/2584
+An empirical analysis of journal policy effectiveness for computational reproducibility
+
+https://twitter.com/KayokoShioda/status/974103524589096960
+Kayoko Shioda on Twitter: "近年科学雑誌がデータやコードの開示を求めるようになっているので、その有効性をしらべた論文。著者らは雑誌 #サイエンス に載っていた論文をランダムに204本抽出し、公開データ＆コードを用いて結果の再現を試みるが、26％でしか再現できなかったと。このルールはないよりましだが完璧ではない #PNAS… https://t.co/u1lxkLUZuc"
+9:57 PM - 14 Mar 2018
+
+https://twitter.com/uranus_2/status/973554423677927429
+マーキュリー２世 on Twitter: "Scienceに掲載された計算科学研究、オーサーにデータとコードを求めたら44%でそれらが得られて(開示するようポリシーが定められていたにもかかわらず)、結果が再現できたのは26%。An empirical analysis of journal policy effectiveness for computational reproducibility https://t.co/6wz7vWHn49"
+9:40 AM - 13 Mar 2018
+
+https://twitter.com/yuji_ikegaya/status/973450246154940417
+池谷裕二 on Twitter: "【科学のデータはときに再現性がないが それでも科学が進歩するのはなぜか】①そもそも科学者は発表されるデータが全て正しいとは信じていない（ミスもあるし不正もある）。②だから問題をあげつらうよりも、重要な発見に注視して議論しあう傾向がある。今朝の『PNAS』より→https://t.co/aZHaUJJ52g"
+2:46 AM - 13 Mar 2018
+http://www.pnas.org/content/early/2018/03/08/1711786114
+Scientific progress despite irreproducibility: A seeming paradox | PNAS
+
+- 2018-02-05 ["科学的根拠"って信用できると思った？｜東原兄弟の、筋トレで鍛える人生力](https://ameblo.jp/toharas-musclelifestyle/entry-12350045279.html)
+
+https://www.ncbi.nlm.nih.gov/pubmed/29092073
+J Am Med Inform Assoc. 2018 Jan 1;25(1):4-12. doi: 10.1093/jamia/ocx120.
+Reproducible Bioconductor workflows using browser-based interactive notebooks and containers.
+Almugbel R1, Hung LH1, Hu J1, Almutairy A1, Ortogero N2, Tamta Y1, Yeung KY1.
+
+### 2017
+
+https://www.biorxiv.org/content/early/2017/12/26/239947
+Reproducible Bioinformatics Project: A community for reproducible bioinformatics analysis pipelines
+http://reproducible-bioinformatics.org
+
+![](http://reproducible-bioinformatics.org/1/images/440_0_4982595_171497.jpg)
+
+- 2017-12-10 [2017年度版 RStudioを使ったReproducible Research、補足ポエム - まだ厨二病](http://uribo.hatenablog.com/entry/2017/12/10/145149)
+
+- 2017-12-01 [データ解析が再現するということ、あるいは Common Workflow Language が僕らにもたらしてくれるもの](http://trattoriainutano.tumblr.com/post/168391519927/データ解析が再現するということあるいは-common-workflow-language)
+
+![](https://qiita-image-store.s3.amazonaws.com/0/400/3dab48e3-b6a9-eae0-87c6-c32969b86b86.png)
+
+- 4 Sep 2017 PeerJ - the journal on Twitter: [On the reproducibility of science: unique identification of research resources in the biomedical literature](https://twitter.com/thePeerJ/status/904911469904580608) Published September 5, 2013
+- 2017年8月28日 [「再現性の危機」― 検証プロジェクトで浮き彫りに | Editage Insights](http://www.editage.jp/insights/the-reproducibility-projects-first-findings-highlight-reproducibility-crisis)
+ - Jan. 18, 2017 [Rigorous replication effort succeeds for just two of five cancer papers | Science | AAAS](http://www.sciencemag.org/news/2017/01/rigorous-replication-effort-succeeds-just-two-five-cancer-papers)
+- Jul 13, 2017 [統計解析の再現可能性を高める取り組み](https://twitter.com/akabuchiyk/status/885504675666997249)
+- 12 July 2017 [Investigating reproducibility and tracking provenance – A genomic workflow case study | BMC Bioinformatics | Full Text](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-017-1747-0)
+- 2017-07-05 [科学研究の再現性について | junkato.jp](http://junkato.jp/ja/blog/2017/07/05/artifact-review-for-replicability/)
+- 2017-06-20 [Experimenting with reproducibility in bioinformatics](http://biorxiv.org/content/early/2017/06/20/143503)
+- 2017-01-20 [危機に直面する科学研究の「再現性」 - 粥川準二｜WEBRONZA - 朝日新聞社の言論サイト](http://webronza.asahi.com/science/articles/2017010800002.html)
+- 2017-01-10 [「再現可能な科学」のためのマニフェスト | おすすめのコンテンツ | Nature Human Behaviour | Nature Research](http://www.natureasia.com/ja-jp/nathumbehav/abstracts/82836)
+
+![](http://www.natureasia.com/figures/95066.jpg)
+
+### 2016
+2016, Vol. 59, No. 1
+http://team1mile.com/sjpr59-1/
+『心理学評論』
+特集「心理学の再現可能性：我々はどこから来たのか　我々は何者か　我々はどこへ行くのか」
+
+http://chitosepress.com/2016/08/16/2114/
+『心理学評論』特集：心理学の再現可能性
+
+http://chitosepress.com/2015/11/09/404/
+心理学研究は信頼できるか？――再現可能性をめぐって(3)
+・新たな発見をあたかももともと仮説があったかのように報告する（注：結果がわかってから仮説を作る＝Hypothesizing After the Results are Known の意味でHARKing と呼ばれます。HARKingについてはN. L. Kerrの論文（5）参照）
+
+- 2016-12-21 [white page: 再現性なんてないさ（？）](http://pingpongpangpong.blogspot.jp/2016/12/blog-post.html)
+- 2016-12-09 ["Enhancing reproducibility for computational methods." Science. PMID: 27940837](https://www.ncbi.nlm.nih.gov/pubmed/27940837)
+- 2016-05-31 [科学の「再現性」が危機に瀕している - GIGAZINE](http://gigazine.net/news/20160531-scientists-reproducibility/)
+- [「再現性の危機」はあるか？−調査結果− | Vol. 13 No. 8 | Nature ダイジェスト | Nature Research](http://www.natureasia.com/ja-jp/ndigest/v13/n8/「再現性の危機」はあるか？%26minus%3B調査結果%26minus%3B/77048) | [原文：Nature (2016-05-26) 1,500 scientists lift the lid on reproducibility.](http://www.ncbi.nlm.nih.gov/pubmed/27225100)
+ - [Reality check on reproducibility : Nature News & Comment](http://www.nature.com/news/reality-check-on-reproducibility-1.19961)
+
+![](https://nd.natureasia.com/figure/5706/77048/phone/1)
+![](https://nd.natureasia.com/figure/5706/77048/phone/2)
+
+- 2016-01-05 MINAKA Nobuhiro on Twitter: [AFPBB News「生物医科学論文の大半に不備、信頼性に疑問符」](https://twitter.com/leeswijzer/status/684521352867524612)
+
+### 2015
+
+- 2015-12-16 笠原 雅弘 [バイオインフォマティクスで実験ノートを取ろう](http://www.slideshare.net/mkasahara/ss-56193523)
+- 2015-12-08 [Markowetz F. "Five selfish reasons to work reproducibly." Genome Biol. PMID: 26646147 ](http://www.ncbi.nlm.nih.gov/pubmed/26646147)
+- 2015-10-21 Simon Hodson on Twitter: ["Hey: problem of research reproducibility in bioinformatics #eres2015"](https://twitter.com/simonhodson99/status/657031025940271105)
+
+![](https://pbs.twimg.com/media/CR4-OL4UEAAWIR5.jpg)
+
+2015年9月4日
+https://togetter.com/li/869445
+統計解析の目的：知見の一般化？それとも、傾向の確認？その場合の再現性って何？ - Togetter
+
+母集団から標本がランダムサンプリングされているなら，ある標本で統計的に有意になった結果は母集団の傾向を正しく反映している確率が高いから，同じ母集団からランダムサンプリングされた別の標本においても同じ傾向が見出される（つまり再現性がある）ことが期待される。
+
+- 13 Jul 2015 Pinky Langat on Twitter: ["Simple rules for #reproducibility in #bioinformatics (Sandve et al. 2013) highlighted at #smbe15](https://twitter.com/PinkyCLangat/status/620503279647227904)
+
+![](https://pbs.twimg.com/media/CJx4ayhWoAAsR02.jpg)
+
+- 2015-08-27 [ジャーナルで発表された論文100本の再現を目的とした研究](http://www.eurekalert.org/pub_releases_ml/2015-08/aaft-_1082415.php)
+- 2015-06-09 [Irreproducible biology research costs put at $28 billion per year : Nature News & Comment](http://www.nature.com/news/irreproducible-biology-research-costs-put-at-28-billion-per-year-1.17711)
+- 2015-06-04 [食品安全情報blog | データ共有の遅さが再現性の努力を妨げる](http://d.hatena.ne.jp/uneyama/20150604#p12)
+ - 2015-06-03 [Sluggish data sharing hampers reproducibility effort : Nature News & Comment](http://www.nature.com/news/sluggish-data-sharing-hampers-reproducibility-effort-1.17694)
+
+### 2013
+
+- 2013-10-26 [再現性の無い研究論文を減らすにはどうすべきか - クマムシ博士のむしブロ](http://horikawad.hatenadiary.com/entry/20131026/1382738827)
+- 2013-11 [Nature Digest](http://www.nature.com/ndigest/index_ja.html?volume=10&issue=11) | 医学生物学論文の70%以上が、再現できない! [日本語本文PDF](http://www.nature.com/ndigest/journal/v10/n11/pdf/ndigest.2013.131128.pdf)
+- [医学生物学論文の70%以上が、再現できない! | Vol. 10 No. 11 | Nature ダイジェスト | Nature Research](http://www.natureasia.com/ja-jp/ndigest/v10/n11/医学生物学論文の70%25以上が、再現できない!/48353) | [原文：Nature (2013-08-01) NIH mulls rules for validating key results](http://www.ncbi.nlm.nih.gov/pubmed/23903729)
+- 2013-10 ["Ten simple rules for reproducible computational research." PLoS Comput Biol. PMID: 24204232](https://www.ncbi.nlm.nih.gov/pubmed/24204232)
+- Sep 29, 2016 Carole Goble [What is Reproducibility? The R* brouhaha (and how Research Objects can help)](http://www.slideshare.net/carolegoble/what-is-reproducibility-the-r-brouhaha-and-how-research-objects-can-help)
+
+![](http://image.slidesharecdn.com/tpdl-reproscience2016-goble-160929190036/95/what-is-reproducibility-the-r-brouhaha-and-how-research-objects-can-help-9-638.jpg?cb=1475175804)
+
+- Aug 2, 2014 Carole Goble [Results may vary: Collaborations Workshop, Oxford 2014](http://www.slideshare.net/carolegoble/results-may-vary-collaborations-workshop-oxford-2014)
+
+![http://www.slideshare.net/carolegoble/results-may-vary-collaborations-workshop-oxford-2014](http://image.slidesharecdn.com/goble-cw2014-140802134150-phpapp01/95/results-may-vary-collaborations-workshop-oxford-2014-8-638.jpg)
+
+- [NGS 2015 - James Taylor, Johns Hopkins University, USA on Vimeo](https://vimeo.com/121455356) Title: Accessible and Reproducible Genomics at Scale with Galaxy
+
+----------
+## references
+
+- https://en.wikipedia.org/wiki/Reproducibility
+- https://ja.wikipedia.org/wiki/再現性
+- https://ja.wikipedia.org/wiki/科学的方法#再現性
+- [No need to worry about irreproducibility](https://go.qiagen.com/Reproducibility)
+- [DB Research Reproducibility](http://db-reproducibility.seas.harvard.edu)
+
+### examples
+
+https://github.com/haruosuz/books/blob/master/bds/README.md
+Bioinformatics Data Skills: Reproducible and Robust Research With Open Source Tools
+https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/ch01.html
+Reproducible Research
+So what is a reproducible bioinformatics project? At the very least, it’s sharing your project’s code and data. 
+
+NYC地下鉄メタゲノム(PathoMap)論文の解析コード
+http://www.cell.com/cell-systems/pdfExtended/S2405-4712(15)00002-2
+Supplemental Code and Scripts
+
+解析のワークフローとQIIMEのパラメータ
+http://www.nature.com/article-assets/npg/ncomms/2016/160624/ncomms11939/extref/ncomms11939-s1.pdf
+Supplementary Table 3. Analysis workflow and QIIME parameter settings used in this study
+QIIME and Unix command a Options
+a MacQIIME version 1.8.0 (http://www.wernerlab.org/software/macqiime) was used in this study.
+
+----------
+
