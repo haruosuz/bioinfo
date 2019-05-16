@@ -7,6 +7,8 @@ Last Update: 2018-12
 バイオインフォマティクス
 
 ## Table of Contents
+- [2018](https://github.com/haruosuz/bioinfo/tree/master/2018)
+- [2016](https://github.com/haruosuz/bioinfo/tree/master/2016)
 - [updates](#updates)
 - [bird](#bird)
 - [blast](#blast)
@@ -28,9 +30,82 @@ Developments in next generation sequencing
 ![](https://flxlexblog.files.wordpress.com/2016/07/developments_in_high_throughput_sequencing.jpg)
 
 ----------
+
+
+https://www.conference-service.com/conferences/bioinformatics.html
+Conferences and Meetings on Genomics and Bioinformatics
+
+http://glab.hzau.edu.cn/APBC2019/
+APBC2019: The 17th Asia Pacific Bioinformatics Conference
+January 14-16, 2019 | Wuhan • China
+
 ## updates
-- [2018](https://github.com/haruosuz/bioinfo/tree/master/2018)
-- [2016](https://github.com/haruosuz/bioinfo/tree/master/2016)
+
+### 2019
+
+
+### Kablammo
+http://kablammo.wasmuthlab.org/
+
+https://twitter.com/yokuyama/status/1122298158480904192
+奥山雄大（ver.関西） on Twitter: "blastの結果を可視化するウェブツールKablamm うわーこれすごいわ。感動する。上がコチャルメルソウで下がチャルメルソウ。ゲノムの構造がひと目で分かる。そして、核心に迫るためにはチャルメルソウのゲノムはもう少し伸ばさないとあかんことがわかった。 https://t.co/vFCAVCuwxQ… https://t.co/dPCSUMdU75"
+8:35 PM - 27 Apr 2019
+http://kazumaxneo.hatenablog.com/entry/2019/04/10/073000
+blast結果を可視化するwebツール Kablammo - macでインフォマティクス
+
+![](https://cdn-ak.f.st-hatena.com/images/fotolife/k/kazumaxneo/20190409/20190409230150.png)
+
+
+https://twitter.com/Acinetobazza/status/1107892222257696768
+Dr Mark Schultz on Twitter: "I have written an introductory tutorial on using edirect command line tools to query NCBI's Entrez database for downloading read-sets and genbank assemblies https://t.co/t7Yv0ZirCp"
+2:31 AM - 19 Mar 2019
+https://github.com/schultzm/entrez_direct_tut/blob/master/README.md
+entrez_direct_tut/README.md at master · schultzm/entrez_direct_tut
+
+https://twitter.com/RodrigoATCG/status/1108105740663836675
+Rodrigo Martinez on Twitter: "For way too long we have been using the 'cost of sequencing' graph (left) to tell stories about what may come in the world of DNA. Here's a newer version that hopefully triggers conversations about what's to come in consumer genomics - the emerging #socialgenome Thoughts?… https://t.co/o7Tzos6bGa"
+4:39 PM - 19 Mar 2019
+![](https://pbs.twimg.com/media/D2DH1sWWsAAkDQ3.jpg)
+March 6, 2019
+https://www.veritasgenetics.com/next-genomics-revolution-era-social-genome
+Blog | Next in the Genomics Revolution: The Era of the Social Genome | Veritas Genetics
+
+### 2018
+
+2018/07/21
+http://www.kenkyuu2.net/cgi-biotech2012/biotechforum.cgi?mode=view;Code=7092
+BioTechnicalフォーラム [プログラミングの勉強]
+バイオインフォマティシャンの需要が高まっていますが、
+最初に習得すべき言語は何がいいでしょうか？
+現在どの言語が多用されているのでしょうか。
+
+
+https://github.com/hiromasaono/training/tree/master/180612_KeioSFC
+今日から使える便利な生命科学系公共データベース・ウェブツール
+小野 浩雅
+2018年6月12日(火)
+
+January 17, 2018
+https://github.com/yuifu/ajacs68/blob/master/README.md
+NGSデータから新たな知識を導出するためのデータ解析リテラシー
+尾崎 遼 Haruka Ozaki
+
+### 2017
+
+https://biosciencedbc.jp/gadget/human/170901_higashi_170831.pdf
+Hi-C解析(2017NGSハンズオン講習会-2017年9月1日)
+2017年9月1日
+国立遺伝学研究所 東光一
+
+https://twitter.com/bonohu/status/1104623240775852032
+bonohu on Twitter: "“How to study bioinformatics / シーケンスデータ解析などバイオインフォマティクスを学びたい方” / “How to study bioinformatics - Laboratory for Bioinformatics ResearchLaboratory for Bioinformatics Research” https://t.co/naIWZd7ajG"
+1:01 AM - 10 Mar 2019
+https://bit.riken.jp/ja/howtostudybioinformatics/
+How to study bioinformatics - Laboratory for Bioinformatics ResearchLaboratory for Bioinformatics Research
+
+https://twitter.com/vsbuffalo/status/1098269961145901056
+Vince Buffalo on Twitter: "I'm teaching my partner bash. The biggest "wows!" have been: 1. control-r, type part of a past command, control-r again and again to cycle through history. 2. cd - 3. tmux for work on a server. 4. control-a / control-e / option arrow for jumping around. 5. hitting tab a lot."
+12:15 PM - 20 Feb 2019
 
 
 https://twitter.com/ecSeq/status/982476057805754368
@@ -256,6 +331,22 @@ dottup
 
 ----------
 ## E-utilities
+
+- [Entrez Programming Utilities Help - NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK25501/)
+  - [Entrez Direct: E-utilities on the UNIX Command Line - Entrez Programming Utilities Help - NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK179288/)
+  - [The E-utilities In-Depth: Parameters, Syntax and More - Entrez Programming Utilities Help - NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK25499/)
+    - [Table 1 – Valid values of &retmode and &rettype for EFetch (null = empty string)](https://www.ncbi.nlm.nih.gov/books/NBK25499/table/chapter4.T._valid_values_of__retmode_and/?report=objectonly)
+
+| Record Type | &rettype | &retmode |
+|:-----------:|:--------:|:--------:|
+| Additional option for db = nuccore |
+| db = nuccore, nucest, nucgss, protein or popset |
+| FASTA | fasta | text |
+| GenBank flat file with full sequence (contigs) | gbwithparts | text |
+| CDS nucleotide FASTA | fasta_cds_na | text |
+| CDS protein FASTA | fasta_cds_aa | text |
+| db = sequences |
+| FASTA | fasta | text |
 
 https://sites.google.com/site/scriptofbioinformatics/r-tong-ji-guan-xi/rutiles-e-utilities-r
 rutiles / E-utilities（R） - script of bioinformatics
