@@ -331,6 +331,7 @@ dottup
 
 ----------
 ## E-utilities
+The Entrez Programming Utilities (E-utilities)
 
 - [Entrez Programming Utilities Help - NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK25501/)
   - [Entrez Direct: E-utilities on the UNIX Command Line - Entrez Programming Utilities Help - NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK179288/)
