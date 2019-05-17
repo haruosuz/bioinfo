@@ -25,34 +25,6 @@ https://ja.wikipedia.org/wiki/Galaxy_(計算生物学)
 
 ### 2019
 
-### 2019-05
-
-https://twitter.com/yutakashino/status/1124480078568726528
-Yuta Kashino on Twitter: "”学術雑誌に発表された実験のおよそ90%が再現できないという衝撃の事実…研究者たちは生き残りをかけて、少ない予算資源をめぐる熾烈な分捕り合戦を繰り広げ…今や、科学者の目的は真実の追求ではなく、研究助成金を獲得することに変質してしまった“ | 生命科学クライシス https://t.co/W7fbURsyKi"
-9:05 PM - 3 May 2019
-この本の90%の研究で再現性が失敗したというのは，がん研究の再現性について調べた有名な Begley&Ellis 2012 https://www.nature.com/articles/483531a … で示された，インパクトのある研究の53の論文のうち47が再現不能だったというものですね．
-
-https://ceron.jp/url/www.nikkei.com/article/DGXMZO44129200U9A420C1MY7000/
-Ceron - 生命科学クライシス　リチャード・ハリス著　過剰競争が招く研究の衰退　:日本経済新聞
-
-### 2019-04
-
-2019年04月27日
-https://honz.jp/articles/-/45180
-衝撃！ ”生命科学クライシス－新薬開発の危ない現場” - HONZ
-
-2019年04月02日
-http://blog.livedoor.jp/shinshi8848/archives/5041908.html
-manager's-blog : 書評　『生命科学クライシス－新薬開発の危ない現場』
-
-2019年03月22日
-https://honz.jp/articles/-/45142
-『生命科学クライシス─新薬開発の危ない現場』着実に進むために、急がば回れ - HONZ
-
-https://huyukiitoichi.hatenadiary.jp/entry/2019/03/19/080000
-間違いだらけの論文──『生命科学クライシス―新薬開発の危ない現場』 - 基本読書
-
-
 https://wired.jp/2019/04/27/darpa-wants-to-solve-sciences-replication-crisis-with-robots/
 科学の「再現性の危機」に、DARPAは人工知能で対抗する｜WIRED.jp
 
@@ -61,16 +33,12 @@ https://www.jsbi.org/news/topics/190425/
 日本バイオインフォマティクス学会ニュースレター 第35号
 ■ 特集「データの再現性・信頼性とその向上に向けた取り組み」
 
-![](https://www.msz.co.jp/_cover/front/08788.jpg)
+[2019-04-01](https://github.com/haruosuz/books/blob/master/references/README.memo.md#2019-04-01)
+心理学の7つの大罪
 
-https://www.msz.co.jp/book/detail/08788.html
-心理学の7つの大罪：みすず書房
-心理学が透明性と再現性を高め、真の科学でありつづけるためには、いま何をすべきか？
+[2019-03-07](https://github.com/haruosuz/books/blob/master/references/README.memo.md#2019-03-07)
+生命科学クライシス
 
-https://twitter.com/yutakashino/status/1113949347270615040
-Yuta Kashino on Twitter: "心理学の7つの大罪 | クリス・チェインバーズ https://t.co/3KWWdAFr8Q repligate/replication crisis https://t.co/hax06vEIxU と呼ばれる心理学の有名な実験が再現不能であることに関する状況の整理（図の通り）と原因を追及した本の邦訳．HARK, p値ハッキング，発表バイアスなど相当根が深いです…… https://t.co/IrX28pdTZf"
-7:39 PM - 4 Apr 2019
-![](https://pbs.twimg.com/media/D3WLBxwXkAI2fTS.jpg)
 
 ### 2018
 
