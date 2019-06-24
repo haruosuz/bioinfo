@@ -1,8 +1,8 @@
 Haruo Suzuki (haruo[at]g-language[dot]org)  
-Last Update: 2019-05
+Last Update: 2019-06
 
 ----------
-# Reproducibility
+# reproducibility
 **再現性**
 
 ## Table of Contents
@@ -18,10 +18,6 @@ Last Update: 2019-05
 ## updates
 
 [Twitter Search](https://twitter.com/search?q=再現性%20(研究%20OR%20科学)&src=typd)
-
-https://ja.wikipedia.org/wiki/Galaxy_(計算生物学)
-再現性
-透明性
 
 ### 2019
 
@@ -220,6 +216,9 @@ https://togetter.com/li/869445
 - https://ja.wikipedia.org/wiki/科学的方法#再現性
 - [No need to worry about irreproducibility](https://go.qiagen.com/Reproducibility)
 - [DB Research Reproducibility](http://db-reproducibility.seas.harvard.edu)
+- https://ja.wikipedia.org/wiki/Galaxy_(計算生物学)
+再現性
+透明性
 
 ### examples
 
