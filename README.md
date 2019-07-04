@@ -34,6 +34,9 @@ Last Update: 2018-12
 - https://twitter.com/kmoooooog くまがい (@kmoooooog) | 博士(環境学) JAMSTECで海洋微生物学の研究
 - https://twitter.com/ysknishimura Yosuke Nishimura (@ysknishimura) | （メタ）ゲノム情報を用いて海洋微生物の研究をしています。
 - 
+- https://twitter.com/npoJSBi JSBi (@npoJSBi) | 日本バイオインフォマティクス学会（JSBi）
+- https://twitter.com/bioinfowakate 生命情報科学若手の会 (@bioinfowakate) | Twitter
+- https://twitter.com/chemo_wakate ケモインフォマティクス若手の会公式 (@chemo_wakate) | Twitter
 - https://twitter.com/dbcls ライフサイエンス統合データベースセンター (@dbcls) | Twitter
 - https://twitter.com/biohackathon
 - https://twitter.com/togotv
@@ -43,11 +46,14 @@ Last Update: 2018-12
 - https://twitter.com/yayamamo
 - https://twitter.com/h_ono
 - https://twitter.com/inutano
--
-- https://twitter.com/npoJSBi JSBi (@npoJSBi) | 日本バイオインフォマティクス学会（JSBi）
-- https://twitter.com/bioinfowakate 生命情報科学若手の会 (@bioinfowakate) | Twitter
-- https://twitter.com/chemo_wakate ケモインフォマティクス若手の会公式 (@chemo_wakate) | Twitter
-- 
+- https://twitter.com/meso_cacase
+- https://twitter.com/tktym toshiaki katayama (@tktym) | Twitter
+- https://twitter.com/skwsm
+- https://twitter.com/tkwsm tk （風来風来亭） (@tkwsm) | カエル、ホヤ、ナメクジウオ、サンゴ、二枚貝、ギボシムシの研究を通じて、今はヌルヌルに興味があります。
+- https://twitter.com/masanaoAtTheLab Masanao Sato/佐藤昌直 (@masanaoAtTheLab) | Systems biology/Virology/Genomics
+- https://twitter.com/dritoshi
+- https://twitter.com/fukunagaTsu 福永　津嵩 (@fukunagaTsu) | Twitter
+- https://twitter.com/m_hama Michiaki Hamada 浜田道昭 (@m_hama) | Twitter
 - https://twitter.com/yaskaz
 - https://twitter.com/sounaka
 - https://twitter.com/kazumachack
@@ -63,6 +69,7 @@ Last Update: 2018-12
 - https://twitter.com/antiplastics もじゃもじゃのほう (Koki Tsuyuzaki) (@antiplastics) | Twitter
 - https://twitter.com/kztakemoto
 - https://twitter.com/windowmoon
+- https://twitter.com/YoshiKawahara Yoshihiro Kawahara (@YoshiKawahara) | つくばの農学系バイオインフォマティシャン。
 - https://twitter.com/drk0311 内藤健 (@drk0311) | Twitter
 - https://twitter.com/kfuku0502 Kenji Fukushima (@kfuku0502) | carnivorous plants + convergent evolution
 - https://twitter.com/mishimahryk 三嶋博之 (@mishimahryk) | 長崎大学人類遺伝学 属性: 人類遺伝学/NGS/次世代シークエンサー/Ruby/BioRuby/R/バイオインフォマティクス/歯科医師
