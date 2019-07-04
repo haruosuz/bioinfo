@@ -30,7 +30,9 @@ Last Update: 2018-12
 - https://twitter.com/Tyu_Shi Tyu_Shi (@Tyu_Shi) | Bioinformaticsの研究者をしてます。
 - https://twitter.com/level3defless Koichi Higashi (@level3defless) | NIG, Microbiology
 - https://twitter.com/hornistyf Y. Furuta (@hornistyf) | バクテリアのゲノム比較解析とか、DNAメチル化とか。
-- https://twitter.com/yokadzaki Yusuke Okazaki (@yokadzaki) | 湖に生息する微生物の研究をしてます。 
+- https://twitter.com/yokadzaki Yusuke Okazaki (@yokadzaki) | 湖に生息する微生物の研究をしてます。
+- https://twitter.com/kmoooooog くまがい (@kmoooooog) | 博士(環境学) JAMSTECで海洋微生物学の研究
+- https://twitter.com/ysknishimura Yosuke Nishimura (@ysknishimura) | （メタ）ゲノム情報を用いて海洋微生物の研究をしています。
 - 
 - https://twitter.com/dbcls ライフサイエンス統合データベースセンター (@dbcls) | Twitter
 - https://twitter.com/biohackathon
@@ -49,7 +51,6 @@ Last Update: 2018-12
 - https://twitter.com/yaskaz
 - https://twitter.com/sounaka
 - https://twitter.com/kazumachack
-- https://twitter.com/yokonaga405
 - https://twitter.com/sesejun
 - https://twitter.com/ogishima
 - https://twitter.com/dancing_infobio
@@ -59,17 +60,17 @@ Last Update: 2018-12
 - https://twitter.com/nzmyachie
 - https://twitter.com/iwasakiw
 - https://twitter.com/yuifu
-- https://twitter.com/kmoooooog
-- https://twitter.com/ysknishimura
-- https://twitter.com/antiplastics
-- https://twitter.com/marimiya_clc
-- https://twitter.com/sum_ichi
+- https://twitter.com/antiplastics もじゃもじゃのほう (Koki Tsuyuzaki) (@antiplastics) | Twitter
 - https://twitter.com/kztakemoto
 - https://twitter.com/windowmoon
 - https://twitter.com/drk0311 内藤健 (@drk0311) | Twitter
 - https://twitter.com/kfuku0502 Kenji Fukushima (@kfuku0502) | carnivorous plants + convergent evolution
-- 
-- https://twitter.com/Yh_Taguchi
+- https://twitter.com/mishimahryk 三嶋博之 (@mishimahryk) | 長崎大学人類遺伝学 属性: 人類遺伝学/NGS/次世代シークエンサー/Ruby/BioRuby/R/バイオインフォマティクス/歯科医師
+- https://twitter.com/ma_ko
+- https://twitter.com/yokonaga405
+- https://twitter.com/marimiya_clc
+- https://twitter.com/sum_ichi
+- https://twitter.com/Yh_Taguchi 田口善弘 (@Yh_Taguchi) | 中央大学理工学部物理学科教授。専門はバイオインフォマティクス。
 - https://twitter.com/leeswijzer MINAKA Nobuhiro (@leeswijzer) | オモテの仕事は生物統計学の研究者，ウラの仕事は進化生物学者です．
 
 https://twitter.com/WMicrobiomeDay
