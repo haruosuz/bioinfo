@@ -23,8 +23,31 @@ Last Update: 2018-12
 - [jsbi-nintei](#jsbi-nintei)
 - [twitter](#twitter)
 
+
+
+
+
+
+----------
+
+## twitter
+- https://twitter.com/endBooks
+
+
+
 ----------
 ## twitter
+
+- https://twitter.com/DrKatHolt Kat Holt (@DrKatHolt) | Twitter
+- https://twitter.com/phylogenomics Jonathan Eisen (@phylogenomics) | Twitter
+- https://twitter.com/pathogenomenick Nick Loman (@pathogenomenick) | Twitter
+- https://twitter.com/strnr Stephen Turner (@strnr) | Twitter
+- https://twitter.com/jcamthrash Cameron Thrash (@jcamthrash) | Twitter
+- https://twitter.com/mason_lab Christopher Mason (@mason_lab) | Twitter
+- https://twitter.com/WvSchaik Willem van Schaik (@WvSchaik) | Twitter
+- https://twitter.com/torstenseemann Torsten Seemann (@torstenseemann) | Twitter
+- 
+- https://twitter.com/KojiYahara Koji Yahara @ National Institute of Infectious Diseases.
 
 微生物の研究
 - https://twitter.com/Tyu_Shi Tyu_Shi (@Tyu_Shi) | Bioinformaticsの研究者をしてます。
@@ -41,7 +64,11 @@ Last Update: 2018-12
 - https://twitter.com/biohackathon
 - https://twitter.com/togotv
 - https://twitter.com/togotv_bot
-- https://dbcls.rois.ac.jp/~bono/
+- https://twitter.com/bonohu
+https://dbcls.rois.ac.jp/~bono/
+坊農秀雅のウェブサイト
+http://bonohu.jp/blog/
+ぼうのブログ
 - https://twitter.com/chalkless Nakazato T. (@chalkless) | Twitter
 - https://twitter.com/yayamamo
 - https://twitter.com/h_ono
@@ -56,7 +83,7 @@ Last Update: 2018-12
 - https://twitter.com/m_hama Michiaki Hamada 浜田道昭 (@m_hama) | Twitter
 - https://twitter.com/yaskaz
 - https://twitter.com/sounaka
-- https://twitter.com/kazumachack
+- https://twitter.com/kazumachack macでインフォマティクス
 - https://twitter.com/sesejun
 - https://twitter.com/ogishima
 - https://twitter.com/dancing_infobio
