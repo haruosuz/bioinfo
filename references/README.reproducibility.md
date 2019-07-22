@@ -29,12 +29,11 @@ https://www.jsbi.org/news/topics/190425/
 日本バイオインフォマティクス学会ニュースレター 第35号
 ■ 特集「データの再現性・信頼性とその向上に向けた取り組み」
 
-[2019-04-01](https://github.com/haruosuz/books/blob/master/references/README.memo.md#2019-04-01)
+[2019-04-01](https://github.com/haruosuz/books/blob/master/references/books.updates.md#2019-04-01)
 心理学の7つの大罪
 
-[2019-03-07](https://github.com/haruosuz/books/blob/master/references/README.memo.md#2019-03-07)
+[2019-03-07](https://github.com/haruosuz/books/blob/master/references/books.updates.md#2019-03-07)
 生命科学クライシス
-
 
 ### 2018
 
