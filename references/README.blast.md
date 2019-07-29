@@ -28,6 +28,8 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3820096/figure/F1/
 July 14, 2011.
 https://www.ncbi.nlm.nih.gov/books/NBK62051/
 BLAST Glossary - BLAST® Help - NCBI Bookshelf
+- BLOSUM
+https://www.ncbi.nlm.nih.gov/books/NBK62051/def-item/blosum/
 - E value
 The Expectation value or Expect value represents the number of different alignments with scores equivalent to or better than S that is expected to occur in a database search by chance. The lower the E value, the more significant the score and the alignment.
 - similarity
@@ -39,6 +41,23 @@ Identity and Similarity - a quantitative measure
 
 https://www.biostars.org/p/195017/
 Question: BLAST: Identity % and Similarity %
+
+
+----------
+
+## BLOSUM
+https://en.wikipedia.org/wiki/BLOSUM
+
+https://www.ncbi.nlm.nih.gov/pubmed/1438297
+Proc Natl Acad Sci U S A. 1992 Nov 15;89(22):10915-9.
+Amino acid substitution matrices from protein blocks.
+Henikoff S1, Henikoff JG.
+Methods for alignment of protein sequences typically measure similarity by using a substitution matrix with scores for all possible exchanges of one amino acid with another. 
+
+https://www.ddbj.nig.ac.jp/blast-help.html
+BLAST ヘルプ
+SCORING MATRIX：アミノ酸置換表
+デフォルトでは BLOSUM62 が設定されます。
 
 ----------
 
@@ -158,6 +177,15 @@ https://bonohu.wordpress.com/2014/08/08/yetanother-blastdbcmd/
 
 https://bonohu.wordpress.com/2013/07/25/genetablebylocalblast/
 localBLASTで遺伝子対応表作成 | ぼうのブログ(Backup)
+
+----------
+## references
+
+- DS4GD
+  - https://github.com/haruosuz/DS4GD
+  - https://github.com/haruosuz/DS4GD/tree/master/2019
+  - https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-sequence-alignment
+  - https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#pairwise-global-alignment-of-protein-sequences-using-the-needleman-wunsch-algorithm
 
 
 ----------
