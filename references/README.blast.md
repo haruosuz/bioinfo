@@ -1,5 +1,5 @@
 Haruo Suzuki (haruo[at]g-language[dot]org)  
-Last Update: 2019-07
+Last Update: 2019-08
 
 ----------
 # blast
@@ -9,6 +9,22 @@ Last Update: 2019-07
 - [updates](#updates)
 [2019](#2019)
 [2018](#2018)
+
+----------
+
+https://www.ncbi.nlm.nih.gov/BLAST/tutorial/Altschul-1.html
+The Statistics of Sequence Similarity Scores
+
+The statistics of local sequence comparison
+
+In the limit of sufficiently large sequence lengths m and n, the statistics of HSP scores are characterized by two parameters, K and lambda. Most simply, the expected number of HSPs with score at least S is given by the formula
+
+We call this the E-value for the score S.
+
+Database searches
+
+   The E-value of equation (1) applies to the comparison of two proteins of lengths m and n. How does one assess the significance of an alignment that arises from the comparison of a protein of length m to a database containing many different proteins, of varying lengths? 
+
 
 ----------
 ## featuring
@@ -64,6 +80,11 @@ SCORING MATRIX：アミノ酸置換表
 ## updates
 
 ## 2019
+
+https://twitter.com/kfuku0502/status/1158298311885041664
+Kenji Fukushima on Twitter: "BLASTの-max_target_seqsは実は”最初にヒットしたN個”が返ってきてしまうので、best hitの取得を意図して-max_target_seqs 1とするのは誤りとしていた論文と、いやそれはタイがあったときだけで、通常はきちんとbest hitを返すとする反論。 https://t.co/6F6BTFBnU0 https://t.co/6hg9zziYHi"
+5:46 PM · Aug 5, 2019
+BLASTは-evalueオプションにも誤解が広まっていて、-evalueでのフィルタリングは初期段階でラフに算出されたE valueに基づいて行われるので、最終的に我々が目にするE valueでのカットオフにはなっていない、というもの。
 
 https://twitter.com/pjacock/status/1082030796301615104
 Peter Cock on Twitter: "Oh, will check later but multiple HSPs for a single hit is a different issue and too be expected. BLAST+ 2.8.1 has new experimental setting -subject_besthit) which may be of interest… https://t.co/P4blPbWaVS"
