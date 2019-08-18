@@ -7,11 +7,11 @@ Last Update: 2018-12
 バイオインフォマティクス
 
 ## Table of Contents
+- [blast](#blast)
 - [2018](https://github.com/haruosuz/bioinfo/tree/master/2018)
 - [2016](https://github.com/haruosuz/bioinfo/tree/master/2016)
 - [updates](#updates)
 - [bird](#bird)
-- [blast](#blast)
 - [books](#books)
 - [EMBOSS](#emboss)
 - [E-utilities](#e-utilities)
@@ -23,103 +23,6 @@ Last Update: 2018-12
 - [jsbi-nintei](#jsbi-nintei)
 - [twitter](#twitter)
 
-
-
-
-
-
-----------
-
-## twitter
-- https://twitter.com/endBooks
-
-
-
-----------
-## twitter
-
-- https://twitter.com/DrKatHolt Kat Holt (@DrKatHolt) | Twitter
-- https://twitter.com/phylogenomics Jonathan Eisen (@phylogenomics) | Twitter
-- https://twitter.com/pathogenomenick Nick Loman (@pathogenomenick) | Twitter
-- https://twitter.com/strnr Stephen Turner (@strnr) | Twitter
-- https://twitter.com/jcamthrash Cameron Thrash (@jcamthrash) | Twitter
-- https://twitter.com/mason_lab Christopher Mason (@mason_lab) | Twitter
-- https://twitter.com/WvSchaik Willem van Schaik (@WvSchaik) | Twitter
-- https://twitter.com/torstenseemann Torsten Seemann (@torstenseemann) | Twitter
-- 
-- https://twitter.com/KojiYahara Koji Yahara @ National Institute of Infectious Diseases.
-
-微生物の研究
-- https://twitter.com/Tyu_Shi Tyu_Shi (@Tyu_Shi) | Bioinformaticsの研究者をしてます。
-- https://twitter.com/level3defless Koichi Higashi (@level3defless) | NIG, Microbiology
-- https://twitter.com/hornistyf Y. Furuta (@hornistyf) | バクテリアのゲノム比較解析とか、DNAメチル化とか。
-- https://twitter.com/yokadzaki Yusuke Okazaki (@yokadzaki) | 湖に生息する微生物の研究をしてます。
-- https://twitter.com/kmoooooog くまがい (@kmoooooog) | 博士(環境学) JAMSTECで海洋微生物学の研究
-- https://twitter.com/ysknishimura Yosuke Nishimura (@ysknishimura) | （メタ）ゲノム情報を用いて海洋微生物の研究をしています。
-- 
-- https://twitter.com/npoJSBi JSBi (@npoJSBi) | 日本バイオインフォマティクス学会（JSBi）
-- https://twitter.com/bioinfowakate 生命情報科学若手の会 (@bioinfowakate) | Twitter
-- https://twitter.com/chemo_wakate ケモインフォマティクス若手の会公式 (@chemo_wakate) | Twitter
-- https://twitter.com/dbcls ライフサイエンス統合データベースセンター (@dbcls) | Twitter
-- https://twitter.com/biohackathon
-- https://twitter.com/togotv
-- https://twitter.com/togotv_bot
-- https://twitter.com/bonohu
-https://dbcls.rois.ac.jp/~bono/
-坊農秀雅のウェブサイト
-http://bonohu.jp/blog/
-ぼうのブログ
-- https://twitter.com/chalkless Nakazato T. (@chalkless) | Twitter
-- https://twitter.com/yayamamo
-- https://twitter.com/h_ono
-- https://twitter.com/inutano
-- https://twitter.com/meso_cacase
-- https://twitter.com/tktym toshiaki katayama (@tktym) | Twitter
-- https://twitter.com/skwsm
-- https://twitter.com/tkwsm tk （風来風来亭） (@tkwsm) | カエル、ホヤ、ナメクジウオ、サンゴ、二枚貝、ギボシムシの研究を通じて、今はヌルヌルに興味があります。
-- https://twitter.com/masanaoAtTheLab Masanao Sato/佐藤昌直 (@masanaoAtTheLab) | Systems biology/Virology/Genomics
-- https://twitter.com/dritoshi
-- https://twitter.com/fukunagaTsu 福永　津嵩 (@fukunagaTsu) | Twitter
-- https://twitter.com/m_hama Michiaki Hamada 浜田道昭 (@m_hama) | Twitter
-- https://twitter.com/yaskaz
-- https://twitter.com/sounaka
-- https://twitter.com/kazumachack macでインフォマティクス
-- https://twitter.com/sesejun
-- https://twitter.com/ogishima
-- https://twitter.com/dancing_infobio
-- https://twitter.com/maskot1977
-- https://twitter.com/mkasahara
-- https://twitter.com/gaou_ak
-- https://twitter.com/nzmyachie
-- https://twitter.com/iwasakiw
-- https://twitter.com/yuifu
-- https://twitter.com/antiplastics もじゃもじゃのほう (Koki Tsuyuzaki) (@antiplastics) | Twitter
-- https://twitter.com/kztakemoto
-- https://twitter.com/windowmoon
-- https://twitter.com/YoshiKawahara Yoshihiro Kawahara (@YoshiKawahara) | つくばの農学系バイオインフォマティシャン。
-- https://twitter.com/drk0311 内藤健 (@drk0311) | Twitter
-- https://twitter.com/kfuku0502 Kenji Fukushima (@kfuku0502) | carnivorous plants + convergent evolution
-- https://twitter.com/mishimahryk 三嶋博之 (@mishimahryk) | 長崎大学人類遺伝学 属性: 人類遺伝学/NGS/次世代シークエンサー/Ruby/BioRuby/R/バイオインフォマティクス/歯科医師
-- https://twitter.com/ma_ko
-- https://twitter.com/yokonaga405
-- https://twitter.com/marimiya_clc
-- https://twitter.com/sum_ichi
-- https://twitter.com/Yh_Taguchi 田口善弘 (@Yh_Taguchi) | 中央大学理工学部物理学科教授。専門はバイオインフォマティクス。
-- https://twitter.com/leeswijzer MINAKA Nobuhiro (@leeswijzer) | オモテの仕事は生物統計学の研究者，ウラの仕事は進化生物学者です．
-
-https://twitter.com/WMicrobiomeDay
-World Microbiome Day (@WMicrobiomeDay) | Twitter
-June 27th is a day to celebrate all things Microbiome around the world. The 1st World Microbiome Day was launched by APC Microbiome Ireland in 2018.
-
-- https://twitter.com/Med_Microbe_bot 感染微生物bot (@Med_Microbe_bot)
-- https://twitter.com/biseibutsu__bot 微生物bot (@biseibutsu__bot)
-- https://twitter.com/kamosumon_bot 醸して学ぶbot (@kamosumon_bot)
-- https://twitter.com/cuteimouto_bot 微生物学専攻妹bot (@cuteimouto_bot)
-- https://twitter.com/bactery_bot ばくてり～細菌擬人化bot～ (@bactery_bot)
-- https://twitter.com/AAD_Japan Save ABx Japan (@AAD_Japan) | 抗菌薬、薬剤耐性菌
-
-
-
 ----------
 
 https://github.com/lexnederbragt/developments-in-next-generation-sequencing
@@ -128,6 +31,10 @@ Developments in next generation sequencing
 ![](https://flxlexblog.files.wordpress.com/2016/07/developments_in_high_throughput_sequencing.jpg)
 
 ----------
+
+
+https://bit.riken.jp/ja/howtostudybioinformatics/
+How to study bioinformatics - Laboratory for Bioinformatics ResearchLaboratory for Bioinformatics Research
 
 https://twitter.com/search?q=iNaturalist%20の
 
@@ -256,128 +163,6 @@ http://www.jst.go.jp/nbdc/bird/jinzai/literacy/streaming/
 分子系統解析（講義３）
 https://www.youtube.com/watch?v=K9Fy1LrtGco
 http://www.jst.go.jp/nbdc/bird/jinzai/literacy/streaming/h21_4_3.pdf
-
-----------
-
-https://binf.snipcademy.com/lessons/pairwise-alignment/identity-similarity
-Identity and Similarity - a quantitative measure
-
-https://www.biostars.org/p/195017/
-Question: BLAST: Identity % and Similarity %
-
-----------
-## blast
-
-https://twitter.com/pjacock/status/1082030796301615104
-Peter Cock on Twitter: "Oh, will check later but multiple HSPs for a single hit is a different issue and too be expected. BLAST+ 2.8.1 has new experimental setting -subject_besthit) which may be of interest… https://t.co/P4blPbWaVS"
-4:46 PM - 6 Jan 2019  
-
-https://twitter.com/NCBI/status/1081248978417668101
-NCBI Staff on Twitter: "BLAST+ 2.8.1 is released with new databases and better performance https://t.co/17Dho3S0gE"
-1:00 PM - 4 Jan 2019
-https://ncbiinsights.ncbi.nlm.nih.gov/2019/01/04/blast-2-8-1-with-new-databases-and-better-performance/
-A new option (-subject_besthit)
--max_target_seqs option
-
-https://twitter.com/enuroi/status/1077399713542893574
-Ken Kuroki on Twitter: "BLASTのベストヒットに関して開発側からの返答 1.特にギャップ多い配列でヒットを取りこぼす→バグで2.8.1で修正 2.同じスコアならDB上の順番で並ぶ(max_target_seqs指定していたらヒットが変わる)→仕様 3.evalueカットオフは複数ステップで絞り込む仕組み→ややずれることがあるが、これは別の問題… https://t.co/lzMiQfr16U"
-10:04 PM - 24 Dec 2018
-https://twitter.com/tom6931/status/1077243599019040768
-Tom Madden on Twitter: "Read our reply to "Misunderstood parameters of NCBI BLAST impacts the correctness of bioinformatics workflows." https://t.co/zWjL9UaHhW"
-11:44 AM - 24 Dec 2018
-https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/bty1026/5259186
-Reply to the paper: Misunderstood parameters of NCBI BLAST impacts the correctness of bioinformatics workflows | Bioinformatics | Oxford Academic
-
-https://twitter.com/RaulGoch/status/1072832901182439425
-Raúl González-Pech on Twitter: "Remember all the commotion around the -max_target_seqs option from @NCBI #BLAST? Well, it turns out that something similar happens with #evalue... If you wanna know more about it have a look at our (@timstep1383 @dorkyM) just published letter: https://t.co/O1EboWEdOq"
-7:37 AM - 12 Dec 2018
-
-https://twitter.com/pjacock/status/1071006136093081600
-Peter Cock on Twitter: "BLAST+ uses database order is tie-breaker, but its a bit backwards https://t.co/SXkELN8PxN - continuing the saga of just how -max_target_seqs can surprise you, and the Shah et al 2018 letter"
-6:38 AM - 7 Dec 2018
-
-https://twitter.com/pjacock/status/1058404683922968576
-Peter Cock on Twitter: "More on BLAST and the maximum alignment limits settings (-max_target_seqs and friends) https://t.co/kYUf4RlF76 - can anyone reproduce the claim in Shar et al. (2018) about database order affecting BLAST output?"
-1:05 PM - 2 Nov 2018
-
-https://blastedbio.blogspot.com/2018/11/blast-max-alignment-limits-repartee-two.html
-Blasted Bioinformatics!?: BLAST max alignment limits repartee - part two
-
-https://twitter.com/search?q=max_target_seqs
-
-https://twitter.com/pathogenomenick/status/1044992493606129664
-Nick Loman on Twitter: "This statement illustrates the in(s)anity of trying to assign taxonomic ID from BLAST best-hit though ... you basically cannot do this.… https://t.co/5CxW2CLGwm"
-12:50 PM - 26 Sep 2018
-
-https://twitter.com/Tyu_Shi/status/1044945487550238720
-Tyu_Shi on Twitter: "いい加減blastallからblast+に移行しないといけないかなと思ってた数年前にPeterさんのこの記事読んでまだしばらくはblastall使っていようと考え直したわけである。その後しばらくしたらそもそもBLAST/BLAST+を使う機会自体が減った。"
-9:43 AM - 26 Sep 2018
-
-https://twitter.com/pjacock/status/1044941938036756480
-Peter Cock on Twitter: "Well past time @NCBI - fixing the output format-specific switches was on my 2014 BLAST+ Christmas wish list https://t.co/GbIPPU3eHG - the discovery about what max_target_seqs really did came a year later https://t.co/FOpO7RKz2K… https://t.co/GtAneLvB2y"
-9:29 AM - 26 Sep 2018
-
-https://twitter.com/macmanes/status/1044922332425408512
-Matt MacManes on Twitter: "Maybe it's time for NCBI to give us a flag for returning only the best hit, since we now know not to use "-max_target_seqs 1"."
-8:11 AM - 26 Sep 2018
-
-https://twitter.com/windowmoon/status/1044942161295200256
-窓月㌠・CC-BY on Twitter: "BLASTの「--max_target_seqs N」オプションは、「トップNヒット」を返すオプションではない！これ知ってる人どれだけいるのかな。私は知ってるのでNを1になんてしません。トップヒットがほしいときは、100とか1000くらいにして、得られた結果の中からスコア最大のものを選ぶことにしています。"
-9:29 AM - 26 Sep 2018
-
-https://twitter.com/enuroi/status/1044856329884626944
-Ken Kuroki on Twitter: "BLASTでmax_target_seqsの引数を設定すると、ベストn件のヒットじゃなくて、閾値を超えた（ベストとは限らない）最初のn件を返してくるから気をつけましょうねという話です。… "
-3:48 AM - 26 Sep 2018
-
-なお「最初のn件」というのはデータベースに入っている順番で決まるとのこと。まあそうでしょうけど。
-
-https://twitter.com/sjackman/status/1044730788128800768
-Shaun Jackman on Twitter: ""Misunderstood parameter of NCBI BLAST impacts the correctness of bioinformatics workflows" tl;dr > The invocation using the parameter "-max_target_seqs 1" simply returns the first good hit found in the database, not the best hit as one would assume. https://t.co/gaNgMCEer0"
-7:30 PM - 25 Sep 2018
-
-https://twitter.com/strnr/status/1044684254347767808
-Stephen Turner on Twitter: "Misunderstood parameter of NCBI BLAST impacts the correctness of bioinformatics workflows https://t.co/gtbYgY5y4i Seems the importance of this can't be understated: 1/n… https://t.co/buZ54l2aki"
-4:25 PM - 25 Sep 2018
-
-https://twitter.com/AstrobioMike/status/1044680662530187264
-Mike Lee on Twitter: "This is important for those of us using command-line BLAST. `-max_target_seqs` not doing what most of us think: https://t.co/8BfQooNsDe"
-4:10 PM - 25 Sep 2018
-
-Good old "blastall -v 1 -b 1" seems to work as expected  and returns the best hit.
-
-http://togotv.dbcls.jp/ja/genome.html#p1
-塩基配列やIDを取得したい
-
-http://doi.org/10.7875/togotv.2007.023
-BLAST検索でヒットしたエントリ群のmulti fastaファイルを取得する
-
-http://togotv.dbcls.jp/ja/genome.html#p2
-似ている配列があるか調べたい
-
-https://doi.org/10.7875/togotv.2017.023
-2017-03-21 NCBI BLASTの使い方 〜基本編〜 2017
-
-http://doi.org/10.7875/togotv.2011.066
-PSI-BLASTで類縁の配列を調べ倒す 2011
-
-http://togotv.dbcls.jp/ja/genome.html#p3
-自分のマシンでBLAST検索をする
-
-http://doi.org/10.7875/togotv.2017.031
-Local BLAST の使い方〜導入・準備編(MacOSX版)〜 2017
-
-http://doi.org/10.7875/togotv.2017.045
-Local BLAST の使い方 〜検索実行・オプション〜 (MacOSX版) 2017
-
-https://bonohu.wordpress.com/2014/11/14/yet2another-blastdbcmd/
-自家製BLAST用DBから必要な配列エントリバッチ取得 | ぼうのブログ(Backup)
-
-https://bonohu.wordpress.com/2014/08/08/yetanother-blastdbcmd/
-自家製BLAST用DBから必要な配列エントリ取得 | ぼうのブログ(Backup)
-
-https://bonohu.wordpress.com/2013/07/25/genetablebylocalblast/
-localBLASTで遺伝子対応表作成 | ぼうのブログ(Backup)
-
 
 ----------
 ## books
@@ -704,7 +489,96 @@ https://www.jsbi.org/nintei/h19/
 ３．平成19年度試験問題＆解答
 問題と解答
 
+----------
+## twitter
+
+- https://twitter.com/DrKatHolt Kat Holt (@DrKatHolt) | Twitter
+- https://twitter.com/phylogenomics Jonathan Eisen (@phylogenomics) | Twitter
+- https://twitter.com/pathogenomenick Nick Loman (@pathogenomenick) | Twitter
+- https://twitter.com/strnr Stephen Turner (@strnr) | Twitter
+- https://twitter.com/jcamthrash Cameron Thrash (@jcamthrash) | Twitter
+- https://twitter.com/mason_lab Christopher Mason (@mason_lab) | Twitter
+- https://twitter.com/WvSchaik Willem van Schaik (@WvSchaik) | Twitter
+- https://twitter.com/torstenseemann Torsten Seemann (@torstenseemann) | Twitter
+- 
+- https://twitter.com/KojiYahara Koji Yahara @ National Institute of Infectious Diseases.
+
+微生物の研究
+- https://twitter.com/Tyu_Shi Tyu_Shi (@Tyu_Shi) | Bioinformaticsの研究者をしてます。
+- https://twitter.com/level3defless Koichi Higashi (@level3defless) | NIG, Microbiology
+- https://twitter.com/hornistyf Y. Furuta (@hornistyf) | バクテリアのゲノム比較解析とか、DNAメチル化とか。
+- https://twitter.com/yokadzaki Yusuke Okazaki (@yokadzaki) | 湖に生息する微生物の研究をしてます。
+- https://twitter.com/kmoooooog くまがい (@kmoooooog) | 博士(環境学) JAMSTECで海洋微生物学の研究
+- https://twitter.com/ysknishimura Yosuke Nishimura (@ysknishimura) | （メタ）ゲノム情報を用いて海洋微生物の研究をしています。
+- 
+- https://twitter.com/npoJSBi JSBi (@npoJSBi) | 日本バイオインフォマティクス学会（JSBi）
+- https://twitter.com/bioinfowakate 生命情報科学若手の会 (@bioinfowakate) | Twitter
+- https://twitter.com/chemo_wakate ケモインフォマティクス若手の会公式 (@chemo_wakate) | Twitter
+- https://twitter.com/dbcls ライフサイエンス統合データベースセンター (@dbcls) | Twitter
+- https://twitter.com/biohackathon
+- https://twitter.com/togotv
+- https://twitter.com/togotv_bot
+- https://twitter.com/bonohu
+https://dbcls.rois.ac.jp/~bono/
+坊農秀雅のウェブサイト
+http://bonohu.jp/blog/
+ぼうのブログ
+- https://twitter.com/chalkless Nakazato T. (@chalkless) | Twitter
+- https://twitter.com/yayamamo
+- https://twitter.com/h_ono
+- https://twitter.com/inutano
+- https://twitter.com/meso_cacase
+- https://twitter.com/tktym toshiaki katayama (@tktym) | Twitter
+- https://twitter.com/skwsm
+- https://twitter.com/tkwsm tk （風来風来亭） (@tkwsm) | カエル、ホヤ、ナメクジウオ、サンゴ、二枚貝、ギボシムシの研究を通じて、今はヌルヌルに興味があります。
+- https://twitter.com/masanaoAtTheLab Masanao Sato/佐藤昌直 (@masanaoAtTheLab) | Systems biology/Virology/Genomics
+- https://twitter.com/dritoshi
+- https://twitter.com/fukunagaTsu 福永　津嵩 (@fukunagaTsu) | Twitter
+- https://twitter.com/m_hama Michiaki Hamada 浜田道昭 (@m_hama) | Twitter
+- https://twitter.com/yaskaz
+- https://twitter.com/sounaka
+- https://twitter.com/kazumachack macでインフォマティクス
+- https://twitter.com/sesejun
+- https://twitter.com/ogishima
+- https://twitter.com/dancing_infobio
+- https://twitter.com/maskot1977
+- https://twitter.com/mkasahara
+- https://twitter.com/gaou_ak
+- https://twitter.com/nzmyachie
+- https://twitter.com/iwasakiw
+- https://twitter.com/yuifu
+- https://twitter.com/antiplastics もじゃもじゃのほう (Koki Tsuyuzaki) (@antiplastics) | Twitter
+- https://twitter.com/kztakemoto
+- https://twitter.com/windowmoon
+- https://twitter.com/YoshiKawahara Yoshihiro Kawahara (@YoshiKawahara) | つくばの農学系バイオインフォマティシャン。
+- https://twitter.com/drk0311 内藤健 (@drk0311) | Twitter
+- https://twitter.com/kfuku0502 Kenji Fukushima (@kfuku0502) | carnivorous plants + convergent evolution
+- https://twitter.com/mishimahryk 三嶋博之 (@mishimahryk) | 長崎大学人類遺伝学 属性: 人類遺伝学/NGS/次世代シークエンサー/Ruby/BioRuby/R/バイオインフォマティクス/歯科医師
+- https://twitter.com/ma_ko
+- https://twitter.com/yokonaga405
+- https://twitter.com/marimiya_clc
+- https://twitter.com/sum_ichi
+- https://twitter.com/Yh_Taguchi 田口善弘 (@Yh_Taguchi) | 中央大学理工学部物理学科教授。専門はバイオインフォマティクス。
+- https://twitter.com/leeswijzer MINAKA Nobuhiro (@leeswijzer) | オモテの仕事は生物統計学の研究者，ウラの仕事は進化生物学者です．
+
+https://twitter.com/WMicrobiomeDay
+World Microbiome Day (@WMicrobiomeDay) | Twitter
+June 27th is a day to celebrate all things Microbiome around the world. The 1st World Microbiome Day was launched by APC Microbiome Ireland in 2018.
+
+- https://twitter.com/Med_Microbe_bot 感染微生物bot (@Med_Microbe_bot)
+- https://twitter.com/biseibutsu__bot 微生物bot (@biseibutsu__bot)
+- https://twitter.com/kamosumon_bot 醸して学ぶbot (@kamosumon_bot)
+- https://twitter.com/cuteimouto_bot 微生物学専攻妹bot (@cuteimouto_bot)
+- https://twitter.com/bactery_bot ばくてり～細菌擬人化bot～ (@bactery_bot)
+- https://twitter.com/AAD_Japan Save ABx Japan (@AAD_Japan) | 抗菌薬、薬剤耐性菌
+
+
+
 
 ----------
+
+
+
+
 
 
