@@ -58,12 +58,14 @@ curl -O https://rrndb.umms.med.umich.edu/static/download/rrnDB-5.5_16S_rRNA.fast
 unzip rrnDB-5.5_16S_rRNA.fasta.zip
 ```
 
-"Wolbachia"にマッチする行を表示:
+[Wolbachia](https://github.com/haruosuz/microbe/blob/master/references/README.bacteria.md#wolbachia)属の細菌を解析する。
+
+"Wolbachia"にマッチする行を表示する:
 ```
 grep "Wolbachia" rrnDB-5.5_16S_rRNA.fasta
 ```
 
-"Wolbachia"の配列をseqkitで抽出し、perlで編集:  
+"Wolbachia"の配列をseqkitで抽出し、perlで編集する:  
 ```
 myfile=rrnDB-5.5_16S_rRNA.fasta
 pattern="Wolbachia"
