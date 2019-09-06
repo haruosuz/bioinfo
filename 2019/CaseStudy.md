@@ -51,9 +51,22 @@ conda install -c bioconda seqkit
 
 ----------
 ## rrnDB
+リボソームRNAオペロンのコピー数データベース [rrnDB](https://rrndb.umms.med.umich.edu/)
 
-リボソームRNAオペロンのコピー数データベース [rrnDB](https://rrndb.umms.med.umich.edu/static/download/) から、16S rRNAをコードするDNA塩基配列のFASTA形式ファイルをダウンロードする:  
+シェルスクリプト*scripts/run_rrnDB.sh*を取得し実行する:  
 ```
+# Downloading the shell script
+curl -O https://raw.githubusercontent.com/haruosuz/bioinfo/master/2019/scripts/run_rrnDB.sh
+
+# Running the shell script
+(time bash ./run_rrnDB.sh &) >& log.rrnDB.$(date +%F).txt
+```
+
+step by step tutorial
+
+[Download](https://rrndb.umms.med.umich.edu/static/download/)から、16S rRNAをコードするDNA塩基配列のFASTA形式ファイルを取得する:  
+```
+# retrieving data
 curl -O https://rrndb.umms.med.umich.edu/static/download/rrnDB-5.5_16S_rRNA.fasta.zip
 unzip rrnDB-5.5_16S_rRNA.fasta.zip
 ```
@@ -67,6 +80,7 @@ grep "Wolbachia" rrnDB-5.5_16S_rRNA.fasta
 
 "Wolbachia"の配列をseqkitで抽出し、perlで編集する:  
 ```
+# seqkit grep -h
 myfile=rrnDB-5.5_16S_rRNA.fasta
 pattern="Wolbachia"
 seqkit grep -nrp "${pattern}" "${myfile}" | perl -pe 's/>([^\|]+)\|([^\|]+)\|([^\|]+)\|([^\|]+)\|([^\|]+)\n/>$2\|$3\|$4\|$5\|$1\n/g,s/: /_/g' > "${myfile}"."${pattern}".fasta
@@ -77,12 +91,15 @@ MAFFT・RAxML・FigTreeを組み合わせて分子系統解析を行う
 
 [MAFFT](https://github.com/haruosuz/evolve/blob/master/references/README.evolve.tools.md#mafft)で多重整列:  
 ```
-input="rrnDB-5.5_16S_rRNA.fasta.Wolbachia.fasta"
-mafft "${input}" > "${input}".aln
+# mafft --help
+input=rrnDB-5.5_16S_rRNA.fasta.Wolbachia.fasta
+output="${input}".aln
+mafft "${input}" > "${output}"
 ```
 
 [RAxML](https://github.com/haruosuz/evolve/blob/master/references/README.evolve.tools.md#raxml)による最尤系統樹推定:  
 ```
+# raxmlHPC -h
 sequenceFileName=rrnDB-5.5_16S_rRNA.fasta.Wolbachia.fasta.aln
 outputFileName="${sequenceFileName}".newick
 substitutionModel=GTRGAMMA
