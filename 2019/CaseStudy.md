@@ -17,6 +17,7 @@ https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1007778
 Selective advantages favour high genomic AT-contents in intracellular elements
 Accordingly, introducing AT-rich and GC-rich plasmids into other bacterial species with different genomic GC-contents revealed that the costs of G+C-rich plasmids decreased with an increasing GC-content of their host’s genomic DNA. 
 
+- https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#silva-rrna-database
 - https://github.com/haruosuz/DS4GD/tree/master/2019
 - https://github.com/haruosuz/introBI/blob/master/2018/CaseStudy.md
 - https://github.com/haruosuz/introBI/blob/master/2018/CaseStudy.md#inspecting-data
@@ -25,9 +26,8 @@ Accordingly, introducing AT-rich and GC-rich plasmids into other bacterial speci
 ----------
 ## Install
 
-[bioconda]()
+[bioconda](https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#bioconda)
 をインストールする:
-https://bioconda.github.io/user/install.html
 ```
 # 1. Install conda
 curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
@@ -43,7 +43,7 @@ conda install raxml
 conda install mafft
 ```
 
-[seqkit](https://github.com/haruosuz/mgsa/blob/master/references/mgsa.tools.md#seqkit)
+[seqkit](https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#seqkit)
 をインストールする:
 ```
 conda install -c bioconda seqkit
@@ -56,11 +56,6 @@ conda install -c bioconda seqkit
 ```
 curl -O https://rrndb.umms.med.umich.edu/static/download/rrnDB-5.5_16S_rRNA.fasta.zip
 unzip rrnDB-5.5_16S_rRNA.fasta.zip
-```
-
-FASTAファイルの内容を確認する:
-```
-grep "Wolbachia" rrnDB-5.5_16S_rRNA.fasta
 ```
 
 "Wolbachia"にマッチする行を表示:
@@ -89,7 +84,7 @@ substitutionModel=GTRGAMMA
 raxmlHPC-SSE3 -s "${sequenceFileName}" -n "${outputFileName}" -m "${substitutionModel}" -p 12345
 ```
 
-
+[SeaView](http://doua.prabi.fr/software/seaview)で系統樹を描く。
 
 ----------
 ## Sequence similarity search
