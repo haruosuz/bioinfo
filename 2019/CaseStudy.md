@@ -2,111 +2,11 @@
 **ケーススタディ**
 
 ## Table of Contents
-- [Install](#install)
-- [rrnDB](#rrndb)
 - [Sequence similarity search](#sequence-similarity-search) 配列類似性検索
 - [UniProtKB Swiss-Prot protein sequence database](#uniprotkb-swiss-prot-protein-sequence-database) タンパク質配列データベース
 - [2019-08-04](#2019-08-04) 第3回 進化学セミナー プログラム | 木村資生記念 進化学セミナー
-
-----------
-
-https://twitter.com/Symbionticism/status/1123203760564637697
-Seth Bordenstein on Twitter: "This is a game changer. Many intracellular microbes have a genome wide bias in A’s and T’s. The major assumption has been a mutational bias / drift impacts this outcome. Well, not so fast. Evidence below that selection can contribute or cause it.… https://t.co/yfDqN3b3Lj"
-8:33 AM - 30 Apr 2019
-https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1007778
-Selective advantages favour high genomic AT-contents in intracellular elements
-Accordingly, introducing AT-rich and GC-rich plasmids into other bacterial species with different genomic GC-contents revealed that the costs of G+C-rich plasmids decreased with an increasing GC-content of their host’s genomic DNA. 
-
-- https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#silva-rrna-database
-- https://github.com/haruosuz/DS4GD/tree/master/2019
-- https://github.com/haruosuz/introBI/blob/master/2018/CaseStudy.md
-- https://github.com/haruosuz/introBI/blob/master/2018/CaseStudy.md#inspecting-data
-- https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md
-
-----------
-## Install
-
-[bioconda](https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#bioconda)
-をインストールする:
-```
-# 1. Install conda
-curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
-sh Miniconda3-latest-MacOSX-x86_64.sh
-
-# 2. Set up channels
-conda config --add channels defaults
-conda config --add channels bioconda
-conda config --add channels conda-forge
-
-# 3. Install packages
-conda install raxml
-conda install mafft
-```
-
-[seqkit](https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#seqkit)
-をインストールする:
-```
-conda install -c bioconda seqkit
-```
-
-----------
-## rrnDB
-リボソームRNAオペロンのコピー数データベース [rrnDB](https://rrndb.umms.med.umich.edu/)
-
-シェルスクリプト*scripts/run_rrnDB.sh*を取得し実行する:  
-```
-# Downloading the shell script
-curl -O https://raw.githubusercontent.com/haruosuz/bioinfo/master/2019/scripts/run_rrnDB.sh
-
-# Running the shell script
-(time bash ./run_rrnDB.sh &) >& log.rrnDB.$(date +%F).txt
-```
-
-step by step tutorial
-
-[Download](https://rrndb.umms.med.umich.edu/static/download/)から、16S rRNAをコードするDNA塩基配列のFASTA形式ファイルを取得する:  
-```
-# retrieving data
-curl -O https://rrndb.umms.med.umich.edu/static/download/rrnDB-5.5_16S_rRNA.fasta.zip
-unzip rrnDB-5.5_16S_rRNA.fasta.zip
-```
-
-[Wolbachia](https://github.com/haruosuz/microbe/blob/master/references/README.bacteria.md#wolbachia)属の細菌を解析する。
-
-"Wolbachia"にマッチする行を表示する:
-```
-grep "Wolbachia" rrnDB-5.5_16S_rRNA.fasta
-```
-
-"Wolbachia"の配列をseqkitで抽出し、perlで編集する:  
-```
-# seqkit grep -h
-myfile=rrnDB-5.5_16S_rRNA.fasta
-pattern="Wolbachia"
-seqkit grep -nrp "${pattern}" "${myfile}" | perl -pe 's/>([^\|]+)\|([^\|]+)\|([^\|]+)\|([^\|]+)\|([^\|]+)\n/>$2\|$3\|$4\|$5\|$1\n/g,s/: /_/g' > "${myfile}"."${pattern}".fasta
-```
-
-[統合TV](https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#togotv)
-MAFFT・RAxML・FigTreeを組み合わせて分子系統解析を行う
-
-[MAFFT](https://github.com/haruosuz/evolve/blob/master/references/README.evolve.tools.md#mafft)で多重整列:  
-```
-# mafft --help
-input=rrnDB-5.5_16S_rRNA.fasta.Wolbachia.fasta
-output="${input}".aln
-mafft "${input}" > "${output}"
-```
-
-[RAxML](https://github.com/haruosuz/evolve/blob/master/references/README.evolve.tools.md#raxml)による最尤系統樹推定:  
-```
-# raxmlHPC -h
-sequenceFileName=rrnDB-5.5_16S_rRNA.fasta.Wolbachia.fasta.aln
-outputFileName="${sequenceFileName}".newick
-substitutionModel=GTRGAMMA
-raxmlHPC-SSE3 -s "${sequenceFileName}" -n "${outputFileName}" -m "${substitutionModel}" -p 12345
-```
-
-[FigTree](http://www.fish-evol.org/FigTree.html)や[SeaView](http://doua.prabi.fr/software/seaview)で系統樹を描く。
+- [Install](#install)
+- [rrnDB](#rrndb)
 
 ----------
 ## Sequence similarity search
@@ -363,11 +263,104 @@ Neural Network Console
 
 ----------
 
+https://twitter.com/Symbionticism/status/1123203760564637697
+Seth Bordenstein on Twitter: "This is a game changer. Many intracellular microbes have a genome wide bias in A’s and T’s. The major assumption has been a mutational bias / drift impacts this outcome. Well, not so fast. Evidence below that selection can contribute or cause it.… https://t.co/yfDqN3b3Lj"
+8:33 AM - 30 Apr 2019
+https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1007778
+Selective advantages favour high genomic AT-contents in intracellular elements
+Accordingly, introducing AT-rich and GC-rich plasmids into other bacterial species with different genomic GC-contents revealed that the costs of G+C-rich plasmids decreased with an increasing GC-content of their host’s genomic DNA. 
 
+- https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#silva-rrna-database
+- https://github.com/haruosuz/DS4GD/tree/master/2019
+- https://github.com/haruosuz/introBI/blob/master/2018/CaseStudy.md
+- https://github.com/haruosuz/introBI/blob/master/2018/CaseStudy.md#inspecting-data
+- https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md
 
 ----------
+## Install
 
+[bioconda](https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#bioconda)
+をインストールする:
+```
+# 1. Install conda
+curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
+sh Miniconda3-latest-MacOSX-x86_64.sh
 
+# 2. Set up channels
+conda config --add channels defaults
+conda config --add channels bioconda
+conda config --add channels conda-forge
 
+# 3. Install packages
+conda install raxml
+conda install mafft
+```
+
+[seqkit](https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#seqkit)
+をインストールする:
+```
+conda install -c bioconda seqkit
+```
+
+----------
+## rrnDB
+リボソームRNAオペロンのコピー数データベース [rrnDB](https://rrndb.umms.med.umich.edu/)
+
+シェルスクリプト*scripts/run_rrnDB.sh*を取得し実行する:  
+```
+# Downloading the shell script
+curl -O https://raw.githubusercontent.com/haruosuz/bioinfo/master/2019/scripts/run_rrnDB.sh
+
+# Running the shell script
+(time bash ./run_rrnDB.sh &) >& log.rrnDB.$(date +%F).txt
+```
+
+step by step tutorial
+
+[Download](https://rrndb.umms.med.umich.edu/static/download/)から、16S rRNAをコードするDNA塩基配列のFASTA形式ファイルを取得する:  
+```
+# retrieving data
+curl -O https://rrndb.umms.med.umich.edu/static/download/rrnDB-5.5_16S_rRNA.fasta.zip
+unzip rrnDB-5.5_16S_rRNA.fasta.zip
+```
+
+[Wolbachia](https://github.com/haruosuz/microbe/blob/master/references/README.bacteria.md#wolbachia)属の細菌の解析例。
+
+"Wolbachia"にマッチする行を表示する:
+```
+grep "Wolbachia" rrnDB-5.5_16S_rRNA.fasta
+```
+
+"Wolbachia"の配列をseqkitで抽出し、perlで編集する:  
+```
+# seqkit grep -h
+myfile=rrnDB-5.5_16S_rRNA.fasta
+pattern="Wolbachia"
+seqkit grep -nrp "${pattern}" "${myfile}" | perl -pe 's/>([^\|]+)\|([^\|]+)\|([^\|]+)\|([^\|]+)\|([^\|]+)\n/>$2\|$3\|$4\|$5\|$1\n/g,s/: /_/g' > "${myfile}"."${pattern}".fasta
+```
+
+[統合TV](https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#togotv)
+MAFFT・RAxML・FigTreeを組み合わせて分子系統解析を行う
+
+[MAFFT](https://github.com/haruosuz/evolve/blob/master/references/README.evolve.tools.md#mafft)で多重整列:  
+```
+# mafft --help
+input=rrnDB-5.5_16S_rRNA.fasta.Wolbachia.fasta
+output="${input}".aln
+mafft "${input}" > "${output}"
+```
+
+[RAxML](https://github.com/haruosuz/evolve/blob/master/references/README.evolve.tools.md#raxml)による最尤系統樹推定:  
+```
+# raxmlHPC -h
+sequenceFileName=rrnDB-5.5_16S_rRNA.fasta.Wolbachia.fasta.aln
+outputFileName="${sequenceFileName}".newick
+substitutionModel=GTRGAMMA
+raxmlHPC-SSE3 -s "${sequenceFileName}" -n "${outputFileName}" -m "${substitutionModel}" -p 12345
+```
+
+[FigTree](http://www.fish-evol.org/FigTree.html)や[SeaView](http://doua.prabi.fr/software/seaview)で系統樹を描く。
+
+----------
 
 
