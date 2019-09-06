@@ -1,5 +1,5 @@
 Haruo Suzuki (haruo[at]g-language[dot]org)  
-Last Update: 2018-12
+Last Update: 2019-09-03
 
 ----------
 
@@ -22,6 +22,10 @@ Last Update: 2018-12
 - [uniprot](#uniprot)
 - [jsbi-nintei](#jsbi-nintei)
 - [twitter](#twitter)
+- [togo](#togo)
+  - [togows](#togows)
+  - [togotv](#togotv)
+- [bioconda](#bioconda)
 
 ----------
 
@@ -51,6 +55,74 @@ Conferences and Meetings on Genomics and Bioinformatics
 http://glab.hzau.edu.cn/APBC2019/
 APBC2019: The 17th Asia Pacific Bioinformatics Conference
 January 14-16, 2019 | Wuhan • China
+
+
+----------
+
+## togo
+### togows
+
+- https://doi.org/10.7875/togotv.2011.058 2011-04-25 TogoWS RESTサービスを使い倒す 2011
+  - http://togows.dbcls.jp/help/
+  - http://togows.dbcls.jp/site/ja/rest.html
+```
+# http://togows.dbcls.jp/entry/nucleotide/NC_003131
+ACCESSION=NC_003131
+curl http://togows.dbcls.jp/entry/nucleotide/"${ACCESSION}" > "${ACCESSION}".gbk
+```
+
+### togotv
+
+https://github.com/haruosuz/ksbn/blob/master/2018/README.2018.4.md#2018-11-30
+
+https://twitter.com/hashtag/togotv18
+
+https://www.medsi.co.jp/books/products/detail.php?product_id=3665
+生命科学データベース・ウェブツール  － 図解と動画で使い方がわかる！　研究がはかどる定番18選 － 
+```
+Part 3 生命科学系データ解析の現場で，押さえておきたい「鉄板」ツール	
+10 章 MEGAで系統樹を作成する	
+　　　MEGA で配列のアラインメントや系統解析を行う
+　　　DoMosaics を使ってドメイン構造と系統樹を可視化する
+　　　MAFFT・RAxML・FigTree を組み合わせて分子系統解析を行う
+```
+
+[統合TV | 生命科学系DB・ツール使い倒し系チャンネル](https://togotv.dbcls.jp/)
+- https://doi.org/10.7875/togotv.2012.073
+2012-08-30 PubMedで論文を検索する
+- https://doi.org/10.7875/togotv.2011.076
+2011-07-05 MEGAを使って配列アラインメントおよび系統解析をする
+- https://doi.org/10.7875/togotv.2017.077
+2017-08-04 DoMosaicsを使ってドメイン構造と系統樹を可視化する
+- https://doi.org/10.7875/togotv.2018.093
+2018-04-03 MAFFT・RAxML・FigTreeを組み合わせて分子系統解析を行う
+
+```
+curl https://dbarchive.biosciencedbc.jp/data/togotv/movie/sample/180403_test-fasta.txt > test.fasta
+
+mafft test.fasta > mafft_test.fasta
+
+raxmlHPC-SSE3 -m GTRGAMMA -p 12345 -s mafft_test.fasta -n test
+```
+
+----------
+
+### bioconda
+
+https://qiita.com/MTNakata/items/2d537731d18b231e5fb9
+MacでBioconda〜RNA-Seqデータ解析ツールのインストール〜
+
+http://imamachi-n.hatenablog.com/entry/2017/01/14/212719
+biocondaを利用してNGS関連のソフトウェアを一括でインストールする - いろいろ試してみる
+
+http://bonohu.jp/blog/bioconda.html
+Biocondaを使ってみた
+Written by bonohu in misc on 土 08 7月 2017.
+
+https://bioconda.github.io/index.html
+Contributors — Bioconda documentation
+
+----------
 
 ## updates
 
@@ -152,6 +224,10 @@ https://twitter.com/eyemiyake/status/1023007444669095936
 
 https://wired.jp/2018/03/13/solve-genomics-with-blockchain/
 「ゲノム解析」のデータはブロックチェーンで守れるか｜WIRED.jp
+
+http://catway.jp/bioinformatics/index.html
+Tips for NGS Data Analysis
+次世代DNAシーケンサーのデータ解析技術 (2013/02/01)
 
 ----------
 ## bird
