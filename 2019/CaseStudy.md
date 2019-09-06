@@ -72,6 +72,9 @@ pattern="Wolbachia"
 seqkit grep -nrp "${pattern}" "${myfile}" | perl -pe 's/>([^\|]+)\|([^\|]+)\|([^\|]+)\|([^\|]+)\|([^\|]+)\n/>$2\|$3\|$4\|$5\|$1\n/g,s/: /_/g' > "${myfile}"."${pattern}".fasta
 ```
 
+[統合TV](https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#togotv)
+MAFFT・RAxML・FigTreeを組み合わせて分子系統解析を行う
+
 [MAFFT](https://github.com/haruosuz/evolve/blob/master/references/README.evolve.tools.md#mafft)で多重整列:  
 ```
 input="rrnDB-5.5_16S_rRNA.fasta.Wolbachia.fasta"
@@ -86,7 +89,7 @@ substitutionModel=GTRGAMMA
 raxmlHPC-SSE3 -s "${sequenceFileName}" -n "${outputFileName}" -m "${substitutionModel}" -p 12345
 ```
 
-[SeaView](http://doua.prabi.fr/software/seaview)で系統樹を描く。
+[FigTree](http://www.fish-evol.org/FigTree.html)や[SeaView](http://doua.prabi.fr/software/seaview)で系統樹を描く。
 
 ----------
 ## Sequence similarity search
