@@ -13,8 +13,6 @@ Last Update: 2019-09-03
 - [updates](#updates)
 - [bird](#bird)
 - [books](#books)
-- [EMBOSS](#emboss)
-- [E-utilities](#e-utilities)
 - [gff](#gff)
 - [gtf](#gtf)
 - [link](#link)
@@ -22,10 +20,7 @@ Last Update: 2019-09-03
 - [uniprot](#uniprot)
 - [jsbi-nintei](#jsbi-nintei)
 - [twitter](#twitter)
-- [togo](#togo)
-  - [togows](#togows)
-  - [togotv](#togotv)
-- [bioconda](#bioconda)
+- [unclassified](#unclassified)
 
 ----------
 
@@ -36,124 +31,44 @@ Developments in next generation sequencing
 
 ----------
 
-
 https://bit.riken.jp/ja/howtostudybioinformatics/
 How to study bioinformatics - Laboratory for Bioinformatics ResearchLaboratory for Bioinformatics Research
 
 https://twitter.com/search?q=iNaturalist%20の
 
-
-https://www.biostars.org/p/17696/
-Difference Between "Pipeline" And "Workflow" ?
-https://en.wikipedia.org/wiki/Bioinformatics_workflow_management_system
-Galaxy: initially targeted at genomics
-
-
 https://www.conference-service.com/conferences/bioinformatics.html
 Conferences and Meetings on Genomics and Bioinformatics
 
-http://glab.hzau.edu.cn/APBC2019/
-APBC2019: The 17th Asia Pacific Bioinformatics Conference
-January 14-16, 2019 | Wuhan • China
+----------
+## unclassified
 
+https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#pairwise-sequence-alignment
+
+- DDBJ [配列の記載に用いる略号](http://www.ddbj.nig.ac.jp/sub/code-j.html)
+  - [塩基](https://www.ddbj.nig.ac.jp/ddbj/code.html#nucleotide)
+  - [アミノ酸](https://www.ddbj.nig.ac.jp/ddbj/code.html#amino)
+- 2017.06.03 [配列解析 | 塩基配列解析とアミノ酸配列解析](https://bi.biopapyrus.jp/seq/)
+  - 配列
+    - [置換行列 | スコアマトリックスの作り方](https://bi.biopapyrus.jp/seq/score-matrix.html)
+  - [アラインメント | 核酸あるいはアミノ酸配列を複数並べ類縁度を可視化](https://bi.biopapyrus.jp/seq/alignment/)
+    - [グローバルアライメントを求める Needleman–Wunsch アルゴリズム](https://bi.biopapyrus.jp/seq/alignment/needleman–wunsch.html)
+    - [ローカルアラインメントを求める Smith-Waterman アルゴリズム](https://bi.biopapyrus.jp/seq/alignment/smith-waterman.html)
+- [2-1. 配列解析基礎 Basic Sequence Analysis 坊農 秀雅](http://www.iu.a.u-tokyo.ac.jp/~kadota/bioinfo_ngs_sokushu_2014/20140905_2-1_bono.pdf)
+- 24 July 2012 [Aritalab:Lecture/Bioinformatics/Alignment - Metabolomics.JP](http://metabolomics.jp/wiki/Aritalab:Lecture/Bioinformatics/Alignment)
+
+- 2009.9.12 [バイオインフォマティクス基礎講座 配列解析 川端 猛](http://www.jst.go.jp/nbdc/bird/jinzai/literacy/streaming/h21_3_1.pdf)
+- [バイオインフォマティクス-ゲノム配列から機能解析へ-第3章3.4節配列アラインメントにおけるスコア行列とギャップペナルティの使用方法](http://qiita.com/kino-tohoku/items/d4e0441e7ed6222106fa)
+
+https://www.dna.bio.keio.ac.jp/lecture/bioinfo/bioinformatics-3.pdf
+バイオインフォマティクス (第3回)
+慶應義塾大学生命情報学科 榊原康文
 
 ----------
 
-## togo
-### togows
-
-- https://doi.org/10.7875/togotv.2011.058 2011-04-25 TogoWS RESTサービスを使い倒す 2011
-  - http://togows.dbcls.jp/help/
-  - http://togows.dbcls.jp/site/ja/rest.html
-```
-# http://togows.dbcls.jp/entry/nucleotide/NC_003131
-ACCESSION=NC_003131
-curl http://togows.dbcls.jp/entry/nucleotide/"${ACCESSION}" > "${ACCESSION}".gbk
-```
-
-### togotv
-
-https://github.com/haruosuz/ksbn/blob/master/2018/README.2018.4.md#2018-11-30
-
-https://twitter.com/hashtag/togotv18
-
-https://www.medsi.co.jp/books/products/detail.php?product_id=3665
-生命科学データベース・ウェブツール  － 図解と動画で使い方がわかる！　研究がはかどる定番18選 － 
-```
-Part 3 生命科学系データ解析の現場で，押さえておきたい「鉄板」ツール	
-10 章 MEGAで系統樹を作成する	
-　　　MEGA で配列のアラインメントや系統解析を行う
-　　　DoMosaics を使ってドメイン構造と系統樹を可視化する
-　　　MAFFT・RAxML・FigTree を組み合わせて分子系統解析を行う
-```
-
-[統合TV | 生命科学系DB・ツール使い倒し系チャンネル](https://togotv.dbcls.jp/)
-- https://doi.org/10.7875/togotv.2012.073
-2012-08-30 PubMedで論文を検索する
-- https://doi.org/10.7875/togotv.2011.076
-2011-07-05 MEGAを使って配列アラインメントおよび系統解析をする
-- https://doi.org/10.7875/togotv.2017.077
-2017-08-04 DoMosaicsを使ってドメイン構造と系統樹を可視化する
-- https://doi.org/10.7875/togotv.2018.093
-2018-04-03 MAFFT・RAxML・FigTreeを組み合わせて分子系統解析を行う
-
-```
-curl https://dbarchive.biosciencedbc.jp/data/togotv/movie/sample/180403_test-fasta.txt > test.fasta
-
-mafft test.fasta > mafft_test.fasta
-
-raxmlHPC-SSE3 -m GTRGAMMA -p 12345 -s mafft_test.fasta -n test
-```
-
-----------
-
-### bioconda
-
-https://qiita.com/MTNakata/items/2d537731d18b231e5fb9
-MacでBioconda〜RNA-Seqデータ解析ツールのインストール〜
-
-http://imamachi-n.hatenablog.com/entry/2017/01/14/212719
-biocondaを利用してNGS関連のソフトウェアを一括でインストールする - いろいろ試してみる
-
-http://bonohu.jp/blog/bioconda.html
-Biocondaを使ってみた
-Written by bonohu in misc on 土 08 7月 2017.
-
-https://bioconda.github.io/index.html
-Contributors — Bioconda documentation
-
-----------
 
 ## updates
 
 ### 2019
-
-
-### Kablammo
-http://kablammo.wasmuthlab.org/
-
-https://twitter.com/yokuyama/status/1122298158480904192
-奥山雄大（ver.関西） on Twitter: "blastの結果を可視化するウェブツールKablamm うわーこれすごいわ。感動する。上がコチャルメルソウで下がチャルメルソウ。ゲノムの構造がひと目で分かる。そして、核心に迫るためにはチャルメルソウのゲノムはもう少し伸ばさないとあかんことがわかった。 https://t.co/vFCAVCuwxQ… https://t.co/dPCSUMdU75"
-8:35 PM - 27 Apr 2019
-http://kazumaxneo.hatenablog.com/entry/2019/04/10/073000
-blast結果を可視化するwebツール Kablammo - macでインフォマティクス
-
-![](https://cdn-ak.f.st-hatena.com/images/fotolife/k/kazumaxneo/20190409/20190409230150.png)
-
-
-https://twitter.com/Acinetobazza/status/1107892222257696768
-Dr Mark Schultz on Twitter: "I have written an introductory tutorial on using edirect command line tools to query NCBI's Entrez database for downloading read-sets and genbank assemblies https://t.co/t7Yv0ZirCp"
-2:31 AM - 19 Mar 2019
-https://github.com/schultzm/entrez_direct_tut/blob/master/README.md
-entrez_direct_tut/README.md at master · schultzm/entrez_direct_tut
-
-https://twitter.com/RodrigoATCG/status/1108105740663836675
-Rodrigo Martinez on Twitter: "For way too long we have been using the 'cost of sequencing' graph (left) to tell stories about what may come in the world of DNA. Here's a newer version that hopefully triggers conversations about what's to come in consumer genomics - the emerging #socialgenome Thoughts?… https://t.co/o7Tzos6bGa"
-4:39 PM - 19 Mar 2019
-![](https://pbs.twimg.com/media/D2DH1sWWsAAkDQ3.jpg)
-March 6, 2019
-https://www.veritasgenetics.com/next-genomics-revolution-era-social-genome
-Blog | Next in the Genomics Revolution: The Era of the Social Genome | Veritas Genetics
 
 ### 2018
 
@@ -164,11 +79,6 @@ BioTechnicalフォーラム [プログラミングの勉強]
 最初に習得すべき言語は何がいいでしょうか？
 現在どの言語が多用されているのでしょうか。
 
-
-https://github.com/hiromasaono/training/tree/master/180612_KeioSFC
-今日から使える便利な生命科学系公共データベース・ウェブツール
-小野 浩雅
-2018年6月12日(火)
 
 January 17, 2018
 https://github.com/yuifu/ajacs68/blob/master/README.md
@@ -192,26 +102,6 @@ https://twitter.com/vsbuffalo/status/1098269961145901056
 Vince Buffalo on Twitter: "I'm teaching my partner bash. The biggest "wows!" have been: 1. control-r, type part of a past command, control-r again and again to cycle through history. 2. cd - 3. tmux for work on a server. 4. control-a / control-e / option arrow for jumping around. 5. hitting tab a lot."
 12:15 PM - 20 Feb 2019
 
-
-https://twitter.com/ecSeq/status/982476057805754368
-ecSeq Bioinformatics on Twitter: "NGS Code Snippet: Convert FASTQ to FASTA on the command line https://t.co/xsdzmU52LS"
-12:32 AM - 7 Apr 2018
-https://www.ecseq.com/support/ngs-snippets/convert-fastq-to-fasta-on-the-command-line
-```
-paste - - - - < file.fq | cut -f 1,2 | sed 's/^@/>/' | tr "\t" "\n" > file.fa
-```
-
-https://twitter.com/NIBB_Public/status/1062911424635105281
-基礎生物学研究所広報室 on Twitter: "基礎生物学研究所 ゲノムインフォマティクス・トレーニングコース2019春「RNA-seq入門 - NGSの基礎からde novo 解析まで」申し込み受付中です。準備編と実践編がございます。https://t.co/vANmoL9BHX"
-10:33 PM - 14 Nov 2018
-http://www.nibb.ac.jp/gitc/2019-1st/
-http://www.nibb.ac.jp/collabo/trainingcourse/course.html
-１．準備編 ： UNIX・R・NGSの基本 -- 2019年2月21日（木）10:00～ 22日（金）17:30 
-２．実践編 ： RNA-seq解析パイプライン -- 2019年3月14日（木） 10:00～ 15日（金）17:30 
-
-2018-08-04
-https://qiita.com/antiplastics/items/add3f8438cbe6b2b594e
-どの生物種までGO解析ができるか
 
 https://twitter.com/3Bgoripachi/status/1025225950902931456
 ゴリぱち on Twitter: "ゲノム解析を学びたい人にとって有益な情報が詰まっている記事でした。 「NGSデータから新たな知識を導出するためのデータ解析リテラシー」 https://t.co/t5GGcj7mNC"
@@ -271,73 +161,6 @@ https://www.ncbi.nlm.nih.gov/pubmed/10871367
 Nucleic Acids Res. 2000 Jun 15;28(12):2353-62.
 Bacterial cryptochrome and photolyase: characterization of two photolyase-like genes of Synechocystis sp. PCC6803.
 Hitomi K1, Okamoto K, Daiyasu H, Miyashita H, Iwai S, Toh H, Ishiura M, Todo T.
-
-
-----------
-## emboss
-
-https://osdn.net/projects/jambo/docs/emboss_tutorial/...
-EMBOSS を用いた配列解析への手引き
-
-http://emboss.open-bio.org/html/use/ch04s03.html
-4.3. Working with Alignments
-Prev 	Chapter 4. EMBOSS User Tutorial
-
-4.3.3. Exercise: Making a Dotplot
-
-% dottup
-
-http://www.iu.a.u-tokyo.ac.jp/~kadota/bioinfo_ngs_sokushu_2014/20140905_2-1_bono.pdf
-2-1. 配列解析基礎
-Basic Sequence Analysis
-坊農 秀雅 
-
-dottup
-
-----------
-## E-utilities
-The Entrez Programming Utilities (E-utilities)
-
-- [Entrez Programming Utilities Help - NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK25501/)
-  - [Entrez Direct: E-utilities on the UNIX Command Line - Entrez Programming Utilities Help - NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK179288/)
-  - [The E-utilities In-Depth: Parameters, Syntax and More - Entrez Programming Utilities Help - NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK25499/)
-    - [Table 1 – Valid values of &retmode and &rettype for EFetch (null = empty string)](https://www.ncbi.nlm.nih.gov/books/NBK25499/table/chapter4.T._valid_values_of__retmode_and/?report=objectonly)
-
-| Record Type | &rettype | &retmode |
-|:-----------:|:--------:|:--------:|
-| Additional option for db = nuccore |
-| db = nuccore, nucest, nucgss, protein or popset |
-| FASTA | fasta | text |
-| GenBank flat file with full sequence (contigs) | gbwithparts | text |
-| CDS nucleotide FASTA | fasta_cds_na | text |
-| CDS protein FASTA | fasta_cds_aa | text |
-| db = sequences |
-| FASTA | fasta | text |
-
-https://sites.google.com/site/scriptofbioinformatics/r-tong-ji-guan-xi/rutiles-e-utilities-r
-rutiles / E-utilities（R） - script of bioinformatics
-E-utilitiesはNCBIが提供するAPIのサービス。
-rutilesはRでE-utilitesを使うためのパッケージ。
-
-2016年07月14日
-https://qiita.com/joemphilips/items/767c67524e4b7e328834
-Biopython を利用したNCBIのEntrez データベースへのアクセス
-
-2015年12月04日
-http://itnika.seesaa.net/article/430657489.html
-PubMed：E-utirities API hack 2
-
-2015年11月29日
-http://itnika.seesaa.net/article/430447225.html
-PubMed検索方法：Web Apiの勉強中
-
-http://sy41211.hatenablog.com/entry/2015/11/28/085754
-NCBIの "E-utilities" が結構便利な件 - バイオインフォマティクス初心者の日常
-
-2015年01月16日
-https://allabout.co.jp/gm/gc/450789/2/
-Ruby／Rubyの基礎知識
-APIからJSONデータを取得する(2ページ目)
 
 ----------
 ## [gff](http://genome.ucsc.edu/FAQ/FAQformat.html#format3)
@@ -474,33 +297,6 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2940326/ Campylobacter Pan-Genomes
 Annotation and Enrichment Tests
 
 Gene ontology (Ashburner et al. 2000) (GO) annotations were obtained for each orthologous cluster using HMMER searches (Eddy 2008) on the Pfam A and B databases (Finn et al. 2010) and using Blast against the Uniref90 database (Suzek et al. 2007). Best hits were then mapped to GO terms using the pfam2go mapping (Hunter et al. 2009) and the GOA database (Barrell et al. 2009), respectively. GO enrichment tests were conducted using GO::TermFinder (Boyle et al. 2004) with false discovery rate (FDR) correction and a 5% significance level.
-
-
-
-----------
-
-
-https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan#pairwise-sequence-alignment
-
-- DDBJ [配列の記載に用いる略号](http://www.ddbj.nig.ac.jp/sub/code-j.html)
-  - [塩基](https://www.ddbj.nig.ac.jp/ddbj/code.html#nucleotide)
-  - [アミノ酸](https://www.ddbj.nig.ac.jp/ddbj/code.html#amino)
-- 2017.06.03 [配列解析 | 塩基配列解析とアミノ酸配列解析](https://bi.biopapyrus.jp/seq/)
-  - 配列
-    - [置換行列 | スコアマトリックスの作り方](https://bi.biopapyrus.jp/seq/score-matrix.html)
-  - [アラインメント | 核酸あるいはアミノ酸配列を複数並べ類縁度を可視化](https://bi.biopapyrus.jp/seq/alignment/)
-    - [グローバルアライメントを求める Needleman–Wunsch アルゴリズム](https://bi.biopapyrus.jp/seq/alignment/needleman–wunsch.html)
-    - [ローカルアラインメントを求める Smith-Waterman アルゴリズム](https://bi.biopapyrus.jp/seq/alignment/smith-waterman.html)
-- [2-1. 配列解析基礎 Basic Sequence Analysis 坊農 秀雅](http://www.iu.a.u-tokyo.ac.jp/~kadota/bioinfo_ngs_sokushu_2014/20140905_2-1_bono.pdf)
-- 24 July 2012 [Aritalab:Lecture/Bioinformatics/Alignment - Metabolomics.JP](http://metabolomics.jp/wiki/Aritalab:Lecture/Bioinformatics/Alignment)
-
-- 2009.9.12 [バイオインフォマティクス基礎講座 配列解析 川端 猛](http://www.jst.go.jp/nbdc/bird/jinzai/literacy/streaming/h21_3_1.pdf)
-- [バイオインフォマティクス-ゲノム配列から機能解析へ-第3章3.4節配列アラインメントにおけるスコア行列とギャップペナルティの使用方法](http://qiita.com/kino-tohoku/items/d4e0441e7ed6222106fa)
-
-https://www.dna.bio.keio.ac.jp/lecture/bioinfo/bioinformatics-3.pdf
-バイオインフォマティクス (第3回)
-慶應義塾大学生命情報学科 榊原康文
-
 
 
 ----------
