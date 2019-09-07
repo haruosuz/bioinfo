@@ -306,7 +306,11 @@ conda install -c bioconda seqkit
 ## rrnDB
 リボソームRNAオペロンのコピー数データベース [rrnDB](https://rrndb.umms.med.umich.edu/)
 
-シェルスクリプト*scripts/run_rrnDB.sh*を取得し実行する:  
+[Wolbachia](https://github.com/haruosuz/microbe/blob/master/references/README.bacteria.md#wolbachia)属に属する細菌の16S rRNA遺伝子系統解析を行う
+
+### shell script
+
+シェルスクリプト*run_rrnDB.sh*を取得し実行する:  
 ```
 # Downloading the shell script
 curl -O https://raw.githubusercontent.com/haruosuz/bioinfo/master/2019/scripts/run_rrnDB.sh
@@ -315,7 +319,7 @@ curl -O https://raw.githubusercontent.com/haruosuz/bioinfo/master/2019/scripts/r
 (time bash ./run_rrnDB.sh &) >& log.rrnDB.$(date +%F).txt
 ```
 
-step by step tutorial
+### step by step tutorial
 
 [Download](https://rrndb.umms.med.umich.edu/static/download/)から、16S rRNAをコードするDNA塩基配列のFASTA形式ファイルを取得する:  
 ```
@@ -323,8 +327,6 @@ step by step tutorial
 curl -O https://rrndb.umms.med.umich.edu/static/download/rrnDB-5.5_16S_rRNA.fasta.zip
 unzip rrnDB-5.5_16S_rRNA.fasta.zip
 ```
-
-[Wolbachia](https://github.com/haruosuz/microbe/blob/master/references/README.bacteria.md#wolbachia)属の細菌の解析例。
 
 "Wolbachia"にマッチする行を表示する:
 ```
@@ -362,5 +364,3 @@ raxmlHPC-SSE3 -s "${sequenceFileName}" -n "${outputFileName}" -m "${substitution
 [FigTree](http://www.fish-evol.org/FigTree.html)や[SeaView](http://doua.prabi.fr/software/seaview)で系統樹を描く。
 
 ----------
-
-
