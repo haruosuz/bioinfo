@@ -21,25 +21,14 @@ GitHub - bonohu/DrBonoDojo: 生命科学者のためのDr.Bonoデータ解析実
 http://blog.hypoxia.jp/tag/drbonodojo
 「生命科学者のためのDr.Bonoデータ解析実践道場」が出ました
 
-```
-mkdir ~/projects
-cd ~/projects/
-```
-
+    mkdir ~/projects
+    cd ~/projects/
 
 p.51
 
-```
-
-git clone https://github.com/bonohu/DrBonoDojo
-
-cd DrBonoDojo/
-
-ls -F
-
-```
-
-
+	git clone https://github.com/bonohu/DrBonoDojo
+	cd DrBonoDojo/
+	ls -F
 
 1章 準備編 
 
@@ -68,69 +57,58 @@ Bioconda のインストール
 https://conda.io/miniconda.html
 
 https://bioconda.github.io/user/install.html
-```
-# 1. Install conda
-curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
-# 
-sh Miniconda3-latest-MacOSX-x86_64.sh
-```
+
+    # 1. Install conda
+	curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
+	# 
+	sh Miniconda3-latest-MacOSX-x86_64.sh
 
 p.40
-```
-# Anacondaでchannelを追加
-conda config --add channels defaults
-conda config --add channels bioconda
-conda config --add channels conda-forge
-```
+
+	# Anacondaでchannelを追加
+	conda config --add channels defaults
+	conda config --add channels conda-forge
+	conda config --add channels bioconda
 
 https://bioconda.github.io/
 
-```
-# 3. Install packages
+    # 3. Install packages
 
-# coreutils
-conda install -c bioconda coreutils
+	# coreutils
+	conda install -c bioconda coreutils
 
-which df
-df -H
-/bin/df -H
+	which df
+	df -H
+	/bin/df -H
 
-# EMBOSS
-conda install -c bioconda emboss
+	# EMBOSS
+	conda install -c bioconda emboss
 
     cd ~/projects/DrBonoDojo/2-2/
-cat DNA.txt
-revseq DNA.txt rev.txt
-cat rev.txt 
-```
+	cat DNA.txt
+	revseq DNA.txt rev.txt
+	cat rev.txt 
 
 http://togotv.dbcls.jp/tags.html?tag=EMBOSS
 
 p.46
 
-```
-# Homebrewのインストール
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	# Homebrewのインストール
+	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-# brewsci/bioとbrewsci/scienceを追加
-brew tap brewsci/bio
-brew tap brewsci/science
-```
+	# brewsci/bioとbrewsci/scienceを追加
+	brew tap brewsci/bio
+	brew tap brewsci/science
 
 p.48
 
 繰り返し処理
 
-```
-
-seq 5 10
-
-for c in `seq 1 100`; do echo $c; done
+	seq 5 10
+	for c in `seq 1 100`; do echo $c; done
 
     cd ~/projects/DrBonoDojo/2-3/
-sh for-seq.sh
-
-```
+	sh for-seq.sh
 
 p.57
 
@@ -142,25 +120,22 @@ rsync
 
 byobu
 
-```
-# byobuインストール
-conda install byobu
+	# byobuインストール
+	conda install byobu
 
-byobu
+	byobu
 
     cd ${HOME}/miniconda3/lib
 
-ls -l libtinfo*
+	ls -l libtinfo*
 
-ln libtinfow.6.dylib libtinfo.6.dylib 
+	ln libtinfow.6.dylib libtinfo.6.dylib 
 
-byobu
-
+	byobu
 
     exit
 
 
-```
 
 
 3章 実践編 
