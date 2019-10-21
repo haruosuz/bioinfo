@@ -2,330 +2,107 @@
 **ケーススタディ**
 
 ## Table of Contents
-- [2019-08-04](#2019-08-04) 第3回 進化学セミナー プログラム | 木村資生記念 進化学セミナー
+- [2019-10-23](#2019-10-23) 第222回農林交流センターワークショップ「分子系統樹推定法：理論と応用」
+- [2019-10-24](#2019-10-24) 第222回農林交流センターワークショップ「分子系統樹推定法：理論と応用」
+- [2019-10-25](#2019-10-25) 第222回農林交流センターワークショップ「分子系統樹推定法：理論と応用」
 - [Install](#install)
 - [rrnDB](#rrndb)
+- [DoMosaics](#domosaics)
+- [2019-08-04](#2019-08-04) 第3回 進化学セミナー プログラム | 木村資生記念 進化学セミナー
 - [Sequence similarity search](#sequence-similarity-search) 配列類似性検索
 - [UniProtKB Swiss-Prot protein sequence database](#uniprotkb-swiss-prot-protein-sequence-database) タンパク質配列データベース
 
 ----------
-# DrBonoDojo
-
-https://www.medsi.co.jp/products/detail/3708
-(MEDSi)株式会社 メディカル・サイエンス・インターナショナル / 生命科学者のためのDr.Bonoデータ解析実践道場
-
-https://github.com/bonohu/DrBonoDojo
-GitHub - bonohu/DrBonoDojo: 生命科学者のためのDr.Bonoデータ解析実践道場
-
-2019/10/20(日)
-https://oum-python.connpass.com/event/149085/
-「生命科学者のためのDr.Bonoデータ解析実践道場」読書会 @大阪 - connpass
-
-2019/9/25
-http://blog.hypoxia.jp/tag/drbonodojo
-「生命科学者のためのDr.Bonoデータ解析実践道場」が出ました
-
-## 
-### 
-
-    mkdir ~/projects
-    cd ~/projects/
-
-p.51
-
-	git clone https://github.com/bonohu/DrBonoDojo
-	cd DrBonoDojo/
-	ls -F
-
-1章 準備編 
-
-1.1 Mac を買おう
-
-1.2 Mac をセットアップしよう
-
- 1.3 周辺機器の設定
-
-p.15
-
-2章 基礎編 
-
-2.1 UNIX コマンドラインを使ってみよう
-
-2.2 コマンドラインの基本操作 
-
-p.36
-
-2.3 シェルプログラミングのための環境構築 
-
-p.37
-
-Bioconda のインストール
-
-https://conda.io/miniconda.html
-
-https://bioconda.github.io/user/install.html
-
-    # 1. Install conda
-	curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
-	# 
-	sh Miniconda3-latest-MacOSX-x86_64.sh
-
-p.40
-
-	# Anacondaでchannelを追加
-	conda config --add channels defaults
-	conda config --add channels conda-forge
-	conda config --add channels bioconda
-
-https://bioconda.github.io/
-
-    # 3. Install packages
-
-	# coreutils
-	conda install -c bioconda coreutils
-
-	which df
-	df -H
-	/bin/df -H
-
-	# EMBOSS
-	conda install -c bioconda emboss
-
-    cd ~/projects/DrBonoDojo/2-2/
-	cat DNA.txt
-	revseq DNA.txt rev.txt
-	cat rev.txt 
-
-http://togotv.dbcls.jp/tags.html?tag=EMBOSS
-
-p.46
-
-	# Homebrewのインストール
-	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-	# brewsci/bioとbrewsci/scienceを追加
-	brew tap brewsci/bio
-	brew tap brewsci/science
-
-p.48
-
-繰り返し処理
-
-	seq 5 10
-	for c in `seq 1 100`; do echo $c; done
-
-    cd ~/projects/DrBonoDojo/2-3/
-	sh for-seq.sh
-
-p.57
-
-2.4 ネットワークを介して遠隔のコンピュータを操作する
-
-ssh
-
-rsync
-
-byobu
-
-	# byobuインストール
-	conda install byobu
-
-	byobu
-
-    cd ${HOME}/miniconda3/lib
-
-	ls -l libtinfo*
-
-	ln libtinfow.6.dylib libtinfo.6.dylib 
-
-	byobu
-
-    exit
-
-3章 実践編 
-
-3.1 公共データベースからのデータ取得
-
-https://www.slideshare.net/atsushhar/31-184203390
-3-1
-
-p.70
-
-	cd
-	cd Downloads/
-	mkdir datadojo
-	cd datadojo/
-	pwd
-
-	# 
-	curl -O ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/002/195/GCF_000002195.4_Amel_4.5/GCF_000002195.4_Amel_4.5_protein.faa.gz
-
-	# Anacondaを使ってwgetをインストール
-	conda install wget
-
-
-ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/ をブラウザ（Firefox または Chrome）で開く。
-*assembly_summary_refseq_historical.txt* を右クリックし、「リンクのURLをコピー (Copy Link)」する。
-
-Open the URL ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/ with your browser (Firefox or Chrome).
-Right click the link *assembly_summary_refseq_historical.txt*, and select "Copy Link Address".
-
-````
-curl -O ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/assembly_summary_refseq_historical.txt
-grep "GCF_000002195.4" assembly_summary_refseq_historical.txt
-
-GCF_000002195.4	PRJNA13343	SAMN00002455	AADG00000000.6	na	7460	7460	Apis mellifera	strain=DH4		suppressed	Chromosome	Major	Full	2011/01/14	Amel_4.5	Human Genome Sequencing Center	GCA_000002195.1	different	ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/002/195/GCF_000002195.4_Amel_4.5
-```
-
-URL <ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/002/195/GCF_000002195.4_Amel_4.5> をブラウザ（Firefox または Chrome）で開く。 *GCF_000002195.4_Amel_4.5_protein.faa.gz* を右クリックし、「リンクのURLをコピー (Copy Link)」する。
-
-Open the URL <ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/002/195/GCF_000002195.4_Amel_4.5> with your browser (Firefox or Chrome).
-Right click the link *GCF_000002195.4_Amel_4.5_protein.faa.gz*, and select "Copy Link Address".
-
-
-p.79
-
-	cd ~/Downloads/datadojo/
-
-    # https://www.uniprot.org/downloads
-	curl -O ftp://ftp.uniprot.org/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.fasta.gz
-
-いまここ
-
-    # https://asia.ensembl.org/info/data/ftp/index.html
-    # ftp://ftp.ensembl.org/pub/release-98/fasta/homo_sapiens/dna/
-    wget -b ftp://ftp.ensembl.org/pub/release-98/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.toplevel.fa.gz
-
-    # ftp://ftp.ensembl.org/pub/current_fasta/homo_sapiens/dna/
-	curl -O ftp://ftp.ensembl.org/pub/current_fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.toplevel.fa.gz
-
-
-3.2 配列類似性検索 
-
-p.110
-
-3.3 系統樹作成 
-
-p.122
-
-http://www.microbesonline.org/fasttree/
-FastTree 2.1: Approximately-Maximum-Likelihood Trees for Large Alignments
-To quickly estimate the reliability of each split in the tree, FastTree computes local support values with the Shimodaira-Hasegawa test (these are the same as PhyML 3's "SH-like local supports").
-http://www.microbesonline.org/fasttree/#Support
-
-fasttreeのLocal support valuesは、bootstrap値ではないことに注意。
-http://www.microbesonline.org/fasttree/#Support
-
-
-
-DoMosaics (https://doi.org/10.7875/togotv.2017.077) のウェブサイトは
-http://www.domosaics.net/ http://domosaics.net/docs/index.html
-が利用できないので
-https://domainworld.uni-muenster.de/developing/domosaics/
-を利用することになりました。
-
-
-p.129
-
-3.4 ドメイン解析 
-
-	conda install hmmer
-
-
-p.145
-
-
-
-
-情報ありがうございます。
-修正しました。
-https://togotv.dbcls.jp/20170804.html
-
-
-
-3.5 発現定量解析 
-
-3.6 データ統合解析
-
-
-
-
-----------
-
-# 2019-08-04
-
-https://kimuraseminar.wordpress.com/第3回-進化学セミナー-プログラム/
-第3回 進化学セミナー プログラム | 木村資生記念 進化学セミナー
-
-## 
-14:20~17:30	ソフトウェア演習（資料はこちら）
-長田直樹 (北海道大学)・呉佳齊（東京工業大学）
-手島康介（九州大学）・池村淑道 (長浜バイオ大学)
-
-### PopulationGenetics_Osada
-
-```
-cd ~/2019-08-04/PopulationGenetics_Osada/PopulationGenetics_Osada/
-open installing_software.html
-open Kimura_lecture.html
-```
-
-### TraitEvolution_Wu
-
-```
-open ~/2019-08-04/TraitEvolution_Wu/TraitEvolutionPractise.pdf
-
-# Infer tree by morphological data: trait_matrix.txt
-cd ~/2019-08-04/TraitEvolution_Wu/MorphologicalTrees/
-Rscript --vanilla ./Trait_Evolution.R
-
-# Changing format using Ape in R
-cd ~/2019-08-04/TraitEvolution_Wu/AncestorStateReconstruction/
-Rscript --vanilla ./ChangeToNexTree.R
-
-# MultiState + Maximum Likelihood Method
-./BayesTraitsV2 tree.nex Traits.txt
-
-Please select the model of evolution to use.
-1)	MultiState
-1
-
-Please select the analysis method to use.
-1)	Maximum Likelihood.
-2)	MCMC
-1
-
-> run
-
-# Two-way ANOVA model adapted to Poisson regression
-cd ~/2019-08-04/TraitEvolution_Wu/GeneSpecificRate/
-Rscript --vanilla ./GeneSepcificRate.R
-
-# Lasso penalized logistic regression
-cd ~/2019-08-04/TraitEvolution_Wu/PredictionPrecedure/
-ln -s  data/rate.pois.matrix.txt
-Rscript --vanilla ./PredictionProcedure.R
-```
-
-### AI_Ikemura
-
-https://dl.sony.com/ja/
-Neural Network Console
-
-----------
-
-https://twitter.com/Symbionticism/status/1123203760564637697
-Seth Bordenstein on Twitter: "This is a game changer. Many intracellular microbes have a genome wide bias in A’s and T’s. The major assumption has been a mutational bias / drift impacts this outcome. Well, not so fast. Evidence below that selection can contribute or cause it.… https://t.co/yfDqN3b3Lj"
-8:33 AM - 30 Apr 2019
-https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1007778
-Selective advantages favour high genomic AT-contents in intracellular elements
-Accordingly, introducing AT-rich and GC-rich plasmids into other bacterial species with different genomic GC-contents revealed that the costs of G+C-rich plasmids decreased with an increasing GC-content of their host’s genomic DNA. 
 
 - https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#silva-rrna-database
 - https://github.com/haruosuz/DS4GD/tree/master/2019
 - https://github.com/haruosuz/introBI/blob/master/2018/CaseStudy.md
 - https://github.com/haruosuz/introBI/blob/master/2018/CaseStudy.md#inspecting-data
 - https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md
+
+----------
+## 2019-10-23
+
+https://twitter.com/search?q=分子系統樹推定法：理論と応用
+
+http://www.affrc.maff.go.jp/tsukuba/top/event/workshop/ws_2019/222ws.html
+第222回農林交流センターワークショップ「分子系統樹推定法：理論と応用」
+
+```
+講義と実習内容
+2019年10月23日（水曜日）
+09時30分-09時35分	【挨拶】農林水産省農林水産技術会議事務局   筑波産学連携支援センター コーディネーション推進課長  荒川 智幸
+09時35分-10時30分	【講義】「生物体系学概論」  三中 信宏（農研機構 農業環境変動研究センター）
+10時30分-12時00分 	【講義】「進化ゲノム学と系統推定」  斎藤 成也（国立遺伝学研究所）
+13時00分-15時00分 	【講義・実習】「ゲノム情報の探索と配列のアラインメント」  伊藤 剛（農研機構 高度解析センター）
+15時00分-17時00分	【講義・実習】「MEGA X を用いた分子系統解析」 田村 浩一郎（首都大学東京）
+```
+
+### MINAKA Nobuhiro
+
+https://twitter.com/leeswijzer
+MINAKA Nobuhiro (@leeswijzer) / Twitter
+
+
+
+### Saitou_Sayer
+
+https://twitter.com/Saitou_Sayer
+斎藤成也 (@Saitou_Sayer) / Twitter
+
+http://www.saitou-naruya-laboratory.org/member.html
+
+http://www.saitou-naruya-laboratory.org/english/index.html
+
+
+
+## 2019-10-24
+
+```
+2019年10月24日（木曜日）
+09時00分-10時30分	【講義・実習】「分岐年代のベイズ推定」  井上 潤（国立遺伝学研究所）
+10時30分-12時00分	【講義・実習】「系統ネットワークの理論と応用」  北野 誉（茨城大学）
+13時00分-15時00分	【講義】「かたちと遺伝子にみる相同と同形：基礎概念とデータ運用」  鈴木 誉保（農研機構 生物機能利用研究部門）
+15時00分-17時00分 	【講義】「表現型の系統種間比較」  沓掛 展之（総合研究大学院大学）
+```
+
+### 
+
+
+https://researchmap.jp/JunINOUE/
+
+
+http://www.fish-evol.org/index.html
+井上 潤のウェブサイト
+
+http://www.fish-evol.org/index_eng.html
+Home page of Jun Inoue
+
+
+https://www.oist.jp/ja/news-center/news/2018/12/13/33415
+遺伝子の由来を推定するウェブツール ORTHOSCOPE を開発 | 沖縄科学技術大学院大学 OIST
+
+### 
+
+
+
+
+
+
+## 2019-10-25
+
+```
+2019年10月25日（金曜日）
+09時00分-10時30分	【講義】「非モデル生物多種間比較によるゲノム・生態・進化の統合的研究」 奥山 雄大（国立科学博物館）
+10時30分-12時00分 	【実習】「分子系統樹推定に適した配列データセットの作成」   田辺 晶史（京都大学生態学研究センター）
+13時00分-14時00分	【実習】「分子進化の統計モデリングとモデル選択」  田辺 晶史
+14時00分-15時00分	【実習】「最尤系統樹推定と系統樹の信頼性評価」  田辺 晶史
+15時00分-16時00分	【実習】「系統樹・系統仮説の可視化と系統仮説間の統計的比較」  田辺 晶史
+16時00分-17時00分	【実習】「質疑と総合討論」  三中 信宏、田辺 晶史
+```
+
+
+
 
 ----------
 ## Install
@@ -413,8 +190,6 @@ raxmlHPC-SSE3 -s "${sequenceFileName}" -n "${outputFileName}" -m "${substitution
 ```
 
 [FigTree](http://www.fish-evol.org/FigTree.html)や[SeaView](http://doua.prabi.fr/software/seaview)で系統樹を描く。
-
-
 
 ----------
 ## DoMosaics
@@ -509,6 +284,67 @@ Load sequences
  Co-Occurring Domain Detection: Pfam v27
 ```
 
+
+
+----------
+## 2019-08-04
+
+https://kimuraseminar.wordpress.com/第3回-進化学セミナー-プログラム/
+第3回 進化学セミナー プログラム | 木村資生記念 進化学セミナー
+
+14:20~17:30	ソフトウェア演習（資料はこちら）
+長田直樹 (北海道大学)・呉佳齊（東京工業大学）
+手島康介（九州大学）・池村淑道 (長浜バイオ大学)
+
+### PopulationGenetics_Osada
+
+```
+cd ~/2019-08-04/PopulationGenetics_Osada/PopulationGenetics_Osada/
+open installing_software.html
+open Kimura_lecture.html
+```
+
+### TraitEvolution_Wu
+
+```
+open ~/2019-08-04/TraitEvolution_Wu/TraitEvolutionPractise.pdf
+
+# Infer tree by morphological data: trait_matrix.txt
+cd ~/2019-08-04/TraitEvolution_Wu/MorphologicalTrees/
+Rscript --vanilla ./Trait_Evolution.R
+
+# Changing format using Ape in R
+cd ~/2019-08-04/TraitEvolution_Wu/AncestorStateReconstruction/
+Rscript --vanilla ./ChangeToNexTree.R
+
+# MultiState + Maximum Likelihood Method
+./BayesTraitsV2 tree.nex Traits.txt
+
+Please select the model of evolution to use.
+1)	MultiState
+1
+
+Please select the analysis method to use.
+1)	Maximum Likelihood.
+2)	MCMC
+1
+
+> run
+
+# Two-way ANOVA model adapted to Poisson regression
+cd ~/2019-08-04/TraitEvolution_Wu/GeneSpecificRate/
+Rscript --vanilla ./GeneSepcificRate.R
+
+# Lasso penalized logistic regression
+cd ~/2019-08-04/TraitEvolution_Wu/PredictionPrecedure/
+ln -s  data/rate.pois.matrix.txt
+Rscript --vanilla ./PredictionProcedure.R
+```
+
+### AI_Ikemura
+
+https://dl.sony.com/ja/
+Neural Network Console
 
 
 
