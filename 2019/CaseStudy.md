@@ -28,10 +28,9 @@ https://twitter.com/search?q=分子系統樹推定法：理論と応用
 http://www.affrc.maff.go.jp/tsukuba/top/event/workshop/ws_2019/222ws.html
 第222回農林交流センターワークショップ「分子系統樹推定法：理論と応用」
 
-```
 講義と実習内容
+```
 2019年10月23日（水曜日）
-09時30分-09時35分	【挨拶】農林水産省農林水産技術会議事務局   筑波産学連携支援センター コーディネーション推進課長  荒川 智幸
 09時35分-10時30分	【講義】「生物体系学概論」  三中 信宏（農研機構 農業環境変動研究センター）
 10時30分-12時00分 	【講義】「進化ゲノム学と系統推定」  斎藤 成也（国立遺伝学研究所）
 13時00分-15時00分 	【講義・実習】「ゲノム情報の探索と配列のアラインメント」  伊藤 剛（農研機構 高度解析センター）
@@ -39,13 +38,14 @@ http://www.affrc.maff.go.jp/tsukuba/top/event/workshop/ws_2019/222ws.html
 ```
 
 ### MINAKA Nobuhiro
+09時35分-10時30分	【講義】「生物体系学概論」  三中 信宏（農研機構 農業環境変動研究センター）
+
 
 https://twitter.com/leeswijzer
 MINAKA Nobuhiro (@leeswijzer) / Twitter
 
-
-
 ### Saitou_Sayer
+10時30分-12時00分 	【講義】「進化ゲノム学と系統推定」  斎藤 成也（国立遺伝学研究所）
 
 https://twitter.com/Saitou_Sayer
 斎藤成也 (@Saitou_Sayer) / Twitter
@@ -54,6 +54,24 @@ http://www.saitou-naruya-laboratory.org/member.html
 
 http://www.saitou-naruya-laboratory.org/english/index.html
 
+### 
+13時00分-15時00分 	【講義・実習】「ゲノム情報の探索と配列のアラインメント」  伊藤 剛（農研機構 高度解析センター）
+
+
+
+### Koichiro Tamura
+15時00分-17時00分	【講義・実習】「MEGA X を用いた分子系統解析」 田村 浩一郎（首都大学東京）
+
+
+http://www.biol.se.tmu.ac.jp/member/tamura/ja/
+http://www.biol.se.tmu.ac.jp/member/tamura/en/
+
+https://github.com/haruosuz/evolve/blob/master/references/README.evolve.tools.md#mega
+
+https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#togotv
+10 章 MEGAで系統樹を作成する	
+　　　MEGA で配列のアラインメントや系統解析を行う
+https://doi.org/10.7875/togotv.2011.076 2011-07-05 MEGAを使って配列アラインメントおよび系統解析をする
 
 
 ## 2019-10-24
