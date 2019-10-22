@@ -14,6 +14,17 @@
 
 ----------
 
+http://www.leeswijzer.org/cladist/cladist-top.html
+結界〈Ｔ〉の一里塚 —— 彷徨する系統樹思考者のために
+- https://togetter.com/li/742642
+2014年度・第188回農林交流センターワークショップ〈分子系統学の理論と実習〉ツイートまとめ - Togetter
+- https://togetter.com/li/587872
+2013年度・第176回農林交流センターワークショップ〈分子系統学の理論と実習〉ツイートまとめ - Togetter
+- https://togetter.com/li/399359
+2012年度・第166回農林交流センターワークショップ〈分子系統樹推定法：理論と応用〉 ツイートまとめ - Togetter
+- https://togetter.com/li/207308
+分子系統学の理論と実習 - Togetter
+
 ----------
 ## 2019-10-23
 
@@ -37,33 +48,11 @@ http://www.affrc.maff.go.jp/tsukuba/top/event/workshop/ws_2019/222ws.html
 https://twitter.com/leeswijzer
 MINAKA Nobuhiro (@leeswijzer) / Twitter
 
-http://www.leeswijzer.org/
-MINAKA Nobuhiros nieuwe pagina
-
-http://www.leeswijzer.org/cladist/cladist-top.html
-結界〈Ｔ〉の一里塚 —— 彷徨する系統樹思考者のために
-- https://togetter.com/li/742642
-2014年度・第188回農林交流センターワークショップ〈分子系統学の理論と実習〉ツイートまとめ - Togetter
-- https://togetter.com/li/587872
-2013年度・第176回農林交流センターワークショップ〈分子系統学の理論と実習〉ツイートまとめ - Togetter
-- https://togetter.com/li/399359
-2012年度・第166回農林交流センターワークショップ〈分子系統樹推定法：理論と応用〉 ツイートまとめ - Togetter
-- https://togetter.com/li/207308
-分子系統学の理論と実習 - Togetter
-
 ### Naruya Saitou
 10時30分-12時00分 	【講義】「進化ゲノム学と系統推定」  斎藤 成也（国立遺伝学研究所）
 
 https://twitter.com/Saitou_Sayer
 斎藤成也 (@Saitou_Sayer) / Twitter
-
-http://www.saitou-naruya-laboratory.org/member.html
-
-http://www.saitou-naruya-laboratory.org/english/index.html
-
-http://www.saitou-naruya-laboratory.org/meetings/NJ50000_jpn.html
-NJover50000 Symposium
-斎藤・根井(1987)近隣結合法論文の引用件数５万件越えを祝う特別シンポジウム
 
 ### Takeshi Itoh
 13時00分-15時00分 	【講義・実習】「ゲノム情報の探索と配列のアラインメント」  伊藤 剛（農研機構 高度解析センター）
@@ -79,7 +68,6 @@ http://www.biol.se.tmu.ac.jp/member/tamura/ja/
 
 http://www.biol.se.tmu.ac.jp/member/tamura/en/
 
-https://github.com/haruosuz/evolve/blob/master/references/README.evolve.tools.md#mega
 
 https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#togotv
 10 章 MEGAで系統樹を作成する	
