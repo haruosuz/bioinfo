@@ -14,15 +14,6 @@
 
 ----------
 
-- https://togetter.com/li/742642
-2014年度・第188回農林交流センターワークショップ〈分子系統学の理論と実習〉ツイートまとめ - Togetter
-- https://togetter.com/li/587872
-2013年度・第176回農林交流センターワークショップ〈分子系統学の理論と実習〉ツイートまとめ - Togetter
-- https://togetter.com/li/399359
-2012年度・第166回農林交流センターワークショップ〈分子系統樹推定法：理論と応用〉 ツイートまとめ - Togetter
-- https://togetter.com/li/207308
-分子系統学の理論と実習 - Togetter
-
 ----------
 ## 2019-10-23
 
@@ -51,6 +42,14 @@ MINAKA Nobuhiros nieuwe pagina
 
 http://www.leeswijzer.org/cladist/cladist-top.html
 結界〈Ｔ〉の一里塚 —— 彷徨する系統樹思考者のために
+- https://togetter.com/li/742642
+2014年度・第188回農林交流センターワークショップ〈分子系統学の理論と実習〉ツイートまとめ - Togetter
+- https://togetter.com/li/587872
+2013年度・第176回農林交流センターワークショップ〈分子系統学の理論と実習〉ツイートまとめ - Togetter
+- https://togetter.com/li/399359
+2012年度・第166回農林交流センターワークショップ〈分子系統樹推定法：理論と応用〉 ツイートまとめ - Togetter
+- https://togetter.com/li/207308
+分子系統学の理論と実習 - Togetter
 
 ### Saitou_Sayer
 10時30分-12時00分 	【講義】「進化ゲノム学と系統推定」  斎藤 成也（国立遺伝学研究所）
