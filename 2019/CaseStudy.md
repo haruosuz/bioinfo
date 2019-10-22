@@ -31,7 +31,7 @@ http://www.affrc.maff.go.jp/tsukuba/top/event/workshop/ws_2019/222ws.html
 15時00分-17時00分	【講義・実習】「MEGA X を用いた分子系統解析」 田村 浩一郎（首都大学東京）
 ```
 
-### MINAKA Nobuhiro
+### Nobuhiro MINAKA
 09時35分-10時30分	【講義】「生物体系学概論」  三中 信宏（農研機構 農業環境変動研究センター）
 
 https://twitter.com/leeswijzer
@@ -51,7 +51,7 @@ http://www.leeswijzer.org/cladist/cladist-top.html
 - https://togetter.com/li/207308
 分子系統学の理論と実習 - Togetter
 
-### Saitou_Sayer
+### Naruya Saitou
 10時30分-12時00分 	【講義】「進化ゲノム学と系統推定」  斎藤 成也（国立遺伝学研究所）
 
 https://twitter.com/Saitou_Sayer
@@ -61,10 +61,16 @@ http://www.saitou-naruya-laboratory.org/member.html
 
 http://www.saitou-naruya-laboratory.org/english/index.html
 
-### Itoh
+http://www.saitou-naruya-laboratory.org/meetings/NJ50000_jpn.html
+NJover50000 Symposium
+斎藤・根井(1987)近隣結合法論文の引用件数５万件越えを祝う特別シンポジウム
+
+### Takeshi Itoh
 13時00分-15時00分 	【講義・実習】「ゲノム情報の探索と配列のアラインメント」  伊藤 剛（農研機構 高度解析センター）
 
 https://researchmap.jp/taitoh1970
+伊藤 剛
+イトウ タケシ
 
 ### Koichiro Tamura
 15時00分-17時00分	【講義・実習】「MEGA X を用いた分子系統解析」 田村 浩一郎（首都大学東京）
