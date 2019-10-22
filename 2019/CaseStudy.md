@@ -14,14 +14,6 @@
 
 ----------
 
-- https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#silva-rrna-database
-- https://github.com/haruosuz/DS4GD/tree/master/2019
-- https://github.com/haruosuz/introBI/blob/master/2018/CaseStudy.md
-- https://github.com/haruosuz/introBI/blob/master/2018/CaseStudy.md#inspecting-data
-- https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md
-
-----------
-
 - https://togetter.com/li/742642
 2014年度・第188回農林交流センターワークショップ〈分子系統学の理論と実習〉ツイートまとめ - Togetter
 - https://togetter.com/li/587872
@@ -79,6 +71,7 @@ https://researchmap.jp/taitoh1970
 15時00分-17時00分	【講義・実習】「MEGA X を用いた分子系統解析」 田村 浩一郎（首都大学東京）
 
 http://www.biol.se.tmu.ac.jp/member/tamura/ja/
+
 http://www.biol.se.tmu.ac.jp/member/tamura/en/
 
 https://github.com/haruosuz/evolve/blob/master/references/README.evolve.tools.md#mega
@@ -86,8 +79,8 @@ https://github.com/haruosuz/evolve/blob/master/references/README.evolve.tools.md
 https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#togotv
 10 章 MEGAで系統樹を作成する	
 　　　MEGA で配列のアラインメントや系統解析を行う
-https://doi.org/10.7875/togotv.2011.076 2011-07-05 MEGAを使って配列アラインメントおよび系統解析をする
-
+- https://doi.org/10.7875/togotv.2011.076
+2011-07-05 MEGAを使って配列アラインメントおよび系統解析をする
 
 ## 2019-10-24
 
@@ -584,6 +577,14 @@ BLASTの実行:
 
 
 
+
+- https://github.com/haruosuz/DS4GD/blob/master/2017giga/CaseStudy.md#silva-rrna-database
+- https://github.com/haruosuz/DS4GD/tree/master/2019
+- https://github.com/haruosuz/introBI/blob/master/2018/CaseStudy.md
+- https://github.com/haruosuz/introBI/blob/master/2018/CaseStudy.md#inspecting-data
+- https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md
+
+----------
 
 
 
