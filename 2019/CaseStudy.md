@@ -65,15 +65,7 @@ https://researchmap.jp/taitoh1970
 15時00分-17時00分	【講義・実習】「MEGA X を用いた分子系統解析」 田村 浩一郎（首都大学東京）
 
 http://www.biol.se.tmu.ac.jp/member/tamura/ja/
-
 http://www.biol.se.tmu.ac.jp/member/tamura/en/
-
-
-https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#togotv
-10 章 MEGAで系統樹を作成する	
-　　　MEGA で配列のアラインメントや系統解析を行う
-- https://doi.org/10.7875/togotv.2011.076
-2011-07-05 MEGAを使って配列アラインメントおよび系統解析をする
 
 ## 2019-10-24
 
@@ -85,7 +77,7 @@ https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.
 15時00分-17時00分 	【講義】「表現型の系統種間比較」  沓掛 展之（総合研究大学院大学）
 ```
 
-### JunINOUE
+### Jun INOUE
 09時00分-10時30分	【講義・実習】「分岐年代のベイズ推定」  井上 潤（国立遺伝学研究所）
 
 https://researchmap.jp/JunINOUE/
