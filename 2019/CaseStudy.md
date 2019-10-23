@@ -25,10 +25,12 @@ http://www.leeswijzer.org/cladist/cladist-top.html
 - https://togetter.com/li/207308
 分子系統学の理論と実習 - Togetter
 
+https://twitter.com/search?q=分子系統樹推定法：理論と応用
+
 ----------
 ## 2019-10-23
 
-https://twitter.com/search?q=分子系統樹推定法：理論と応用
+ハッシュタグ [#ws222](https://twitter.com/hashtag/ws222?f=live)
 
 http://www.affrc.maff.go.jp/tsukuba/top/event/workshop/ws_2019/222ws.html
 第222回農林交流センターワークショップ「分子系統樹推定法：理論と応用」
