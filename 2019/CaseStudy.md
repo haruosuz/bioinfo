@@ -116,9 +116,18 @@ TKS (@HomareZuki) / Twitter
 13時00分-14時00分	【実習】「分子進化の統計モデリングとモデル選択」  田辺 晶史
 14時00分-15時00分	【実習】「最尤系統樹推定と系統樹の信頼性評価」  田辺 晶史
 15時00分-16時00分	【実習】「系統樹・系統仮説の可視化と系統仮説間の統計的比較」  田辺 晶史
-- https://twitter.com/windowmoon
-- https://www.fifthdimension.jp/wiki.cgi
 
+- https://github.com/haruosuz/evolve/blob/master/README.md#fifthdimension
+- https://www.fifthdimension.jp/wiki.cgi
+- https://www.fifthdimension.jp/documents/molphytextbook/
+Life is fifthdimension.::Documents::分子系統学演習
+必要なソフトウェア(Mac OS X x86_64用)
+分子系統解析関連ソフト詰め合わせ
+- https://www.fifthdimension.jp/products/molphypack/
+```
+curl -O https://www.fifthdimension.jp/products/molphypack/install_on_OSX.sh
+(time bash install_on_OSX.sh &) >& log.$(date +%F).txt
+```
 
 ----------
 ## Install
