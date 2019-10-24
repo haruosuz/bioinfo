@@ -29,10 +29,8 @@ https://twitter.com/search?q=分子系統樹推定法：理論と応用
 
 ----------
 ## 2019-10-23
-
-ハッシュタグ [#ws222](https://twitter.com/hashtag/ws222?f=live)
-
-http://www.affrc.maff.go.jp/tsukuba/top/event/workshop/ws_2019/222ws.html
+- ハッシュタグ [#ws222](https://twitter.com/hashtag/ws222?f=live)
+- http://www.affrc.maff.go.jp/tsukuba/top/event/workshop/ws_2019/222ws.html
 第222回農林交流センターワークショップ「分子系統樹推定法：理論と応用」
 
 講義と実習内容
@@ -46,31 +44,26 @@ http://www.affrc.maff.go.jp/tsukuba/top/event/workshop/ws_2019/222ws.html
 
 ### Nobuhiro MINAKA
 09時35分-10時30分	【講義】「生物体系学概論」  三中 信宏（農研機構 農業環境変動研究センター）
-
-https://twitter.com/leeswijzer
+- https://twitter.com/leeswijzer
 MINAKA Nobuhiro (@leeswijzer) / Twitter
 
 ### Naruya Saitou
 10時30分-12時00分 	【講義】「進化ゲノム学と系統推定」  斎藤 成也（国立遺伝学研究所）
-
-https://twitter.com/Saitou_Sayer
+- https://twitter.com/Saitou_Sayer
 斎藤成也 (@Saitou_Sayer) / Twitter
 
 ### Takeshi Itoh
 13時00分-15時00分 	【講義・実習】「ゲノム情報の探索と配列のアラインメント」  伊藤 剛（農研機構 高度解析センター）
-
-https://researchmap.jp/taitoh1970
+- https://researchmap.jp/taitoh1970
 伊藤 剛
 イトウ タケシ
 
 ### Koichiro Tamura
 15時00分-17時00分	【講義・実習】「MEGA X を用いた分子系統解析」 田村 浩一郎（首都大学東京）
-
-http://www.biol.se.tmu.ac.jp/member/tamura/ja/
-http://www.biol.se.tmu.ac.jp/member/tamura/en/
+- http://www.biol.se.tmu.ac.jp/member/tamura/ja/
+- http://www.biol.se.tmu.ac.jp/member/tamura/en/
 
 ## 2019-10-24
-
 ```
 2019年10月24日（木曜日）
 09時00分-10時30分	【講義・実習】「分岐年代のベイズ推定」  井上 潤（国立遺伝学研究所）
@@ -81,22 +74,29 @@ http://www.biol.se.tmu.ac.jp/member/tamura/en/
 
 ### Jun INOUE
 09時00分-10時30分	【講義・実習】「分岐年代のベイズ推定」  井上 潤（国立遺伝学研究所）
-
-https://researchmap.jp/JunINOUE/
-
-http://www.fish-evol.org/index.html
+- https://researchmap.jp/JunINOUE/
+- http://www.fish-evol.org/index.html
 井上 潤のウェブサイト
-
-http://www.fish-evol.org/index_eng.html
+- http://www.fish-evol.org/index_eng.html
 Home page of Jun Inoue
-
-https://www.oist.jp/ja/news-center/news/2018/12/13/33415
+- https://www.oist.jp/ja/news-center/news/2018/12/13/33415
 遺伝子の由来を推定するウェブツール ORTHOSCOPE を開発 | 沖縄科学技術大学院大学 OIST
 
-### 
+### KITANO Takashi
+13時00分-15時00分	【講義】「かたちと遺伝子にみる相同と同形：基礎概念とデータ運用」  鈴木 誉保（農研機構 生物機能利用研究部門）
+- https://info.ibaraki.ac.jp/Profiles/16/0001541/profile.html
+
+### Takao Suzuki
+13時00分-15時00分	【講義】「かたちと遺伝子にみる相同と同形：基礎概念とデータ運用」  鈴木 誉保（農研機構 生物機能利用研究部門）
+- https://researchmap.jp/takaoksuzuki/
+- https://twitter.com/HomareZuki
+TKS (@HomareZuki) / Twitter
+
+### Nobuyuki Kutsukake
+15時00分-17時00分 	【講義】「表現型の系統種間比較」  沓掛 展之（総合研究大学院大学）
+- http://www.esb.soken.ac.jp/research/nobuyuki_kutsukake.html
 
 ## 2019-10-25
-
 ```
 2019年10月25日（金曜日）
 09時00分-10時30分	【講義】「非モデル生物多種間比較によるゲノム・生態・進化の統合的研究」 奥山 雄大（国立科学博物館）
@@ -109,14 +109,15 @@ https://www.oist.jp/ja/news-center/news/2018/12/13/33415
 
 ### Yudai Okuyama
 09時00分-10時30分	【講義】「非モデル生物多種間比較によるゲノム・生態・進化の統合的研究」 奥山 雄大（国立科学博物館）
-
-https://researchmap.jp/read0128283/
+- https://researchmap.jp/read0128283/
 
 ### Akifumi Tanabe
-
-https://twitter.com/windowmoon
-
-https://www.fifthdimension.jp/wiki.cgi
+10時30分-12時00分 	【実習】「分子系統樹推定に適した配列データセットの作成」   田辺 晶史（京都大学生態学研究センター）
+13時00分-14時00分	【実習】「分子進化の統計モデリングとモデル選択」  田辺 晶史
+14時00分-15時00分	【実習】「最尤系統樹推定と系統樹の信頼性評価」  田辺 晶史
+15時00分-16時00分	【実習】「系統樹・系統仮説の可視化と系統仮説間の統計的比較」  田辺 晶史
+- https://twitter.com/windowmoon
+- https://www.fifthdimension.jp/wiki.cgi
 
 
 ----------
