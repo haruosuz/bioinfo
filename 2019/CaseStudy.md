@@ -118,7 +118,6 @@ TKS (@HomareZuki) / Twitter
 15時00分-16時00分	【実習】「系統樹・系統仮説の可視化と系統仮説間の統計的比較」  田辺 晶史
 
 - https://github.com/haruosuz/evolve/blob/master/README.md#fifthdimension
-- https://www.fifthdimension.jp/wiki.cgi
 - https://www.fifthdimension.jp/documents/molphytextbook/
 Life is fifthdimension.::Documents::分子系統学演習
 必要なソフトウェア(Mac OS X x86_64用)
