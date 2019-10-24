@@ -70,6 +70,14 @@ https://www.dna.bio.keio.ac.jp/lecture/bioinfo/bioinformatics-3.pdf
 
 ### 2019
 
+
+https://www.ncbi.nlm.nih.gov/pubmed/30670080
+Genome Biol. 2019 Jan 22;20(1):17. doi: 10.1186/s13059-019-1626-2.
+Where is genomics going next?
+Cheifet B1.
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6341733/
+Chris Mason, Weill Cornell Medicine
+
 ### 2018
 
 2018/07/21
