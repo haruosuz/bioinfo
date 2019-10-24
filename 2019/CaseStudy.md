@@ -124,7 +124,9 @@ Life is fifthdimension.::Documents::分子系統学演習
 必要なソフトウェア(Mac OS X x86_64用)
 分子系統解析関連ソフト詰め合わせ
 - https://www.fifthdimension.jp/products/molphypack/
+Software Package for Molecular Phylogenetic Analysis
 ```
+# install_on_OSX.sh (for MacOS X El Capitan or Sierra on x86_64 Mac)
 curl -O https://www.fifthdimension.jp/products/molphypack/install_on_OSX.sh
 (time bash install_on_OSX.sh &) >& log.$(date +%F).txt
 ```
