@@ -113,22 +113,53 @@ TKS (@HomareZuki) / Twitter
 
 ### Akifumi Tanabe
 10時30分-12時00分 	【実習】「分子系統樹推定に適した配列データセットの作成」   田辺 晶史（京都大学生態学研究センター）
-13時00分-14時00分	【実習】「分子進化の統計モデリングとモデル選択」  田辺 晶史
-14時00分-15時00分	【実習】「最尤系統樹推定と系統樹の信頼性評価」  田辺 晶史
-15時00分-16時00分	【実習】「系統樹・系統仮説の可視化と系統仮説間の統計的比較」  田辺 晶史
 
 - https://github.com/haruosuz/evolve/blob/master/README.md#fifthdimension
 - https://www.fifthdimension.jp/documents/molphytextbook/
 Life is fifthdimension.::Documents::分子系統学演習
 必要なソフトウェア(Mac OS X x86_64用)
 分子系統解析関連ソフト詰め合わせ
-- https://www.fifthdimension.jp/products/molphypack/
+  - https://www.fifthdimension.jp/products/molphypack/
 Software Package for Molecular Phylogenetic Analysis
 ```
 # install_on_OSX.sh (for MacOS X El Capitan or Sierra on x86_64 Mac)
 curl -O https://www.fifthdimension.jp/products/molphypack/install_on_OSX.sh
 (time bash install_on_OSX.sh &) >& log.$(date +%F).txt
 ```
+
+https://www.fifthdimension.jp/documents/molphytextbook/datapreparation_practice.pdf
+分子系統樹推定に適した配列データセットの作成：実習編
+
+#ws222
+https://www.ncbi.nlm.nih.gov/nuccore
+txid7215[Organism:exp] AND (refseq[filter] AND mitochondrion[filter])
+
+
+```
+# COX2 領域の切り出し
+extractfeat -type CDS -tag gene -value "COX2|COII" sequence.gb COX2.nuc.fas
+
+# COX2 塩基配列をアミノ酸に翻訳pgtranseq --table=5 COX2.nuc.fas COX2_unaligned
+
+
+
+```
+
+
+
+https://github.com/astanabe/Phylogears
+
+
+https://www.fifthdimension.jp/products/phylogears/
+
+
+
+
+13時00分-14時00分	【実習】「分子進化の統計モデリングとモデル選択」  田辺 晶史
+14時00分-15時00分	【実習】「最尤系統樹推定と系統樹の信頼性評価」  田辺 晶史
+15時00分-16時00分	【実習】「系統樹・系統仮説の可視化と系統仮説間の統計的比較」  田辺 晶史
+
+
 
 ----------
 ## Install
