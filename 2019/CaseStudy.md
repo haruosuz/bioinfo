@@ -127,6 +127,43 @@ curl -O https://www.fifthdimension.jp/products/molphypack/install_on_OSX.sh
 (time bash install_on_OSX.sh &) >& log.$(date +%F).txt
 ```
 
+https://www.fifthdimension.jp/documents/molphytextbook/2011/molphytextbook.ja.pdf
+```
+0.11 Phylogears2 のインストール
+0.11.2 MacOS X・Linux の場合
+
+mkdir ~/temp
+cd ~/temp/
+
+# https://www.fifthdimension.jp/products/phylogears/
+# Public release
+# phylogears-1.0.2009.10.16.zip (script files for any Perl execution environment including MacOS X and Cygwin)
+curl -O https://www.fifthdimension.jp/products/phylogears/phylogears-1.0.2009.10.16.zip
+unzip phylogears-1.0.2009.10.16.zip 
+cd ~/temp/phylogears-1.0.2009.10.16/bin
+chmod 755 ./*
+sudo mkdir -p /usr/local/bin
+sudo mv ./* /usr/local/bin
+cd ../share
+sudo mv ./phylogears /usr/local/share/
+
+# Alpha testing release
+# phylogears2-2.0.2016.09.06.zip (script files for any Perl execution environment including MacOS X and Cygwin)
+curl -O https://www.fifthdimension.jp/products/phylogears/phylogears2-2.0.2016.09.06.zip
+unzip phylogears2-2.0.2016.09.06.zip 
+cd ~/temp/phylogears2-2.0.2016.09.06
+chmod 755 ./*
+sudo mkdir -p /usr/local/bin
+sudo mv ./* /usr/local/bin
+
+# 疑似乱数生成用 Perl モジュール Math::Random::MT::Auto を別途インストール
+sudo -H cpan -i Math::Random::MT::Auto
+perl -e "use Math::Random::MT::Auto"
+```
+
+
+
+
 https://www.fifthdimension.jp/documents/molphytextbook/datapreparation_practice.pdf
 分子系統樹推定に適した配列データセットの作成：実習編
 
@@ -144,13 +181,6 @@ extractfeat -type CDS -tag gene -value "COX2|COII" sequence.gb COX2.nuc.fas
 
 
 ```
-
-
-
-https://github.com/astanabe/Phylogears
-
-
-https://www.fifthdimension.jp/products/phylogears/
 
 
 
