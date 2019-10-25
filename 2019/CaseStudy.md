@@ -112,7 +112,71 @@ TKS (@HomareZuki) / Twitter
 - https://researchmap.jp/read0128283/
 
 ### Akifumi Tanabe
+
 10時30分-12時00分 	【実習】「分子系統樹推定に適した配列データセットの作成」   田辺 晶史（京都大学生態学研究センター）
+
+https://www.fifthdimension.jp/documents/molphytextbook/
+分子系統学演習 - データセットの作成から仮説検定まで
+
+# 第222回農林交流センターワークショップで作成したデータファイル
+```
+# https://www.fifthdimension.jp/documents/molphytextbook/Drosophila/
+curl -O https://www.fifthdimension.jp/documents/molphytextbook/Drosophila/Drosophila.zip
+unzip Drosophila.zip
+```
+
+https://www.fifthdimension.jp/documents/molphytextbook/datapreparation_lecture.pdf
+分子系統樹推定に適した配列データセットの作成：講義編
+
+https://www.fifthdimension.jp/documents/molphytextbook/datapreparation_practice.pdf
+分子系統樹推定に適した配列データセットの作成：実習編
+
+#ws222
+https://www.ncbi.nlm.nih.gov/nuccore
+txid7215[Organism:exp] AND (refseq[filter] AND mitochondrion[filter])
+
+```
+# COX2 領域の切り出し
+extractfeat -type CDS -tag gene -value "COX2|COII" sequence.gb COX2.nuc.fas
+
+# COX2 塩基配列をアミノ酸に翻訳pgtranseq --table=5 COX2.nuc.fas COX2_unaligned
+
+# COX2 アミノ酸配列を多重整列
+mafft --auto --thread 4 COX2_unaligned_aa.fasta > COX2_aligned_aa.fasta
+#  L-INS-i
+
+# 整列済 COX2 アミノ酸配列をガイドにして COX2 塩基配列を 整列
+pgaligncodon --alignment=COX2_aligned_aa.fasta COX2_unaligned_nuc.fasta COX2_aligned_nuc.fas
+
+# COX2 の塩基配列から開始コドンと終止コドンを含む塩基のカ ラムを削除する ( それ以外を切り出す )
+pgspliceseq 4-684 COX2_aligned_nuc.fas COX2_P.fas
+
+```
+
+13時00分-14時00分	【実習】「分子進化の統計モデリングとモデル選択」  田辺 晶史
+
+https://www.fifthdimension.jp/documents/molphytextbook/modelselection_practice.pdf
+分子進化の統計モデリングとモデル選択：実習編
+
+https://www.fifthdimension.jp/documents/molphytextbook/datapreparation_lecture.pdf
+分子進化の統計モデリングとモデル選択：講義編
+
+14時00分-15時00分	【実習】「最尤系統樹推定と系統樹の信頼性評価」  田辺 晶史
+
+https://www.fifthdimension.jp/documents/molphytextbook/maximumlikelihood_lecture.pdf
+最尤系統樹推定と系統樹の信頼性評価：講義編
+
+https://www.fifthdimension.jp/documents/molphytextbook/maximumlikelihood_practice.pdf
+最尤系統樹推定と系統樹の信頼性評価：実習編
+
+15時00分-16時00分	【実習】「系統樹・系統仮説の可視化と系統仮説間の統計的比較」  田辺 晶史
+
+https://www.fifthdimension.jp/documents/molphytextbook/hypothesistesting_lecture.pdf
+系統樹・系統仮説の可視化と系統仮説間の統計的比較：講義編
+
+https://www.fifthdimension.jp/documents/molphytextbook/hypothesistesting_practice.pdf
+系統樹・系統仮説の可視化と系統仮説間の統計的比較：実習編
+
 
 - https://github.com/haruosuz/evolve/blob/master/README.md#fifthdimension
 - https://www.fifthdimension.jp/documents/molphytextbook/
@@ -160,34 +224,6 @@ sudo mv ./* /usr/local/bin
 sudo -H cpan -i Math::Random::MT::Auto
 perl -e "use Math::Random::MT::Auto"
 ```
-
-
-
-
-https://www.fifthdimension.jp/documents/molphytextbook/datapreparation_practice.pdf
-分子系統樹推定に適した配列データセットの作成：実習編
-
-#ws222
-https://www.ncbi.nlm.nih.gov/nuccore
-txid7215[Organism:exp] AND (refseq[filter] AND mitochondrion[filter])
-
-
-```
-# COX2 領域の切り出し
-extractfeat -type CDS -tag gene -value "COX2|COII" sequence.gb COX2.nuc.fas
-
-# COX2 塩基配列をアミノ酸に翻訳pgtranseq --table=5 COX2.nuc.fas COX2_unaligned
-
-
-
-```
-
-
-
-
-13時00分-14時00分	【実習】「分子進化の統計モデリングとモデル選択」  田辺 晶史
-14時00分-15時00分	【実習】「最尤系統樹推定と系統樹の信頼性評価」  田辺 晶史
-15時00分-16時00分	【実習】「系統樹・系統仮説の可視化と系統仮説間の統計的比較」  田辺 晶史
 
 
 
