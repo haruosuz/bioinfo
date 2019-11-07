@@ -2,6 +2,8 @@
 バイオインフォマティクス・ツール
 
 ## Table of Contents
+- [updates](#updates)
+- [convert](#convert)
 - [bioconda](#bioconda)
 - [EMBOSS](#emboss)
 - [E-utilities](#e-utilities)
@@ -19,6 +21,36 @@ Difference Between "Pipeline" And "Workflow" ?
 https://en.wikipedia.org/wiki/Bioinformatics_workflow_management_system
 Galaxy: initially targeted at genomics
 
+
+https://www.ddbj.nig.ac.jp/download.html
+ダウンロード
+16S rRNA (Prokaryotes)
+最新 DDBJ リリースから 16S rRNA 配列データを抽出したもの
+
+----------
+
+## convert
+
+https://molbiol-tools.ca/Convert.htm
+Convert
+
+http://kazumaxneo.hatenablog.com/entry/2019/07/10/073000
+様々なフォーマットのシーケンスファイルを素早くFASTA形式に変換する any2fasta - macでインフォマティクス
+fastqにも対応してますが、処理データ数が多ければseqtk（C lang）やseqkit（Go lang）を使ったほうが早く終わります。
+
+2018/11/03 
+https://www.biostars.org/p/83153/
+How To Extract Rrna Sequences (In Fasta Format) From Genbank (Bacterial Genome)?
+
+2017/01/07
+https://www.biostars.org/p/230441/
+Splitting and Extracting Features in fasta format from Genbank Files using Biopython
+
+2011/01/06
+https://warwick.ac.uk/fac/sci/moac/people/students/peter_cock/python/genbank2fasta/
+Converting GenBank files to FASTA format with Biopython
+
+----------
 
 ## updates
 
