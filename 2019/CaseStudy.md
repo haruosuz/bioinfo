@@ -2,15 +2,557 @@
 **ケーススタディ**
 
 ## Table of Contents
+- [Install](#install)
+- [NCBI RefSeq Release](#ncbi-refseq-release)
+- [ddbj_16S](#ddbj_16S)
+- [rrnDB](#rrndb)
+- [DoMosaics](#domosaics)
 - [2019-10-23](#2019-10-23) 第222回農林交流センターワークショップ「分子系統樹推定法：理論と応用」
 - [2019-10-24](#2019-10-24) 第222回農林交流センターワークショップ「分子系統樹推定法：理論と応用」
 - [2019-10-25](#2019-10-25) 第222回農林交流センターワークショップ「分子系統樹推定法：理論と応用」
-- [Install](#install)
-- [rrnDB](#rrndb)
-- [DoMosaics](#domosaics)
 - [2019-08-04](#2019-08-04) 第3回 進化学セミナー プログラム | 木村資生記念 進化学セミナー
 - [Sequence similarity search](#sequence-similarity-search) 配列類似性検索
 - [UniProtKB Swiss-Prot protein sequence database](#uniprotkb-swiss-prot-protein-sequence-database) タンパク質配列データベース
+
+
+----------
+
+# introBI
+- https://github.com/haruosuz/introBI
+- https://github.com/haruosuz/introBI/tree/master/2019
+- https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md
+- https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#uniprot_sprot
+
+
+# DS4GD
+- https://github.com/haruosuz/DS4GD
+- https://github.com/haruosuz/DS4GD/tree/master/2019giga
+- https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#ncbi-assembly_reports
+- https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#ncbi-refseq-release
+
+----------
+## Install
+
+[bioconda](https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#bioconda)
+をインストールする:
+```
+# 1. Install conda
+curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
+sh Miniconda3-latest-MacOSX-x86_64.sh
+
+# 2. Set up channels
+conda config --add channels defaults
+conda config --add channels bioconda
+conda config --add channels conda-forge
+
+# 3. Install packages
+conda install raxml
+conda install mafft
+```
+
+[seqkit](https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#seqkit)
+をインストールする:
+```
+conda install -c bioconda seqkit
+```
+
+
+
+
+
+
+
+
+
+
+
+
+Genomes Download FAQ
+[How can I download RefSeq data for all complete bacterial genomes?](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#allcomplete)
+
+#### [Neglected Tropical diseases](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#neglected-tropical-diseases)
+
+例えば、[デング熱](https://ja.wikipedia.org/wiki/デング熱)を引き起こすウイルス "Dengue virus" の完全ゲノム("Complete Genome")配列データの最新版("latest")のURLを抽出する。  
+List the ftp_path (column 20) for the assemblies of interest, in this case those that have organism_name of "Dengue virus" (column 8), "latest" version_status (column 11) and "Complete Genome" assembly_level (column 12).
+
+[文字列 | R で文字列の切り出しや置換などの文字列処理を行う方法](https://stats.biopapyrus.jp/r/basic/string.html)
+
+    # grepl returns a logical vector (match or not for each element of x)
+    organism_name <- "Dengue virus"
+    organism_name <- "Dengue virus|Rabies"
+    TF <- grepl(pattern = organism_name, x = d$organism_name, ignore.case = TRUE) & 
+     d$version_status == "latest" & grepl(pattern = "Complete Genome", x = d$assembly_level)
+    d[TF,]
+    d$ftp_path[TF]
+
+抽出されたURLをブラウザFirefox/Chromeで開く。*README.txt*ファイルを右クリックし、「リンクのURLをコピー (Copy Link)」する。  
+Open the URL with your browser (Firefox or Chrome). Right click the link *README.txt*, and select "Copy Link Address".
+
+Genomes Download FAQ
+[What is the file content within each specific assembly directory?](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#files)
+
+```
+# ftp://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
+   *_genomic.fna.gz file
+       FASTA format of the genomic sequence(s) in the assembly.
+```
+
+
+
+
+#### [Writing sequence data out as a FASTA file](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#writing-sequence-data-out-as-a-fasta-file)
+
+配列データをFASTA形式ファイルとして書き出す:  
+
+	# write the sequences to a FASTA-format file
+    write.fasta(sequences=seqs, names=getAnnot(seqs), file.out="mySequences.fna", nbchar = 80)
+
+    # open current working directory
+    system("open .")
+
+作業を中断し再開する（Rを終了し再起動する）。作業ディレクトリを変更し、パッケージ`seqinr`を呼び出し、`read.fasta()`関数で配列データを読み込む:  
+
+    # quit and restart R
+    setwd("~/projects/data/ncbi/assembly_reports") # Set Working Directory
+    library(seqinr) # Load the SeqinR package
+    seqs <- read.fasta(file="mySequences.fna", seqtype="DNA", strip.desc=TRUE) # Reading sequence data
+
+
+
+
+wget -b ftp://ftp.ncbi.nih.gov/refseq/release/plasmid/*.faa.gz
+
+
+
+----------
+## NCBI RefSeq Release
+
+URL <ftp://ftp.ncbi.nlm.nih.gov/refseq/release> をブラウザ（Firefox または Chrome）で開く。*README* をクリックする。  
+Open the URL <ftp://ftp.ncbi.nlm.nih.gov/refseq/release> with your browser (Firefox or Chrome). Click the link *README*.
+
+```
+# ftp://ftp.ncbi.nlm.nih.gov/refseq/release/README
+
+The NCBI RefSeq project is an ongoing effort to provide a curated, 
+non-redundant collection of reference sequences, representative 
+of the central dogma, for each major organism.
+
+Sequence data is available in the following directories:
+
+        ftp://ftp.ncbi.nih.gov/refseq/release/archaea/
+        ftp://ftp.ncbi.nih.gov/refseq/release/bacteria/
+        ftp://ftp.ncbi.nih.gov/refseq/release/plasmid/
+```
+
+### [Running R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#running-r)
+Rの起動
+
+[作業ディレクトリ](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/06.html)の変更と確認:  
+
+    # Set Working Directory
+    WorkingDirectory <- "~/projects/data/ncbi/refseq_release" # assign a value to a variable
+    system( paste0("mkdir -p ",WorkingDirectory) ) # Invoke a System Command
+    setwd(WorkingDirectory); getwd() # Set and Get Working Directory
+    dir() # List the Files in a Directory
+
+[インターネットからファイルをダウンロードする](http://webbeginner.hatenablog.com/entry/2015/02/06/212921)
+
+    # Download File from the Internet
+     url <- "ftp://ftp.ncbi.nlm.nih.gov/refseq/release/viral/viral.1.1.genomic.fna.gz" # 58.0 kB
+    #url <- "ftp://ftp.ncbi.nlm.nih.gov/refseq/release/viral/viral.2.1.genomic.fna.gz" # 62.1 MB
+    #url <- "ftp://ftp.ncbi.nlm.nih.gov/refseq/release/viral/viral.3.1.genomic.fna.gz" # 29.1 MB
+    #url <- "ftp://ftp.ncbi.nlm.nih.gov/refseq/release/mitochondrion/mitochondrion.2.1.genomic.fna.gz" # 21.9 MB
+    filename <- basename(url)
+    download.file(url = url, destfile = filename)
+
+    # open current working directory
+    system("open .")
+
+
+
+[インターネットからファイルをダウンロードする](http://webbeginner.hatenablog.com/entry/2015/02/06/212921)
+
+    # Download File from the Internet
+    filesuffix <- "_genomic.fna.gz"
+    URLs <- sapply(d$ftp_path[TF], function(x) paste0(x, "/", unlist(strsplit(x, split="/"))[10], filesuffix ) )
+    download.file(url = URLs, destfile = basename(URLs), method = "libcurl")
+
+#### [Reading sequence data into R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#reading-sequence-data-into-r)
+
+配列データを読み込む:  
+
+    # Reading sequence data and store them in list variable "seqs"
+    lf <- basename(URLs)
+    seqs <- list()
+    library("seqinr") # Load the SeqinR package
+    for (i in 1:length(lf)) seqs <- c(seqs, read.fasta(file=lf[i], seqtype="DNA", strip.desc=TRUE) )
+
+配列の数とアノテーションを確認する:  
+
+    length(seqs) # get the number of elements
+    getAnnot(seqs) # get sequence annotations
+
+
+
+
+
+
+#### [Reading sequence data into R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#reading-sequence-data-into-r)
+
+配列データを読み込む:  
+
+    library(seqinr) # Load the SeqinR package
+    #filename <- "viral.1.1.genomic.fna.gz"
+    #filename <- "viral.2.1.genomic.fna.gz"
+    #filename <- "viral.3.1.genomic.fna.gz"
+    #filename <- "mitochondrion.2.1.genomic.fna.gz"
+    seqs <- read.fasta(file=filename, seqtype="DNA", strip.desc=TRUE) # Reading sequence data
+
+    length(seqs)# get the number of elements
+
+配列のアノテーションを取得する:  
+
+    # get sequence annotations
+    myAnnot <- getAnnot(seqs)
+    head(myAnnot)
+
+[Virus](https://github.com/haruosuz/microbe/blob/master/references/microbe.virus.md)
+- https://en.wikipedia.org/wiki/Zika_virus
+Zika virus is related to the dengue, yellow fever, Japanese encephalitis, and West Nile viruses.
+- https://en.wikipedia.org/wiki/Flavivirus
+This genus includes the West Nile virus, dengue virus, tick-borne encephalitis virus, yellow fever virus, Zika virus
+- https://en.wikipedia.org/wiki/Filoviridae
+Two members of the family that are commonly known are Ebola virus and Marburg virus.
+
+[文字列 | R で文字列の切り出しや置換などの文字列処理を行う方法](https://stats.biopapyrus.jp/r/basic/string.html)
+
+    # grep(pattern, x) returns the positions of all elements in x that match pattern
+    # grepl returns a logical vector (match or not for each element of x)
+    pattern <- "Ebola|Marburg" # "viral.2.1.genomic.fna.gz"
+    #pattern <- "Influenza" # "viral.2.1.genomic.fna.gz"
+    #pattern <- "Zika virus|dengue|yellow fever|Japanese encephalitis|West Nile" # "viral.3.1.genomic.fna.gz"
+    #pattern <- "Elephas|Loxodonta|Mammuthus" #
+    TF <- grepl(pattern = pattern, x = myAnnot, ignore.case = TRUE)
+    sum(TF)
+    unlist(myAnnot[TF])
+
+
+#### [Writing sequence data out as a FASTA file](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#writing-sequence-data-out-as-a-fasta-file)
+
+配列データをFASTA形式ファイルとして書き出す:  
+
+	# write the sequences to a FASTA-format file
+    write.fasta(sequences=seqs[TF], names=myAnnot[TF], file.out="mySequences.fna")
+
+作業を中断し再開する（Rを終了し再起動する）。作業ディレクトリを変更し、パッケージ`seqinr`を呼び出し、`read.fasta()`関数で配列データを読み込む:  
+
+    # quit and restart R
+    setwd("~/projects/data/ncbi/refseq_release") # Set Working Directory
+    library(seqinr) # Load the SeqinR package
+    seqs <- read.fasta(file="mySequences.fna", seqtype="DNA", strip.desc=TRUE) # Reading sequence data
+
+配列の数とアノテーションを確認する:  
+
+    length(seqs) # get the number of elements
+    getAnnot(seqs) # get sequence annotations
+
+
+
+
+
+----------
+## ddbj_16S
+
+https://www.ddbj.nig.ac.jp/download.html
+ダウンロード
+[16S rRNA (Prokaryotes)](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/16S/)
+最新 DDBJ リリースから 16S rRNA 配列データを抽出したもの
+
+```
+# ディレクトリを作成する
+# make directories
+mkdir -p ~/projects/data/ddbj/16S
+
+# ディレクトリを移動する
+# change directories
+cd ~/projects/data/ddbj/16S/
+
+# ftp://ftp.ddbj.nig.ac.jp/ddbj_database/16S/
+
+# *readme.txt*ファイルをダウンロードする
+# download *readme.txt* file 
+curl -O ftp://ftp.ddbj.nig.ac.jp/ddbj_database/16S/readme.txt
+
+# *16S.fasta.gz*ファイルをダウンロードする
+# download *16S.fasta.gz* file
+wget -b ftp://ftp.ddbj.nig.ac.jp/ddbj_database/16S/16S.fasta.gz
+
+# `tail -f`でファイル出力を監視する（Control-Cで動作中のプロセスを停止）
+# Use `tail -f` to constantly monitor files (use Control-C to stop)
+tail -f wget-log
+
+# `gunzip｀コマンドでファイルを展開する
+# decompress files with the command `gunzip`
+gunzip -c 16S.fasta.gz > 16S.fasta
+```
+
+データの検査
+```
+# ファイルサイズを確認する
+# `ls -lh` reports human-readable file sizes
+ls -lh
+
+# `head`で先頭部分を表示する
+# look at the top of a file with `head`
+head 16S.fasta
+
+# FASTA形式ファイルのヘッダ（">"で始まる行）
+# `grep`でパターン"^>"にマッチする行を抽出する（Control-Cで動作中のプロセスを停止）
+# use `grep` to extract lines matching the pattern "^>" (use Control-C to stop)
+grep "^>" 16S.fasta
+
+# パイプでプログラムの入出力をつなぐ
+# Pipe the standard output to the next command with the pipe character (`|`).
+grep "^>" 16S.fasta | head
+
+# `wc -l`で行数をカウントする
+# `wc -l` outputs the number of lines
+grep "^>" 16S.fasta | wc -l
+```
+
+'Holospora'にマッチする行を表示する:
+```
+# use `grep` to find 'Holospora'
+grep "^>" 16S.fasta | grep 'Holospora'
+
+# use `grep` to count (the -c option stands for count) the number of lines matching the pattern
+grep "^>" 16S.fasta | grep -c 'Holospora'
+```
+
+[seqkit](https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#seqkit)で'Holospora'の配列を抽出する:  
+```
+# seqkit grep -h
+myfile=16S.fasta
+pattern='Holospora'
+seqkit grep -nrp "${pattern}" "${myfile}" | perl -pe 's/ /./g' > myseq.fasta
+```
+
+[統合TV](https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#togotv)
+MAFFT・RAxML・FigTreeを組み合わせて分子系統解析を行う
+
+[MAFFT](https://github.com/haruosuz/evolve/blob/master/references/README.evolve.tools.md#mafft)で多重整列:  
+```
+# mafft --help
+input=myseq.fasta
+output="${input}".aln
+mafft "${input}" > "${output}"
+```
+
+[RAxML](https://github.com/haruosuz/evolve/blob/master/references/README.evolve.tools.md#raxml)による最尤系統樹推定:  
+```
+# raxmlHPC -h
+sequenceFileName=myseq.fasta.aln
+outputFileName="${sequenceFileName}".newick
+substitutionModel=GTRGAMMA
+raxmlHPC-SSE3 -s "${sequenceFileName}" -n "${outputFileName}" -m "${substitutionModel}" -p 12345
+```
+
+*RAxML_bestTree.myseq.fasta.aln.newick*ファイルを用いて、
+[FigTree](http://www.fish-evol.org/FigTree.html)や[SeaView](http://doua.prabi.fr/software/seaview)で系統樹を描く。
+
+----------
+## rrnDB
+リボソームRNAオペロンのコピー数データベース [rrnDB](https://rrndb.umms.med.umich.edu/)
+
+[Wolbachia](https://github.com/haruosuz/microbe/blob/master/references/README.bacteria.md#wolbachia)属に属する細菌の16S rRNA遺伝子系統解析を行う
+
+### shell script
+
+シェルスクリプト*run_rrnDB.sh*を取得し実行する:  
+```
+# Downloading the shell script
+curl -O https://raw.githubusercontent.com/haruosuz/bioinfo/master/2019/scripts/run_rrnDB.sh
+
+# Running the shell script
+(time bash ./run_rrnDB.sh &) >& log.rrnDB.$(date +%F).txt
+```
+
+### step by step tutorial
+
+[Download](https://rrndb.umms.med.umich.edu/static/download/)から、16S rRNAをコードするDNA塩基配列のFASTA形式ファイルを取得する:  
+```
+# retrieving data
+curl -O https://rrndb.umms.med.umich.edu/static/download/rrnDB-5.5_16S_rRNA.fasta.zip
+unzip rrnDB-5.5_16S_rRNA.fasta.zip
+```
+
+"Wolbachia"にマッチする行を表示する:
+```
+grep "Wolbachia" rrnDB-5.5_16S_rRNA.fasta
+```
+
+"Wolbachia"の配列をseqkitで抽出し、FASTAヘッダをperlで編集する:  
+```
+# seqkit grep -h
+myfile=rrnDB-5.5_16S_rRNA.fasta
+pattern="Wolbachia"
+seqkit grep -nrp "${pattern}" "${myfile}" | perl -pe 's/>([^\|]+)\|([^\|]+)\|([^\|]+)\|([^\|]+)\|([^\|]+)\n/>$2\|$3\|$4\|$5\|$1\n/g,s/: /_/g' > "${myfile}"."${pattern}".fasta
+```
+
+[統合TV](https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#togotv)
+MAFFT・RAxML・FigTreeを組み合わせて分子系統解析を行う
+
+[MAFFT](https://github.com/haruosuz/evolve/blob/master/references/README.evolve.tools.md#mafft)で多重整列:  
+```
+# mafft --help
+input=rrnDB-5.5_16S_rRNA.fasta.Wolbachia.fasta
+output="${input}".aln
+mafft "${input}" > "${output}"
+```
+
+[RAxML](https://github.com/haruosuz/evolve/blob/master/references/README.evolve.tools.md#raxml)による最尤系統樹推定:  
+```
+# raxmlHPC -h
+sequenceFileName=rrnDB-5.5_16S_rRNA.fasta.Wolbachia.fasta.aln
+outputFileName="${sequenceFileName}".newick
+substitutionModel=GTRGAMMA
+raxmlHPC-SSE3 -s "${sequenceFileName}" -n "${outputFileName}" -m "${substitutionModel}" -p 12345
+```
+
+[FigTree](http://www.fish-evol.org/FigTree.html)や[SeaView](http://doua.prabi.fr/software/seaview)で系統樹を描く。
+
+
+```
+Begin forwarded message:
+
+Subject: RE: Reverse Complement for rrnDB-5.5_16S_rRNA
+Date: September 12, 2019 23:43:54 JST
+Cc: "rrndbsupport@umich.edu" <rrndbsupport@umich.edu>
+
+Thank you for reaching out to us.  Those 16S sequences are copied as-is from the respective assembly as NCBI.  If you look at the fasta headers, say by doing:
+
+$ grep 'Lactobacillus brevis ATCC 367' rrnDB-5.5_16S_rRNA.fasta
+Lactobacillus brevis ATCC 367|GCF_000014465.1|NC_008497.1|Chromosome: ANONYMOUS|1504661..1506235 -
+Lactobacillus brevis ATCC 367|GCF_000014465.1|NC_008497.1|Chromosome: ANONYMOUS|1146796..1148370 -
+Lactobacillus brevis ATCC 367|GCF_000014465.1|NC_008497.1|Chromosome: ANONYMOUS|562987..564561 +
+Lactobacillus brevis ATCC 367|GCF_000014465.1|NC_008497.1|Chromosome: ANONYMOUS|453208..454782 +
+Lactobacillus brevis ATCC 367|GCF_000014465.1|NC_008497.1|Chromosome: ANONYMOUS|86143..87717 +
+
+you can see that they are cut out of sequence NC_008497.1 at the given coordinates.  The "-" following the coordinates means the gene is on the reverse strand, so for the first two genes in the list above, you would use the reverse complement before comparing them to the last three genes (on the forward strand with "+").  
+
+Compare this with the Genbank annotation:
+https://www.ncbi.nlm.nih.gov/nuccore/NC_008497.1?report=gbwithparts&log$=seqview
+Here NCBI uses the "complement" modifier with the coordinates for the genes on the reverse strand as in:
+
+rRNA            complement(1504661..1506234)
+                    /locus_tag="LVIS_RS19080"
+                    /old_locus_tag="LVIS_r1545"
+                    /product="16S ribosomal RNA"
+                    /db_xref="GeneID:4412908"
+
+(there seems to be a 1-base disagreement between rrnDB and the Genbank coordinates, not sure why that is)
+```
+
+
+----------
+## DoMosaics
+
+https://doi.org/10.7875/togotv.2017.077
+2017-08-04 DoMosaicsを使ってドメイン構造と系統樹を可視化する
+
+domworld <domainworld@uni-muenster.de> wrote:
+the original website does not exist anymore. However, the jar file is still available here: https://domainworld.uni-muenster.de/developing/domosaics/
+
+The current version can be found here: domosaics.jar
+
+### Pfam
+
+https://bi.biopapyrus.jp/db/pfam.html
+Pfam | タンパク質ドメインファミリーのデータベース
+
+https://doi.org/10.7875/togotv.2017.125
+2017-12-12 Pfamを使ってタンパク質のドメインを調べる 2017
+
+<ftp://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam32.0/> をブラウザ（Firefox または Chrome）で開く。  
+*Pfam-A.hmm.gz* を右クリックし、「リンクのURLをコピー」する。
+
+Open the URL <ftp://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam32.0/> with your browser (Firefox or Chrome).  
+Right click the link *Pfam-A.hmm.gz* and select "Copy Link Address".
+
+```
+# change shell to bash
+bash
+
+# ディレクトリを作成
+# make directories
+mkdir -p ~/projects/data/pfam
+
+# ディレクトリに移動
+# change directories
+cd ~/projects/data/pfam/
+
+# 圧縮ファイル（*Pfam-A.hmm.gz*）をダウンロード:
+# download the file
+curl -O ftp://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam32.0/Pfam-A.hmm.gz
+
+# ファイルを解凍:
+# decompress files with the command gunzip
+gunzip Pfam-A.hmm.gz
+```
+
+### HMMER
+
+http://kazumaxneo.hatenablog.com/entry/2017/07/31/114955
+タンパク質ドメインを検索する HMMER - macでインフォマティクス
+
+http://hmmer.org/documentation.html
+```
+# install HMMER
+conda install -c bioconda hmmer  # Anaconda
+
+which hmmscan
+which hmmpress
+```
+
+```
+# テストデータをダウンロード:
+# download test data
+curl https://togotv.dbcls.jp/170804test.fasta > test.fasta
+```
+
+### domosaics.jar
+
+- Right click the file *domosaics.jar* and click "Open".
+- Click "Finish".
+- Click "File" -> "New Projects/Views" and select "Create new Project". Input Name: "test".
+- Click "Next". Select "Sequence" under "Select the data type to import", and click "Next".
+- 4. Open File: Click "Browse...". Select the downloaded file *test.fasta* and click "Open". Click "Finish".
+- Steps
+1. Sequence view name selection: Click "Finish".
+
+```
+# Run hmmscan
+HMMER3 scan bin: /Users/haruo/miniconda3/bin/hmmscan
+HMMER3 press bin: /Users/haruo/miniconda3/bin/hmmpress
+Load profiles: /Users/haruo/projects/data/pfam/Pfam-A.hmm
+
+## Sequences
+Load sequences
+ Or Select Loaded View: test
+
+## Options
+ Number of CPUs: 4
+
+## Post processing
+ Co-Occurring Domain Detection: Pfam v27
+```
+
+
+
+
+
+
+
 
 ----------
 
@@ -177,6 +719,16 @@ https://www.fifthdimension.jp/documents/molphytextbook/hypothesistesting_lecture
 https://www.fifthdimension.jp/documents/molphytextbook/hypothesistesting_practice.pdf
 系統樹・系統仮説の可視化と系統仮説間の統計的比較：実習編
 
+```
+# 2 つの系統樹を 1 つのファイルに
+pgjointree \
+RAxML_bestTree.whole_BIC4_ 略 _shotgunsearch_hypothesis9 \
+RAxML_bestTree.whole_BIC4_ 略 _shotgunsearch_MAJi_hypothesis9 \
+RAxML_forAUtest.nwk
+
+```
+
+
 
 - https://github.com/haruosuz/evolve/blob/master/README.md#fifthdimension
 - https://www.fifthdimension.jp/documents/molphytextbook/
@@ -225,190 +777,10 @@ sudo -H cpan -i Math::Random::MT::Auto
 perl -e "use Math::Random::MT::Auto"
 ```
 
-
-
 ----------
-## Install
-
-[bioconda](https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#bioconda)
-をインストールする:
-```
-# 1. Install conda
-curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
-sh Miniconda3-latest-MacOSX-x86_64.sh
-
-# 2. Set up channels
-conda config --add channels defaults
-conda config --add channels bioconda
-conda config --add channels conda-forge
-
-# 3. Install packages
-conda install raxml
-conda install mafft
-```
-
-[seqkit](https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#seqkit)
-をインストールする:
-```
-conda install -c bioconda seqkit
-```
-
 ----------
-## rrnDB
-リボソームRNAオペロンのコピー数データベース [rrnDB](https://rrndb.umms.med.umich.edu/)
-
-[Wolbachia](https://github.com/haruosuz/microbe/blob/master/references/README.bacteria.md#wolbachia)属に属する細菌の16S rRNA遺伝子系統解析を行う
-
-### shell script
-
-シェルスクリプト*run_rrnDB.sh*を取得し実行する:  
-```
-# Downloading the shell script
-curl -O https://raw.githubusercontent.com/haruosuz/bioinfo/master/2019/scripts/run_rrnDB.sh
-
-# Running the shell script
-(time bash ./run_rrnDB.sh &) >& log.rrnDB.$(date +%F).txt
-```
-
-### step by step tutorial
-
-[Download](https://rrndb.umms.med.umich.edu/static/download/)から、16S rRNAをコードするDNA塩基配列のFASTA形式ファイルを取得する:  
-```
-# retrieving data
-curl -O https://rrndb.umms.med.umich.edu/static/download/rrnDB-5.5_16S_rRNA.fasta.zip
-unzip rrnDB-5.5_16S_rRNA.fasta.zip
-```
-
-"Wolbachia"にマッチする行を表示する:
-```
-grep "Wolbachia" rrnDB-5.5_16S_rRNA.fasta
-```
-
-"Wolbachia"の配列をseqkitで抽出し、FASTAヘッダをperlで編集する:  
-```
-# seqkit grep -h
-myfile=rrnDB-5.5_16S_rRNA.fasta
-pattern="Wolbachia"
-seqkit grep -nrp "${pattern}" "${myfile}" | perl -pe 's/>([^\|]+)\|([^\|]+)\|([^\|]+)\|([^\|]+)\|([^\|]+)\n/>$2\|$3\|$4\|$5\|$1\n/g,s/: /_/g' > "${myfile}"."${pattern}".fasta
-```
-
-[統合TV](https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#togotv)
-MAFFT・RAxML・FigTreeを組み合わせて分子系統解析を行う
-
-[MAFFT](https://github.com/haruosuz/evolve/blob/master/references/README.evolve.tools.md#mafft)で多重整列:  
-```
-# mafft --help
-input=rrnDB-5.5_16S_rRNA.fasta.Wolbachia.fasta
-output="${input}".aln
-mafft "${input}" > "${output}"
-```
-
-[RAxML](https://github.com/haruosuz/evolve/blob/master/references/README.evolve.tools.md#raxml)による最尤系統樹推定:  
-```
-# raxmlHPC -h
-sequenceFileName=rrnDB-5.5_16S_rRNA.fasta.Wolbachia.fasta.aln
-outputFileName="${sequenceFileName}".newick
-substitutionModel=GTRGAMMA
-raxmlHPC-SSE3 -s "${sequenceFileName}" -n "${outputFileName}" -m "${substitutionModel}" -p 12345
-```
-
-[FigTree](http://www.fish-evol.org/FigTree.html)や[SeaView](http://doua.prabi.fr/software/seaview)で系統樹を描く。
-
 ----------
-## DoMosaics
-
-https://doi.org/10.7875/togotv.2017.077
-2017-08-04 DoMosaicsを使ってドメイン構造と系統樹を可視化する
-
-domworld <domainworld@uni-muenster.de> wrote:
-the original website does not exist anymore. However, the jar file is still available here: https://domainworld.uni-muenster.de/developing/domosaics/
-
-The current version can be found here: domosaics.jar
-
-### Pfam
-
-https://bi.biopapyrus.jp/db/pfam.html
-Pfam | タンパク質ドメインファミリーのデータベース
-
-https://doi.org/10.7875/togotv.2017.125
-2017-12-12 Pfamを使ってタンパク質のドメインを調べる 2017
-
-<ftp://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam32.0/> をブラウザ（Firefox または Chrome）で開く。  
-*Pfam-A.hmm.gz* を右クリックし、「リンクのURLをコピー」する。
-
-Open the URL <ftp://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam32.0/> with your browser (Firefox or Chrome).  
-Right click the link *Pfam-A.hmm.gz* and select "Copy Link Address".
-
-```
-# change shell to bash
-bash
-
-# ディレクトリを作成
-# make directories
-mkdir -p ~/projects/data/pfam
-
-# ディレクトリに移動
-# change directories
-cd ~/projects/data/pfam/
-
-# 圧縮ファイル（*Pfam-A.hmm.gz*）をダウンロード:
-# download the file
-curl -O ftp://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam32.0/Pfam-A.hmm.gz
-
-# ファイルを解凍:
-# decompress files with the command gunzip
-gunzip Pfam-A.hmm.gz
-```
-
-### HMMER
-
-http://kazumaxneo.hatenablog.com/entry/2017/07/31/114955
-タンパク質ドメインを検索する HMMER - macでインフォマティクス
-
-http://hmmer.org/documentation.html
-```
-# install HMMER
-conda install -c bioconda hmmer  # Anaconda
-
-which hmmscan
-which hmmpress
-```
-
-```
-# テストデータをダウンロード:
-# download test data
-curl https://togotv.dbcls.jp/170804test.fasta > test.fasta
-```
-
-### domosaics.jar
-
-- Right click the file *domosaics.jar* and click "Open".
-- Click "Finish".
-- Click "File" -> "New Projects/Views" and select "Create new Project". Input Name: "test".
-- Click "Next". Select "Sequence" under "Select the data type to import", and click "Next".
-- 4. Open File: Click "Browse...". Select the downloaded file *test.fasta* and click "Open". Click "Finish".
-- Steps
-1. Sequence view name selection: Click "Finish".
-
-```
-# Run hmmscan
-HMMER3 scan bin: /Users/haruo/miniconda3/bin/hmmscan
-HMMER3 press bin: /Users/haruo/miniconda3/bin/hmmpress
-Load profiles: /Users/haruo/projects/data/pfam/Pfam-A.hmm
-
-## Sequences
-Load sequences
- Or Select Loaded View: test
-
-## Options
- Number of CPUs: 4
-
-## Post processing
- Co-Occurring Domain Detection: Pfam v27
-```
-
-
-
+----------
 ----------
 ## 2019-08-04
 
