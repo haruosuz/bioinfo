@@ -3,10 +3,10 @@
 
 ## Table of Contents
 - [Install](#install)
-- [plasmid.protein.faa](#plasmid.protein.faa)
 - [ddbj_16S](#ddbj_16S)
 - [rrnDB](#rrndb)
 - [DoMosaics](#domosaics)
+- [plasmid.protein.faa](#plasmidproteinfaa)
 - [2019-10-23](#2019-10-23) 第222回農林交流センターワークショップ「分子系統樹推定法：理論と応用」
 - [2019-10-24](#2019-10-24) 第222回農林交流センターワークショップ「分子系統樹推定法：理論と応用」
 - [2019-10-25](#2019-10-25) 第222回農林交流センターワークショップ「分子系統樹推定法：理論と応用」
@@ -55,205 +55,6 @@ conda install mafft
 ```
 conda install -c bioconda seqkit
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-Genomes Download FAQ
-[How can I download RefSeq data for all complete bacterial genomes?](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#allcomplete)
-
-#### [Neglected Tropical diseases](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#neglected-tropical-diseases)
-
-例えば、[デング熱](https://ja.wikipedia.org/wiki/デング熱)を引き起こすウイルス "Dengue virus" の完全ゲノム("Complete Genome")配列データの最新版("latest")のURLを抽出する。  
-List the ftp_path (column 20) for the assemblies of interest, in this case those that have organism_name of "Dengue virus" (column 8), "latest" version_status (column 11) and "Complete Genome" assembly_level (column 12).
-
-[文字列 | R で文字列の切り出しや置換などの文字列処理を行う方法](https://stats.biopapyrus.jp/r/basic/string.html)
-
-    # grepl returns a logical vector (match or not for each element of x)
-    organism_name <- "Dengue virus"
-    organism_name <- "Dengue virus|Rabies"
-    TF <- grepl(pattern = organism_name, x = d$organism_name, ignore.case = TRUE) & 
-     d$version_status == "latest" & grepl(pattern = "Complete Genome", x = d$assembly_level)
-    d[TF,]
-    d$ftp_path[TF]
-
-抽出されたURLをブラウザFirefox/Chromeで開く。*README.txt*ファイルを右クリックし、「リンクのURLをコピー (Copy Link)」する。  
-Open the URL with your browser (Firefox or Chrome). Right click the link *README.txt*, and select "Copy Link Address".
-
-Genomes Download FAQ
-[What is the file content within each specific assembly directory?](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#files)
-
-```
-# ftp://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
-   *_genomic.fna.gz file
-       FASTA format of the genomic sequence(s) in the assembly.
-```
-
-
-
-
-#### [Writing sequence data out as a FASTA file](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#writing-sequence-data-out-as-a-fasta-file)
-
-配列データをFASTA形式ファイルとして書き出す:  
-
-	# write the sequences to a FASTA-format file
-    write.fasta(sequences=seqs, names=getAnnot(seqs), file.out="mySequences.fna", nbchar = 80)
-
-    # open current working directory
-    system("open .")
-
-作業を中断し再開する（Rを終了し再起動する）。作業ディレクトリを変更し、パッケージ`seqinr`を呼び出し、`read.fasta()`関数で配列データを読み込む:  
-
-    # quit and restart R
-    setwd("~/projects/data/ncbi/assembly_reports") # Set Working Directory
-    library(seqinr) # Load the SeqinR package
-    seqs <- read.fasta(file="mySequences.fna", seqtype="DNA", strip.desc=TRUE) # Reading sequence data
-
-
-
-----------
-## plasmid.protein.faa
-
-URL <ftp://ftp.ncbi.nih.gov/refseq/release/plasmid/> をブラウザ（Firefox または Chrome）で開く。*README* をクリックする。*plasmid.1.protein.faa.gz*ファイルを右クリックし、「リンクのURLをコピー (Copy Link)」する。  
-Open the URL <ftp://ftp.ncbi.nih.gov/refseq/release/plasmid/> with your browser (Firefox or Chrome). Click the link *README*. Right click the link *plasmid.1.protein.faa.gz*, and select "Copy Link Address".
-
-### [Running R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#running-r)
-Rの起動
-
-[作業ディレクトリ](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/06.html)の変更と確認:  
-
-    # For macOS
-    # Set Working Directory
-    WorkingDirectory <- "~/projects/data/ncbi/refseq_release" # assign a value to a variable
-    system( paste0("mkdir -p ",WorkingDirectory) ) # Invoke a System Command
-    setwd(WorkingDirectory); getwd() # Set and Get Working Directory
-    dir() # List the Files in a Directory
-    system("open .") # open current working directory
-
-[インターネットからファイルをダウンロードする](http://webbeginner.hatenablog.com/entry/2015/02/06/212921)
-
-    # Download File from the Internet
-    url <- "ftp://ftp.ncbi.nih.gov/refseq/release/plasmid/plasmid.1.protein.faa.gz" # 13.9 MB
-    filename <- basename(url)
-    download.file(url = url, destfile = filename)
-
-#### [Reading sequence data into R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#reading-sequence-data-into-r)
-
-配列データを読み込む:  
-
-    library(seqinr) # Load the SeqinR package
-    #filename <- "plasmid.1.protein.faa.gz"
-    seqs <- read.fasta(file=filename, seqtype="AA", strip.desc=TRUE) # Reading sequence data
-
-    length(seqs) # get the number of elements
-
-配列のアノテーションを取得する:  
-
-    # get sequence annotations
-    myAnnot <- unlist(getAnnot(seqs))
-
-    # 先頭と末尾の表示
-    # Return the First or Last Part of an Object
-    head(myAnnot, n = 2)
-    tail(myAnnot, n = 2)
-
-[文字列 | R で文字列の切り出しや置換などの文字列処理を行う方法](https://stats.biopapyrus.jp/r/basic/string.html)
-
-    # grep(pattern, x) returns the positions of all elements in x that match pattern
-    # grepl returns a logical vector (match or not for each element of x)
-    pattern <- "TrfA"
-    TF <- grepl(pattern = pattern, x = myAnnot, ignore.case = TRUE)
-    sum(TF)
-    myAnnot[TF]
-
-#### [Writing sequence data out as a FASTA file](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#writing-sequence-data-out-as-a-fasta-file)
-
-配列データをFASTA形式ファイルとして書き出す:  
-
-	# write the sequences to a FASTA-format file
-    write.fasta(sequences=seqs[TF], names=myAnnot[TF], file.out="mySequences.faa")
-    dir() # List the Files in a Directory
-
-作業を中断し再開する（Rを終了し再起動する）。作業ディレクトリを変更し、パッケージ`seqinr`を呼び出し、`read.fasta()`関数で配列データを読み込む:  
-
-    # quit and restart R
-    setwd("~/projects/data/ncbi/refseq_release") # Set Working Directory # For macOS
-    library(seqinr) # Load the SeqinR package
-    faa <- read.fasta(file="mySequences.faa", seqtype="AA", strip.desc=TRUE) # Reading sequence data
-
-配列の数とアノテーションを確認する:  
-
-    length(faa) # get the number of elements
-    getAnnot(faa) # get sequence annotations
-
-### amino acid usage
-**[アミノ酸](https://ja.wikipedia.org/wiki/アミノ酸)使用**
-
-平成22年度、清水謙多郎 [タンパク質の配列から機能を予測する](http://www.iu.a.u-tokyo.ac.jp/lectures/AG01/100511/motif.html)
-
-`[[ ]]`はリスト内の要素（ベクトル）を取り出す。
-リストの1番目の要素を取り出す:  
-
-    # extract the 1st element:
-    faa1 <- faa[[1]]
-
-`summary()`関数でデータの要約:  
-
-    # Object Summaries
-    summary(faa1)
-
-配列の長さ(length)、アミノ酸組成(composition)、物理化学的クラスの割合(AA.Property)が出力される。
-
-![http://www.r-exercises.com/2017/05/10/accessing-and-manipulating-biological-databases-solutions-part-3/](http://www.r-exercises.com/wp-content/uploads/2017/05/Fig3-300x300.png)
-
-[`AAstat()`](https://www.rdocumentation.org/packages/seqinr/versions/3.3-3/topics/AAstat)
-関数を用いて、タンパク質の配列情報（アミノ酸残基数、物理化学的クラスの割合、[等電点](https://ja.wikipedia.org/wiki/等電点)の理論値）を求める:  
-
-    # Get protein statistics
-    AAstat(seq=faa1)
-
-    aa <- AAstat(seq=faa1, plot=FALSE)
-
-    # Get amino acid counts
-    aa$Compo
-
-    # Get the percentage of each physico-chemical classes
-    aa$Prop
-    aa$Prop$Aromatic
-
-`sapply()`関数は、リストの各要素に関数を適用する。  
-複数タンパク質配列のアミノ酸使用の絶対度数と相対度数を求める:  
-
-    # absolute frequencies
-    X <- sapply(faa, function(x) AAstat(x, plot=FALSE)$Compo )
-    write.csv(t(X), file="table.aa_af.csv")
-
-    # relative frequencies
-    X <- sapply(faa, function(x) summary(x)$composition )
-    write.csv(t(X), file="table.aa_rf.csv")
-
-    # open current working directory
-    system("open .")
-
-クラスター分析 [Cluster Analysis](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#cluster-analysis)
-
-    # Hierarchical cluster analysis
-    plot(hclust(dist(t(X))), hang=-1)
-
-ヒートマップ [Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)
-
-    # Draw a Heat Map
-    heatmap(X, margins=c(14, 2), cexCol=0.9, scale="none", col=rev(gray.colors(12)))
-
-[Flip color range of heatmap in base R - Stack Overflow](https://stackoverflow.com/questions/56101927/flip-color-range-of-heatmap-in-base-r)
 
 ----------
 ## ddbj_16S
@@ -448,7 +249,6 @@ rRNA            complement(1504661..1506234)
 (there seems to be a 1-base disagreement between rrnDB and the Genbank coordinates, not sure why that is)
 ```
 
-
 ----------
 ## DoMosaics
 
@@ -542,12 +342,138 @@ Load sequences
  Co-Occurring Domain Detection: Pfam v27
 ```
 
+----------
+## plasmid.protein.faa
 
+URL <ftp://ftp.ncbi.nih.gov/refseq/release/plasmid/> をブラウザ（Firefox または Chrome）で開く。*README* をクリックする。*plasmid.1.protein.faa.gz*ファイルを右クリックし、「リンクのURLをコピー (Copy Link)」する。  
+Open the URL <ftp://ftp.ncbi.nih.gov/refseq/release/plasmid/> with your browser (Firefox or Chrome). Click the link *README*. Right click the link *plasmid.1.protein.faa.gz*, and select "Copy Link Address".
 
+### [Running R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#running-r)
+Rの起動
 
+[作業ディレクトリ](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/06.html)の変更と確認:  
 
+    # For macOS
+    # Set Working Directory
+    WorkingDirectory <- "~/projects/data/ncbi/refseq_release" # assign a value to a variable
+    system( paste0("mkdir -p ",WorkingDirectory) ) # Invoke a System Command
+    setwd(WorkingDirectory); getwd() # Set and Get Working Directory
+    dir() # List the Files in a Directory
+    system("open .") # open current working directory
 
+[インターネットからファイルをダウンロードする](http://webbeginner.hatenablog.com/entry/2015/02/06/212921)
 
+    # Download File from the Internet
+    url <- "ftp://ftp.ncbi.nih.gov/refseq/release/plasmid/plasmid.1.protein.faa.gz" # 13.9 MB
+    filename <- basename(url)
+    download.file(url = url, destfile = filename)
+
+#### [Reading sequence data into R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#reading-sequence-data-into-r)
+
+配列データを読み込む:  
+
+    library(seqinr) # Load the SeqinR package
+    #filename <- "plasmid.1.protein.faa.gz"
+    seqs <- read.fasta(file=filename, seqtype="AA", strip.desc=TRUE) # Reading sequence data
+
+    length(seqs) # get the number of elements
+
+配列のアノテーションを取得する:  
+
+    # get sequence annotations
+    myAnnot <- unlist(getAnnot(seqs))
+
+    # 先頭と末尾の表示
+    # Return the First or Last Part of an Object
+    head(myAnnot, n = 2)
+    tail(myAnnot, n = 2)
+
+[文字列 | R で文字列の切り出しや置換などの文字列処理を行う方法](https://stats.biopapyrus.jp/r/basic/string.html)
+
+    # grep(pattern, x) returns the positions of all elements in x that match pattern
+    # grepl returns a logical vector (match or not for each element of x)
+    pattern <- "TrfA"
+    TF <- grepl(pattern = pattern, x = myAnnot, ignore.case = TRUE)
+    sum(TF)
+    myAnnot[TF]
+
+#### [Writing sequence data out as a FASTA file](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#writing-sequence-data-out-as-a-fasta-file)
+
+配列データをFASTA形式ファイルとして書き出す:  
+
+	# write the sequences to a FASTA-format file
+    write.fasta(sequences=seqs[TF], names=myAnnot[TF], file.out="mySequences.faa")
+    dir() # List the Files in a Directory
+
+作業を中断し再開する（Rを終了し再起動する）。作業ディレクトリを変更し、パッケージ`seqinr`を呼び出し、`read.fasta()`関数で配列データを読み込む:  
+
+    # quit and restart R
+    setwd("~/projects/data/ncbi/refseq_release") # Set Working Directory # For macOS
+    library(seqinr) # Load the SeqinR package
+    faa <- read.fasta(file="mySequences.faa", seqtype="AA", strip.desc=TRUE) # Reading sequence data
+
+配列の数とアノテーションを確認する:  
+
+    length(faa) # get the number of elements
+    getAnnot(faa) # get sequence annotations
+
+### amino acid usage
+**[アミノ酸](https://ja.wikipedia.org/wiki/アミノ酸)使用**
+
+平成22年度、清水謙多郎 [タンパク質の配列から機能を予測する](http://www.iu.a.u-tokyo.ac.jp/lectures/AG01/100511/motif.html)
+
+`[[ ]]`はリスト内の要素（ベクトル）を取り出す。
+リストの1番目の要素を取り出す:  
+
+    # extract the 1st element:
+    faa1 <- faa[[1]]
+
+`summary()`関数でデータの要約:  
+
+    # Object Summaries
+    summary(faa1)
+
+配列の長さ(length)、アミノ酸組成(composition)、物理化学的クラスの割合(AA.Property)が出力される。
+
+![http://www.r-exercises.com/2017/05/10/accessing-and-manipulating-biological-databases-solutions-part-3/](http://www.r-exercises.com/wp-content/uploads/2017/05/Fig3-300x300.png)
+
+[`AAstat()`](https://www.rdocumentation.org/packages/seqinr/versions/3.3-3/topics/AAstat)
+関数を用いて、タンパク質の配列情報（アミノ酸残基数、物理化学的クラスの割合、[等電点](https://ja.wikipedia.org/wiki/等電点)の理論値）を求める:  
+
+    # Get protein statistics
+    AAstat(seq=faa1)
+
+    aa <- AAstat(seq=faa1, plot=FALSE)
+
+    # Get amino acid counts
+    aa$Compo
+
+    # Get the percentage of each physico-chemical classes
+    aa$Prop
+    aa$Prop$Aromatic
+
+`sapply()`関数は、リストの各要素に関数を適用する。  
+複数タンパク質配列のアミノ酸使用の絶対度数と相対度数を求める:  
+
+    # absolute frequencies
+    X <- sapply(faa, function(x) AAstat(x, plot=FALSE)$Compo )
+    write.csv(t(X), file="table.aa_af.csv")
+
+    # relative frequencies
+    X <- sapply(faa, function(x) summary(x)$composition )
+    write.csv(t(X), file="table.aa_rf.csv")
+
+クラスター分析 [Cluster Analysis](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#cluster-analysis)
+
+    # Hierarchical cluster analysis
+    plot(hclust(dist(t(X))), hang=-1)
+
+ヒートマップ [Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)
+
+    # Draw a Heat Map
+    heatmap(X, margins=c(14, 2), cexCol=0.9, scale="none", col=rev(gray.colors(12)))
+
+[Flip color range of heatmap in base R - Stack Overflow](https://stackoverflow.com/questions/56101927/flip-color-range-of-heatmap-in-base-r)
 
 ----------
 
