@@ -450,6 +450,12 @@ Rの起動
     aa$Prop
     aa$Prop$Aromatic
 
+[applyファミリー | R で同じ処理を”並列的”に実行する関数](https://stats.biopapyrus.jp/r/basic/apply.html)
+
+    # Apply a Function over a List
+    # `summary` function To Get Some Protein Statistics (length, composition, AA.Property)
+    lapply(faa, summary)
+
 `sapply()`関数は、リストの各要素に関数を適用する。  
 複数タンパク質配列のアミノ酸使用の絶対度数と相対度数を求める:  
 
