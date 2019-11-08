@@ -426,10 +426,12 @@ Rの起動
     # extract the 1st element:
     faa1 <- faa[[1]]
 
-タンパク質配列の長さ(length)、アミノ酸組成(composition)、物理化学的クラスの割合(AA.Property)を計算する:  
+`summary()`関数でデータの要約:  
 
-    # Using `summary` function To Get Some Protein Statistics (length, composition, GC)
+    # `summary` function To Get Some Protein Statistics (length, composition, AA.Property)
     summary(faa1)
+
+タンパク質配列の長さ(length)、アミノ酸組成(composition)、物理化学的クラスの割合(AA.Property)が出力される。
 
 ![http://www.r-exercises.com/2017/05/10/accessing-and-manipulating-biological-databases-solutions-part-3/](http://www.r-exercises.com/wp-content/uploads/2017/05/Fig3-300x300.png)
 
