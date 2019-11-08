@@ -119,61 +119,9 @@ Genomes Download FAQ
 
 
 
-
-wget -b ftp://ftp.ncbi.nih.gov/refseq/release/plasmid/*.faa.gz
-
-
-
-
-
-
-----------
-
-## NCBI RefSeq Release
-
-URL <ftp://ftp.ncbi.nlm.nih.gov/refseq/release> をブラウザ（Firefox または Chrome）で開く。*README* をクリックする。  
-Open the URL <ftp://ftp.ncbi.nlm.nih.gov/refseq/release> with your browser (Firefox or Chrome). Click the link *README*.
-
-Sequence data is available in the following directories:
-
-        ftp://ftp.ncbi.nih.gov/refseq/release/mitochondrion/
-        ftp://ftp.ncbi.nih.gov/refseq/release/viral/
-
-*viral.1.1.genomic.fna.gz*ファイルを右クリックし、「リンクのURLをコピー (Copy Link)」する。  
-Right click the link *viral.1.1.genomic.fna.gz*, and select "Copy Link Address".
-
-### [Running R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#running-r)
-Rの起動
-
-[作業ディレクトリ](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/06.html)の変更と確認:  
-
-    # Set Working Directory
-    WorkingDirectory <- "~/projects/data/ncbi/refseq_release" # assign a value to a variable
-    system( paste0("mkdir -p ",WorkingDirectory) ) # Invoke a System Command
-    setwd(WorkingDirectory); getwd() # Set and Get Working Directory
-    dir() # List the Files in a Directory
-
-[インターネットからファイルをダウンロードする](http://webbeginner.hatenablog.com/entry/2015/02/06/212921)
-
-    # Download File from the Internet
-    name <- "viral"
-    #name <- "mitochondrion"
-    filesuffix <- "genomic.fna.gz"
-    #name <- "plasmid"; filesuffix <- "rna.fna.gz"
-    url <- paste0("ftp://ftp.ncbi.nlm.nih.gov/refseq/release/", name, "/", name, ".*.", filesuffix)
-    #url <- "ftp://ftp.ncbi.nlm.nih.gov/refseq/release/mitochondrion/mitochondrion.*.genomic.fna.gz"
-    #url <- "ftp://ftp.ncbi.nlm.nih.gov/refseq/release/viral/viral.*.genomic.fna.gz"
-    #url <- "ftp://ftp.ncbi.nlm.nih.gov/refseq/release/plasmid/plasmid.*.rna.fna.gz"
-    destfile = paste0(name, ".", filesuffix)
-    download.file(url = url, destfile = destfile, method = "wget")
-
-    # open current working directory
-    system("open .")
-
-
-
 ----------
 ## NCBI RefSeq Release
+plasmid.*.protein.faa.gz
 
 URL <ftp://ftp.ncbi.nlm.nih.gov/refseq/release> をブラウザ（Firefox または Chrome）で開く。*README* をクリックする。  
 Open the URL <ftp://ftp.ncbi.nlm.nih.gov/refseq/release> with your browser (Firefox or Chrome). Click the link *README*.
@@ -181,139 +129,89 @@ Open the URL <ftp://ftp.ncbi.nlm.nih.gov/refseq/release> with your browser (Fire
 ```
 # ftp://ftp.ncbi.nlm.nih.gov/refseq/release/README
 
-The NCBI RefSeq project is an ongoing effort to provide a curated, 
-non-redundant collection of reference sequences, representative 
-of the central dogma, for each major organism.
-
 Sequence data is available in the following directories:
 
-        ftp://ftp.ncbi.nih.gov/refseq/release/archaea/
-        ftp://ftp.ncbi.nih.gov/refseq/release/bacteria/
         ftp://ftp.ncbi.nih.gov/refseq/release/plasmid/
 ```
+
+*plasmid.1.protein.faa.gz*ファイルを右クリックし、「リンクのURLをコピー (Copy Link)」する。  
+Right click the link *plasmid.1.protein.faa.gz*, and select "Copy Link Address".
 
 ### [Running R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#running-r)
 Rの起動
 
 [作業ディレクトリ](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/06.html)の変更と確認:  
 
+    # For macOS
     # Set Working Directory
     WorkingDirectory <- "~/projects/data/ncbi/refseq_release" # assign a value to a variable
     system( paste0("mkdir -p ",WorkingDirectory) ) # Invoke a System Command
     setwd(WorkingDirectory); getwd() # Set and Get Working Directory
     dir() # List the Files in a Directory
+    system("open .") # open current working directory
 
 [インターネットからファイルをダウンロードする](http://webbeginner.hatenablog.com/entry/2015/02/06/212921)
 
     # Download File from the Internet
-     url <- "ftp://ftp.ncbi.nlm.nih.gov/refseq/release/viral/viral.1.1.genomic.fna.gz" # 58.0 kB
-    #url <- "ftp://ftp.ncbi.nlm.nih.gov/refseq/release/viral/viral.2.1.genomic.fna.gz" # 62.1 MB
-    #url <- "ftp://ftp.ncbi.nlm.nih.gov/refseq/release/viral/viral.3.1.genomic.fna.gz" # 29.1 MB
-    #url <- "ftp://ftp.ncbi.nlm.nih.gov/refseq/release/mitochondrion/mitochondrion.2.1.genomic.fna.gz" # 21.9 MB
+    url <- "ftp://ftp.ncbi.nih.gov/refseq/release/plasmid/plasmid.1.protein.faa.gz" # 13.9 MB
     filename <- basename(url)
     download.file(url = url, destfile = filename)
-
-    # open current working directory
-    system("open .")
-
-
-
-[インターネットからファイルをダウンロードする](http://webbeginner.hatenablog.com/entry/2015/02/06/212921)
-
-    # Download File from the Internet
-    filesuffix <- "_genomic.fna.gz"
-    URLs <- sapply(d$ftp_path[TF], function(x) paste0(x, "/", unlist(strsplit(x, split="/"))[10], filesuffix ) )
-    download.file(url = URLs, destfile = basename(URLs), method = "libcurl")
-
-#### [Reading sequence data into R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#reading-sequence-data-into-r)
-
-配列データを読み込む:  
-
-    # Reading sequence data and store them in list variable "seqs"
-    lf <- basename(URLs)
-    seqs <- list()
-    library("seqinr") # Load the SeqinR package
-    for (i in 1:length(lf)) seqs <- c(seqs, read.fasta(file=lf[i], seqtype="DNA", strip.desc=TRUE) )
-
-配列の数とアノテーションを確認する:  
-
-    length(seqs) # get the number of elements
-    getAnnot(seqs) # get sequence annotations
-
-
-
-
-
 
 #### [Reading sequence data into R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#reading-sequence-data-into-r)
 
 配列データを読み込む:  
 
     library(seqinr) # Load the SeqinR package
-    #filename <- "viral.1.1.genomic.fna.gz"
-    #filename <- "viral.2.1.genomic.fna.gz"
-    #filename <- "viral.3.1.genomic.fna.gz"
-    #filename <- "mitochondrion.2.1.genomic.fna.gz"
-    seqs <- read.fasta(file=filename, seqtype="DNA", strip.desc=TRUE) # Reading sequence data
+    #filename <- "plasmid.1.protein.faa.gz"
+    seqs <- read.fasta(file=filename, seqtype="AA", strip.desc=TRUE) # Reading sequence data
 
-    length(seqs)# get the number of elements
+    length(seqs) # get the number of elements
 
 配列のアノテーションを取得する:  
 
     # get sequence annotations
-    myAnnot <- getAnnot(seqs)
-    head(myAnnot)
+    myAnnot <- unlist(getAnnot(seqs))
 
-[Virus](https://github.com/haruosuz/microbe/blob/master/references/microbe.virus.md)
-- https://en.wikipedia.org/wiki/Zika_virus
-Zika virus is related to the dengue, yellow fever, Japanese encephalitis, and West Nile viruses.
-- https://en.wikipedia.org/wiki/Flavivirus
-This genus includes the West Nile virus, dengue virus, tick-borne encephalitis virus, yellow fever virus, Zika virus
-- https://en.wikipedia.org/wiki/Filoviridae
-Two members of the family that are commonly known are Ebola virus and Marburg virus.
+    # 先頭と末尾の表示
+    # Return the First or Last Part of an Object
+    head(myAnnot, n = 2)
+    tail(myAnnot, n = 2)
 
 [文字列 | R で文字列の切り出しや置換などの文字列処理を行う方法](https://stats.biopapyrus.jp/r/basic/string.html)
 
     # grep(pattern, x) returns the positions of all elements in x that match pattern
     # grepl returns a logical vector (match or not for each element of x)
-    pattern <- "Ebola|Marburg" # "viral.2.1.genomic.fna.gz"
-    #pattern <- "Influenza" # "viral.2.1.genomic.fna.gz"
-    #pattern <- "Zika virus|dengue|yellow fever|Japanese encephalitis|West Nile" # "viral.3.1.genomic.fna.gz"
-    #pattern <- "Elephas|Loxodonta|Mammuthus" #
+    pattern <- "TrfA"
     TF <- grepl(pattern = pattern, x = myAnnot, ignore.case = TRUE)
     sum(TF)
-    unlist(myAnnot[TF])
-
+    myAnnot[TF]
 
 #### [Writing sequence data out as a FASTA file](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#writing-sequence-data-out-as-a-fasta-file)
 
 配列データをFASTA形式ファイルとして書き出す:  
 
 	# write the sequences to a FASTA-format file
-    write.fasta(sequences=seqs[TF], names=myAnnot[TF], file.out="mySequences.fna")
+    write.fasta(sequences=seqs[TF], names=myAnnot[TF], file.out="mySequences.faa")
+    dir() # List the Files in a Directory
 
 作業を中断し再開する（Rを終了し再起動する）。作業ディレクトリを変更し、パッケージ`seqinr`を呼び出し、`read.fasta()`関数で配列データを読み込む:  
 
     # quit and restart R
-    setwd("~/projects/data/ncbi/refseq_release") # Set Working Directory
+    setwd("~/projects/data/ncbi/refseq_release") # Set Working Directory # For macOS
     library(seqinr) # Load the SeqinR package
-    seqs <- read.fasta(file="mySequences.fna", seqtype="DNA", strip.desc=TRUE) # Reading sequence data
+    seqs <- read.fasta(file="mySequences.faa", seqtype="AA", strip.desc=TRUE) # Reading sequence data
 
 配列の数とアノテーションを確認する:  
 
     length(seqs) # get the number of elements
-    getAnnot(seqs) # get sequence annotations
-
-
-
-
+    unlist(getAnnot(seqs)) # get sequence annotations
 
 ----------
 ## ddbj_16S
 
 https://www.ddbj.nig.ac.jp/download.html
 ダウンロード
-[16S rRNA (Prokaryotes)](ftp://ftp.ddbj.nig.ac.jp/ddbj_database/16S/)
+16S rRNA (Prokaryotes) <ftp://ftp.ddbj.nig.ac.jp/ddbj_database/16S/>
 最新 DDBJ リリースから 16S rRNA 配列データを抽出したもの
 
 ```
