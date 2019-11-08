@@ -124,6 +124,54 @@ wget -b ftp://ftp.ncbi.nih.gov/refseq/release/plasmid/*.faa.gz
 
 
 
+
+
+
+----------
+
+## NCBI RefSeq Release
+
+URL <ftp://ftp.ncbi.nlm.nih.gov/refseq/release> をブラウザ（Firefox または Chrome）で開く。*README* をクリックする。  
+Open the URL <ftp://ftp.ncbi.nlm.nih.gov/refseq/release> with your browser (Firefox or Chrome). Click the link *README*.
+
+Sequence data is available in the following directories:
+
+        ftp://ftp.ncbi.nih.gov/refseq/release/mitochondrion/
+        ftp://ftp.ncbi.nih.gov/refseq/release/viral/
+
+*viral.1.1.genomic.fna.gz*ファイルを右クリックし、「リンクのURLをコピー (Copy Link)」する。  
+Right click the link *viral.1.1.genomic.fna.gz*, and select "Copy Link Address".
+
+### [Running R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#running-r)
+Rの起動
+
+[作業ディレクトリ](http://cse.naro.affrc.go.jp/takezawa/r-tips/r/06.html)の変更と確認:  
+
+    # Set Working Directory
+    WorkingDirectory <- "~/projects/data/ncbi/refseq_release" # assign a value to a variable
+    system( paste0("mkdir -p ",WorkingDirectory) ) # Invoke a System Command
+    setwd(WorkingDirectory); getwd() # Set and Get Working Directory
+    dir() # List the Files in a Directory
+
+[インターネットからファイルをダウンロードする](http://webbeginner.hatenablog.com/entry/2015/02/06/212921)
+
+    # Download File from the Internet
+    name <- "viral"
+    #name <- "mitochondrion"
+    filesuffix <- "genomic.fna.gz"
+    #name <- "plasmid"; filesuffix <- "rna.fna.gz"
+    url <- paste0("ftp://ftp.ncbi.nlm.nih.gov/refseq/release/", name, "/", name, ".*.", filesuffix)
+    #url <- "ftp://ftp.ncbi.nlm.nih.gov/refseq/release/mitochondrion/mitochondrion.*.genomic.fna.gz"
+    #url <- "ftp://ftp.ncbi.nlm.nih.gov/refseq/release/viral/viral.*.genomic.fna.gz"
+    #url <- "ftp://ftp.ncbi.nlm.nih.gov/refseq/release/plasmid/plasmid.*.rna.fna.gz"
+    destfile = paste0(name, ".", filesuffix)
+    download.file(url = url, destfile = destfile, method = "wget")
+
+    # open current working directory
+    system("open .")
+
+
+
 ----------
 ## NCBI RefSeq Release
 
