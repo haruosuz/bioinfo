@@ -418,9 +418,7 @@ Rの起動
     getAnnot(faa) # get sequence annotations
 
 ### amino acid usage
-**[アミノ酸](https://ja.wikipedia.org/wiki/アミノ酸)使用**
-
-平成22年度、清水謙多郎 [タンパク質の配列から機能を予測する](http://www.iu.a.u-tokyo.ac.jp/lectures/AG01/100511/motif.html)
+**アミノ酸使用頻度**
 
 `[[ ]]`はリスト内の要素（ベクトル）を取り出す。
 リストの1番目の要素を取り出す:  
@@ -428,12 +426,10 @@ Rの起動
     # extract the 1st element:
     faa1 <- faa[[1]]
 
-`summary()`関数でデータの要約:  
+タンパク質配列の長さ(length)、アミノ酸組成(composition)、物理化学的クラスの割合(AA.Property)を計算する:  
 
-    # Object Summaries
+    # Using `summary` function To Get Some Protein Statistics (length, composition, GC)
     summary(faa1)
-
-配列の長さ(length)、アミノ酸組成(composition)、物理化学的クラスの割合(AA.Property)が出力される。
 
 ![http://www.r-exercises.com/2017/05/10/accessing-and-manipulating-biological-databases-solutions-part-3/](http://www.r-exercises.com/wp-content/uploads/2017/05/Fig3-300x300.png)
 
@@ -474,6 +470,9 @@ Rの起動
     heatmap(X, margins=c(14, 2), cexCol=0.9, scale="none", col=rev(gray.colors(12)))
 
 [Flip color range of heatmap in base R - Stack Overflow](https://stackoverflow.com/questions/56101927/flip-color-range-of-heatmap-in-base-r)
+
+平成22年度、清水謙多郎 [タンパク質の配列から機能を予測する](http://www.iu.a.u-tokyo.ac.jp/lectures/AG01/100511/motif.html)
+
 
 ----------
 
