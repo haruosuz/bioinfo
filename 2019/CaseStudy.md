@@ -348,6 +348,28 @@ Load sequences
 URL <ftp://ftp.ncbi.nih.gov/refseq/release/plasmid/> をブラウザ（Firefox または Chrome）で開く。*README* をクリックする。*plasmid.1.protein.faa.gz*ファイルを右クリックし、「リンクのURLをコピー (Copy Link)」する。  
 Open the URL <ftp://ftp.ncbi.nih.gov/refseq/release/plasmid/> with your browser (Firefox or Chrome). Click the link *README*. Right click the link *plasmid.1.protein.faa.gz*, and select "Copy Link Address".
 
+```
+# ftp://ftp.ncbi.nih.gov/refseq/release/plasmid/
+plasmid.1.protein.faa.gz
+plasmid.2.protein.faa.gz
+plasmid.3.protein.faa.gz
+plasmid.4.protein.faa.gz
+plasmid.5.protein.faa.gz
+plasmid.nonredundant_protein.1.protein.faa.gz
+plasmid.nonredundant_protein.2.protein.faa.gz
+plasmid.nonredundant_protein.3.protein.faa.gz
+plasmid.nonredundant_protein.4.protein.faa.gz
+plasmid.nonredundant_protein.5.protein.faa.gz
+plasmid.nonredundant_protein.6.protein.faa.gz
+```
+
+From: NLM Support <nlm-support@nlm.nih.gov>
+Date: November 9, 2019 4:07:45 JST
+
+Most prokaryotic RefSeq genomes including plasmid sequences have been annotated using NCBI's annotation pipeline PGAP, which annotates prokaryotic RefSeq genomes with a new non-redundant protein data model (WP proteins or RefSeq proteins with the WP prefix). One WP protein can be annotated from multiple genomes or species, which is different previous NP or YP proteins. You can find the genomic coordinates of the WP proteins by clicking the 'Identical Proteins' on the WP protein webpages.
+
+Details about WP proteins are available here (https://www.ncbi.nlm.nih.gov/refseq/about/prokaryotes/reannotation/) and here (https://www.ncbi.nlm.nih.gov/refseq/about/nonredundantproteins/).
+
 ### [Running R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#running-r)
 Rの起動
 
