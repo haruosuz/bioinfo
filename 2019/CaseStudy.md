@@ -460,27 +460,26 @@ Rの起動
 複数タンパク質配列のアミノ酸使用の絶対度数と相対度数を求める:  
 
     # absolute frequencies
-    X <- sapply(faa, function(x) AAstat(x, plot=FALSE)$Compo )
-    write.csv(t(X), file="table.aa_af.csv")
+    AAU <- sapply(faa, function(x) AAstat(x, plot=FALSE)$Compo )
+    write.csv(t(AAU), file="table.aa_af.csv")
 
     # relative frequencies
-    X <- sapply(faa, function(x) summary(x)$composition )
-    write.csv(t(X), file="table.aa_rf.csv")
+    AAU <- sapply(faa, function(x) summary(x)$composition )
+    write.csv(t(AAU), file="table.aa_rf.csv")
 
 クラスター分析 [Cluster Analysis](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#cluster-analysis)
 
     # Hierarchical cluster analysis
-    plot(hclust(dist(t(X))), hang=-1)
+    plot(hclust(dist(t(AAU))), hang=-1)
 
 ヒートマップ [Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)
 
     # Draw a Heat Map
-    heatmap(X, margins=c(14, 2), cexCol=0.9, scale="none", col=rev(gray.colors(12)))
+    heatmap(AAU, margins=c(14, 2), cexCol=0.9, scale="none", col=rev(gray.colors(12)))
 
 [Flip color range of heatmap in base R - Stack Overflow](https://stackoverflow.com/questions/56101927/flip-color-range-of-heatmap-in-base-r)
 
 平成22年度、清水謙多郎 [タンパク質の配列から機能を予測する](http://www.iu.a.u-tokyo.ac.jp/lectures/AG01/100511/motif.html)
-
 
 ----------
 
