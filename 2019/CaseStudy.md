@@ -3,7 +3,7 @@
 
 ## Table of Contents
 - [Install](#install)
-- [NCBI RefSeq Release](#ncbi-refseq-release)
+- [plasmid.protein.faa](#plasmid.protein.faa)
 - [ddbj_16S](#ddbj_16S)
 - [rrnDB](#rrndb)
 - [DoMosaics](#domosaics)
@@ -120,22 +120,10 @@ Genomes Download FAQ
 
 
 ----------
-## NCBI RefSeq Release
-plasmid.*.protein.faa.gz
+## plasmid.protein.faa
 
-URL <ftp://ftp.ncbi.nlm.nih.gov/refseq/release> をブラウザ（Firefox または Chrome）で開く。*README* をクリックする。  
-Open the URL <ftp://ftp.ncbi.nlm.nih.gov/refseq/release> with your browser (Firefox or Chrome). Click the link *README*.
-
-```
-# ftp://ftp.ncbi.nlm.nih.gov/refseq/release/README
-
-Sequence data is available in the following directories:
-
-        ftp://ftp.ncbi.nih.gov/refseq/release/plasmid/
-```
-
-*plasmid.1.protein.faa.gz*ファイルを右クリックし、「リンクのURLをコピー (Copy Link)」する。  
-Right click the link *plasmid.1.protein.faa.gz*, and select "Copy Link Address".
+URL <ftp://ftp.ncbi.nih.gov/refseq/release/plasmid/> をブラウザ（Firefox または Chrome）で開く。*README* をクリックする。*plasmid.1.protein.faa.gz*ファイルを右クリックし、「リンクのURLをコピー (Copy Link)」する。  
+Open the URL <ftp://ftp.ncbi.nih.gov/refseq/release/plasmid/> with your browser (Firefox or Chrome). Click the link *README*. Right click the link *plasmid.1.protein.faa.gz*, and select "Copy Link Address".
 
 ### [Running R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#running-r)
 Rの起動
@@ -199,12 +187,73 @@ Rの起動
     # quit and restart R
     setwd("~/projects/data/ncbi/refseq_release") # Set Working Directory # For macOS
     library(seqinr) # Load the SeqinR package
-    seqs <- read.fasta(file="mySequences.faa", seqtype="AA", strip.desc=TRUE) # Reading sequence data
+    faa <- read.fasta(file="mySequences.faa", seqtype="AA", strip.desc=TRUE) # Reading sequence data
 
 配列の数とアノテーションを確認する:  
 
-    length(seqs) # get the number of elements
-    unlist(getAnnot(seqs)) # get sequence annotations
+    length(faa) # get the number of elements
+    getAnnot(faa) # get sequence annotations
+
+### amino acid usage
+**[アミノ酸](https://ja.wikipedia.org/wiki/アミノ酸)使用**
+
+平成22年度、清水謙多郎 [タンパク質の配列から機能を予測する](http://www.iu.a.u-tokyo.ac.jp/lectures/AG01/100511/motif.html)
+
+`[[ ]]`はリスト内の要素（ベクトル）を取り出す。
+リストの1番目の要素を取り出す:  
+
+    # extract the 1st element:
+    faa1 <- faa[[1]]
+
+`summary()`関数でデータの要約:  
+
+    # Object Summaries
+    summary(faa1)
+
+配列の長さ(length)、アミノ酸組成(composition)、物理化学的クラスの割合(AA.Property)が出力される。
+
+![http://www.r-exercises.com/2017/05/10/accessing-and-manipulating-biological-databases-solutions-part-3/](http://www.r-exercises.com/wp-content/uploads/2017/05/Fig3-300x300.png)
+
+[`AAstat()`](https://www.rdocumentation.org/packages/seqinr/versions/3.3-3/topics/AAstat)
+関数を用いて、タンパク質の配列情報（アミノ酸残基数、物理化学的クラスの割合、[等電点](https://ja.wikipedia.org/wiki/等電点)の理論値）を求める:  
+
+    # Get protein statistics
+    AAstat(seq=faa1)
+
+    aa <- AAstat(seq=faa1, plot=FALSE)
+
+    # Get amino acid counts
+    aa$Compo
+
+    # Get the percentage of each physico-chemical classes
+    aa$Prop
+    aa$Prop$Aromatic
+
+`sapply()`関数は、リストの各要素に関数を適用する。  
+複数タンパク質配列のアミノ酸使用の絶対度数と相対度数を求める:  
+
+    # absolute frequencies
+    X <- sapply(faa, function(x) AAstat(x, plot=FALSE)$Compo )
+    write.csv(t(X), file="table.aa_af.csv")
+
+    # relative frequencies
+    X <- sapply(faa, function(x) summary(x)$composition )
+    write.csv(t(X), file="table.aa_rf.csv")
+
+    # open current working directory
+    system("open .")
+
+クラスター分析 [Cluster Analysis](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#cluster-analysis)
+
+    # Hierarchical cluster analysis
+    plot(hclust(dist(t(X))), hang=-1)
+
+ヒートマップ [Heat Map](https://github.com/haruosuz/DS4GD/blob/master/2017/hclust.md#heat-map)
+
+    # Draw a Heat Map
+    heatmap(X, margins=c(14, 2), cexCol=0.9, scale="none", col=rev(gray.colors(12)))
+
+[Flip color range of heatmap in base R - Stack Overflow](https://stackoverflow.com/questions/56101927/flip-color-range-of-heatmap-in-base-r)
 
 ----------
 ## ddbj_16S
