@@ -7,13 +7,13 @@
 - [rrnDB](#rrndb)
 - [DoMosaics](#domosaics)
 - [plasmid.protein.faa](#plasmidproteinfaa)
+- [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
 - [2019-10-23](#2019-10-23) 第222回農林交流センターワークショップ「分子系統樹推定法：理論と応用」
 - [2019-10-24](#2019-10-24) 第222回農林交流センターワークショップ「分子系統樹推定法：理論と応用」
 - [2019-10-25](#2019-10-25) 第222回農林交流センターワークショップ「分子系統樹推定法：理論と応用」
 - [2019-08-04](#2019-08-04) 第3回 進化学セミナー プログラム | 木村資生記念 進化学セミナー
 - [Sequence similarity search](#sequence-similarity-search) 配列類似性検索
 - [UniProtKB Swiss-Prot protein sequence database](#uniprotkb-swiss-prot-protein-sequence-database) タンパク質配列データベース
-
 
 ----------
 
@@ -502,6 +502,177 @@ Rの起動
 [Flip color range of heatmap in base R - Stack Overflow](https://stackoverflow.com/questions/56101927/flip-color-range-of-heatmap-in-base-r)
 
 平成22年度、清水謙多郎 [タンパク質の配列から機能を予測する](http://www.iu.a.u-tokyo.ac.jp/lectures/AG01/100511/motif.html)
+
+
+----------
+## NCBI ASSEMBLY_REPORTS
+
+[NCBI](https://ja.wikipedia.org/wiki/国立生物工学情報センター)のゲノム配列のメタデータが記載されている *assembly_summary* ファイルを用いて、目的のゲノム配列を見つける。  
+Genomes Download FAQ
+[How can I find the sequence and annotation of my genome of interest?](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#howtofind)
+Using the [assembly summary report files](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#asmsumfiles)
+
+URL <ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/> をブラウザ（Firefox または Chrome）で開く。*README_assembly_summary.txt*をクリックする。  
+Open the URL <ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/> with your browser (Firefox or Chrome). Click the link *README_assembly_summary.txt*.
+
+```
+# ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/README_assembly_summary.txt
+The assembly_summary files report metadata for the genome assemblies on the NCBI genomes FTP site.
+assembly_summary_genbank.txt            - current GenBank genome assemblies
+assembly_summary_refseq.txt             - current RefSeq genome assemblies
+```
+
+- April 9, 2018 [What is the difference between RefSeq and GenBank?](https://www.ncbi.nlm.nih.gov/books/NBK50679/#RefSeqFAQ.what_is_the_difference_between_1)
+- 2018-10-23 [RefSeq - JI](http://fish-evol.org/RefSeq.html) 井上 潤
+- 2017.03.12 [RefSeq | 詳細な注釈づけられている冗長性のない核酸データベース](https://bi.biopapyrus.jp/db/refseq.html)
+
+### Downloading data
+データのダウンロード
+
+[ターミナル](http://techacademy.jp/magazine/5155)を開き、`bash`を起動する:  
+
+    # change shell to bash
+    bash
+
+    # ディレクトリを作成する
+    # make directories
+    mkdir -p ~/projects/data/ncbi/assembly_reports
+
+    # ディレクトリを移動する
+    # change directories
+    cd ~/projects/data/ncbi/assembly_reports/
+
+    # カレントディレクトリを表示する 
+    # print working directory
+    pwd
+
+    # カレントディレクトリをFinderで開く
+    # open current directory
+    open .
+
+    # Markdown文書をダウンロードする
+    curl https://raw.githubusercontent.com/haruosuz/introBI/master/2019/markdown.md > README.$(date +%F).md
+
+    # テキストエディタ「Atom」でファイルを開く
+    atom README.$(date +%F).md
+
+データをウェブからダウンロードする。
+
+    # `wget`は再帰的にデータをダウンロードできる。ウェブページからテキストファイルを全てダウンロードする:  
+    # Recursive downloading can be useful for downloading all files of a certain type from a page.
+    # wget --background --accept "*.txt,*.txt.gz" --no-directories --recursive --no-parent $URL
+    wget -b -A "*.txt,*.txt.gz" -nd -r -np ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/
+
+    # `tail -f`でファイル出力を監視する（Control-Cで動作中のプロセスを停止）
+    # Use `tail -f` to constantly monitor files (use Control-C to stop)
+    tail -f wget-log
+
+GenBankまたはRefSeqのゲノム配列のメタデータを確認する。
+
+    # 変数に値を割り当てる（`=`の前後にスペースを入れない）:  
+    # create a variable and assign it a value with (do not use spaces around the equals sign!):  
+    assembly_summary="assembly_summary_genbank.txt"
+    assembly_summary="assembly_summary_refseq.txt"
+
+    # 変数の値にアクセスするには、変数名の前にドル記号を付ける:  
+    # To access a variable’s value, we use a dollar sign in front of the variable’s name (e.g., $assembly_summary):  
+    echo $assembly_summary
+
+    # 列番号を付けて出力する:
+    grep "^#" $assembly_summary | tail -n 1 | tr "\t" "\n" | nl
+
+    grep -v "^#" $assembly_summary | cut -f5 | sort | uniq -c
+    grep -v "^#" $assembly_summary | cut -f12 | sort | uniq -c
+
+Genomes Download FAQ
+[How can I download RefSeq data for all complete bacterial genomes?](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#allcomplete)
+Also see the Downloading Genomic Data Factsheet
+ftp://ftp.ncbi.nlm.nih.gov/pub/factsheets/HowTo_Downloading_Genomic_Data.pdf
+
+"Lactobacillus salivarius|Lactobacillus brevis ATCC 367|Lactobacillus buchneri CD034|Lactobacillus plantarum WCFS1|Lactobacillus reuteri DSM 20016"の完全ゲノム("Complete Genome")配列データの最新版("latest")のURLを抽出する。  
+List the ftp_path (column 20) for the assemblies of interest, in this case those that have organism_name of "Lactobacillus salivarius|Lactobacillus brevis ATCC 367|Lactobacillus buchneri CD034|Lactobacillus plantarum WCFS1|Lactobacillus reuteri DSM 20016" (column 8), "latest" version_status (column 11) and "Complete Genome" assembly_level (column 12).
+
+    organism_name="Lactobacillus salivarius|Lactobacillus brevis ATCC 367|Lactobacillus buchneri CD034|Lactobacillus plantarum WCFS1|Lactobacillus reuteri DSM 20016"
+    cat $assembly_summary | awk -F "\t" '$8 ~ /'"$organism_name"'/ && $11=="latest" && $12 ~ /Complete Genome/ && $5 ~ /./ {print $0}' | cut -f8,9,12 | sort -k1,1 -k2,2
+    cat $assembly_summary | awk -F "\t" '$8 ~ /'"$organism_name"'/ && $11=="latest" && $12 ~ /Complete Genome/ && $5 ~ /./ {print $20}' > ftpdirpaths
+    cat ftpdirpaths
+
+抽出されたURLをブラウザFirefox/Chromeで開く。*README.txt*ファイルをクリックする。  
+Open the URL with your browser (Firefox or Chrome). Click the link *README.txt*.
+
+Genomes Download FAQ
+[What is the file content within each specific assembly directory?](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#files)
+
+```
+# ftp://ftp.ncbi.nlm.nih.gov/genomes/all/README.txt
+
+File formats and content:
+
+   *_genomic.gff.gz file
+       Annotation of the genomic sequence(s) in Generic Feature Format Version 3
+       (GFF3). Sequence identifiers are provided as accession.version.
+       Additional information about NCBI's GFF files is available at 
+       ftp://ftp.ncbi.nlm.nih.gov/genomes/README_GFF3.txt.
+
+   *_genomic.fna.gz file
+       FASTA format of the genomic sequence(s) in the assembly.
+
+   *_rna_from_genomic.fna.gz
+       FASTA format of the nucleotide sequences corresponding to all RNA 
+       features annotated on the assembly, based on the genome sequence. 
+```
+
+配列データ（*_rna_from_genomic.fna.gz*）、[MD5](https://ja.wikipedia.org/wiki/MD5)[チェックサム](https://ja.wikipedia.org/wiki/チェックサム)ファイル（*md5checksums.txt*）を`wget`でダウンロードし、チェックサムを確認する:  
+
+```
+# Append the filename of interest, in this case "*_rna_from_genomic.fna.gz" to the FTP directory names:  
+cat ftpdirpaths | awk 'BEGIN{FS=OFS="/";filesuffix="rna_from_genomic.fna.gz"}{ftpdir=$0;asm=$10;file=asm"_"filesuffix;print ftpdir,file}' > ftpfilepaths
+
+# NCBI provides a MD5 checksum file in this directory called "md5checksums.txt":  
+cat ftpdirpaths | awk 'BEGIN {FS=OFS="/"} {print $0,"md5checksums.txt"}' ftpdirpaths >> ftpfilepaths
+
+# Use the "ftpfilepaths" file as input to `wget` to download:  
+wget -i ftpfilepaths
+
+# see the newest files
+ls -lrt
+
+# compare our checksum values with those in "md5checksums.txt" using the md5 program:
+md5 *.gz
+grep "_rna_from_genomic.fna.gz" md5checksums.txt*
+```
+
+`basename`コマンドは、ファイル名からパスや拡張子を削除する。  
+`gunzip`コマンドでファイルを展開する:  
+```
+# `basename` strips paths and a suffix (e.g., extension) from filenames
+# decompress files with the command `gunzip`:
+for file in ./*.fna.gz; do gunzip -c $file > $(basename $file .gz); done
+ls -lh *.fna*
+```
+
+### Inspecting data
+データの検査
+
+```
+cd ~/projects/data/ncbi/assembly_reports/
+
+# `ls -lh`でファイルサイズを確認する: 
+# `ls -l` reports file sizes 
+ls -lh
+
+# `head`で先頭部分を表示する:  
+# look at the top of a file with head
+head *.fna
+
+# `grep`で">"で始まる行を抽出する:  
+# use grep to extract lines matching the pattern "^>":  
+grep "^>" *.fna
+
+# パイプでプログラムの入出力をつなぐ。
+# Pipe the standard output to the next command with the pipe character (|).
+grep "^>" *.fna | grep "rRNA"
+grep "^>" *.fna | grep "16S ribosomal RNA"
 
 ----------
 
