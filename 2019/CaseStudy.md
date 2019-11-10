@@ -551,10 +551,10 @@ assembly_summary_refseq.txt             - current RefSeq genome assemblies
     open .
 
     # Markdown文書をダウンロードする
-    curl https://raw.githubusercontent.com/haruosuz/introBI/master/2019/markdown.md > README.$(date +%F).md
+    #curl https://raw.githubusercontent.com/haruosuz/introBI/master/2019/markdown.md > README.$(date +%F).md
 
     # テキストエディタ「Atom」でファイルを開く
-    atom README.$(date +%F).md
+    #atom README.$(date +%F).md
 
 データをウェブからダウンロードする。
 
@@ -589,12 +589,12 @@ Genomes Download FAQ
 Also see the Downloading Genomic Data Factsheet
 ftp://ftp.ncbi.nlm.nih.gov/pub/factsheets/HowTo_Downloading_Genomic_Data.pdf
 
-"Lactobacillus salivarius|Lactobacillus brevis ATCC 367|Lactobacillus buchneri CD034|Lactobacillus plantarum WCFS1|Lactobacillus reuteri DSM 20016"の完全ゲノム("Complete Genome")配列データの最新版("latest")のURLを抽出する。  
-List the ftp_path (column 20) for the assemblies of interest, in this case those that have organism_name of "Lactobacillus salivarius|Lactobacillus brevis ATCC 367|Lactobacillus buchneri CD034|Lactobacillus plantarum WCFS1|Lactobacillus reuteri DSM 20016" (column 8), "latest" version_status (column 11) and "Complete Genome" assembly_level (column 12).
+参照/代表ゲノム("reference genome" or "representative genome")、完全ゲノム("Complete Genome")配列データの最新版("latest")のURLを抽出する。  
+List the ftp_path (column 20) for the assemblies of interest, in this case those that have organism_name of your interest (column 8), "latest" version_status (column 11) and "Complete Genome" assembly_level (column 12).
 
-    organism_name="Lactobacillus salivarius|Lactobacillus brevis ATCC 367|Lactobacillus buchneri CD034|Lactobacillus plantarum WCFS1|Lactobacillus reuteri DSM 20016"
-    cat $assembly_summary | awk -F "\t" '$8 ~ /'"$organism_name"'/ && $11=="latest" && $12 ~ /Complete Genome/ && $5 ~ /./ {print $0}' | cut -f8,9,12 | sort -k1,1 -k2,2
-    cat $assembly_summary | awk -F "\t" '$8 ~ /'"$organism_name"'/ && $11=="latest" && $12 ~ /Complete Genome/ && $5 ~ /./ {print $20}' > ftpdirpaths
+    organism_name="Lactobacillus salivarius"
+    cat $assembly_summary | awk -F "\t" '$8 ~ /'"$organism_name"'/ && $11=="latest" && $12 ~ /Complete Genome/ && $5 ~ /re/ {print $0}' | cut -f8,9,12 | sort -k1,1 -k2,2
+    cat $assembly_summary | awk -F "\t" '$8 ~ /'"$organism_name"'/ && $11=="latest" && $12 ~ /Complete Genome/ && $5 ~ /re/ {print $20}' > ftpdirpaths
     cat ftpdirpaths
 
 抽出されたURLをブラウザFirefox/Chromeで開く。*README.txt*ファイルをクリックする。  
@@ -657,22 +657,32 @@ ls -lh *.fna*
 ```
 cd ~/projects/data/ncbi/assembly_reports/
 
-# `ls -lh`でファイルサイズを確認する: 
-# `ls -l` reports file sizes 
+# `ls -lh`でファイルサイズを確認する:  
+# `ls -lh` reports human-readable file sizes
 ls -lh
 
 # `head`で先頭部分を表示する:  
-# look at the top of a file with head
+# look at the top of a file with `head`
 head *.fna
 
-# `grep`で">"で始まる行を抽出する:  
-# use grep to extract lines matching the pattern "^>":  
+# FASTA形式ファイルのヘッダ（">"で始まる行）
+# `grep`でパターン"^>"にマッチする行を抽出する）:  
+# use `grep` to extract lines matching the pattern "^>"
 grep "^>" *.fna
 
-# パイプでプログラムの入出力をつなぐ。
-# Pipe the standard output to the next command with the pipe character (|).
+# パイプでプログラムの入出力をつなぐ
+# Pipe the standard output to the next command with the pipe character (`|`).
+grep "^>" *.fna | head
+
+# `wc -l`で行数をカウントする
+# `wc -l` outputs the number of lines
+grep "^>" *.fna | wc -l
+
+# "rRNA"にマッチする行を表示する:
+# use `grep` to find "rRNA"
 grep "^>" *.fna | grep "rRNA"
 grep "^>" *.fna | grep "16S ribosomal RNA"
+```
 
 ----------
 
