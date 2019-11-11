@@ -217,7 +217,6 @@ raxmlHPC-SSE3 -s "${sequenceFileName}" -n "${outputFileName}" -m "${substitution
 
 [FigTree](http://www.fish-evol.org/FigTree.html)や[SeaView](http://doua.prabi.fr/software/seaview)で系統樹を描く。
 
-
 ```
 Begin forwarded message:
 
@@ -749,7 +748,9 @@ tree_file="${alignment_file}".newick
 FastTree -fastest -nt -gtr "${alignment_file}" > "${tree_file}"
 ```
 
-Newick形式のファイル（*myseq.fasta.aln.newick*または*RAxML_bestTree.myseq.fasta.aln.newick*）を用いて、
+[Newick](https://github.com/haruosuz/evolve/blob/master/references/README.evolve.jargon.md#newick)形式のファイル
+*myseq.fasta.aln.newick* or *RAxML_bestTree.myseq.fasta.aln.newick*
+を用いて、
 [FigTree](http://www.fish-evol.org/FigTree.html)や[SeaView](http://doua.prabi.fr/software/seaview)で系統樹を描く。
 
 
