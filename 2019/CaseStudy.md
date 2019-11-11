@@ -683,6 +683,9 @@ grep "^>" *.fna | grep "rRNA"
 grep "^>" *.fna | grep "16S ribosomal RNA"
 ```
 
+### [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
+多重配列アライメントと系統樹
+
 "16S ribosomal RNA"の配列を[seqkit](https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#seqkit)で抽出し、FASTAヘッダをperlで編集する:  
 ```
 # seqkit grep -h
