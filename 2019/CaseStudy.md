@@ -592,28 +592,36 @@ Also see the Downloading Genomic Data Factsheet
 ftp://ftp.ncbi.nlm.nih.gov/pub/factsheets/HowTo_Downloading_Genomic_Data.pdf
 
 https://github.com/haruosuz/microbe/blob/master/references/README.bacteria.md#lactobacillus-salivarius
-- Lactobacillus salivarius
+- Lactobacillus salivarius, a species commonly isolated from the gastrointestinal tract of humans and animals, has been described as having potential probiotic properties and results of previous studies have revealed considerable functional diversity existing on both the chromosomes and plasmids.
 - Lactobacillus hayakitensis DSM18933T was also included in the study as a related outgroup.
-- The tree is rooted on L. hayakitensis
 
-参照/代表ゲノム("reference genome" or "representative genome")、完全ゲノム("Complete Genome")配列データの最新版("latest")のURLを抽出する。  
+参照/代表ゲノム("reference genome" or "representative genome")、コンプリートゲノム("Complete Genome")配列データの最新版("latest")のURLを抽出する。  
 List the ftp_path (column 20) for the assemblies of interest, in this case those that have organism_name of your interest (column 8), "latest" version_status (column 11) and "Complete Genome" assembly_level (column 12).
 
+    # 変数に値を割り当てる（`=`の前後にスペースを入れない）:  
+    # create a variable and assign it a value with (do not use spaces around the equals sign!):  
+    assembly_summary="assembly_summary_genbank.txt"
+    assembly_summary="assembly_summary_refseq.txt"
+
+    # 参照ゲノムまたは代表ゲノム
     # "reference genome" or "representative genome"
     organism_name="Lactobacillus salivarius|Lactobacillus hayakitensis"
     cat $assembly_summary | awk -F "\t" '$8 ~ /'"$organism_name"'/ && $11=="latest" && $12 ~ /./ && $5 ~ /re/ {print $0}' | cut -f8,9,12 | sort -k1,1 -k2,2
     cat $assembly_summary | awk -F "\t" '$8 ~ /'"$organism_name"'/ && $11=="latest" && $12 ~ /./ && $5 ~ /re/ {print $20}' > ftpdirpaths
 
+    # コンプリートゲノム
     # "Complete Genome"
     organism_name="Lactobacillus salivarius"
     cat $assembly_summary | awk -F "\t" '$8 ~ /'"$organism_name"'/ && $11=="latest" && $12 ~ /Complete Genome/ {print $0}' | cut -f8,9,12 | sort -k1,1 -k2,2
     cat $assembly_summary | awk -F "\t" '$8 ~ /'"$organism_name"'/ && $11=="latest" && $12 ~ /Complete Genome/ {print $20}' > ftpdirpaths
 
+    # 外群
     # outgroup
     organism_name="Lactobacillus hayakitensis"
     cat $assembly_summary | awk -F "\t" '$8 ~ /'"$organism_name"'/ && $11=="latest" {print $0}' | cut -f8,9,12 | sort -k1,1 -k2,2
     cat $assembly_summary | awk -F "\t" '$8 ~ /'"$organism_name"'/ && $11=="latest" {print $20}' >> ftpdirpaths
 
+    # 
     cat ftpdirpaths
 
 抽出されたURLをブラウザFirefox/Chromeで開く。*README.txt*ファイルをクリックする。  
