@@ -592,8 +592,6 @@ Also see the Downloading Genomic Data Factsheet
 ftp://ftp.ncbi.nlm.nih.gov/pub/factsheets/HowTo_Downloading_Genomic_Data.pdf
 
 https://github.com/haruosuz/microbe/blob/master/references/README.bacteria.md#lactobacillus-salivarius
-- Lactobacillus salivarius, a species commonly isolated from the gastrointestinal tract of humans and animals, has been described as having potential probiotic properties and results of previous studies have revealed considerable functional diversity existing on both the chromosomes and plasmids.
-- Lactobacillus hayakitensis DSM18933T was also included in the study as a related outgroup.
 
 参照/代表ゲノム("reference genome" or "representative genome")、コンプリートゲノム("Complete Genome")配列データの最新版("latest")のURLを抽出する。  
 List the ftp_path (column 20) for the assemblies of interest, in this case those that have organism_name of your interest (column 8), "latest" version_status (column 11) and "Complete Genome" assembly_level (column 12).
@@ -606,8 +604,8 @@ List the ftp_path (column 20) for the assemblies of interest, in this case those
     # 参照ゲノムまたは代表ゲノム
     # "reference genome" or "representative genome"
     organism_name="Lactobacillus salivarius|Lactobacillus hayakitensis"
-    cat $assembly_summary | awk -F "\t" '$8 ~ /'"$organism_name"'/ && $11=="latest" && $12 ~ /./ && $5 ~ /re/ {print $0}' | cut -f8,9,12 | sort -k1,1 -k2,2
-    cat $assembly_summary | awk -F "\t" '$8 ~ /'"$organism_name"'/ && $11=="latest" && $12 ~ /./ && $5 ~ /re/ {print $20}' > ftpdirpaths
+    cat $assembly_summary | awk -F "\t" '$8 ~ /'"$organism_name"'/ && $11=="latest" && $5 ~ /re/ {print $0}' | cut -f8,9,12 | sort -k1,1 -k2,2
+    cat $assembly_summary | awk -F "\t" '$8 ~ /'"$organism_name"'/ && $11=="latest" && $5 ~ /re/ {print $20}' > ftpdirpaths
 
     # コンプリートゲノム
     # "Complete Genome"
@@ -682,7 +680,7 @@ ls -lh *.fna*
 データの検査
 
 ```
-cd ~/projects/data/ncbi/assembly_reports/
+#cd ~/projects/data/ncbi/assembly_reports/
 
 # `ls -lh`でファイルサイズを確認する:  
 # `ls -lh` reports human-readable file sizes
@@ -720,7 +718,7 @@ grep "^>" *.fna | grep "16S ribosomal RNA"
 cat *_rna_from_genomic.fna > all.fna
 myfile=all.fna
 pattern="16S ribosomal RNA"
-seqkit grep -nrp "${pattern}" "${myfile}" | perl -pe 's/>lcl\|([^ ]+) \[locus_tag=([^ ]+)\] \[db_xref=(GeneID:[^ ]+)\] (.+)\n/>$1 $2 $3\n/g' > myseq.fasta
+seqkit grep -nrp "${pattern}" "${myfile}" | perl -pe 's/>lcl\|([^ ]+) \[locus_tag=([^ ]+)\] (.+)\n/>$1 $2\n/g,s/ /~/g' > myseq.fasta
 grep "^>" myseq.fasta
 ```
 
@@ -744,14 +742,15 @@ substitutionModel=GTRGAMMA
 raxmlHPC-SSE3 -s "${sequenceFileName}" -n "${outputFileName}" -m "${substitutionModel}" -p 12345
 ```
 
-*RAxML_bestTree.myseq.fasta.aln.newick*ファイルを用いて、
+[FastTree](https://github.com/haruosuz/evolve/blob/master/references/README.evolve.tools.md#fasttree)による最尤系統樹推定:  
+```
+sequenceFileName=myseq.fasta.aln
+outputFileName="${sequenceFileName}".newick
+FastTree -fastest -nt -gtr "${sequenceFileName}" > "${outputFileName}"
+```
+
+Newick形式のファイル（*myseq.fasta.aln.newick*または*RAxML_bestTree.myseq.fasta.aln.newick*）を用いて、
 [FigTree](http://www.fish-evol.org/FigTree.html)や[SeaView](http://doua.prabi.fr/software/seaview)で系統樹を描く。
-
-
-
-
-
-
 
 
 
