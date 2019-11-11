@@ -689,12 +689,11 @@ grep "^>" *.fna | grep "16S ribosomal RNA"
 "16S ribosomal RNA"の配列を[seqkit](https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#seqkit)で抽出し、FASTAヘッダをperlで編集する:  
 ```
 # seqkit grep -h
-cat GC*.fna > all.fna
+cat *_rna_from_genomic.fna > all.fna
 myfile=all.fna
 pattern="16S ribosomal RNA"
 #seqkit grep -nrp "${pattern}" "${myfile}" | perl -pe 's/ /./g' > myseq.fasta
-seqkit grep -nrp "${pattern}" "${myfile}" | perl -pe 's/>lcl\|([^ ]+) [locus_tag=([^ ]+)] [db_xref=GeneID:([^ ]+)] [product=([^ ]+)] (.+)\n/>$1\n/g,s/ /./g' > myseq.fasta
-seqkit grep -nrp "${pattern}" "${myfile}" | perl -pe 's/>([^ ]+) \[locus_tag=([^ ]+)\] (.+)\n/>$2\n/g' > myseq.fasta
+seqkit grep -nrp "${pattern}" "${myfile}" | perl -pe 's/>lcl\|([^ ]+) \[locus_tag=([^ ]+)\] \[db_xref=(GeneID:[^ ]+)\] (.+)\n/>$1 $2 $3\n/g' > myseq.fasta
 grep "^>" myseq.fasta
 ```
 
