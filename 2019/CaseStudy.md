@@ -744,9 +744,9 @@ raxmlHPC-SSE3 -s "${sequenceFileName}" -n "${outputFileName}" -m "${substitution
 
 [FastTree](https://github.com/haruosuz/evolve/blob/master/references/README.evolve.tools.md#fasttree)による最尤系統樹推定:  
 ```
-sequenceFileName=myseq.fasta.aln
-outputFileName="${sequenceFileName}".newick
-FastTree -fastest -nt -gtr "${sequenceFileName}" > "${outputFileName}"
+alignment_file=myseq.fasta.aln
+tree_file="${alignment_file}".newick
+FastTree -fastest -nt -gtr "${alignment_file}" > "${tree_file}"
 ```
 
 Newick形式のファイル（*myseq.fasta.aln.newick*または*RAxML_bestTree.myseq.fasta.aln.newick*）を用いて、
