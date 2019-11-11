@@ -560,12 +560,12 @@ assembly_summary_refseq.txt             - current RefSeq genome assemblies
 
     # `wget`は再帰的にデータをダウンロードできる。ウェブページからテキストファイルを全てダウンロードする:  
     # Recursive downloading can be useful for downloading all files of a certain type from a page.
-    # wget --background --accept "*.txt,*.txt.gz" --no-directories --recursive --no-parent $URL
-    wget -b -A "*.txt,*.txt.gz" -nd -r -np ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/
+    # wget --background --output-file=logfile --accept "*.mp3" --no-directories --recursive --no-parent $URL
+    wget -b -o wget-log.txt -A "*.txt,*.txt.gz" -nd -r -np ftp://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/
 
     # `tail -f`でファイル出力を監視する（Control-Cで動作中のプロセスを停止）
     # Use `tail -f` to constantly monitor files (use Control-C to stop)
-    tail -f wget-log
+    tail -f wget-log.txt
 
 GenBankまたはRefSeqのゲノム配列のメタデータを確認する。
 
@@ -578,9 +578,8 @@ GenBankまたはRefSeqのゲノム配列のメタデータを確認する。
     # To access a variable’s value, we use a dollar sign in front of the variable’s name (e.g., $assembly_summary):  
     echo $assembly_summary
 
-    # 列番号を付けて出力する:
-    grep "^#" $assembly_summary | tail -n 1 | tr "\t" "\n" | nl
-
+    # Unixコマンド（`grep, cut, sort, uniq`）を組み合わせて、表形式データの列を要約:  
+    # combine Unix tools (`grep, cut, sort, uniq`) to summarize columns of tabular data:
     grep -v "^#" $assembly_summary | cut -f5 | sort | uniq -c
     grep -v "^#" $assembly_summary | cut -f12 | sort | uniq -c
 
@@ -683,6 +682,61 @@ grep "^>" *.fna | wc -l
 grep "^>" *.fna | grep "rRNA"
 grep "^>" *.fna | grep "16S ribosomal RNA"
 ```
+
+"16S ribosomal RNA"の配列を[seqkit](https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#seqkit)で抽出し、FASTAヘッダをperlで編集する:  
+```
+# seqkit grep -h
+cat GC*.fna > all.fna
+myfile=all.fna
+pattern="16S ribosomal RNA"
+#seqkit grep -nrp "${pattern}" "${myfile}" | perl -pe 's/ /./g' > myseq.fasta
+seqkit grep -nrp "${pattern}" "${myfile}" | perl -pe 's/>lcl\|([^ ]+) [locus_tag=([^ ]+)] [db_xref=GeneID:([^ ]+)] [product=([^ ]+)] (.+)\n/>$1\n/g,s/ /./g' > myseq.fasta
+seqkit grep -nrp "${pattern}" "${myfile}" | perl -pe 's/>([^ ]+) \[locus_tag=([^ ]+)\] (.+)\n/>$2\n/g' > myseq.fasta
+grep "^>" myseq.fasta
+```
+
+[統合TV](https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#togotv)
+MAFFT・RAxML・FigTreeを組み合わせて分子系統解析を行う
+
+[MAFFT](https://github.com/haruosuz/evolve/blob/master/references/README.evolve.tools.md#mafft)で多重整列:  
+```
+# mafft --help
+input=myseq.fasta
+output="${input}".aln
+mafft "${input}" > "${output}"
+```
+
+[RAxML](https://github.com/haruosuz/evolve/blob/master/references/README.evolve.tools.md#raxml)による最尤系統樹推定:  
+```
+# raxmlHPC -h
+sequenceFileName=myseq.fasta.aln
+outputFileName="${sequenceFileName}".newick
+substitutionModel=GTRGAMMA
+raxmlHPC-SSE3 -s "${sequenceFileName}" -n "${outputFileName}" -m "${substitutionModel}" -p 12345
+```
+
+*RAxML_bestTree.myseq.fasta.aln.newick*ファイルを用いて、
+[FigTree](http://www.fish-evol.org/FigTree.html)や[SeaView](http://doua.prabi.fr/software/seaview)で系統樹を描く。
+
+
+
+
+
+
+
+
+
+
+エラーメッセージ
+```
+RAxML can't, parse the alignment file as phylip file 
+it will now try to parse it as FASTA file
+
+ERROR: Taxon Name "lcl|NC_007929.1_rrna_1.[locus_tag=LSL_RNA001].[db_xref=GeneID:3978205].[product=16S.ribosomal.RNA].[location=74540..76056].[gbkey=rRNA]" is invalid at position 23, it contains illegal character [
+Illegal characters in taxon-names are: tabulators, carriage returns, spaces, ":", ",", ")", "(", ";", "]", "[", "'" 
+Exiting
+```
+
 
 ----------
 
