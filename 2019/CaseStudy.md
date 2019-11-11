@@ -526,8 +526,8 @@ assembly_summary_refseq.txt             - current RefSeq genome assemblies
 - 2018-10-23 [RefSeq - JI](http://fish-evol.org/RefSeq.html) 井上 潤
 - 2017.03.12 [RefSeq | 詳細な注釈づけられている冗長性のない核酸データベース](https://bi.biopapyrus.jp/db/refseq.html)
 
-### Downloading data
-データのダウンロード
+### Downloading metadata
+メタデータのダウンロード
 
 [ターミナル](http://techacademy.jp/magazine/5155)を開き、`bash`を起動する:  
 
@@ -583,17 +583,37 @@ GenBankまたはRefSeqのゲノム配列のメタデータを確認する。
     grep -v "^#" $assembly_summary | cut -f5 | sort | uniq -c
     grep -v "^#" $assembly_summary | cut -f12 | sort | uniq -c
 
+### Downloading data
+データのダウンロード
+
 Genomes Download FAQ
 [How can I download RefSeq data for all complete bacterial genomes?](https://www.ncbi.nlm.nih.gov/genome/doc/ftpfaq/#allcomplete)
 Also see the Downloading Genomic Data Factsheet
 ftp://ftp.ncbi.nlm.nih.gov/pub/factsheets/HowTo_Downloading_Genomic_Data.pdf
 
+https://github.com/haruosuz/microbe/blob/master/references/README.bacteria.md#lactobacillus-salivarius
+- Lactobacillus salivarius
+- Lactobacillus hayakitensis DSM18933T was also included in the study as a related outgroup.
+- The tree is rooted on L. hayakitensis
+
 参照/代表ゲノム("reference genome" or "representative genome")、完全ゲノム("Complete Genome")配列データの最新版("latest")のURLを抽出する。  
 List the ftp_path (column 20) for the assemblies of interest, in this case those that have organism_name of your interest (column 8), "latest" version_status (column 11) and "Complete Genome" assembly_level (column 12).
 
+    # "reference genome" or "representative genome"
+    organism_name="Lactobacillus salivarius|Lactobacillus hayakitensis"
+    cat $assembly_summary | awk -F "\t" '$8 ~ /'"$organism_name"'/ && $11=="latest" && $12 ~ /./ && $5 ~ /re/ {print $0}' | cut -f8,9,12 | sort -k1,1 -k2,2
+    cat $assembly_summary | awk -F "\t" '$8 ~ /'"$organism_name"'/ && $11=="latest" && $12 ~ /./ && $5 ~ /re/ {print $20}' > ftpdirpaths
+
+    # "Complete Genome"
     organism_name="Lactobacillus salivarius"
-    cat $assembly_summary | awk -F "\t" '$8 ~ /'"$organism_name"'/ && $11=="latest" && $12 ~ /Complete Genome/ && $5 ~ /re/ {print $0}' | cut -f8,9,12 | sort -k1,1 -k2,2
-    cat $assembly_summary | awk -F "\t" '$8 ~ /'"$organism_name"'/ && $11=="latest" && $12 ~ /Complete Genome/ && $5 ~ /re/ {print $20}' > ftpdirpaths
+    cat $assembly_summary | awk -F "\t" '$8 ~ /'"$organism_name"'/ && $11=="latest" && $12 ~ /Complete Genome/ {print $0}' | cut -f8,9,12 | sort -k1,1 -k2,2
+    cat $assembly_summary | awk -F "\t" '$8 ~ /'"$organism_name"'/ && $11=="latest" && $12 ~ /Complete Genome/ {print $20}' > ftpdirpaths
+
+    # outgroup
+    organism_name="Lactobacillus hayakitensis"
+    cat $assembly_summary | awk -F "\t" '$8 ~ /'"$organism_name"'/ && $11=="latest" {print $0}' | cut -f8,9,12 | sort -k1,1 -k2,2
+    cat $assembly_summary | awk -F "\t" '$8 ~ /'"$organism_name"'/ && $11=="latest" {print $20}' >> ftpdirpaths
+
     cat ftpdirpaths
 
 抽出されたURLをブラウザFirefox/Chromeで開く。*README.txt*ファイルをクリックする。  
@@ -692,7 +712,6 @@ grep "^>" *.fna | grep "16S ribosomal RNA"
 cat *_rna_from_genomic.fna > all.fna
 myfile=all.fna
 pattern="16S ribosomal RNA"
-#seqkit grep -nrp "${pattern}" "${myfile}" | perl -pe 's/ /./g' > myseq.fasta
 seqkit grep -nrp "${pattern}" "${myfile}" | perl -pe 's/>lcl\|([^ ]+) \[locus_tag=([^ ]+)\] \[db_xref=(GeneID:[^ ]+)\] (.+)\n/>$1 $2 $3\n/g' > myseq.fasta
 grep "^>" myseq.fasta
 ```
