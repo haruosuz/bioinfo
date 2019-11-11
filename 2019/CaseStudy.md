@@ -46,14 +46,10 @@ conda config --add channels bioconda
 conda config --add channels conda-forge
 
 # 3. Install packages
-conda install raxml
+conda install seqkit
 conda install mafft
-```
-
-[seqkit](https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#seqkit)
-をインストールする:
-```
-conda install -c bioconda seqkit
+conda install raxml
+conda install fasttree
 ```
 
 ----------
@@ -125,7 +121,7 @@ grep "^>" 16S.fasta | grep 'Holospora'
 grep "^>" 16S.fasta | grep -c 'Holospora'
 ```
 
-[seqkit](https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#seqkit)で'Holospora'の配列を抽出する:  
+'Holospora'の配列を[seqkit](https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#seqkit)で抽出する:  
 ```
 # seqkit grep -h
 myfile=16S.fasta
