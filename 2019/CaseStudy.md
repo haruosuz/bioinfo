@@ -111,7 +111,13 @@ grep -A 1 "NC_008497" sequence.fasta
 >NC_008497_03
 >NC_008497_04
 >NC_008497_05
+
+(base) ~/projects/data/grd $du -sh *
+24M	grd_all_201304
+1.1M	grd_all_201304.zip
+
 ```
+
 
 ----------
 ## ddbj_16S
@@ -159,6 +165,11 @@ tgagagtttgatcctggctcaggacgaacgctggcggcatgcctaatacatgcaagtcga
 --
 >CP000416_5|Lactobacillus brevis ATCC 367|16S ribosomal RNA
 tgagagtttgatcctggctcaggacgaacgctggcggcatgcctaatacatgcaagtcga
+
+(base) ~/projects/data/ddbj/16S $du -sh *
+1.1G	16S.fasta
+113M	16S.fasta.gz
+
 ```
 
 ----------
@@ -178,16 +189,22 @@ curl -O https://raw.githubusercontent.com/haruosuz/bioinfo/master/2019/scripts/r
 
 ### step by step tutorial
 
-[Download](https://rrndb.umms.med.umich.edu/static/download/)から、16S rRNAをコードするDNA塩基配列のFASTA形式ファイルを取得する:  
+[Download](https://rrndb.umms.med.umich.edu/static/download/)から、16S rRNAをコードするDNA塩基配列のFASTA形式ファイルを取得する
+
+
 ```
+# ディレクトリを作成し移動する
+# make directories
+mkdir -p ~/projects/data/rrnDB
+# change to the directory
+cd ~/projects/data/rrnDB/
+
 # retrieving data
 curl -O https://rrndb.umms.med.umich.edu/static/download/rrnDB-5.5_16S_rRNA.fasta.zip
 unzip rrnDB-5.5_16S_rRNA.fasta.zip
-```
 
-```
-# "Lactobacillus brevis ATCC 367"にマッチする行を表示する
-# use `grep` to find "Lactobacillus brevis ATCC 367"
+# データの検査
+# Inspecting data
 grep "Lactobacillus brevis ATCC 367" rrnDB-5.5_16S_rRNA.fasta
 
 (base) ~/projects/data/rrnDB $grep -A 1 "Lactobacillus brevis ATCC 367" rrnDB-5.5_16S_rRNA.fasta
@@ -205,9 +222,13 @@ ATAAGATGAGAGTTTGATCCTGGCTCAGGACGAACGCTGGCGGCATGCCTAATACATGCAAGTCGAACGAGCTTCCGTT
 --
 >Lactobacillus brevis ATCC 367|GCF_000014465.1|NC_008497.1|Chromosome: ANONYMOUS|86143..87717 +
 ATAAGATGAGAGTTTGATCCTGGCTCAGGACGAACGCTGGCGGCATGCCTAATACATGCAAGTCGAACGAGCTTCCGTT
-```
 
-```
+
+(base) ~/projects/data/rrnDB $du -sh *
+85M	rrnDB-5.5_16S_rRNA.fasta
+5.1M	rrnDB-5.5_16S_rRNA.fasta.zip
+
+
 Begin forwarded message:
 
 Subject: RE: Reverse Complement for rrnDB-5.5_16S_rRNA
