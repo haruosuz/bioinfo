@@ -176,7 +176,7 @@ grep "^>" 16S.fasta | wc -l
 # use `grep` to find "Lactobacillus brevis ATCC 367"
 grep "^>" 16S.fasta | grep "Lactobacillus brevis ATCC 367"
 
-(base) ~/projects/data/ddbj/16S $grep -A 1 "Lactobacillus brevis ATCC 367" 16S.fasta
+~/projects/data/ddbj/16S $grep -A 1 "Lactobacillus brevis ATCC 367" 16S.fasta
 >CP000416_1|Lactobacillus brevis ATCC 367|16S ribosomal RNA
 tgagagtttgatcctggctcaggacgaacgctggcggcatgcctaatacatgcaagtcga
 --
