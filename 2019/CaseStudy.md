@@ -122,15 +122,11 @@ https://www.ddbj.nig.ac.jp/download.html
 最新 DDBJ リリースから 16S rRNA 配列データを抽出したもの
 
 ```
-# ディレクトリを作成する
+# ディレクトリを作成し移動する
 # make directories
 mkdir -p ~/projects/data/ddbj/16S
-
-# ディレクトリを移動する
-# change directories
+# change to the directory
 cd ~/projects/data/ddbj/16S/
-
-# ftp://ftp.ddbj.nig.ac.jp/ddbj_database/16S/
 
 # *readme.txt*ファイルをダウンロードする
 # download *readme.txt* file 
@@ -140,40 +136,12 @@ curl -O ftp://ftp.ddbj.nig.ac.jp/ddbj_database/16S/readme.txt
 # download *16S.fasta.gz* file
 wget -b ftp://ftp.ddbj.nig.ac.jp/ddbj_database/16S/16S.fasta.gz
 
-# `tail -f`でファイル出力を監視する（Control-Cで動作中のプロセスを停止）
-# Use `tail -f` to constantly monitor files (use Control-C to stop)
-tail -f wget-log
-
 # `gunzip｀コマンドでファイルを展開する
 # decompress files with the command `gunzip`
 gunzip -c 16S.fasta.gz > 16S.fasta
-```
 
-データの検査
-```
-# ファイルサイズを確認する
-# `ls -lh` reports human-readable file sizes
-ls -lh
-
-# `head`で先頭部分を表示する
-# look at the top of a file with `head`
-head 16S.fasta
-
-# FASTA形式ファイルのヘッダ（">"で始まる行）
-# `grep`でパターン"^>"にマッチする行を抽出する（Control-Cで動作中のプロセスを停止）
-# use `grep` to extract lines matching the pattern "^>" (use Control-C to stop)
-grep "^>" 16S.fasta
-
-# パイプでプログラムの入出力をつなぐ
-# Pipe the standard output to the next command with the pipe character (`|`).
-grep "^>" 16S.fasta | head
-
-# `wc -l`で行数をカウントする
-# `wc -l` outputs the number of lines
-grep "^>" 16S.fasta | wc -l
-
-# "Lactobacillus brevis ATCC 367"にマッチする行を表示する
-# use `grep` to find "Lactobacillus brevis ATCC 367"
+# データの検査
+# Inspecting data
 grep "^>" 16S.fasta | grep "Lactobacillus brevis ATCC 367"
 
 (base) ~/projects/data/ddbj/16S $grep -A 1 "Lactobacillus brevis ATCC 367" 16S.fasta
@@ -720,6 +688,7 @@ ls -lh
 head *.fna
 
 # FASTA形式ファイルのヘッダ（">"で始まる行）
+
 # `grep`でパターン"^>"にマッチする行を抽出する（Control-Cで動作中のプロセスを停止）
 # use `grep` to extract lines matching the pattern "^>" (use Control-C to stop)
 grep "^>" *.fna
