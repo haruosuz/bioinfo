@@ -3,14 +3,18 @@
 
 ## Table of Contents
 - [Install](#install)
+- [GRD](#grd) Genomic-based 16S ribosomal RNA Database
 - [ddbj_16S](#ddbj_16S)
 - [rrnDB](#rrndb)
 - [DoMosaics](#domosaics)
 - [plasmid.protein.faa](#plasmidproteinfaa)
 - [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
-- [2019-10-23](#2019-10-23) 第222回農林交流センターワークショップ「分子系統樹推定法：理論と応用」
-- [2019-10-24](#2019-10-24) 第222回農林交流センターワークショップ「分子系統樹推定法：理論と応用」
-- [2019-10-25](#2019-10-25) 第222回農林交流センターワークショップ「分子系統樹推定法：理論と応用」
+- [2019-11-13](#2019-11-13) Annotathon2019（生命科学データベースの利用価値向上のためのアノテーションマラソン）
+- [LEA](#lea) (Latent Environment Allocation)
+- 第222回農林交流センターワークショップ「分子系統樹推定法：理論と応用」
+[2019-10-23](#2019-10-23) 
+[2019-10-24](#2019-10-24) 
+[2019-10-25](#2019-10-25) 
 - [2019-08-04](#2019-08-04) 第3回 進化学セミナー プログラム | 木村資生記念 進化学セミナー
 - [Sequence similarity search](#sequence-similarity-search) 配列類似性検索
 - [UniProtKB Swiss-Prot protein sequence database](#uniprotkb-swiss-prot-protein-sequence-database) タンパク質配列データベース
@@ -29,6 +33,14 @@
 - https://github.com/haruosuz/DS4GD/tree/master/2019giga
 - https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#ncbi-assembly_reports
 - https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#ncbi-refseq-release
+
+[TogoWS RESTサービスを使い倒す 2011](https://doi.org/10.7875/togotv.2011.058)  
+[TogoWS: REST](http://togows.dbcls.jp/site/en/rest.html)  
+- http://togows.dbcls.jp/entry/nucleotide/J00231/definition
+
+http://togows.dbcls.jp/entry/nucleotide/NZ_LT604074.1/definition
+Lactobacillus salivarius isolate LPM01 genome assembly, chromosome: I.
+
 
 ----------
 ## Install
@@ -50,6 +62,55 @@ conda install seqkit
 conda install mafft
 conda install raxml
 conda install fasttree
+```
+
+----------
+## GRD
+
+https://metasystems.riken.jp/grd/
+GRD - Genomic-based 16S ribosomal RNA Database
+
+https://metasystems.riken.jp/grd/download.html
+Download various subsets of the GRD database
+Datasets (excluding sequences with Ns)
+All 16S
+
+```
+# ディレクトリを作成する
+# make directories
+mkdir -p ~/projects/data/grd
+
+# ディレクトリを移動する
+# change directories
+cd ~/projects/data/grd/
+
+# ファイルをダウンロードする
+# download files
+wget -b https://metasystems.riken.jp/grd/download/grd_all_201304.zip
+
+# `tail -f`でファイル出力を監視する（Control-Cで動作中のプロセスを停止）
+# Use `tail -f` to constantly monitor files (use Control-C to stop)
+tail -f wget-log
+
+# `unzip`コマンドでファイルを展開する
+# decompress files with the command `unzip`
+unzip grd_all_201304.zip
+
+# ディレクトリを移動する
+# change directories
+cd grd_all_201304/
+
+# データの検査
+# Inspecting data
+grep "Lactobacillus brevis ATCC 367" *
+grep -A 1 "NC_008497" sequence.fasta
+
+(base) ~/projects/data/grd/grd_all_201304 $grep "NC_008497" sequence.fasta
+>NC_008497_01
+>NC_008497_02
+>NC_008497_03
+>NC_008497_04
+>NC_008497_05
 ```
 
 ----------
@@ -110,53 +171,32 @@ grep "^>" 16S.fasta | head
 # `wc -l`で行数をカウントする
 # `wc -l` outputs the number of lines
 grep "^>" 16S.fasta | wc -l
-```
 
-'Holospora'にマッチする行を表示する:
-```
-# use `grep` to find 'Holospora'
-grep "^>" 16S.fasta | grep 'Holospora'
+# "Lactobacillus brevis ATCC 367"にマッチする行を表示する
+# use `grep` to find "Lactobacillus brevis ATCC 367"
+grep "^>" 16S.fasta | grep "Lactobacillus brevis ATCC 367"
 
-# use `grep` to count (the -c option stands for count) the number of lines matching the pattern
-grep "^>" 16S.fasta | grep -c 'Holospora'
 ```
-
-'Holospora'の配列を[seqkit](https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#seqkit)で抽出する:  
+(base) ~/projects/data/ddbj/16S $grep -A 1 "Lactobacillus brevis ATCC 367" 16S.fasta
+>CP000416_1|Lactobacillus brevis ATCC 367|16S ribosomal RNA
+tgagagtttgatcctggctcaggacgaacgctggcggcatgcctaatacatgcaagtcga
+--
+>CP000416_2|Lactobacillus brevis ATCC 367|16S ribosomal RNA
+tgagagtttgatcctggctcaggacgaacgctggcggcatgcctaatacatgcaagtcga
+--
+>CP000416_3|Lactobacillus brevis ATCC 367|16S ribosomal RNA
+tgagagtttgatcctggctcaggacgaacgctggcggcatgcctaatacatgcaagtcga
+--
+>CP000416_4|Lactobacillus brevis ATCC 367|16S ribosomal RNA
+tgagagtttgatcctggctcaggacgaacgctggcggcatgcctaatacatgcaagtcga
+--
+>CP000416_5|Lactobacillus brevis ATCC 367|16S ribosomal RNA
+tgagagtttgatcctggctcaggacgaacgctggcggcatgcctaatacatgcaagtcga
 ```
-# seqkit grep -h
-myfile=16S.fasta
-pattern='Holospora'
-seqkit grep -nrp "${pattern}" "${myfile}" | perl -pe 's/ /./g' > myseq.fasta
-```
-
-[統合TV](https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#togotv)
-MAFFT・RAxML・FigTreeを組み合わせて分子系統解析を行う
-
-[MAFFT](https://github.com/haruosuz/evolve/blob/master/references/README.evolve.tools.md#mafft)で多重整列:  
-```
-# mafft --help
-input=myseq.fasta
-output="${input}".aln
-mafft "${input}" > "${output}"
-```
-
-[RAxML](https://github.com/haruosuz/evolve/blob/master/references/README.evolve.tools.md#raxml)による最尤系統樹推定:  
-```
-# raxmlHPC -h
-sequenceFileName=myseq.fasta.aln
-outputFileName="${sequenceFileName}".newick
-substitutionModel=GTRGAMMA
-raxmlHPC-SSE3 -s "${sequenceFileName}" -n "${outputFileName}" -m "${substitutionModel}" -p 12345
-```
-
-*RAxML_bestTree.myseq.fasta.aln.newick*ファイルを用いて、
-[FigTree](http://www.fish-evol.org/FigTree.html)や[SeaView](http://doua.prabi.fr/software/seaview)で系統樹を描く。
 
 ----------
 ## rrnDB
 リボソームRNAオペロンのコピー数データベース [rrnDB](https://rrndb.umms.med.umich.edu/)
-
-[Wolbachia](https://github.com/haruosuz/microbe/blob/master/references/README.bacteria.md#wolbachia)属に属する細菌の16S rRNA遺伝子系統解析を行う
 
 ### shell script
 
@@ -178,40 +218,27 @@ curl -O https://rrndb.umms.med.umich.edu/static/download/rrnDB-5.5_16S_rRNA.fast
 unzip rrnDB-5.5_16S_rRNA.fasta.zip
 ```
 
-"Wolbachia"にマッチする行を表示する:
 ```
-grep "Wolbachia" rrnDB-5.5_16S_rRNA.fasta
-```
+# "Lactobacillus brevis ATCC 367"にマッチする行を表示する
+# use `grep` to find "Lactobacillus brevis ATCC 367"
+grep "Lactobacillus brevis ATCC 367" rrnDB-5.5_16S_rRNA.fasta
 
-"Wolbachia"の配列をseqkitで抽出し、FASTAヘッダをperlで編集する:  
+(base) ~/projects/data/rrnDB $grep -A 1 "Lactobacillus brevis ATCC 367" rrnDB-5.5_16S_rRNA.fasta
+>Lactobacillus brevis ATCC 367|GCF_000014465.1|NC_008497.1|Chromosome: ANONYMOUS|1504661..1506235 -
+TTCCTTAGAAAGGAGGTGATCCAGCCGCAGGTTCTCCTACGGCTACCTTGTTACGACTTCACCCTAATCATCTGTCCCA
+--
+>Lactobacillus brevis ATCC 367|GCF_000014465.1|NC_008497.1|Chromosome: ANONYMOUS|1146796..1148370 -
+TTCCTTAGAAAGGAGGTGATCCAGCCGCAGGTTCTCCTACGGCTACCTTGTTACGACTTCACCCTAATCATCTGTCCCA
+--
+>Lactobacillus brevis ATCC 367|GCF_000014465.1|NC_008497.1|Chromosome: ANONYMOUS|562987..564561 +
+ATAAGATGAGAGTTTGATCCTGGCTCAGGACGAACGCTGGCGGCATGCCTAATACATGCAAGTCGAACGAGCTTCCGTT
+--
+>Lactobacillus brevis ATCC 367|GCF_000014465.1|NC_008497.1|Chromosome: ANONYMOUS|453208..454782 +
+ATAAGATGAGAGTTTGATCCTGGCTCAGGACGAACGCTGGCGGCATGCCTAATACATGCAAGTCGAACGAGCTTCCGTT
+--
+>Lactobacillus brevis ATCC 367|GCF_000014465.1|NC_008497.1|Chromosome: ANONYMOUS|86143..87717 +
+ATAAGATGAGAGTTTGATCCTGGCTCAGGACGAACGCTGGCGGCATGCCTAATACATGCAAGTCGAACGAGCTTCCGTT
 ```
-# seqkit grep -h
-myfile=rrnDB-5.5_16S_rRNA.fasta
-pattern="Wolbachia"
-seqkit grep -nrp "${pattern}" "${myfile}" | perl -pe 's/>([^\|]+)\|([^\|]+)\|([^\|]+)\|([^\|]+)\|([^\|]+)\n/>$2\|$3\|$4\|$5\|$1\n/g,s/: /_/g' > "${myfile}"."${pattern}".fasta
-```
-
-[統合TV](https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#togotv)
-MAFFT・RAxML・FigTreeを組み合わせて分子系統解析を行う
-
-[MAFFT](https://github.com/haruosuz/evolve/blob/master/references/README.evolve.tools.md#mafft)で多重整列:  
-```
-# mafft --help
-input=rrnDB-5.5_16S_rRNA.fasta.Wolbachia.fasta
-output="${input}".aln
-mafft "${input}" > "${output}"
-```
-
-[RAxML](https://github.com/haruosuz/evolve/blob/master/references/README.evolve.tools.md#raxml)による最尤系統樹推定:  
-```
-# raxmlHPC -h
-sequenceFileName=rrnDB-5.5_16S_rRNA.fasta.Wolbachia.fasta.aln
-outputFileName="${sequenceFileName}".newick
-substitutionModel=GTRGAMMA
-raxmlHPC-SSE3 -s "${sequenceFileName}" -n "${outputFileName}" -m "${substitutionModel}" -p 12345
-```
-
-[FigTree](http://www.fish-evol.org/FigTree.html)や[SeaView](http://doua.prabi.fr/software/seaview)で系統樹を描く。
 
 ```
 Begin forwarded message:
@@ -573,6 +600,9 @@ GenBankまたはRefSeqのゲノム配列のメタデータを確認する。
     # To access a variable’s value, we use a dollar sign in front of the variable’s name (e.g., $assembly_summary):  
     echo $assembly_summary
 
+    # 列番号を付けて出力する:
+    grep "^#" $assembly_summary | tail -n 1 | tr "\t" "\n" | nl
+
     # Unixコマンド（`grep, cut, sort, uniq`）を組み合わせて、表形式データの列を要約:  
     # combine Unix tools (`grep, cut, sort, uniq`) to summarize columns of tabular data:
     grep -v "^#" $assembly_summary | cut -f5 | sort | uniq -c
@@ -596,20 +626,25 @@ List the ftp_path (column 20) for the assemblies of interest, in this case those
     assembly_summary="assembly_summary_genbank.txt"
     assembly_summary="assembly_summary_refseq.txt"
 
-    # 参照ゲノムまたは代表ゲノム
-    # "reference genome" or "representative genome"
+    # 参照/代表ゲノム("reference genome" or "representative genome")
     organism_name="Lactobacillus salivarius|Lactobacillus hayakitensis"
     cat $assembly_summary | awk -F "\t" '$8 ~ /'"$organism_name"'/ && $11=="latest" && $5 ~ /re/ {print $0}' | cut -f8,9,12 | sort -k1,1 -k2,2
     cat $assembly_summary | awk -F "\t" '$8 ~ /'"$organism_name"'/ && $11=="latest" && $5 ~ /re/ {print $20}' > ftpdirpaths
 
-    # コンプリートゲノム
-    # "Complete Genome"
+    # コンプリートゲノム("Complete Genome")
     organism_name="Lactobacillus salivarius"
     cat $assembly_summary | awk -F "\t" '$8 ~ /'"$organism_name"'/ && $11=="latest" && $12 ~ /Complete Genome/ {print $0}' | cut -f8,9,12 | sort -k1,1 -k2,2
     cat $assembly_summary | awk -F "\t" '$8 ~ /'"$organism_name"'/ && $11=="latest" && $12 ~ /Complete Genome/ {print $20}' > ftpdirpaths
 
-    # 外群
-    # outgroup
+    # コマンドの出力結果をファイルへ追記（リダイレクト`>>`）
+
+    # 株名 infraspecific_name
+    organism_name="Lactobacillus salivarius"
+    infraspecific_name="BCRC 14759"
+    cat $assembly_summary | awk -F "\t" '$8 ~ /'"$organism_name"'/ && $9 ~ /'"$infraspecific_name"'/ {print $0}' | cut -f8,9,12 | sort -k1,1 -k2,2
+    cat $assembly_summary | awk -F "\t" '$8 ~ /'"$organism_name"'/ && $9 ~ /'"$infraspecific_name"'/ {print $20}' >> ftpdirpaths
+
+    # 外群 outgroup
     organism_name="Lactobacillus hayakitensis"
     cat $assembly_summary | awk -F "\t" '$8 ~ /'"$organism_name"'/ && $11=="latest" {print $0}' | cut -f8,9,12 | sort -k1,1 -k2,2
     cat $assembly_summary | awk -F "\t" '$8 ~ /'"$organism_name"'/ && $11=="latest" {print $20}' >> ftpdirpaths
@@ -681,13 +716,13 @@ ls -lh *.fna*
 # `ls -lh` reports human-readable file sizes
 ls -lh
 
-# `head`で先頭部分を表示する:  
+# `head`で先頭部分を表示する
 # look at the top of a file with `head`
 head *.fna
 
 # FASTA形式ファイルのヘッダ（">"で始まる行）
-# `grep`でパターン"^>"にマッチする行を抽出する）:  
-# use `grep` to extract lines matching the pattern "^>"
+# `grep`でパターン"^>"にマッチする行を抽出する（Control-Cで動作中のプロセスを停止）
+# use `grep` to extract lines matching the pattern "^>" (use Control-C to stop)
 grep "^>" *.fna
 
 # パイプでプログラムの入出力をつなぐ
@@ -698,11 +733,44 @@ grep "^>" *.fna | head
 # `wc -l` outputs the number of lines
 grep "^>" *.fna | wc -l
 
-# "rRNA"にマッチする行を表示する:
+# "rRNA"にマッチする行を表示する
 # use `grep` to find "rRNA"
 grep "^>" *.fna | grep "rRNA"
+
+# use `grep` to count (the `-c` option stands for count) the number of lines matching the pattern
+grep "^>" *.fna | grep -c "rRNA"
+
+
 grep "^>" *.fna | grep "16S ribosomal RNA"
 ```
+
+- [TogoWS RESTサービスを使い倒す 2011](https://doi.org/10.7875/togotv.2011.058)  
+  - [TogoWS: REST](http://togows.dbcls.jp/site/en/rest.html)  
+- [RefSeq](https://github.com/haruosuz/bioinfo/blob/master/README.md#refseq)
+- [DDBJ 公開形式 (Flat file)](https://www.ddbj.nig.ac.jp/ddbj/flat-file.html)
+  - [FIELD COMMENTS](https://www.ddbj.nig.ac.jp/ddbj/flat-file.html#FIELD_COMMENTS)
+    - [DEFINITION](https://www.ddbj.nig.ac.jp/ddbj/flat-file.html#Definition)
+データの定義や遺伝子などに関する情報が簡単に記載されています。
+
+```
+# RefSeqデータのアクセッション番号を抽出する
+# Extract RefSeq accession numbers
+grep "^>" *.fna | grep "16S ribosomal RNA" | perl -pe 's/>lcl\|([^ ]+)_rrna_.+ (.+)\n/$1\n/g' > my_accession.txt
+
+# RefSeqデータの「DEFINITION」を取得する
+# Retrieving "DEFINITION" field
+for AC in `cat my_accession.txt`; do curl http://togows.dbcls.jp/entry/nucleotide/$AC/definition; done > my_definition.txt
+
+# ファイルを行単位で連結する
+# merge lines of files
+paste my_accession.txt my_definition.txt > my_name.txt
+```
+
+
+
+
+
+
 
 ### [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
 多重配列アライメントと系統樹
@@ -718,7 +786,7 @@ grep "^>" myseq.fasta
 ```
 
 [統合TV](https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#togotv)
-MAFFT・RAxML・FigTreeを組み合わせて分子系統解析を行う
+[MAFFT・RAxML・FigTreeを組み合わせて分子系統解析を行う](https://doi.org/10.7875/togotv.2018.093)
 
 [MAFFT](https://github.com/haruosuz/evolve/blob/master/references/README.evolve.tools.md#mafft)で多重整列:  
 ```
@@ -752,16 +820,59 @@ FastTree -fastest -nt -gtr "${alignment_file}" > "${tree_file}"
 
 
 
-エラーメッセージ
-```
-RAxML can't, parse the alignment file as phylip file 
-it will now try to parse it as FASTA file
 
-ERROR: Taxon Name "lcl|NC_007929.1_rrna_1.[locus_tag=LSL_RNA001].[db_xref=GeneID:3978205].[product=16S.ribosomal.RNA].[location=74540..76056].[gbkey=rRNA]" is invalid at position 23, it contains illegal character [
-Illegal characters in taxon-names are: tabulators, carriage returns, spaces, ":", ",", ")", "(", ";", "]", "[", "'" 
-Exiting
-```
 
+
+
+
+
+
+
+----------
+## 2019-11-13
+[Annotathon2019](https://docs.google.com/document/d/1FnPIQQJSeoPTfrB3dQz0eKIgLTBfJhxthcmcOYxmZRs/mobilebasic)
+（生命科学データベースの利用価値向上のためのアノテーションマラソン）
+
+ハッシュタグ [#annotathon](https://twitter.com/hashtag/annotathon?f=live)
+
+- https://doi.org/10.7875/togotv.2013.035
+2013-05-30 Open Refine（旧Google Refine）の使い方 応用編・TogoWS RESTを活用する
+- https://doi.org/10.7875/togotv.2013.004
+2013-02-12 Open Refine（旧Google Refine）の使い方 〜導入・基本編〜
+
+----------
+## LEA
+
+[LEA](https://github.com/haruosuz/mgsa/blob/master/references/mgsa.tools.md#lea)
+(Latent Environment Allocation)
+
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6005635/
+All of data (taxonomic compositions and sample description documents) used for the machine learning process of LEA are available at MicrobeDB.jp (http://microbedb.jp/MDB/) and files in the CSV format are available at http://palaeo.nig.ac.jp/Resources/lea2018/.
+
+```
+# http://palaeo.nig.ac.jp/Resources/lea2018/
+[TXT]	lea_training_samples_taxa.csv	28-Dec-2017 17:29	100M	 
+[TXT]	lea_training_samples_words.csv	28-Dec-2017 17:29	45M	 
+
+# ディレクトリを作成する
+# make directories
+mkdir -p ~/projects/data/lea
+
+# ディレクトリを移動する
+# change directories
+cd  ~/projects/data/lea/
+
+# ファイルをダウンロードする
+# download files
+wget -b -o wget-log.txt \\
+http://palaeo.nig.ac.jp/Resources/lea2018/lea_training_samples_taxa.csv \\
+http://palaeo.nig.ac.jp/Resources/lea2018/lea_training_samples_words.csv
+
+# 列番号を付けて出力する
+file=lea_training_samples_words.csv # 765
+#file=lea_training_samples_taxa.csv # 1676
+head -n 1 $file | tail -n 1 | tr "," "\n" | nl | wc -l
+```
 
 ----------
 
