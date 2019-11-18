@@ -729,8 +729,9 @@ grep "^>" *.fna | grep "rRNA"
 # use `grep` to count (the `-c` option stands for count) the number of lines matching the pattern
 grep "^>" *.fna | grep -c "rRNA"
 
-
 grep "^>" *.fna | grep "16S ribosomal RNA"
+
+cat *_rna_from_genomic.fna > all.fna
 ```
 
 - [TogoWS RESTサービスを使い倒す 2011](https://doi.org/10.7875/togotv.2011.058)  
@@ -744,7 +745,7 @@ grep "^>" *.fna | grep "16S ribosomal RNA"
 ```
 # RefSeqデータのアクセッション番号を抽出する
 # Extract RefSeq accession numbers
-grep "^>" *.fna | grep "16S ribosomal RNA" | perl -pe 's/>lcl\|([^ ]+)_rrna_.+ (.+)\n/$1\n/g' > my_accession.txt
+grep "^>" all.fna | grep "16S ribosomal RNA" | perl -pe 's/>lcl\|([^ ]+)_rrna_.+ (.+)\n/$1\n/g' | sort -u > my_accession.txt
 
 # RefSeqデータの「DEFINITION」を取得する
 # Retrieving "DEFINITION" field
@@ -755,19 +756,12 @@ for AC in `cat my_accession.txt`; do curl http://togows.dbcls.jp/entry/nucleotid
 paste my_accession.txt my_definition.txt > my_name.txt
 ```
 
-
-
-
-
-
-
 ### [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
 多重配列アライメントと系統樹
 
 "16S ribosomal RNA"の配列を[seqkit](https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#seqkit)で抽出し、FASTAヘッダをperlで編集する:  
 ```
 # seqkit grep -h
-cat *_rna_from_genomic.fna > all.fna
 myfile=all.fna
 pattern="16S ribosomal RNA"
 seqkit grep -nrp "${pattern}" "${myfile}" | perl -pe 's/>lcl\|([^ ]+) \[locus_tag=([^ ]+)\] (.+)\n/>$1 $2\n/g,s/ /~/g' > myseq.fasta
@@ -805,13 +799,6 @@ FastTree -fastest -nt -gtr "${alignment_file}" > "${tree_file}"
 *myseq.fasta.aln.newick* or *RAxML_bestTree.myseq.fasta.aln.newick*
 を用いて、
 [FigTree](http://www.fish-evol.org/FigTree.html)や[SeaView](http://doua.prabi.fr/software/seaview)で系統樹を描く。
-
-
-
-
-
-
-
 
 
 
