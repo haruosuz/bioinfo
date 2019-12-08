@@ -1,5 +1,4 @@
-Haruo Suzuki (haruo[at]g-language[dot]org)  
-Last Update: 2019-06
+Last Update: 2019-11
 
 ----------
 # reproducibility
@@ -13,6 +12,42 @@ Last Update: 2019-06
 [2016](#2016)
 [2015](#2015)
 - [references](#references)
+
+----------
+## references
+
+https://twitter.com/JCORS3
+Japanese Community for Open and Reproducible Science
+
+https://codeocean.com/
+Code Ocean
+
+- https://en.wikipedia.org/wiki/Reproducibility
+- https://ja.wikipedia.org/wiki/再現性
+- https://ja.wikipedia.org/wiki/科学的方法#再現性
+- [No need to worry about irreproducibility](https://go.qiagen.com/Reproducibility)
+- [DB Research Reproducibility](http://db-reproducibility.seas.harvard.edu)
+- https://ja.wikipedia.org/wiki/Galaxy_(計算生物学)
+再現性
+透明性
+
+### examples
+
+https://github.com/haruosuz/books/blob/master/bds/README.md
+Bioinformatics Data Skills: Reproducible and Robust Research With Open Source Tools
+https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/ch01.html
+Reproducible Research
+So what is a reproducible bioinformatics project? At the very least, it’s sharing your project’s code and data. 
+
+NYC地下鉄メタゲノム(PathoMap)論文の解析コード
+http://www.cell.com/cell-systems/pdfExtended/S2405-4712(15)00002-2
+Supplemental Code and Scripts
+
+解析のワークフローとQIIMEのパラメータ
+http://www.nature.com/article-assets/npg/ncomms/2016/160624/ncomms11939/extref/ncomms11939-s1.pdf
+Supplementary Table 3. Analysis workflow and QIIME parameter settings used in this study
+QIIME and Unix command a Options
+a MacQIIME version 1.8.0 (http://www.wernerlab.org/software/macqiime) was used in this study.
 
 ----------
 ## updates
@@ -206,36 +241,6 @@ https://togetter.com/li/869445
 ![http://www.slideshare.net/carolegoble/results-may-vary-collaborations-workshop-oxford-2014](http://image.slidesharecdn.com/goble-cw2014-140802134150-phpapp01/95/results-may-vary-collaborations-workshop-oxford-2014-8-638.jpg)
 
 - [NGS 2015 - James Taylor, Johns Hopkins University, USA on Vimeo](https://vimeo.com/121455356) Title: Accessible and Reproducible Genomics at Scale with Galaxy
-
-----------
-## references
-
-- https://en.wikipedia.org/wiki/Reproducibility
-- https://ja.wikipedia.org/wiki/再現性
-- https://ja.wikipedia.org/wiki/科学的方法#再現性
-- [No need to worry about irreproducibility](https://go.qiagen.com/Reproducibility)
-- [DB Research Reproducibility](http://db-reproducibility.seas.harvard.edu)
-- https://ja.wikipedia.org/wiki/Galaxy_(計算生物学)
-再現性
-透明性
-
-### examples
-
-https://github.com/haruosuz/books/blob/master/bds/README.md
-Bioinformatics Data Skills: Reproducible and Robust Research With Open Source Tools
-https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/ch01.html
-Reproducible Research
-So what is a reproducible bioinformatics project? At the very least, it’s sharing your project’s code and data. 
-
-NYC地下鉄メタゲノム(PathoMap)論文の解析コード
-http://www.cell.com/cell-systems/pdfExtended/S2405-4712(15)00002-2
-Supplemental Code and Scripts
-
-解析のワークフローとQIIMEのパラメータ
-http://www.nature.com/article-assets/npg/ncomms/2016/160624/ncomms11939/extref/ncomms11939-s1.pdf
-Supplementary Table 3. Analysis workflow and QIIME parameter settings used in this study
-QIIME and Unix command a Options
-a MacQIIME version 1.8.0 (http://www.wernerlab.org/software/macqiime) was used in this study.
 
 ----------
 
