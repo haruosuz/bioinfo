@@ -1,4 +1,4 @@
-Last Update: 2019-11
+Last Update: 2019-12
 
 ----------
 # reproducibility
@@ -12,42 +12,7 @@ Last Update: 2019-11
 [2016](#2016)
 [2015](#2015)
 - [references](#references)
-
-----------
-## references
-
-https://twitter.com/JCORS3
-Japanese Community for Open and Reproducible Science
-
-https://codeocean.com/
-Code Ocean
-
-- https://en.wikipedia.org/wiki/Reproducibility
-- https://ja.wikipedia.org/wiki/再現性
-- https://ja.wikipedia.org/wiki/科学的方法#再現性
-- [No need to worry about irreproducibility](https://go.qiagen.com/Reproducibility)
-- [DB Research Reproducibility](http://db-reproducibility.seas.harvard.edu)
-- https://ja.wikipedia.org/wiki/Galaxy_(計算生物学)
-再現性
-透明性
-
-### examples
-
-https://github.com/haruosuz/books/blob/master/bds/README.md
-Bioinformatics Data Skills: Reproducible and Robust Research With Open Source Tools
-https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/ch01.html
-Reproducible Research
-So what is a reproducible bioinformatics project? At the very least, it’s sharing your project’s code and data. 
-
-NYC地下鉄メタゲノム(PathoMap)論文の解析コード
-http://www.cell.com/cell-systems/pdfExtended/S2405-4712(15)00002-2
-Supplemental Code and Scripts
-
-解析のワークフローとQIIMEのパラメータ
-http://www.nature.com/article-assets/npg/ncomms/2016/160624/ncomms11939/extref/ncomms11939-s1.pdf
-Supplementary Table 3. Analysis workflow and QIIME parameter settings used in this study
-QIIME and Unix command a Options
-a MacQIIME version 1.8.0 (http://www.wernerlab.org/software/macqiime) was used in this study.
+  - [examples](#examples)
 
 ----------
 ## updates
@@ -55,6 +20,12 @@ a MacQIIME version 1.8.0 (http://www.wernerlab.org/software/macqiime) was used i
 [Twitter Search](https://twitter.com/search?q=再現性%20(研究%20OR%20科学)&src=typd)
 
 ### 2019
+
+https://adventar.org/calendars/4523
+Open and Reproducible Science Advent Calendar 2019 - Adventar
+Japanese Community for Open and Reproducible Science (JCORS https://osf.io/z4cgu/ )企画のアドベントカレンダーです。
+オープンサイエンス，研究の再現性にかかる話題を投稿ください。内容は，オープンサイエンスや研究の再現可能性に関する論文の紹介，研究実施にかかるTips，今後日本の研究コミュニティで取り組むと良さそうな事の提案などが考えられますが，それ以外でももちろん問題ありません。
+
 
 https://wired.jp/2019/04/27/darpa-wants-to-solve-sciences-replication-crisis-with-robots/
 科学の「再現性の危機」に、DARPAは人工知能で対抗する｜WIRED.jp
@@ -243,4 +214,44 @@ https://togetter.com/li/869445
 - [NGS 2015 - James Taylor, Johns Hopkins University, USA on Vimeo](https://vimeo.com/121455356) Title: Accessible and Reproducible Genomics at Scale with Galaxy
 
 ----------
+## references
 
+https://swcarpentry.github.io/r-novice-gapminder/
+R for Reproducible Scientific Analysis
+
+https://twitter.com/JCORS3
+Japanese Community for Open and Reproducible Science
+https://osf.io/z4cgu/
+OSF | Japanese Community for Open and Reproducible Science (JCORS)
+
+https://codeocean.com/
+Code Ocean
+
+- https://en.wikipedia.org/wiki/Reproducibility
+- https://ja.wikipedia.org/wiki/再現性
+- https://ja.wikipedia.org/wiki/科学的方法#再現性
+- [No need to worry about irreproducibility](https://go.qiagen.com/Reproducibility)
+- [DB Research Reproducibility](http://db-reproducibility.seas.harvard.edu)
+- https://ja.wikipedia.org/wiki/Galaxy_(計算生物学)
+再現性
+透明性
+
+### examples
+
+https://github.com/haruosuz/books/blob/master/bds/README.md
+Bioinformatics Data Skills: Reproducible and Robust Research With Open Source Tools
+https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/ch01.html
+Reproducible Research
+So what is a reproducible bioinformatics project? At the very least, it’s sharing your project’s code and data. 
+
+NYC地下鉄メタゲノム(PathoMap)論文の解析コード
+http://www.cell.com/cell-systems/pdfExtended/S2405-4712(15)00002-2
+Supplemental Code and Scripts
+
+解析のワークフローとQIIMEのパラメータ
+http://www.nature.com/article-assets/npg/ncomms/2016/160624/ncomms11939/extref/ncomms11939-s1.pdf
+Supplementary Table 3. Analysis workflow and QIIME parameter settings used in this study
+QIIME and Unix command a Options
+a MacQIIME version 1.8.0 (http://www.wernerlab.org/software/macqiime) was used in this study.
+
+----------
