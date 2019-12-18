@@ -236,6 +236,24 @@ Code Ocean
 再現性
 透明性
 
+### books
+
+2018-05-09
+http://www.kyoritsu-pub.co.jp/bookdetail/9784320112438
+再現可能性のすゝめ ―RStudioによるデータ解析とレポート作成― / 高橋 康介　著
+
+2018-10-11
+https://www.kyoritsu-pub.co.jp/bookdetail/9784320112445
+自然科学研究のためのR入門 ―再現可能なレポート執筆実践― / 江口 哲史　著
+
+2017-01-27
+http://www.keisoshobo.co.jp/book/b272873.html
+ダメな統計学: 悲惨なほど完全なる手引書
+
+第10章　誰もが間違える
+　10.1　再現不可能な遺伝学
+　10.2　再現可能性を簡単に
+
 ### examples
 
 https://github.com/haruosuz/books/blob/master/bds/README.md
