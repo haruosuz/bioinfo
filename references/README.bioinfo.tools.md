@@ -130,17 +130,6 @@ Written by bonohu in misc on 土 08 7月 2017.
 ----------
 ## dotplot
 
-https://osdn.net/projects/jambo/docs/emboss_tutorial/...
-EMBOSS を用いた配列解析への手引き
-
-http://emboss.open-bio.org/html/use/ch04s03.html
-Chapter 4. EMBOSS User Tutorial
-```
-4.3. Working with Alignments
-4.3.3. Exercise: Making a Dotplot
-
-% dottup
-```
 
 http://www.iu.a.u-tokyo.ac.jp/~kadota/r_seq.html
 (Rで)塩基配列解析
@@ -161,6 +150,17 @@ D-GENIES(dotplot用)：Cabanettes and Klopp, PeerJ., 2018
 
 http://kazumaxneo.hatenablog.com/entry/2018/08/24/132149
 ラージゲノムにも対応したdot plot解析ツール D-GENIES - macでインフォマティクス
+
+https://osdn.net/projects/jambo/docs/emboss_tutorial/...
+EMBOSS を用いた配列解析への手引き
+
+http://emboss.open-bio.org/html/use/ch04s03.html
+Chapter 4. EMBOSS User Tutorial
+4.3. Working with Alignments
+4.3.3. Exercise: Making a Dotplot
+```
+% dottup
+```
 
 http://www.iu.a.u-tokyo.ac.jp/~kadota/bioinfo_ngs_sokushu_2014/20140905_2-1_bono.pdf
 2-1. 配列解析基礎Basic Sequence Analysis坊農 秀雅 
