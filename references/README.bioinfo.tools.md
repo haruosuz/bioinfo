@@ -5,7 +5,7 @@
 - [updates](#updates)
 - [convert](#convert)
 - [bioconda](#bioconda)
-- [EMBOSS](#emboss)
+- [dotplot](#dotplot)
 - [E-utilities](#e-utilities)
 - [KofamScan](#kofamscan)
 - [seqkit](#seqkit)
@@ -115,6 +115,7 @@ Bioconda documentation
 
 https://bioconda.github.io/user/install.html
 Getting Started
+Note: Bioconda supports only 64-bit Linux and Mac OS.
 
 https://qiita.com/MTNakata/items/2d537731d18b231e5fb9
 MacでBioconda〜RNA-Seqデータ解析ツールのインストール〜
@@ -127,23 +128,54 @@ Biocondaを使ってみた
 Written by bonohu in misc on 土 08 7月 2017.
 
 ----------
-## emboss
+## dotplot
 
 https://osdn.net/projects/jambo/docs/emboss_tutorial/...
 EMBOSS を用いた配列解析への手引き
 
 http://emboss.open-bio.org/html/use/ch04s03.html
+Chapter 4. EMBOSS User Tutorial
+```
 4.3. Working with Alignments
-Prev 	Chapter 4. EMBOSS User Tutorial
-
 4.3.3. Exercise: Making a Dotplot
 
 % dottup
+```
+
+http://www.iu.a.u-tokyo.ac.jp/~kadota/r_seq.html
+(Rで)塩基配列解析
+(last modified 2020/01/02, since 2010)
+解析 | 一般 | アラインメント | ペアワイズ | について (last modified 2019/04/05)
+http://www.iu.a.u-tokyo.ac.jp/~kadota/r_seq.html#about_analysis_general_alignment_pairwise
+```
+R用:
+Biostrings：原著論文なし
+seqinr(dotplot用)：Charif et al., Bioinformatics, 2005
+R以外:
+JDotter(dotplot用)：Brodie et al., Bioinformatics, 2004
+GATA(内部でBLASTを使用)：Nix and Eisen, BMC Bioinformatics, 2005
+LASTZ：Harris RS, Ph.D. thesis, 2007
+Gepard(dotplot用)：Krumsiek et al., Bioinformatics, 2007
+D-GENIES(dotplot用)：Cabanettes and Klopp, PeerJ., 2018
+```
+
+http://kazumaxneo.hatenablog.com/entry/2018/08/24/132149
+ラージゲノムにも対応したdot plot解析ツール D-GENIES - macでインフォマティクス
 
 http://www.iu.a.u-tokyo.ac.jp/~kadota/bioinfo_ngs_sokushu_2014/20140905_2-1_bono.pdf
 2-1. 配列解析基礎Basic Sequence Analysis坊農 秀雅 
+ (DBCLS)
 
-dottup
+	# 配列取得方法
+	## togowsの利用 http://togotv.dbcls.jp/20110425.html
+    curl -L "http://togows.dbcls.jp/entry/protein/NP_009193.fasta" > HsDJ1.pep.fa
+    curl -L "http://togows.dbcls.jp/entry/protein/NP_001232899.fasta" > BmDJ1.pep.fa
+
+	# dottup
+	dottup -asequence HsDJ1.pep.fa -bsequence BmDJ1.pep.fa -wordsize 4
+
+	# needle, water
+	needle HsDJ1.pep.fa BmDJ1.pep.fa	water HsDJ1.pep.fa BmDJ1.pep.fa
 
 ----------
 ## E-utilities
@@ -164,6 +196,8 @@ The Entrez Programming Utilities (E-utilities)
 | CDS protein FASTA | fasta_cds_aa | text |
 | db = sequences |
 | FASTA | fasta | text |
+
+https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#e-utilities
 
 https://sites.google.com/site/scriptofbioinformatics/r-tong-ji-guan-xi/rutiles-e-utilities-r
 rutiles / E-utilities（R） - script of bioinformatics
