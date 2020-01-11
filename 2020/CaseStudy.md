@@ -9,10 +9,9 @@
 ## codon usage
 **コドン使用**
 
-複数のゲノムのコドン使用頻度を計算し、カンマ区切りファイルとして出力し、ヒートマップを作成する。
+複数ゲノムのコドン使用頻度`rscu`を計算し、ヒートマップを作成し、カンマ区切りファイルとして出力する。
 
-複数の.ffnファイルをNCBIから取得する:  
-Retrieving .ffn files from NCBI:  
+準備
 ```
 setwd("~/projects/data/ncbi/eutils") # Set Working Directory
 library(seqinr) # Load the SeqinR package
@@ -25,7 +24,7 @@ ACCESSIONs <- c("KM670336", "AP018710", "NZ_CP014764", "NZ_CP015073", "NZ_CP0206
 retrieve_ncbi_ffn <- function(ACCESSION) read.fasta(file = paste0("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=",ACCESSION,"&rettype=fasta_cds_na&retmode=text"), seqtype="DNA", strip.desc=TRUE)
 ```
 
-全CDSの結合(concatenate)データのコドン使用頻度`rscu`を計算する:  
+全CDSの結合(concatenate)データの`rscu`を計算する:  
 ```
 # Retrieve the sequences and store them in list variable
 ffn.seqs <- lapply(ACCESSIONs, retrieve_ncbi_ffn)
@@ -44,8 +43,9 @@ heatmap(t(my.uco.all), margins=c(6,6), cexCol=0.5, cexRow=0.8, Colv=NA, scale="n
 write.csv(my.uco.all, file="my.uco.all.csv", quote=TRUE, row.names=TRUE)
 ```
 
-各CDSのコドン使用頻度`rscu`を計算する:  
+各CDSの`rscu`を計算する:  
 ```
+# Retrieve the sequences and store them in list variable
 ffn.seqs <- list()
 for(ACCESSION in ACCESSIONs) ffn.seqs <- c(ffn.seqs, retrieve_ncbi_ffn(ACCESSION) )
 
@@ -66,6 +66,8 @@ write.csv(t(my.uco.cds), file="my.uco.cds.csv", quote=TRUE, row.names=TRUE)
 # open current working directory
 system("open .")
 ```
+
+References:
 
 https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#codon-usage
 大腸菌ゲノムにおける全遺伝子群と高発現遺伝子群のコドン使用頻度を計算する。
