@@ -6,6 +6,15 @@
 - [Advanced Biosciences](#advanced-biosciences) 先端生命科学
 - [codon usage](#codon-usage) コドン使用
 
+
+
+https://www.smh.com.au/world/superbugs-will-kill-10-million-people-a-year-by-2050-20160519-goygnb.html
+Superbugs will kill 10 million people a year by 2050
+
+https://www.microsoft.com/en-gb/p/resistance-fighters-the-global-antibiotics-crisis/8d6kgwxn0tsc?activetab=pivot:overviewtab
+Trailer
+Buy Resistance Fighters - The Global Antibiotics Crisis - Microsoft Store en-GB
+
 ----------
 ## Class Survey
 **授業調査**
