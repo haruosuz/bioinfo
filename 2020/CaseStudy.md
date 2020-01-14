@@ -53,10 +53,10 @@ Please send an e-mail Prof. Tomita and Ms. Namba (mt@sfc.keio.ac.jp, cnamba@sfc.
 Details will be announced later.
 
 **References:**
-- Danko et al. (2019) "Global Genetic Cartography of Urban Metagenomes and Anti-Microbial Resistance" doi: https://doi.org/10.1101/724526
-- Merino et al. (2019) "Comparative genomics of Bacteria commonly identified in the built environment." doi: 10.1186/s12864-018-5389-z.
-- Yano et al. (2018) "Reconsidering plasmid maintenance factors for computational plasmid design." doi: 10.1016/j.csbj.2018.12.001.
-- 都市の微生物、世界中で採集　綿棒使い、街の環境考える参考に：朝日新聞 2018年6月26日
+- Danko et al. (2019) "Global Genetic Cartography of Urban Metagenomes and Anti-Microbial Resistance" https://doi.org/10.1101/724526
+- Merino et al. (2019) "Comparative genomics of Bacteria commonly identified in the built environment." https://www.ncbi.nlm.nih.gov/pubmed/30691394
+- Yano et al. (2018) "Reconsidering plasmid maintenance factors for computational plasmid design." https://www.ncbi.nlm.nih.gov/pubmed/30619542
+- 都市の微生物、世界中で採集　綿棒使い、街の環境考える参考に：朝日新聞 2018年6月26日 https://www.asahi.com/articles/photo/AS20180626002878.html
 
 「先端生命科学系列」の8つの研究会（冨田・内藤・黒田・金井・曽我・荒川・鈴木・辻本）は　合同で運営しています。また大学院のプロジェクト科目（先端生命科学）とも合同に運営しているため、学部生、大学院生そして教員が一緒になって研究を進めます。先端生命科学系列研究会の新規履修希望者は全員まず「システム生物学入門（先端生命科学）：冨田勝担当」を履修してください。
 詳しい内容は研究会ホームページをご覧ください。http://bio.sfc.keio.ac.jp/
