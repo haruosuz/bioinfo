@@ -1,4 +1,4 @@
-# Bioinformatics tools
+# bioinfo.tools
 バイオインフォマティクス・ツール
 
 ## Table of Contents
@@ -14,7 +14,6 @@
   - [togotv](#togotv)
 
 ----------
-
 
 https://www.biostars.org/p/17696/
 Difference Between "Pipeline" And "Workflow" ?
@@ -248,6 +247,8 @@ Availability KofamKOALA, KofamScan, and KOfam are freely available from https://
 https://bioinf.shenwei.me/seqkit/
 
 https://github.com/shenwei356/seqkit
+
+https://twitter.com/search?q=seqkit%20lang:ja
 
 2019/07/30
 https://ultrabem-branch3.com/informatics/commands_mac/seqkit_mac
