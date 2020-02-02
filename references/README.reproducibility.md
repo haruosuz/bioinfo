@@ -1,4 +1,4 @@
-Last Update: 2019-12
+Last Update: 2020-02-03
 
 ----------
 # reproducibility
@@ -18,6 +18,15 @@ Last Update: 2019-12
 ## updates
 
 [Twitter Search](https://twitter.com/search?q=再現性%20(研究%20OR%20科学)&src=typd)
+
+### 2020
+
+http://www.igaku-shoin.co.jp/paperDetail.do?id=PA03357_03
+第３３５７号　2020年2月3日
+【寄稿】
+あなたの解析，再現できますか？
+統計解析の再現可能性を高めるために
+国里 愛彦（専修大学人間科学部心理学科准教授）
 
 ### 2019
 
