@@ -305,25 +305,6 @@ UniRef
 
 ### uniref90
 
-Here are some reference papers.
-
-https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4029085/ Paramecium bursaria transcriptome
-We performed similarity searches of the 10,557 P. bursaria unigenes against the Swiss-Prot and UniRef90 protein sequence databases [21] using BLASTX [22] with the E-value cutoff of 1e-5 and assigned the functional annotations of the most similar protein sequences. Of the 10,557 unigenes, 7,051 (67%) had matches with 4,102 unique records in the Swiss-Prot database; 9,536 (90%) had matches with 8,189 unique records in the UniRef90 database. The species distribution of the BLASTX best hits in the UniRef90 database showed that 8,710 (91.7%) of the 9,502 hits had top matches with sequences from P. tetraurelia, followed by Tetrahymena thermophila with 153 (1.6%) best BLASTX hits.
-
-https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3993339/ Lactobacillus
-We assigned functional annotations to each protein family by merging all the functional annotations of proteins belonging to the same protein family (deleting uninformative annotations such as “hypothetical protein”). We used multiple databases as follows: Clusters of Orthologous Groups (COG [http://www.ncbi.nlm.nih.gov/COG/; 40]), JCVI/CMR [http://cmr.jcvi.org/; 41]), SEED (http://www.theseed.org/ [42]), UniProtKB/Uniref90 (http://www.uniprot.org), Virulence Factors Database (VFDB) (http://www.mgc.ac.cn/VFs/ [43]), Pfam (http://pfam.sanger.ac.uk), and Gene Ontology (GO) (http://www.geneontology.org). We performed a similarity search of the 136,962 Lactobacillus proteins against the Uniref90 and VFDB protein sequence databases using BLASTP (E-value < 1e−5 and >50% coverage) and assigned the functional annotations of the most similar protein sequences. We searched protein sequences against the Pfam library of hidden Markov models (HMMs) using HMMER (http://hmmer.janelia.org/) and converted Pfam accession numbers to GO terms using “pfam2go” mapping (http://www.geneontology.org/external2go/pfam2go).
-
-https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4462011/ Clostridium difficile and Clostridium sordellii
-Gene functional annotation
-
-We assigned functional annotations to each protein family by merging all the functional annotations of proteins belonging to the same family. To gain different aspects and maximize coverage, protein families were annotated by multiple databases. We performed BLASTP searches of protein sequences against NCBI nr (non-redundant) database, COG [62], KEGG [39], UniProtKB/Uniref90 [96], Virulence Factors Database (VFDB) [60], and assigned the functional annotations of the most similar protein sequences in each database. We converted protein_ID to subsystems (Category, Subcategory, Subsystem, and Role) in SEED database [97]. We also searched protein sequences against the Pfam library of hidden Markov models (HMMs) [98] using HMMER, and mapped Gene Ontology (GO) terms to Pfam entries using the ‘pfam2go’ mapping provided by the GO consortium [99].
-
-https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2940326/ Campylobacter Pan-Genomes
-Annotation and Enrichment Tests
-
-Gene ontology (Ashburner et al. 2000) (GO) annotations were obtained for each orthologous cluster using HMMER searches (Eddy 2008) on the Pfam A and B databases (Finn et al. 2010) and using Blast against the Uniref90 database (Suzek et al. 2007). Best hits were then mapped to GO terms using the pfam2go mapping (Hunter et al. 2009) and the GOA database (Barrell et al. 2009), respectively. GO enrichment tests were conducted using GO::TermFinder (Boyle et al. 2004) with false discovery rate (FDR) correction and a 5% significance level.
-
-
 ----------
 ## jsbi-nintei
 
@@ -332,6 +313,15 @@ Japanese Society for Bioinformatics - JSBi :: バイオインフォマティク�
 
 http://www.jsbi.org/nintei/books/
 Japanese Society for Bioinformatics - JSBi :: 参考図書
+
+https://www.jsbi.org/nintei/2019/
+３．2019年度問題と解説
+問題と解答(PDF形式)
+
+https://www.jsbi.org/nintei/30/
+３．平成３０年度問題と解説
+問題と解答(PDF形式)
+解説(PDF形式)
 
 https://www.jsbi.org/nintei/29/
 ３．平成２９年度問題と解説
