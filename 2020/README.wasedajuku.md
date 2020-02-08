@@ -12,39 +12,46 @@ Last Update: 2020-02-05
 - [2020-04-05](#2020-04-05) ゲノム解析実習４
 - [2020-04-12](#2020-04-12) 実験実習＠藤沢ラボ
 - [2020-04-19](#2020-04-19) 最終プレゼン大会
+- [references](#references) 参考文献
 
 ----------
 ## 2020-02-09
-ゲノム解析実習１
+**ゲノム解析実習１**
 
-- コロナウイルス [coronavirus](https://github.com/haruosuz/microbe/blob/master/references/microbe.virus.md#coronavirus) 解析用 R Markdown [download](https://github.com/haruosuz/bioinfo/raw/master/2020/coronavirus.tar.gz)
 - 2019年度 秋学期 [生命動態のデータサイエンス (GIGA)](https://github.com/haruosuz/DS4GD/tree/master/2019giga)
 - R言語入門 [Introduction to R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#how-to-install-r-and-a-brief-introduction-to-r)
+- [課題No.2 「Installing R packages seqinr & Biostrings」](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#assignment-2)
 - DNA配列解析(1) [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-1)
-  - Case Study [NCBI Genome List](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#ncbi-genome-list)
-- DNA配列解析(2) [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-2)
-- Rをはじめよう生命科学のためのRStudio入門 [Getting Started with R](https://github.com/haruosuz/books/tree/master/r4all)
-- Rではじめるデータサイエンス [R for Data Science](https://github.com/haruosuz/books/tree/master/r4ds)
+- Case Study [NCBI Genome List](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#ncbi-genome-list)
+- [課題No.3 「DNA Sequence Statistics (1)」](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#assignment-3)
 
 ----------
 ## 2020-02-16
 
 実習なし。課題あり。
 
+- [課題No.1 「Introduction to R」](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#assignment-1)
+- Rをはじめよう生命科学のためのRStudio入門 [Getting Started with R](https://github.com/haruosuz/books/tree/master/r4all)
+- Rではじめるデータサイエンス [R for Data Science](https://github.com/haruosuz/books/tree/master/r4ds)
+
 ----------
 ## 2020-03-15
-ゲノム解析実習２
+**ゲノム解析実習２**
+
+- DNA配列解析(2) [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-2)
+- コロナウイルス [coronavirus](https://github.com/haruosuz/microbe/blob/master/references/microbe.virus.md#coronavirus) 解析用 R Markdown [download](https://github.com/haruosuz/bioinfo/raw/master/2020/coronavirus.tar.gz)
 
 ----------
 ## 2020-03-29
-ゲノム解析実習３
+**ゲノム解析実習３**
 
 ----------
 ## 2020-04-05
-ゲノム解析実習４
+**ゲノム解析実習４**
 
 ----------
-## link
+## references
+**参考文献**
 
 http://www.wasedajuku.com/curriculum/jukuiku/super_advances_science/
 最先端科学プログラム｜【早稲田塾】第一志望現役合格・人財育成
