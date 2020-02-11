@@ -6,11 +6,11 @@ Last Update: 2020-02-05
 ## Table of Contents
 - [2020-02-02](#2020-02-02)
 - [2020-02-09](#2020-02-09) ゲノム解析実習１
-- [2020-02-16](#2020-02-16)
+- 2020-02-16 
 - [2020-03-15](#2020-03-15) ゲノム解析実習２
 - [2020-03-29](#2020-03-29) ゲノム解析実習３
 - [2020-04-05](#2020-04-05) ゲノム解析実習４
-- [2020-04-12](#2020-04-12) 実験実習＠藤沢ラボ
+- 2020-04-12 実験実習＠藤沢ラボ
 - [2020-04-19](#2020-04-19) 最終プレゼン大会
 - [references](#references) 参考文献
 
@@ -23,21 +23,24 @@ Last Update: 2020-02-05
 - R言語入門 [Introduction to R](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#how-to-install-r-and-a-brief-introduction-to-r)
 - [課題No.2 「Installing R packages seqinr & Biostrings」](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#assignment-2)
 - DNA配列解析(1) [DNA Sequence Statistics (1)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-1)
-- Case Study [NCBI Genome List](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#ncbi-genome-list)
-- [課題No.3 「DNA Sequence Statistics (1)」](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#assignment-3)
-
-----------
-## 2020-02-16
-
-実習なし。課題あり。
-
-- Rをはじめよう生命科学のためのRStudio入門 [Getting Started with R](https://github.com/haruosuz/books/tree/master/r4all)
-- Rではじめるデータサイエンス [R for Data Science](https://github.com/haruosuz/books/tree/master/r4ds)
 
 ----------
 ## 2020-03-15
 **ゲノム解析実習２**
 
+- Rをはじめよう生命科学のためのRStudio入門 [Getting Started with R](https://github.com/haruosuz/books/tree/master/r4all)
+- Rではじめるデータサイエンス [R for Data Science](https://github.com/haruosuz/books/tree/master/r4ds)
+  - [6 Workflow: scripts](https://github.com/haruosuz/books/blob/master/r4ds/README.md#6-workflow-scripts)
+  - [27 R Markdown](https://github.com/haruosuz/books/blob/master/r4ds/README.md#27-r-markdown)
+
+ゲノム配列データを取得し、DNA配列の「長さ」と「GC含量」を計算する。
+ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS
+の`Size`と`GC%`と一致することを確認する。
+
+https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-1
+
+- Case Study [NCBI Genome List](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#ncbi-genome-list)
+- [課題No.3 「DNA Sequence Statistics (1)」](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#assignment-3)
 - DNA配列解析(2) [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-2)
 - コロナウイルス [coronavirus](https://github.com/haruosuz/microbe/blob/master/references/microbe.virus.md#coronavirus) 解析用 R Markdown [download](https://github.com/haruosuz/bioinfo/raw/master/2020/coronavirus.tar.gz)
 
