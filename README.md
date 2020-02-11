@@ -258,9 +258,19 @@ NGS Surfer's Wiki | GTF
 https://cell-innovation.nig.ac.jp/surfers/GTF_difference.html
 GTFファイルの細かな違い
 
-
 ----------
 ## refseq
+
+https://twitter.com/Tyu_Shi/status/1211638901405667331
+Tyu_Shi on Twitter: "今やっている比較ゲノム解析、数ヶ月前に取得したRefSeqのゲノムデータ中にはその株の完全ゲノムがあったのに、最新のRefSeqでは無くなっていて不思議に思って調べてみたら、Anomalous assemblyとフラグが付いてRefSeqからエントリが除外されていた。 https://t.co/XGNgCf6fNi" / Twitter
+10:23 PM · Dec 30, 2019
+https://ncbi.nlm.nih.gov/assembly/help/anomnotrefseq/
+Assembly Anomalies and Other Reasons a Genome Assembly may be Excluded from RefSeq
+
+https://twitter.com/torstenseemann/status/1170944364765270016
+Torsten Seemann on Twitter: ""25 reasons Genbank assemblies don't make it into Refseq" - my latest blog post #bioinformatics https://t.co/yjkwgpARXj"
+3:17 PM · Sep 9, 2019·
+https://thegenomefactory.blogspot.com/2019/09/25-reasons-assemblies-dont-make-it-into.html
 
 https://bi.biopapyrus.jp/db/refseq.html
 RefSeq | 詳細な注釈づけられている冗長性のない核酸データベース
