@@ -4,7 +4,7 @@ Last Update: 2020-02-05
 **最先端科学プログラム2020**
 
 ## Table of Contents
-- [2020-02-02](#2020-02-02)
+- 2020-02-02
 - [2020-02-09](#2020-02-09) ゲノム解析実習１
 - 2020-02-16 
 - [2020-03-15](#2020-03-15) ゲノム解析実習２
@@ -34,10 +34,7 @@ Last Update: 2020-02-05
   - [27 R Markdown](https://github.com/haruosuz/books/blob/master/r4ds/README.md#27-r-markdown)
 
 ゲノム配列データを取得し、DNA配列の「長さ」と「GC含量」を計算する。
-ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS
-の`Size`と`GC%`と一致することを確認する。
-
-https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-1
+<ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS> のファイル*.txt*の値 (`Size`, `GC%` )と一致することを確認する。
 
 - Case Study [NCBI Genome List](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#ncbi-genome-list)
 - [課題No.3 「DNA Sequence Statistics (1)」](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#assignment-3)
