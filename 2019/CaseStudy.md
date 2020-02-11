@@ -11,7 +11,7 @@
 - [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
 - [2019-11-13](#2019-11-13) Annotathon2019（生命科学データベースの利用価値向上のためのアノテーションマラソン）
 - [LEA](#lea) (Latent Environment Allocation)
-- 第222回農林交流センターワークショップ「分子系統樹推定法：理論と応用」
+- [ws222](#ws222) 第222回農林交流センターワークショップ「分子系統樹推定法：理論と応用」
 [2019-10-23](#2019-10-23) 
 [2019-10-24](#2019-10-24) 
 [2019-10-25](#2019-10-25) 
@@ -21,12 +21,19 @@
 
 ----------
 
+- 2019-09-25 [生命科学者のためのDr.Bonoデータ解析実践道場](https://github.com/haruosuz/books/blob/master/DrBonoDojo/README.md)
+- 2019-06-28 [進化で読み解く　バイオインフォマティクス入門](https://www.morikita.co.jp/books/book/3349)
+- 2018-11-30 [生命科学データベース・ウェブツール - 図解と動画で使い方がわかる！　研究がはかどる定番18選 -](https://www.medsi.co.jp/products/detail/3665)
+- 2018-11-19 [よくわかるバイオインフォマティクス入門](https://www.kspub.co.jp/book/detail/5138212.html)
+- 2017-09-28 [Dr. Bonoの生命科学データ解析](https://www.medsi.co.jp/books/products/detail.php?product_id=3588)
+
+https://github.com/haruosuz/ksbn/blob/master/2018/README.2018.4.md
+
 # introBI
 - https://github.com/haruosuz/introBI
 - https://github.com/haruosuz/introBI/tree/master/2019
 - https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md
 - https://github.com/haruosuz/introBI/blob/master/2019/CaseStudy.md#uniprot_sprot
-
 
 # DS4GD
 - https://github.com/haruosuz/DS4GD
@@ -62,6 +69,7 @@ conda install seqkit
 conda install mafft
 conda install raxml
 conda install fasttree
+conda install blast
 ```
 
 ----------
@@ -759,7 +767,8 @@ paste my_accession.txt my_definition.txt > my_name.txt
 ### [Multiple Alignment and Phylogenetic trees](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#multiple-alignment-and-phylogenetic-trees)
 多重配列アライメントと系統樹
 
-"16S ribosomal RNA"の配列を[seqkit](https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#seqkit)で抽出し、FASTAヘッダをperlで編集する:  
+[seqkit](https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#seqkit)
+で"16S ribosomal RNA"の配列を抽出し、FASTAヘッダをperlで編集する:  
 ```
 # seqkit grep -h
 myfile=all.fna
@@ -866,10 +875,25 @@ http://www.leeswijzer.org/cladist/cladist-top.html
 https://twitter.com/search?q=分子系統樹推定法：理論と応用
 
 ----------
-## 2019-10-23
-- ハッシュタグ [#ws222](https://twitter.com/hashtag/ws222?f=live)
-- http://www.affrc.maff.go.jp/tsukuba/top/event/workshop/ws_2019/222ws.html
+## ws222
+- https://www.affrc.maff.go.jp/tsukuba/top/event/workshop/ws_2019/222ws.html
 第222回農林交流センターワークショップ「分子系統樹推定法：理論と応用」
+- ハッシュタグ [#ws222](https://twitter.com/hashtag/ws222?f=live)
+
+https://twitter.com/leeswijzer/status/1194852374193393664
+［欹耳袋］先月つくばで開催された第222回農林交流センターワークショップ〈分子系統樹推定法：理論と応用〉のいくつかの動画が，ライフサイエンス統合データベースセンター（DBCLS）が運営する統合TV〈分子系統樹推定法:理論と応用〉から公開されました．
+続）三中信宏「生物体系学概論 ：分類と系統のはざまで」（46:38）／斎藤成也「進化ゲノム学と系統推定」（1:22:51）／田村浩一郎「MEGA X を用いた分子系統解析」（52:33）／井上潤「分岐年代のベイズ推定」（1:04:11）／田辺晶史「分子系統学演習—データセットの作成から仮説検定まで」（3:22:39）．
+続）上記動画は YouTube でも同時公開されています：〈第222回農林交流センターワークショップ 分子系統樹推定法:理論と応用〉
+
+https://togotv.dbcls.jp/?search=分子系統樹推定法:理論と応用
+・三中信宏「生物体系学概論 ：分類と系統のはざまで」（46:38）
+・斎藤成也「進化ゲノム学と系統推定」（1:22:51）
+・田村浩一郎「MEGA X を用いた分子系統解析」（52:33）
+・井上潤「分岐年代のベイズ推定」（1:04:11）
+・田辺晶史「分子系統学演習—データセットの作成から仮説検定まで」（3:22:39）
+
+----------
+## 2019-10-23
 
 講義と実習内容
 ```
