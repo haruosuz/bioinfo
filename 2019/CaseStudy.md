@@ -958,7 +958,7 @@ TKS (@HomareZuki) / Twitter
 https://www.fifthdimension.jp/documents/molphytextbook/
 分子系統学演習 - データセットの作成から仮説検定まで
 
-# 第222回農林交流センターワークショップで作成したデータファイル
+第222回農林交流センターワークショップで作成したデータファイル
 ```
 # https://www.fifthdimension.jp/documents/molphytextbook/Drosophila/
 curl -O https://www.fifthdimension.jp/documents/molphytextbook/Drosophila/Drosophila.zip
