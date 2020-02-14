@@ -923,7 +923,7 @@ Home page of Jun Inoue
 遺伝子の由来を推定するウェブツール ORTHOSCOPE を開発 | 沖縄科学技術大学院大学 OIST
 
 ### KITANO Takashi
-13時00分-15時00分	【講義】「かたちと遺伝子にみる相同と同形：基礎概念とデータ運用」  鈴木 誉保（農研機構 生物機能利用研究部門）
+10時30分-12時00分	【講義・実習】「系統ネットワークの理論と応用」  北野 誉（茨城大学）
 - https://info.ibaraki.ac.jp/Profiles/16/0001541/profile.html
 
 ### Takao Suzuki
