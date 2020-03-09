@@ -261,6 +261,12 @@ GTFファイルの細かな違い
 ----------
 ## refseq
 
+https://twitter.com/NCBI/status/1228429011119988736
+NCBI Staff on Twitter: "Important changes coming to prokaryotic Reference and Representative genome assemblies in Feb! https://t.co/vMPnTse9pv https://t.co/Wxxq92A2Uh" / Twitter
+February 14, 2020
+https://ncbiinsights.ncbi.nlm.nih.gov/2020/02/14/assembly-changes/
+NCBI Insights : Important changes coming to prokaryotic Reference and Representative genome assemblies
+
 https://twitter.com/Tyu_Shi/status/1211638901405667331
 Tyu_Shi on Twitter: "今やっている比較ゲノム解析、数ヶ月前に取得したRefSeqのゲノムデータ中にはその株の完全ゲノムがあったのに、最新のRefSeqでは無くなっていて不思議に思って調べてみたら、Anomalous assemblyとフラグが付いてRefSeqからエントリが除外されていた。 https://t.co/XGNgCf6fNi" / Twitter
 10:23 PM · Dec 30, 2019
