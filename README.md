@@ -13,6 +13,7 @@ Last Update: 2019-09-03
 - [updates](#updates)
 - [bird](#bird)
 - [books](#books)
+- [enrichment](#enrichment)
 - [gff](#gff)
 - [gtf](#gtf)
 - [link](#link)
@@ -213,6 +214,47 @@ https://www.ncbi.nlm.nih.gov/pubmed/10871367
 Nucleic Acids Res. 2000 Jun 15;28(12):2353-62.
 Bacterial cryptochrome and photolyase: characterization of two photolyase-like genes of Synechocystis sp. PCC6803.
 Hitomi K1, Okamoto K, Daiyasu H, Miyashita H, Iwai S, Toh H, Ishiura M, Todo T.
+
+----------
+## enrichment
+
+https://github.com/haruosuz/r4bioinfo/blob/master/references/R.bio.md#enrichment
+
+Nov 21, 2018
+https://www.subioplatform.com/ja/info_technical/152/enrichment-analysis-tool
+Enrichment Analysis Tool の使い方 | Subio
+
+https://home.hiroshima-u.ac.jp/naka/wiki/wiki.cgi?GSEA_%28Gene_Set_Enrichment_Analysis%29%A4%CB%A4%C4%A4%A4%A4%C6
+GSEA_(Gene_Set_Enrichment_Analysis)について -
+http://www.riken.jp/pr/press/2016/20160510_1/ wPGSA法（weighted Parametric Gene Set Analysis）
+
+https://www.ncbi.nlm.nih.gov/pubmed/27141961
+Nucleic Acids Res. 2016 Jul 8;44(W1):W90-7. doi: 10.1093/nar/gkw377. Epub 2016 May 3.
+Enrichr: a comprehensive gene set enrichment analysis web server 2016 update.
+http://amp.pharm.mssm.edu/Enrichr
+
+2012年12月20日
+http://array.cell-innovator.com/?p=1452
+Gene Set Enrichment Analysis (GSEA) – 遺伝子発現解析（マイクロアレイ解析, RNA-seq）
+
+### PAGE
+PAGEは正規分布（normal distribution）を仮定したパラメトリックなテストで、ノンパラメトリックテストのGSEAと比較して、計算が速く、検出感度が高い（統計的に有意な遺伝子が多い）。遺伝子セットの構成遺伝子数は最低10個
+
+https://www.ncbi.nlm.nih.gov/pubmed/15941488
+BMC Bioinformatics. 2005 Jun 8;6:144.
+PAGE: parametric analysis of gene set enrichment.
+Kim SY1, Volsky DJ.
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1183189/
+PAGE: Parametric Analysis of Gene Set Enrichment
+PAGE was statistically more sensitive and required much less computational effort than GSEA, 
+, we set the minimal gene set size as 10.
+
+2009/11/19
+http://www.iu.a.u-tokyo.ac.jp/~kadota/r.html#page_go
+解析 | 機能解析 | PAGE法(Kim_2005;統計量の変換なし)を用いてGene Ontology解析
+
+https://www.t-kagaku.co.jp/seimeiken/top/xmlSupport.php?id=21004
+PAGE解析(Parametric Analysis of Gene set Enrichment)とは
 
 ----------
 ## [gff](http://genome.ucsc.edu/FAQ/FAQformat.html#format3)
