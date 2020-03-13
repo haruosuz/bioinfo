@@ -32,9 +32,19 @@ Last Update: 2020-02-05
 - Rではじめるデータサイエンス [R for Data Science](https://github.com/haruosuz/books/tree/master/r4ds)
   - [6 Workflow: scripts](https://github.com/haruosuz/books/blob/master/r4ds/README.md#6-workflow-scripts)
   - [27 R Markdown](https://github.com/haruosuz/books/blob/master/r4ds/README.md#27-r-markdown)
+- [Windows で R（統計解析ツール）を使う](https://akiyoko.hatenablog.jp/entry/2014/11/07/042801)
+- [R言語入門 (全13回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_r)
+- [my_dotinstall_basic_r.R](https://raw.githubusercontent.com/haruosuz/bioinfo/master/2020/analyses/my_dotinstall_basic_r.R)
+- [my_project_dengue_virus_1.Rmd](https://raw.githubusercontent.com/haruosuz/bioinfo/master/2020/analyses/my_project_dengue_virus_1.Rmd)
 
 ゲノム配列データを取得し、DNA配列の「長さ」と「GC含量」を計算する。
 <ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS> のファイル *overview.txt eukaryotes.txt plasmids.txt prokaryotes.txt viruses.txt* の値 (`Size`, `GC%` )と一致することを確認する。
+
+----------
+## 2020-03-29
+**ゲノム解析実習３**
+
+個別ゲノム解析
 
 - Case Study [NCBI Genome List](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#ncbi-genome-list)
 - [課題No.3 「DNA Sequence Statistics (1)」](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#assignment-3)
@@ -42,12 +52,10 @@ Last Update: 2020-02-05
 - コロナウイルス [coronavirus](https://github.com/haruosuz/microbe/blob/master/references/microbe.virus.md#coronavirus) 解析用 R Markdown [download](https://github.com/haruosuz/bioinfo/raw/master/2020/coronavirus.tar.gz)
 
 ----------
-## 2020-03-29
-**ゲノム解析実習３**
-
-----------
 ## 2020-04-05
 **ゲノム解析実習４**
+
+比較ゲノム解析
 
 ----------
 ## references
