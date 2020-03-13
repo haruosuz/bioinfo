@@ -1,0 +1,87 @@
+---
+title: "Project Dengue virus 1"
+author: '@Haruo_Suzuki'
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: true
+    theme: united
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Abstract
+[デング熱](https://ja.wikipedia.org/wiki/デング熱)とは、デングウイルス（Dengue virus）が原因の感染症である。
+DEN-1デング熱ウイルスのゲノム配列データを取得し、DNA配列の統計値（長さ、GC含量）を計算した。それらの値は、メタデータ <ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS> における値 (`Size`, `GC%` ) と一致した。
+
+# R For Bioinformatics
+
+https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md
+
+```{r}
+#install.packages("seqinr")
+library("seqinr") # write.fasta # read.fasta # GC # rho
+```
+
+## Metadata
+**[メタデータ](https://ja.wikipedia.org/wiki/メタデータ)**
+
+https://github.com/haruosuz/DS4GD/blob/master/2019/CaseStudy.md#ncbi-genome_reports
+
+```{r}
+url <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/viruses.txt" # 5.3 MB
+#url <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/plasmids.txt" # 2.6 MB
+#url <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/eukaryotes.txt" # 2.7 MB
+#url <- "ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/prokaryotes.txt" # 71.8 MB
+filename <- basename(url)
+#download.file(url = url, destfile = filename)
+#getwd() #system("open .")
+d <- read.delim(file = filename, stringsAsFactors=FALSE, na.strings="-", check.names=FALSE)
+dim(d)
+#str(d)
+#head(d, 2)
+colnames(d)
+
+# grepl returns a logical vector (match or not for each element of x)
+organism_name <- "Dengue virus 1"
+TF <- grepl(pattern = organism_name, x = d$`#Organism/Name`, ignore.case=TRUE)
+d[TF,]
+```
+
+## Sequence data
+**ゲノム配列データの取得**
+
+https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#retrieving-genome-sequence-data-using-seqinr
+
+```{r}
+# Retrieving a DNA sequence from NCBI
+library("seqinr")
+ACCESSION <- "NC_001477" # Dengue virus 1
+filename <- paste0("http://togows.org/entry/nucleotide/",ACCESSION,".fasta")
+seqs <- read.fasta(file=filename, seqtype="DNA", strip.desc=TRUE)
+# write the sequences to a FASTA-format file
+write.fasta(sequences=seqs, names=getAnnot(seqs), file.out="mySequences.fna")
+```
+
+## Statistics
+**DNA配列の統計（長さ、塩基組成、GC含量）**
+
+https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#length-of-a-dna-sequence
+
+```{r}
+seq1 <- seqs[[1]] # Get the 1st sequence
+seq1[1:10] # The first 10 nucleotides of the sequence
+summary(seq1)
+```
+
+- The length of the DNA sequence is `r length(seq1)` nucleotides.
+- Base composition (the number of As, Cs, Gs, and Ts) in the DEN-1 Dengue virus sequence is as follows: `r table(seq1)`.
+- The GC content of the DNA sequence is `r GC(seq1)`.
+
+# References
+- https://github.com/haruosuz/bioinfo/blob/master/2020/README.wasedajuku.md
+- R for Data Science [27 R Markdown](https://r4ds.had.co.nz/r-markdown.html)
+27.4.6 Inline code
+- [Dengue virus 1, complete genome - Nucleotide - NCBI](https://www.ncbi.nlm.nih.gov/nuccore/NC_001477)
