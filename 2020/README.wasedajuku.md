@@ -31,10 +31,14 @@ Last Update: 2020-02-05
 - [Windows で R（統計解析ツール）を使う](https://akiyoko.hatenablog.jp/entry/2014/11/07/042801)
 - [R言語入門 (全13回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_r)
 - ダウンロード [2020-03-15.tar.gz](https://github.com/haruosuz/bioinfo/raw/master/2020/analyses/2020-03-15.tar.gz)
+  - my_dotinstall_basic_r.R
+  - my_project_SARS-CoV-2.Rmd
+  - my_project_Dengue_virus_1.Rmd
 
-R Markdownでレポートを作成する。
-興味のある生物（ウイルス）のゲノム配列データを取得し、DNA配列の「長さ」と「GC含量」を計算する。
-<ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS> のファイル *overview.txt eukaryotes.txt plasmids.txt prokaryotes.txt viruses.txt* の値 (`Size`, `GC%`)と一致することを確認する。
+[R Markdown](https://kazutan.github.io/kazutanR/Rmd_intro.html)
+でレポートを作成する。
+興味のある生物（ウイルス）のゲノム配列データを取得し、DNA配列の統計値（長さ、GC含量）を計算する。
+それらの値が <ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS> のファイル *viruses.txt* に示された値 [Size (Kb), GC%] と一致することを確認する。
 
 ----------
 ## 2020-03-29
