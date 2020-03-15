@@ -37,7 +37,9 @@ Last Update: 2020-02-05
 
 [R Markdown](https://kazutan.github.io/kazutanR/Rmd_intro.html)
 でレポートを作成する。
+
 興味のある生物（ウイルス）のゲノム配列データを取得し、DNA配列の統計値（長さ、GC含量）を計算する。
+
 それらの値が <ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS> のファイル *viruses.txt* に示された値 [Size (Kb), GC%] と一致することを確認する。
 
 ----------
