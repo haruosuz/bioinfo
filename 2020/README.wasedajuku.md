@@ -28,12 +28,9 @@ Last Update: 2020-02-05
 ## 2020-03-15
 **ゲノム解析実習２**
 
-- [Windows で R（統計解析ツール）を使う](https://akiyoko.hatenablog.jp/entry/2014/11/07/042801)
-- [R言語入門 (全13回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_r)
 - ダウンロード [2020-03-15.tar.gz](https://github.com/haruosuz/bioinfo/raw/master/2020/analyses/2020-03-15.tar.gz)
   - my_dotinstall_basic_r.R
   - my_project_SARS-CoV-2.Rmd
-  - my_project_Dengue_virus_1.Rmd
 
 【課題】
 [R Markdown](https://kazutan.github.io/kazutanR/Rmd_intro.html)
