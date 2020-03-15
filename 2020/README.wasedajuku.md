@@ -36,7 +36,7 @@ Last Update: 2020-02-05
 [R Markdown](https://kazutan.github.io/kazutanR/Rmd_intro.html)
 でレポートを作成する。
 興味のある生物（ウイルス）の完全ゲノム配列データを取得し、DNA配列の統計値（長さ、GC含量）を計算する。
-それらの値が、[NCBI Genome](https://www.ncbi.nlm.nih.gov/genome)データベースに示された値 [Size (Kb), GC%] と一致することを確認する。
+それらの値が、[NCBI Genome](https://www.ncbi.nlm.nih.gov/genome/browse)データベースに示された値 [Size (Kb), GC%] と一致することを確認する。
 
 ----------
 ## 2020-03-29
