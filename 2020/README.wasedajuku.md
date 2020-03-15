@@ -28,7 +28,7 @@ Last Update: 2020-02-05
 ## 2020-03-15
 **ゲノム解析実習２**
 
-- ダウンロード [2020-03-15.tar.gz](https://github.com/haruosuz/bioinfo/raw/master/2020/analyses/2020-03-15.tar.gz)
+- ダウンロード [2020-03-15.zip](https://github.com/haruosuz/bioinfo/raw/master/2020/analyses/2020-03-15.zip)
   - my_dotinstall_basic_r.R
   - my_project_SARS-CoV-2.Rmd
 
