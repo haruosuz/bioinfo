@@ -30,25 +30,27 @@ Last Update: 2020-02-05
 
 - ダウンロード [2020-03-15.zip](https://github.com/haruosuz/bioinfo/raw/master/2020/analyses/2020-03-15.zip)
   - my_dotinstall_basic_r.R
-  - my_project_SARS-CoV-2.Rmd
+  - my_project_SARS-CoV-2.R
 
 【課題】
-[R Markdown](https://kazutan.github.io/kazutanR/Rmd_intro.html)
-でレポートを作成する。
 興味のある生物（ウイルス）の完全ゲノム配列データを取得し、DNA配列の統計値（長さ、GC含量）を計算する。
-それらの値が、[NCBI Genome](https://www.ncbi.nlm.nih.gov/genome/browse)データベースに示された値 [Size (Kb), GC%] と一致することを確認する。
+それらの値が、[NCBI Genome](https://www.ncbi.nlm.nih.gov/genome/browse)データベースに示された値 [Size, GC%] と一致することを確認する。
+解析結果をまとめたレポートを提出する。
 
 ----------
 ## 2020-03-29
 **ゲノム解析実習３**
 
-個別ゲノム解析
+ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS
+
+https://github.com/haruosuz/DS4GD/blob/master/2019/CaseStudy.md#ncbi-genome_reports
+
+https://github.com/haruosuz/introBI/blob/master/2017/CaseStudy.md#2017-10-05
 
 ----------
 ## 2020-04-05
 **ゲノム解析実習４**
 
-比較ゲノム解析
 
 ----------
 ## references
