@@ -44,12 +44,6 @@ Last Update: 2020-02-05
 【課題】
 複数の生物を比較する。例えば、DNA配列の長さ（[ゲノムサイズ](https://ja.wikipedia.org/wiki/ゲノム#数と大きさ)）、[GC含量](https://ja.wikipedia.org/wiki/GC含量)などを比べてみる。
 
-【例】
-- 最大／最小のゲノムを持つ生物は？
-- 最大／最小のGC含量を持つ生物は？
-- 生物の複雑さとゲノムサイズには相関があるか？
-- ゲノムサイズと相関がある生物学的特徴（GC含量、世代時間）
-
 【参考文献】
 - https://en.wikipedia.org/wiki/C-value
 - [進化論的計算手法の研究スタイル 伊庭 斉志 (東大)](https://www.ieice.org/ess/ESS/newsletter/N15/ga.html)
