@@ -48,7 +48,7 @@ Last Update: 2020-02-05
 - 生物の特徴（ゲノムサイズ、GC含量）の変動
 - 食材ゲノムの特徴（ゲノムサイズ、遺伝子数）
 - 生物のゲノムサイズと他の特徴（GC含量、複雑さ、世代時間）の関係
-- 共生体（ウイルスやプラスミド）と宿主のGC含量の関係
+- 共生体（ウイルス、プラスミド）と宿主のGC含量の関係
 
 【参考文献の例】
 - ゲノムサイズ
@@ -64,6 +64,7 @@ Last Update: 2020-02-05
   - [西田洋巳 (2012) ゲノム塩基配列の偏りと生物機能](http://www.iu.a.u-tokyo.ac.jp/~hnishida/tokuron4.htm)
     - ゲノムDNAのサイズとGC含量の関係では、サイズが大きくなるとGC含量が高くなる傾向にあることが示されている
     - 絶対寄生や共生にかかわる細菌のゲノムサイズは小さく、低GC含量であることも指摘された
+    - 外来性のDNA（プラスミドDNA、ファージDNAなど）のGC含量が宿主細胞のクロモソームDNAのGC含量よりも低い傾向にある
   - 原核生物のゲノムサイズとGC含量との関係
     - [Almpanis A et al.  Microb Genom. 2018 Apr;4(4). "Correlation between bacterial G+C content, genome size and the G+C content of associated plasmids and bacteriophages."](https://www.ncbi.nlm.nih.gov/pubmed/29633935)
     - [Bohlin J et al. Environ Microbiol Rep. 2014 Jun;6(3):278-86. "Positive correlations between genomic %AT and genome size within strains of bacterial species."](https://www.ncbi.nlm.nih.gov/pubmed/24983532)
