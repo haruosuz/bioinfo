@@ -45,11 +45,10 @@ Last Update: 2020-02-05
 複数の生物を比べてみる。例えば、DNA配列の長さ（[ゲノムサイズ](https://ja.wikipedia.org/wiki/ゲノム#数と大きさ)）、[GC含量](https://ja.wikipedia.org/wiki/GC含量)などを比較する。解析結果をまとめたレポートを提出する。課題のタイトルと参考文献も明記する。
 
 【タイトルの例】
-- 生物の複雑さとゲノムサイズの関係
-- 生物の世代時間とゲノムサイズの関係
-- 細菌におけるゲノムサイズとGC含量との関係
-- ウイルスと宿主のGC含量の相関分析
-- プラスミドと宿主細菌のGC含量の相関分析
+- ゲノムサイズ（GC含量）が最大（最小）の生物
+- 食材ゲノムの特徴（ゲノムサイズ、遺伝子数）
+- 生物のゲノムサイズと他の特徴（GC含量、複雑さ、世代時間）の関係
+- 共生体（ウイルスやプラスミド）と宿主のGC含量の関係
 
 【参考文献の例】
 - ゲノムの特徴 [Genome signature](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#genome-signature)
@@ -70,6 +69,10 @@ Last Update: 2020-02-05
   - [C Value paradox: The genome sizes of eukaryotes vary greatly but do not correlate with the "complexity". Is there a link between genome size and generation time? Slowly-reproducing organisms need lots of transposable elements (TEs) for quicker adaptation.](https://twitter.com/StevenXGe/status/1082353979563130880)
 
 ![](https://pbs.twimg.com/media/DwVIzIjUUAEd8Hd?format=jpg&name=360x360)
+
+- ゲノム弁当 [GenomeBentoProject](http://wiki.lifesciencedb.jp/mw/GenomeBentoProject)
+
+![http://togotv.dbcls.jp/togopic.2013.18.html](https://dbarchive.biosciencedbc.jp/data/togo-pic/image/201306_genome_bento.png)
 
 - [Stark (2020) Global Ecology and Biogeography. "No evidence for the ‘rate‐of‐living’ theory across the tetrapod tree of life".](https://onlinelibrary.wiley.com/doi/full/10.1111/geb.13069)
   - [https://twitter.com/gekkou583/status/1232056543006183424](いわゆる『ゾウの時間　ネズミの時間』説に対する疑義。内温性外温性含む陸上性脊椎動物4100種のデータ比較、代謝速度と寿命に負の相関があるという‘rate‐of‐living’ 理論は証明されず、その平均寿命は外因によるところが大きいとのこと。)
