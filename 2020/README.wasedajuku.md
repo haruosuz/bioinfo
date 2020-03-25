@@ -52,7 +52,7 @@ Last Update: 2020-02-05
 
 【参考文献の例】
 - ゲノムサイズ
-  - [進化論的計算手法の研究スタイル 伊庭 斉志 (東大)](https://www.ieice.org/ess/ESS/newsletter/N15/ga.html)
+  - [伊庭 斉志 "進化論的計算手法の研究スタイル"](https://www.ieice.org/ess/ESS/newsletter/N15/ga.html)
 いろいろな生物のゲノムサイズを比べてみると興味深い事実に 気づく。ここでゲノムサイズとは、DNAの文字数(塩基対の数)のことである。 ファージ類は数千ないし数万の文字しか持たないのに対して、ヒトは30億と いう膨大な文字数を持っている。 その間に数百万塩基対の大腸菌、数千万塩基対の酵母、数億塩基対のショウジ ョウバエなどがある。 ただし生物の複雑さと文字数には完全な相関があるわけではない。 例えば、マウスはヒトとほとんど同じ文字数を持っているのに、サ ンショウウオはヒトよりはるかに多い文字数を持っている。 一倍体ゲノムあたりのDNA量は生物の種ごとに決まっており、C値 (C-value)と呼ばれている。
   - https://en.wikipedia.org/wiki/C-value
   - [Ge SX. BMC Genomics. 2017 Feb 23;18(1):200. "Exploratory bioinformatics investigation reveals importance of "junk" DNA in early embryo development."](https://www.ncbi.nlm.nih.gov/pubmed/28231763)
@@ -71,9 +71,11 @@ Last Update: 2020-02-05
 
 ![http://schaechter.asmblog.org/schaechter/2009/07/an-iconoclastic-endosymbiont.html](http://schaechter.asmblog.org/.a/6a00d8341c5e1453ef0115723c61fc970b-300wi)
 
-- ゲノム弁当 [GenomeBentoProject](http://wiki.lifesciencedb.jp/mw/GenomeBentoProject)
-
+- 食材ゲノム
+  - ゲノム弁当 [GenomeBentoProject](http://wiki.lifesciencedb.jp/mw/GenomeBentoProject)
 ![http://togotv.dbcls.jp/togopic.2013.18.html](https://dbarchive.biosciencedbc.jp/data/togo-pic/image/201306_genome_bento.png)
+  - [進化の順番で寿司を食べる :: デイリーポータルZ](https://dailyportalz.jp/kiji/150714194069)
+![https://goto33.blog.so-net.ne.jp/2015-08-25](https://goto33.c.blog.so-net.ne.jp/_images/blog/_e3a/goto33/024.jpg)
 
 - [Stark et al. 2020 Global Ecology and Biogeography. "No evidence for the ‘rate‐of‐living’ theory across the tetrapod tree of life".](https://onlinelibrary.wiley.com/doi/full/10.1111/geb.13069)
   - [いわゆる『ゾウの時間　ネズミの時間』説に対する疑義。内温性外温性含む陸上性脊椎動物4100種のデータ比較、代謝速度と寿命に負の相関があるという‘rate‐of‐living’ 理論は証明されず、その平均寿命は外因によるところが大きいとのこと。](https://twitter.com/gekkou583/status/1232056543006183424)
