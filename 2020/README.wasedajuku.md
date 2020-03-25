@@ -45,12 +45,18 @@ Last Update: 2020-02-05
 複数の生物を比較する。例えば、DNA配列の長さ（[ゲノムサイズ](https://ja.wikipedia.org/wiki/ゲノム#数と大きさ)）、[GC含量](https://ja.wikipedia.org/wiki/GC含量)などを比べてみる。
 
 【参考文献】
-- https://en.wikipedia.org/wiki/C-value
-- [進化論的計算手法の研究スタイル 伊庭 斉志 (東大)](https://www.ieice.org/ess/ESS/newsletter/N15/ga.html)
-いろいろな生物のゲノムサイズを比べてみると興味深い事実に 気づく。ここでゲノムサイズとは、DNAの文字数(塩基対の数)のことである。 ファージ類は数千ないし数万の文字しか持たないのに対して、ヒトは30億と いう膨大な文字数を持っている。 その間に数百万塩基対の大腸菌、数千万塩基対の酵母、数億塩基対のショウジ ョウバエなどがある。
-一倍体ゲノムあたりのDNA量は生物の種ごとに決まっており、C値 (C-value)と呼ばれている。
+- ゲノムの特徴 [Genome signature](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#genome-signature)
+  - [西田洋巳 (2012) ゲノム塩基配列の偏りと生物機能](http://www.iu.a.u-tokyo.ac.jp/~hnishida/tokuron4.htm)
+ゲノムDNAのサイズとGC含量の関係では、サイズが大きくなるとGC含量が高くなる傾向にあることが示されている（Bentley and Parkhill, 2004, Ann Rev Genet, 38, 771-791; Nishida, 2012, Int J Evol Biol, 2012, 342482）
+絶対寄生や共生にかかわる細菌のゲノムサイズは小さく、低GC含量であることも指摘された（Moran, 2002, Cell, 108, 583-586）
 - [Almpanis A et al.  Microb Genom. 2018 Apr;4(4). "Correlation between bacterial G+C content, genome size and the G+C content of associated plasmids and bacteriophages."](https://www.ncbi.nlm.nih.gov/pubmed/29633935)
 - [Bohlin J et al. Environ Microbiol Rep. 2014 Jun;6(3):278-86. "Positive correlations between genomic %AT and genome size within strains of bacterial species."](https://www.ncbi.nlm.nih.gov/pubmed/24983532)
+
+![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2704378/bin/pgen.1000565.g001.jpg)
+
+- [進化論的計算手法の研究スタイル 伊庭 斉志 (東大)](https://www.ieice.org/ess/ESS/newsletter/N15/ga.html)
+いろいろな生物のゲノムサイズを比べてみると興味深い事実に 気づく。ここでゲノムサイズとは、DNAの文字数(塩基対の数)のことである。 ファージ類は数千ないし数万の文字しか持たないのに対して、ヒトは30億と いう膨大な文字数を持っている。 その間に数百万塩基対の大腸菌、数千万塩基対の酵母、数億塩基対のショウジ ョウバエなどがある。 ただし生物の複雑さと文字数には完全な相関があるわけではない。 例えば、マウスはヒトとほとんど同じ文字数を持っているのに、サ ンショウウオはヒトよりはるかに多い文字数を持っている。 一倍体ゲノムあたりのDNA量は生物の種ごとに決まっており、C値 (C-value)と呼ばれている。
+- https://en.wikipedia.org/wiki/C-value
 - [Ge SX. BMC Genomics. 2017 Feb 23;18(1):200. "Exploratory bioinformatics investigation reveals importance of "junk" DNA in early embryo development."](https://www.ncbi.nlm.nih.gov/pubmed/28231763)
   - [C Value paradox: The genome sizes of eukaryotes vary greatly but do not correlate with the "complexity". Is there a link between genome size and generation time? Slowly-reproducing organisms need lots of transposable elements (TEs) for quicker adaptation.](https://twitter.com/StevenXGe/status/1082353979563130880)
 
