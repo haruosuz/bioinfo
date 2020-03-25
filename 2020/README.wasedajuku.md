@@ -45,7 +45,7 @@ Last Update: 2020-02-05
 複数の生物を比べてみる。例えば、DNA配列の長さ（[ゲノムサイズ](https://ja.wikipedia.org/wiki/ゲノム#数と大きさ)）、[GC含量](https://ja.wikipedia.org/wiki/GC含量)などを比較する。解析結果をまとめたレポートを提出する。課題のタイトルと参考文献も明記する。
 
 【タイトルの例】
-- ゲノムサイズ（GC含量）が最大（最小）の生物
+- 生物の特徴（ゲノムサイズ、GC含量）の変動
 - 食材ゲノムの特徴（ゲノムサイズ、遺伝子数）
 - 生物のゲノムサイズと他の特徴（GC含量、複雑さ、世代時間）の関係
 - 共生体（ウイルスやプラスミド）と宿主のGC含量の関係
@@ -70,7 +70,6 @@ Last Update: 2020-02-05
     - [McCutcheon JP et al. PLoS Genet. 2009 Jul;5(7):e1000565. "Origin of an alternative genetic code in the extremely small and GC-rich genome of a bacterial symbiont."](https://www.ncbi.nlm.nih.gov/pubmed/19609354)
 
 ![http://schaechter.asmblog.org/schaechter/2009/07/an-iconoclastic-endosymbiont.html](http://schaechter.asmblog.org/.a/6a00d8341c5e1453ef0115723c61fc970b-300wi)
-
 
 - ゲノム弁当 [GenomeBentoProject](http://wiki.lifesciencedb.jp/mw/GenomeBentoProject)
 
