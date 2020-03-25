@@ -42,7 +42,7 @@ Last Update: 2020-02-05
 **ゲノム解析実習３**
 
 【課題】
-複数の生物を比較する。例えば、DNA配列の長さ（[ゲノムサイズ](https://ja.wikipedia.org/wiki/ゲノム#数と大きさ)）、[GC含量](https://ja.wikipedia.org/wiki/GC含量)などを比べてみる。
+複数の生物を比べてみる。例えば、DNA配列の長さ（[ゲノムサイズ](https://ja.wikipedia.org/wiki/ゲノム#数と大きさ)）、[GC含量](https://ja.wikipedia.org/wiki/GC含量)などを比較し、先行研究の結果と一致することを確認する。解析結果をまとめたレポートを提出する。
 
 【参考文献】
 - ゲノムの特徴 [Genome signature](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#genome-signature)
