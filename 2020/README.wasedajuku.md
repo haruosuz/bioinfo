@@ -74,7 +74,7 @@ Last Update: 2020-02-05
 - 食材ゲノム
   - ゲノム弁当 [GenomeBentoProject](http://wiki.lifesciencedb.jp/mw/GenomeBentoProject)
 ![http://togotv.dbcls.jp/togopic.2013.18.html](https://dbarchive.biosciencedbc.jp/data/togo-pic/image/201306_genome_bento.png)
-  - [進化の順番で寿司を食べる](https://goto33.blog.so-net.ne.jp/2015-08-25)
+  - [書評：系統樹をさかのぼって見えてくる進化の歴史](https://goto33.blog.so-net.ne.jp/2015-08-25) 進化の順番で寿司を食べる
 ![](https://goto33.c.blog.so-net.ne.jp/_images/blog/_e3a/goto33/024.jpg)
 
 - [Stark et al. 2020 Global Ecology and Biogeography. "No evidence for the ‘rate‐of‐living’ theory across the tetrapod tree of life".](https://onlinelibrary.wiley.com/doi/full/10.1111/geb.13069)
