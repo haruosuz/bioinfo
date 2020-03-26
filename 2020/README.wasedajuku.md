@@ -46,10 +46,10 @@ Last Update: 2020-02-05
 
 【タイトルの例】
 - ゲノムサイズ（GC含量）が最大（最小）の細菌
-- 食材ゲノムの特徴（ゲノムサイズ、染色体数、遺伝子数）
-- 生物の生息環境（ヒト腸内、土壌、水圏、人工環境）とゲノムの特徴
-- 共生微生物（ウイルス、プラスミド）と宿主のGC含量の関係
-- 生物のゲノムサイズと他の特徴（複雑さ、世代時間、GC含量、遺伝子数）の関係
+- 生物のゲノムサイズと他の特徴（複雑さ、世代時間、GC含量）の関係
+- 生物の生息環境（ヒト体内、土壌）とゲノムの特徴
+- 食材ゲノムの特徴（ゲノムサイズ、遺伝子数）
+- 共生微生物（ウイルス、プラスミド）と宿主のGC含量の比較
 
 【参考文献の例】
 - ゲノムサイズ
@@ -73,8 +73,7 @@ Last Update: 2020-02-05
 
 ![http://schaechter.asmblog.org/schaechter/2009/07/an-iconoclastic-endosymbiont.html](http://schaechter.asmblog.org/.a/6a00d8341c5e1453ef0115723c61fc970b-300wi)
 
-- 食材ゲノム
-  - ゲノム弁当 [GenomeBentoProject](http://wiki.lifesciencedb.jp/mw/GenomeBentoProject)
+- 食材ゲノム [GenomeBentoProject](http://wiki.lifesciencedb.jp/mw/GenomeBentoProject)
 <img alt="http://togotv.dbcls.jp/togopic.2013.18.html" src="https://dbarchive.biosciencedbc.jp/data/togo-pic/image/201306_genome_bento.png" width=30%>
 
 - [Stark et al. 2020 Global Ecology and Biogeography. "No evidence for the ‘rate‐of‐living’ theory across the tetrapod tree of life".](https://onlinelibrary.wiley.com/doi/full/10.1111/geb.13069)
