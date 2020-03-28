@@ -42,16 +42,21 @@ Last Update: 2020-02-05
 **ゲノム解析実習３**
 
 【課題】
-（共通祖先から進化・多様化した）複数の生物を比べてみる。生物学的特徴として、例えば、DNA配列の長さ（[ゲノムサイズ](https://ja.wikipedia.org/wiki/ゲノム#数と大きさ)）、[GC含量](https://ja.wikipedia.org/wiki/GC含量)、遺伝子数、複雑さ、などを比較する。タイトル、方法、結果、参考文献を記載したレポートを提出する。
+（共通祖先から進化・多様化した）複数の生物を比べてみる。生物学的特徴として、例えば、DNA配列の長さ（[ゲノムサイズ](https://ja.wikipedia.org/wiki/ゲノム#数と大きさ)）、[GC含量](https://ja.wikipedia.org/wiki/GC含量)、遺伝子数、複雑さ、などを比較する。タイトル、研究の背景、方法、結果と考察、参考文献から構成されるレポートを提出する。
+[IMRAD](https://ja.wikipedia.org/wiki/IMRAD)
 
-【タイトルの例】
+【研究テーマの例】
+- 食材ゲノムの特徴（ゲノムサイズ、染色体数、遺伝子数）
 - ゲノムサイズ（GC含量）が最大（最小）の細菌
 - 生物のゲノムサイズと他の特徴（複雑さ、世代時間、GC含量）の関係
-- 生物の生息環境（ヒト体内、土壌）とゲノムの特徴
-- 食材ゲノムの特徴（ゲノムサイズ、遺伝子数）
-- 共生微生物（ウイルス、プラスミド）と宿主のGC含量の比較
+- 生物の生息環境（ヒト体内、土壌、水中）とゲノムの特徴
+- 共生体（ウイルス、プラスミド）と宿主（細菌）のGC含量の比較
 
 【参考文献の例】
+- 食材ゲノム [GenomeBentoProject](http://wiki.lifesciencedb.jp/mw/GenomeBentoProject)
+
+<img alt="http://togotv.dbcls.jp/togopic.2013.18.html" src="https://dbarchive.biosciencedbc.jp/data/togo-pic/image/201306_genome_bento.png" width=30%>
+
 - ゲノムサイズ
   - [伊庭 斉志 "進化論的計算手法の研究スタイル"](https://www.ieice.org/ess/ESS/newsletter/N15/ga.html)
 いろいろな生物のゲノムサイズを比べてみると興味深い事実に 気づく。ここでゲノムサイズとは、DNAの文字数(塩基対の数)のことである。 ファージ類は数千ないし数万の文字しか持たないのに対して、ヒトは30億と いう膨大な文字数を持っている。 その間に数百万塩基対の大腸菌、数千万塩基対の酵母、数億塩基対のショウジ ョウバエなどがある。 ただし生物の複雑さと文字数には完全な相関があるわけではない。 例えば、マウスはヒトとほとんど同じ文字数を持っているのに、サ ンショウウオはヒトよりはるかに多い文字数を持っている。 一倍体ゲノムあたりのDNA量は生物の種ごとに決まっており、C値 (C-value)と呼ばれている。
@@ -72,10 +77,6 @@ https://en.wikipedia.org/wiki/C-value
     - [McCutcheon JP et al. PLoS Genet. 2009 Jul;5(7):e1000565. "Origin of an alternative genetic code in the extremely small and GC-rich genome of a bacterial symbiont."](https://www.ncbi.nlm.nih.gov/pubmed/19609354)
 
 ![http://schaechter.asmblog.org/schaechter/2009/07/an-iconoclastic-endosymbiont.html](http://schaechter.asmblog.org/.a/6a00d8341c5e1453ef0115723c61fc970b-300wi)
-
-- 食材ゲノム [GenomeBentoProject](http://wiki.lifesciencedb.jp/mw/GenomeBentoProject)
-
-<img alt="http://togotv.dbcls.jp/togopic.2013.18.html" src="https://dbarchive.biosciencedbc.jp/data/togo-pic/image/201306_genome_bento.png" width=30%>
 
 - [Stark et al. 2020 Global Ecology and Biogeography. "No evidence for the ‘rate‐of‐living’ theory across the tetrapod tree of life".](https://onlinelibrary.wiley.com/doi/full/10.1111/geb.13069)
   - [いわゆる『ゾウの時間　ネズミの時間』説に対する疑義。内温性外温性含む陸上性脊椎動物4100種のデータ比較、代謝速度と寿命に負の相関があるという‘rate‐of‐living’ 理論は証明されず、その平均寿命は外因によるところが大きいとのこと。](https://twitter.com/gekkou583/status/1232056543006183424)
