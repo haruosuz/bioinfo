@@ -42,7 +42,7 @@ Last Update: 2020-02-05
 **ゲノム解析実習３**
 
 【課題】
-複数の生物を比べてみる。生物学的特徴として、例えば、DNA配列の長さ（[ゲノムサイズ](https://ja.wikipedia.org/wiki/ゲノム#数と大きさ)）、[GC含量](https://ja.wikipedia.org/wiki/GC含量)、遺伝子数、複雑さ、世代時間などを比較する。タイトル、方法、結果、参考文献を記載したレポートを提出する。
+（共通祖先から進化・多様化した）複数の生物を比べてみる。生物学的特徴として、例えば、DNA配列の長さ（[ゲノムサイズ](https://ja.wikipedia.org/wiki/ゲノム#数と大きさ)）、[GC含量](https://ja.wikipedia.org/wiki/GC含量)、遺伝子数、複雑さ、世代時間などを比較する。タイトル、方法、結果、参考文献を記載したレポートを提出する。
 
 【タイトルの例】
 - ゲノムサイズ（GC含量）が最大（最小）の細菌
@@ -133,6 +133,8 @@ https://r4ds.had.co.nz/workflow-basics.html
 - [課題No.3 「DNA Sequence Statistics (1)」](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#assignment-3)
 - DNA配列解析(2) [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-2)
 - コロナウイルス [coronavirus](https://github.com/haruosuz/microbe/blob/master/references/microbe.virus.md#coronavirus) 解析用 R Markdown [download](https://github.com/haruosuz/bioinfo/raw/master/2020/coronavirus.tar.gz)
+
+https://github.com/haruosuz/microbe/blob/master/references/microbe.COVID-19.md
 
 ----------
 
