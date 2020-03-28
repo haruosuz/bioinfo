@@ -79,6 +79,11 @@ Last Update: 2020-02-05
 - [Stark et al. 2020 Global Ecology and Biogeography. "No evidence for the ‘rate‐of‐living’ theory across the tetrapod tree of life".](https://onlinelibrary.wiley.com/doi/full/10.1111/geb.13069)
   - [いわゆる『ゾウの時間　ネズミの時間』説に対する疑義。内温性外温性含む陸上性脊椎動物4100種のデータ比較、代謝速度と寿命に負の相関があるという‘rate‐of‐living’ 理論は証明されず、その平均寿命は外因によるところが大きいとのこと。](https://twitter.com/gekkou583/status/1232056543006183424)
 
+- ["A question for comparative methods folks: when we think about patterns across extremely broad taxonomical groups, such as the body length and generation time (Bonner 1983) and body size and pop density (Damuth 1987), does it make sense to correct for phylogeny?"](https://twitter.com/vsbuffalo/status/1216475530066743296)
+
+![](https://pbs.twimg.com/media/EOHKAd8UUAAlzjN?format=jpg&name=small)
+![](https://pbs.twimg.com/media/EOHKAd-U4AAOCNQ?format=jpg&name=small)
+
 ----------
 ## 2020-04-05
 **ゲノム解析実習４**
