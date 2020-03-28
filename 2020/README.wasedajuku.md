@@ -42,8 +42,8 @@ Last Update: 2020-02-05
 **ゲノム解析実習３**
 
 【課題】
-（共通祖先から進化・多様化した）複数の生物を比べてみる。生物学的特徴として、例えば、DNA配列の長さ（[ゲノムサイズ](https://ja.wikipedia.org/wiki/ゲノム#数と大きさ)）、[GC含量](https://ja.wikipedia.org/wiki/GC含量)、遺伝子数、複雑さ、などを比較する。タイトル、研究の背景、方法、結果と考察、参考文献から構成されるレポートを提出する。
-[IMRAD](https://ja.wikipedia.org/wiki/IMRAD)
+（共通祖先から進化・多様化した）複数の生物を比べてみる。生物学的特徴として、例えば、DNA配列の長さ（[ゲノムサイズ](https://ja.wikipedia.org/wiki/ゲノム#数と大きさ)）、[GC含量](https://ja.wikipedia.org/wiki/GC含量)、遺伝子数、複雑さ、などを比較する。タイトル、[IMRAD](https://ja.wikipedia.org/wiki/IMRAD)（導入、方法、結果と考察）、参考文献から構成されるレポートを提出する。
+
 
 【研究テーマの例】
 - 生物（原核生物、真核生物、ウイルス）のゲノムの特徴（ゲノムサイズ、GC含量、染色体数、遺伝子数）
