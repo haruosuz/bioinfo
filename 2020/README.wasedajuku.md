@@ -39,14 +39,6 @@ Last Update: 2020-02-05
 ## 2020-03-29
 **ゲノム解析実習３**
 
-- ダウンロード [2020-03-29.zip](https://github.com/haruosuz/bioinfo/raw/master/2020/analyses/2020-03-29.zip)
-```
-2020-03-29/my_ncbi_eukaryotes.R
-2020-03-29/my_ncbi_prokaryotes.R
-2020-03-29/my_ncbi_overview.R
-2020-03-29/my_ncbi_viruses.R
-```
-
 【課題】
 （共通祖先から進化・多様化した）複数の生物を比べてみる。生物学的特徴として、例えば、DNA配列の長さ（[ゲノムサイズ](https://ja.wikipedia.org/wiki/ゲノム#数と大きさ)）、[GC含量](https://ja.wikipedia.org/wiki/GC含量)、遺伝子数、複雑さ、などを比較する。タイトル、[IMRAD](https://ja.wikipedia.org/wiki/IMRAD)（導入、方法、結果と考察）、参考文献から構成されるレポートを提出する。
 
@@ -83,6 +75,14 @@ https://en.wikipedia.org/wiki/C-value
 
 - [Stark et al. 2020 Global Ecology and Biogeography. "No evidence for the ‘rate‐of‐living’ theory across the tetrapod tree of life".](https://onlinelibrary.wiley.com/doi/full/10.1111/geb.13069)
   - [いわゆる『ゾウの時間　ネズミの時間』説に対する疑義。内温性外温性含む陸上性脊椎動物4100種のデータ比較、代謝速度と寿命に負の相関があるという‘rate‐of‐living’ 理論は証明されず、その平均寿命は外因によるところが大きいとのこと。](https://twitter.com/gekkou583/status/1232056543006183424)
+
+- ダウンロード [2020-03-29.zip](https://github.com/haruosuz/bioinfo/raw/master/2020/analyses/2020-03-29.zip)
+```
+2020-03-29/my_ncbi_eukaryotes.R
+2020-03-29/my_ncbi_prokaryotes.R
+2020-03-29/my_ncbi_overview.R
+2020-03-29/my_ncbi_viruses.R
+```
 
 ----------
 
