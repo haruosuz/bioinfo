@@ -48,7 +48,7 @@ Last Update: 2020-02-05
 - 生物のゲノムサイズと他の特徴（GC含量、複雑さ、世代時間）の関係
 - 共生体（ウイルス、プラスミド）と宿主（細菌）のGC含量の比較
 
-【参考文献の例】
+【参考文献】
 - 食材ゲノム [GenomeBentoProject](http://wiki.lifesciencedb.jp/mw/GenomeBentoProject)
 
 <img alt="http://togotv.dbcls.jp/togopic.2013.18.html" src="https://dbarchive.biosciencedbc.jp/data/togo-pic/image/201306_genome_bento.png" width=30%>
