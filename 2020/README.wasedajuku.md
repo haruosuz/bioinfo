@@ -90,12 +90,8 @@ https://en.wikipedia.org/wiki/C-value
 ## 2020-04-05
 **ゲノム解析実習４**
 
-- https://github.com/haruosuz/DS4GD/blob/master/2019/CaseStudy.md#ncbi-genome_reports
-- https://github.com/haruosuz/introBI/blob/master/2017/CaseStudy.md#2017-10-05
-
-https://www.presentationzen.com/presentationzen/
-
-![https://www.academyhills.com/library/calendar/tqe2it00000ht48v.html](https://www.academyhills.com/library/calendar/tqe2it00000ht48v-img/tqe2it00000ht4en.jpg)
+個別プロジェクトの進捗を報告する。
+質問は [Slack | 最先端科学プログラム2020 | チャンネル #生命科学](2020-trc6917.slack.com) に投稿する。
 
 ----------
 ## 2020-04-12
