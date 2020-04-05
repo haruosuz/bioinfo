@@ -90,6 +90,8 @@ https://en.wikipedia.org/wiki/C-value
 ## 2020-04-05
 **ゲノム解析実習４**
 
+- ダウンロード [2020-04-05.zip](https://github.com/haruosuz/bioinfo/raw/master/2020/analyses/2020-04-05.zip)
+
 個別プロジェクトの進捗を報告する。
 質問は [Slack | 最先端科学プログラム2020 | チャンネル #生命科学](https://app.slack.com/client/T010Z2U1JF6) に投稿する。
 
@@ -100,8 +102,6 @@ https://en.wikipedia.org/wiki/C-value
 - [微生物に関する本](https://github.com/haruosuz/books/blob/master/references/books.microbe.md)
   - 2018-06-15 [ガンより怖い薬剤耐性菌](https://github.com/haruosuz/books/blob/master/references/books.microbe.md#2018-06-15) 肺炎クラミジア、ブドウ球菌、ピロリ、ボツリヌス、サルモネラ、O157…etc
   - 2017-03-21 [もやしもんと感染症屋の気になる菌辞典](https://github.com/haruosuz/books/blob/master/references/books.microbe.md#2017-03-21) マーズ・コロナウイルス
-
-- ダウンロード [2020-04-05.zip](https://github.com/haruosuz/bioinfo/raw/master/2020/analyses/2020-04-05.zip)
 
 ----------
 ## 2020-04-12
