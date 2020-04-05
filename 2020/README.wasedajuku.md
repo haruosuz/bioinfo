@@ -93,6 +93,16 @@ https://en.wikipedia.org/wiki/C-value
 個別プロジェクトの進捗を報告する。
 質問は [Slack | 最先端科学プログラム2020 | チャンネル #生命科学](2020-trc6917.slack.com) に投稿する。
 
+【参考文献】
+- [Nextstrain](https://nextstrain.org/)
+  - [新型コロナウイルスの状況報告 2020-04-03](https://nextstrain.org/narratives/ncov/sit-rep/ja/2020-04-03)
+- 三中信宏 [分類学と系統学を学ぶためのブックガイド（Version 3-October-2018）](http://leeswijzer.org/cladist/PhylogenyBooks3October2018.html)
+- [微生物に関する本](https://github.com/haruosuz/books/blob/master/references/books.microbe.md)
+  - 2018-06-15 [ガンより怖い薬剤耐性菌](https://github.com/haruosuz/books/blob/master/references/books.microbe.md#2018-06-15) 肺炎クラミジア、ブドウ球菌、ピロリ、ボツリヌス、サルモネラ、O157…etc
+  - 2017-03-21 [もやしもんと感染症屋の気になる菌辞典](https://github.com/haruosuz/books/blob/master/references/books.microbe.md#2017-03-21) マーズ・コロナウイルス
+
+- ダウンロード [2020-04-05.zip](https://github.com/haruosuz/bioinfo/raw/master/2020/analyses/2020-04-05.zip)
+
 ----------
 ## 2020-04-12
 **実験実習＠藤沢ラボ**
