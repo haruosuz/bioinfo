@@ -91,7 +91,7 @@ https://en.wikipedia.org/wiki/C-value
 **ゲノム解析実習４**
 
 個別プロジェクトの進捗を報告する。
-質問は 2020-trc6917.slack.com チャンネル #生命科学 に投稿する。
+質問は [Slack | 最先端科学プログラム2020 | チャンネル #生命科学](https://app.slack.com/client/T010Z2U1JF6) に投稿する。
 
 【参考文献】
 - [Nextstrain](https://nextstrain.org/)
