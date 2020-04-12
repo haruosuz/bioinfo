@@ -108,9 +108,19 @@ https://en.wikipedia.org/wiki/C-value
 
 ### Caretta
 
+https://www.ncbi.nlm.nih.gov/genome/browse#!/organelles/Caretta
+
 https://ja.wikipedia.org/wiki/アカウミガメ
 Caretta caretta
-https://www.ncbi.nlm.nih.gov/genome/browse#!/organelles/Caretta
+```
+科	:	ウミガメ科 Cheloniidae
+亜科	:	アカウミガメ亜科 Carettinae
+属	:	アカウミガメ属
+Caretta Rafinesque, 1814[4]
+種	:	アカウミガメ C. caretta
+```
+分類
+1994年に発表された種内のミトコンドリアDNAの分子系統解析では産卵地が同じであるにもかかわらず複数の系統が含まれる（ジョージア州、サウスカロライナ州）、産卵地が全く異なる系統が単系統群を構成する（オマーンとブラジル）という結果が得られている[7]。
 
 http://leeswijzer.hatenablog.com/entry/2016/09/10/102132
 「種問題」ははてしなく続く - archief voor stambomen
