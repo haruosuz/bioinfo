@@ -8,7 +8,7 @@ Last Update: 2020-02-05
 - [2020-03-15](#2020-03-15) ゲノム解析実習２
 - [2020-03-29](#2020-03-29) ゲノム解析実習３
 - [2020-04-05](#2020-04-05) ゲノム解析実習４
-- 2020-04-12 実験実習＠藤沢ラボ
+- 2020-04-12
 - [2020-04-19](#2020-04-19) 最終プレゼン大会
 - [references](#references) 参考文献
 
@@ -105,7 +105,22 @@ https://en.wikipedia.org/wiki/C-value
 
 ----------
 ## 2020-04-12
-**実験実習＠藤沢ラボ**
+
+### Caretta
+
+https://ja.wikipedia.org/wiki/アカウミガメ
+Caretta caretta
+https://www.ncbi.nlm.nih.gov/genome/browse#!/organelles/Caretta
+
+http://leeswijzer.hatenablog.com/entry/2016/09/10/102132
+「種問題」ははてしなく続く - archief voor stambomen
+今回の Current Biology のキリン論文も，ゲノム情報を見るかぎり，キリンは分子系統樹の上で4つの「単系統群」に分かれるのだから，それぞれの単系統群を独立した「種」とみなして保全につなげるべきだという保全生物学上の “政治的種概念” を主張しただけだろう．
+
+http://www.naro.affrc.go.jp/archive/niaes/magazine/083/mgzn08304.html
+論文の紹介： 生物多様性を進化系統学的な尺度で測る (情報：農業と環境 No.83 2007.3)
+たとえば保全生物学において「～の種を守れ」と言ったところで、その裏付けとなっている種概念に関する問題点は回避されるわけではない。種には、一般に受け入れられているほどの実体は何もないのだ。
+すべての生物は進化的に結びついているという基本認識のもとでは、守るべきものはむしろ進化的なポテンシャルをもつ系統樹だろう。
+生物保全において守るべきは、実体のない「種」ではなく、クレード（単系統群）である
 
 ----------
 ## 2020-04-19
@@ -149,6 +164,7 @@ https://r4ds.had.co.nz/workflow-basics.html
   - [6 Workflow: scripts](https://github.com/haruosuz/books/blob/master/r4ds/README.md#6-workflow-scripts)
   - [27 R Markdown](https://github.com/haruosuz/books/blob/master/r4ds/README.md#27-r-markdown)
 
+https://github.com/haruosuz/microbe/blob/master/references/microbe.COVID-19.md
 
 
 - Case Study [NCBI Genome List](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#ncbi-genome-list)
@@ -156,10 +172,6 @@ https://r4ds.had.co.nz/workflow-basics.html
 - DNA配列解析(2) [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-2)
 - コロナウイルス [coronavirus](https://github.com/haruosuz/microbe/blob/master/references/microbe.virus.md#coronavirus) 解析用 R Markdown [download](https://github.com/haruosuz/bioinfo/raw/master/2020/coronavirus.tar.gz)
 - 三中信宏 [分類学と系統学を学ぶためのブックガイド（Version 3-October-2018）](http://leeswijzer.org/cladist/PhylogenyBooks3October2018.html)
-
-https://github.com/haruosuz/microbe/blob/master/references/microbe.COVID-19.md
-
-----------
 
 
 ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS
@@ -170,5 +182,15 @@ https://github.com/haruosuz/introBI/blob/master/2017/CaseStudy.md#2017-10-05
 
 https://github.com/haruosuz/evolve/blob/master/references/README.evolve.jargon.md#pcm
 
+https://github.com/haruosuz/evolve/blob/master/references/README.evolve.jargon.md#phylogenetic-diversity
+
+
 ----------
+
+
+
+----------
+
+
+
 
