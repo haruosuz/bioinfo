@@ -97,9 +97,8 @@ https://en.wikipedia.org/wiki/C-value
 質問は [Slack | 最先端科学プログラム2020 | チャンネル #生命科学](https://app.slack.com/client/T010Z2U1JF6) に投稿する。
 
 【参考文献】
-- [Nextstrain](https://nextstrain.org/)
-  - [新型コロナウイルスの状況報告 2020-04-03](https://nextstrain.org/narratives/ncov/sit-rep/ja/2020-04-03)
-- 三中信宏 [分類学と系統学を学ぶためのブックガイド（Version 3-October-2018）](http://leeswijzer.org/cladist/PhylogenyBooks3October2018.html)
+- [Nextstrain](https://github.com/haruosuz/microbe/blob/master/references/microbe.COVID-19.md#nextstrain)
+病原体の流行状況をゲノム配列データをもとに分析。例えば、新型コロナウイルス、季節性インフルエンザ、鳥インフルエンザ、西ナイルウイルス、おたふく風邪の原因ウイルス、ジカウイルス、西アフリカのエボラウイルス、デング熱、はしか、エンテロウイルスＤ６８、結核。
 - [微生物に関する本](https://github.com/haruosuz/books/blob/master/references/books.microbe.md)
   - 2018-06-15 [ガンより怖い薬剤耐性菌](https://github.com/haruosuz/books/blob/master/references/books.microbe.md#2018-06-15) 肺炎クラミジア、ブドウ球菌、ピロリ、ボツリヌス、サルモネラ、O157…etc
   - 2017-03-21 [もやしもんと感染症屋の気になる菌辞典](https://github.com/haruosuz/books/blob/master/references/books.microbe.md#2017-03-21) マーズ・コロナウイルス
@@ -156,6 +155,7 @@ https://r4ds.had.co.nz/workflow-basics.html
 - [課題No.3 「DNA Sequence Statistics (1)」](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#assignment-3)
 - DNA配列解析(2) [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-2)
 - コロナウイルス [coronavirus](https://github.com/haruosuz/microbe/blob/master/references/microbe.virus.md#coronavirus) 解析用 R Markdown [download](https://github.com/haruosuz/bioinfo/raw/master/2020/coronavirus.tar.gz)
+- 三中信宏 [分類学と系統学を学ぶためのブックガイド（Version 3-October-2018）](http://leeswijzer.org/cladist/PhylogenyBooks3October2018.html)
 
 https://github.com/haruosuz/microbe/blob/master/references/microbe.COVID-19.md
 
