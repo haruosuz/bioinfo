@@ -133,6 +133,13 @@ http://www.naro.affrc.go.jp/archive/niaes/magazine/083/mgzn08304.html
 生物保全において守るべきは、実体のない「種」ではなく、クレード（単系統群）である
 
 ----------
+## 2020-04-15
+
+Lactobacillus属の細菌２群（vaginalとnonvaginal）のゲノムサイズとGC含量を比較した例
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3993339/figure/F1/
+
+Staphylococcus属の細菌のゲノムサイズとGC含量を比較した例
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3317825/table/T1/
 
 ### eel
 
