@@ -135,11 +135,34 @@ http://www.naro.affrc.go.jp/archive/niaes/magazine/083/mgzn08304.html
 ----------
 ## 2020-04-15
 
+https://sakstyle.hatenadiary.jp/entry/20161111/p1
+森元良太・田中泉吏『生物学の哲学入門』 - logical cypher scape2
+［第2章］　集団的思考と進化論的世界観
+マイアは、ダーウィンの偉業は集団的思考を生物学に持ち込んだことだとする。
+この章の前半では、統計学の歴史が簡単に触れられる。
+ラプラスとガウスによるガウス分布の証明
+ケトレーによる平均的人間という新概念の考案
+そして、ゴールトン
+彼は、ガウス分布を正規分布normal distributionと呼び変える
+誤差論を進化論へと持ち込んで、集団遺伝学への先鞭をつける
+集団的思考は、アリストレス的本質主義以来の正常と異常という考え方を変化させる。
+生物測定学派とメンデル学派の調停はフィッシャーが「分散」を導入したことによる
+
+
 Lactobacillus属の細菌２群（vaginalとnonvaginal）のゲノムサイズとGC含量を比較した例
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3993339/figure/F1/
 
 Staphylococcus属の細菌のゲノムサイズとGC含量を比較した例
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3317825/table/T1/
+
+https://ja.wikipedia.org/wiki/モルビリウイルス属
+
+### Araneae
+クモ目
+
+https://ja.wikipedia.org/wiki/クモ
+
+https://www.ncbi.nlm.nih.gov/genome/browse#!/overview/Araneae
 
 ### eel
 
