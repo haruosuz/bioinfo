@@ -136,8 +136,6 @@ http://www.naro.affrc.go.jp/archive/niaes/magazine/083/mgzn08304.html
 
 ### eel
 
-https://www.ncbi.nlm.nih.gov/genome/browse#!/organelles/Actinopterygii
-
 https://ja.wikipedia.org/wiki/ニホンウナギ
 Anguilla japonica
 ```
@@ -155,7 +153,7 @@ Anguilla anguilla
 種	:	ヨーロッパウナギ A. anguilla
 ```
 
-https://www.ncbi.nlm.nih.gov/genome/browse#!/organelles/Anguilliformes
+https://www.ncbi.nlm.nih.gov/genome/browse#!/overview/Anguilliformes
 
 https://ja.wikipedia.org/wiki/タウナギ
 田鰻、Monopterus albus
@@ -168,7 +166,8 @@ https://ja.wikipedia.org/wiki/タウナギ
 属	:	タウナギ属 Monopterus
 種	:	タウナギ M. albus
 ```
-https://www.ncbi.nlm.nih.gov/genome/browse#!/organelles/Synbranchiformes
+
+https://www.ncbi.nlm.nih.gov/genome/browse#!/overview/Synbranchiformes
 
 
 http://www.timetree.org/
