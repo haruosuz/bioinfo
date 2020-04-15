@@ -133,6 +133,59 @@ http://www.naro.affrc.go.jp/archive/niaes/magazine/083/mgzn08304.html
 生物保全において守るべきは、実体のない「種」ではなく、クレード（単系統群）である
 
 ----------
+
+### eel
+
+https://www.ncbi.nlm.nih.gov/genome/browse#!/organelles/Actinopterygii
+
+https://ja.wikipedia.org/wiki/ニホンウナギ
+Anguilla japonica
+```
+綱	:	条鰭綱 Actinopterygii
+目	:	ウナギ目 Anguilliformes
+亜目	:	ウナギ亜目 Anguilloidei
+科	:	ウナギ科 Anguillidae
+属	:	ウナギ属 Anguilla
+種	:	ニホンウナギ A. japonica
+```
+
+https://ja.wikipedia.org/wiki/ヨーロッパウナギ
+Anguilla anguilla
+```
+種	:	ヨーロッパウナギ A. anguilla
+```
+
+https://www.ncbi.nlm.nih.gov/genome/browse#!/organelles/Anguilliformes
+
+https://ja.wikipedia.org/wiki/タウナギ
+田鰻、Monopterus albus
+```
+綱	:	条鰭綱 Actinopterygii
+亜綱	:	新鰭亜綱 Neopterygii
+上目	:	棘鰭上目 Acanthopterygii
+目	:	タウナギ目 Synbranchiformes
+科	:	タウナギ科 Synbranchidae　
+属	:	タウナギ属 Monopterus
+種	:	タウナギ M. albus
+```
+https://www.ncbi.nlm.nih.gov/genome/browse#!/organelles/Synbranchiformes
+
+
+http://www.timetree.org/
+```
+Japanese eel Anguilla japonica
+Versus
+European eel Anguilla anguilla
+Median Time: 13.5 MYA
+Estimated Time: 20.5 MYA
+CI: (9.5 - 23.5 MYA)
+```
+
+https://github.com/haruosuz/evolve/blob/master/references/README.evolve.tools.md#timetree
+TimeTreeで生物種間の分岐年代を調べる
+
+
+----------
 ## 2020-04-19
 **最終プレゼン大会**
 
