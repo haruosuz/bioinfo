@@ -138,6 +138,10 @@ Mycoplasma
 
 https://en.wikipedia.org/wiki/Prevotella
 
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4349605/
+Figure 6
+The phylogenetic tree of the genus Prevotella
+
 https://www.nature.com/articles/s41564-018-0338-9
 Megaphages infect Prevotella and variants are widespread in gut microbiomes | Nature Microbiology
 We refer to these as Lak phages. CRISPR spacer targeting indicates that Lak phages infect bacteria of the genus Prevotella. We manually curated to completion 15 distinct Lak phage genomes recovered from metagenomes. 
@@ -262,6 +266,37 @@ https://sakstyle.hatenadiary.jp/entry/20161111/p1
 誤差論を進化論へと持ち込んで、集団遺伝学への先鞭をつける
 集団的思考は、アリストレス的本質主義以来の正常と異常という考え方を変化させる。
 生物測定学派とメンデル学派の調停はフィッシャーが「分散」を導入したことによる
+
+----------
+## video
+
+https://www.youtube.com/watch?v=u2xNUiKMZ9M
+Nextstrain Situation Report 2020-04-03
+/ 7:53
+
+https://www.youtube.com/watch?v=7gCY9tP981I
+The ongoing evolution of SARS-CoV-2
+Vaughn Cooper / 11:20
+
+https://www.youtube.com/watch?v=MHRGPzoFyEM
+Evolution of SARS-CoV-2
+Vaughn Cooper / 11:48
+
+https://www.youtube.com/watch?v=Dd1RSMETXfI
+nanoTalk: Seeing the Epidemic Through the Trees – Why is sequencing important for COVID-19?
+Emma Hodcroft / 23:14
+
+https://www.youtube.com/watch?v=vkCNUPJ-OIM
+Emma Hodcroft's Three Minute Thesis
+Emma Hodcroft / 3:17
+
+https://doi.org/10.7875/togotv.2020.024
+2020-01-24 MicrobeDB.jp version 3の活用法 @ 第42回日本分子生物学会年会
+約12分です。
+
+https://doi.org/10.7875/togotv.2019.191
+2019-12-04 生物体系学概論 〜分類と系統のはざまで〜 @ 分子系統樹推定法:理論と応用 ワークショップ
+約46分です。
 
 ----------
 ## 2020-04-19
