@@ -114,8 +114,10 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3993339/figure/F1/
 Staphylococcus属の細菌のゲノムサイズとGC含量を比較した例
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3317825/table/T1/
 
-Lactobacillus, Bifidobacteriumなどの分離源
+Lactobacillus, Bifidobacterium などの分離源
 https://github.com/haruosuz/mgsa/blob/master/references/mgsa.tools.md#source
+
+https://ja.wikipedia.org/wiki/乳酸菌
 
 http://jsbac.org/youkoso/mutansStreptococci.html
 ミュータンスレンサ球菌（Mutans streptococci）
