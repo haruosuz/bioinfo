@@ -108,24 +108,10 @@ https://en.wikipedia.org/wiki/C-value
 
 ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/README
 ```
-------------------
 overview.txt file:
-------------------
-Organism/Name  Organism name at the species level according 
-Kingdom        Taxonomic division: Archaea, Bacteria, Eukaryota, or Viruses 
 
 Size (Mb)      Estimated genome size 
 Chrs           Number of chromosomes 
-
-
----------------
-eukaryotes.txt:
----------------
-
-Size (Mb)      Total length of DNA submitted for the project 
-GC%            Percent of nitrogenous bases (guanine or cytosine)
-
-
 ```
 
 ### prokaryotes
