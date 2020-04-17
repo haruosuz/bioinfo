@@ -298,7 +298,9 @@ https://doi.org/10.7875/togotv.2019.191
 2019-12-04 生物体系学概論 〜分類と系統のはざまで〜 @ 分子系統樹推定法:理論と応用 ワークショップ
 約46分です。
 
-- July 2011 TED Talk 5:18 [Jessica Green: Are we filtering the wrong microbes?](https://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes) | [ジェシカ・グリーン「微生物を正しく取り除くために」](http://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes?language=ja)
+http://www.ted.com/talks/jessica_green_are_we_filtering_the_wrong_microbes?language=ja
+Jessica Green: ジェシカ・グリーン「微生物を正しく取り除くために」
+July 2011 TED Talk 5:18
 
 ----------
 ## 2020-04-19
