@@ -106,47 +106,7 @@ https://en.wikipedia.org/wiki/C-value
 ----------
 ## 2020-04-12
 
-### Caretta
-
-https://www.ncbi.nlm.nih.gov/genome/browse#!/organelles/Caretta
-
-https://ja.wikipedia.org/wiki/アカウミガメ
-Caretta caretta
-```
-科	:	ウミガメ科 Cheloniidae
-亜科	:	アカウミガメ亜科 Carettinae
-属	:	アカウミガメ属
-Caretta Rafinesque, 1814[4]
-種	:	アカウミガメ C. caretta
-```
-分類
-1994年に発表された種内のミトコンドリアDNAの分子系統解析では産卵地が同じであるにもかかわらず複数の系統が含まれる（ジョージア州、サウスカロライナ州）、産卵地が全く異なる系統が単系統群を構成する（オマーンとブラジル）という結果が得られている[7]。
-
-http://www.naro.affrc.go.jp/archive/niaes/magazine/083/mgzn08304.html
-論文の紹介： 生物多様性を進化系統学的な尺度で測る (情報：農業と環境 No.83 2007.3)
-たとえば保全生物学において「～の種を守れ」と言ったところで、その裏付けとなっている種概念に関する問題点は回避されるわけではない。種には、一般に受け入れられているほどの実体は何もないのだ。
-すべての生物は進化的に結びついているという基本認識のもとでは、守るべきものはむしろ進化的なポテンシャルをもつ系統樹だろう。
-生物保全において守るべきは、実体のない「種」ではなく、クレード（単系統群）である
-
-http://leeswijzer.hatenablog.com/entry/2016/09/10/102132
-「種問題」ははてしなく続く - archief voor stambomen
-今回の Current Biology のキリン論文も，ゲノム情報を見るかぎり，キリンは分子系統樹の上で4つの「単系統群」に分かれるのだから，それぞれの単系統群を独立した「種」とみなして保全につなげるべきだという保全生物学上の “政治的種概念” を主張しただけだろう．
-
-https://sakstyle.hatenadiary.jp/entry/20161111/p1
-森元良太・田中泉吏『生物学の哲学入門』 - logical cypher scape2
-［第2章］　集団的思考と進化論的世界観
-マイアは、ダーウィンの偉業は集団的思考を生物学に持ち込んだことだとする。
-この章の前半では、統計学の歴史が簡単に触れられる。
-ラプラスとガウスによるガウス分布の証明
-ケトレーによる平均的人間という新概念の考案
-そして、ゴールトン
-彼は、ガウス分布を正規分布normal distributionと呼び変える
-誤差論を進化論へと持ち込んで、集団遺伝学への先鞭をつける
-集団的思考は、アリストレス的本質主義以来の正常と異常という考え方を変化させる。
-生物測定学派とメンデル学派の調停はフィッシャーが「分散」を導入したことによる
-
-----------
-## 2020-04-15
+### prokaryotes
 
 Lactobacillus属の細菌２群（vaginalとnonvaginal）のゲノムサイズとGC含量を比較した例
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3993339/figure/F1/
@@ -154,16 +114,66 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3993339/figure/F1/
 Staphylococcus属の細菌のゲノムサイズとGC含量を比較した例
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3317825/table/T1/
 
+Lactobacillus, Bifidobacteriumなどの分離源
+https://github.com/haruosuz/mgsa/blob/master/references/mgsa.tools.md#source
+
+http://jsbac.org/youkoso/mutansStreptococci.html
+ミュータンスレンサ球菌（Mutans streptococci）
+ミュータンス連鎖球菌は、通性嫌気性のグラム陽性細菌で連鎖球菌の一種です。名前の由来は、変異しやすいということでミュータントの意味を含めて作られたという説があります。ムタンという多糖体を作ることから由来しているという説もあります。多くの哺乳類の口腔内に存在し、ヒトではStreptococcus mutansとStreptococcus sobrinusがあります。
+
+https://www.kenko-kenbi.or.jp/science-center/foods/topics-foods/9507.html
+フグの持つ毒素、テトロドトキシンはビブリオ属やシュードモナス属の細菌を毒素の起源とし
+
+https://ja.wikipedia.org/wiki/ビブリオ属
+Vibrio
+ビブリオ属の細菌は例外的に、大小2つの環状DNAをゲノムとして持つという特徴がある
+
+https://ja.wikipedia.org/wiki/シュードモナス属
+Pseudomonas
+
+https://ja.wikipedia.org/wiki/マイコプラズマ
+Mycoplasma
+
+https://en.wikipedia.org/wiki/Prevotella
+
+https://www.nature.com/articles/s41564-018-0338-9
+Megaphages infect Prevotella and variants are widespread in gut microbiomes | Nature Microbiology
+We refer to these as Lak phages. CRISPR spacer targeting indicates that Lak phages infect bacteria of the genus Prevotella. We manually curated to completion 15 distinct Lak phage genomes recovered from metagenomes. 
+
+### viruses
+
 https://ja.wikipedia.org/wiki/モルビリウイルス属
 
-### Araneae
+http://www.kansensho.or.jp/ref/d06.html
+ウイルス性脳炎（viral encephalitis）
+病原体
+ヘルペスウイルス科、日本脳炎、ロタウイルス、エンテロウイルスA71型、D68型、インフルエンザウイルス、麻疹ウイルス、風疹ウイルスなどがある。
+
+https://artic.network/how-to-read-a-tree.html
+Phylogenetics trees contain a lot of information about the inferred evolutionary relationships between a set of viruses. 
+Reconstructing epidemiology
+Here is the same tree as above but with the tips labeled by the type of host they were isolated from: 
+You can immediately see that there is some structure there with viruses grouping by host. 
+
+### eukaryotes
+
+https://ja.wikipedia.org/wiki/変形菌
+
+https://ja.wikipedia.org/wiki/酵母
+
+https://ja.wikipedia.org/wiki/ハエ
+
+https://ja.wikipedia.org/wiki/ハチ目
+ハチ目（ハチもく、Hymenoptera）は昆虫のグループの1つ。膜翅目（まくしもく）とも呼ばれる。ハチ全般の他、アリを含む大きなグループである。
+
+#### Araneae
 クモ目
 
 https://ja.wikipedia.org/wiki/クモ
 
 https://www.ncbi.nlm.nih.gov/genome/browse#!/overview/Araneae
 
-### eel
+#### eel
 
 https://ja.wikipedia.org/wiki/ニホンウナギ
 Anguilla japonica
@@ -212,6 +222,44 @@ CI: (9.5 - 23.5 MYA)
 https://github.com/haruosuz/evolve/blob/master/references/README.evolve.tools.md#timetree
 TimeTreeで生物種間の分岐年代を調べる
 
+#### Caretta
+
+https://www.ncbi.nlm.nih.gov/genome/browse#!/organelles/Caretta
+
+https://ja.wikipedia.org/wiki/アカウミガメ
+Caretta caretta
+```
+科	:	ウミガメ科 Cheloniidae
+亜科	:	アカウミガメ亜科 Carettinae
+属	:	アカウミガメ属
+Caretta Rafinesque, 1814[4]
+種	:	アカウミガメ C. caretta
+```
+分類
+1994年に発表された種内のミトコンドリアDNAの分子系統解析では産卵地が同じであるにもかかわらず複数の系統が含まれる（ジョージア州、サウスカロライナ州）、産卵地が全く異なる系統が単系統群を構成する（オマーンとブラジル）という結果が得られている[7]。
+
+http://www.naro.affrc.go.jp/archive/niaes/magazine/083/mgzn08304.html
+論文の紹介： 生物多様性を進化系統学的な尺度で測る (情報：農業と環境 No.83 2007.3)
+たとえば保全生物学において「～の種を守れ」と言ったところで、その裏付けとなっている種概念に関する問題点は回避されるわけではない。種には、一般に受け入れられているほどの実体は何もないのだ。
+すべての生物は進化的に結びついているという基本認識のもとでは、守るべきものはむしろ進化的なポテンシャルをもつ系統樹だろう。
+生物保全において守るべきは、実体のない「種」ではなく、クレード（単系統群）である
+
+http://leeswijzer.hatenablog.com/entry/2016/09/10/102132
+「種問題」ははてしなく続く - archief voor stambomen
+今回の Current Biology のキリン論文も，ゲノム情報を見るかぎり，キリンは分子系統樹の上で4つの「単系統群」に分かれるのだから，それぞれの単系統群を独立した「種」とみなして保全につなげるべきだという保全生物学上の “政治的種概念” を主張しただけだろう．
+
+https://sakstyle.hatenadiary.jp/entry/20161111/p1
+森元良太・田中泉吏『生物学の哲学入門』 - logical cypher scape2
+［第2章］　集団的思考と進化論的世界観
+マイアは、ダーウィンの偉業は集団的思考を生物学に持ち込んだことだとする。
+この章の前半では、統計学の歴史が簡単に触れられる。
+ラプラスとガウスによるガウス分布の証明
+ケトレーによる平均的人間という新概念の考案
+そして、ゴールトン
+彼は、ガウス分布を正規分布normal distributionと呼び変える
+誤差論を進化論へと持ち込んで、集団遺伝学への先鞭をつける
+集団的思考は、アリストレス的本質主義以来の正常と異常という考え方を変化させる。
+生物測定学派とメンデル学派の調停はフィッシャーが「分散」を導入したことによる
 
 ----------
 ## 2020-04-19
