@@ -119,16 +119,10 @@ Chrs           Number of chromosomes
 ### Organelles
 https://www.ncbi.nlm.nih.gov/genome/browse#!/organelles/
 
-https://www.ncbi.nlm.nih.gov/pubmed/25814499
-Proc Natl Acad Sci U S A. 2015 Aug 18;112(33):10177-84. doi: 10.1073/pnas.1422049112. Epub 2015 Mar 26.
+https://www.pnas.org/content/112/33/10177
 Mitochondrial and plastid genome architecture: Reoccurring themes, but significant differences at the extremes.
-https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4547224/
 Nucleotide Composition.
-There is a near-universal adenine (A) and thymine (T) bias in organelle genomes throughout the eukaryotic domain (41), the most extreme of which (∼90% AT) is in the mitochondria of yeasts and arthropods. Plastid genomes can also be very AT rich, reaching 87% in Plasmodium falciparum, but overall, they have less severe nucleotide biases than mtDNAs (41).
-
-https://www.ncbi.nlm.nih.gov/pubmed/21887287
-PLoS One. 2011;6(8):e23624. doi: 10.1371/journal.pone.0023624. Epub 2011 Aug 26.
-The GC-rich mitochondrial and plastid genomes of the green alga Coccomyxa give insight into the evolution of organelle DNA nucleotide landscape.
+There is a near-universal adenine (A) and thymine (T) bias in organelle genomes throughout the eukaryotic domain (41),
 
 ### prokaryotes
 
@@ -165,6 +159,12 @@ https://en.wikipedia.org/wiki/Prevotella
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4349605/
 Figure 6
 The phylogenetic tree of the genus Prevotella
+
+https://www.amed.go.jp/news/release_20191108.html
+腸内微生物叢の全ゲノム解析により関節リウマチ患者の腸内細菌の特徴が明らかに | 国立研究開発法人日本医療研究開発機構
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6937407/
+Figure 1
+(C) Phylogenetic tree. 
 
 https://www.nature.com/articles/s41564-018-0338-9
 Megaphages infect Prevotella and variants are widespread in gut microbiomes | Nature Microbiology
