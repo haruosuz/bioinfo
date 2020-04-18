@@ -144,12 +144,15 @@ http://jsbac.org/youkoso/mutansStreptococci.html
 https://www.kenko-kenbi.or.jp/science-center/foods/topics-foods/9507.html
 フグの持つ毒素、テトロドトキシンはビブリオ属やシュードモナス属の細菌を毒素の起源とし
 
+https://ja.wikipedia.org/wiki/シュードモナス属
+Pseudomonas
+
 https://ja.wikipedia.org/wiki/ビブリオ属
 Vibrio
 ビブリオ属の細菌は例外的に、大小2つの環状DNAをゲノムとして持つという特徴がある
 
-https://ja.wikipedia.org/wiki/シュードモナス属
-Pseudomonas
+https://academic.oup.com/mbe/article/34/1/93/2649121
+This V. cholerae genome includes a 2.99-Mb primary chromosome (chr1) and a 1.10-Mb secondary chromosome (chr2), with %GC contents of 47.85% and 46.83%, respectively.
 
 https://ja.wikipedia.org/wiki/マイコプラズマ
 Mycoplasma
