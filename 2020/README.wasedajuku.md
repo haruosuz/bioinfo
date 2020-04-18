@@ -106,6 +106,8 @@ https://en.wikipedia.org/wiki/C-value
 ----------
 ## 2020-04-12
 
+https://www.ncbi.nlm.nih.gov/genome/browse
+
 ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS/README
 ```
 overview.txt file:
@@ -113,6 +115,20 @@ overview.txt file:
 Size (Mb)      Estimated genome size 
 Chrs           Number of chromosomes 
 ```
+
+### Organelles
+https://www.ncbi.nlm.nih.gov/genome/browse#!/organelles/
+
+https://www.ncbi.nlm.nih.gov/pubmed/25814499
+Proc Natl Acad Sci U S A. 2015 Aug 18;112(33):10177-84. doi: 10.1073/pnas.1422049112. Epub 2015 Mar 26.
+Mitochondrial and plastid genome architecture: Reoccurring themes, but significant differences at the extremes.
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4547224/
+Nucleotide Composition.
+There is a near-universal adenine (A) and thymine (T) bias in organelle genomes throughout the eukaryotic domain (41), the most extreme of which (∼90% AT) is in the mitochondria of yeasts and arthropods. Plastid genomes can also be very AT rich, reaching 87% in Plasmodium falciparum, but overall, they have less severe nucleotide biases than mtDNAs (41).
+
+https://www.ncbi.nlm.nih.gov/pubmed/21887287
+PLoS One. 2011;6(8):e23624. doi: 10.1371/journal.pone.0023624. Epub 2011 Aug 26.
+The GC-rich mitochondrial and plastid genomes of the green alga Coccomyxa give insight into the evolution of organelle DNA nucleotide landscape.
 
 ### prokaryotes
 
@@ -360,6 +376,10 @@ https://github.com/haruosuz/microbe/blob/master/references/microbe.COVID-19.md
 - DNA配列解析(2) [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-2)
 - コロナウイルス [coronavirus](https://github.com/haruosuz/microbe/blob/master/references/microbe.virus.md#coronavirus) 解析用 R Markdown [download](https://github.com/haruosuz/bioinfo/raw/master/2020/coronavirus.tar.gz)
 - 三中信宏 [分類学と系統学を学ぶためのブックガイド（Version 3-October-2018）](http://leeswijzer.org/cladist/PhylogenyBooks3October2018.html)
+
+
+https://github.com/haruosuz/introBI/blob/master/2016/CaseStudy.md#ncbi-genome-list
+
 
 
 ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS
