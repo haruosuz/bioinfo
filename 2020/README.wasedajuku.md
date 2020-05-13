@@ -151,6 +151,9 @@ https://ja.wikipedia.org/wiki/ビブリオ属
 Vibrio
 ビブリオ属の細菌は例外的に、大小2つの環状DNAをゲノムとして持つという特徴がある
 
+https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-020-6735-5
+All V. alginolyticus genomes contain a ~ 3.47 Mbp chromosome 1 and a ~ 1.88 Mbp chromosome 2, with a %GC content of around 44% (Table 1), which is typical for the genus Vibrio as well as for the species V. alginolyticus [29, 32]. 
+
 https://academic.oup.com/mbe/article/34/1/93/2649121
 This V. cholerae genome includes a 2.99-Mb primary chromosome (chr1) and a 1.10-Mb secondary chromosome (chr2), with %GC contents of 47.85% and 46.83%, respectively.
 
