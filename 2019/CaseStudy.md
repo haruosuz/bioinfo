@@ -861,9 +861,11 @@ head -n 1 $file | tail -n 1 | tr "," "\n" | nl | wc -l
 
 ----------
 ## ws222
-- https://www.affrc.maff.go.jp/tsukuba/top/event/workshop/ws_2019/222ws.html
 第222回農林交流センターワークショップ「分子系統樹推定法：理論と応用」
+
+- https://www.affrc.maff.go.jp/tsukuba/top/event/workshop/ws_2019/222ws.html
 - ハッシュタグ [#ws222](https://twitter.com/hashtag/ws222?f=live)
+- https://togotv.dbcls.jp/?search=分子系統樹推定法:理論と応用
 
 https://twitter.com/leeswijzer/status/1194852374193393664
 ［欹耳袋］先月つくばで開催された第222回農林交流センターワークショップ〈分子系統樹推定法：理論と応用〉のいくつかの動画が，ライフサイエンス統合データベースセンター（DBCLS）が運営する統合TV〈分子系統樹推定法:理論と応用〉から公開されました．
@@ -959,121 +961,6 @@ https://www.fifthdimension.jp/documents/molphytextbook/
 分子系統学演習 - データセットの作成から仮説検定まで
 
 第222回農林交流センターワークショップで作成したデータファイル
-```
-# https://www.fifthdimension.jp/documents/molphytextbook/Drosophila/
-curl -O https://www.fifthdimension.jp/documents/molphytextbook/Drosophila/Drosophila.zip
-unzip Drosophila.zip
-```
-
-https://www.fifthdimension.jp/documents/molphytextbook/datapreparation_lecture.pdf
-分子系統樹推定に適した配列データセットの作成：講義編
-
-https://www.fifthdimension.jp/documents/molphytextbook/datapreparation_practice.pdf
-分子系統樹推定に適した配列データセットの作成：実習編
-
-#ws222
-https://www.ncbi.nlm.nih.gov/nuccore
-txid7215[Organism:exp] AND (refseq[filter] AND mitochondrion[filter])
-
-```
-# COX2 領域の切り出し
-extractfeat -type CDS -tag gene -value "COX2|COII" sequence.gb COX2.nuc.fas
-
-# COX2 塩基配列をアミノ酸に翻訳pgtranseq --table=5 COX2.nuc.fas COX2_unaligned
-
-# COX2 アミノ酸配列を多重整列
-mafft --auto --thread 4 COX2_unaligned_aa.fasta > COX2_aligned_aa.fasta
-#  L-INS-i
-
-# 整列済 COX2 アミノ酸配列をガイドにして COX2 塩基配列を 整列
-pgaligncodon --alignment=COX2_aligned_aa.fasta COX2_unaligned_nuc.fasta COX2_aligned_nuc.fas
-
-# COX2 の塩基配列から開始コドンと終止コドンを含む塩基のカ ラムを削除する ( それ以外を切り出す )
-pgspliceseq 4-684 COX2_aligned_nuc.fas COX2_P.fas
-
-```
-
-13時00分-14時00分	【実習】「分子進化の統計モデリングとモデル選択」  田辺 晶史
-
-https://www.fifthdimension.jp/documents/molphytextbook/modelselection_practice.pdf
-分子進化の統計モデリングとモデル選択：実習編
-
-https://www.fifthdimension.jp/documents/molphytextbook/datapreparation_lecture.pdf
-分子進化の統計モデリングとモデル選択：講義編
-
-14時00分-15時00分	【実習】「最尤系統樹推定と系統樹の信頼性評価」  田辺 晶史
-
-https://www.fifthdimension.jp/documents/molphytextbook/maximumlikelihood_lecture.pdf
-最尤系統樹推定と系統樹の信頼性評価：講義編
-
-https://www.fifthdimension.jp/documents/molphytextbook/maximumlikelihood_practice.pdf
-最尤系統樹推定と系統樹の信頼性評価：実習編
-
-15時00分-16時00分	【実習】「系統樹・系統仮説の可視化と系統仮説間の統計的比較」  田辺 晶史
-
-https://www.fifthdimension.jp/documents/molphytextbook/hypothesistesting_lecture.pdf
-系統樹・系統仮説の可視化と系統仮説間の統計的比較：講義編
-
-https://www.fifthdimension.jp/documents/molphytextbook/hypothesistesting_practice.pdf
-系統樹・系統仮説の可視化と系統仮説間の統計的比較：実習編
-
-```
-# 2 つの系統樹を 1 つのファイルに
-pgjointree \
-RAxML_bestTree.whole_BIC4_ 略 _shotgunsearch_hypothesis9 \
-RAxML_bestTree.whole_BIC4_ 略 _shotgunsearch_MAJi_hypothesis9 \
-RAxML_forAUtest.nwk
-
-```
-
-
-
-- https://github.com/haruosuz/evolve/blob/master/README.md#fifthdimension
-- https://www.fifthdimension.jp/documents/molphytextbook/
-Life is fifthdimension.::Documents::分子系統学演習
-必要なソフトウェア(Mac OS X x86_64用)
-分子系統解析関連ソフト詰め合わせ
-  - https://www.fifthdimension.jp/products/molphypack/
-Software Package for Molecular Phylogenetic Analysis
-```
-# install_on_OSX.sh (for MacOS X El Capitan or Sierra on x86_64 Mac)
-curl -O https://www.fifthdimension.jp/products/molphypack/install_on_OSX.sh
-(time bash install_on_OSX.sh &) >& log.$(date +%F).txt
-```
-
-https://www.fifthdimension.jp/documents/molphytextbook/2011/molphytextbook.ja.pdf
-```
-0.11 Phylogears2 のインストール
-0.11.2 MacOS X・Linux の場合
-
-mkdir ~/temp
-cd ~/temp/
-
-# https://www.fifthdimension.jp/products/phylogears/
-# Public release
-# phylogears-1.0.2009.10.16.zip (script files for any Perl execution environment including MacOS X and Cygwin)
-curl -O https://www.fifthdimension.jp/products/phylogears/phylogears-1.0.2009.10.16.zip
-unzip phylogears-1.0.2009.10.16.zip 
-cd ~/temp/phylogears-1.0.2009.10.16/bin
-chmod 755 ./*
-sudo mkdir -p /usr/local/bin
-sudo mv ./* /usr/local/bin
-cd ../share
-sudo mv ./phylogears /usr/local/share/
-
-# Alpha testing release
-# phylogears2-2.0.2016.09.06.zip (script files for any Perl execution environment including MacOS X and Cygwin)
-curl -O https://www.fifthdimension.jp/products/phylogears/phylogears2-2.0.2016.09.06.zip
-unzip phylogears2-2.0.2016.09.06.zip 
-cd ~/temp/phylogears2-2.0.2016.09.06
-chmod 755 ./*
-sudo mkdir -p /usr/local/bin
-sudo mv ./* /usr/local/bin
-
-# 疑似乱数生成用 Perl モジュール Math::Random::MT::Auto を別途インストール
-sudo -H cpan -i Math::Random::MT::Auto
-perl -e "use Math::Random::MT::Auto"
-```
 
 ----------
 ----------
@@ -1081,9 +968,15 @@ perl -e "use Math::Random::MT::Auto"
 ----------
 ----------
 ## 2019-08-04
+第3回 進化学セミナー プログラム | 木村資生記念 進化学セミナー
+
+動画
+https://togotv.dbcls.jp/?search=第3回木村資生記念進化学セミナー
 
 https://kimuraseminar.wordpress.com/第3回-進化学セミナー-プログラム/
-第3回 進化学セミナー プログラム | 木村資生記念 進化学セミナー
+第1日 8月3日(土) 御殿場高原時之栖
+第2日 8月4日(日) 御殿場高原時之栖
+第3日 8月5日(月) 国立遺伝学研究所講堂
 
 14:20~17:30	ソフトウェア演習（資料はこちら）
 長田直樹 (北海道大学)・呉佳齊（東京工業大学）
