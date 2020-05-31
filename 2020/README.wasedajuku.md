@@ -400,11 +400,90 @@ https://github.com/haruosuz/evolve/blob/master/references/README.evolve.jargon.m
 
 
 ----------
+### phylogenetics
+系統学
+
+2018-12-04
+https://twitter.com/hashtag/togotv18
+https://www.medsi.co.jp/books/products/detail.php?product_id=3665
+生命科学データベース・ウェブツール - 図解と動画で使い方がわかる！　研究がはかどる定番18選 -
+```
+Part 3 生命科学系データ解析の現場で，押さえておきたい「鉄板」ツール	
+10 章 MEGAで系統樹を作成する	
+　　　MEGA で配列のアラインメントや系統解析を行う
+　　　DoMosaics を使ってドメイン構造と系統樹を可視化する
+　　　MAFFT・RAxML・FigTree を組み合わせて分子系統解析を行う
+```
+
+[統合TV | 生命科学系DB・ツール使い倒し系チャンネル](https://togotv.dbcls.jp/)
+- https://doi.org/10.7875/togotv.2012.073
+2012-08-30 PubMedで論文を検索する
+- https://doi.org/10.7875/togotv.2011.076
+2011-07-05 MEGAを使って配列アラインメントおよび系統解析をする
+- https://doi.org/10.7875/togotv.2017.077
+2017-08-04 DoMosaicsを使ってドメイン構造と系統樹を可視化する
+- https://doi.org/10.7875/togotv.2018.093
+2018-04-03 MAFFT・RAxML・FigTreeを組み合わせて分子系統解析を行う
+
+https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#togotv
+
+https://github.com/haruosuz/ksbn/blob/master/2018/README.2018.4.md#2018-11-30
 
 
+2019-09-25
+https://github.com/haruosuz/books/tree/master/DrBonoDojo
+https://www.medsi.co.jp/products/detail/3708
+(MEDSi)株式会社 メディカル・サイエンス・インターナショナル / 生命科学者のためのDr.Bonoデータ解析実践道場
+3.3 系統樹作成
+
+2:39 PM · Nov 14, 2019
+https://twitter.com/leeswijzer/status/1194852374193393664
+MINAKA Nobuhiro on Twitter: "［欹耳袋］先月つくばで開催された第222回農林交流センターワークショップ〈分子系統樹推定法：理論と応用〉のいくつかの動画が，ライフサイエンス統合データベースセンター（DBCLS）が運営する統合TV〈分子系統樹推定法:理論と応用〉から公開されました． https://t.co/OdTZC5GHoa" / Twitter
+
+10:43 AM · Oct 4, 2018
+https://twitter.com/leeswijzer/status/1047663526750371840
+MINAKA Nobuhiro on Twitter: "［蒐書日誌］三中信宏〈分類学と系統学を学ぶためのブックガイド（Version 3-October-2018）〉 https://t.co/hbPto4vMkC ※今月下旬の分子系統ワークショップで開設する「図書コーナー」の目録です．" / Twitter
+
+http://leeswijzer.org/cladist/PhylogenyBooks3October2018.html
+分類学と系統学を学ぶためのブックガイド
+（Version 3-October-2018）
+三中信宏
+
+2018-11-19
+https://www.kspub.co.jp/book/detail/5138212.html
+http://bookclub.kodansha.co.jp/product?item=0000275926
+よくわかるバイオインフォマティクス入門/藤博幸/講談社
+１章　配列解析
+２章　分子系統解析
+
+2019-06-28
+https://www.morikita.co.jp/books/book/3349
+進化で読み解く　バイオインフォマティクス入門
+第2章　遺伝と進化に関する基礎知識
+第6章　 分子系統樹作成法
+
+6:34 PM · Jul 5, 2019
+https://twitter.com/Naoki_Osada/status/1147076348285861893
+長田直樹 on Twitter: "本と内容が違うところはありますが，授業で用いているもともとの資料はフリーで公開しています． https://t.co/8ch53ehQxK"
+
+2014-01-21
+https://bookclub.kodansha.co.jp/product?item=0000194810
+『分子からみた生物進化　ＤＮＡが明かす生物の歴史』（宮田　隆）：ブルーバックス｜講談社BOOK倶楽部
+
+http://cse.naro.affrc.go.jp/minaka/files/DAKARA.html
+三中信宏『系統樹思考の世界：すべてはツリーとともに』―― 目次構成
+第6刷（2015年4月14日刊行）
+
+https://doi.org/10.7875/togotv.2012.033
+2012-03-13 【ゲノムリテラシー講座】分子系統解析(講義3)
+
+https://www.jst.go.jp/nbdc/bird/jinzai/literacy/streaming/
+ストリーミング配信 - BIRD
+分子系統解析（講義３）
+
+https://www.youtube.com/playlist?list=PL64D4C6F56371FBF8
+JST BIRD ゲノムリテラシー講座 - YouTube
 
 ----------
-
-
 
 
