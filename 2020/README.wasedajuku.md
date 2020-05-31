@@ -382,47 +382,26 @@ https://github.com/haruosuz/microbe/blob/master/references/microbe.COVID-19.md
 - [課題No.3 「DNA Sequence Statistics (1)」](https://github.com/haruosuz/DS4GD/blob/master/2019giga/CaseStudy.md#assignment-3)
 - DNA配列解析(2) [DNA Sequence Statistics (2)](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#dna-sequence-statistics-2)
 - コロナウイルス [coronavirus](https://github.com/haruosuz/microbe/blob/master/references/microbe.virus.md#coronavirus) 解析用 R Markdown [download](https://github.com/haruosuz/bioinfo/raw/master/2020/coronavirus.tar.gz)
-- 三中信宏 [分類学と系統学を学ぶためのブックガイド（Version 3-October-2018）](http://leeswijzer.org/cladist/PhylogenyBooks3October2018.html)
 
 
-https://github.com/haruosuz/introBI/blob/master/2016/CaseStudy.md#ncbi-genome-list
-
-
-
-ftp://ftp.ncbi.nlm.nih.gov/genomes/GENOME_REPORTS
-
-https://github.com/haruosuz/DS4GD/blob/master/2019/CaseStudy.md#ncbi-genome_reports
-
-https://github.com/haruosuz/introBI/blob/master/2017/CaseStudy.md#2017-10-05
-
-https://github.com/haruosuz/evolve/blob/master/references/README.evolve.jargon.md#pcm
-
-https://github.com/haruosuz/evolve/blob/master/references/README.evolve.jargon.md#phylogenetic-diversity
-
-
-----------
-### phylogenetics
-系統学
+https://github.com/haruosuz/evolve/blob/master/references/README.evolve.jargon.md
 
 https://github.com/haruosuz/evolve/blob/master/references/README.evolve.tools.md
-
-https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#togotv
 
 https://github.com/haruosuz/ksbn/blob/master/2018/README.2018.4.md#2018-11-30
 
 https://haruosuz.hatenadiary.org/entry/20080813
 
+----------
+### phylogenetics
+系統学
+
+https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#togotv
+
 2018-12-04
 https://twitter.com/hashtag/togotv18
 https://www.medsi.co.jp/books/products/detail.php?product_id=3665
 生命科学データベース・ウェブツール - 図解と動画で使い方がわかる！　研究がはかどる定番18選 -
-```
-Part 3 生命科学系データ解析の現場で，押さえておきたい「鉄板」ツール	
-10 章 MEGAで系統樹を作成する	
-　　　MEGA で配列のアラインメントや系統解析を行う
-　　　DoMosaics を使ってドメイン構造と系統樹を可視化する
-　　　MAFFT・RAxML・FigTree を組み合わせて分子系統解析を行う
-```
 
 2019-09-25
 https://github.com/haruosuz/books/tree/master/DrBonoDojo
@@ -433,10 +412,6 @@ https://www.medsi.co.jp/products/detail/3708
 2:39 PM · Nov 14, 2019
 https://twitter.com/leeswijzer/status/1194852374193393664
 MINAKA Nobuhiro on Twitter: "［欹耳袋］先月つくばで開催された第222回農林交流センターワークショップ〈分子系統樹推定法：理論と応用〉のいくつかの動画が，ライフサイエンス統合データベースセンター（DBCLS）が運営する統合TV〈分子系統樹推定法:理論と応用〉から公開されました． https://t.co/OdTZC5GHoa" / Twitter
-
-10:43 AM · Oct 4, 2018
-https://twitter.com/leeswijzer/status/1047663526750371840
-MINAKA Nobuhiro on Twitter: "［蒐書日誌］三中信宏〈分類学と系統学を学ぶためのブックガイド（Version 3-October-2018）〉 https://t.co/hbPto4vMkC ※今月下旬の分子系統ワークショップで開設する「図書コーナー」の目録です．" / Twitter
 
 http://leeswijzer.org/cladist/PhylogenyBooks3October2018.html
 分類学と系統学を学ぶためのブックガイド
