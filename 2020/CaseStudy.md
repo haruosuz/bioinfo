@@ -22,17 +22,11 @@ https://github.com/haruosuz/introBI/blob/master/2017/CaseStudy.md#2017-10-05
 # Installing the R packages:
 install.packages("seqinr")
 install.packages("tidyverse")
-```
 
-Rパッケージのバージョンを確認
-```
 # Print the versions of these packages:
 packageVersion("seqinr")
 packageVersion("tidyverse")
-```
 
-Rパッケージの呼び出し
-```
 # Load the packages into R:
 library(seqinr)
 library(tidyverse)
