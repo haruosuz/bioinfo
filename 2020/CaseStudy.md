@@ -12,7 +12,7 @@ https://github.com/haruosuz/introBI/blob/master/2017/CaseStudy.md#2017-10-05
 
 [14.農学生命情報科学特論IV | アグリバイオインフォマティクス教育研究ユニット](http://www.iu.a.u-tokyo.ac.jp/lectures/AG14/)
 
-[Rパッケージのインストール](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#assignment-2)
+[Rパッケージのインストール、バージョン確認、呼び出し](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#assignment-2):
 ```
 # Installing the R packages:
 install.packages("seqinr")
