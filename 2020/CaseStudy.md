@@ -12,7 +12,7 @@ https://github.com/haruosuz/introBI/blob/master/2017/CaseStudy.md#2017-10-05
 
 [14.農学生命情報科学特論IV | アグリバイオインフォマティクス教育研究ユニット](http://www.iu.a.u-tokyo.ac.jp/lectures/AG14/)
 
-[R: The R Project for Statistical Computing](https://github.com/haruosuz/DS4GD/tree/master/2020#r-the-r-project-for-statistical-computing)
+[RとRStudioのインストール](https://github.com/haruosuz/DS4GD/blob/master/2020/README.md#r-rstudio)
 
 [Rパッケージのインストール、バージョン確認、呼び出し](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#assignment-2):
 ```
@@ -33,7 +33,7 @@ library(tidyverse)
 - 再現性 [reproducibility](https://github.com/haruosuz/bioinfo/blob/master/references/README.reproducibility.md)
 - SFC授業
   - [バイオインフォマティクスのデータサイエンス](https://github.com/haruosuz/introBI/tree/master/2019)
-    - 教科書 [Bioinformatics Data Skills: Reproducible and Robust Research With Open Source Tools](https://github.com/haruosuz/books/tree/master/bds)
+    - 教科書 [Bioinformatics Data Skills: Reproducible and Robust Research With Open Source Tools](https://github.com/haruosuz/books/blob/master/bds/README.md)
   - [生命動態のデータサイエンス](https://github.com/haruosuz/DS4GD/tree/master/2020)
     - 教科書 [A Little Book of R For Bioinformatics](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan)
 - 参考書籍
