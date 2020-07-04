@@ -17,7 +17,28 @@ https://github.com/haruosuz/introBI/blob/master/2017/CaseStudy.md#2017-10-05
 演題：R言語を用いた再現可能なバイオインフォマティクス
 ```
 
-## References
+[Rパッケージのインストール](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#assignment-2)
+```
+# Installing the R packages:
+install.packages("seqinr")
+install.packages("tidyverse")
+```
+
+Rパッケージのバージョンを確認
+```
+# Print the versions of these packages:
+packageVersion("seqinr")
+packageVersion("tidyverse")
+```
+
+Rパッケージの呼び出し
+```
+# Load the packages into R:
+library(seqinr)
+library(tidyverse)
+```
+
+### References
 - 再現性 [reproducibility](https://github.com/haruosuz/bioinfo/blob/master/references/README.reproducibility.md)
 - [慶應義塾大学 湘南藤沢キャンパス（SFC）](https://www.sfc.keio.ac.jp/)
   - [バイオインフォマティクスのデータサイエンス](https://github.com/haruosuz/introBI/tree/master/2019)
@@ -29,7 +50,6 @@ https://github.com/haruosuz/introBI/blob/master/2017/CaseStudy.md#2017-10-05
 - 2019-03-12 Rをはじめよう生命科学のためのRStudio入門 [Getting Started with R: An Introduction for Biologists](https://github.com/haruosuz/books/tree/master/r4all)
 - 2018-05-09 [(Wonderful R 3) 再現可能性のすゝめ ―RStudioによるデータ解析とレポート作成―](http://www.kyoritsu-pub.co.jp/bookdetail/9784320112438)
 - 2017/10 Rではじめるデータサイエンス [R for Data Science](https://github.com/haruosuz/books/tree/master/r4ds)
-
 
 ----------
 
