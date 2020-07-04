@@ -11,11 +11,6 @@ https://github.com/haruosuz/introBI/blob/master/2017/CaseStudy.md#2017-10-05
 ## 2020-07-06
 
 [14.農学生命情報科学特論IV | アグリバイオインフォマティクス教育研究ユニット](http://www.iu.a.u-tokyo.ac.jp/lectures/AG14/)
-```
-2020年07月06日(PC使用)
-講師：鈴木治夫
-演題：R言語を用いた再現可能なバイオインフォマティクス
-```
 
 [Rパッケージのインストール](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#assignment-2)
 ```
