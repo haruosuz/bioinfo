@@ -7,6 +7,8 @@ Last Update: 2020-07
 ## Table of Contents
 - [references](#references)
   - [examples](#examples)
+- [people](#people)
+  - [KunisatoY](#KunisatoY) Yoshihiko Kunisato 国里愛彦
 - [updates](#updates)
 [2019](#2019)
 [2018](#2018)
@@ -17,25 +19,6 @@ Last Update: 2020-07
 ----------
 ## references
 
-https://swcarpentry.github.io/r-novice-gapminder/
-R for Reproducible Scientific Analysis
-
-https://twitter.com/JCORS3
-Japanese Community for Open and Reproducible Science
-https://osf.io/z4cgu/
-OSF | Japanese Community for Open and Reproducible Science (JCORS)
-
-https://codeocean.com/
-Code Ocean
-
-https://go.qiagen.com/Reproducibility
-No need to worry about irreproducibility
-Experimental reproducibility – more important than ever!
-infographic
-plasmid DNA
-
-[DB Research Reproducibility](http://db-reproducibility.seas.harvard.edu)
-
 - https://en.wikipedia.org/wiki/Reproducibility
 - https://ja.wikipedia.org/wiki/再現性
 - https://ja.wikipedia.org/wiki/再現性の危機
@@ -44,18 +27,29 @@ plasmid DNA
 再現性
 透明性
 
+
 https://sites.google.com/site/jssppr/home/reproducibility
 心理学研究の再現性に関する論争 - 日本社会心理学会 広報委員会
 
-https://kunisatolab.github.io/main/how-to-reproducible-analysis.html
-再生可能なデータ解析入門
-再生可能なデータ解析のためにRを使おう！
-Rパッケージのパッケージ管理
-解析環境のコンテナ化
-Dockerの始め方
-Dockerの保存・配布方法
-　国里のDocker hubに登録されているDockerはちょくちょく変更されます
-保存・配布したDockerの利用方法
+https://research-compendium.science/
+Research Compendium
+
+https://swcarpentry.github.io/r-novice-gapminder/
+R for Reproducible Scientific Analysis
+
+
+https://codeocean.com/
+Code Ocean
+
+http://db-reproducibility.seas.harvard.edu/
+DB Research Reproducibility
+
+https://go.qiagen.com/Reproducibility
+No need to worry about irreproducibility
+Experimental reproducibility – more important than ever!
+infographic
+plasmid DNA
+
 
 ### books
 
@@ -83,20 +77,43 @@ https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/ch
 Reproducible Research
 So what is a reproducible bioinformatics project? At the very least, it’s sharing your project’s code and data. 
 
-NYC地下鉄メタゲノム(PathoMap)論文の解析コード
 http://www.cell.com/cell-systems/pdfExtended/S2405-4712(15)00002-2
 Supplemental Code and Scripts
+NYC地下鉄メタゲノム(PathoMap)論文の解析コード
 
-解析のワークフローとQIIMEのパラメータ
-http://www.nature.com/article-assets/npg/ncomms/2016/160624/ncomms11939/extref/ncomms11939-s1.pdf
+https://pubmed.ncbi.nlm.nih.gov/27340092/
+Nat Commun
+. 2016 Jun 24;7:11939. doi: 10.1038/ncomms11939.
+A Key Genetic Factor for Fucosyllactose Utilization Affects Infant Gut Microbiota Development
+https://www.nature.com/articles/ncomms11939#MOESM1822
+A key genetic factor for fucosyllactose utilization affects infant gut microbiota development | Nature Communications
+https://static-content.springer.com/esm/art%3A10.1038%2Fncomms11939/MediaObjects/41467_2016_BFncomms11939_MOESM1822_ESM.pdf
+```
 Supplementary Table 3. Analysis workflow and QIIME parameter settings used in this study
+
 QIIME and Unix command a Options
+
 a MacQIIME version 1.8.0 (http://www.wernerlab.org/software/macqiime) was used in this study.
+```
+解析のワークフローとQIIMEのパラメータ
+
+
+https://twitter.com/JCORS3
+2019-12/
+https://adventar.org/calendars/4523
+Japanese Community for Open and Reproducible Science (JCORS https://osf.io/z4cgu/ )企画のアドベントカレンダーです。
+オープンサイエンス，研究の再現性にかかる話題を投稿ください。
+
+
 
 ----------
-## updates
+## people
 
-### 2020
+## KunisatoY
+Yoshihiko Kunisato
+国里愛彦
+
+https://twitter.com/KunisatoY
 
 http://www.igaku-shoin.co.jp/paperDetail.do?id=PA03357_03
 医学書院／週刊医学界新聞(第3357号 2020年02月03日)
@@ -105,12 +122,46 @@ http://www.igaku-shoin.co.jp/paperDetail.do?id=PA03357_03
 統計解析の再現可能性を高めるために
 国里 愛彦（専修大学人間科学部心理学科准教授）
 
+3つの再現可能性
+Goodmanらは，再現可能性を，方法の再現可能性，結果の再現可能性，推論の再現可能性の3つに分けて定義している（表）。
+
+![](http://www.igaku-shoin.co.jp/contents/picture/paper/nwsppr/n2020dir/n3357dir/n3357gif/n3357_09.jpg)
+
+方法の再現可能性（解析の再現可能性）を高める方法
+
+Rの場合はR Markdown，Pythonの場合はJupyter Notebookなどの便利なツールがある。
+データや解析コードなどが複数存在する場合もあるので，図1のように，READMEファイル（全体の説明書の役割を果たすファイル）などを用意したり，データのフォルダと解析コードのフォルダを分けるなど，第3者がわかりやすいように解析をパッケージ化しておく
+
+![](http://www.igaku-shoin.co.jp/contents/picture/paper/nwsppr/n2020dir/n3357dir/n3357gif/n3357_10.jpg)
+
+Docker
+
+![](http://www.igaku-shoin.co.jp/contents/picture/paper/nwsppr/n2020dir/n3357dir/n3357gif/n3357_11.jpg)
+
+
+https://kunisatolab.github.io/main/how-to-reproducible-analysis.html
+再生可能なデータ解析入門
+再生可能なデータ解析のためにRを使おう！
+　Rでのコードの書き方やR Markdownの使い方などは，以下のスライドで詳しく解説しているので，参照してください。
+Rパッケージのパッケージ管理
+解析環境のコンテナ化
+Dockerの始め方
+Dockerの保存・配布方法
+　国里のDocker hubに登録されているDockerはちょくちょく変更されます
+保存・配布したDockerの利用方法
+Copyright © 2019 Yoshihiko Kunisato. All rights reserved
+
+
+----------
+## updates
+
+### 2020
+
+
+
+
 ### 2019
 
-2019-12/
-https://adventar.org/calendars/4523
-Open and Reproducible Science Advent Calendar 2019 - Adventar
-Japanese Community for Open and Reproducible Science (JCORS https://osf.io/z4cgu/ )企画のアドベントカレンダーです。
 
 2019/09/27
 http://www.cl.ecei.tohoku.ac.jp/~jun/2019_0927_SNLP_Unreproducible_Research_is_Reproducible.pdf
@@ -124,8 +175,20 @@ https://crds.jst.go.jp/dw/20190702/2019070220159/
 NASEMが研究の再現性と複製可能性向上のために、研究の厳密性を透明性の改善方法を提案 « デイリーウォッチャー｜研究開発戦略センター（CRDS）
 科学研究の再現性（reproducibility）と複製可能性（replicability）
 
+### 2019-04
+
 https://wired.jp/2019/04/27/darpa-wants-to-solve-sciences-replication-crisis-with-robots/
 科学の「再現性の危機」に、DARPAは人工知能で対抗する｜WIRED.jp
+
+
+独立した第2の討論者
+https://pubmed.ncbi.nlm.nih.gov/30857597/
+Br J Anaesth
+. 2019 Apr;122(4):413-420. doi: 10.1016/j.bja.2018.12.010. Epub 2019 Jan 22.
+Independent Discussion Sections for Improving Inferential Reproducibility in Published Research
+Michael S Avidan 1, John P A Ioannidis 2, George A Mashour 3
+
+
 
 2019.04.25
 https://www.jsbi.org/news/topics/190425/
@@ -147,6 +210,15 @@ https://www.jsbi.org/news/topics/190425/
 生命科学クライシス
 
 ### 2018
+
+https://pubmed.ncbi.nlm.nih.gov/30457984/
+PLoS Biol
+. 2018 Nov 20;16(11):e2006930. doi: 10.1371/journal.pbio.2006930. eCollection 2018 Nov.
+Reproducible Research Practices, Transparency, and Open Access Data in the Biomedical Literature, 2015-2017
+Joshua D Wallach 1 2, Kevin W Boyack 3, John P A Ioannidis 4 5 6 7 8
+
+
+
 
 https://twitter.com/EnagoJapan/status/1038945772085997573
 【エナゴ学術英語アカデミー更新】科学研究において「再現性」は、基本中の基本です。誰がその研究を試みても同様の結果を導くことができるーはずですが、実は、この「再現性」が科学界の信頼性を脅かすほどの問題となっています。https://www.enago.jp/academy/if-lose-confidence-in-your-research/ …　#エナゴアカデミー
@@ -204,17 +276,31 @@ How to make replication the norm
 <img src="https://media.nature.com/lw800/magazine-assets/d41586-018-02108-9/d41586-018-02108-9_15470360.jpg" alt="" width=50%>
 
 
-March 13, 2018
-http://www.pnas.org/content/115/11/2584
-An empirical analysis of journal policy effectiveness for computational reproducibility
 
+
+### 201-03-13
+
+11:02 AM · Mar 15, 2018
 https://twitter.com/KayokoShioda/status/974103524589096960
-Kayoko Shioda on Twitter: "近年科学雑誌がデータやコードの開示を求めるようになっているので、その有効性をしらべた論文。著者らは雑誌 #サイエンス に載っていた論文をランダムに204本抽出し、公開データ＆コードを用いて結果の再現を試みるが、26％でしか再現できなかったと。このルールはないよりましだが完璧ではない #PNAS… https://t.co/u1lxkLUZuc"
-9:57 PM - 14 Mar 2018
+近年科学雑誌がデータやコードの開示を求めるようになっているので、その有効性をしらべた論文。著者らは雑誌 #サイエンス に載っていた論文をランダムに204本抽出し、公開データ＆コードを用いて結果の再現を試みるが、26％でしか再現できなかったと。このルールはないよりましだが完璧ではない #PNAS
+#サイエンス のルールに従って #データの開示 を求めたときの、著者からの反応がかなり面白い。「お前誰だよ。このコード書くのにどんだけ時間かかったと思ってんだよ」（のもっと丁寧バージョン）みたいな反応も。（論文参照）#データ＆#コードシェア のポリシーを理解してない人がまだまだいるみたい
 
+10:40 PM · Mar 13, 2018
 https://twitter.com/uranus_2/status/973554423677927429
-マーキュリー２世 on Twitter: "Scienceに掲載された計算科学研究、オーサーにデータとコードを求めたら44%でそれらが得られて(開示するようポリシーが定められていたにもかかわらず)、結果が再現できたのは26%。An empirical analysis of journal policy effectiveness for computational reproducibility https://t.co/6wz7vWHn49"
-9:40 AM - 13 Mar 2018
+Scienceに掲載された計算科学研究、オーサーにデータとコードを求めたら44%でそれらが得られて(開示するようポリシーが定められていたにもかかわらず)、結果が再現できたのは26%
+
+https://pubmed.ncbi.nlm.nih.gov/29531050/
+Proc Natl Acad Sci U S A
+. 2018 Mar 13;115(11):2584-2589. doi: 10.1073/pnas.1708290115. Epub 2018 Mar 12.
+An Empirical Analysis of Journal Policy Effectiveness for Computational Reproducibility
+Victoria Stodden 1, Jennifer Seiler 2, Zhaokun Ma 2
+
+
+
+
+### 201-03-13
+
+
 
 https://twitter.com/yuji_ikegaya/status/973450246154940417
 池谷裕二 on Twitter: "【科学のデータはときに再現性がないが それでも科学が進歩するのはなぜか】①そもそも科学者は発表されるデータが全て正しいとは信じていない（ミスもあるし不正もある）。②だから問題をあげつらうよりも、重要な発見に注視して議論しあう傾向がある。今朝の『PNAS』より→https://t.co/aZHaUJJ52g"
@@ -255,7 +341,10 @@ https://www.editage.jp/insights/irreproducibility-is-the-lack-of-an-accepted-def
 - 4 Sep 2017 PeerJ - the journal on Twitter: [On the reproducibility of science: unique identification of research resources in the biomedical literature](https://twitter.com/thePeerJ/status/904911469904580608) Published September 5, 2013
 - 2017年8月28日 [「再現性の危機」― 検証プロジェクトで浮き彫りに | Editage Insights](http://www.editage.jp/insights/the-reproducibility-projects-first-findings-highlight-reproducibility-crisis)
  - Jan. 18, 2017 [Rigorous replication effort succeeds for just two of five cancer papers | Science | AAAS](http://www.sciencemag.org/news/2017/01/rigorous-replication-effort-succeeds-just-two-five-cancer-papers)
-- Jul 13, 2017 [統計解析の再現可能性を高める取り組み](https://twitter.com/akabuchiyk/status/885504675666997249)
+
+
+
+
 - 12 July 2017 [Investigating reproducibility and tracking provenance – A genomic workflow case study | BMC Bioinformatics | Full Text](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-017-1747-0)
 - 2017-07-05 [科学研究の再現性について | junkato.jp](http://junkato.jp/ja/blog/2017/07/05/artifact-review-for-replicability/)
 - 2017-06-20 [Experimenting with reproducibility in bioinformatics](http://biorxiv.org/content/early/2017/06/20/143503)
@@ -268,10 +357,21 @@ http://www.natureasia.com/ja-jp/nathumbehav/abstracts/82836
 <img src="http://www.natureasia.com/figures/95066.jpg" alt="" width=50%>
 
 ### 2016
+
+https://pubmed.ncbi.nlm.nih.gov/27252173/
+Review Sci Transl Med
+. 2016 Jun 1;8(341):341ps12. doi: 10.1126/scitranslmed.aaf5027.
+What Does Research Reproducibility Mean?
+Steven N Goodman 1, Daniele Fanelli 2, John P A Ioannidis 2
+https://stm.sciencemag.org/content/scitransmed/8/341/341ps12.full.pdf
+
+### 2016-07
 2016, Vol. 59, No. 1
 http://team1mile.com/sjpr59-1/
 『心理学評論』
 特集「心理学の再現可能性：我々はどこから来たのか　我々は何者か　我々はどこへ行くのか」
+http://team1mile.com/sjpr59-1/contents_comment/
+三中信宏 統計学の現場は一枚岩ではない
 
 http://chitosepress.com/2016/08/16/2114/
 『心理学評論』特集：心理学の再現可能性
@@ -280,16 +380,34 @@ http://chitosepress.com/2015/11/09/404/
 心理学研究は信頼できるか？――再現可能性をめぐって(3)
 ・新たな発見をあたかももともと仮説があったかのように報告する（注：結果がわかってから仮説を作る＝Hypothesizing After the Results are Known の意味でHARKing と呼ばれます。HARKingについてはN. L. Kerrの論文（5）参照）
 
+### 2016-12-09
+https://www.ncbi.nlm.nih.gov/pubmed/27940837
+Science
+. 2016 Dec 9;354(6317):1240-1241. doi: 10.1126/science.aah6168.
+Enhancing Reproducibility for Computational Methods
 
+### 2016-05-25
 
+- 2016-05-31
+https://gigazine.net/news/20160531-scientists-reproducibility/
+科学の「再現性」が危機に瀕している - GIGAZINE
 
-- 2016-12-09 ["Enhancing reproducibility for computational methods." Science. PMID: 27940837](https://www.ncbi.nlm.nih.gov/pubmed/27940837)
-- 2016-05-31 [科学の「再現性」が危機に瀕している - GIGAZINE](http://gigazine.net/news/20160531-scientists-reproducibility/)
-- [「再現性の危機」はあるか？−調査結果− | Vol. 13 No. 8 | Nature ダイジェスト | Nature Research](http://www.natureasia.com/ja-jp/ndigest/v13/n8/「再現性の危機」はあるか？%26minus%3B調査結果%26minus%3B/77048) | [原文：Nature (2016-05-26) 1,500 scientists lift the lid on reproducibility.](http://www.ncbi.nlm.nih.gov/pubmed/27225100)
- - [Reality check on reproducibility : Nature News & Comment](http://www.nature.com/news/reality-check-on-reproducibility-1.19961)
+2016-05-26
+[「再現性の危機」はあるか？−調査結果−](https://www.natureasia.com/ja-jp/ndigest/v13/n8/「再現性の危機」はあるか？&minus%3B調査結果&minus%3B/77048)
+Is there a reproducibility crisis in science?
+動画
+https://pubmed.ncbi.nlm.nih.gov/27225100/
+1,500 Scientists Lift the Lid on Reproducibility
 
 <img src="https://nd.natureasia.com/figure/5706/77048/phone/1" alt="" width=50%>
 <img src="https://nd.natureasia.com/figure/5706/77048/phone/2" alt="" width=50%>
+
+25 May 2016
+https://www.nature.com/news/reality-check-on-reproducibility-1.19961
+Reality check on reproducibility : Nature News & Comment
+NATURE | EDITORIAL
+
+### 2016-01
 
 8:46 AM · Jan 6, 2016
 https://twitter.com/leeswijzer/status/684521352867524612
