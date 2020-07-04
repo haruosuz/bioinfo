@@ -96,8 +96,6 @@ a MacQIIME version 1.8.0 (http://www.wernerlab.org/software/macqiime) was used i
 ----------
 ## updates
 
-[Twitter Search](https://twitter.com/search?q=再現性%20(研究%20OR%20科学)&src=typd)
-
 ### 2020
 
 http://www.igaku-shoin.co.jp/paperDetail.do?id=PA03357_03
@@ -108,7 +106,6 @@ http://www.igaku-shoin.co.jp/paperDetail.do?id=PA03357_03
 国里 愛彦（専修大学人間科学部心理学科准教授）
 
 ### 2019
-
 
 2019-12/
 https://adventar.org/calendars/4523
@@ -134,6 +131,14 @@ https://wired.jp/2019/04/27/darpa-wants-to-solve-sciences-replication-crisis-wit
 https://www.jsbi.org/news/topics/190425/
 日本バイオインフォマティクス学会ニュースレター 第35号
 ■ 特集「データの再現性・信頼性とその向上に向けた取り組み」
+・ “Reproducibility”をめぐる科学界の侃々諤々
+　　河口 理紗（産業技術総合研究所 人工知能研究センター）
+・ゲノム科学研究とそのデータ解析の再現性
+　　二階堂 愛（理研BDR・筑波大学院）
+・データ解析を再現するために必要な情報を実行可能な形式で記述する
+　　大田 達郎（情報・システム研究機構 データサイエンス共同利用基盤施設 ライフサイエンス統合データベースセンター）
+・つくるよ!ロボット実験センター!
+　　神田 元紀（理化学研究所）
 
 [2019-04-01](https://github.com/haruosuz/books/blob/master/references/books.updates.md#2019-04-01)
 心理学の7つの大罪
