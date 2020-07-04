@@ -298,10 +298,18 @@ https://www.afpbb.com/articles/-/3072132?pid=17149815
 ### 2015
 
 - 2015-12-16 笠原 雅弘 [バイオインフォマティクスで実験ノートを取ろう](http://www.slideshare.net/mkasahara/ss-56193523)
-- 2015-12-08 [Markowetz F. "Five selfish reasons to work reproducibly." Genome Biol. PMID: 26646147 ](http://www.ncbi.nlm.nih.gov/pubmed/26646147)
-- 2015-10-21 Simon Hodson on Twitter: ["Hey: problem of research reproducibility in bioinformatics #eres2015"](https://twitter.com/simonhodson99/status/657031025940271105)
 
-![](https://pbs.twimg.com/media/CR4-OL4UEAAWIR5.jpg)
+2015-12-08
+https://pubmed.ncbi.nlm.nih.gov/26646147/
+Genome Biol
+. 2015 Dec 8;16:274. doi: 10.1186/s13059-015-0850-7.
+Five Selfish Reasons to Work Reproducibly
+Florian Markowetz 1
+
+Oct 22, 2015
+https://twitter.com/simonhodson99/status/657031025940271105
+Hey: problem of research reproducibility in bioinformatics #eres2015
+<img src="https://pbs.twimg.com/media/CR4-OL4UEAAWIR5.jpg" alt="" width=50%>
 
 2015年9月4日
 https://togetter.com/li/869445
