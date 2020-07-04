@@ -236,10 +236,10 @@ https://uribo.hatenablog.com/entry/2017/12/10/145149
 2017年度版 RStudioを使ったReproducible Research、補足ポエム - cucumber flesh
 
 2017-12-01
-https://trattoriainutano.tumblr.com/post/168391519927/データ解析が再現するということあるいは-common-workflow-language
+https://trattoriainutano.tumblr.com/post/168391519927
 データ解析が再現するということ、あるいは Common Workflow Language が僕らにもたらしてくれるもの
 
-<img alt="" src="https://qiita-image-store.s3.amazonaws.com/0/400/3dab48e3-b6a9-eae0-87c6-c32969b86b86.png" width=25%>
+<img alt="" src="https://qiita-image-store.s3.amazonaws.com/0/400/3dab48e3-b6a9-eae0-87c6-c32969b86b86.png" width=50%>
 
 2017年01月26日 Sneha Kulkarni
 https://www.editage.jp/insights/irreproducibility-is-the-lack-of-an-accepted-definition-a-problem-in-itself
@@ -309,9 +309,10 @@ https://togetter.com/li/869445
 
 母集団から標本がランダムサンプリングされているなら，ある標本で統計的に有意になった結果は母集団の傾向を正しく反映している確率が高いから，同じ母集団からランダムサンプリングされた別の標本においても同じ傾向が見出される（つまり再現性がある）ことが期待される。
 
-- 13 Jul 2015 Pinky Langat on Twitter: ["Simple rules for #reproducibility in #bioinformatics (Sandve et al. 2013) highlighted at #smbe15](https://twitter.com/PinkyCLangat/status/620503279647227904)
-
-![](https://pbs.twimg.com/media/CJx4ayhWoAAsR02.jpg)
+Jul 13, 2015
+https://twitter.com/PinkyCLangat/status/620503279647227904
+Pinky Langat on Twitter: "Simple rules for #reproducibility in #bioinformatics (Sandve et al. 2013) highlighted at #smbe15 http://t.co/JwIZ4FdfKe" / Twitter
+<img src="https://pbs.twimg.com/media/CJx4ayhWoAAsR02.jpg" alt="" width=50%>
 
 - 2015-08-27 [ジャーナルで発表された論文100本の再現を目的とした研究](http://www.eurekalert.org/pub_releases_ml/2015-08/aaft-_1082415.php)
 - 2015-06-09 [Irreproducible biology research costs put at $28 billion per year : Nature News & Comment](http://www.nature.com/news/irreproducible-biology-research-costs-put-at-28-billion-per-year-1.17711)
