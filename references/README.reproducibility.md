@@ -275,7 +275,9 @@ http://chitosepress.com/2015/11/09/404/
 心理学研究は信頼できるか？――再現可能性をめぐって(3)
 ・新たな発見をあたかももともと仮説があったかのように報告する（注：結果がわかってから仮説を作る＝Hypothesizing After the Results are Known の意味でHARKing と呼ばれます。HARKingについてはN. L. Kerrの論文（5）参照）
 
-- 2016-12-21 [white page: 再現性なんてないさ（？）](http://pingpongpangpong.blogspot.jp/2016/12/blog-post.html)
+
+
+
 - 2016-12-09 ["Enhancing reproducibility for computational methods." Science. PMID: 27940837](https://www.ncbi.nlm.nih.gov/pubmed/27940837)
 - 2016-05-31 [科学の「再現性」が危機に瀕している - GIGAZINE](http://gigazine.net/news/20160531-scientists-reproducibility/)
 - [「再現性の危機」はあるか？−調査結果− | Vol. 13 No. 8 | Nature ダイジェスト | Nature Research](http://www.natureasia.com/ja-jp/ndigest/v13/n8/「再現性の危機」はあるか？%26minus%3B調査結果%26minus%3B/77048) | [原文：Nature (2016-05-26) 1,500 scientists lift the lid on reproducibility.](http://www.ncbi.nlm.nih.gov/pubmed/27225100)
@@ -283,7 +285,6 @@ http://chitosepress.com/2015/11/09/404/
 
 <img src="https://nd.natureasia.com/figure/5706/77048/phone/1" alt="" width=50%>
 <img src="https://nd.natureasia.com/figure/5706/77048/phone/2" alt="" width=50%>
-
 
 8:46 AM · Jan 6, 2016
 https://twitter.com/leeswijzer/status/684521352867524612
@@ -295,7 +296,29 @@ https://twitter.com/leeswijzer/status/684521352867524612
 https://www.afpbb.com/articles/-/3072132?pid=17149815
 生物医科学論文の大半に不備、信頼性に疑問符
 
+### 2015-08-28
+
+2016-12-21
+http://pingpongpangpong.blogspot.com/2016/12/blog-post.html
+再現性なんてないさ（？）
+
+![](https://1.bp.blogspot.com/-wgqpPf1Ww_k/WFTLRJ5_dTI/AAAAAAAABZ0/6eZHXg5KwakNx5FiG1ZESklGRf2MLG7sACLcB/s320/FreshPaint-0-2016.12.17-02.04.49.png)
+
+18 OCTOBER 2018
+https://www.nature.com/collections/prbfkwmwvz/
+Challenges in irreproducible research
+
+10:45 AM · Sep 15, 2018
+https://twitter.com/drinami/status/1040778605049991168
+Open Science CollaborationによるEstimating the reproducibility of psychological scienceがScienceに掲載。著名な心理学実験の再現実験は全く効果がない群と再現できる群に分かれているように見える 
+
+28 Aug 2015
+https://science.sciencemag.org/content/349/6251/aac4716
+Estimating the reproducibility of psychological science | Science
+Open Science Collaboration*,†
+
 ### 2015
+
 
 - 2015-12-16 笠原 雅弘 [バイオインフォマティクスで実験ノートを取ろう](http://www.slideshare.net/mkasahara/ss-56193523)
 
