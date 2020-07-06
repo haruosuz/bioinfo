@@ -12,9 +12,9 @@ https://github.com/haruosuz/introBI/blob/master/2017/CaseStudy.md#2017-10-05
 
 [14.農学生命情報科学特論IV | アグリバイオインフォマティクス教育研究ユニット](http://www.iu.a.u-tokyo.ac.jp/lectures/AG14/)
 
-[RとRStudioのインストール](https://github.com/haruosuz/DS4GD/blob/master/2020/README.md#r-rstudio)
-
-[Rパッケージのインストール、バージョン確認、呼び出し](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#assignment-2):
+- [プロジェクト・ディレクトリのダウンロード](https://github.com/haruosuz/bioinfo/raw/master/2020/analyses/2020-07-06.zip)
+- [RとRStudioのインストール](https://github.com/haruosuz/DS4GD/blob/master/2020/README.md#r-rstudio)
+- [Rパッケージのインストール、バージョン確認、呼び出し](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#assignment-2):
 ```
 # Installing the R packages:
 install.packages("seqinr")
@@ -36,9 +36,12 @@ library(tidyverse)
     - 教科書 [Bioinformatics Data Skills: Reproducible and Robust Research With Open Source Tools](https://github.com/haruosuz/books/blob/master/bds/README.md)
   - [生命動態のデータサイエンス](https://github.com/haruosuz/DS4GD/tree/master/2020)
     - 教科書 [A Little Book of R For Bioinformatics](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan)
+    - https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#ncbi-genome-list
 - 参考書籍
   - 2019-03-12 Rをはじめよう生命科学のためのRStudio入門 [Getting Started with R: An Introduction for Biologists](https://github.com/haruosuz/books/tree/master/r4all)
-  - 2018-05-09 [再現可能性のすゝめ ―RStudioによるデータ解析とレポート作成―](http://www.kyoritsu-pub.co.jp/bookdetail/9784320112438)
+    - https://github.com/haruosuz/books/raw/master/r4all/scripts.zip
+  - 2018-05-09 [再現可能性のすゝめ ―RStudioによるデータ解析とレポート作成― / 高橋 康介　著](https://github.com/haruosuz/books/blob/master/references/books.statistics.md#2018-05-09)
+    - 2018/3/12 高橋康介 [再現可能性ベストプラクティス 　解析方法とレポート作成方法の再現可能性 　RとRStudioとR Markdownを通して](https://www.slideshare.net/kohske/rrstudior-markdown)
   - 2017/10 Rではじめるデータサイエンス [R for Data Science](https://github.com/haruosuz/books/tree/master/r4ds)
 
 ----------
