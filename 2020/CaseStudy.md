@@ -39,9 +39,6 @@ library(tidyverse)
     - https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#ncbi-genome-list
 - 参考書籍
   - 2019-03-12 Rをはじめよう生命科学のためのRStudio入門 [Getting Started with R: An Introduction for Biologists](https://github.com/haruosuz/books/tree/master/r4all)
-    - https://github.com/haruosuz/books/raw/master/r4all/scripts.zip
-  - 2018-05-09 [再現可能性のすゝめ ―RStudioによるデータ解析とレポート作成― / 高橋 康介　著](https://github.com/haruosuz/books/blob/master/references/books.statistics.md#2018-05-09)
-    - 2018/3/12 高橋康介 [再現可能性ベストプラクティス 　解析方法とレポート作成方法の再現可能性 　RとRStudioとR Markdownを通して](https://www.slideshare.net/kohske/rrstudior-markdown)
   - 2017/10 Rではじめるデータサイエンス [R for Data Science](https://github.com/haruosuz/books/tree/master/r4ds)
 
 ----------
