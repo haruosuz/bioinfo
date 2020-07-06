@@ -2,10 +2,8 @@
 **ケーススタディ**
 
 ## Table of Contents
-- [codon usage](#codon-usage) コドン使用
 - [2020-07-06](#2020-07-06)
-
-https://github.com/haruosuz/introBI/blob/master/2017/CaseStudy.md#2017-10-05
+- [codon usage](#codon-usage) コドン使用
 
 ----------
 ## 2020-07-06
@@ -36,10 +34,10 @@ library(tidyverse)
     - 教科書 [Bioinformatics Data Skills: Reproducible and Robust Research With Open Source Tools](https://github.com/haruosuz/books/blob/master/bds/README.md)
   - [生命動態のデータサイエンス](https://github.com/haruosuz/DS4GD/tree/master/2020)
     - 教科書 [A Little Book of R For Bioinformatics](https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan)
-    - https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#ncbi-genome-list
-- 参考書籍
-  - 2019-03-12 Rをはじめよう生命科学のためのRStudio入門 [Getting Started with R: An Introduction for Biologists](https://github.com/haruosuz/books/tree/master/r4all)
-  - 2017/10 Rではじめるデータサイエンス [R for Data Science](https://github.com/haruosuz/books/tree/master/r4ds)
+- リンク
+  - https://github.com/haruosuz/introBI/blob/master/2017/CaseStudy.md#2017-10-05
+  - https://github.com/haruosuz/bioinfo/blob/master/2020/README.wasedajuku.md
+  - https://github.com/haruosuz/books
 
 ----------
 
