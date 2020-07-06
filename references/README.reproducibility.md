@@ -8,8 +8,8 @@ Last Update: 2020-07
 - [references](#references)
   - [examples](#examples)
 - [people](#people)
-  - [kohske](#kohske) 高橋康介
-  - [KunisatoY](#KunisatoY) 国里愛彦
+[kohske](#kohske)
+[KunisatoY](#KunisatoY)
 - [updates](#updates)
 [2019](#2019)
 [2018](#2018)
