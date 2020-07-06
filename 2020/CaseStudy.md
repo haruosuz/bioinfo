@@ -29,6 +29,7 @@ library(tidyverse)
 
 ### References
 - 再現性 [reproducibility](https://github.com/haruosuz/bioinfo/blob/master/references/README.reproducibility.md)
+- [研究紹介](https://drive.google.com/file/d/1gA0S65DGVvZwUJI3U1zmCOpKZ57ZZyeb/view?usp=sharing)
 - SFC授業
   - [バイオインフォマティクスのデータサイエンス](https://github.com/haruosuz/introBI/tree/master/2019)
     - 教科書 [Bioinformatics Data Skills: Reproducible and Robust Research With Open Source Tools](https://github.com/haruosuz/books/blob/master/bds/README.md)
