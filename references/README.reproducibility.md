@@ -8,7 +8,8 @@ Last Update: 2020-07
 - [references](#references)
   - [examples](#examples)
 - [people](#people)
-  - [KunisatoY](#KunisatoY) Yoshihiko Kunisato 国里愛彦
+  - [kohske](#kohske) 高橋康介
+  - [KunisatoY](#KunisatoY) 国里愛彦
 - [updates](#updates)
 [2019](#2019)
 [2018](#2018)
@@ -26,7 +27,6 @@ Last Update: 2020-07
 - https://ja.wikipedia.org/wiki/Galaxy_(計算生物学)
 再現性
 透明性
-
 
 https://sites.google.com/site/jssppr/home/reproducibility
 心理学研究の再現性に関する論争 - 日本社会心理学会 広報委員会
@@ -50,21 +50,22 @@ Experimental reproducibility – more important than ever!
 infographic
 plasmid DNA
 
-
 ### books
 
-2018-05-09
-http://www.kyoritsu-pub.co.jp/bookdetail/9784320112438
-再現可能性のすゝめ ―RStudioによるデータ解析とレポート作成― / 高橋 康介　著
+[2019-04-01](https://github.com/haruosuz/books/blob/master/references/books.updates.md#2019-04-01)
+心理学の7つの大罪
 
-2018-10-11
-https://www.kyoritsu-pub.co.jp/bookdetail/9784320112445
-自然科学研究のためのR入門 ―再現可能なレポート執筆実践― / 江口 哲史　著
+[2019-03-07](https://github.com/haruosuz/books/blob/master/references/books.updates.md#2019-03-07)
+生命科学クライシス
 
-2017-01-27
-http://www.keisoshobo.co.jp/book/b272873.html
+[2018-10-11](https://github.com/haruosuz/books/blob/master/references/books.statistics.md#2018-10-11)
+自然科学研究のためのR入門 ―再現可能なレポート執筆実践―
+
+[2018-05-09](https://github.com/haruosuz/books/blob/master/references/books.statistics.md#2018-05-09)
+再現可能性のすゝめ ―RStudioによるデータ解析とレポート作成―
+
+[2017-01-27](https://github.com/haruosuz/books/blob/master/references/books.statistics.md#2017-01-27)
 ダメな統計学: 悲惨なほど完全なる手引書
-
 第10章　誰もが間違える
 　10.1　再現不可能な遺伝学
 　10.2　再現可能性を簡単に
@@ -104,12 +105,24 @@ https://adventar.org/calendars/4523
 Japanese Community for Open and Reproducible Science (JCORS https://osf.io/z4cgu/ )企画のアドベントカレンダーです。
 オープンサイエンス，研究の再現性にかかる話題を投稿ください。
 
-
-
 ----------
 ## people
 
-## KunisatoY
+### kohske
+
+https://rpubs.com/kohske/595
+Rスクリプトからレポート生成
+
+2014/6/19
+https://kohske.github.io/R/rstudio/
+Rstudioで楽々ドキュメント生成
+Rスクリプトからノートブックの作成
+
+2018/3/12 高橋康介
+https://www.slideshare.net/kohske/rrstudior-markdown
+再現可能性ベストプラクティス 　解析方法とレポート作成方法の再現可能性 　RとRStudioとR Markdownを通して
+
+### KunisatoY
 Yoshihiko Kunisato
 国里愛彦
 
@@ -203,12 +216,6 @@ https://www.jsbi.org/news/topics/190425/
 ・つくるよ!ロボット実験センター!
 　　神田 元紀（理化学研究所）
 
-[2019-04-01](https://github.com/haruosuz/books/blob/master/references/books.updates.md#2019-04-01)
-心理学の7つの大罪
-
-[2019-03-07](https://github.com/haruosuz/books/blob/master/references/books.updates.md#2019-03-07)
-生命科学クライシス
-
 ### 2018
 
 https://pubmed.ncbi.nlm.nih.gov/30457984/
@@ -251,6 +258,7 @@ http://microbiology.github.io/blog/com-bio-tech/
 2. Julia
 3. Reproducible Documents
 
+
 2018年3月17日
 http://on-sociology.blogspot.jp/2018/03/blog-post_17.html
 計量分析を用いた論文も社会的な構築物なのか？：経済学と政治学の再現性ポリシーの違い
@@ -276,7 +284,9 @@ How to make replication the norm
 <img src="https://media.nature.com/lw800/magazine-assets/d41586-018-02108-9/d41586-018-02108-9_15470360.jpg" alt="" width=50%>
 
 
-
+2018/3/12 高橋康介
+https://www.slideshare.net/kohske/rrstudior-markdown
+再現可能性ベストプラクティス 　解析方法とレポート作成方法の再現可能性 　RとRStudioとR Markdownを通して
 
 ### 201-03-13
 
