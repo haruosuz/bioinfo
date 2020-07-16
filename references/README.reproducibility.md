@@ -7,15 +7,17 @@ Last Update: 2020-07
 ## Table of Contents
 - [references](#references)
   - [examples](#examples)
-- [people](#people)
-[kohske](#kohske)
-[KunisatoY](#KunisatoY)
 - [updates](#updates)
 [2019](#2019)
 [2018](#2018)
 [2017](#2017)
 [2016](#2016)
 [2015](#2015)
+- [people](#people)
+[kohske](#kohske)
+[KunisatoY](#KunisatoY)
+[uribo](#uribo)
+
 
 ----------
 ## references
@@ -164,13 +166,26 @@ Dockerの保存・配布方法
 保存・配布したDockerの利用方法
 Copyright © 2019 Yoshihiko Kunisato. All rights reserved
 
+----------
+### uribo
+Uryu Shinya
+
+https://twitter.com/u_ribo
+
+2017-12-10
+https://uribo.hatenablog.com/entry/2017/12/10/145149
+2017年度版 RStudioを使ったReproducible Research、補足ポエム - cucumber flesh
+この記事はRStudioアドベントカレンダーの10日目の投稿の補足です。
+2020年01月17日に更新
+https://qiita.com/uri/items/6b94609f156173ed43ed
+RStudioではじめるGitによるバージョン管理 - Qiita
+
+
 
 ----------
 ## updates
 
 ### 2020
-
-
 
 
 ### 2019
@@ -183,6 +198,16 @@ http://www.cl.ecei.tohoku.ac.jp/~jun/2019_0927_SNLP_Unreproducible_Research_is_R
 [参考] “Replicability” “Repeatability”
 Reproducibilityとほぼ同じような使われ方をする用語
 
+12:25 AM · Aug 13, 2019
+https://twitter.com/BioMickWatson/status/1160935271480905728
+Mick Watson on Twitter: "The three technologies bioinformaticians need to be using right now https://t.co/fRlRMigOAT" / Twitter
+12TH AUGUST 2019
+http://www.opiniomics.org/the-three-technologies-bioinformaticians-need-to-be-using-right-now/
+1. Software environments and/or containers
+2. Workflow management systems
+3. Cloud
+
+
 2019/07/02
 https://crds.jst.go.jp/dw/20190702/2019070220159/
 NASEMが研究の再現性と複製可能性向上のために、研究の厳密性を透明性の改善方法を提案 « デイリーウォッチャー｜研究開発戦略センター（CRDS）
@@ -193,14 +218,12 @@ NASEMが研究の再現性と複製可能性向上のために、研究の厳密
 https://wired.jp/2019/04/27/darpa-wants-to-solve-sciences-replication-crisis-with-robots/
 科学の「再現性の危機」に、DARPAは人工知能で対抗する｜WIRED.jp
 
-
 独立した第2の討論者
 https://pubmed.ncbi.nlm.nih.gov/30857597/
 Br J Anaesth
 . 2019 Apr;122(4):413-420. doi: 10.1016/j.bja.2018.12.010. Epub 2019 Jan 22.
 Independent Discussion Sections for Improving Inferential Reproducibility in Published Research
 Michael S Avidan 1, John P A Ioannidis 2, George A Mashour 3
-
 
 
 2019.04.25
@@ -216,6 +239,15 @@ https://www.jsbi.org/news/topics/190425/
 ・つくるよ!ロボット実験センター!
 　　神田 元紀（理化学研究所）
 
+### 2019-03
+
+5:42 AM - 19 Mar 2019
+https://twitter.com/asarin/status/1107940442128023552
+oʞɐsɐ ɐɹnıɯ on Twitter: "発達心シンポ「今そこにある危機：再現可能性問題をめぐる現状と展望」話題提供資料はこちら： ・心理学における再現可能性問題ー概説ー ・発達心理学における再現性問題 ・再現性問題における統計学的論点と,その解決に向けて ・再現性問題解決への希望:プレレジ実録体験記 https://t.co/HC85suTw5v"
+http://team1mile.com/asarinlab/2019/03/19/jsdp2019sympo/
+日本発達心理学会第30回大会シンポジウム – 大阪大学大学院人間科学研究科三浦研究室
+
+
 ### 2018
 
 https://pubmed.ncbi.nlm.nih.gov/30457984/
@@ -223,6 +255,36 @@ PLoS Biol
 . 2018 Nov 20;16(11):e2006930. doi: 10.1371/journal.pbio.2006930. eCollection 2018 Nov.
 Reproducible Research Practices, Transparency, and Open Access Data in the Biomedical Literature, 2015-2017
 Joshua D Wallach 1 2, Kevin W Boyack 3, John P A Ioannidis 4 5 6 7 8
+
+
+https://pubmed.ncbi.nlm.nih.gov/30367595/
+BMC Bioinformatics
+. 2018 Oct 15;19(Suppl 10):349. doi: 10.1186/s12859-018-2296-x.
+Reproducible bioinformatics project: a community for reproducible bioinformatics analysis pipelines
+Neha Kulkarni 1, Luca Alessandrì 1, Riccardo Panero 1, Maddalena Arigoni 1, Martina Olivero 2, Giulio Ferrero 3, Francesca Cordero 4, Marco Beccuti 3, Raffaele A Calogero 5
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6191970/
+Reproducible Bioinformatics Project (RBP),
+docker images and R package
+
+http://reproducible-bioinformatics.org
+
+![](http://reproducible-bioinformatics.org/1/images/280_0_4982595_171497.jpg)
+
+
+
+
+### 2019-07
+
+https://pubmed.ncbi.nlm.nih.gov/31344036/
+Editorial PLoS Comput Biol
+. 2019 Jul 25;15(7):e1007007. doi: 10.1371/journal.pcbi.1007007. eCollection 2019 Jul.
+Ten simple rules for writing and sharing computational analyses in Jupyter Notebooks
+Adam Rule 1, Amanda Birmingham 2, Cristal Zuniga 3, Ilkay Altintas 4, Shih-Cheng Huang 4, Rob Knight 3 5, Niema Moshiri 6, Mai H Nguyen 4, Sara Brin Rosenthal 2, Fernando Pérez 7, Peter W Rose 4
+https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007007
+
+2:53 AM · Jul 26, 2019
+https://twitter.com/ilkayaltintas/status/1154449583541350402
+Ilkay Altintas on Twitter: "Our new paper on "Ten simple rules for writing and sharing computational analyses in #Jupyter #Notebooks" #reproducibility #DataScience https://t.co/q7PpVfF3ji" / Twitter
 
 
 
@@ -288,7 +350,7 @@ How to make replication the norm
 https://www.slideshare.net/kohske/rrstudior-markdown
 再現可能性ベストプラクティス 　解析方法とレポート作成方法の再現可能性 　RとRStudioとR Markdownを通して
 
-### 201-03-13
+### 2018-03-13
 
 11:02 AM · Mar 15, 2018
 https://twitter.com/KayokoShioda/status/974103524589096960
@@ -305,12 +367,7 @@ Proc Natl Acad Sci U S A
 An Empirical Analysis of Journal Policy Effectiveness for Computational Reproducibility
 Victoria Stodden 1, Jennifer Seiler 2, Zhaokun Ma 2
 
-
-
-
-### 201-03-13
-
-
+### 2018-03
 
 https://twitter.com/yuji_ikegaya/status/973450246154940417
 池谷裕二 on Twitter: "【科学のデータはときに再現性がないが それでも科学が進歩するのはなぜか】①そもそも科学者は発表されるデータが全て正しいとは信じていない（ミスもあるし不正もある）。②だから問題をあげつらうよりも、重要な発見に注視して議論しあう傾向がある。今朝の『PNAS』より→https://t.co/aZHaUJJ52g"
@@ -326,15 +383,6 @@ Reproducible Bioconductor workflows using browser-based interactive notebooks an
 Almugbel R1, Hung LH1, Hu J1, Almutairy A1, Ortogero N2, Tamta Y1, Yeung KY1.
 
 ### 2017
-
-https://www.biorxiv.org/content/early/2017/12/26/239947
-Reproducible Bioinformatics Project: A community for reproducible bioinformatics analysis pipelines
-http://reproducible-bioinformatics.org
-
-![](http://reproducible-bioinformatics.org/1/images/440_0_4982595_171497.jpg)
-
-https://uribo.hatenablog.com/entry/2017/12/10/145149
-2017年度版 RStudioを使ったReproducible Research、補足ポエム - cucumber flesh
 
 2017-12-01
 https://trattoriainutano.tumblr.com/post/168391519927
@@ -402,6 +450,8 @@ Enhancing Reproducibility for Computational Methods
 https://gigazine.net/news/20160531-scientists-reproducibility/
 科学の「再現性」が危機に瀕している - GIGAZINE
 
+https://www.natureasia.com/ja-jp/ndigest/video/contents/6
+あなたの実験結果、再現できますか？ | Nature Video活用事例 | Nature ダイジェスト | Nature Research
 2016-05-26
 [「再現性の危機」はあるか？−調査結果−](https://www.natureasia.com/ja-jp/ndigest/v13/n8/「再現性の危機」はあるか？&minus%3B調査結果&minus%3B/77048)
 Is there a reproducibility crisis in science?
