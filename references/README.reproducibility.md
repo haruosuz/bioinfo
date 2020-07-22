@@ -23,6 +23,8 @@ Last Update: 2020-07
 ## references
 
 - https://en.wikipedia.org/wiki/Reproducibility
+- https://en.wikipedia.org/wiki/Replication_crisis
+replication crisis (or replicability crisis or reproducibility crisis)
 - https://ja.wikipedia.org/wiki/再現性
 - https://ja.wikipedia.org/wiki/再現性の危機
 - https://ja.wikipedia.org/wiki/科学的方法#再現性
@@ -72,13 +74,16 @@ plasmid DNA
 　10.1　再現不可能な遺伝学
 　10.2　再現可能性を簡単に
 
-### examples
-
 https://github.com/haruosuz/books/blob/master/bds/README.md
 Bioinformatics Data Skills: Reproducible and Robust Research With Open Source Tools
+- https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/preface01.html
+Preface - Bioinformatics Data Skills [Book]
 https://www.oreilly.com/library/view/bioinformatics-data-skills/9781449367480/ch01.html
+1. How to Learn Bioinformatics - Bioinformatics Data Skills [Book]
 Reproducible Research
 So what is a reproducible bioinformatics project? At the very least, it’s sharing your project’s code and data. 
+
+### examples
 
 http://www.cell.com/cell-systems/pdfExtended/S2405-4712(15)00002-2
 Supplemental Code and Scripts
@@ -172,13 +177,38 @@ Uryu Shinya
 
 https://twitter.com/u_ribo
 
+2020年01月17日に更新
+https://qiita.com/uri/items/6b94609f156173ed43ed
+RStudioではじめるGitによるバージョン管理 - Qiita
+
 2017-12-10
 https://uribo.hatenablog.com/entry/2017/12/10/145149
 2017年度版 RStudioを使ったReproducible Research、補足ポエム - cucumber flesh
 この記事はRStudioアドベントカレンダーの10日目の投稿の補足です。
-2020年01月17日に更新
-https://qiita.com/uri/items/6b94609f156173ed43ed
-RStudioではじめるGitによるバージョン管理 - Qiita
+そもそも再現性とは
+Git?
+過去の資料とか
+- June 01, 2014
+https://speakerdeck.com/s_uryu/githubdexing-ureproducible-research-github-kaigi-tokyo-2014
+GitHubで行うreproducible research (GitHub Kaigi, Tokyo, 2014) - Speaker Deck
+- January 24, 2015
+https://speakerdeck.com/s_uryu/ecologist-must-use-git
+Ecologist must use git - Speaker Deck
+
+
+----------
+### krsk
+https://www.krsk-phs.com/
+https://twitter.com/koro485
+KRSK (@koro485) / Twitter
+
+5:17 AM · Jun 28, 2019
+https://twitter.com/koro485/status/1144338972547723267
+KRSK on Twitter: "再現性を高めるデータ分析習慣のまとめ。プログラミングに慣れている人にとっては当たり前でも、プログラムの使い回し・パッケージへの過剰な信頼が横行する疫学界隈では重要なこと。。。 #PLOSCompBio: Good enough practices in scientific computing https://t.co/RBy06rXRZo" / Twitter
+
+4:16 AM · Jul 7, 2019
+https://twitter.com/koro485/status/1147585096389734403
+KRSK on Twitter: "Nature誌より、「再現性だけでは不十分」というお話。 異なる仮定に基づく多様な手法でエビデンスを積み重ねるTriangulationが大切。 Robust research needs many lines of evidence https://t.co/MM22N6N6Ig" / Twitter
 
 
 
@@ -190,13 +220,36 @@ RStudioではじめるGitによるバージョン管理 - Qiita
 
 ### 2019
 
-
 2019/09/27
 http://www.cl.ecei.tohoku.ac.jp/~jun/2019_0927_SNLP_Unreproducible_Research_is_Reproducible.pdf
 第11回最先端NLP勉強会 || Unreproducible Research is Reproducible
 （図表は論文や著者発表資料から抜粋）
 [参考] “Replicability” “Repeatability”
 Reproducibilityとほぼ同じような使われ方をする用語
+
+
+4:55 AM · Sep 12, 2019
+https://twitter.com/strnr/status/1171874912254009345
+Stephen Turner on Twitter: "Reproducible biomedical benchmarking in the cloud: lessons from crowd-sourced data challenges https://t.co/pIVncpJUpx https://t.co/81cge4Nwsl" / Twitter
+https://pubmed.ncbi.nlm.nih.gov/31506093/
+Genome Biol
+. 2019 Sep 10;20(1):195. doi: 10.1186/s13059-019-1794-0.
+Reproducible biomedical benchmarking in the cloud: lessons from crowd-sourced data challenges
+Kyle Ellrott 1, Alex Buchanan 1, Allison Creason 1, Michael Mason 2, Thomas Schaffter 3, Bruce Hoff 2, James Eddy 2, John M Chilton 4, Thomas Yu 2, Joshua M Stuart 5, Julio Saez-Rodriguez 6 7, Gustavo Stolovitzky 3, Paul C Boutros 8 9 10 11 12, Justin Guinney 13 14
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6737594/
+galaxy workflow, docker image, or CWL (Common Workflow Language) workflow
+
+11:35 PM · Sep 2, 2019
+https://twitter.com/NatureNews/status/1168532804956807169
+Nature News & Comment on Twitter: "Common Workflow Language tools could help make your computational methods reproducible, portable, maintainable and shareable. https://t.co/LlUswpvhLu" / Twitter
+02 SEPTEMBER 2019
+https://www.nature.com/articles/d41586-019-02619-z
+Workflow systems turn raw data into scientific knowledge
+How workflow tools can make your computational methods portable, maintainable, reproducible and shareable.
+
+
+
+
 
 12:25 AM · Aug 13, 2019
 https://twitter.com/BioMickWatson/status/1160935271480905728
@@ -248,6 +301,13 @@ http://team1mile.com/asarinlab/2019/03/19/jsdp2019sympo/
 日本発達心理学会第30回大会シンポジウム – 大阪大学大学院人間科学研究科三浦研究室
 
 
+12:52 AM · Mar 6, 2019
+https://twitter.com/merenbey/status/1102959988098633729
+A. Murat Eren (Meren) on Twitter: "A Wolbachia plasmid?! A study by @JulieReve &amp; @srbordenstein et al: https://t.co/J61RISirT6 This study also includes a reproducible bioinformatics workflow, https://t.co/RrZePXmc9p and all the data you can ask for 😇 https://t.co/E54vVXyjGR #openscience #openaccess https://t.co/s6oIrJjRIX" / Twitter
+http://merenlab.org/data/wolbachia-plasmid/
+A Wolbachia plasmid from Culex pipiens ovaries – Meren Lab
+This document describes the reproducible bioinformatics workflow for our study titled “The Wolbachia mobilome in Culex pipiens includes a putative plasmid”.
+
 ### 2018
 
 https://pubmed.ncbi.nlm.nih.gov/30457984/
@@ -266,12 +326,11 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6191970/
 Reproducible Bioinformatics Project (RBP),
 docker images and R package
 
+![](https://media.springernature.com/lw685/springer-static/image/art%3A10.1186%2Fs12859-018-2296-x/MediaObjects/12859_2018_2296_Fig1_HTML.png)
+
 http://reproducible-bioinformatics.org
 
 ![](http://reproducible-bioinformatics.org/1/images/280_0_4982595_171497.jpg)
-
-
-
 
 ### 2019-07
 
@@ -286,8 +345,17 @@ https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007007
 https://twitter.com/ilkayaltintas/status/1154449583541350402
 Ilkay Altintas on Twitter: "Our new paper on "Ten simple rules for writing and sharing computational analyses in #Jupyter #Notebooks" #reproducibility #DataScience https://t.co/q7PpVfF3ji" / Twitter
 
+2019/2/28
+https://www.medsi.co.jp/products/detail/3675
+国際誌にアクセプトされる医学論文　第2版 - 一流誌査読者調査に基づく「再現性のある研究」時代の論文ガイド -
+改訂に際し「再現性のある研究」という概念に基づき再構成。
+第6章　再現性のある適格基準
+第14章　データの解析：「再現性のある研究」のための統計解析
+序文
+訳者序文
+初版と大きく異なるのは，「再現性のある研究reproducible research」という概念が全編を貫いていることです。「再現性のある研究」とは，論文を，データと分析に用いた統計ソフトのコーディングなどとともに公開する動向を象徴する用語で，今後益々その傾向が強まっていくものと考えられます。
 
-
+### 2018
 
 https://twitter.com/EnagoJapan/status/1038945772085997573
 【エナゴ学術英語アカデミー更新】科学研究において「再現性」は、基本中の基本です。誰がその研究を試みても同様の結果を導くことができるーはずですが、実は、この「再現性」が科学界の信頼性を脅かすほどの問題となっています。https://www.enago.jp/academy/if-lose-confidence-in-your-research/ …　#エナゴアカデミー
@@ -382,6 +450,13 @@ J Am Med Inform Assoc. 2018 Jan 1;25(1):4-12. doi: 10.1093/jamia/ocx120.
 Reproducible Bioconductor workflows using browser-based interactive notebooks and containers.
 Almugbel R1, Hung LH1, Hu J1, Almutairy A1, Ortogero N2, Tamta Y1, Yeung KY1.
 
+### 2018-01
+
+23 JANUARY 2018
+https://www.nature.com/articles/d41586-018-01023-3
+Robust research needs many lines of evidence
+Replication is not enough. Marcus R. Munafò and George Davey Smith state the case for triangulation.
+
 ### 2017
 
 2017-12-01
@@ -389,6 +464,15 @@ https://trattoriainutano.tumblr.com/post/168391519927
 データ解析が再現するということ、あるいは Common Workflow Language が僕らにもたらしてくれるもの
 
 <img alt="" src="https://qiita-image-store.s3.amazonaws.com/0/400/3dab48e3-b6a9-eae0-87c6-c32969b86b86.png" width=50%>
+
+https://pubmed.ncbi.nlm.nih.gov/28640806/
+PLoS Comput Biol
+. 2017 Jun 22;13(6):e1005510. doi: 10.1371/journal.pcbi.1005510. eCollection 2017 Jun.
+Good enough practices in scientific computing
+Greg Wilson 1, Jennifer Bryan 2, Karen Cranston 3, Justin Kitzes 4, Lex Nederbragt 5, Tracy K Teal 6
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5480810/
+Software Carpentry and Data Carpentry workshops
+
 
 2017年01月26日 Sneha Kulkarni
 https://www.editage.jp/insights/irreproducibility-is-the-lack-of-an-accepted-definition-a-problem-in-itself
