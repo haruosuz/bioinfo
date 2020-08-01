@@ -12,6 +12,67 @@
 - [togo](#togo)
   - [togows](#togows)
   - [togotv](#togotv)
+- [mmseq2](#mmseq2)
+- [diamond](#diamond)
+
+----------
+## homology search
+
+https://www.scl.kyoto-u.ac.jp/Appli/
+アプリケーション一覧
+```
+DIAMOND	ホモロジー検索	diamond
+MMseq2	ホモロジー検索、配列クラスタリング	mmseq2
+ghostx	ホモロジー検索	ghostx
+```
+
+http://kazumaxneo.hatenablog.com/entry/2019/01/20/073000
+pblat: マルチスレッドに対応したblat - macでインフォマティクス
+
+http://kazumaxneo.hatenablog.com/entry/2018/05/23/102457
+超高速でDNAとタンパク質のアライメントを行う AC-DIAMOND - macでインフォマティクス
+
+----------
+## mmseq2
+
+https://github.com/soedinglab/MMseqs2
+MMseqs2: ultra fast and sensitive protein search and clustering suite
+MMseqs2 (Many-against-Many sequence searching) is a software suite to search and cluster huge protein and nucleotide sequence sets. 
+
+https://www.ncbi.nlm.nih.gov/pubmed/30615063
+Bioinformatics. 2019 Aug 15;35(16):2856-2858. doi: 10.1093/bioinformatics/bty1057.
+MMseqs2 desktop and local web server app for fast, interactive sequence searches.
+Mirdita M1, Steinegger M1,2, Söding J1.
+
+http://kazumaxneo.hatenablog.com/entry/2019/06/28/073000
+MMseqs2 コマンド其の2 タンパク質配列のクラスタリング - macでインフォマティクス
+
+http://kazumaxneo.hatenablog.com/entry/2018/09/22/220752
+高速かつ高感度なプロテイン検索ツール MMseqs2 - macでインフォマティクス
+
+----------
+## diamond
+https://ab.inf.uni-tuebingen.de/software/diamond/
+https://github.com/bbuchfink/diamond
+blastx
+
+https://www.ncbi.nlm.nih.gov/pubmed/25402007
+Nat Methods. 2015 Jan;12(1):59-60. doi: 10.1038/nmeth.3176. Epub 2014 Nov 17.
+Fast and sensitive protein alignment using DIAMOND.
+Buchfink B1, Xie C2, Huson DH3.
+
+https://twitter.com/windowmoon/status/916248116193456129
+窓月＠低度AI人材 on Twitter: "DIAMONDはBLASTNをサポートしてないし、原理上アミノ酸配列データベースでしか高速化が機能しない。核酸配列データベースの超高速ローカルアライメント検索できるアプリが欲しい。"
+1:25 PM · Oct 6, 2017
+
+http://kazumaxneo.hatenablog.com/entry/2017/08/24/150512
+BLASTとコンパチブルで高速なホモロジー検索ツール Diamond - macでインフォマティクス
+
+2015-12-28
+https://ang65.hatenadiary.org/entry/20151228/1451307913
+高速なタンパク質配列相同性検索ツール「DIAMOND」 - それなりにマジメなメモ
+
+
 
 ----------
 
@@ -226,23 +287,6 @@ APIからJSONデータを取得する(2ページ目)
 
 ----------
 
-### KofamScan
-
-https://twitter.com/ReiterTaylor/status/1127287338327896064
-Taylor Reiter on Twitter: "I wrote a tutorial on how to use kofamscan on the command line: https://t.co/o9WRfXDKU2 I'm so pleased to be able to use this tool independent of the web interface. No more 300mb cutoffs + email submissions!… https://t.co/ULebatHI98"
-3:00 PM - 11 May 2019
-
-https://taylorreiter.github.io/2019-05-11-kofamscan/
-How to run kofamscan
-
-Posted April 08, 2019.
-https://www.biorxiv.org/content/10.1101/602110v1
-KofamKOALA: KEGG ortholog assignment based on profile HMM and adaptive score threshold | bioRxiv
-Takuya Aramaki, Romain Blanc-Mathieu, Hisashi Endo, Koichi Ohkubo, Minoru Kanehisa, Susumu Goto, Hiroyuki Ogata
-Availability KofamKOALA, KofamScan, and KOfam are freely available from https://www.genome.jp/tools/kofamkoala/
-
-----------
-
 ### seqkit
 https://bioinf.shenwei.me/seqkit/
 
@@ -291,9 +335,8 @@ curl http://togows.dbcls.jp/entry/nucleotide/"${ACCESSION}" > "${ACCESSION}".gbk
 https://github.com/haruosuz/ksbn/blob/master/2018/README.2018.4.md#2018-11-30
 
 https://twitter.com/hashtag/togotv18
-
 https://www.medsi.co.jp/books/products/detail.php?product_id=3665
-生命科学データベース・ウェブツール  － 図解と動画で使い方がわかる！　研究がはかどる定番18選 － 
+生命科学データベース・ウェブツール - 図解と動画で使い方がわかる！　研究がはかどる定番18選 -
 ```
 Part 3 生命科学系データ解析の現場で，押さえておきたい「鉄板」ツール	
 10 章 MEGAで系統樹を作成する	
