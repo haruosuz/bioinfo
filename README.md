@@ -1,5 +1,4 @@
-Haruo Suzuki (haruo[at]g-language[dot]org)  
-Last Update: 2019-09-03
+Last Update: 2020-08-07
 
 ----------
 
@@ -22,6 +21,7 @@ Last Update: 2019-09-03
 - [jsbi-nintei](#jsbi-nintei)
 - [twitter](#twitter)
 - [unclassified](#unclassified)
+- [excel](#excel)
 
 ----------
 
@@ -31,14 +31,60 @@ Developments in next generation sequencing
 ![](https://flxlexblog.files.wordpress.com/2016/07/developments_in_high_throughput_sequencing.jpg)
 
 
+2:42 PM · Jul 9, 2020
+https://twitter.com/dritoshi/status/1281101461112229889
+ゲノムのほうの愛ちゃん🌙 🐧 on Twitter: "みなさま、ゲノム科学実験やゲノムインフォマティクス研究に必要な知識を得るための書籍やリンクをまとめています。おすすめを教えてください https://t.co/63UzSgpG8y" / Twitter
+
+----------
+## excel
+
+2020年8月7日 13:30
+https://japanese.engadget.com/amp/rename-genes-due-to-excel-043027343.html
+「Excelが日付に変換してしまうから」一部遺伝子の名称を変更。ヒトゲノム解析の科学者ら
+
+Aug 6, 2020, 8:44am EDT
+https://www.theverge.com/2020/8/6/21355674/human-genes-rename-microsoft-excel-misreading-dates
+Scientists rename human genes to stop Microsoft Excel from misreading them as dates - The Verge
+
+12:08 AM · Aug 5, 2020
+https://twitter.com/jannahutz/status/1290666010228514824
+Janna Hutz on Twitter: "THRILLED by this announcement by the Human Gene Nomenclature Committee. https://t.co/BqLIOMm69d" / Twitter
+
+03 August 2020
+https://www.nature.com/articles/s41588-020-0669-3
+Guidelines for human gene nomenclature | Nature Genetics
+
+
+
+2016年08月29日 13時06分
+https://gigazine.net/news/20160829-excel-gene-name-error/
+Excelが遺伝子研究の誤りのもとになっていると研究者が指摘 - GIGAZINE
+
+6:22 AM · Aug 26, 2016
+https://twitter.com/DailyScan/status/768921595549143040
+GenomeWeb Daily Scan on Twitter: "Didn't Quite Mean 1-Mar: Reliance on Excel leads to errors in gene name lists, @GenomeBiology paper reports https://t.co/CZ4Fx20N3s" / Twitter
+Aug 25, 2016
+https://www.genomeweb.com/scan/didnt-quite-mean-1-mar#.Xy0nZBMzawQ
+Didn't Quite Mean 1-Mar | GenomeWeb
+
+https://pubmed.ncbi.nlm.nih.gov/27552985/
+Genome Biol
+. 2016 Aug 23;17(1):177. doi: 10.1186/s13059-016-1044-7.
+Gene name errors are widespread in the scientific literature
+Mark Ziemann 1, Yotam Eren 1 2, Assam El-Osta 3 4
+
 ----------
 ## link
+
 
 https://github.com/crazyhottommy/bioinformatics-one-liners/blob/master/README.md
 bioinformatics-one-liners
 
 https://github.com/stephenturner/oneliners
 Bioinformatics one-liners
+
+https://www.biostars.org/p/17680/
+Useful Bash Commands To Handle Fasta Files
 
 
 https://biopapyrus.jp
@@ -101,6 +147,10 @@ https://www.dna.bio.keio.ac.jp/lecture/bioinfo/bioinformatics-3.pdf
 
 
 ## updates
+
+Jul 2, 2020
+https://www.youtube.com/watch?v=h5FRVSNQYAI
+【生命情報入門】配列解析(1)： ドットマトリックス法 - YouTube
 
 ### 2019
 
