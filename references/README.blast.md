@@ -48,6 +48,22 @@ awk '$14 == 1 && $15 == 1' ${BLAST_HITS_RANKED} > ${BLAST_BBH}
 wc -l  ${BLAST_QUERY_BH} ${BLAST_SUBJECT_BH} ${BLAST_BBH}
 ```
 
+
+Aug 4, 2017
+https://github.com/santiagosnchez/rbh
+rbh.pl
+- Finds reciprocal-best-hit single-copy matches between two al-by-all BLAST searches
+- It will find the reciprocal-best single-copy genes between two sets of BLAST outputs in format 7. If FASTA files are provided it will generate FASTA files with the sequence pairs found. It will also generate a list of gene names. A threshold for e-values can be provided using the -filter argument.
+
+
+Mar 22, 2017
+https://github.com/cboursnell/crb-blast
+CRB-BLAST
+- Conditional Reciprocal Best BLAST - high confidence ortholog assignment.
+- CRB-BLAST is a novel method for finding orthologs between one set of sequences and another. This is particularly useful in genome and transcriptome annotation.
+- CRB-BLAST initially performs a standard reciprocal best BLAST. It does this by performing BLAST alignments of query->target and target->query. Reciprocal best BLAST hits are those where the best match for any given query sequence in the query->target alignment is also the best hit of the match in the reverse (target->query) alignment.
+
+
 04-26-2012, 02:39 PM
 http://seqanswers.com/forums/showthread.php?t=19576
 reciprocal blast - SEQanswers
@@ -87,6 +103,37 @@ Python
 
 ![](https://widdowquinn.github.io/2018-03-06-ibioic/02-sequence_databases/images/05-01_orthologues.png)
 ![](https://widdowquinn.github.io/2018-03-06-ibioic/02-sequence_databases/images/05-02_paralogues.png)
+
+
+
+https://www.ncbi.nlm.nih.gov/pubmed/31727128
+Genome Biol. 2019 Nov 14;20(1):238. doi: 10.1186/s13059-019-1832-y.
+OrthoFinder: phylogenetic orthology inference for comparative genomics.
+Emms DM1, Kelly S2.
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6857279/
+Fig. 1
+Right-hand side: Reciprocal best hits (RBH) based on gene similarity scores that are monotonic with branch length and the orthology relationships inferred from these scores using standard heuristics (orthologs inferred using RBHs and co-orthology identified from within species hits better than closest RBH [8, 16]). 
+
+
+https://pubmed.ncbi.nlm.nih.gov/27894995/
+Mol Phylogenet Evol
+. 2017 Feb;107:338-344. doi: 10.1016/j.ympev.2016.11.016. Epub 2016 Nov 26.
+Short branches lead to systematic artifacts when BLAST searches are used as surrogate for phylogenetic reconstruction
+Amanda A Dick 1, Timothy J Harlow 2, J Peter Gogarten 3
+https://www.sciencedirect.com/science/article/abs/pii/S1055790316303773?via%3Dihub
+SBA can be detected by examining reciprocal best BLAST hits among a larger group of taxa, including the known closest phylogenetic neighbors.
+
+
+https://pubmed.ncbi.nlm.nih.gov/25013894/
+PLoS One
+. 2014 Jul 11;9(7):e101850. doi: 10.1371/journal.pone.0101850. eCollection 2014.
+Quickly finding orthologs as reciprocal best hits with BLAT, LAST, and UBLAST: how much do we miss?
+Natalie Ward 1, Gabriel Moreno-Hagelsieb 1
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4094424/
+- Reciprocal Best Hits (RBH) are a common proxy for orthology in comparative genomics. Essentially, a RBH is found when the proteins encoded by two genes, each in a different genome, find each other as the best scoring match in the other genome. 
+- Introduction
+The purpose of this work is to evaluate the speed, number and quality of orthologs mapped as reciprocal best hits (RBHs) as detected and scored using NCBI's BLAST [1], [2], the Blast-Like Alignment Tool (BLAT) [3], LAST [4], and UBLAST [5]. 
+
 
 
 ----------
