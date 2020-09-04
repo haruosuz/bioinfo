@@ -9,6 +9,8 @@
 - [E-utilities](#e-utilities)
 - [KofamScan](#kofamscan)
 - [seqkit](#seqkit)
+- [dbcls](#dbcls)
+  - [colil](#colil)
 - [togo](#togo)
   - [togows](#togows)
   - [togotv](#togotv)
@@ -317,8 +319,24 @@ http://kazumaxneo.hatenablog.com/entry/2017/08/01/204851
 fastq / fastaの操作ツール seqtk - macでインフォマティクス
 
 ----------
+## dbcls
+DBCLS ｜ ライフサイエンス統合データベースセンター
+
+http://dbcls.rois.ac.jp/
+
+### colil
+
+http://colil.dbcls.jp/browse/papers/
+Colil: Comments on literature in literature
+
+https://doi.org/10.7875/togotv.2020.014
+2020-01-14 DBCLS で提供している文献情報サービスほか @ AJACS世田谷
+
+https://dbcls.rois.ac.jp/ja/2016/11/25/post1.html
+AllieとColilの使い方に関する総説が日本生物工学会誌に掲載されました | DBCLS
 
 ## togo
+
 ### togows
 
 - https://doi.org/10.7875/togotv.2011.058 2011-04-25 TogoWS RESTサービスを使い倒す 2011
