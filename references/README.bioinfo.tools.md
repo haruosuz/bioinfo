@@ -19,6 +19,7 @@
 - [homology search](#homology-search)
 - [rebase](#rebase)
 - [shell](#shell)
+- [clust](#clust)
 
 ----------
 ## shell
@@ -67,41 +68,6 @@ echo ${DNA/T/U}
 8.6 years ago
 https://www.biostars.org/p/17680/
 Useful Bash Commands To Handle Fasta Files
-
-----------
-## rebase
-
-http://rebase.neb.com/rebase/rebase.html
-Official REBASE Homepage | The Restriction Enzyme Database | NEB
-
-https://pubmed.ncbi.nlm.nih.gov/19846593/
-Nucleic Acids Res
-. 2010 Jan;38(Database issue):D234-6. doi: 10.1093/nar/gkp874. Epub 2009 Oct 21.
-REBASE--a database for DNA restriction and modification: enzymes, genes and genomes
-Richard J Roberts 1, Tamas Vincze, Janos Posfai, Dana Macelis
-https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2808884/
-
-https://integbio.jp/dbcatalog/record/nbdc00648
-REBASE - Integbio データベースカタログ
-info 説明: 	制限酵素と関連するタンパク質に関する情報を収集したデータベースです。制限酵素の認識サイトや切断サイト、同一の塩基配列を認識するイソ制限酵素、入手先、メチル化感受性、文献情報などが収録されています。DNAメチルトランスフェラーゼやホーミングエンドヌクレアーゼ、DNAエンドヌクレアーゼ、特異的サブユニットなどのデータも含まれています。
-info 生物種: 	Eukaryota (2759), Bacteria (2), Archaea (2157), Viruses (10239)
-
-https://pubmed.ncbi.nlm.nih.gov/32765461/
-Front Microbiol
-. 2020 Jul 17;11:1628. doi: 10.3389/fmicb.2020.01628. eCollection 2020.
-Networking and Specificity-Changing DNA Methyltransferases in Helicobacter pylori
-Hirokazu Yano 1 2, Md Zobaidul Alam 1, Emiko Rimbara 3, Tomoko F Shibata 4, Masaki Fukuyo 5, Yoshikazu Furuta 1 2, Tomoaki Nishiyama 6, Shuji Shigenobu 4, Mitsuyasu Hasebe 4 7, Atsushi Toyoda 8, Yutaka Suzuki 1, Sumio Sugano 1 2, Keigo Shibayama 3, Ichizo Kobayashi 1 2 9 10 11
-https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7379913/
-- Prokaryotes possess, on average, five DNA methyltransferase genes and three methylated sequence motifs (Blow et al., 2016; REBASE PacBio statistics, 2020). 
-- REBASE PacBio statistics (2020). Available online at: http://rebase.neb.com/rebase/pbstatlist.html (accessed May 22 2020). doi: 10.1093/bioinformatics/btq033
-
-
-http://www.bioinfo.sfc.keio.ac.jp/class/genpro/PPT/genpro_renzym.pdf
-制限酵素地図の作製 - SFC Bio
-http://www.bioinfo.sfc.keio.ac.jp/class/genpro/Texts/genpro_renzym1.pdf
-制限酵素地図の作成
-
-https://ja.wikipedia.org/wiki/制限修飾系
 
 ----------
 ## seqkit
@@ -167,6 +133,48 @@ pblat: マルチスレッドに対応したblat - macでインフォマティク
 
 http://kazumaxneo.hatenablog.com/entry/2018/05/23/102457
 超高速でDNAとタンパク質のアライメントを行う AC-DIAMOND - macでインフォマティクス
+
+----------
+## clust
+
+https://www.fifthdimension.jp/wiki.cgi?page=%C7%DB%CE%F3%A5%AF%A5%E9%A5%B9%A5%BF%A5%EA%A5%F3%A5%B0
+配列クラスタリング - Life is fifthdimension.
+USEARCH
+CD-HIT
+OrthoMCL
+
+http://kazumaxneo.hatenablog.com/entry/2018/10/11/195011
+クラスタリングツール MeShClust - macでインフォマティクス
+シーケンスクラスタリング（CD-HIT、UCLUST、およびDNACLUST）のために広く使用されているツールは、最適な解決策を見つけることが保証されていないgreedy algorithmに依存している。
+ここでは、ヌクレオチドシークエンスをクラスタリングする際の mean shiftアルゴリズムを利用した新しいソフトウェアツールMeShClustを提案する。
+
+http://kazumaxneo.hatenablog.com/entry/2017/09/03/183139
+配列のクラスタリングツール UCLUST - macでインフォマティクス
+
+https://pubmed.ncbi.nlm.nih.gov/31437182/
+PLoS One
+. 2019 Aug 22;14(8):e0221068. doi: 10.1371/journal.pone.0221068. eCollection 2019.
+TreeCluster: Clustering biological sequences using phylogenetic trees
+Metin Balaban 1, Niema Moshiri 1, Uyen Mai 2, Xingfan Jia 3, Siavash Mirarab 4
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6705769/
+TreeCluster is available at https://github.com/niemasd/TreeCluster.
+TreeCluster takes a newick tree and a threshold value as input and returns clusters in a formatted text file. TreeCluster uses treeswift [23] package for fast tree operations.
+
+
+----------
+## vsearch
+
+http://kazumaxneo.hatenablog.com/entry/2019/08/08/095820
+多機能な配列処理ツール VSEARCH（USEARCHの代替） - macでインフォマティクス
+いくつかの最も重要な機能（検索、クラスタリング、キメラ検出とサブサンプリング）を評価し、それらをUSEARCHと比較した。 VSEARCHはUSEARCHの結果と同等かそれ以上の結果をもたらすことが分かった。
+
+https://en.wikipedia.org/wiki/UCLUST
+https://www.drive5.com/usearch/manual/uclust_algo.html
+https://www.drive5.com/usearch/
+USEARCH
+
+http://kazumaxneo.hatenablog.com/entry/2017/09/03/183139
+配列のクラスタリングツール UCLUST - macでインフォマティクス
 
 ----------
 ## mmseq2
@@ -301,6 +309,44 @@ https://qiita.com/antiplastics/items/add3f8438cbe6b2b594e
 
 
 ### 2017
+
+
+----------
+## rebase
+
+http://rebase.neb.com/rebase/rebase.html
+Official REBASE Homepage | The Restriction Enzyme Database | NEB
+
+https://pubmed.ncbi.nlm.nih.gov/19846593/
+Nucleic Acids Res
+. 2010 Jan;38(Database issue):D234-6. doi: 10.1093/nar/gkp874. Epub 2009 Oct 21.
+REBASE--a database for DNA restriction and modification: enzymes, genes and genomes
+Richard J Roberts 1, Tamas Vincze, Janos Posfai, Dana Macelis
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2808884/
+
+https://integbio.jp/dbcatalog/record/nbdc00648
+REBASE - Integbio データベースカタログ
+info 説明: 	制限酵素と関連するタンパク質に関する情報を収集したデータベースです。制限酵素の認識サイトや切断サイト、同一の塩基配列を認識するイソ制限酵素、入手先、メチル化感受性、文献情報などが収録されています。DNAメチルトランスフェラーゼやホーミングエンドヌクレアーゼ、DNAエンドヌクレアーゼ、特異的サブユニットなどのデータも含まれています。
+info 生物種: 	Eukaryota (2759), Bacteria (2), Archaea (2157), Viruses (10239)
+
+https://pubmed.ncbi.nlm.nih.gov/32765461/
+Front Microbiol
+. 2020 Jul 17;11:1628. doi: 10.3389/fmicb.2020.01628. eCollection 2020.
+Networking and Specificity-Changing DNA Methyltransferases in Helicobacter pylori
+Hirokazu Yano 1 2, Md Zobaidul Alam 1, Emiko Rimbara 3, Tomoko F Shibata 4, Masaki Fukuyo 5, Yoshikazu Furuta 1 2, Tomoaki Nishiyama 6, Shuji Shigenobu 4, Mitsuyasu Hasebe 4 7, Atsushi Toyoda 8, Yutaka Suzuki 1, Sumio Sugano 1 2, Keigo Shibayama 3, Ichizo Kobayashi 1 2 9 10 11
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7379913/
+- Prokaryotes possess, on average, five DNA methyltransferase genes and three methylated sequence motifs (Blow et al., 2016; REBASE PacBio statistics, 2020). 
+- REBASE PacBio statistics (2020). Available online at: http://rebase.neb.com/rebase/pbstatlist.html (accessed May 22 2020). doi: 10.1093/bioinformatics/btq033
+
+
+http://www.bioinfo.sfc.keio.ac.jp/class/genpro/PPT/genpro_renzym.pdf
+制限酵素地図の作製 - SFC Bio
+http://www.bioinfo.sfc.keio.ac.jp/class/genpro/Texts/genpro_renzym1.pdf
+制限酵素地図の作成
+
+https://ja.wikipedia.org/wiki/制限修飾系
+
+
 
 ----------
 
