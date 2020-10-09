@@ -20,6 +20,7 @@
 - [rebase](#rebase)
 - [shell](#shell)
 - [clust](#clust)
+vsearch
 
 ----------
 ## shell
@@ -136,20 +137,7 @@ http://kazumaxneo.hatenablog.com/entry/2018/05/23/102457
 
 ----------
 ## clust
-
-https://www.fifthdimension.jp/wiki.cgi?page=%C7%DB%CE%F3%A5%AF%A5%E9%A5%B9%A5%BF%A5%EA%A5%F3%A5%B0
-配列クラスタリング - Life is fifthdimension.
-USEARCH
-CD-HIT
-OrthoMCL
-
-http://kazumaxneo.hatenablog.com/entry/2018/10/11/195011
-クラスタリングツール MeShClust - macでインフォマティクス
-シーケンスクラスタリング（CD-HIT、UCLUST、およびDNACLUST）のために広く使用されているツールは、最適な解決策を見つけることが保証されていないgreedy algorithmに依存している。
-ここでは、ヌクレオチドシークエンスをクラスタリングする際の mean shiftアルゴリズムを利用した新しいソフトウェアツールMeShClustを提案する。
-
-http://kazumaxneo.hatenablog.com/entry/2017/09/03/183139
-配列のクラスタリングツール UCLUST - macでインフォマティクス
+vsearch
 
 https://pubmed.ncbi.nlm.nih.gov/31437182/
 PLoS One
@@ -161,17 +149,31 @@ TreeCluster is available at https://github.com/niemasd/TreeCluster.
 TreeCluster takes a newick tree and a threshold value as input and returns clusters in a formatted text file. TreeCluster uses treeswift [23] package for fast tree operations.
 
 
-----------
-## vsearch
+https://en.wikipedia.org/wiki/UCLUST
+https://www.drive5.com/usearch/manual/uclust_algo.html
+https://www.drive5.com/usearch/
+USEARCH
+
+https://www.fifthdimension.jp/wiki.cgi?page=%C7%DB%CE%F3%A5%AF%A5%E9%A5%B9%A5%BF%A5%EA%A5%F3%A5%B0
+配列クラスタリング - Life is fifthdimension.
+USEARCH
+CD-HIT
+OrthoMCL
+
+http://kazumaxneo.hatenablog.com/archive/category/sequence%20%20clustering
+sequence clustering カテゴリーの記事一覧 - macでインフォマティクス
 
 http://kazumaxneo.hatenablog.com/entry/2019/08/08/095820
 多機能な配列処理ツール VSEARCH（USEARCHの代替） - macでインフォマティクス
 いくつかの最も重要な機能（検索、クラスタリング、キメラ検出とサブサンプリング）を評価し、それらをUSEARCHと比較した。 VSEARCHはUSEARCHの結果と同等かそれ以上の結果をもたらすことが分かった。
 
-https://en.wikipedia.org/wiki/UCLUST
-https://www.drive5.com/usearch/manual/uclust_algo.html
-https://www.drive5.com/usearch/
-USEARCH
+http://kazumaxneo.hatenablog.com/entry/2018/10/11/195011
+クラスタリングツール MeShClust - macでインフォマティクス
+シーケンスクラスタリング（CD-HIT、UCLUST、およびDNACLUST）のために広く使用されているツールは、最適な解決策を見つけることが保証されていないgreedy algorithmに依存している。
+ここでは、ヌクレオチドシークエンスをクラスタリングする際の mean shiftアルゴリズムを利用した新しいソフトウェアツールMeShClustを提案する。
+
+http://kazumaxneo.hatenablog.com/entry/2017/08/03/191326
+配列をクラスタリングする CD-HIT - macでインフォマティクス
 
 http://kazumaxneo.hatenablog.com/entry/2017/09/03/183139
 配列のクラスタリングツール UCLUST - macでインフォマティクス
