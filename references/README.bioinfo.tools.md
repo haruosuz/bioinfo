@@ -21,6 +21,7 @@
 - [shell](#shell)
 - [clust](#clust)
 vsearch
+- [video](#video)
 
 ----------
 ## shell
@@ -532,4 +533,70 @@ raxmlHPC-SSE3 -m GTRGAMMA -p 12345 -s mafft_test.fasta -n test
 ```
 
 ----------
+## video
+
+https://techacademy.jp/magazine/5155
+今さら聞けない！ターミナルの使い方【初心者向け】 | TechAcademyマガジン
+https://www.youtube.com/watch?v=3lypOT3_rAE
+Macのターミナルの使い方【プログラミング超初心者向け】 - YouTube
+
+http://togotv.dbcls.jp/ja/tags.html?tag=UNIX
+【UNIX】に関係する動画・講習会資料・新着論文レビュー
+統合TV | 関連するタグから検索
+
+### dotinstall
+
+https://dotinstall.com/lessons/basic_git
+git入門 (全22回) - プログラミングならドットインストール
+git入門
+分散型バージョン管理システムの定番であるgitについて、基本的な使い方を学んでいきます。
+
+https://dotinstall.com/lessons/basic_markdown_v2
+Markdown記法入門 (全13回) - プログラミングならドットインストール
+Markdown記法入門
+軽量のマークアップ言語であるMarkdown記法について学んでいきます。
+
+https://dotinstall.com/lessons/basic_atom_v2
+Atom入門 (全15回) - プログラミングならドットインストール
+Atom入門
+無料かつ拡張性が高いテキストエディタであるAtomの使い方について見ていきます。
+
+#### dotinstall PREMIUM
+
+無料公開中
+この動画を見るには
+無料のユーザー登録 が必要です
+
+この動画を見るには
+プレミアムサービスへの登録 が必要です
+プレミアム会員になる（月額1080円）
+
+https://dotinstall.com/lessons/basic_shellscript_v2
+シェルスクリプト入門 (全17回) - プログラミングならドットインストール
+PREMIUM
+シェルスクリプト入門
+Unixのコマンドをまとめて実行できるシェルスクリプトについて学んでいきます。
+
+https://dotinstall.com/lessons/basic_unix
+【旧版】UNIXコマンド入門 (一般ユーザー編) (全16回) - プログラミングならドットインストール
+PREMIUM
+【旧版】UNIXコマンド入門 (一般ユーザー編)
+UNIX系OSで使える基本的なコマンドを紹介していきます。
+
+https://dotinstall.com/lessons/basic_shellscript_v2
+シェルスクリプト入門 (全17回) - プログラミングならドットインストール
+PREMIUM
+シェルスクリプト入門
+Unixのコマンドをまとめて実行できるシェルスクリプトについて学んでいきます。
+
+https://dotinstall.com/lessons/basic_r
+R言語入門 (全13回) - プログラミングならドットインストール
+PREMIUM
+R言語入門
+統計解析用のプログラミング言語であるR言語について、基本的な使い方を見ていきます。
+
+----------
+
+
+
 
