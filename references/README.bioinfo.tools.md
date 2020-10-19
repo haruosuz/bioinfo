@@ -141,10 +141,20 @@ http://kazumaxneo.hatenablog.com/entry/2018/05/23/102457
 
 https://github.com/torognes/vsearch
 
-https://github.com/torognes/vsearch/releases/download/v2.15.0/vsearch_manual.pdf
+https://github.com/torognes/vsearch#example
+Example
+In the example below, VSEARCH will identify sequences in the file database.fsa that are at least 90% identical on the plus strand to the query sequences in the file queries.fsa and write the results to the file alnout.txt.
+```
+./vsearch --usearch_global queries.fsa --db database.fsa --id 0.9 --alnout alnout.txt
+```
 
 https://github.com/torognes/vsearch/issues/379
 Reverse complement sequences during clustering · Issue #379 · torognes/vsearch
+
+https://github.com/torognes/vsearch/releases/download/v2.15.0/vsearch_manual.pdf
+--strand plus|both
+When comparing sequences with the cluster seed, check the plus strand only (default) or check both strands.
+
 
 https://pubmed.ncbi.nlm.nih.gov/27781170/
 PeerJ
