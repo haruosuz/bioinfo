@@ -155,11 +155,6 @@ PeerJ
 VSEARCH: a versatile open source tool for metagenomics
 Torbjørn Rognes 1, Tomáš Flouri 2, Ben Nichols 3, Christopher Quince 4, Frédéric Mahé 5
 
-http://kazumaxneo.hatenablog.com/entry/2019/08/08/095820
-多機能な配列処理ツール VSEARCH（USEARCHの代替） - macでインフォマティクス
-- いくつかの最も重要な機能（検索、クラスタリング、キメラ検出とサブサンプリング）を評価し、それらをUSEARCHと比較した。 
-- defaultではplus strandのみクラスタリングするので、同じ配列でもreverse compなら別配列扱いになる（"--strand plus"）。両鎖クラスタリングするなら"--strand both"にする。（#379より）
-
 https://twitter.com/search?q=%22vsearch%22%20lang%3Aja&src=typed_query&f=live
 
 5:33 PM · Apr 22, 2020
@@ -208,6 +203,10 @@ OrthoMCL
 http://kazumaxneo.hatenablog.com/archive/category/sequence%20%20clustering
 sequence clustering カテゴリーの記事一覧 - macでインフォマティクス
 
+http://kazumaxneo.hatenablog.com/entry/2019/08/08/095820
+多機能な配列処理ツール VSEARCH（USEARCHの代替） - macでインフォマティクス
+- いくつかの最も重要な機能（検索、クラスタリング、キメラ検出とサブサンプリング）を評価し、それらをUSEARCHと比較した。 
+- defaultではplus strandのみクラスタリングするので、同じ配列でもreverse compなら別配列扱いになる（"--strand plus"）。両鎖クラスタリングするなら"--strand both"にする。（#379より）
 
 http://kazumaxneo.hatenablog.com/entry/2018/10/11/195011
 クラスタリングツール MeShClust - macでインフォマティクス
