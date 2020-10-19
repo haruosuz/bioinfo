@@ -157,9 +157,8 @@ Torbjørn Rognes 1, Tomáš Flouri 2, Ben Nichols 3, Christopher Quince 4, Fréd
 
 http://kazumaxneo.hatenablog.com/entry/2019/08/08/095820
 多機能な配列処理ツール VSEARCH（USEARCHの代替） - macでインフォマティクス
-いくつかの最も重要な機能（検索、クラスタリング、キメラ検出とサブサンプリング）を評価し、それらをUSEARCHと比較した。 VSEARCHはUSEARCHの結果と同等かそれ以上の結果をもたらすことが分かった。
-
- defaultではplus strandのみクラスタリングするので、同じ配列でもreverse compなら別配列扱いになる（"--strand plus"）。両鎖クラスタリングするなら"--strand both"にする。（#379より）
+- いくつかの最も重要な機能（検索、クラスタリング、キメラ検出とサブサンプリング）を評価し、それらをUSEARCHと比較した。 
+- defaultではplus strandのみクラスタリングするので、同じ配列でもreverse compなら別配列扱いになる（"--strand plus"）。両鎖クラスタリングするなら"--strand both"にする。（#379より）
 
 https://twitter.com/search?q=%22vsearch%22%20lang%3Aja&src=typed_query&f=live
 
