@@ -141,26 +141,25 @@ http://kazumaxneo.hatenablog.com/entry/2018/05/23/102457
 
 https://github.com/torognes/vsearch
 
-https://github.com/torognes/vsearch#example
-Example
-In the example below, VSEARCH will identify sequences in the file database.fsa that are at least 90% identical on the plus strand to the query sequences in the file queries.fsa and write the results to the file alnout.txt.
-```
-./vsearch --usearch_global queries.fsa --db database.fsa --id 0.9 --alnout alnout.txt
-```
-
-https://github.com/torognes/vsearch/issues/379
-Reverse complement sequences during clustering · Issue #379 · torognes/vsearch
-
 https://github.com/torognes/vsearch/releases/download/v2.15.0/vsearch_manual.pdf
+
 --strand plus|both
 When comparing sequences with the cluster seed, check the plus strand only (default) or check both strands.
 
+https://github.com/torognes/vsearch/issues/379
+Reverse complement sequences during clustering · Issue #379 · torognes/vsearch
 
 https://pubmed.ncbi.nlm.nih.gov/27781170/
 PeerJ
 . 2016 Oct 18;4:e2584. doi: 10.7717/peerj.2584. eCollection 2016.
 VSEARCH: a versatile open source tool for metagenomics
 Torbjørn Rognes 1, Tomáš Flouri 2, Ben Nichols 3, Christopher Quince 4, Frédéric Mahé 5
+
+http://kazumaxneo.hatenablog.com/entry/2019/08/08/095820
+多機能な配列処理ツール VSEARCH（USEARCHの代替） - macでインフォマティクス
+いくつかの最も重要な機能（検索、クラスタリング、キメラ検出とサブサンプリング）を評価し、それらをUSEARCHと比較した。 VSEARCHはUSEARCHの結果と同等かそれ以上の結果をもたらすことが分かった。
+
+ defaultではplus strandのみクラスタリングするので、同じ配列でもreverse compなら別配列扱いになる（"--strand plus"）。両鎖クラスタリングするなら"--strand both"にする。（#379より）
 
 https://twitter.com/search?q=%22vsearch%22%20lang%3Aja&src=typed_query&f=live
 
@@ -210,11 +209,6 @@ OrthoMCL
 http://kazumaxneo.hatenablog.com/archive/category/sequence%20%20clustering
 sequence clustering カテゴリーの記事一覧 - macでインフォマティクス
 
-http://kazumaxneo.hatenablog.com/entry/2019/08/08/095820
-多機能な配列処理ツール VSEARCH（USEARCHの代替） - macでインフォマティクス
-いくつかの最も重要な機能（検索、クラスタリング、キメラ検出とサブサンプリング）を評価し、それらをUSEARCHと比較した。 VSEARCHはUSEARCHの結果と同等かそれ以上の結果をもたらすことが分かった。
-
- defaultではplus strandのみクラスタリングするので、同じ配列でもreverse compなら別配列扱いになる（"--strand plus"）。両鎖クラスタリングするなら"--strand both"にする。（#379より）
 
 http://kazumaxneo.hatenablog.com/entry/2018/10/11/195011
 クラスタリングツール MeShClust - macでインフォマティクス
