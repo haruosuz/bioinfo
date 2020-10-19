@@ -19,8 +19,8 @@
 - [homology search](#homology-search)
 - [rebase](#rebase)
 - [shell](#shell)
+- [vsearch](#vsearch)
 - [clust](#clust)
-vsearch
 - [video](#video)
 
 ----------
@@ -137,8 +137,44 @@ http://kazumaxneo.hatenablog.com/entry/2018/05/23/102457
 超高速でDNAとタンパク質のアライメントを行う AC-DIAMOND - macでインフォマティクス
 
 ----------
+### vsearch
+
+https://github.com/torognes/vsearch
+
+https://github.com/torognes/vsearch/releases/download/v2.15.0/vsearch_manual.pdf
+
+https://github.com/torognes/vsearch/issues/379
+Reverse complement sequences during clustering · Issue #379 · torognes/vsearch
+
+https://pubmed.ncbi.nlm.nih.gov/27781170/
+PeerJ
+. 2016 Oct 18;4:e2584. doi: 10.7717/peerj.2584. eCollection 2016.
+VSEARCH: a versatile open source tool for metagenomics
+Torbjørn Rognes 1, Tomáš Flouri 2, Ben Nichols 3, Christopher Quince 4, Frédéric Mahé 5
+
+https://twitter.com/search?q=%22vsearch%22%20lang%3Aja&src=typed_query&f=live
+
+5:33 PM · Apr 22, 2020
+https://twitter.com/windowmoon/status/1252878249207590914
+Replying to 
+@chalkless
+ntを使用するのは、「対応付けが完全な分類体系データベース(NCBI Taxonomy)がある」からです。Claidentは開発版のclconvrefdbコマンドでUNITEやMIDORIやSilvaの参照配列DBも変換して使用できます。vsearchやMMseqs2も単独でほとんどのことができますよ。
+
+12:30 PM · Apr 14, 2020
+https://twitter.com/windowmoon/status/1249902897015316480
+注釈に基づいてextractfeatで切り出し。
+間違って切り出された配列を除外するため参照配列用意してvsearchで比較して類似度50%未満を排除。
+間違って切り出されなかった配列を得るため上記配列をクエリにしてblastnでマッチした部分を切り出し。
+配列名を「目__科__属_種__アクセッション」に。
+
+10:52 AM · Aug 9, 2019
+https://twitter.com/kmoooooog/status/1159643654631251970
+Replying to 
+@iNut
+なるほど。。メタゲノム解析で使うvsearch https://github.com/torognes/vsearch とかクラスタ毎にファイル分けて出力するので場合によっては数十万~数百万とかのちっちゃいファイル作ったりするんですが、そういうことをやんなきゃいけない場合のベストプラクティスとかあったりするのでしょうか
+
+----------
 ## clust
-vsearch
 
 https://pubmed.ncbi.nlm.nih.gov/31437182/
 PLoS One
@@ -167,6 +203,8 @@ sequence clustering カテゴリーの記事一覧 - macでインフォマティ
 http://kazumaxneo.hatenablog.com/entry/2019/08/08/095820
 多機能な配列処理ツール VSEARCH（USEARCHの代替） - macでインフォマティクス
 いくつかの最も重要な機能（検索、クラスタリング、キメラ検出とサブサンプリング）を評価し、それらをUSEARCHと比較した。 VSEARCHはUSEARCHの結果と同等かそれ以上の結果をもたらすことが分かった。
+
+ defaultではplus strandのみクラスタリングするので、同じ配列でもreverse compなら別配列扱いになる（"--strand plus"）。両鎖クラスタリングするなら"--strand both"にする。（#379より）
 
 http://kazumaxneo.hatenablog.com/entry/2018/10/11/195011
 クラスタリングツール MeShClust - macでインフォマティクス
