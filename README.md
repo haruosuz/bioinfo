@@ -350,7 +350,7 @@ GFF3形式ファイルの例(シロイヌナズナ; TAIR10_GFF3_genes.gff)
 ## [gtf](http://genome.ucsc.edu/FAQ/FAQformat.html#format4)
 
 2017.06.11
-https://bi.biopapyrus.jp/rnaseq/mapping/gtf.html
+https://bi.biopapyrus.jp/format/gtf.html
 GTFファイル | 遺伝子アノテーションファイルの処理
 
 2017-06-10
@@ -360,12 +360,10 @@ GTFとGFFフォーマット - macでインフォマティクス
 http://staffblog.amelieff.jp/entry/2015/07/31/143358
 フォーマットもいろいろ - アメリエフのブログ
 
-21 of November, 2013
-http://cell-innovation.nig.ac.jp/wiki/tiki-index.php?page=GTF
-NGS Surfer's Wiki | GTF
+https://cell-innovation.nig.ac.jp/SurfWiki/Tips.html
 
-2013-02-05
-https://cell-innovation.nig.ac.jp/surfers/GTF_difference.html
+2013/02/05
+https://cell-innovation.nig.ac.jp/SurfWiki/GTF_difference.html
 GTFファイルの細かな違い
 
 ----------
