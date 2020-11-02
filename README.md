@@ -327,6 +327,21 @@ PAGE解析(Parametric Analysis of Gene set Enrichment)とは
 ----------
 ## [gff](http://genome.ucsc.edu/FAQ/FAQformat.html#format3)
 
+http://genomejack.net/download/gj31/ja/GenomeJackBrowserAppendix/browser_appendix_j/dataFileFormats/gff.html
+GFF (General Feature Format) はGFF standard file formatに準拠している行指向のフォーマットです。GFFの各行はそれぞれ9つのフィールドから構成されており、タブ区切りでなければなりません。スペースで区切られている場合、正しく表示されません。
+
+2020年06月19日
+https://qiita.com/Chronona/items/e04a0c39b2bdda92b220
+genbankファイルをgffファイルに変換する - Qiita
+
+http://kazumaxneo.hatenablog.com/entry/2019/08/26/073000
+GFF ファイルのユーティリティ Gffread - macでインフォマティクス
+
+2018年11月19日
+https://oliversi.com/2018/11/05/file_format/
+GTF/GFFファイル: 遺伝子のアノテーション等を記述するためのファイル形式
+⇒GFF3(GMOD)
+
 2017年08月05日
 https://qiita.com/MaedaTaro_Umiushi/items/48c628ca332abade1e98
 Convert GFF3 to MSS for DDBJ submission - Qiita
@@ -340,6 +355,24 @@ http://kazumaxneo.hatenablog.com/entry/2017/07/25/234808
 BEDOPSを使いVCF, GTF, GFF などを BED に変換 する。 - macでインフォマティクス
 GFF（GFF3）をbedに変換する。
 
+2015-07-31
+https://staffblog.amelieff.jp/entry/2015/07/31/143358
+フォーマットもいろいろ - アメリエフのブログ
+
+GFF（General Feature Format）はゲノムの配列に関連した特徴を示した9列からなるタブ区切りのフォーマットです。
+```
+それぞれの列の説明です。
+1. seqname：染色体またはスキャフォールドの名前
+2. source：データベースやプロジェクト名
+3. feature：配列のタイプ（例：repeat, exon, promoter, etc）
+4. start：配列の開始位置
+5. end：配列の終了位置
+6. score：任意のスコアが入る。ない場合は '.'
+7. strand：+(forward)、-(reverse)または '.'
+8. frame：0から2の数値で、翻訳を開始する塩基の位置を示す（0なら配列の1番目がコドンの1番目の塩基になる）。コーディング領域でない場合は '.'
+9. attribute：グループ
+```
+
 Apr 23 2014
 門田幸二(かどた こうじ)
 http://www.iu.a.u-tokyo.ac.jp/~kadota/20140423_kadota.pdf
@@ -348,6 +381,10 @@ GFF3形式ファイルの例(シロイヌナズナ; TAIR10_GFF3_genes.gff)
 
 ----------
 ## [gtf](http://genome.ucsc.edu/FAQ/FAQformat.html#format4)
+
+
+http://genomejack.net/download/gj31/ja/GenomeJackBrowserAppendix/browser_appendix_j/dataFileFormats/gtf.html
+GTFはGFFと良く似ている形式です。GTFはタブ区切りのテキストファイルで、最初の８つのフィールドはGFFと同じです。GTFの９番目のgroupフィールドはGFFと異なり、そこには各行のデータの属性（gene_idやtranscript_id、exon number等）のリストが記述されます。ここで記述される属性はそれぞれtype(ex. gene_id) とvalue(ex. “AB000123.1”)がを持っていおり、各属性の後ろには;が付き、スペースで区切られます。
 
 2017.06.11
 https://bi.biopapyrus.jp/format/gtf.html
