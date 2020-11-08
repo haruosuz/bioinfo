@@ -337,6 +337,9 @@ genbankファイルをgffファイルに変換する - Qiita
 http://kazumaxneo.hatenablog.com/entry/2019/08/26/073000
 GFF ファイルのユーティリティ Gffread - macでインフォマティクス
 
+https://mecobalamin.hatenablog.com/entry/2019/04/19/130901
+フォーマット変換、GTF -> BED -> BAM - mecobalamin’s diary
+
 2018年11月19日
 https://oliversi.com/2018/11/05/file_format/
 GTF/GFFファイル: 遺伝子のアノテーション等を記述するためのファイル形式
