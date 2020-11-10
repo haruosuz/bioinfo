@@ -456,7 +456,7 @@ http://www.iu.a.u-tokyo.ac.jp/~kadota/bioinfo_ngs_sokushu_2014/20140905_2-1_bono
 
 https://rdrr.io/cran/seqinr/man/dotPlot.html
 dotPlot: Dot Plot Comparison of two sequences in seqinr: Biological Sequences Retrieval and Analysis
-
+```
 wsize	
 the size in chars of the moving window.
 
@@ -465,6 +465,7 @@ the size in chars for the steps of the moving window. Use wstep == wsize for non
 
 nmatch	
 if the number of match per window is greater than or equal to nmatch then a dot is produced.
+```
 
 ----------
 ## sliding window
