@@ -304,7 +304,6 @@ Converting GenBank files to FASTA format with Biopython
 
 ### 2019
 
-
 ### Kablammo
 http://kablammo.wasmuthlab.org/
 
@@ -314,23 +313,18 @@ https://twitter.com/yokuyama/status/1122298158480904192
 http://kazumaxneo.hatenablog.com/entry/2019/04/10/073000
 blast結果を可視化するwebツール Kablammo - macでインフォマティクス
 
-![](https://cdn-ak.f.st-hatena.com/images/fotolife/k/kazumaxneo/20190409/20190409230150.png)
-
-
 https://twitter.com/Acinetobazza/status/1107892222257696768
 Dr Mark Schultz on Twitter: "I have written an introductory tutorial on using edirect command line tools to query NCBI's Entrez database for downloading read-sets and genbank assemblies https://t.co/t7Yv0ZirCp"
 2:31 AM - 19 Mar 2019
 https://github.com/schultzm/entrez_direct_tut/blob/master/README.md
 entrez_direct_tut/README.md at master · schultzm/entrez_direct_tut
 
+4:39 PM - 19 Mar 2019
 https://twitter.com/RodrigoATCG/status/1108105740663836675
 Rodrigo Martinez on Twitter: "For way too long we have been using the 'cost of sequencing' graph (left) to tell stories about what may come in the world of DNA. Here's a newer version that hopefully triggers conversations about what's to come in consumer genomics - the emerging #socialgenome Thoughts?… https://t.co/o7Tzos6bGa"
-4:39 PM - 19 Mar 2019
-![](https://pbs.twimg.com/media/D2DH1sWWsAAkDQ3.jpg)
 March 6, 2019
 https://www.veritasgenetics.com/next-genomics-revolution-era-social-genome
 Blog | Next in the Genomics Revolution: The Era of the Social Genome | Veritas Genetics
-
 
 ### 2018
 
@@ -351,9 +345,7 @@ paste - - - - < file.fq | cut -f 1,2 | sed 's/^@/>/' | tr "\t" "\n" > file.fa
 https://qiita.com/antiplastics/items/add3f8438cbe6b2b594e
 どの生物種までGO解析ができるか
 
-
 ### 2017
-
 
 ----------
 ## rebase
