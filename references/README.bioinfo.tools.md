@@ -439,6 +439,10 @@ Chapter 4. EMBOSS User Tutorial
 % dottup
 ```
 
+Feb 21, 2017
+https://github.com/evolvedmicrobe/dotplot
+Rapid dot plots in R.
+
 http://www.iu.a.u-tokyo.ac.jp/~kadota/bioinfo_ngs_sokushu_2014/20140905_2-1_bono.pdf
 2-1. 配列解析基礎Basic Sequence Analysis坊農 秀雅 
  (DBCLS)
@@ -454,6 +458,12 @@ http://www.iu.a.u-tokyo.ac.jp/~kadota/bioinfo_ngs_sokushu_2014/20140905_2-1_bono
 	# needle, water
 	needle HsDJ1.pep.fa BmDJ1.pep.fa	water HsDJ1.pep.fa BmDJ1.pep.fa
 
+https://stackoverflow.com/questions/26834908/seqinr-dotplot-change-axis
+r - seqinr dotplot - change axis - Stack Overflow
+
+![](https://i.stack.imgur.com/0GTQu.png)
+
+https://rdrr.io/rforge/seqinr/man/dotPlot.html
 https://rdrr.io/cran/seqinr/man/dotPlot.html
 dotPlot: Dot Plot Comparison of two sequences in seqinr: Biological Sequences Retrieval and Analysis
 ```
