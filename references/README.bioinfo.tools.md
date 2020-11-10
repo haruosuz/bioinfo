@@ -486,15 +486,18 @@ Note that this sliding window analysis of GC content is a slightly simplified ve
 
 https://www.researchgate.net/figure/Sliding-Windows-Approach-window-size-10-and-step-1_fig2_343093625
 Sliding Windows Approach: window size = 10 and step = 1
+
 ![](https://www.researchgate.net/profile/Katarina_Grolinger/publication/343093625/figure/fig2/AS:915554642698242@1595296645723/Sliding-Windows-Approach-window-size-10-and-step-1.ppm)
 
 https://www.researchgate.net/figure/The-set-of-the-sliding-window-w-and-step-size-s_fig3_337106511
 The set of the sliding window (w) and step size (s).
+
 ![](https://www.researchgate.net/publication/337106511/figure/fig3/AS:822943105941507@1573216334540/The-set-of-the-sliding-window-w-and-step-size-s.png)
 
 http://coleoguy.blogspot.com/2014/04/sliding-window-analysis.html
 Sliding window analysis
 Using a window size of 4 and a step size of 2:
+
 ![](https://1.bp.blogspot.com/-eSp1w_oJsBc/U0NmHgWv76I/AAAAAAAAAzU/XyFsegtRKrU/s1600/Screen+Shot+2014-04-07+at+9.59.13+PM.png)
 
 http://bookclub.kodansha.co.jp/product?item=0000275926
