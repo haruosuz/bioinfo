@@ -451,6 +451,34 @@ NZ_b	Genomic	Complete genomes and unfinished WGS data
 ----------
 ## uniprot
 
+https://www.ebi.ac.uk/training-beta/online/courses/uniprot-exploring-protein-sequence-and-functional-info/what-is-uniprot/
+What is UniProt? | UniProt
+Watch this short introduction to UniProt to learn how to get started:
+May 7, 2014
+https://www.youtube.com/watch?v=9IYI4QDVPa0
+UniProt Intro - YouTube
+
+https://www.ebi.ac.uk/training-beta/online/courses/uniprot-exploring-protein-sequence-and-functional-info/exploring-a-uniprotkb-entry/
+Exploring a UniProtKB entry | UniProt
+Mar 15, 2016
+https://www.youtube.com/watch?v=x9GNm2DLP-U
+UniProtKB Entry View intro (inc Feature Viewer) - YouTube
+
+https://www.ebi.ac.uk/training-beta/online/courses/uniprot-exploring-protein-sequence-and-functional-info/how-to-use-uniprot-tools/
+How to use UniProt tools | UniProt
+
+https://www.ebi.ac.uk/training-beta/online/courses/uniprot-exploring-protein-sequence-and-functional-info/how-to-use-uniprot-tools/blast-sequence-similarity-searching/
+BLAST sequence similarity searching | UniProt
+May 11, 2014
+https://www.youtube.com/watch?v=UPaConHNP7E
+Blast intro - YouTube
+
+https://www.ebi.ac.uk/training-beta/online/courses/uniprot-exploring-protein-sequence-and-functional-info/how-to-use-uniprot-tools/aligning-multiple-protein-sequences/
+Aligning multiple protein sequences | UniProt
+May 11, 2014
+https://www.youtube.com/watch?v=IAYFLfPQ0Gs
+Align intro - YouTube
+
 ### uniref
 
 http://www.uniprot.org/help/uniref
