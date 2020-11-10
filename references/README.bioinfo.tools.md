@@ -6,6 +6,7 @@
 - [convert](#convert)
 - [bioconda](#bioconda)
 - [dotplot](#dotplot)
+- [sliding window](#sliding-window)
 - [E-utilities](#e-utilities)
 - [KofamScan](#kofamscan)
 - [seqkit](#seqkit)
@@ -415,7 +416,6 @@ Written by bonohu in misc on 土 08 7月 2017.
 ----------
 ## dotplot
 
-
 http://www.iu.a.u-tokyo.ac.jp/~kadota/r_seq.html
 (Rで)塩基配列解析
 (last modified 2020/01/02, since 2010)
@@ -461,6 +461,65 @@ http://www.iu.a.u-tokyo.ac.jp/~kadota/bioinfo_ngs_sokushu_2014/20140905_2-1_bono
 
 	# needle, water
 	needle HsDJ1.pep.fa BmDJ1.pep.fa	water HsDJ1.pep.fa BmDJ1.pep.fa
+
+https://rdrr.io/cran/seqinr/man/dotPlot.html
+dotPlot: Dot Plot Comparison of two sequences in seqinr: Biological Sequences Retrieval and Analysis
+
+wsize	
+the size in chars of the moving window.
+
+wstep	
+the size in chars for the steps of the moving window. Use wstep == wsize for non-overlapping windows.
+
+nmatch	
+if the number of match per window is greater than or equal to nmatch then a dot is produced.
+
+----------
+## sliding window
+
+https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#over-represented-and-under-represented-dna-words
+
+https://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter2.html#a-little-more-introduction-to-r
+We can change the step size by altering the value of the “by” argument given to the function seq().
+```
+# create the sequence of numbers from 1-100 in steps of 1 (ie. 1, 2, 3, 4, ... 97, 98, 99, 100):
+seq(1, 100, by = 1)
+
+# create a sequence of numbers from 1-100 in steps of 2 (ie. 1, 3, 5, 7, ... 97, 99):
+seq(1, 100, by = 2)
+```
+
+https://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter2.html#over-represented-and-under-represented-dna-words
+Note that this sliding window analysis of GC content is a slightly simplified version of the method usually carried out by bioinformaticians. In this simplified version, we have calculated the GC content in non-overlapping windows along a DNA sequence. However, it is more usual to calculate GC content in overlapping windows along a sequence, although that makes the code slightly more complicated.
+
+https://www.researchgate.net/figure/Sliding-Windows-Approach-window-size-10-and-step-1_fig2_343093625
+Sliding Windows Approach: window size = 10 and step = 1
+![](https://www.researchgate.net/profile/Katarina_Grolinger/publication/343093625/figure/fig2/AS:915554642698242@1595296645723/Sliding-Windows-Approach-window-size-10-and-step-1.ppm)
+
+https://www.researchgate.net/figure/The-set-of-the-sliding-window-w-and-step-size-s_fig3_337106511
+The set of the sliding window (w) and step size (s).
+![](https://www.researchgate.net/publication/337106511/figure/fig3/AS:822943105941507@1573216334540/The-set-of-the-sliding-window-w-and-step-size-s.png)
+
+http://coleoguy.blogspot.com/2014/04/sliding-window-analysis.html
+Sliding window analysis
+Using a window size of 4 and a step size of 2:
+![](https://1.bp.blogspot.com/-eSp1w_oJsBc/U0NmHgWv76I/AAAAAAAAAzU/XyFsegtRKrU/s1600/Screen+Shot+2014-04-07+at+9.59.13+PM.png)
+
+http://bookclub.kodansha.co.jp/product?item=0000275926
+https://www.kspub.co.jp/book/detail/5138212.html
+よくわかるバイオインフォマティクス入門/藤博幸/講談社
+６章　ゲノム解析
+6.2.1　ゲノムの特徴
+A. ゲノムサイズと遺伝子数
+B. GC含量（GC content）
+C. GC skew
+p.86
+ゲノム配列をある一定の長さ毎に分け
+次にそれぞれの断片についての GC skew の値を計算し、その値をプロットする。このような方法は
+スライディングウィンドウ（sliding window）
+とも呼ばれ、
+断片のサイズはウィンドウサイズ（window size）、それをずらす大きさはステップサイズ（step size）と呼ばれる。
+
 
 ----------
 ## E-utilities
