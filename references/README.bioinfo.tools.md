@@ -23,6 +23,23 @@
 - [vsearch](#vsearch)
 - [clust](#clust)
 - [video](#video)
+- [hmmer](#hmmer)
+
+----------
+## hmmer
+
+http://hmmer.org/
+HMMER: biosequence analysis using profile hidden Markov models
+
+http://crusade1096.web.fc2.com/hmmer.html
+
+http://kazumaxneo.hatenablog.com/entry/2017/07/31/114955
+隠れマルコフモデル（HMM）のペアワイズアラインメントに基づいた高感度なタンパク質配列検索ツール HMMER - macでインフォマティクス
+
+http://sy41211.hatenablog.com/entry/2015/11/28/083056
+HMMERを使ったPfamデータベースへのドメイン検索 - バイオインフォマティクス初心者の日常
+
+
 
 ----------
 ## shell
@@ -81,6 +98,21 @@ https://github.com/shenwei356/seqkit
 https://twitter.com/search?q=seqkit%20lang%3Aja&f=live
 
 
+
+https://bio-and.info/post/DNA_Analysis/SeqKit
+```
+# SeqkitでGC含量の計算
+```
+
+
+http://www.iu.a.u-tokyo.ac.jp/lectures/AG09/20200512_2.pdf
+バクテリアゲノム解析実習
+```
+seqkit stat -G N -a assemble/contigs.fasta
+```
+
+
+
 2019/07/30
 https://ultrabem-branch3.com/informatics/commands_mac/seqkit_mac
 Mac seqkit コマンド: オプション、正規表現など
@@ -134,8 +166,22 @@ ghostx	ホモロジー検索	ghostx
 http://kazumaxneo.hatenablog.com/entry/2019/01/20/073000
 pblat: マルチスレッドに対応したblat - macでインフォマティクス
 
+----------
+### AC-DIAMOND
+
+https://github.com/Maihj/AC-DIAMOND
+
+https://pubmed.ncbi.nlm.nih.gov/29771282/
+Bioinformatics
+. 2018 Nov 1;34(21):3744-3746. doi: 10.1093/bioinformatics/bty391.
+AC-DIAMOND v1: accelerating large-scale DNA-protein alignment
+Huijun Mai 1, Yifan Zhang 2, Dinghua Li 1, Henry Chi-Ming Leung 1 2, Ruibang Luo 1 2, Chi-Kwong Wong 2, Hing-Fung Ting 1, Tak-Wah Lam 1 2
+https://academic.oup.com/bioinformatics/article/34/21/3744/4996593
+
 http://kazumaxneo.hatenablog.com/entry/2018/05/23/102457
 超高速でDNAとタンパク質のアライメントを行う AC-DIAMOND - macでインフォマティクス
+DIAMONDと同じ感度を維持しながら、DIAMONDよりも6倍から7倍のスピードアップを持つ、より効率的なDNA-タンパク質アライメントツールAC-DIAMOND（バージョンv1）を紹介する。 
+
 
 ----------
 ### vsearch
@@ -224,13 +270,25 @@ http://kazumaxneo.hatenablog.com/entry/2017/09/03/183139
 ## mmseq2
 
 https://github.com/soedinglab/MMseqs2
-MMseqs2: ultra fast and sensitive protein search and clustering suite
+MMseqs2: ultra fast and sensitive sequence search and clustering suite
 MMseqs2 (Many-against-Many sequence searching) is a software suite to search and cluster huge protein and nucleotide sequence sets. 
+- Translated searches of nucleotides against proteins (blastx), proteins against nucleotides (tblastn) or nucleotide against nucleotide (tblastx)
 
 https://www.ncbi.nlm.nih.gov/pubmed/30615063
 Bioinformatics. 2019 Aug 15;35(16):2856-2858. doi: 10.1093/bioinformatics/bty1057.
 MMseqs2 desktop and local web server app for fast, interactive sequence searches.
 Mirdita M1, Steinegger M1,2, Söding J1.
+
+https://twitter.com/search?q=mmseq2%20lang%3Aja&src=typed_query&f=live
+- MMseq2が塩基配列vs塩基配列の検索に正式対応してくれればいいのに。分子同定機能は内部でやってるんだから。
+- MMseq2が速いと聞いて試したが、デフォルト設定でsearchする限りはBLASTPの方が速度的にも、メモリー的にも優っていた。クラスタリングならまた違うのかも。
+- なんでMMseq2使ったんですか？DIAMONDじゃだめですか？とGHOSTZの作者が質問。 #biofrontier18
+
+11:03 AM · Jul 6, 2018
+https://twitter.com/shu65/status/1015053469273780227
+- 論文読み会用にHFSP: high speed homology-driven function annotation of proteins読んだ。　 https://academic.oup.com/bioinformatics/article/34/13/i304/5045799
+- proteinのアノテーションの行う際、PSI-BLASTを実行後、HSSPと呼ばれるスコアを計算し、それに基づいてアノテーションを行うかどうか判断する。これをMMseq2に置き換えて、それ用にHFSPという新しいスコアを提案。
+- ECのlevel 3のデータで実験したところ、PSI-BLAST+HSSPと比較し、非常に高い相関を示し、HFSPを使ってアノテーションを行っても高い精度でできることを示している。ただし、ECのlevel 4までいくと精度が落ちるらしい
 
 http://kazumaxneo.hatenablog.com/entry/2019/06/28/073000
 MMseqs2 コマンド其の2 タンパク質配列のクラスタリング - macでインフォマティクス
@@ -244,12 +302,23 @@ https://ab.inf.uni-tuebingen.de/software/diamond/
 https://github.com/bbuchfink/diamond
 GitHub - bbuchfink/diamond: Accelerated BLAST compatible local sequence aligner.
 
-blastx
-
 https://www.ncbi.nlm.nih.gov/pubmed/25402007
 Nat Methods. 2015 Jan;12(1):59-60. doi: 10.1038/nmeth.3176. Epub 2014 Nov 17.
 Fast and sensitive protein alignment using DIAMOND.
 Buchfink B1, Xie C2, Huson DH3.
+
+5:00 PM · Dec 26, 2019
+https://twitter.com/TaromaedaMaedat/status/1210108069293641731
+Taro Maeda umiushi on Twitter: "@drk0311 それはいわゆるnrなのでDLすると大変です。基生研や遺伝研のスパコンにあらかじめ落としてあるのでそれを使ってblastかけてください。fmtオプションなしの出力をmeganはうけとれるので、とりまblast or diamondです" / Twitter
+
+4:08 PM · Dec 26, 2019
+https://twitter.com/TaromaedaMaedat/status/1210095055790206982
+Taro Maeda umiushi on Twitter: "@drk0311 blast（Diamond)結果を元に対象遺伝子の由来生物種を推定してくれます" / Twitter
+
+diamond、blastn検索できたっけ？
+5:52 PM · Dec 11, 2019
+https://twitter.com/hinaichigo/status/1204685443339444225
+ホタペン on Twitter: "@piroyon blastpかblastx相当になります。　あと--sensitiveモードはデフォルトモードの15倍以上遅いです。 傍流にAC-DIAMONDというのもありますがやっぱりprotein用です。　https://t.co/AXP5uKoq4m" / Twitter
 
 https://twitter.com/windowmoon/status/916248116193456129
 窓月＠低度AI人材 on Twitter: "DIAMONDはBLASTNをサポートしてないし、原理上アミノ酸配列データベースでしか高速化が機能しない。核酸配列データベースの超高速ローカルアライメント検索できるアプリが欲しい。"
@@ -261,6 +330,11 @@ BLASTとコンパチブルで高速なホモロジー検索ツール Diamond - m
 2015-12-28
 https://ang65.hatenadiary.org/entry/20151228/1451307913
 高速なタンパク質配列相同性検索ツール「DIAMOND」 - それなりにマジメなメモ
+
+3:17 PM · Aug 30, 2015
+https://twitter.com/shu65/status/637871762273865728
+Shuji Suzuki on Twitter: "BLASTよりも2万倍速いというDIAMONDさん、1スレッドのとき明らかに2万倍じゃない件。1スレッドで比較してなかったからもしかしてと思ったがこれ48スレッドまで持っててBLASTがさちってるところだけで比較したな" / Twitter
+
 
 ----------
 
