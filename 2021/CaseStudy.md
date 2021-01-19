@@ -97,7 +97,7 @@ taxonomy <- sapply(ACCESSIONs, get_taxonomy)
 taxonomy
 ```
 
-ここでは、NCBI Accession "CP029374" と "CP037868" に対応する NCBI Taxonomy データを取得する例を紹介。
+上のRコードは、複数の NCBI Accession "CP029374" と "CP037868" に対応する NCBI Taxonomy データを取得する例。
 
 https://www.ncbi.nlm.nih.gov/nuccore/CP029374
 ```
