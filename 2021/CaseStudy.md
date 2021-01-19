@@ -43,7 +43,12 @@ http://togows.dbcls.jp/site/ja/rest.html
 http://togows.dbcls.jp/site/en/rest.html
 TogoWS REST service
 
-**NCBI Accession を用いて Taxonomy を取得する例**
+Examples - NCBI Nucleotide/Protein/RefSeq
+- http://togows.dbcls.jp/entry/nucleotide/J00231/taxonomy
+
+**NCBI Accession を用いて NCBI Taxonomy を取得する例**
+
+NCBI Accession "J00231" に対応する NCBI Taxonomy を取得する。
 
 https://www.ncbi.nlm.nih.gov/nuccore/J00231
 ```
@@ -57,6 +62,8 @@ SOURCE      Homo sapiens (human)
             Catarrhini; Hominidae; Homo.
 ```
 
+ブラウザ、ターミナル（Unixコマンド`wget`,`curl`）、R言語を用いた例は以下の通り。
+
 #) ブラウザを起動する。次のURLにアクセスする:
 
 - http://togows.dbcls.jp/entry/nucleotide/J00231/taxonomy
@@ -65,8 +72,8 @@ SOURCE      Homo sapiens (human)
 ```
 # http://togows.dbcls.jp/entry/nucleotide/J00231/taxonomy
 ACCESSION=J00231
-curl -o "${ACCESSION}".txt http://togows.dbcls.jp/entry/nucleotide/${ACCESSION}/taxonomy
 wget -O "${ACCESSION}".txt http://togows.dbcls.jp/entry/nucleotide/${ACCESSION}/taxonomy
+curl -o "${ACCESSION}".txt http://togows.dbcls.jp/entry/nucleotide/${ACCESSION}/taxonomy
 ```
 
 #) Rを起動する。
@@ -90,6 +97,7 @@ taxonomy <- sapply(ACCESSIONs, get_taxonomy)
 taxonomy
 ```
 
+ここでは、NCBI Accession "CP029374" と "CP037868" に対応する NCBI Taxonomy データを取得する例を紹介。
 
 https://www.ncbi.nlm.nih.gov/nuccore/CP029374
 ```
