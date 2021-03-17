@@ -228,7 +228,6 @@ http://kazumaxneo.hatenablog.com/entry/2018/05/23/102457
 超高速でDNAとタンパク質のアライメントを行う AC-DIAMOND - macでインフォマティクス
 DIAMONDと同じ感度を維持しながら、DIAMONDよりも6倍から7倍のスピードアップを持つ、より効率的なDNA-タンパク質アライメントツールAC-DIAMOND（バージョンv1）を紹介する。 
 
-
 ----------
 ### vsearch
 
@@ -269,6 +268,11 @@ Replying to
 @iNut
 なるほど。。メタゲノム解析で使うvsearch https://github.com/torognes/vsearch とかクラスタ毎にファイル分けて出力するので場合によっては数十万~数百万とかのちっちゃいファイル作ったりするんですが、そういうことをやんなきゃいけない場合のベストプラクティスとかあったりするのでしょうか
 
+http://kazumaxneo.hatenablog.com/entry/2019/08/08/095820
+多機能な配列処理ツール VSEARCH（USEARCHの代替） - macでインフォマティクス
+- いくつかの最も重要な機能（検索、クラスタリング、キメラ検出とサブサンプリング）を評価し、それらをUSEARCHと比較した。 
+- defaultではplus strandのみクラスタリングするので、同じ配列でもreverse compなら別配列扱いになる（"--strand plus"）。両鎖クラスタリングするなら"--strand both"にする。（#379より）
+
 ----------
 ## clust
 
@@ -295,11 +299,6 @@ OrthoMCL
 
 http://kazumaxneo.hatenablog.com/archive/category/sequence%20%20clustering
 sequence clustering カテゴリーの記事一覧 - macでインフォマティクス
-
-http://kazumaxneo.hatenablog.com/entry/2019/08/08/095820
-多機能な配列処理ツール VSEARCH（USEARCHの代替） - macでインフォマティクス
-- いくつかの最も重要な機能（検索、クラスタリング、キメラ検出とサブサンプリング）を評価し、それらをUSEARCHと比較した。 
-- defaultではplus strandのみクラスタリングするので、同じ配列でもreverse compなら別配列扱いになる（"--strand plus"）。両鎖クラスタリングするなら"--strand both"にする。（#379より）
 
 http://kazumaxneo.hatenablog.com/entry/2018/10/11/195011
 クラスタリングツール MeShClust - macでインフォマティクス
