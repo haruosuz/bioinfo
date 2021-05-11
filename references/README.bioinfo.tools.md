@@ -308,8 +308,25 @@ http://kazumaxneo.hatenablog.com/entry/2018/10/11/195011
 http://kazumaxneo.hatenablog.com/entry/2017/08/03/191326
 配列をクラスタリングする CD-HIT - macでインフォマティクス
 
+ DNAのクラスタリング。
+cd-hit-est
+
+ アミノ酸配列のクラスタリング。
+cd-hit
+
+cd-hit、cd-hit-estの他にも、duplicationがあるシーケンスリードをクラスター化するCD-HIT-DUP、オーバーラップがあるリードをクラスター化するCD-HIT-LAP、二つの配列群を比較してクラスター化するCD-HIT-2Dなどがある。どのようなツールがあるかはこちらで確認してください。
+
+
 http://kazumaxneo.hatenablog.com/entry/2017/09/03/183139
 配列のクラスタリングツール UCLUST - macでインフォマティクス
+
+
+https://github.com/jasonsahl/LS-BSR/blob/master/manual.md#dependencies
+- mmseqs2 [optional] (current tested version is 10.6d92c) - At least one clustering method must be chosen if a set of genes is not supplied. The easiest installation method is through conda [https://anaconda.org/bioconda/mmseqs2]. If you invoke with "-c mmseqs", it runs the "easy-cluster" method; if the "-c mmseqs-lin" is invoked, it runs the "easy-linclust" method.
+- VSEARCH (tested version is 1.1.3, but works with 2.0.4 and 2.5.0): must be in your $PATH as “vsearch” – At least one clustering method must be chosen if a set of genes is not supplied. Can be freely obtained at: [https://anaconda.org/bioconda/vsearch]. Currently, VSEARCH does not work with protein sequences and you will see a warning if you try to combine VSEARCH with BLASTP or DIAMOND.
+- CD-HIT (tested version is 4.6): must be in your path as “cd-hit-est” for nucleotides and “cd-hit” for peptides - At least one clustering method must be chosen if a set of genes is not supplied. Does not support clustering ID lower than 0.7 for nucleotides. Can be freely obtained from: [https://anaconda.org/bioconda/cd-hit]
+
+
 
 ----------
 ## mmseq2
@@ -319,10 +336,9 @@ MMseqs2: ultra fast and sensitive sequence search and clustering suite
 MMseqs2 (Many-against-Many sequence searching) is a software suite to search and cluster huge protein and nucleotide sequence sets. 
 - Translated searches of nucleotides against proteins (blastx), proteins against nucleotides (tblastn) or nucleotide against nucleotide (tblastx)
 
-https://www.ncbi.nlm.nih.gov/pubmed/30615063
-Bioinformatics. 2019 Aug 15;35(16):2856-2858. doi: 10.1093/bioinformatics/bty1057.
-MMseqs2 desktop and local web server app for fast, interactive sequence searches.
-Mirdita M1, Steinegger M1,2, Söding J1.
+
+https://github.com/soedinglab/MMseqs2/wiki
+
 
 https://twitter.com/search?q=mmseq2%20lang%3Aja&src=typed_query&f=live
 - MMseq2が塩基配列vs塩基配列の検索に正式対応してくれればいいのに。分子同定機能は内部でやってるんだから。
@@ -529,19 +545,26 @@ Written by bonohu in misc on 土 08 7月 2017.
 ----------
 ## dotplot
 
+- https://github.com/haruosuz/DS4GD/tree/master/2021
+ドットプロット dotplot
+- https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md#comparing-two-sequences-using-a-dotplot
+- https://a-little-book-of-r-for-bioinformatics.readthedocs.io/en/latest/src/chapter4.html#comparing-two-sequences-using-a-dotplot
+
+2020/07/03
+https://www.youtube.com/watch?v=h5FRVSNQYAI
+【生命情報入門】配列解析(1)： ドットマトリックス法 - YouTube
+
 http://www.iu.a.u-tokyo.ac.jp/~kadota/r_seq.html
 (Rで)塩基配列解析
-(last modified 2020/01/02, since 2010)
 解析 | 一般 | アラインメント | ペアワイズ | について (last modified 2019/04/05)
 http://www.iu.a.u-tokyo.ac.jp/~kadota/r_seq.html#about_analysis_general_alignment_pairwise
+解析 | 一般 | アラインメント | ペアワイズ | について
+ペアワイズアラインメント（pair-wise alignment）用プログラムを示します。一応ペアワイズアラインメントの枠組みに含まれると思うので、 ドットプロット(dot plot; dotplot)用のプログラムも示します。
 ```
 R用:
-Biostrings：原著論文なし
 seqinr(dotplot用)：Charif et al., Bioinformatics, 2005
 R以外:
 JDotter(dotplot用)：Brodie et al., Bioinformatics, 2004
-GATA(内部でBLASTを使用)：Nix and Eisen, BMC Bioinformatics, 2005
-LASTZ：Harris RS, Ph.D. thesis, 2007
 Gepard(dotplot用)：Krumsiek et al., Bioinformatics, 2007
 D-GENIES(dotplot用)：Cabanettes and Klopp, PeerJ., 2018
 ```
