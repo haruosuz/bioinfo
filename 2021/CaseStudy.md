@@ -8,7 +8,7 @@
   - [togows](#togows)
 
 ----------
-## 2020-07-06
+## 2021-01-19
 
 ----------
 ## [NCBI Taxonomy](https://www.ncbi.nlm.nih.gov/taxonomy) 
@@ -62,7 +62,7 @@ SOURCE      Homo sapiens (human)
             Catarrhini; Hominidae; Homo.
 ```
 
-ブラウザ、ターミナル（Unixコマンド`wget`,`curl`）、R言語を用いた例は以下の通り。
+ブラウザ、ターミナル（Unixコマンド `wget`, `curl`）、R言語を用いた例は以下の通り。
 
 #) ブラウザを起動する。次のURLにアクセスする:
 
@@ -97,7 +97,7 @@ taxonomy <- sapply(ACCESSIONs, get_taxonomy)
 taxonomy
 ```
 
-上のRコードは、複数の NCBI Accession "CP029374" と "CP037868" に対応する NCBI Taxonomy データを取得する例。
+上のRコードは、複数の NCBI Accession ("CP029374", "CP037868") に対応する NCBI Taxonomy データを取得する例。
 
 https://www.ncbi.nlm.nih.gov/nuccore/CP029374
 ```
