@@ -74,9 +74,7 @@ Users can conduct multiple-sample comparisons by uploading VITCOMIC2 analysis re
 http://133.39.177.105/vitcomic2comp/index.html
 
 #### [Results and discussion](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5861490/#Sec11title)
-#### Description of the VITCOMIC2 circular diagram
 ##### Description of the VITCOMIC2 circular diagram
-###### Description of the VITCOMIC2 circular diagram
 
 VITCOMIC2 represents the phylum and genus composition of samples and their phylogenetic relationships using a circular diagram (Fig. 3 and Fig. 4). 
 | [Fig. 3](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5861490/figure/Fig3/)
