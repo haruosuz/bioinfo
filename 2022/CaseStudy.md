@@ -31,7 +31,7 @@
 - https://github.com/haruosuz/r4bioinfo/blob/master/references/RStudioCloud.md
 
 ----------
-# MetaGenomeRecipe
+## MetaGenomeRecipe
 
 https://www.yodosha.co.jp/jikkenigaku/book/9784758122559/index.html
 実験医学別冊：メタゲノムデータ解析　16Sも!　ショットガンも!　ロングリードも!　菌叢解析が得意になる凄技レシピ - 羊土社
@@ -39,8 +39,13 @@ Chapter2　細菌叢の組成を調べる ─16Sアンプリコン解析
 （1）Short read
 ② VITCOMIC2，LEA【森 宙史】
 
+https://www.nig.ac.jp/nig/ja/research/organization-top/laboratories/mori
+森研究室・ゲノム多様性研究室
+
+![](https://www.nig.ac.jp/nig/images/research/laboratories/mori-fig.png)
+
 ----------
-# VITCOMIC2
+## VITCOMIC2
 
 http://vitcomic.org/
 
@@ -54,38 +59,6 @@ VITCOMIC2: visualization tool for the phylogenetic composition of microbial comm
 Hiroshi Mori 1, Takayuki Maruyama 2, Masahiro Yano 2, Takuji Yamada 2, Ken Kurokawa 3
 https://bmcsystbiol.biomedcentral.com/articles/10.1186/s12918-018-0545-2
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5861490/
-
-----------
-# LEA
-
-http://leamicrobe.jp/
-
-http://133.39.177.105/lea/help_ja.html
-LEA global map: How-To-Use
-
-https://www.nig.ac.jp/nig/ja/2018/06/research-highlights_ja/20180619.html
-環境と微生物をビッグデータでつなぐ ～「環境」から微生物を検索し、微生物から「環境」を予測するウェブツール「LEA」を開発～
-
-https://pubmed.ncbi.nlm.nih.gov/29874232/
-PLoS Comput Biol
-. 2018 Jun 6;14(6):e1006143. doi: 10.1371/journal.pcbi.1006143. eCollection 2018 Jun.
-Latent environment allocation of microbial community data
-Koichi Higashi 1, Shinya Suzuki 2, Shin Kurosawa 2, Hiroshi Mori 1, Ken Kurokawa 1
-https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006143
-https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6005635/
-
-----------
-# hmori
-
-https://www.nig.ac.jp/nig/ja/research/organization-top/laboratories/mori
-森研究室・ゲノム多様性研究室
-
-![](https://www.nig.ac.jp/nig/images/research/laboratories/mori-fig.png)
-
-----------
-
-## vitcomic
-http://vitcomic.org/
 
 ### [VITCOMIC2: visualization tool for the phylogenetic composition of microbial communities based on 16S rRNA gene amplicons and metagenomic shotgun sequencing](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5861490/)
 
@@ -143,6 +116,40 @@ VITCOMIC2 Comparison calculates several statistical coefficients for pairwise co
 [Fig. 5
 Example of a VITCOMIC2 statistical sample comparison. The sequence cluster composition among samples is used to calculate Jaccard similarity, Pearson correlation, and the Yue and Clayton theta similarity coefficients.
 Users can change the sample for comparison by selecting the sample name](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5861490/figure/Fig5/)
+
+----------
+# LEA
+
+http://leamicrobe.jp/
+
+https://www.nig.ac.jp/nig/ja/2018/06/research-highlights_ja/20180619.html
+環境と微生物をビッグデータでつなぐ ～「環境」から微生物を検索し、微生物から「環境」を予測するウェブツール「LEA」を開発～
+
+https://pubmed.ncbi.nlm.nih.gov/29874232/
+PLoS Comput Biol
+. 2018 Jun 6;14(6):e1006143. doi: 10.1371/journal.pcbi.1006143. eCollection 2018 Jun.
+Latent environment allocation of microbial community data
+Koichi Higashi 1, Shinya Suzuki 2, Shin Kurosawa 2, Hiroshi Mori 1, Ken Kurokawa 1
+https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006143
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6005635/
+
+http://133.39.177.105/lea/help_en.html
+LEA global map: How-To-Use
+
+3. Global positioning of your data
+
+3.1 Place a single sample on the map
+
+click Data tab on the right side panel (figure below, 1). Click the Choose File button (2), select the unzipped file, and press the Submit button. Calculation takes several seconds. After the calculation, global map will be automatically updated. The color of the existing sample will be darker and your sample will be displayed as a cross marker on the map (3). Cliking the cross, you will also get taxonomic composition and topic composition data of your sample. 
+
+http://133.39.177.105/lea/help_ja.html
+LEA global map: How-To-Use
+
+3. ユーザデータの環境予測
+
+3.1 単一サンプルの環境予測
+
+Dataタブをクリックして（下図 1）、「ファイルを選択」からyour_sample_id.clast_nocopy.clusterファイルを選び、Submitボタンをクリックしてください（2）。ユーザデータはマップ上で白十字マーカで表示されます（3）。マーカをクリックすると系統組成情報、トピック組成情報が右側パネルに表示されます。
 
 ----------
 ## 2022-11-07
