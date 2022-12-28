@@ -36,8 +36,7 @@ http://vitcomic.org/
 
 #### [Implementation](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5861490/#Sec2title)
 ##### VITCOMIC2 web system
-The VITCOMIC2 web server http://vitcomic.org/
-can accept either a fasta or a fastq file of one 16S amplicon or metagenomic shotgun sequencing sample with read length ≥ 100 bp as the query. 
+The VITCOMIC2 web server [43] can accept either a fasta or a fastq file of one 16S amplicon or metagenomic shotgun sequencing sample with read length ≥ 100 bp as the query. 
 
 テストデータのダウンロード
 Download Input data
@@ -47,6 +46,7 @@ Sample 16S rRNA gene Amplicon sequencing fastq data http://133.39.177.105/vitcom
 配列データのアップロード
 uploading an input file
 
+http://vitcomic.org/
 ```
 Metagenome/16S rRNA gene Amplicon Sequencing FASTA/FASTQ file: SRR6325813_1.fastq.gz
 File format: FASTQ gzipped
