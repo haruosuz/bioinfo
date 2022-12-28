@@ -90,6 +90,58 @@ Example of a VITCOMIC2 statistical sample comparison. The sequence cluster compo
 Users can change the sample for comparison by selecting the sample name](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5861490/figure/Fig5/)
 
 ----------
+# hmori nig.ac.jp
+
+https://www.nig.ac.jp/nig/ja/research/organization-top/laboratories/mori
+森研究室・ゲノム多様性研究室
+
+![](https://www.nig.ac.jp/nig/images/research/laboratories/mori-fig.png)
+
+----------
+# MetaGenomeRecipe
+
+https://www.yodosha.co.jp/jikkenigaku/book/9784758122559/index.html
+実験医学別冊：メタゲノムデータ解析　16Sも!　ショットガンも!　ロングリードも!　菌叢解析が得意になる凄技レシピ - 羊土社
+Chapter2　細菌叢の組成を調べる ─16Sアンプリコン解析
+（1）Short read
+② VITCOMIC2，LEA【森 宙史】
+
+----------
+# VITCOMIC2
+
+http://vitcomic.org/
+
+https://www.nig.ac.jp/nig/ja/2018/06/research-highlights_ja/20180613.html
+高速かつ高精度に細菌群集の系統組成を推定するツールVITCOMIC2を開発
+
+https://pubmed.ncbi.nlm.nih.gov/29560821/
+BMC Syst Biol
+. 2018 Mar 19;12(Suppl 2):30. doi: 10.1186/s12918-018-0545-2.
+VITCOMIC2: visualization tool for the phylogenetic composition of microbial communities based on 16S rRNA gene amplicons and metagenomic shotgun sequencing
+Hiroshi Mori 1, Takayuki Maruyama 2, Masahiro Yano 2, Takuji Yamada 2, Ken Kurokawa 3
+https://bmcsystbiol.biomedcentral.com/articles/10.1186/s12918-018-0545-2
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5861490/
+
+----------
+# LEA
+
+http://leamicrobe.jp/
+
+http://133.39.177.105/lea/help_ja.html
+LEA global map: How-To-Use
+
+https://www.nig.ac.jp/nig/ja/2018/06/research-highlights_ja/20180619.html
+環境と微生物をビッグデータでつなぐ ～「環境」から微生物を検索し、微生物から「環境」を予測するウェブツール「LEA」を開発～
+
+https://pubmed.ncbi.nlm.nih.gov/29874232/
+PLoS Comput Biol
+. 2018 Jun 6;14(6):e1006143. doi: 10.1371/journal.pcbi.1006143. eCollection 2018 Jun.
+Latent environment allocation of microbial community data
+Koichi Higashi 1, Shinya Suzuki 2, Shin Kurosawa 2, Hiroshi Mori 1, Ken Kurokawa 1
+https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006143
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6005635/
+
+----------
 ## 2022-11-07
 
 2022年11月7日（月）4限（14:40-16:10）  
