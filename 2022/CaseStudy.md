@@ -28,14 +28,6 @@
 - https://github.com/haruosuz/r4bioinfo/blob/master/references/RStudioCloud.md
 
 ----------
-# hmori nig.ac.jp
-
-https://www.nig.ac.jp/nig/ja/research/organization-top/laboratories/mori
-森研究室・ゲノム多様性研究室
-
-![](https://www.nig.ac.jp/nig/images/research/laboratories/mori-fig.png)
-
-----------
 # MetaGenomeRecipe
 
 https://www.yodosha.co.jp/jikkenigaku/book/9784758122559/index.html
@@ -78,6 +70,14 @@ Latent environment allocation of microbial community data
 Koichi Higashi 1, Shinya Suzuki 2, Shin Kurosawa 2, Hiroshi Mori 1, Ken Kurokawa 1
 https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006143
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6005635/
+
+----------
+# hmori nig.ac.jp
+
+https://www.nig.ac.jp/nig/ja/research/organization-top/laboratories/mori
+森研究室・ゲノム多様性研究室
+
+![](https://www.nig.ac.jp/nig/images/research/laboratories/mori-fig.png)
 
 ----------
 
