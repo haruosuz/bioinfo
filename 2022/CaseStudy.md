@@ -74,6 +74,7 @@ Users can conduct multiple-sample comparisons by uploading VITCOMIC2 analysis re
 http://133.39.177.105/vitcomic2comp/index.html
 
 #### [Results and discussion](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5861490/#Sec11title)
+#### Description of the VITCOMIC2 circular diagram
 ##### Description of the VITCOMIC2 circular diagram
 ###### Description of the VITCOMIC2 circular diagram
 
