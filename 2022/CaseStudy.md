@@ -33,8 +33,7 @@ BMC Syst Biol
 . 2018 Mar 19;12(Suppl 2):30. doi: 10.1186/s12918-018-0545-2.
 VITCOMIC2: visualization tool for the phylogenetic composition of microbial communities based on 16S rRNA gene amplicons and metagenomic shotgun sequencing
 Hiroshi Mori 1, Takayuki Maruyama 2, Masahiro Yano 2, Takuji Yamada 2, Ken Kurokawa 3
-
-### [VITCOMIC2: visualization tool for the phylogenetic composition of microbial communities based on 16S rRNA gene amplicons and metagenomic shotgun sequencing](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5861490/)
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5861490/
 
 #### [Implementation](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5861490/#Sec2title)
 ##### VITCOMIC2 web system
@@ -76,6 +75,8 @@ http://133.39.177.105/vitcomic2comp/index.html
 
 #### [Results and discussion](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5861490/#Sec11title)
 ##### Description of the VITCOMIC2 circular diagram
+###### Description of the VITCOMIC2 circular diagram
+
 VITCOMIC2 represents the phylum and genus composition of samples and their phylogenetic relationships using a circular diagram (Fig. 3 and Fig. 4). 
 | [Fig. 3](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5861490/figure/Fig3/)
 | [Fig. 4](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5861490/figure/Fig4/)
