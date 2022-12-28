@@ -88,18 +88,13 @@ http://133.39.177.105/vitcomic2comp/index.html
 ##### Description of the VITCOMIC2 circular diagram
 VITCOMIC2 represents the phylum and genus composition of samples and their phylogenetic relationships using a circular diagram (Fig. 3 and Fig. 4). 
 
-[Fig. 3
-Example of VITCOMIC2 representation of the phylum composition and associated phylogenetic relationships.
-(i) Sizes of dots represent the relative abundance of reads in the sequence cluster. (ii) When users select a dot, they obtain information on the number of sequences that the cluster contains. (iii) Genus composition of the phylum can be viewed by selecting the phylum name](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5861490/figure/Fig3/)
+[Fig. 3](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5861490/figure/Fig3/)
 
-[Fig. 4
-Example of VITCOMIC2 representation of the genus composition and associated phylogenetic relationships. Genus composition of a samples from the Turnbaugh et al. study [31]. When two or more genera are located at the same location, these genera names can be seen by selecting the “more” button for specific genera, or by selecting the “Show All Genera” button to view all genera at once](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5861490/figure/Fig4/)
+[Fig. 4](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5861490/figure/Fig4/)
 
 VITCOMIC2 Comparison calculates several statistical coefficients for pairwise community comparison (Jaccard similarity, Pearson correlation, and Yue and Clayton theta similarity coefficients [7]) (Fig. 5). 
 
-[Fig. 5
-Example of a VITCOMIC2 statistical sample comparison. The sequence cluster composition among samples is used to calculate Jaccard similarity, Pearson correlation, and the Yue and Clayton theta similarity coefficients.
-Users can change the sample for comparison by selecting the sample name](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5861490/figure/Fig5/)
+[Fig. 5](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5861490/figure/Fig5/)
 
 ----------
 # LEA
