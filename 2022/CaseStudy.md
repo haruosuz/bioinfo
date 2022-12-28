@@ -50,8 +50,8 @@ http://vitcomic.org/
 ```
 Metagenome/16S rRNA gene Amplicon Sequencing FASTA/FASTQ file: SRR6325813_1.fastq.gz
 File format: FASTQ gzipped
-ID: (use [A-Za-z0-9-_])
-Email: 
+ID: Sample1
+Email: メールアドレス
 ```
 
 Click **[upload&calculate]**
@@ -65,8 +65,8 @@ Send you an email to
 When the VITCOMIC2 analysis is finished, VITCOMIC2 sends an Email to the user with a download link to the results which include a VITCOMIC2 visualization result, a genus composition text file, 
 ```
 result/VITCOMIC_result/
- result.html: a VITCOMIC2 visualization result
- *.genus.txt: a genus composition text file
+ result.html: VITCOMIC2 visualization result
+ *.genus.txt: genus composition text file
 ```
 
 Users can conduct multiple-sample comparisons by uploading VITCOMIC2 analysis result files for selected samples to the VITCOMIC2 Comparison web server [45].
