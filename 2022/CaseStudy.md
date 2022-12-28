@@ -29,14 +29,13 @@
 
 ----------
 
-# VITCOMIC2
+## vitcomic
 http://vitcomic.org/
 
-https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5861490/
+### [VITCOMIC2: visualization tool for the phylogenetic composition of microbial communities based on 16S rRNA gene amplicons and metagenomic shotgun sequencing](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5861490/)
 
-## [Implementation](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5861490/#Sec2title)
-
-### VITCOMIC2 web system
+#### [Implementation](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5861490/#Sec2title)
+##### VITCOMIC2 web system
 The VITCOMIC2 web server http://vitcomic.org/
 can accept either a fasta or a fastq file of one 16S amplicon or metagenomic shotgun sequencing sample with read length ≥ 100 bp as the query. 
 
@@ -55,7 +54,7 @@ ID: (use [A-Za-z0-9-_])
 Email: 
 ```
 
-Click *[upload&calculate]*
+Click **[upload&calculate]**
 
 ```
 Your file was uploaded successfully!
@@ -66,31 +65,29 @@ Send you an email to
 When the VITCOMIC2 analysis is finished, VITCOMIC2 sends an Email to the user with a download link to the results which include a VITCOMIC2 visualization result, a genus composition text file, 
 ```
 result/VITCOMIC_result/
- result.html: 系統組成の推定結果をウェブブラウザ上で見られるようにしたファイル
- *.genus.txt: 属組成のタブ区切りテキストファイル
+ result.html: a VITCOMIC2 visualization result
+ *.genus.txt: a genus composition text file
 ```
 
 Users can conduct multiple-sample comparisons by uploading VITCOMIC2 analysis result files for selected samples to the VITCOMIC2 Comparison web server [45].
 http://133.39.177.105/vitcomic2comp/index.html
 
-## [Results and discussion](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5861490/#Sec11title)
-
-### Description of the VITCOMIC2 circular diagram
-
+#### [Results and discussion](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5861490/#Sec11title)
+##### Description of the VITCOMIC2 circular diagram
 VITCOMIC2 represents the phylum and genus composition of samples and their phylogenetic relationships using a circular diagram (Fig. 3 and Fig. 4). 
 
-https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5861490/figure/Fig3/
+[Fig. 3
 Example of VITCOMIC2 representation of the phylum composition and associated phylogenetic relationships.
-(i) Sizes of dots represent the relative abundance of reads in the sequence cluster. (ii) When users select a dot, they obtain information on the number of sequences that the cluster contains. (iii) Genus composition of the phylum can be viewed by selecting the phylum name
+(i) Sizes of dots represent the relative abundance of reads in the sequence cluster. (ii) When users select a dot, they obtain information on the number of sequences that the cluster contains. (iii) Genus composition of the phylum can be viewed by selecting the phylum name](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5861490/figure/Fig3/)
 
-https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5861490/figure/Fig4/
-Example of VITCOMIC2 representation of the genus composition and associated phylogenetic relationships. Genus composition of a samples from the Turnbaugh et al. study [31]. When two or more genera are located at the same location, these genera names can be seen by selecting the “more” button for specific genera, or by selecting the “Show All Genera” button to view all genera at once
+[Fig. 4
+Example of VITCOMIC2 representation of the genus composition and associated phylogenetic relationships. Genus composition of a samples from the Turnbaugh et al. study [31]. When two or more genera are located at the same location, these genera names can be seen by selecting the “more” button for specific genera, or by selecting the “Show All Genera” button to view all genera at once](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5861490/figure/Fig4/)
 
 VITCOMIC2 Comparison calculates several statistical coefficients for pairwise community comparison (Jaccard similarity, Pearson correlation, and Yue and Clayton theta similarity coefficients [7]) (Fig. 5). 
 
-https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5861490/figure/Fig5/
+[Fig. 5
 Example of a VITCOMIC2 statistical sample comparison. The sequence cluster composition among samples is used to calculate Jaccard similarity, Pearson correlation, and the Yue and Clayton theta similarity coefficients.
-Users can change the sample for comparison by selecting the sample name
+Users can change the sample for comparison by selecting the sample name](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5861490/figure/Fig5/)
 
 ----------
 ## 2022-11-07
