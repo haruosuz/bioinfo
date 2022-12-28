@@ -3,11 +3,9 @@
 
 ## Table of Contents
 - [references](#references)
-- [MetaGenomeRecipe](#)
-- [VITCOMIC2](#)
-- [LEA](#)
-- [hmori](#hmori)
-- [vitcomic](#vitcomic)
+- [MetaGenomeRecipe](#metagenomerecipe)
+- [VITCOMIC2](#vitcomic2)
+- [LEA](#lea)
 - [2022-11-07](#2022-11-07) 東京農業大学大学院講義「微生物生命機能学」
 - [2022-08-22](#2022-08-22) 福井県立大学 | 分子進化学特論
 - [2022-06-16](#2022-06-16) 東京大学 | 14.農学生命情報科学特論IV
@@ -38,6 +36,9 @@ https://www.yodosha.co.jp/jikkenigaku/book/9784758122559/index.html
 Chapter2　細菌叢の組成を調べる ─16Sアンプリコン解析
 （1）Short read
 ② VITCOMIC2，LEA【森 宙史】
+
+https://www.nig.ac.jp/nig/ja/research/organization-top/laboratories/kurokawa
+黒川研究室・ゲノム進化研究室
 
 https://www.nig.ac.jp/nig/ja/research/organization-top/laboratories/mori
 森研究室・ゲノム多様性研究室
