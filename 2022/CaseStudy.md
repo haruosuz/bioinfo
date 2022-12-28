@@ -24,6 +24,7 @@ Chapter2　細菌叢の組成を調べる ─16Sアンプリコン解析
 
 ----------
 ## VITCOMIC2
+http://vitcomic.org/
 
 https://www.nig.ac.jp/nig/ja/2018/06/research-highlights_ja/20180613.html
 高速かつ高精度に細菌群集の系統組成を推定するツールVITCOMIC2を開発
@@ -85,6 +86,7 @@ VITCOMIC2 Comparison calculates several statistical coefficients for pairwise co
 
 ----------
 # LEA
+http://leamicrobe.jp/
 
 https://www.nig.ac.jp/nig/ja/2018/06/research-highlights_ja/20180619.html
 環境と微生物をビッグデータでつなぐ ～「環境」から微生物を検索し、微生物から「環境」を予測するウェブツール「LEA」を開発～
@@ -97,8 +99,9 @@ Koichi Higashi 1, Shinya Suzuki 2, Shin Kurosawa 2, Hiroshi Mori 1, Ken Kurokawa
 
 http://leamicrobe.jp/
 
-http://133.39.177.105/lea/help_en.html
-LEA global map: How-To-Use
+[START LEA 2D-embedding](http://snail.nig.ac.jp/lea2/)
+
+[HOW-TO-USE](http://133.39.177.105/lea/help_en.html)
 |
 3. Global positioning of your data
 |
@@ -106,8 +109,7 @@ LEA global map: How-To-Use
 |
 click Data tab on the right side panel (figure below, 1). Click the Choose File button (2), select the unzipped file, and press the Submit button. Calculation takes several seconds. After the calculation, global map will be automatically updated. The color of the existing sample will be darker and your sample will be displayed as a cross marker on the map (3). Cliking the cross, you will also get taxonomic composition and topic composition data of your sample. 
 
-http://133.39.177.105/lea/help_ja.html
-LEA global map: How-To-Use
+[LEAの使い方・日本語版](http://133.39.177.105/lea/help_ja.html)
 |
 3. ユーザデータの環境予測
 |
