@@ -4,8 +4,8 @@
 ## Table of Contents
 - [references](#references)
 - [2022-12-28](#2022-12-28)
-- [VITCOMIC2](#vitcomic2)
-- [LEA](#lea)
+　　- [VITCOMIC2](#vitcomic2)
+　　- [LEA](#lea)
 - [2022-11-07](#2022-11-07) 東京農業大学大学院講義「微生物生命機能学」
 - [2022-08-22](#2022-08-22) 福井県立大学 | 分子進化学特論
 - [2022-06-16](#2022-06-16) 東京大学 | 14.農学生命情報科学特論IV
@@ -88,7 +88,7 @@ Click **[upload&calculate]**
 ```
 Your file was uploaded successfully!
 After checking your file format, VITCOMIC2 analysis will start.
-Send you an email to 
+Send you an email to メールアドレス
 ```
 
 When the VITCOMIC2 analysis is finished, VITCOMIC2 sends an Email to the user with a download link to the results which include a VITCOMIC2 visualization result, a genus composition text file, 
