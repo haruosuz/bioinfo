@@ -4,7 +4,6 @@
 ## Table of Contents
 - [references](#references)
 - [2022-12-28](#2022-12-28)
-- [MetaGenomeRecipe](#metagenomerecipe)
 - [VITCOMIC2](#vitcomic2)
 - [LEA](#lea)
 - [2022-11-07](#2022-11-07) 東京農業大学大学院講義「微生物生命機能学」
@@ -31,9 +30,6 @@
 
 ----------
 ## 2022-12-28
-
-----------
-## MetaGenomeRecipe
 
 https://www.yodosha.co.jp/jikkenigaku/book/9784758122559/index.html
 実験医学別冊：メタゲノムデータ解析　16Sも!　ショットガンも!　ロングリードも!　菌叢解析が得意になる凄技レシピ - 羊土社
