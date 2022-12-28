@@ -26,8 +26,6 @@ https://www.nig.ac.jp/nig/ja/research/organization-top/laboratories/kurokawa
 https://www.nig.ac.jp/nig/ja/research/organization-top/laboratories/mori
 森研究室・ゲノム多様性研究室
 
-![](https://www.nig.ac.jp/nig/images/research/laboratories/mori-fig.png)
-
 ----------
 ## VITCOMIC2
 
