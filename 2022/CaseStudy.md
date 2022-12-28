@@ -3,8 +3,8 @@
 
 ## Table of Contents
 - [2022-12-28](#2022-12-28)
-　　- [VITCOMIC2](#vitcomic2)
-　　- [LEA](#lea)
+  - [VITCOMIC2](#vitcomic2)
+  - [LEA](#lea)
 - [references](#references)
 - [2022-11-07](#2022-11-07) 東京農業大学大学院講義「微生物生命機能学」
 - [2022-08-22](#2022-08-22) 福井県立大学 | 分子進化学特論
