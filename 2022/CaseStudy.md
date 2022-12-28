@@ -20,12 +20,6 @@ Chapter2　細菌叢の組成を調べる ─16Sアンプリコン解析
 （1）Short read
 ② VITCOMIC2，LEA【森 宙史】
 
-https://www.nig.ac.jp/nig/ja/research/organization-top/laboratories/kurokawa
-黒川研究室・ゲノム進化研究室
-
-https://www.nig.ac.jp/nig/ja/research/organization-top/laboratories/mori
-森研究室・ゲノム多様性研究室
-
 ----------
 ## VITCOMIC2
 
