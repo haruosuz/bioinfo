@@ -33,8 +33,6 @@ BMC Syst Biol
 . 2018 Mar 19;12(Suppl 2):30. doi: 10.1186/s12918-018-0545-2.
 VITCOMIC2: visualization tool for the phylogenetic composition of microbial communities based on 16S rRNA gene amplicons and metagenomic shotgun sequencing
 Hiroshi Mori 1, Takayuki Maruyama 2, Masahiro Yano 2, Takuji Yamada 2, Ken Kurokawa 3
-https://bmcsystbiol.biomedcentral.com/articles/10.1186/s12918-018-0545-2
-https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5861490/
 
 ### [VITCOMIC2: visualization tool for the phylogenetic composition of microbial communities based on 16S rRNA gene amplicons and metagenomic shotgun sequencing](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5861490/)
 
@@ -101,25 +99,23 @@ PLoS Comput Biol
 . 2018 Jun 6;14(6):e1006143. doi: 10.1371/journal.pcbi.1006143. eCollection 2018 Jun.
 Latent environment allocation of microbial community data
 Koichi Higashi 1, Shinya Suzuki 2, Shin Kurosawa 2, Hiroshi Mori 1, Ken Kurokawa 1
-https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006143
-https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6005635/
 
 http://133.39.177.105/lea/help_en.html
 LEA global map: How-To-Use
-
+|
 3. Global positioning of your data
-
+|
 3.1 Place a single sample on the map
-
+|
 click Data tab on the right side panel (figure below, 1). Click the Choose File button (2), select the unzipped file, and press the Submit button. Calculation takes several seconds. After the calculation, global map will be automatically updated. The color of the existing sample will be darker and your sample will be displayed as a cross marker on the map (3). Cliking the cross, you will also get taxonomic composition and topic composition data of your sample. 
 
 http://133.39.177.105/lea/help_ja.html
 LEA global map: How-To-Use
-
+|
 3. ユーザデータの環境予測
-
+|
 3.1 単一サンプルの環境予測
-
+|
 Dataタブをクリックして（下図 1）、「ファイルを選択」からyour_sample_id.clast_nocopy.clusterファイルを選び、Submitボタンをクリックしてください（2）。ユーザデータはマップ上で白十字マーカで表示されます（3）。マーカをクリックすると系統組成情報、トピック組成情報が右側パネルに表示されます。
 
 ----------
