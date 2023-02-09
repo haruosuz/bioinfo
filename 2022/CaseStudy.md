@@ -119,7 +119,17 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6005635/
 ----------
 ## references
 
-- 都市のマイクロバイオーム MetaSUB: Metagenomics & Metadesign of Subways & Urban Biomes https://github.com/haruosuz/metasub/blob/master/README.md
+https://pubmed.ncbi.nlm.nih.gov/36515525/
+Microbiol Resour Announc. 2022 Dec 14;e0109222. doi: 10.1128/mra.01092-22.
+Urban Microbiomes in Narita, Chiba, Japan: Shotgun Metagenome Sequences of a Train Station
+Dewa A P Rasmika Dewi 1 2, Yuh Shiwa 3 4, Krista Ryon 5 6 7, Christopher E Mason 5 6 7, Tetsuya Matsumoto 1 8, Haruo Suzuki 9 10
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9872656/
+
+- https://github.com/haruosuz/bioproject
+- 
+- https://github.com/haruosuz/metasub/blob/master/README.md
+都市のマイクロバイオーム MetaSUB: Metagenomics & Metadesign of Subways & Urban Biomes 
+- 
 - 慶應義塾大学 湘南藤沢キャンパス（SFC）
 - 生命動態のデータサイエンス / DATA SCIENCE FOR GENOME DYNAMICS https://github.com/haruosuz/DS4GD/tree/master/2022giga
   - ゲノムの特徴 [Genome signature](https://github.com/haruosuz/DS4GD/blob/master/2018/CaseStudy.md#genome-signature)
