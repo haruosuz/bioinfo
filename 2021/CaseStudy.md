@@ -5,6 +5,7 @@
 - [2021-10-25](#2021-10-25) 東京大学 | 14.農学生命情報科学特論IV
 - [2021-08-23](#2021-08-23) 石川県立大学
 - [NCBI Taxonomy](#ncbi-taxonomy)
+  - [amr](#amr)
   - [taxonomizr](#taxonomizr)
   - [taxonkit](#taxonkit)
   - [togows](#togows)
