@@ -56,6 +56,11 @@ https://doi.org/10.7875/togotv.2017.092
 NCBI Taxonomy Browserを使って、生物分類と配列情報を関連させて調べる 2017 | TogoTV
 
 ----------
+### amr
+
+https://github.com/haruosuz/r4bioinfo/blob/master/R_microb/README.md#amr
+
+----------
 ### taxonomizr
 
 https://cran.r-project.org/package=taxonomizr
