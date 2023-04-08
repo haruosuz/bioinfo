@@ -5,6 +5,7 @@
 - [2022-12-28](#2022-12-28)
   - [VITCOMIC2](#vitcomic2)
   - [LEA](#lea)
+- [video](#video)
 - [references](#references)
 - [2022-11-07](#2022-11-07) 東京農業大学大学院講義「微生物生命機能学」
 - [2022-08-22](#2022-08-22) 福井県立大学 | 分子進化学特論
@@ -117,6 +118,24 @@ Koichi Higashi 1, Shinya Suzuki 2, Shin Kurosawa 2, Hiroshi Mori 1, Ken Kurokawa
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6005635/
 
 ----------
+## video
+
+https://github.com/haruosuz/metasub/blob/master/README.md#video
+
+https://github.com/haruosuz/mgsa/blob/master/references/mgsa.metagenome.md#mori
+
+https://doi.org/10.7875/togotv.2020.016
+微生物統合データベースMicrobeDB.jpの活用法 @ AJACS世田谷 | TogoTV
+本日の統合TVは、2019年11月29日に開催された統合データベース講習会:AJACS世田谷から、国立遺伝学研究所 森 宙史 氏 による「微生物統合データベースMicrobeDB.jpの活用法」をお送りします。約53分です。
+目標:公共の微生物のゲノム・メタゲノム解析データ等をMicrobeDB.jpで検索する方法、および、VITCOMIC2、LEA等を用いて、自分の持つマイクロバイオームのアンプリコンシーケンスデータやメタゲノムシーケンスデータから系統組成を推定し、系統組成が似たMicrobeDB.jp上のメタゲノム解析データを検索する方法がわかる。
+https://youtu.be/SDus42JzFXc?t=2508
+41:48 / 53:45
+
+https://doi.org/10.7875/togotv.2019.121
+【How to use1】MicrobeDB.jpの使い方 @ AJACS番町3 | TogoTV
+本日の統合TVは、2019年8月7日に開催された統合データベース講習会:AJACS番町3から、国立遺伝学研究所 森 宙史 助教による「【How to use1】MicrobeDB.jpの使い方」をお送りします。約25分です。
+
+----------
 ## references
 
 https://pubmed.ncbi.nlm.nih.gov/36515525/
@@ -142,24 +161,6 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9872656/
 - https://github.com/haruosuz/bioinfo/blob/master/2021/CaseStudy.md NCBI Taxonomy 分類群
 - https://github.com/haruosuz/bioinfo/blob/master/2020/CaseStudy.md codon usage コドン使用
 - https://github.com/haruosuz/r4bioinfo/blob/master/references/RStudioCloud.md
-
-----------
-## video
-
-https://github.com/haruosuz/metasub/blob/master/README.md#video
-
-https://github.com/haruosuz/mgsa/blob/master/references/mgsa.metagenome.md#mori
-
-https://doi.org/10.7875/togotv.2020.016
-微生物統合データベースMicrobeDB.jpの活用法 @ AJACS世田谷 | TogoTV
-本日の統合TVは、2019年11月29日に開催された統合データベース講習会:AJACS世田谷から、国立遺伝学研究所 森 宙史 氏 による「微生物統合データベースMicrobeDB.jpの活用法」をお送りします。約53分です。
-目標:公共の微生物のゲノム・メタゲノム解析データ等をMicrobeDB.jpで検索する方法、および、VITCOMIC2、LEA等を用いて、自分の持つマイクロバイオームのアンプリコンシーケンスデータやメタゲノムシーケンスデータから系統組成を推定し、系統組成が似たMicrobeDB.jp上のメタゲノム解析データを検索する方法がわかる。
-https://youtu.be/SDus42JzFXc?t=2508
-41:48 / 53:45
-
-https://doi.org/10.7875/togotv.2019.121
-【How to use1】MicrobeDB.jpの使い方 @ AJACS番町3 | TogoTV
-本日の統合TVは、2019年8月7日に開催された統合データベース講習会:AJACS番町3から、国立遺伝学研究所 森 宙史 助教による「【How to use1】MicrobeDB.jpの使い方」をお送りします。約25分です。
 
 ----------
 ## 2022-11-07
