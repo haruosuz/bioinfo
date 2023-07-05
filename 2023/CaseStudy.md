@@ -12,19 +12,38 @@
 
 「R言語を用いた再現可能なバイオインフォマティクス」
 
+### preparation
+**準備**
+
+- R / RStudio の環境構築を行ってください。
+  - Posit Cloud の無料アカウントを作成する。または、
+  - パソコンに R と RStudio をインストールする。
+
+参考: 
+https://github.com/haruosuz/DS4GD/blob/master/2023-04/README.md#r-rstudio
 
 ### assignment
 **課題**
 
 次のURLから（Rスクリプトを含む）プロジェクト・ディレクトリをダウンロードして下さい。  
 Please download the project directory (including R scripts) from the following URL.  
-https://github.com/haruosuz/bioinfo/raw/master/2022/my_project_u-tokyo.zip
+https://github.com/haruosuz/DS4GD/raw/master/2023-04/scripts_ds4gd.zip
 
-RStudioでRスクリプトを開く。**Compile Report**コマンドでPDFまたはHTML形式のレポートを作成する。そのレポートを課題として提出する。  
-Open an R script in RStudio. Create report in PDF or HTML format using the **Compile Report** command.
-Submit the report as your assignment.
+圧縮ファイルを解凍し、ディレクトリに移動する。  
+unzip the compressed file and change to the directory.  
+```
+unzip scripts_ds4gd.zip
+cd scripts_ds4gd/
+```
 
-[**Compile Report**](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#compile-report)
+[RStudioでRスクリプトを開く。  
+Open an R script in RStudio.  ](https://r4ds.had.co.nz/workflow-scripts.html)
+
+[**Compile Report**コマンドでHTML形式のレポートを作成する。  
+Create report in format using the **Compile Report** command.  ](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#compile-report)
+
+.htmlファイルを課題として提出する。  
+Submit the .html file as your assignment.
 
 ----------
 ## references
@@ -33,6 +52,10 @@ Submit the report as your assignment.
   - https://github.com/haruosuz/bioinfo/blob/master/2022/CaseStudy.md#2022-06-16
   - https://github.com/haruosuz/bioinfo/blob/master/2021/CaseStudy.md#2021-10-25
   - https://github.com/haruosuz/bioinfo/blob/master/2020/CaseStudy.md#2020-07-06
+- 慶應義塾大学 湘南藤沢キャンパス（SFC）
+- 生命動態のデータサイエンス / DATA SCIENCE FOR GENOME DYNAMICS https://github.com/haruosuz/DS4GD/tree/master/2023-04
+- バイオインフォマティクスのデータサイエンス / DATA SCIENCE FOR BIOINFORMATICS https://github.com/haruosuz/introBI/tree/master/2023-04
+- [バイオインフォマティクスデータスキル ――オープンソースツールを使ったロバストで再現性のある研究](https://www.oreilly.co.jp/books/9784873118635/)
 
 ----------
 
