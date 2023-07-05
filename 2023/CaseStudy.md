@@ -37,13 +37,13 @@ cd scripts_ds4gd/
 ```
 
 [RStudioでRスクリプトを開く。  
-Open an R script in RStudio.  ](https://r4ds.had.co.nz/workflow-scripts.html)
+Open an R script in RStudio.](https://r4ds.had.co.nz/workflow-scripts.html)
 
-[**Compile Report**コマンドでHTML形式のレポートを作成する。  
-Create report in format using the **Compile Report** command.  ](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#compile-report)
+["Compile Report"コマンドを使用して、HTML形式でレポートを作成する。  
+Create a report in HTML format using the "Compile Report" command.](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#compile-report)
 
-.htmlファイルを課題として提出する。  
-Submit the .html file as your assignment.
+HTML形式のファイル（.html）を課題として提出する。  
+Submit the HTML file (.html) as your assignment.
 
 ----------
 ## references
