@@ -25,11 +25,11 @@ https://github.com/haruosuz/DS4GD/blob/master/2023-04/README.md#r-rstudio
 ### assignment
 **課題**
 
-次のURLから（Rスクリプトを含む）プロジェクト・ディレクトリをダウンロードして下さい。  
+次のURLから圧縮ファイル(zip)をダウンロードして下さい。  
 Please download the project directory (including R scripts) from the following URL.  
-https://github.com/haruosuz/DS4GD/raw/master/2023-04/scripts_ds4gd.zip
+https://github.com/haruosuz/bioinfo/raw/master/2023/my_project_u-tokyo.zip
 
-圧縮ファイルを解凍し、ディレクトリに移動する。  
+圧縮ファイル(zip)を解凍・展開し、ディレクトリに移動する。  
 unzip the compressed file and change to the directory.  
 ```
 unzip scripts_ds4gd.zip
@@ -53,9 +53,11 @@ Submit the HTML file (.html) as your assignment.
   - https://github.com/haruosuz/bioinfo/blob/master/2021/CaseStudy.md#2021-10-25
   - https://github.com/haruosuz/bioinfo/blob/master/2020/CaseStudy.md#2020-07-06
 - 慶應義塾大学 湘南藤沢キャンパス（SFC）
-- 生命動態のデータサイエンス / DATA SCIENCE FOR GENOME DYNAMICS https://github.com/haruosuz/DS4GD/tree/master/2023-04
-- バイオインフォマティクスのデータサイエンス / DATA SCIENCE FOR BIOINFORMATICS https://github.com/haruosuz/introBI/tree/master/2023-04
+  - 2023春 生命動態のデータサイエンス https://github.com/haruosuz/DS4GD/tree/master/2023-04
+  - 2023春 バイオインフォマティクスのデータサイエンス https://github.com/haruosuz/introBI/tree/master/2023-04
+  - 2022秋 バイオインフォマティクスのデータサイエンス https://github.com/haruosuz/introBI/blob/master/2022/README.md#r-language
 - [バイオインフォマティクスデータスキル ――オープンソースツールを使ったロバストで再現性のある研究](https://www.oreilly.co.jp/books/9784873118635/)
 
 ----------
+
 
