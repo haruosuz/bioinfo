@@ -24,6 +24,43 @@ Last Update: 2020-08
 - [](#)
 
 ----------
+## unclassified
+
+https://www.uniprot.org/help/sequence-searches
+Sequence similarity searches
+Last modified December 7, 2020
+
+
+https://heavywatal.github.io/bio/blast.html
+BLAST - Heavy Watal
+
+2019-10-22
+https://pepper.is.sci.toho-u.ac.jp/pepper/index.php?Python%A5%D0%A5%A4%A5%AA%2F%A5%C4%A1%BC%A5%EB%2F%B0%E4%C5%C1%BB%D2%C8%E6%B3%D3%AD%A2%A1%C1blast%A4%C7%BB%EE%A4%B9
+Pythonバイオ/ツール/遺伝子比較②～blastで試す - 東邦大学理学部情報科学科　山内のサイト
+
+
+https://www.biostars.org/p/165218/
+Where to find BLAST+ default parameters?
+
+blastn (megablast) [for highly similar sequences]
+
+word_size = 10
+match/mismatch scores = 1, -2
+
+You can find this information at NCBI BLAST. If you are running local BLAST with outfmt 0 or 1, you will also see the parameters at the end of your output file.
+
+----------
+
+https://www.ncbi.nlm.nih.gov/books/NBK279684/#appendices.Options_for_the_commandline_a
+
+Table C1:
+Options common to all BLAST+ search applications.
+
+Table C10:
+Blastdbcmd application options. This application reads a BLAST database and produces reports.
+
+
+----------
 ## blastdbcmd
 
 https://www.ncbi.nlm.nih.gov/books/NBK569853/
@@ -88,48 +125,6 @@ DNA blastdbを作成する
 nucl blastdbからfasta配列を抽出する 
 blastdbからGIとタクシーを抽出する 
 ubuntuに爆風をインストールする 
-
-
-
-
-----------
-## unclassified
-
-
-
-
-
-
-
-
-https://www.uniprot.org/help/sequence-searches
-Sequence similarity searches
-Last modified December 7, 2020
-
-
-
-
-https://heavywatal.github.io/bio/blast.html
-BLAST - Heavy Watal
-
-2019-10-22
-https://pepper.is.sci.toho-u.ac.jp/pepper/index.php?Python%A5%D0%A5%A4%A5%AA%2F%A5%C4%A1%BC%A5%EB%2F%B0%E4%C5%C1%BB%D2%C8%E6%B3%D3%AD%A2%A1%C1blast%A4%C7%BB%EE%A4%B9
-Pythonバイオ/ツール/遺伝子比較②～blastで試す - 東邦大学理学部情報科学科　山内のサイト
-
-
-
-
-https://www.biostars.org/p/165218/
-Where to find BLAST+ default parameters?
-
-blastn (megablast) [for highly similar sequences]
-
-word_size = 10
-match/mismatch scores = 1, -2
-
-You can find this information at NCBI BLAST. If you are running local BLAST with outfmt 0 or 1, you will also see the parameters at the end of your output file.
-
-
 
 
 
