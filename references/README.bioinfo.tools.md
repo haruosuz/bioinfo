@@ -30,6 +30,254 @@
 
 
 ----------
+
+
+https://biomedicalhacks.com/2020-05-19/biopython-basic-2/
+Biopython入門 - 中編 【NCBIデータベースやBlastへのアクセス】
+
+BiopythonからNCBI Entrezデータベースへのアクセス
+BiopythonからNCBIにアクセスする時には、まずEntrezユーザーガイドラインをよく読みましょう。
+
+特に大事なところを2点抜粋して意訳すると、
+
+Entrezユーザーガイドラインの特に重要な点
+アクセスの頻度が一秒に三回以下になるようにする
+自分のメールアドレスを指定する (問題があったときにNCBIから連絡ができるように)
+
+https://www.ncbi.nlm.nih.gov/books/NBK25497/#chapter2.Usage_Guidelines_and_Requiremen
+After that date, any site (IP address) posting more than 3 requests per second to the E-utilities without an API key will receive an error message.
+
+
+https://www.ncbi.nlm.nih.gov/home/tools/
+Software Tools - Download - NCBI
+
+----------
+## 
+
+https://www.ncbi.nlm.nih.gov/books/NBK179288/
+Entrez Direct: E-utilities on the Unix Command Line - Entrez Programming Utilities Help - NCBI Bookshelf
+
+
+2:47 PM · Jul 15, 2023
+https://twitter.com/Tyu_Shi/status/1680091711555670021
+Hiroshi Mori on Twitter: "Entrez Directによるesearchやefetch使ったコマンドラインでのNCBIのデータ検索とメタデータ取得が非常に便利。慣れるとWebブラウザでNCBIにアクセスしてデータ取得する操作は不要になるレベル。" / X
+
+5:28 PM · Jun 11, 2018
+https://twitter.com/yayamamo/status/1006090787740835842
+山本 泰智 (Y. Yamamoto) on Twitter: "PubMedやGeneなど、NCBIの提供する豊富なウェブサービスをUNIXターミナルから利活用できるツール群Entrez Directの解説。パイプラインを用いたUNIXらしい処理が可能で有用性が高いと思います。 https://t.co/6CdOSsqPeL" / X
+
+
+----------
+## E-utilities
+The Entrez Programming Utilities (E-utilities)
+
+- [Entrez Programming Utilities Help - NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK25501/)
+  - [Entrez Direct: E-utilities on the UNIX Command Line - Entrez Programming Utilities Help - NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK179288/)
+  - [The E-utilities In-Depth: Parameters, Syntax and More - Entrez Programming Utilities Help - NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK25499/)
+    - [Table 1 – Valid values of &retmode and &rettype for EFetch (null = empty string)](https://www.ncbi.nlm.nih.gov/books/NBK25499/table/chapter4.T._valid_values_of__retmode_and/?report=objectonly)
+
+| Record Type | &rettype | &retmode |
+|:-----------:|:--------:|:--------:|
+| Additional option for db = nuccore |
+| db = nuccore, nucest, nucgss, protein or popset |
+| FASTA | fasta | text |
+| GenBank flat file with full sequence (contigs) | gbwithparts | text |
+| CDS nucleotide FASTA | fasta_cds_na | text |
+| CDS protein FASTA | fasta_cds_aa | text |
+| db = sequences |
+| FASTA | fasta | text |
+
+https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#e-utilities
+
+https://sites.google.com/site/scriptofbioinformatics/r-tong-ji-guan-xi/rutiles-e-utilities-r
+rutiles / E-utilities（R） - script of bioinformatics
+E-utilitiesはNCBIが提供するAPIのサービス。
+rutilesはRでE-utilitesを使うためのパッケージ。
+
+2016年07月14日
+https://qiita.com/joemphilips/items/767c67524e4b7e328834
+Biopython を利用したNCBIのEntrez データベースへのアクセス
+
+2015年12月04日
+http://itnika.seesaa.net/article/430657489.html
+PubMed：E-utirities API hack 2
+
+2015年11月29日
+http://itnika.seesaa.net/article/430447225.html
+PubMed検索方法：Web Apiの勉強中
+
+http://sy41211.hatenablog.com/entry/2015/11/28/085754
+NCBIの "E-utilities" が結構便利な件 - バイオインフォマティクス初心者の日常
+
+2015年01月16日
+https://allabout.co.jp/gm/gc/450789/2/
+Ruby／Rubyの基礎知識
+APIからJSONデータを取得する(2ページ目)
+
+----------
+## dbcls
+DBCLS ｜ ライフサイエンス統合データベースセンター
+
+https://dbcls.rois.ac.jp/services.html
+
+DBCLS SRA
+公共データベースに登録されたNGSデータについて、さまざまな統計情報から閲覧、比較、データ取得ができる目次サイトです。
+
+### DBCLS_SRA
+
+https://sra.dbcls.jp/
+
+https://dbcls.rois.ac.jp/services.html#DBCLS_SRA
+
+https://biosciencedbc.jp/event/symposium/togo2020/poster/019.html
+【19】公共NGSデータとその関連データの検索（2020年版）：SRA/BioProject/BioSample - NBDC
+https://biosciencedbc.jp/event/symposium/togo2020/files/poster19_2020_nakazato.pdf
+
+https://doi.org/10.7875/togotv.2014.097
+DBCLS SRAを使ってNGSデータを検索する | TogoTV
+
+### colil
+
+http://colil.dbcls.jp/browse/papers/
+Colil: Comments on literature in literature
+
+http://colil.dbcls.jp/portal/help_ja.html
+Colil (コリル): ヘルプ
+
+2020.01.14
+https://doi.org/10.7875/togotv.2020.014
+DBCLS で提供している文献情報サービスほか @ AJACS世田谷 | TogoTV 
+52:20
+
+https://dbcls.rois.ac.jp/ja/2016/11/25/post1.html
+AllieとColilの使い方に関する総説が日本生物工学会誌に掲載されました | DBCLS
+当センターの 山本 泰智 特任准教授による総説「AllieとColilの使い方ーPubMed/MEDLINEから効率よく情報を抽出する日本発のサービス」が日本生物工学会誌に掲載されました。連載「バイオインフォマティクスを使い尽くす秘訣教えます！」の第2回目です。 総説はオープンアクセスで、下記URLからご覧いただけます。 https://www.sbj.or.jp/wp-content/uploads/file/sbj/9411/9411_bioinformatics.pdf
+
+2015.02.07
+https://doi.org/10.7875/togotv.2015.015
+Colilを使って論文の引用情報を検索する | TogoTV
+03:26
+
+https://pubmed.ncbi.nlm.nih.gov/26500753/
+J Biomed Semantics
+. 2015 Oct 19;6:38. doi: 10.1186/s13326-015-0037-x. eCollection 2015.
+Colil: a database and search service for citation contexts in the life sciences domain
+Toyofumi Fujiwara 1, Yasunori Yamamoto 2
+https://jbiomedsem.biomedcentral.com/articles/10.1186/s13326-015-0037-x
+https://www.ncbi.nlm.nih.gov/labs/pmc/articles/PMC4617487/
+
+What do other papers say about a paper?
+For example,
+
+https://pubmed.ncbi.nlm.nih.gov/27915108/
+is cited by the following papers.
+http://colil.dbcls.jp/browse/papers/27915108/1/100/year
+
+https://pubmed.ncbi.nlm.nih.gov/30085063/
+is cited by the following papers.
+http://colil.dbcls.jp/browse/papers/30085063/1/100/year
+
+
+## togo
+
+### togows
+
+- https://doi.org/10.7875/togotv.2011.058 2011-04-25 TogoWS RESTサービスを使い倒す 2011
+  - http://togows.dbcls.jp/help/
+  - http://togows.dbcls.jp/site/ja/rest.html
+```
+# http://togows.dbcls.jp/entry/nucleotide/NC_003131
+ACCESSION=NC_003131
+curl http://togows.dbcls.jp/entry/nucleotide/"${ACCESSION}" > "${ACCESSION}".gbk
+```
+
+
+
+### togotv
+
+https://github.com/haruosuz/ksbn/blob/master/2018/README.2018.4.md#2018-11-30
+
+https://twitter.com/hashtag/togotv18
+https://www.medsi.co.jp/books/products/detail.php?product_id=3665
+生命科学データベース・ウェブツール - 図解と動画で使い方がわかる！　研究がはかどる定番18選 -
+```
+Part 3 生命科学系データ解析の現場で，押さえておきたい「鉄板」ツール	
+10 章 MEGAで系統樹を作成する	
+　　　MEGA で配列のアラインメントや系統解析を行う
+　　　DoMosaics を使ってドメイン構造と系統樹を可視化する
+　　　MAFFT・RAxML・FigTree を組み合わせて分子系統解析を行う
+```
+
+[統合TV | 生命科学系DB・ツール使い倒し系チャンネル](https://togotv.dbcls.jp/)
+- https://doi.org/10.7875/togotv.2012.073
+2012-08-30 PubMedで論文を検索する
+- https://doi.org/10.7875/togotv.2011.076
+2011-07-05 MEGAを使って配列アラインメントおよび系統解析をする
+- https://doi.org/10.7875/togotv.2017.077
+2017-08-04 DoMosaicsを使ってドメイン構造と系統樹を可視化する
+- https://doi.org/10.7875/togotv.2018.093
+2018-04-03 MAFFT・RAxML・FigTreeを組み合わせて分子系統解析を行う
+
+```
+curl https://dbarchive.biosciencedbc.jp/data/togotv/movie/sample/180403_test-fasta.txt > test.fasta
+
+mafft test.fasta > mafft_test.fasta
+
+raxmlHPC-SSE3 -m GTRGAMMA -p 12345 -s mafft_test.fasta -n test
+```
+
+----------
+
+## updates
+
+### 2019
+
+### Kablammo
+http://kablammo.wasmuthlab.org/
+
+https://twitter.com/yokuyama/status/1122298158480904192
+奥山雄大（ver.関西） on Twitter: "blastの結果を可視化するウェブツールKablamm うわーこれすごいわ。感動する。上がコチャルメルソウで下がチャルメルソウ。ゲノムの構造がひと目で分かる。そして、核心に迫るためにはチャルメルソウのゲノムはもう少し伸ばさないとあかんことがわかった。 https://t.co/vFCAVCuwxQ… https://t.co/dPCSUMdU75"
+8:35 PM - 27 Apr 2019
+http://kazumaxneo.hatenablog.com/entry/2019/04/10/073000
+blast結果を可視化するwebツール Kablammo - macでインフォマティクス
+
+https://twitter.com/Acinetobazza/status/1107892222257696768
+Dr Mark Schultz on Twitter: "I have written an introductory tutorial on using edirect command line tools to query NCBI's Entrez database for downloading read-sets and genbank assemblies https://t.co/t7Yv0ZirCp"
+2:31 AM - 19 Mar 2019
+https://github.com/schultzm/entrez_direct_tut/blob/master/README.md
+entrez_direct_tut/README.md at master · schultzm/entrez_direct_tut
+
+4:39 PM - 19 Mar 2019
+https://twitter.com/RodrigoATCG/status/1108105740663836675
+Rodrigo Martinez on Twitter: "For way too long we have been using the 'cost of sequencing' graph (left) to tell stories about what may come in the world of DNA. Here's a newer version that hopefully triggers conversations about what's to come in consumer genomics - the emerging #socialgenome Thoughts?… https://t.co/o7Tzos6bGa"
+March 6, 2019
+https://www.veritasgenetics.com/next-genomics-revolution-era-social-genome
+Blog | Next in the Genomics Revolution: The Era of the Social Genome | Veritas Genetics
+
+### 2018
+
+https://github.com/hiromasaono/training/tree/master/180612_KeioSFC
+今日から使える便利な生命科学系公共データベース・ウェブツール
+小野 浩雅
+2018年6月12日(火)
+
+https://twitter.com/ecSeq/status/982476057805754368
+ecSeq Bioinformatics on Twitter: "NGS Code Snippet: Convert FASTQ to FASTA on the command line https://t.co/xsdzmU52LS"
+12:32 AM - 7 Apr 2018
+https://www.ecseq.com/support/ngs-snippets/convert-fastq-to-fasta-on-the-command-line
+```
+paste - - - - < file.fq | cut -f 1,2 | sed 's/^@/>/' | tr "\t" "\n" > file.fa
+```
+
+2018-08-04
+https://qiita.com/antiplastics/items/add3f8438cbe6b2b594e
+どの生物種までGO解析ができるか
+
+### 2017
+
+
+
+----------
 ## hmmer
 
 http://hmmer.org/
@@ -443,55 +691,6 @@ https://warwick.ac.uk/fac/sci/moac/people/students/peter_cock/python/genbank2fas
 Converting GenBank files to FASTA format with Biopython
 
 ----------
-
-## updates
-
-### 2019
-
-### Kablammo
-http://kablammo.wasmuthlab.org/
-
-https://twitter.com/yokuyama/status/1122298158480904192
-奥山雄大（ver.関西） on Twitter: "blastの結果を可視化するウェブツールKablamm うわーこれすごいわ。感動する。上がコチャルメルソウで下がチャルメルソウ。ゲノムの構造がひと目で分かる。そして、核心に迫るためにはチャルメルソウのゲノムはもう少し伸ばさないとあかんことがわかった。 https://t.co/vFCAVCuwxQ… https://t.co/dPCSUMdU75"
-8:35 PM - 27 Apr 2019
-http://kazumaxneo.hatenablog.com/entry/2019/04/10/073000
-blast結果を可視化するwebツール Kablammo - macでインフォマティクス
-
-https://twitter.com/Acinetobazza/status/1107892222257696768
-Dr Mark Schultz on Twitter: "I have written an introductory tutorial on using edirect command line tools to query NCBI's Entrez database for downloading read-sets and genbank assemblies https://t.co/t7Yv0ZirCp"
-2:31 AM - 19 Mar 2019
-https://github.com/schultzm/entrez_direct_tut/blob/master/README.md
-entrez_direct_tut/README.md at master · schultzm/entrez_direct_tut
-
-4:39 PM - 19 Mar 2019
-https://twitter.com/RodrigoATCG/status/1108105740663836675
-Rodrigo Martinez on Twitter: "For way too long we have been using the 'cost of sequencing' graph (left) to tell stories about what may come in the world of DNA. Here's a newer version that hopefully triggers conversations about what's to come in consumer genomics - the emerging #socialgenome Thoughts?… https://t.co/o7Tzos6bGa"
-March 6, 2019
-https://www.veritasgenetics.com/next-genomics-revolution-era-social-genome
-Blog | Next in the Genomics Revolution: The Era of the Social Genome | Veritas Genetics
-
-### 2018
-
-https://github.com/hiromasaono/training/tree/master/180612_KeioSFC
-今日から使える便利な生命科学系公共データベース・ウェブツール
-小野 浩雅
-2018年6月12日(火)
-
-https://twitter.com/ecSeq/status/982476057805754368
-ecSeq Bioinformatics on Twitter: "NGS Code Snippet: Convert FASTQ to FASTA on the command line https://t.co/xsdzmU52LS"
-12:32 AM - 7 Apr 2018
-https://www.ecseq.com/support/ngs-snippets/convert-fastq-to-fasta-on-the-command-line
-```
-paste - - - - < file.fq | cut -f 1,2 | sed 's/^@/>/' | tr "\t" "\n" > file.fa
-```
-
-2018-08-04
-https://qiita.com/antiplastics/items/add3f8438cbe6b2b594e
-どの生物種までGO解析ができるか
-
-### 2017
-
-----------
 ## rebase
 
 http://rebase.neb.com/rebase/rebase.html
@@ -678,184 +877,6 @@ p.86
 断片のサイズはウィンドウサイズ（window size）、それをずらす大きさはステップサイズ（step size）と呼ばれる。
 
 
-----------
-
-
-https://biomedicalhacks.com/2020-05-19/biopython-basic-2/
-Biopython入門 - 中編 【NCBIデータベースやBlastへのアクセス】
-
-BiopythonからNCBI Entrezデータベースへのアクセス
-BiopythonからNCBIにアクセスする時には、まずEntrezユーザーガイドラインをよく読みましょう。
-
-特に大事なところを2点抜粋して意訳すると、
-
-Entrezユーザーガイドラインの特に重要な点
-アクセスの頻度が一秒に三回以下になるようにする
-自分のメールアドレスを指定する (問題があったときにNCBIから連絡ができるように)
-
-https://www.ncbi.nlm.nih.gov/books/NBK25497/#chapter2.Usage_Guidelines_and_Requiremen
-After that date, any site (IP address) posting more than 3 requests per second to the E-utilities without an API key will receive an error message.
-
-
-
-----------
-## E-utilities
-The Entrez Programming Utilities (E-utilities)
-
-- [Entrez Programming Utilities Help - NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK25501/)
-  - [Entrez Direct: E-utilities on the UNIX Command Line - Entrez Programming Utilities Help - NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK179288/)
-  - [The E-utilities In-Depth: Parameters, Syntax and More - Entrez Programming Utilities Help - NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK25499/)
-    - [Table 1 – Valid values of &retmode and &rettype for EFetch (null = empty string)](https://www.ncbi.nlm.nih.gov/books/NBK25499/table/chapter4.T._valid_values_of__retmode_and/?report=objectonly)
-
-| Record Type | &rettype | &retmode |
-|:-----------:|:--------:|:--------:|
-| Additional option for db = nuccore |
-| db = nuccore, nucest, nucgss, protein or popset |
-| FASTA | fasta | text |
-| GenBank flat file with full sequence (contigs) | gbwithparts | text |
-| CDS nucleotide FASTA | fasta_cds_na | text |
-| CDS protein FASTA | fasta_cds_aa | text |
-| db = sequences |
-| FASTA | fasta | text |
-
-https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#e-utilities
-
-https://sites.google.com/site/scriptofbioinformatics/r-tong-ji-guan-xi/rutiles-e-utilities-r
-rutiles / E-utilities（R） - script of bioinformatics
-E-utilitiesはNCBIが提供するAPIのサービス。
-rutilesはRでE-utilitesを使うためのパッケージ。
-
-2016年07月14日
-https://qiita.com/joemphilips/items/767c67524e4b7e328834
-Biopython を利用したNCBIのEntrez データベースへのアクセス
-
-2015年12月04日
-http://itnika.seesaa.net/article/430657489.html
-PubMed：E-utirities API hack 2
-
-2015年11月29日
-http://itnika.seesaa.net/article/430447225.html
-PubMed検索方法：Web Apiの勉強中
-
-http://sy41211.hatenablog.com/entry/2015/11/28/085754
-NCBIの "E-utilities" が結構便利な件 - バイオインフォマティクス初心者の日常
-
-2015年01月16日
-https://allabout.co.jp/gm/gc/450789/2/
-Ruby／Rubyの基礎知識
-APIからJSONデータを取得する(2ページ目)
-
-----------
-## dbcls
-DBCLS ｜ ライフサイエンス統合データベースセンター
-
-https://dbcls.rois.ac.jp/services.html
-
-DBCLS SRA
-公共データベースに登録されたNGSデータについて、さまざまな統計情報から閲覧、比較、データ取得ができる目次サイトです。
-
-### DBCLS_SRA
-
-https://sra.dbcls.jp/
-
-https://dbcls.rois.ac.jp/services.html#DBCLS_SRA
-
-https://biosciencedbc.jp/event/symposium/togo2020/poster/019.html
-【19】公共NGSデータとその関連データの検索（2020年版）：SRA/BioProject/BioSample - NBDC
-https://biosciencedbc.jp/event/symposium/togo2020/files/poster19_2020_nakazato.pdf
-
-https://doi.org/10.7875/togotv.2014.097
-DBCLS SRAを使ってNGSデータを検索する | TogoTV
-
-### colil
-
-http://colil.dbcls.jp/browse/papers/
-Colil: Comments on literature in literature
-
-http://colil.dbcls.jp/portal/help_ja.html
-Colil (コリル): ヘルプ
-
-2020.01.14
-https://doi.org/10.7875/togotv.2020.014
-DBCLS で提供している文献情報サービスほか @ AJACS世田谷 | TogoTV 
-52:20
-
-https://dbcls.rois.ac.jp/ja/2016/11/25/post1.html
-AllieとColilの使い方に関する総説が日本生物工学会誌に掲載されました | DBCLS
-当センターの 山本 泰智 特任准教授による総説「AllieとColilの使い方ーPubMed/MEDLINEから効率よく情報を抽出する日本発のサービス」が日本生物工学会誌に掲載されました。連載「バイオインフォマティクスを使い尽くす秘訣教えます！」の第2回目です。 総説はオープンアクセスで、下記URLからご覧いただけます。 https://www.sbj.or.jp/wp-content/uploads/file/sbj/9411/9411_bioinformatics.pdf
-
-2015.02.07
-https://doi.org/10.7875/togotv.2015.015
-Colilを使って論文の引用情報を検索する | TogoTV
-03:26
-
-https://pubmed.ncbi.nlm.nih.gov/26500753/
-J Biomed Semantics
-. 2015 Oct 19;6:38. doi: 10.1186/s13326-015-0037-x. eCollection 2015.
-Colil: a database and search service for citation contexts in the life sciences domain
-Toyofumi Fujiwara 1, Yasunori Yamamoto 2
-https://jbiomedsem.biomedcentral.com/articles/10.1186/s13326-015-0037-x
-https://www.ncbi.nlm.nih.gov/labs/pmc/articles/PMC4617487/
-
-What do other papers say about a paper?
-For example,
-
-https://pubmed.ncbi.nlm.nih.gov/27915108/
-is cited by the following papers.
-http://colil.dbcls.jp/browse/papers/27915108/1/100/year
-
-https://pubmed.ncbi.nlm.nih.gov/30085063/
-is cited by the following papers.
-http://colil.dbcls.jp/browse/papers/30085063/1/100/year
-
-
-## togo
-
-### togows
-
-- https://doi.org/10.7875/togotv.2011.058 2011-04-25 TogoWS RESTサービスを使い倒す 2011
-  - http://togows.dbcls.jp/help/
-  - http://togows.dbcls.jp/site/ja/rest.html
-```
-# http://togows.dbcls.jp/entry/nucleotide/NC_003131
-ACCESSION=NC_003131
-curl http://togows.dbcls.jp/entry/nucleotide/"${ACCESSION}" > "${ACCESSION}".gbk
-```
-
-
-
-### togotv
-
-https://github.com/haruosuz/ksbn/blob/master/2018/README.2018.4.md#2018-11-30
-
-https://twitter.com/hashtag/togotv18
-https://www.medsi.co.jp/books/products/detail.php?product_id=3665
-生命科学データベース・ウェブツール - 図解と動画で使い方がわかる！　研究がはかどる定番18選 -
-```
-Part 3 生命科学系データ解析の現場で，押さえておきたい「鉄板」ツール	
-10 章 MEGAで系統樹を作成する	
-　　　MEGA で配列のアラインメントや系統解析を行う
-　　　DoMosaics を使ってドメイン構造と系統樹を可視化する
-　　　MAFFT・RAxML・FigTree を組み合わせて分子系統解析を行う
-```
-
-[統合TV | 生命科学系DB・ツール使い倒し系チャンネル](https://togotv.dbcls.jp/)
-- https://doi.org/10.7875/togotv.2012.073
-2012-08-30 PubMedで論文を検索する
-- https://doi.org/10.7875/togotv.2011.076
-2011-07-05 MEGAを使って配列アラインメントおよび系統解析をする
-- https://doi.org/10.7875/togotv.2017.077
-2017-08-04 DoMosaicsを使ってドメイン構造と系統樹を可視化する
-- https://doi.org/10.7875/togotv.2018.093
-2018-04-03 MAFFT・RAxML・FigTreeを組み合わせて分子系統解析を行う
-
-```
-curl https://dbarchive.biosciencedbc.jp/data/togotv/movie/sample/180403_test-fasta.txt > test.fasta
-
-mafft test.fasta > mafft_test.fasta
-
-raxmlHPC-SSE3 -m GTRGAMMA -p 12345 -s mafft_test.fasta -n test
-```
 
 ----------
 ## video
