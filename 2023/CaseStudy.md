@@ -1,9 +1,54 @@
 # Case Study
 
 ## Table of Contents
+
+- [2023-08-21](#2023-08-21) 福井県立大学 | 分子進化学特論
 - [2023-07-10](#2023-07-10) 東京大学 | 14.農学生命情報科学特論IV
 - [references](#references)
 - [](#)
+
+----------
+## 2023-08-22
+
+----------
+## 2023-08-21
+
+福井県立大学小浜キャンパス | 集中講義「分子進化学特論」
+
+8月21日(月)に自己紹介（1人あたり最大5分）。この授業で解析したい対象（タンパク質、遺伝子、ゲノム、生物など）を述べる。  
+
+### preparation
+**準備**
+
+- R / RStudio の環境構築を行う。
+  - Posit Cloud の無料アカウントを作成する。または、
+  - パソコンに R と RStudio をインストールする。
+
+参考: 
+https://github.com/haruosuz/DS4GD/blob/master/2023-04/README.md#r-rstudio
+
+### assignment
+**課題**
+
+次のURLからRスクリプトをダウンロードする。  
+Download the R script from the following URL.  
+https://github.com/haruosuz/DS4GD/raw/master/2023-04/scripts_ds4gd.zip
+
+圧縮ファイル(zip)を解凍・展開し、ディレクトリに移動する。  
+unzip the compressed file and change to the directory.  
+```
+unzip scripts_ds4gd.zip
+cd scripts_ds4gd/
+```
+
+[RStudioでRスクリプトを開く。  
+Open an R script in RStudio.](https://r4ds.had.co.nz/workflow-scripts.html)  
+
+["Compile Report"コマンドを使用して、HTML形式でレポートを作成する。  
+Create a report in HTML format using the "Compile Report" command.](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#compile-report)  
+
+HTML形式のファイル（.html）を課題として提出する。  
+Submit the HTML file (.html) as your assignment.  
 
 ----------
 ## 2023-07-10
@@ -31,10 +76,6 @@ https://github.com/haruosuz/bioinfo/raw/master/2023/my_project_u-tokyo.zip
 
 圧縮ファイル(zip)を解凍・展開し、ディレクトリに移動する。  
 unzip the compressed file and change to the directory.  
-```
-unzip scripts_ds4gd.zip
-cd scripts_ds4gd/
-```
 
 [RStudioでRスクリプトを開く。  
 Open an R script in RStudio.](https://r4ds.had.co.nz/workflow-scripts.html)
