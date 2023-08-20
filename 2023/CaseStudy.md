@@ -3,8 +3,8 @@
 ## Table of Contents
 
 - [2023-08-21](#2023-08-21) 福井県立大学 | 分子進化学特論
-- [2023-07-10](#2023-07-10) 東京大学 | 14.農学生命情報科学特論IV
 - [references](#references)
+- [2023-07-10](#2023-07-10) 東京大学 | 14.農学生命情報科学特論IV
 - [](#)
 
 ----------
@@ -51,6 +51,21 @@ HTML形式のファイル（.html）を課題として提出する。
 Submit the HTML file (.html) as your assignment.  
 
 ----------
+## references
+
+- 慶應義塾大学 湘南藤沢キャンパス（SFC）
+  - 2023春 生命動態のデータサイエンス https://github.com/haruosuz/DS4GD/tree/master/2023-04
+  - 2023春 バイオインフォマティクスのデータサイエンス https://github.com/haruosuz/introBI/tree/master/2023-04
+  - 2022秋 バイオインフォマティクスのデータサイエンス https://github.com/haruosuz/introBI/blob/master/2022/README.md#r-language
+- [バイオインフォマティクスデータスキル ――オープンソースツールを使ったロバストで再現性のある研究](https://www.oreilly.co.jp/books/9784873118635/)
+- 福井県立大学小浜キャンパス | 集中講義「分子進化学特論」
+  - https://github.com/haruosuz/bioinfo/blob/master/2022/CaseStudy.md#2022-08-22
+- 東京大学 | 14.農学生命情報科学特論IV
+  - https://github.com/haruosuz/bioinfo/blob/master/2022/CaseStudy.md#2022-06-16
+  - https://github.com/haruosuz/bioinfo/blob/master/2021/CaseStudy.md#2021-10-25
+  - https://github.com/haruosuz/bioinfo/blob/master/2020/CaseStudy.md#2020-07-06
+
+----------
 ## 2023-07-10
 
 [14.農学生命情報科学特論IV | アグリバイオインフォマティクス教育研究ユニット](http://www.iu.a.u-tokyo.ac.jp/lectures/AG14/)
@@ -87,18 +102,4 @@ HTML形式のファイル（.html）を課題として提出する。
 Submit the HTML file (.html) as your assignment.
 
 ----------
-## references
-
-- 東京大学 | 14.農学生命情報科学特論IV
-  - https://github.com/haruosuz/bioinfo/blob/master/2022/CaseStudy.md#2022-06-16
-  - https://github.com/haruosuz/bioinfo/blob/master/2021/CaseStudy.md#2021-10-25
-  - https://github.com/haruosuz/bioinfo/blob/master/2020/CaseStudy.md#2020-07-06
-- 慶應義塾大学 湘南藤沢キャンパス（SFC）
-  - 2023春 生命動態のデータサイエンス https://github.com/haruosuz/DS4GD/tree/master/2023-04
-  - 2023春 バイオインフォマティクスのデータサイエンス https://github.com/haruosuz/introBI/tree/master/2023-04
-  - 2022秋 バイオインフォマティクスのデータサイエンス https://github.com/haruosuz/introBI/blob/master/2022/README.md#r-language
-- [バイオインフォマティクスデータスキル ――オープンソースツールを使ったロバストで再現性のある研究](https://www.oreilly.co.jp/books/9784873118635/)
-
-----------
-
 
