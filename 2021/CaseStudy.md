@@ -2,13 +2,14 @@
 **ケーススタディ**
 
 ## Table of Contents
-- [2021-10-25](#2021-10-25) 東京大学 | 14.農学生命情報科学特論IV
-- [2021-08-23](#2021-08-23) 石川県立大学
 - [NCBI Taxonomy](#ncbi-taxonomy)
+  - [ncbi_taxonomy_tree](#ncbi_taxonomy_tree)
   - [amr](#amr)
   - [taxonomizr](#taxonomizr)
   - [taxonkit](#taxonkit)
   - [togows](#togows)
+- [2021-10-25](#2021-10-25) 東京大学 | 14.農学生命情報科学特論IV
+- [2021-08-23](#2021-08-23) 石川県立大学
 
 ----------
 ## references
@@ -21,32 +22,8 @@
 - https://github.com/haruosuz/DS4GD/tree/master/2021
 
 ----------
-## 2021-10-25
-
-[14.農学生命情報科学特論IV | アグリバイオインフォマティクス教育研究ユニット](http://www.iu.a.u-tokyo.ac.jp/lectures/AG14/)
-
-### assignment
-**課題**
-
-次のURLから（Rスクリプトを含む）プロジェクト・ディレクトリをダウンロードして下さい。  
-Please download the project directory (including R scripts) from the following URL.  
-https://github.com/haruosuz/bioinfo/raw/master/2021/my_project_u-tokyo.zip
-
-RStudioでRスクリプトを開く。**Compile Report**コマンドでPDFまたはHTML形式のレポートを作成する。そのレポートを課題として提出する。  
-Open an R script in RStudio. Create report in PDF or HTML format using the **Compile Report** command.
-Submit the report as your assignment.
-
-[**Compile Report**](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#compile-report)
-
-----------
-## 2021-08-23
-
-石川県立大学
-
-https://github.com/haruosuz/bioinfo/raw/master/2021/scripts_ishikawa-pu.zip
-
-----------
-## [NCBI Taxonomy](https://www.ncbi.nlm.nih.gov/taxonomy) 
+## NCBI Taxonomy
+https://www.ncbi.nlm.nih.gov/taxonomy
 
 https://integbio.jp/dbcatalog/record/nbdc00700
 Taxonomy - NCBI - Integbio データベースカタログ
@@ -55,6 +32,47 @@ NCBI Entrezデータベースに少なくとも1件以上登録されている�
 2017.09.23
 https://doi.org/10.7875/togotv.2017.092
 NCBI Taxonomy Browserを使って、生物分類と配列情報を関連させて調べる 2017 | TogoTV
+
+https://www.ddbj.nig.ac.jp/services/txsearch-e.html
+TXSearch is a NCBI Taxonomy retrieval system provided by DDBJ.
+https://www.ddbj.nig.ac.jp/services/txsearch.html
+TXSearch は、DDBJ が提供する NCBI Taxonomy の検索システムです。
+
+----------
+### ncbi_taxonomy_tree
+
+http://bioinfo.icb.ufmg.br/taxallnomy/
+https://pubmed.ncbi.nlm.nih.gov/34325658/
+BMC Bioinformatics
+. 2021 Jul 29;22(1):388. doi: 10.1186/s12859-021-04304-3.
+Taxallnomy: an extension of NCBI Taxonomy that produces a hierarchically complete taxonomic tree
+Tetsu Sakamoto 1 2, J Miguel Ortega 3
+https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-04304-3
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8323199/
+
+
+7.3 years ago
+https://support.bioconductor.org/p/81998/
+making tree from NCBI taxonomy data for ggtree
+
+I found a python script, https://github.com/bendmorris/taxiphy, that can read NCBI taxonomy and generate tree file in newick format. The output file can be parsed in R and visualized using ggtree.
+
+For future visitors, consider using ETE's NCBI Taxonomy function to write the tree with your desired nodes and then later draw/manipulate it using ggtree.
+
+http://etetoolkit.org/docs/latest/tutorial/tutorial_ncbitaxonomy.html
+Dealing with the NCBI Taxonomy database — ETE Toolkit - analysis and visualization of trees
+
+http://etetoolkit.org/docs/2.3/tutorial/tutorial_ncbitaxonomy.html
+Dealing with the NCBI Taxonomy database — A Python Environment for (phylogenetic) Tree Exploration
+
+
+9.2 years ago
+https://www.biostars.org/p/103447/
+Phylogentic tree based on Taxon id
+PhyloT does this in one click for a set of taxon names or taxon ids.
+
+https://phylot.biobyte.de/
+phyloT : a phylogenetic tree generator
 
 ----------
 ### amr
@@ -196,12 +214,29 @@ mytaxgrepl(pattern="Bacteria", x=mytax, ignore.case=FALSE)grepl(pattern="Prote
 ```
 
 ----------
-## 
+## 2021-10-25
 
+[14.農学生命情報科学特論IV | アグリバイオインフォマティクス教育研究ユニット](http://www.iu.a.u-tokyo.ac.jp/lectures/AG14/)
+
+### assignment
+**課題**
+
+次のURLから（Rスクリプトを含む）プロジェクト・ディレクトリをダウンロードして下さい。  
+Please download the project directory (including R scripts) from the following URL.  
+https://github.com/haruosuz/bioinfo/raw/master/2021/my_project_u-tokyo.zip
+
+RStudioでRスクリプトを開く。**Compile Report**コマンドでPDFまたはHTML形式のレポートを作成する。そのレポートを課題として提出する。  
+Open an R script in RStudio. Create report in PDF or HTML format using the **Compile Report** command.
+Submit the report as your assignment.
+
+[**Compile Report**](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#compile-report)
 
 ----------
+## 2021-08-23
 
+石川県立大学
 
+https://github.com/haruosuz/bioinfo/raw/master/2021/scripts_ishikawa-pu.zip
 
-
+----------
 
