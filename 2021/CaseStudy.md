@@ -73,6 +73,10 @@ PhyloT does this in one click for a set of taxon names or taxon ids.
 
 https://phylot.biobyte.de/
 phyloT : a phylogenetic tree generator
+https://phylot.biobyte.de/treeGenerator.cgi
+phyloT: Tree generated
+User account required
+Trees created from more than 10 elements or containing sub-trees require either an active phyloT subscription, institutional access or a tree generation token. Simply create a phyloT account to view all available access options, which include using our sponsors' offers to get tree generation tokens.
 
 ----------
 ### amr
