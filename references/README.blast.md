@@ -23,8 +23,25 @@ Last Update: 2020-08
 - [bonohu](#bonohu)
 - [](#)
 
+
+----------
+
+https://www.ncbi.nlm.nih.gov/books/NBK52640/
+Standalone BLAST Setup for Unix - BLAST® Help - NCBI Bookshelf
+Created: May 31, 2010; Last Update: August 31, 2020.
+
+
+
+
+
+
+
+
+
+
 ----------
 ## unclassified
+
 
 https://www.uniprot.org/help/sequence-searches
 Sequence similarity searches
@@ -105,17 +122,12 @@ http://bonohu.jp/blog/genetablebylocalblast.html
 localBLASTで遺伝子対応表作成
 Written by bonohu in misc on 木 25 7月 2013.
 
-
-
 ----------
 
 2022 年 7 月 8 日　改訂
 井上 潤
 http://www.fish-evol.org/BLASTplus_JI.html
 BLAST+
-
-
-
 
 
 https://riptutorial.com/ja/bioinformatics/topic/5371/blast
@@ -128,6 +140,102 @@ ubuntuに爆風をインストールする
 
 
 
+----------
+## 
+DELTA-BLAST
+
+https://www.ncbi.nlm.nih.gov/books/NBK569839/
+BLAST+ features - BLAST® Command Line Applications User Manual - NCBI Bookshelf
+
+DELTA-BLAST: A tool for sensitive protein sequence search
+DELTA-BLAST uses RPS-BLAST to search for conserved domains matching to a query, constructs a PSSM from the sequences associated with the matching domains, and searches a sequence database. Its sensitivity is comparable to PSI-BLAST and does not require several iterations of searches against a large sequence database. See the cookbook for more information.
+
+https://www.ncbi.nlm.nih.gov/books/NBK279685/
+Performing a DELTA-BLAST search - BLAST® Command Line Applications User Manual - NCBI Bookshelf
+
+----------
+## psiblast
+PSI-BLAST
+
+
+https://biomedicalhacks.com/2020-08-04/psi-blast/
+PSI-BLASTでホモログ配列を検索する【PSSMやProfileの計算法も】
+
+https://doi.org/10.7875/togotv.2017.047
+PSI-BLASTを使って、タンパク質の遠い系統的関連性を発見する 2017 | TogoTV
+
+https://doi.org/10.7875/togotv.2011.066
+PSI-BLASTで類縁の配列を調べ倒す 2011
+
+
+https://www.ncbi.nlm.nih.gov/books/NBK2590/
+PSI-BLAST Tutorial - Comparative Genomics - NCBI Bookshelf
+
+
+https://rothlab.ucdavis.edu/genhelp/psiblast.html
+
+https://bip.weizmann.ac.il/education/materials/gcg/psiblast.html
+
+% psiblast -INfile2=PIR,SWPLUS
+
+% psiblast -INfile1=hsp70.msf{*}
+
+% psiblast -in1=calm.msf{calmhuman} -jump=calm.msf{*}
+
+% psiblast -INfile1=hsp70.msf{*} -JUMPstart=hsp70.msf{*}
+
+% psiblast -INfile1=hsp70.msf{s*} -JUMPstart=hsp70.msf{*}
+
+% psiblast -INfile1=hsp70.msf{s*} -JUMPstart=hsp70.msf{s*}
+
+
+https://www.ncbi.nlm.nih.gov/books/NBK279690/
+BLAST® Command Line Applications User Manual - NCBI Bookshelf
+
+Specifying a sequence as the multiple sequence alignment master in psiblast
+
+Ignoring the consensus sequence in the multiple sequence alignment in psiblast
+
+January 7, 2021.
+https://www.ncbi.nlm.nih.gov/books/NBK569863/
+Specifying a sequence as the multiple sequence alignment master in psiblast
+
+psiblast -in_msa align1 -db pataa -msa_master_idx 3 
+
+January 7, 2021.
+https://www.ncbi.nlm.nih.gov/books/NBK569852/
+Ignoring the consensus sequence in the multiple sequence alignment in psiblast
+
+psiblast -in_msa align1 -db pataa -ignore_msa_master 
+
+
+3.0 years ago by nataliagru1
+https://www.biostars.org/p/60306/#460646
+Multiple Psi-Blast Iterations From Command Line Using Remote Database
+
+psiblast -query /dir/queryfile.fa -db /dir/example_database -evalue 0.001 -num_iterations 0 -outfmt 0 -out /dir/exp1_outfmt0.blast -out_pssm /dir/example.pssm -save_pssm_after_last_round
+
+When you specify -num_iterations 0 PSI BLAST will iteratively search until convergence or until no new sequences are found.
+
+
+9.8 years ago
+https://www.biostars.org/p/85805/
+Psiblast Fasta Formatted Output
+
+./psiblast -query DsbA.fa -db Proteobacteria -num_iterations=6 -evalue=0.005 -out psiblastDsbAOut -out_pssm=PSSMDsbA
+
+
+https://pubmed.ncbi.nlm.nih.gov/19396961/
+Review FEMS Microbiol Rev
+. 2009 May;33(3):657-87. doi: 10.1111/j.1574-6976.2009.00168.x.
+The diversity of conjugative relaxases and its application in plasmid classification
+María Pilar Garcillán-Barcia 1, María Victoria Francia, Fernando de la Cruz
+https://academic.oup.com/femsre/article/33/3/657/591359
+
+Method used for relaxase analysis
+Relaxases are usually multidomain proteins, in which the relaxase domain always occupies the N-terminal position. Thus, PSI-BLAST (Altschul et al., 1997) searches (P=1e–4 unless otherwise stated) were carried out using the N-terminal 300 amino acids of prototype relaxases from each MOB family as was done previously by Francia et al. (2004).
+
+Figure 2 updates the phylogenetic tree of the family. The PSI-BLAST search was carried out using the threshold value P=1e–8 and converged in the fourth iteration. Using a lower threshold, such as the standard P=1e–4, retrieved transposases of the IS91 family (Garcillan-Barcia & de la Cruz, 2002). This fact is interesting in itself and suggests that MOBF relaxases and rolling-circle transposases are phylogenetically related, albeit remotely. 
 
 ----------
 ## similarity
@@ -182,61 +290,6 @@ https://www.ddbj.nig.ac.jp/blast-help.html
 BLAST ヘルプ
 SCORING MATRIX：アミノ酸置換表
 デフォルトでは BLOSUM62 が設定されます。
-
-----------
-## psiblast
-PSI-BLAST
-
-DELTA-BLAST
-
-https://biomedicalhacks.com/2020-08-04/psi-blast/
-PSI-BLASTでホモログ配列を検索する【PSSMやProfileの計算法も】
-
-https://doi.org/10.7875/togotv.2017.047
-PSI-BLASTを使って、タンパク質の遠い系統的関連性を発見する 2017 | TogoTV
-
-https://doi.org/10.7875/togotv.2011.066
-PSI-BLASTで類縁の配列を調べ倒す 2011
-
-https://www.ncbi.nlm.nih.gov/books/NBK279690/
-BLAST® Command Line Applications User Manual - NCBI Bookshelf
-
-Specifying a sequence as the multiple sequence alignment master in psiblast
-Ignoring the consensus sequence in the multiple sequence alignment in psiblast
-
-
-https://www.ncbi.nlm.nih.gov/books/NBK2590/
-PSI-BLAST Tutorial - Comparative Genomics - NCBI Bookshelf
-
-https://www.ncbi.nlm.nih.gov/books/NBK279668/
-BLAST+ features - BLAST® Command Line Applications User Manual - NCBI Bookshelf
-
-DELTA-BLAST: A tool for sensitive protein sequence search
-DELTA-BLAST uses RPS-BLAST to search for conserved domains matching to a query, constructs a PSSM from the sequences associated with the matching domains, and searches a sequence database. Its sensitivity is comparable to PSI-BLAST and does not require several iterations of searches against a large sequence database. See the cookbook for more information.
-
-https://www.ncbi.nlm.nih.gov/books/NBK279685/
-Performing a DELTA-BLAST search - BLAST® Command Line Applications User Manual - NCBI Bookshelf
-
-
-https://pubmed.ncbi.nlm.nih.gov/19396961/
-Review FEMS Microbiol Rev
-. 2009 May;33(3):657-87. doi: 10.1111/j.1574-6976.2009.00168.x.
-The diversity of conjugative relaxases and its application in plasmid classification
-María Pilar Garcillán-Barcia 1, María Victoria Francia, Fernando de la Cruz
-https://academic.oup.com/femsre/article/33/3/657/591359
-
-Method used for relaxase analysis
-Relaxases are usually multidomain proteins, in which the relaxase domain always occupies the N-terminal position. Thus, PSI-BLAST (Altschul et al., 1997) searches (P=1e–4 unless otherwise stated) were carried out using the N-terminal 300 amino acids of prototype relaxases from each MOB family as was done previously by Francia et al. (2004).
-
-Figure 2 updates the phylogenetic tree of the family. The PSI-BLAST search was carried out using the threshold value P=1e–8 and converged in the fourth iteration. Using a lower threshold, such as the standard P=1e–4, retrieved transposases of the IS91 family (Garcillan-Barcia & de la Cruz, 2002). This fact is interesting in itself and suggests that MOBF relaxases and rolling-circle transposases are phylogenetically related, albeit remotely. 
-
-
-----------
-
-https://www.ncbi.nlm.nih.gov/books/NBK52640/
-Standalone BLAST Setup for Unix - BLAST® Help - NCBI Bookshelf
-Created: May 31, 2010; Last Update: August 31, 2020.
-
 
 ----------
 ## homology
