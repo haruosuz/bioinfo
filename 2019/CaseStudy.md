@@ -3,10 +3,10 @@
 
 ## Table of Contents
 - [Install](#install)
+- [DoMosaics](#domosaics)
 - [GRD](#grd) Genomic-based 16S ribosomal RNA Database
 - [ddbj_16S](#ddbj_16S)
 - [rrnDB](#rrndb)
-- [DoMosaics](#domosaics)
 - [plasmid.protein.faa](#plasmidproteinfaa)
 - [NCBI ASSEMBLY_REPORTS](#ncbi-assembly_reports)
 - [2019-11-13](#2019-11-13) Annotathon2019（生命科学データベースの利用価値向上のためのアノテーションマラソン）
@@ -71,6 +71,123 @@ conda install raxml
 conda install fasttree
 conda install blast
 ```
+
+----------
+## DoMosaics
+
+https://doi.org/10.7875/togotv.2017.077
+2017-08-04 DoMosaicsを使ってドメイン構造と系統樹を可視化する
+
+domworld <domainworld@uni-muenster.de> wrote:
+the original website does not exist anymore. However, the jar file is still available here: https://domainworld.uni-muenster.de/developing/domosaics/
+
+The current version can be found here: domosaics.jar
+
+### Pfam
+
+https://bi.biopapyrus.jp/db/pfam.html
+Pfam | タンパク質ドメインファミリーのデータベース
+
+https://doi.org/10.7875/togotv.2017.125
+2017-12-12 Pfamを使ってタンパク質のドメインを調べる 2017
+
+<ftp://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam32.0/> をブラウザ（Firefox または Chrome）で開く。  
+*Pfam-A.hmm.gz* を右クリックし、「リンクのURLをコピー」する。
+
+Open the URL <ftp://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam32.0/> with your browser (Firefox or Chrome).  
+Right click the link *Pfam-A.hmm.gz* and select "Copy Link Address".
+
+```
+# change shell to bash
+bash
+
+# ディレクトリを作成
+# make directories
+mkdir -p ~/projects/data/pfam
+
+# ディレクトリに移動
+# change directories
+cd ~/projects/data/pfam/
+
+# 圧縮ファイル（*Pfam-A.hmm.gz*）をダウンロード:
+# download the file
+curl -O ftp://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam32.0/Pfam-A.hmm.gz
+
+# ファイルを解凍:
+# decompress files with the command gunzip
+gunzip Pfam-A.hmm.gz
+```
+
+### HMMER
+
+http://kazumaxneo.hatenablog.com/entry/2017/07/31/114955
+タンパク質ドメインを検索する HMMER - macでインフォマティクス
+
+http://hmmer.org/documentation.html
+```
+# install HMMER
+conda install -c bioconda hmmer  # Anaconda
+
+which hmmscan
+which hmmpress
+```
+
+```
+# テストデータをダウンロード:
+# download test data
+curl https://togotv.dbcls.jp/170804test.fasta > test.fasta
+```
+
+### domosaics.jar
+
+- Right click the file *domosaics.jar* and click "Open".
+- Click "Finish".
+- Click "File" -> "New Projects/Views" and select "Create new Project". Input Name: "test".
+- Click "Next". Select "Sequence" under "Select the data type to import", and click "Next".
+- 4. Open File: Click "Browse...". Select the downloaded file *test.fasta* and click "Open". Click "Finish".
+- Steps
+1. Sequence view name selection: Click "Finish".
+
+```
+# Run hmmscan
+HMMER3 scan bin: /Users/haruo/miniconda3/bin/hmmscan
+HMMER3 press bin: /Users/haruo/miniconda3/bin/hmmpress
+Load profiles: /Users/haruo/projects/data/pfam/Pfam-A.hmm
+
+## Sequences
+Load sequences
+ Or Select Loaded View: test
+
+## Options
+ Number of CPUs: 4
+
+## Post processing
+ Co-Occurring Domain Detection: Pfam v27
+```
+
+### references
+
+https://pubmed.ncbi.nlm.nih.gov/37606665/
+J Mol Evol
+. 2023 Aug 22. doi: 10.1007/s00239-023-10128-x. Online ahead of print.
+Systematic Analysis of Diverse Polynucleotide Kinase Clp1 Family Proteins in Eukaryotes: Three Unique Clp1 Proteins of Trypanosoma brucei
+Motofumi Saito 1 2, Rerina Inose 1, Asako Sato 1, Masaru Tomita 1 2 3, Haruo Suzuki 1 3, Akio Kanai 4 5 6
+https://link.springer.com/article/10.1007/s00239-023-10128-x
+Domain Analysis of Clp1 Family Proteins
+The domain structures of the Clp1 family proteins were estimated using the following two methods: (1) Using the entire aa sequence of each Clp1 family protein as the query, the Pfam-A database (Mistry et al. 2021), in which known domains are registered, was searched using HMMER (ver. 3.2) (Mistry et al. 2013), set to an E-value of ≤ 1e − 3. Their domain structures were visualized using DoMosaics (ver. Rv0.95) (Moore et al. 2014), and (2) for protein regions that were not hit in the domain search, a sequence similarity search using BLASTP was performed (E-value of ≤ 1e − 4 and query coverage of ≥ 30%). 
+
+https://pubmed.ncbi.nlm.nih.gov/31513263/
+Genome Biol Evol
+. 2019 Oct 1;11(10):2713-2726. doi: 10.1093/gbe/evz195.
+Large-Scale Molecular Evolutionary Analysis Uncovers a Variety of Polynucleotide Kinase Clp1 Family Proteins in the Three Domains of Life
+Motofumi Saito 1 2, Asako Sato 1, Shohei Nagata 1 2, Satoshi Tamaki 1, Masaru Tomita 1 2 3, Haruo Suzuki 1 3, Akio Kanai 1 2 3
+https://academic.oup.com/gbe/article/11/10/2713/5568290?login=false
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6777427/
+To extract the protein domains, an HMMER (ver. 3.2) search (Potter et al. 2018) of the Pfam-A protein domain database was performed with an E-value of ≤1e − 4. The domain structures and sequence alignment of the Clp1 family proteins were visualized with DoMosaics (version rv0.95) (Moore et al. 2014).
+
+fig. 1.
+—Phylogeny and domain structure of Clp1 family proteins in the three domains of life.
+Domains were visualized with DoMosaics.
 
 ----------
 ## GRD
@@ -265,99 +382,6 @@ rRNA            complement(1504661..1506234)
                     /db_xref="GeneID:4412908"
 
 (there seems to be a 1-base disagreement between rrnDB and the Genbank coordinates, not sure why that is)
-```
-
-----------
-## DoMosaics
-
-https://doi.org/10.7875/togotv.2017.077
-2017-08-04 DoMosaicsを使ってドメイン構造と系統樹を可視化する
-
-domworld <domainworld@uni-muenster.de> wrote:
-the original website does not exist anymore. However, the jar file is still available here: https://domainworld.uni-muenster.de/developing/domosaics/
-
-The current version can be found here: domosaics.jar
-
-### Pfam
-
-https://bi.biopapyrus.jp/db/pfam.html
-Pfam | タンパク質ドメインファミリーのデータベース
-
-https://doi.org/10.7875/togotv.2017.125
-2017-12-12 Pfamを使ってタンパク質のドメインを調べる 2017
-
-<ftp://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam32.0/> をブラウザ（Firefox または Chrome）で開く。  
-*Pfam-A.hmm.gz* を右クリックし、「リンクのURLをコピー」する。
-
-Open the URL <ftp://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam32.0/> with your browser (Firefox or Chrome).  
-Right click the link *Pfam-A.hmm.gz* and select "Copy Link Address".
-
-```
-# change shell to bash
-bash
-
-# ディレクトリを作成
-# make directories
-mkdir -p ~/projects/data/pfam
-
-# ディレクトリに移動
-# change directories
-cd ~/projects/data/pfam/
-
-# 圧縮ファイル（*Pfam-A.hmm.gz*）をダウンロード:
-# download the file
-curl -O ftp://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam32.0/Pfam-A.hmm.gz
-
-# ファイルを解凍:
-# decompress files with the command gunzip
-gunzip Pfam-A.hmm.gz
-```
-
-### HMMER
-
-http://kazumaxneo.hatenablog.com/entry/2017/07/31/114955
-タンパク質ドメインを検索する HMMER - macでインフォマティクス
-
-http://hmmer.org/documentation.html
-```
-# install HMMER
-conda install -c bioconda hmmer  # Anaconda
-
-which hmmscan
-which hmmpress
-```
-
-```
-# テストデータをダウンロード:
-# download test data
-curl https://togotv.dbcls.jp/170804test.fasta > test.fasta
-```
-
-### domosaics.jar
-
-- Right click the file *domosaics.jar* and click "Open".
-- Click "Finish".
-- Click "File" -> "New Projects/Views" and select "Create new Project". Input Name: "test".
-- Click "Next". Select "Sequence" under "Select the data type to import", and click "Next".
-- 4. Open File: Click "Browse...". Select the downloaded file *test.fasta* and click "Open". Click "Finish".
-- Steps
-1. Sequence view name selection: Click "Finish".
-
-```
-# Run hmmscan
-HMMER3 scan bin: /Users/haruo/miniconda3/bin/hmmscan
-HMMER3 press bin: /Users/haruo/miniconda3/bin/hmmpress
-Load profiles: /Users/haruo/projects/data/pfam/Pfam-A.hmm
-
-## Sequences
-Load sequences
- Or Select Loaded View: test
-
-## Options
- Number of CPUs: 4
-
-## Post processing
- Co-Occurring Domain Detection: Pfam v27
 ```
 
 ----------
