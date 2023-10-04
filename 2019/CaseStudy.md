@@ -92,9 +92,6 @@ Open the URL with your browser (Firefox or Chrome).
 Right click the link *Pfam-A.hmm.gz* and select "Copy Link Address".
 
 ```
-# change shell to bash
-bash
-
 # ディレクトリを作成
 # make directories
 mkdir -p ~/projects/data/pfam
