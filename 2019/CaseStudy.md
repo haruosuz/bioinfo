@@ -75,9 +75,6 @@ conda install blast
 ----------
 ## DoMosaics
 
-https://doi.org/10.7875/togotv.2017.077
-2017-08-04 DoMosaicsを使ってドメイン構造と系統樹を可視化する
-
 domworld <domainworld@uni-muenster.de> wrote:
 the original website does not exist anymore. However, the jar file is still available here: https://domainworld.uni-muenster.de/developing/domosaics/
 
@@ -85,16 +82,13 @@ The current version can be found here: domosaics.jar
 
 ### Pfam
 
-https://bi.biopapyrus.jp/db/pfam.html
-Pfam | タンパク質ドメインファミリーのデータベース
+- https://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam32.0/
+- https://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam36.0/
 
-https://doi.org/10.7875/togotv.2017.125
-2017-12-12 Pfamを使ってタンパク質のドメインを調べる 2017
-
-<ftp://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam32.0/> をブラウザ（Firefox または Chrome）で開く。  
+URLをブラウザ（Firefox または Chrome）で開く。  
 *Pfam-A.hmm.gz* を右クリックし、「リンクのURLをコピー」する。
 
-Open the URL <ftp://ftp.ebi.ac.uk/pub/databases/Pfam/releases/Pfam32.0/> with your browser (Firefox or Chrome).  
+Open the URL with your browser (Firefox or Chrome).  
 Right click the link *Pfam-A.hmm.gz* and select "Copy Link Address".
 
 ```
@@ -119,9 +113,6 @@ gunzip Pfam-A.hmm.gz
 ```
 
 ### HMMER
-
-http://kazumaxneo.hatenablog.com/entry/2017/07/31/114955
-タンパク質ドメインを検索する HMMER - macでインフォマティクス
 
 http://hmmer.org/documentation.html
 ```
@@ -188,6 +179,26 @@ To extract the protein domains, an HMMER (ver. 3.2) search (Potter et al. 2018) 
 fig. 1.
 —Phylogeny and domain structure of Clp1 family proteins in the three domains of life.
 Domains were visualized with DoMosaics.
+
+2021.05.16
+作者: Kyoka Sato
+https://doi.org/10.7875/togotv.2021.045
+https://www.youtube.com/watch?v=5VCYcgJ7unI
+09:50
+DoMosaicsを使ってドメイン構造と系統樹を可視化する
+DoMosaics は、複数のタンパク質のドメイン構造と系統関係が簡単に調べられるウェブツールです。これによって、どのようなドメインが進化の過程で獲得されたのか、また欠落したのかを推定することができます。ドメイン検索のためのデータベースをPfamからダウンロードする方法や、検索用プログラム(hmmscan、hmmpress)をHMMERからダウンロードしてインストールする方法を解説したあとに、サンプルデータを使って、DoMosaicsの使い方を紹介します。
+https://dbarchive.biosciencedbc.jp/data/togotv/movie/210516_test.txt
+
+2020.04.18
+https://bi.biopapyrus.jp/db/pfam.html
+Pfam | タンパク質ドメインファミリーのデータベース
+
+2017.12.12
+https://doi.org/10.7875/togotv.2017.125
+Pfamを使ってタンパク質のドメインを調べる 2017
+
+http://kazumaxneo.hatenablog.com/entry/2017/07/31/114955
+タンパク質ドメインを検索する HMMER - macでインフォマティクス
 
 ----------
 ## GRD
