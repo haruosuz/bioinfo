@@ -123,7 +123,7 @@ which hmmpress
 ```
 # テストデータをダウンロード:
 # download test data
-curl https://togotv.dbcls.jp/170804test.fasta > test.fasta
+curl https://dbarchive.biosciencedbc.jp/data/togotv/movie/210516_test.txt > test.fasta
 ```
 
 ### domosaics.jar
@@ -155,6 +155,19 @@ Load sequences
 
 ### references
 
+https://github.com/haruosuz/bioinfo/blob/master/references/README.bioinfo.tools.md#hmmer
+
+
+2021.05.16
+作者: Kyoka Sato
+https://doi.org/10.7875/togotv.2021.045
+https://www.youtube.com/watch?v=5VCYcgJ7unI
+09:50
+DoMosaicsを使ってドメイン構造と系統樹を可視化する
+DoMosaics は、複数のタンパク質のドメイン構造と系統関係が簡単に調べられるウェブツールです。これによって、どのようなドメインが進化の過程で獲得されたのか、また欠落したのかを推定することができます。ドメイン検索のためのデータベースをPfamからダウンロードする方法や、検索用プログラム(hmmscan、hmmpress)をHMMERからダウンロードしてインストールする方法を解説したあとに、サンプルデータを使って、DoMosaicsの使い方を紹介します。
+https://dbarchive.biosciencedbc.jp/data/togotv/movie/210516_test.txt
+
+
 https://pubmed.ncbi.nlm.nih.gov/37606665/
 J Mol Evol
 . 2023 Aug 22. doi: 10.1007/s00239-023-10128-x. Online ahead of print.
@@ -176,26 +189,6 @@ To extract the protein domains, an HMMER (ver. 3.2) search (Potter et al. 2018) 
 fig. 1.
 —Phylogeny and domain structure of Clp1 family proteins in the three domains of life.
 Domains were visualized with DoMosaics.
-
-2021.05.16
-作者: Kyoka Sato
-https://doi.org/10.7875/togotv.2021.045
-https://www.youtube.com/watch?v=5VCYcgJ7unI
-09:50
-DoMosaicsを使ってドメイン構造と系統樹を可視化する
-DoMosaics は、複数のタンパク質のドメイン構造と系統関係が簡単に調べられるウェブツールです。これによって、どのようなドメインが進化の過程で獲得されたのか、また欠落したのかを推定することができます。ドメイン検索のためのデータベースをPfamからダウンロードする方法や、検索用プログラム(hmmscan、hmmpress)をHMMERからダウンロードしてインストールする方法を解説したあとに、サンプルデータを使って、DoMosaicsの使い方を紹介します。
-https://dbarchive.biosciencedbc.jp/data/togotv/movie/210516_test.txt
-
-2020.04.18
-https://bi.biopapyrus.jp/db/pfam.html
-Pfam | タンパク質ドメインファミリーのデータベース
-
-2017.12.12
-https://doi.org/10.7875/togotv.2017.125
-Pfamを使ってタンパク質のドメインを調べる 2017
-
-http://kazumaxneo.hatenablog.com/entry/2017/07/31/114955
-タンパク質ドメインを検索する HMMER - macでインフォマティクス
 
 ----------
 ## GRD
