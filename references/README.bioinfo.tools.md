@@ -28,6 +28,55 @@
 - [video](#video)
 - [hmmer](#hmmer)
 
+----------
+## hmmer
+
+http://hmmer.org/
+HMMER: biosequence analysis using profile hidden Markov models
+
+http://crusade1096.web.fc2.com/hmmer.html
+HMMER
+インストール先
+マニュアル
+
+2022-10-14
+https://とうごろう.jp/wiki/バイオ・データ・マイニング/HMMERで相同性検索を行う/
+
+2022/07/08 追記
+https://kazumaxneo.hatenablog.com/entry/2017/07/31/114955
+隠れマルコフモデル（HMM）のペアワイズアラインメントに基づいた高感度なタンパク質配列検索ツール HMMER - macでインフォマティクス
+ここではタンパク質配列をクエリとしてHMMプロファイルデータベースを検索するhmmscanを試す。
+
+May 30, 2020
+https://github.com/linnabrown/run_dbcan/issues/49
+hmmscan not effective, use hmmsearch? · Issue #49 · linnabrown/run_dbcan
+In an old blog post, Sean Eddy explains why hmmscan is slow and that one should use hmmsearch instead (https://cryptogenomicon.org/2011/05/27/hmmscan-vs-hmmsearch-speed-the-numerology/; this is about translated nucleotide searches, but I believe it applies well to ORFs in amino acid format too).
+
+https://www.biostars.org/p/438243/
+hmmsearch vs hmmscan - e-value, speed, & output differences?
+
+
+2020.04.18
+https://bi.biopapyrus.jp/db/pfam.html
+Pfam | タンパク質ドメインファミリーのデータベース
+HMMER アルゴリズムは、profile hidden Markov models と呼ばれる確率モデルを実装している。スコアマトリックスに基づくホモロジー検索である BLAST などに比べ、遠縁ホモログをより正確に検索することができる。
+
+2017.12.12
+https://doi.org/10.7875/togotv.2017.125
+Pfamを使ってタンパク質のドメインを調べる 2017
+HMMERが組み込まれているInterProScanを使う
+
+http://sy41211.hatenablog.com/entry/2015/11/28/083056
+HMMERを使ったPfamデータベースへのドメイン検索 - バイオインフォマティクス初心者の日常
+
+Fri 27 May 2011
+http://cryptogenomicon.org/hmmscan-vs-hmmsearch-speed-the-numerology.html
+hmmscan vs. hmmsearch speed: the numerology ·
+
+The bottom line: use hmmsearch, not hmmscan. 
+
+
+
 
 ----------
 
@@ -274,30 +323,6 @@ https://qiita.com/antiplastics/items/add3f8438cbe6b2b594e
 どの生物種までGO解析ができるか
 
 ### 2017
-
-
-
-----------
-## hmmer
-
-http://hmmer.org/
-HMMER: biosequence analysis using profile hidden Markov models
-
-http://crusade1096.web.fc2.com/hmmer.html
-
-http://kazumaxneo.hatenablog.com/entry/2017/07/31/114955
-隠れマルコフモデル（HMM）のペアワイズアラインメントに基づいた高感度なタンパク質配列検索ツール HMMER - macでインフォマティクス
-
-http://sy41211.hatenablog.com/entry/2015/11/28/083056
-HMMERを使ったPfamデータベースへのドメイン検索 - バイオインフォマティクス初心者の日常
-
-
-
-Fri 27 May 2011
-http://cryptogenomicon.org/hmmscan-vs-hmmsearch-speed-the-numerology.html
-hmmscan vs. hmmsearch speed: the numerology ·
-
-The bottom line: use hmmsearch, not hmmscan. 
 
 
 
