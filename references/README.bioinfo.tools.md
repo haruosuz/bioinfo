@@ -75,8 +75,7 @@ hmmscan vs. hmmsearch speed: the numerology ·
 
 The bottom line: use hmmsearch, not hmmscan. 
 
-
-
+https://github.com/haruosuz/bioinfo/blob/master/2019/CaseStudy.md#domosaics
 
 ----------
 
