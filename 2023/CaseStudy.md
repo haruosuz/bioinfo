@@ -1,7 +1,3 @@
-
-----------
-## 2023-11-16
-
 https://biosciencedbc.jp/event/ajacs/ajacs99.html
 
 オンラインで使える統計解析ツールを知って・学んで・使う（AJACSオンライン18）
@@ -51,5 +47,4 @@ Rスクリプトを開く。
 ](https://www.yodosha.co.jp/yodobook/book/9784758104067/)
 
 ----------
-
-----------
+## 2023-11-16
