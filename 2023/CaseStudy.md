@@ -4,9 +4,6 @@
 
 - [2023-11-16](#2023-11-16)　AJACSオンライン18「オンラインで使える統計解析ツールを知って・学んで・使う」
 - [references](#references)
-- [2023-08-21](#2023-08-21) 福井県立大学 | 分子進化学特論
-- [2023-07-10](#2023-07-10) 東京大学 | 14.農学生命情報科学特論IV
-- [](#)
 
 ----------
 ## 2023-11-16
@@ -43,11 +40,27 @@ https://posit.cloud/content/7010996
 あるいは
 ["Compile Report"コマンドを使用して、HTML形式でレポートを作成する。](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#compile-report)
 
+参考: 
+https://www.yodosha.co.jp/yodobook/book/9784758104067/
+実験医学増刊：バイオDBとウェブツール　ラボで使える最新70選〜知る・学ぶ・使う、バイオDX時代の羅針盤 - 羊土社
+実験医学増刊 Vol.40 No.17
+バイオDBとウェブツール　ラボで使える最新70選
+知る・学ぶ・使う、バイオDX時代の羅針盤
+小野浩雅／編
+
+第1章　研究を効率化する汎用ツール
+データベース・ウェブツールを探す・学ぶ
+6．RStudio Cloud ─ オンラインでデータサイエンスを行い，共有し，教え，学ぶ【鈴木治夫】
+
+![https://www.yodosha.co.jp/yodobook/book/9784758104067/](https://www.yodosha.co.jp/book_img_full/9784758104067.jpg)
+
 ----------
 ## references
 
 - 慶應義塾大学 湘南藤沢キャンパス（SFC）
+  - 2023秋 生命動態のデータサイエンス https://github.com/haruosuz/DS4GD/tree/master/2023-10
   - 2023春 生命動態のデータサイエンス https://github.com/haruosuz/DS4GD/tree/master/2023-04
+  - 2023秋 バイオインフォマティクスのデータサイエンス https://github.com/haruosuz/introBI/tree/master/2023-10
   - 2023春 バイオインフォマティクスのデータサイエンス https://github.com/haruosuz/introBI/tree/master/2023-04
   - 2022秋 バイオインフォマティクスのデータサイエンス https://github.com/haruosuz/introBI/blob/master/2022/README.md#r-language
 - [バイオインフォマティクスデータスキル ――オープンソースツールを使ったロバストで再現性のある研究](https://www.oreilly.co.jp/books/9784873118635/)
@@ -57,6 +70,12 @@ https://posit.cloud/content/7010996
   - https://github.com/haruosuz/bioinfo/blob/master/2022/CaseStudy.md#2022-06-16
   - https://github.com/haruosuz/bioinfo/blob/master/2021/CaseStudy.md#2021-10-25
   - https://github.com/haruosuz/bioinfo/blob/master/2020/CaseStudy.md#2020-07-06
+
+----------
+
+- [2023-08-21](#2023-08-21) 福井県立大学 | 分子進化学特論
+- [2023-07-10](#2023-07-10) 東京大学 | 14.農学生命情報科学特論IV
+- [](#)
 
 ----------
 ## 2023-08-22
