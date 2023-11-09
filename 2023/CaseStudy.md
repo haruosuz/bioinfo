@@ -25,13 +25,14 @@ Posit Cloud (旧：RStudio) を用いて生物配列データ解析に取り組�
 
 Posit Cloud の無料アカウントを作成する。
 
-参考: 
-"RStudio Cloud を使ってウェブブラウザ上でR(Studio)を利用する" https://doi.org/10.7875/togotv.2021.022
+参考: "RStudio Cloud を使ってウェブブラウザ上でR(Studio)を利用する" https://doi.org/10.7875/togotv.2021.022
+
+
 
 https://posit.cloud/content/7010996
+プロジェクトにアクセスする。「Save a Permanent Copy」ボタンを押して、自分用にプロジェクトのコピーを保存する。  
 
-[プロジェクトにアクセスする。「Save a Permanent Copy」ボタンを押して、自分用にプロジェクトのコピーを保存する。  
-Access the project, and save a copy of the project for yourself by pressing the 'Save a Permanent Copy' button.](https://posit.cloud/learn/guide)
+参考: https://posit.cloud/learn/guide
 
 ![https://posit.cloud/learn/guide](https://posit.cloud/images/guide/forkProject.png)
 
