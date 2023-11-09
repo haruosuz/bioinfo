@@ -6,7 +6,7 @@ https://biosciencedbc.jp/event/ajacs/ajacs99.html
 
 オンラインで使える統計解析ツールを知って・学んで・使う（AJACSオンライン18）
 
-14:50～15:50
+14:50～15:50	
 Posit Cloud (旧：RStudio) を用いて生物配列データ解析に取り組む
 
 鈴木 治夫 (慶應義塾大学 環境情報学部 准教授)
