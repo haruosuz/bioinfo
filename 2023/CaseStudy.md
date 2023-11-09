@@ -43,16 +43,12 @@ https://posit.cloud/content/7010996
 参考: 
 https://www.yodosha.co.jp/yodobook/book/9784758104067/
 実験医学増刊：バイオDBとウェブツール　ラボで使える最新70選〜知る・学ぶ・使う、バイオDX時代の羅針盤 - 羊土社
-実験医学増刊 Vol.40 No.17
-バイオDBとウェブツール　ラボで使える最新70選
-知る・学ぶ・使う、バイオDX時代の羅針盤
+|
 小野浩雅／編
-
+|
 第1章　研究を効率化する汎用ツール
-データベース・ウェブツールを探す・学ぶ
+|
 6．RStudio Cloud ─ オンラインでデータサイエンスを行い，共有し，教え，学ぶ【鈴木治夫】
-
-![https://www.yodosha.co.jp/yodobook/book/9784758104067/](https://www.yodosha.co.jp/book_img_full/9784758104067.jpg)
 
 ----------
 ## references
