@@ -37,9 +37,10 @@ https://posit.cloud/content/7010996
 - my_seqinr_dotplot.R
 
 Rスクリプトを開く。  
-[コマンドを実行するには **Cmd/Ctrl + Enter** を押す。](https://r4ds.had.co.nz/workflow-scripts.html)  
-あるいは  
-["Compile Report"コマンドを使用して、HTML形式でレポートを作成する。](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#compile-report)
+コマンドを実行するには
+- "Run"コマンドを使用する。
+- [キーボード・ショートカット Cmd/Ctrl + Enter を押す。](https://r4ds.had.co.nz/workflow-scripts.html)  
+- ["Compile Report"コマンドを使用して、HTML形式でレポートを作成する。](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#compile-report)
 
 参考: 
 実験医学増刊：バイオDBとウェブツール　ラボで使える最新70選〜知る・学ぶ・使う、バイオDX時代の羅針盤 - 羊土社
