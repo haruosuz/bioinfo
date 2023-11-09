@@ -54,6 +54,7 @@ https://www.yodosha.co.jp/yodobook/book/9784758104067/
 ----------
 ## references
 
+- https://github.com/haruosuz/r4bioinfo/blob/master/references/RStudioCloud.md
 - 慶應義塾大学 湘南藤沢キャンパス（SFC）
   - 2023秋 生命動態のデータサイエンス https://github.com/haruosuz/DS4GD/tree/master/2023-10
   - 2023春 生命動態のデータサイエンス https://github.com/haruosuz/DS4GD/tree/master/2023-04
