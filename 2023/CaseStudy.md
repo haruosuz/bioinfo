@@ -36,7 +36,8 @@ https://posit.cloud/content/7010996
 - my_seqinr_dna.R
 - my_seqinr_dotplot.R
 
-Rスクリプトを開く。  
+Rスクリプトを開く。
+
 コマンドを実行するには
 - "Run"コマンドを使用する。
 - [キーボード・ショートカット Cmd/Ctrl + Enter を押す。](https://r4ds.had.co.nz/workflow-scripts.html)  
