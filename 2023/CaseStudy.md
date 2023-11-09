@@ -32,11 +32,10 @@ https://posit.cloud/content/7010996
 
 ![https://posit.cloud/learn/guide](https://posit.cloud/images/guide/forkProject.png)
 
+Rスクリプトを開く。
 - my_0_setup.R
 - my_seqinr_dna.R
 - my_seqinr_dotplot.R
-
-Rスクリプトを開く。
 
 コマンドを実行するには
 - "Run"コマンドを使用する。
