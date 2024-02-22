@@ -45,6 +45,10 @@ Please set up the R/RStudio environment by either:
 https://posit.co/download/rstudio-desktop/
 - Creating a free account on Posit Cloud (formerly RStudio Cloud).
 https://posit.cloud/
+  - access the project
+https://posit.cloud/content/7652775
+  - [pressing the Save a Permanent Copy button.](https://posit.cloud/learn/guide)
+![https://posit.cloud/learn/guide](https://posit.cloud/images/guide/forkProject.png)
 
 Reference:
 - https://github.com/haruosuz/DS4GD/blob/master/2023-10/README.md#r-rstudio
