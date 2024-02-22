@@ -1,14 +1,14 @@
 
 ## Table of Contents
 
-- [2024-02-23](#2024-02-23) eAsia AMR Workshop 2024
+- [2024-02-23](#2024-02-23) eAsia-AMR & EnD-AMR-Asia Joint Workshop
 - [references](#references)
 
 ----------
 
 ## 2024-02-23
 
-eAsia AMR Workshop 2024
+eAsia-AMR & EnD-AMR-Asia Joint Workshop
 
 ### Agenda:
 - **9:00 AM - 10:00 AM:** Welcome (Doors open at 9:00 AM)
@@ -19,7 +19,7 @@ eAsia AMR Workshop 2024
    - 11:30 AM - 12:00 PM: Philippines Team
    - 12:00 PM - 12:30 PM: Members from END-AMR-Asia Network
 - **12:30 PM - 1:30 PM:** Lunch Break
-- **1:30 PM - 4:30 PM:** Hands-on Practical Workshop
+- **1:30 PM - 4:30 PM:** Hands-on Practical Workshop with R/RStudio
 - **4:30 PM - 5:30 PM:** Open Discussion
 
 ### R
@@ -40,8 +40,7 @@ Maps & Directions: Keio University
 - https://www.keio.ac.jp/en/maps/mita.html
 Mita Campus: Keio University
 Campus Map
-3. Graduate School Building
-Classrooms (311-375B), Research Rooms for Graduate Students
+| 3. Graduate School Building | Classrooms (311-375B), Research Rooms for Graduate Students
 - https://www.keio.ac.jp/ja/maps/mita.html
 三田キャンパス：アクセス：[慶應義塾]
 キャンパスマップ
@@ -50,12 +49,13 @@ Classrooms (311-375B), Research Rooms for Graduate Students
 Graduate School Building, 2nd Floor, Room 325-B
 大学院校舎2階325-B教室
 
-### Lunch
-
+### Food
 - https://mita-onigiri.gojou.biz/menu
-Menu List
-
-Japanese rice ball
+三田おにぎり本店公式ホームページ
+- https://www.pub-hub.com/index.php/shop/detail/41
+82三田店：スポーツもお酒も楽しめるHUB｜82
+- https://www.pub-hub.com/index.php/en/shop/detail/41
+82 Mita branch | HUB | 82ALE HOUSE
 
 ----------
 ## references
