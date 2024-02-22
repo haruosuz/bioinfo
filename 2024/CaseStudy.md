@@ -34,6 +34,28 @@ https://posit.cloud/
 Reference:
 https://github.com/haruosuz/DS4GD/blob/master/2023-10/README.md#r-rstudio
 
+### Venue
+- https://www.keio.ac.jp/en/maps/
+Maps & Directions: Keio University
+- https://www.keio.ac.jp/en/maps/mita.html
+Mita Campus: Keio University
+Campus Map
+3. Graduate School Building
+Classrooms (311-375B), Research Rooms for Graduate Students
+- https://www.keio.ac.jp/ja/maps/mita.html
+三田キャンパス：アクセス：[慶應義塾]
+キャンパスマップ
+【3】大学院校舎（311- 375B）
+- https://sites.google.com/keio.jp/mita-classroom/%E5%A4%A7%E5%AD%A6%E9%99%A2%E6%A0%A1%E8%88%8E300%E7%95%AA%E5%8F%B0/325-b?authuser=0
+Graduate School Building, 2nd Floor, Room 325-B
+大学院校舎2階325-B教室
+
+### Lunch
+
+- https://mita-onigiri.gojou.biz/menu
+Menu List
+
+Japanese rice ball
 
 ----------
 ## references
