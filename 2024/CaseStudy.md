@@ -50,6 +50,21 @@ https://posit.cloud/content/7652775
   - [pressing the Save a Permanent Copy button.](https://posit.cloud/learn/guide)
 ![https://posit.cloud/learn/guide](https://posit.cloud/images/guide/forkProject.png)
 
+
+Please download the R scripts from the following URL. 
+https://github.com/haruosuz/bioinfo/raw/master/2024/scripts_2024-02-23.zip
+
+unzip the compressed file and change to the directory.  
+```
+unzip scripts_2024-02-23.zip
+cd scripts_2024-02-23/
+```
+
+[Open an R script in RStudio.](https://r4ds.had.co.nz/workflow-scripts.html)  
+
+[Create a report in HTML format using the "Compile Report" command.](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#compile-report)  
+
+
 Reference:
 - https://github.com/haruosuz/DS4GD/blob/master/2023-10/README.md#r-rstudio
 - https://github.com/haruosuz/books/tree/master/r4all
