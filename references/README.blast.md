@@ -23,6 +23,13 @@ Last Update: 2020-08
 - [bonohu](#bonohu)
 - [](#)
 
+----------
+
+https://github.com/haruosuz/DS4GD/tree/master/2023-10
+
+https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#ncbi-blast
+Q9CD83
+A0PQ23
 
 ----------
 
@@ -30,11 +37,54 @@ https://www.ncbi.nlm.nih.gov/books/NBK52640/
 Standalone BLAST Setup for Unix - BLAST® Help - NCBI Bookshelf
 Created: May 31, 2010; Last Update: August 31, 2020.
 
+----------
+
+https://www.arabidopsis.org/Blast/BLASToptions.jsp
+BLAST Options and Defaults
 
 
+https://www.ncbi.nlm.nih.gov/books/NBK279684/
+Appendices - BLAST® Command Line Applications User Manual - NCBI Bookshelf
+
+Table C3:
+blastp application options. 
+
+option	task	type	default value	description and notes
+
+gapopen	blastp	integer	11	Cost to open a gap.
+
+gapextend	blastp	integer	1	Cost to extend a gap.
+
+matrix	blastp	string	BLOSUM62	Scoring matrix name.
+
+----------
+
+https://www.ncbi.nlm.nih.gov/books/NBK279684/#appendices.Options_for_the_commandline_a
+
+Table C1:
+Options common to all BLAST+ search applications.
+
+Table C10:
+Blastdbcmd application options. This application reads a BLAST database and produces reports.
 
 
+----------
+## blastdbcmd
 
+https://www.ncbi.nlm.nih.gov/books/NBK569853/
+Extracting data from BLAST databases with blastdbcmd - BLAST® Command Line Applications User Manual - NCBI Bookshelf
+Created: June 23, 2008; Last Update: January 7, 2021.
+
+```
+$ blastdbcmd -entry 71022837 -db Test/mask-data-db  -outfmt "%a %l %m"
+```
+
+https://www.ncbi.nlm.nih.gov/books/NBK279684/table/appendices.T.blastdbcmd_application_opti/
+Table C10: [Blastdbcmd application options. This application reads a BLAST database and produces reports.]. - BLAST® Command Line Applications User Manual - NCBI Bookshelf
+
+option	type	default value	description and notes
+
+outfmt
 
 
 
@@ -65,35 +115,6 @@ word_size = 10
 match/mismatch scores = 1, -2
 
 You can find this information at NCBI BLAST. If you are running local BLAST with outfmt 0 or 1, you will also see the parameters at the end of your output file.
-
-----------
-
-https://www.ncbi.nlm.nih.gov/books/NBK279684/#appendices.Options_for_the_commandline_a
-
-Table C1:
-Options common to all BLAST+ search applications.
-
-Table C10:
-Blastdbcmd application options. This application reads a BLAST database and produces reports.
-
-
-----------
-## blastdbcmd
-
-https://www.ncbi.nlm.nih.gov/books/NBK569853/
-Extracting data from BLAST databases with blastdbcmd - BLAST® Command Line Applications User Manual - NCBI Bookshelf
-Created: June 23, 2008; Last Update: January 7, 2021.
-
-```
-$ blastdbcmd -entry 71022837 -db Test/mask-data-db  -outfmt "%a %l %m"
-```
-
-https://www.ncbi.nlm.nih.gov/books/NBK279684/table/appendices.T.blastdbcmd_application_opti/
-Table C10: [Blastdbcmd application options. This application reads a BLAST database and produces reports.]. - BLAST® Command Line Applications User Manual - NCBI Bookshelf
-
-option	type	default value	description and notes
-
-outfmt
 
 ----------
 ## bonohu
