@@ -27,6 +27,167 @@
 - [clust](#clust)
 - [video](#video)
 - [hmmer](#hmmer)
+- [domain](#domain)
+
+----------
+## domain
+
+DoMosaics
+https://github.com/haruosuz/bioinfo/blob/master/2019/CaseStudy.md#domosaics
+
+https://www.biostars.org/p/52071/
+View Protein Domain Annotation On Multiple Alignment?
+
+25th Apr, 2016
+https://www.researchgate.net/post/Is-there-a-tool-to-visualize-domains-on-a-multiple-alignment-of-protein-sequences
+Is there a tool to visualize domains on a multiple alignment of protein sequences? | ResearchGate
+
+### 2019
+https://link.springer.com/book/10.1007/978-1-4939-9074-0
+Evolutionary Genomics
+Statistical and Computational Methods
+https://link.springer.com/protocol/10.1007/978-1-4939-9074-0_15
+Evolution of Protein Domain Architectures | SpringerLink
+
+13 Domain Architecture Analysis Software
+Several software tools have been described and made available that allow for analysis and visualization of domain architectures and their evolution. A selection of such tools is shown in Table 3.
+https://link.springer.com/protocol/10.1007/978-1-4939-9074-0_15/tables/3
+
+Table 3 A selection of online software applying protein domain architecture evolution analysis
+
+CDART
+https://www.ncbi.nlm.nih.gov/Structure/lexington/lexington.cgi
+
+DoMosaics
+http://www.domosaics.net/
+
+FACT
+http://fact.cibiv.univie.ac.at/
+
+PfamAlyzer
+http://pfam.xfam.org/search
+
+RADS/RAMPAGE
+http://rads.uni-muenster.de/
+
+TreeDom
+http://treedom.sbc.su.se/
+
+An example output from TreeDom is shown in Fig. 7, in which a nonredundant set of representative proteomes were queried.
+Fig. 7
+https://link.springer.com/protocol/10.1007/978-1-4939-9074-0_15/figures/7
+![](https://media.springernature.com/full/springer-static/image/chp%3A10.1007%2F978-1-4939-9074-0_15/MediaObjects/431083_2_En_15_Fig7_HTML.png)
+
+### MacVectorTip
+JUNE 9, 2022
+https://macvector.com/blog/2022/06/macvectortip-visualizing-shared-domains-in-a-protein-alignment/
+MacVectorTip: visualizing shared domains in a protein alignment
+
+### DEPCOD
+https://genetics.mgh.harvard.edu/DEPCOD
+
+2022-07-05
+https://pubmed.ncbi.nlm.nih.gov/35536332/
+Nucleic Acids Res
+. 2022 Jul 5;50(W1):W246-W253. doi: 10.1093/nar/gkac349.
+DEPCOD: a tool to detect and visualize co-evolution of protein domains
+Fei Ji 1 2, Gracia Bonilla 1 2, Rustem Krykbaev 1, Gary Ruvkun 1 2, Yuval Tabach 3, Ruslan I Sadreyev 1 4
+https://academic.oup.com/nar/article/50/W1/W246/6583236
+
+### eggNOG-mapper
+2021-12-09
+https://pubmed.ncbi.nlm.nih.gov/34597405/
+Mol Biol Evol
+. 2021 Dec 9;38(12):5825-5829. doi: 10.1093/molbev/msab293.
+eggNOG-mapper v2: Functional Annotation, Orthology Assignments, and Domain Prediction at the Metagenomic Scale
+Carlos P Cantalapiedra 1, Ana Hernández-Plaza 1, Ivica Letunic 2, Peer Bork 3 4 5, Jaime Huerta-Cepas 1
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8662613/
+
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8662613/#sec-a.g.htitle
+Protein Domain Annotations
+Along with the functional terms annotated per query, this new version of eggNOG-mapper provides PFAM (Mistry et al. 2021) and SMART (Letunic et al. 2021) protein domain predictions.
+
+### DomainViz
+https://uhrigprotools.biology.ualberta.ca/domainviz
+Protein domain search & visualization tool
+
+https://pubmed.ncbi.nlm.nih.gov/34023887/
+Nucleic Acids Res
+. 2021 Jul 2;49(W1):W169-W173. doi: 10.1093/nar/gkab391.
+DomainViz: intuitive visualization of consensus domain distributions across groups of proteins
+Pascal Schläpfer 1, Devang Mehta 2, Cameron Ridderikhoff 2, R Glen Uhrig 2
+https://academic.oup.com/nar/article/49/W1/W169/6281474
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8262717/
+
+### PhylomeDB
+2014-01
+https://pubmed.ncbi.nlm.nih.gov/24275491/
+Nucleic Acids Res
+. 2014 Jan;42(Database issue):D897-902. doi: 10.1093/nar/gkt1177. Epub 2013 Nov 25.
+PhylomeDB v4: zooming into the plurality of evolutionary histories of a genome
+Jaime Huerta-Cepas 1, Salvador Capella-Gutiérrez, Leszek P Pryszcz, Marina Marcet-Houben, Toni Gabaldón
+https://academic.oup.com/nar/article/42/D1/D897/1057169
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3964985/
+Figure 1.
+Example of the integrated tree visualization interface showing the gene family phylogeny of TP53.
+(e) Domain and sequence panel. PFAM motifs are represented by different shapes and can be clicked for extended information. Inter-domain coding regions are shown using the standard amino acid color codes. Gap regions are illustrated as a flat line. 
+
+### ThreaDom
+https://zhanggroup.org/ThreaDom/
+ThreaDom (Threading-based Protein Domain Prediction) is a template-based algorithm for protein domain boundary prediction.
+
+https://www.youtube.com/watch?v=S1y_GqYD5To
+ThreaDom: Extracting Protein Domain Boundary Information from... - Zhidong Xue - ISMB/ECCB 2013
+
+### 2009-10-08
+https://pubmed.ncbi.nlm.nih.gov/19811691/
+BMC Bioinformatics
+. 2009 Oct 8;10 Suppl 11(Suppl 11):S7. doi: 10.1186/1471-2105-10-S11-S7.
+Exploratory visual analysis of conserved domains on multiple sequence alignments
+T J Jankun-Kelly 1, Andrew D Lindeman, Susan M Bridges
+https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-10-S11-S7
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3226196/
+
+### COBALT
+Constraint-based Multiple Alignment Tool
+https://www.ncbi.nlm.nih.gov/tools/cobalt/re_cobalt.cgi
+
+https://pubmed.ncbi.nlm.nih.gov/17332019/
+Bioinformatics
+. 2007 May 1;23(9):1073-9. doi: 10.1093/bioinformatics/btm076. Epub 2007 Mar 1.
+COBALT: constraint-based alignment tool for multiple protein sequences
+Jason S Papadopoulos 1, Richa Agarwala
+https://academic.oup.com/bioinformatics/article/23/9/1073/272774
+
+2019/02/18  Practical Bioinformatics
+https://www.youtube.com/watch?v=9E4BhAVWaNo
+Multiple Sequence Alignment and Phylogeny using COBALT 
+Tutorial on multiple sequence alignment (MSA) and phylogenetic tree construction using NCBI COBALT tool. COBALT does progressive multiple alignment of protein sequences. The MSA is performed by pairwise constraints derived from conserved domain database (CDD), protein motif database (PROSITE), and local sequence similarity using RPS-BLAST, BLASTp, and PHI-BLAST, respectively.
+
+https://github.com/richelbilderbeek/cobaltr/
+Interface to COBALT, the Constraint-based Multiple Alignment Tool
+```
+library(cobaltr)
+
+# Get the path to an example FASTA file
+fasta_filename <- system.file("extdata", "example.fasta", package = "cobaltr")
+
+# Get the multiple sequence alignment
+run_cobalt(fasta_filename)
+```
+
+### TreeDomViewer
+2006-07-01
+https://pubmed.ncbi.nlm.nih.gov/16844970/
+Nucleic Acids Res
+. 2006 Jul 1;34(Web Server issue):W104-9. doi: 10.1093/nar/gkl171.
+TreeDomViewer: a tool for the visualization of phylogeny and protein domain structure
+Blaise T F Alako 1, Daphne Rainey, Harm Nijveen, Jack A M Leunissen
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1538806/
+Figure 2
+This figure illustrates the default SVG output of 37 lipocalin family members from different species. Shown in red are the main Structurally Conserved Residues (SCRs) that characterize the lipocalins. Inset shows TreeDomViewer domain legend (which appears as a separate pop-up).
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1538806/figure/fig2/
+![](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1538806/bin/gkl171f2.jpg)
 
 ----------
 ## hmmer
