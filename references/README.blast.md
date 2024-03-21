@@ -1,4 +1,4 @@
-Last Update: 2020-08
+Last Update: 2024-03-21
 
 ----------
 # bioinfo.blast
@@ -33,6 +33,20 @@ A0PQ23
 
 ----------
 
+
+https://blast.ncbi.nlm.nih.gov/doc/blast-help/FAQ.html
+
+Q: What is the Expect (E) Value?
+
+For more details please see the calculations in the BLAST Course.
+https://www.ncbi.nlm.nih.gov/BLAST/tutorial/Altschul-1.html
+
+The E-value corresponding to a given bit score is simply
+
+![](https://www.ncbi.nlm.nih.gov/BLAST/tutorial/GIFS/(3).gif)
+
+----------
+
 https://www.ncbi.nlm.nih.gov/books/NBK52640/
 Standalone BLAST Setup for Unix - BLAST® Help - NCBI Bookshelf
 Created: May 31, 2010; Last Update: August 31, 2020.
@@ -56,6 +70,12 @@ gapopen	blastp	integer	11	Cost to open a gap.
 gapextend	blastp	integer	1	Cost to extend a gap.
 
 matrix	blastp	string	BLOSUM62	Scoring matrix name.
+
+
+
+
+
+
 
 ----------
 
