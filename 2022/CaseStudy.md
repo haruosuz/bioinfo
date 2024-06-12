@@ -124,22 +124,12 @@ https://github.com/haruosuz/metasub/blob/master/README.md#video
 
 https://github.com/haruosuz/mgsa/blob/master/references/mgsa.metagenome.md#mori
 
-https://doi.org/10.7875/togotv.2020.016
-微生物統合データベースMicrobeDB.jpの活用法 @ AJACS世田谷 | TogoTV
-本日の統合TVは、2019年11月29日に開催された統合データベース講習会:AJACS世田谷から、国立遺伝学研究所 森 宙史 氏 による「微生物統合データベースMicrobeDB.jpの活用法」をお送りします。約53分です。
-目標:公共の微生物のゲノム・メタゲノム解析データ等をMicrobeDB.jpで検索する方法、および、VITCOMIC2、LEA等を用いて、自分の持つマイクロバイオームのアンプリコンシーケンスデータやメタゲノムシーケンスデータから系統組成を推定し、系統組成が似たMicrobeDB.jp上のメタゲノム解析データを検索する方法がわかる。
-https://youtu.be/SDus42JzFXc?t=2508
-41:48 / 53:45
-
-https://doi.org/10.7875/togotv.2019.121
-【How to use1】MicrobeDB.jpの使い方 @ AJACS番町3 | TogoTV
-本日の統合TVは、2019年8月7日に開催された統合データベース講習会:AJACS番町3から、国立遺伝学研究所 森 宙史 助教による「【How to use1】MicrobeDB.jpの使い方」をお送りします。約25分です。
-
 ----------
 ## references
 
 https://pubmed.ncbi.nlm.nih.gov/36515525/
-Microbiol Resour Announc. 2022 Dec 14;e0109222. doi: 10.1128/mra.01092-22.
+Microbiol Resour Announc
+. 2023 Jan 24;12(1):e0109222. doi: 10.1128/mra.01092-22. Epub 2022 Dec 14.
 Urban Microbiomes in Narita, Chiba, Japan: Shotgun Metagenome Sequences of a Train Station
 Dewa A P Rasmika Dewi 1 2, Yuh Shiwa 3 4, Krista Ryon 5 6 7, Christopher E Mason 5 6 7, Tetsuya Matsumoto 1 8, Haruo Suzuki 9 10
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9872656/
