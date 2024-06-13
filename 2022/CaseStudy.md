@@ -127,14 +127,35 @@ https://github.com/haruosuz/mgsa/blob/master/references/mgsa.metagenome.md#mori
 ----------
 ## references
 
+### 2024-06-05
+https://pubmed.ncbi.nlm.nih.gov/38837350/
+Microbiol Resour Announc
+. 2024 Jun 5:e0021024. doi: 10.1128/mra.00210-24. Online ahead of print.
+Shotgun metagenomic sequencing of swab samples from Japanese university campuses
+Megumu Tsujimoto 1, Dewa A P Rasmika Dewi 2 3, Christopher E Mason 4 5 6, Yuh Shiwa 7 8, Haruo Suzuki 1 9
+https://journals.asm.org/doi/10.1128/mra.00210-24
+
+### 2023-07-07
+https://pubmed.ncbi.nlm.nih.gov/37420286/
+BMC Res Notes
+. 2023 Jul 7;16(1):142. doi: 10.1186/s13104-023-06417-9.
+Evaluation of rRNA depletion methods for capturing the RNA virome from environmental surfaces
+Yuh Shiwa 1 2, Tomoya Baba 3 4, Maria A Sierra 5, JangKeun Kim 6 7, Christopher E Mason 6 7 8, Haruo Suzuki 9 10
+https://bmcresnotes.biomedcentral.com/articles/10.1186/s13104-023-06417-9
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10326927/
+
+### 2022-12-14
 https://pubmed.ncbi.nlm.nih.gov/36515525/
 Microbiol Resour Announc
 . 2023 Jan 24;12(1):e0109222. doi: 10.1128/mra.01092-22. Epub 2022 Dec 14.
 Urban Microbiomes in Narita, Chiba, Japan: Shotgun Metagenome Sequences of a Train Station
 Dewa A P Rasmika Dewi 1 2, Yuh Shiwa 3 4, Krista Ryon 5 6 7, Christopher E Mason 5 6 7, Tetsuya Matsumoto 1 8, Haruo Suzuki 9 10
+https://journals.asm.org/doi/10.1128/mra.01092-22
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9872656/
 
 - https://github.com/haruosuz/bioproject
+- https://github.com/haruosuz/bioproject/tree/main/PRJDB14136
+- https://www.ncbi.nlm.nih.gov/bioproject/PRJDB14136
 - 
 - https://github.com/haruosuz/metasub/blob/master/README.md
 都市のマイクロバイオーム MetaSUB: Metagenomics & Metadesign of Subways & Urban Biomes 
