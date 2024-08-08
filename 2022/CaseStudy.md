@@ -130,10 +130,10 @@ https://github.com/haruosuz/mgsa/blob/master/references/mgsa.metagenome.md#mori
 ### 2024-06-05
 https://pubmed.ncbi.nlm.nih.gov/38837350/
 Microbiol Resour Announc
-. 2024 Jun 5:e0021024. doi: 10.1128/mra.00210-24. Online ahead of print.
+. 2024 Jul 18;13(7):e0021024. doi: 10.1128/mra.00210-24. Epub 2024 Jun 5.
 Shotgun metagenomic sequencing of swab samples from Japanese university campuses
 Megumu Tsujimoto 1, Dewa A P Rasmika Dewi 2 3, Christopher E Mason 4 5 6, Yuh Shiwa 7 8, Haruo Suzuki 1 9
-https://journals.asm.org/doi/10.1128/mra.00210-24
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11256853/
 
 ### 2023-07-07
 https://pubmed.ncbi.nlm.nih.gov/37420286/
