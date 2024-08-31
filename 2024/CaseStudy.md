@@ -1,11 +1,75 @@
+# Case Study
 
 ## Table of Contents
 
-- [2024-02-23](#2024-02-23) eAsia-AMR & EnD-AMR-Asia Joint Workshop
 - [references](#references)
+- [2023-08-21](#2023-08-21) 福井県立大学 | 分子進化学特論
+- [2024-02-23](#2024-02-23) eAsia-AMR & EnD-AMR-Asia Joint Workshop
 
 ----------
+## references
 
+- [Antimicrobial Resistance Data Analysis • AMR (for R)](https://github.com/haruosuz/r4bioinfo/tree/master/R_microb#amr)
+- [Getting Started with R, Second Edition | R4All](https://github.com/haruosuz/books/tree/master/r4all)
+- [R for Data Science](https://github.com/haruosuz/books/tree/master/r4ds)
+- R for Data Science (2e) https://r4ds.hadley.nz/
+- Keio University Shonan Fujisawa Campus (SFC)
+  - 2024春 | 生命動態のデータサイエンス https://github.com/haruosuz/DS4GD/tree/master/2024-04
+  - 2023秋 | 生命動態のデータサイエンス https://github.com/haruosuz/DS4GD/tree/master/2023-10
+  - 2024 Spring | DATA SCIENCE FOR BIOINFORMATICS [DS2] (GIGA/GG/GI) https://github.com/haruosuz/introBI/tree/main/2024-04
+  - 2023秋 | バイオインフォマティクスのデータサイエンス https://github.com/haruosuz/introBI/tree/master/2023-10
+  - 2023 Spring | DATA SCIENCE FOR BIOINFORMATICS [DS2] (GIGA/GG/GI) https://github.com/haruosuz/introBI/tree/master/2023-04
+  - 2022秋 | バイオインフォマティクスのデータサイエンス / DATA SCIENCE FOR BIOINFORMATICS https://github.com/haruosuz/introBI/tree/master/2022
+    - R言語 R Language https://github.com/haruosuz/introBI/blob/master/2022/README.md#r-language
+- 福井県立大学小浜キャンパス | 集中講義「分子進化学特論」
+  - https://github.com/haruosuz/bioinfo/blob/master/2023/CaseStudy.md#2023-08-21
+  - https://github.com/haruosuz/bioinfo/blob/master/2022/CaseStudy.md#2022-08-22
+
+----------
+## 2023-09-13
+## 2023-09-12
+
+福井県立大学小浜キャンパス | 集中講義「分子進化学特論」
+
+9月12日(木)に自己紹介（1人あたり最大5分）。この授業で解析したい対象（タンパク質、遺伝子、ゲノム、生物など）を述べる。  
+
+### preparation
+**準備**
+
+- R / RStudio の環境構築を行う。
+  - Posit Cloud の無料アカウントを作成する。または、
+  - パソコンに R と RStudio をインストールする。
+
+参考: 
+https://github.com/haruosuz/DS4GD/blob/master/2024-04/README.md#r-rstudio
+
+### assignment
+**課題**
+
+次のURLからRスクリプトをダウンロードする。  
+Download the R script from the following URL.  
+https://github.com/haruosuz/DS4GD/raw/master/2024-04/scripts_ds4gd.zip
+
+圧縮ファイルを解凍し、ディレクトリに移動する。  
+unzip the compressed file and change to the directory.  
+```
+unzip scripts_ds4gd.zip
+cd scripts_ds4gd/
+```
+
+[RStudioでRスクリプトを開き、編集し、保存する。  
+Open, edit, and save the R script in RStudio.  ](https://r4ds.had.co.nz/workflow-scripts.html)
+
+[**Compile Report**コマンドでHTML形式のレポートを作成する。  
+Create report in format using the **Compile Report** command.  ](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#compile-report)
+
+.htmlファイルを課題として提出する。  
+Submit the .html file as your assignment.
+
+編集したファイルは別のディレクトリに保存・バックアップすることをおすすめします。  
+Please save and backup your edited files in a separate directory. 
+
+----------
 ## 2024-02-23
 
 eAsia-AMR & EnD-AMR-Asia Joint Workshop
@@ -83,20 +147,6 @@ If you script still doesn’t automatically open in RStudio when double- clicked
 82三田店：スポーツもお酒も楽しめるHUB｜82
 - https://www.pub-hub.com/index.php/en/shop/detail/41
 82 Mita branch | HUB | 82ALE HOUSE
-
-----------
-## references
-
-- [Antimicrobial Resistance Data Analysis • AMR (for R)](https://github.com/haruosuz/r4bioinfo/tree/master/R_microb#amr)
-- [Getting Started with R, Second Edition | R4All](https://github.com/haruosuz/books/tree/master/r4all)
-- [R for Data Science](https://github.com/haruosuz/books/tree/master/r4ds)
-- R for Data Science (2e) https://r4ds.hadley.nz/
-- Keio University Shonan Fujisawa Campus (SFC)
-  - DATA SCIENCE FOR GENOME DYNAMICS [DS2] https://github.com/haruosuz/DS4GD/tree/master/2023-10
-  - 2023秋 バイオインフォマティクスのデータサイエンス https://github.com/haruosuz/introBI/tree/master/2023-10
-  - 2023 Spring DATA SCIENCE FOR BIOINFORMATICS [DS2] (GIGA/GG/GI) https://github.com/haruosuz/introBI/tree/master/2023-04
-  - 2022秋 バイオインフォマティクスのデータサイエンス / DATA SCIENCE FOR BIOINFORMATICS https://github.com/haruosuz/introBI/tree/master/2022
-    - R言語 R Language https://github.com/haruosuz/introBI/blob/master/2022/README.md#r-language
 
 ----------
 
