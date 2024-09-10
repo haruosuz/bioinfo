@@ -33,9 +33,6 @@
 
 9月12日(木)に自己紹介（1人あたり最大5分）。この授業で解析したい対象（タンパク質、遺伝子、ゲノム、生物など）を述べる。  
 
-参考: 
-https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-0
-
 ### preparation
 **準備**
 
