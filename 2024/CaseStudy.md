@@ -33,6 +33,9 @@
 
 9月12日(木)に自己紹介（1人あたり最大5分）。この授業で解析したい対象（タンパク質、遺伝子、ゲノム、生物など）を述べる。  
 
+参考: 
+https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-0
+
 ### preparation
 **準備**
 
@@ -47,27 +50,18 @@ https://github.com/haruosuz/DS4GD/blob/master/2024-04/README.md#r-rstudio
 **課題**
 
 次のURLからRスクリプトをダウンロードする。  
-Download the R script from the following URL.  
 https://github.com/haruosuz/DS4GD/raw/master/2024-04/scripts_ds4gd.zip
 
 圧縮ファイルを解凍し、ディレクトリに移動する。  
-unzip the compressed file and change to the directory.  
-```
-unzip scripts_ds4gd.zip
-cd scripts_ds4gd/
-```
 
-[RStudioでRスクリプトを開き、編集し、保存する。  
-Open, edit, and save the R script in RStudio.  ](https://r4ds.had.co.nz/workflow-scripts.html)
+RStudioでRスクリプトを開き、編集し、保存する。  
 
-[**Compile Report**コマンドでHTML形式のレポートを作成する。  
-Create report in format using the **Compile Report** command.  ](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#compile-report)
+**Compile Report**コマンドでHTML形式のレポートを作成する。  
 
 .htmlファイルを課題として提出する。  
-Submit the .html file as your assignment.
 
-編集したファイルは別のディレクトリに保存・バックアップすることをおすすめします。  
-Please save and backup your edited files in a separate directory. 
+参考: 
+https://github.com/haruosuz/DS4GD/blob/master/2024-04/CaseStudy.md#assignment-final
 
 ----------
 ## 2024-02-23
