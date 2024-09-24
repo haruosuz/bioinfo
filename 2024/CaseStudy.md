@@ -3,6 +3,7 @@
 ## Table of Contents
 
 - [references](#references)
+- [2024-10-12](#2024-10-12) 生態系をデータとしてとらえる／表現する
 - [2024-09-12](#2024-09-12) 福井県立大学 | 分子進化学特論
 - [2024-02-23](#2024-02-23) eAsia-AMR & EnD-AMR-Asia Joint Workshop
 
@@ -24,6 +25,17 @@
 - 福井県立大学小浜キャンパス | 集中講義「分子進化学特論」
   - https://github.com/haruosuz/bioinfo/blob/master/2023/CaseStudy.md#2023-08-21
   - https://github.com/haruosuz/bioinfo/blob/master/2022/CaseStudy.md#2022-08-22
+
+----------
+## 2024-10-12
+
+[Future Ideations Camp Vol.4｜生態系をデータとしてとらえる／表現する - シビック・クリエイティブ・ベース東京 [CCBT]](https://ccbt.rekibun.or.jp/events/future-ideations-camp04)
+
+- 国際コンソーシアム [MetaSUB](https://github.com/haruosuz/metasub/blob/master/README.md)
+- 配列類似性検索 [BLAST (Basic Local Alignment Search Tool)](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#blast)
+- 細菌群集の系統組成を推定するツール [VITCOMIC2](https://github.com/haruosuz/bioinfo/blob/master/2022/CaseStudy.md#vitcomic2)
+- 微生物から「環境」を予測するウェブツール [LEA](https://github.com/haruosuz/bioinfo/blob/master/2022/CaseStudy.md#lea)
+- [R and RStudio](https://github.com/haruosuz/DS4GD/blob/master/2024-04/README.md#r-rstudio)
 
 ----------
 ## 2024-09-13
@@ -142,7 +154,5 @@ If you script still doesn’t automatically open in RStudio when double- clicked
 82 Mita branch | HUB | 82ALE HOUSE
 
 ----------
-
-
 
 
