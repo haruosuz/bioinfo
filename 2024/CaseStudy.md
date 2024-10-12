@@ -15,16 +15,13 @@
 - []()
 - 国際コンソーシアム [MetaSUB](https://github.com/haruosuz/metasub/blob/master/README.md)
   - [GeoSeeq](https://portal.geoseeq.com/sample-groups/20ffce9b-f3f8-4ac8-b0d5-e2a85772b08a)
-- []()
 - 配列データ [Sequence Data](https://github.com/haruosuz/introBI/blob/main/2022/README.md#sequence-data)
-- R言語 [R Language](https://github.com/haruosuz/introBI/blob/main/2022/README.md#r-language)
 - [R RStudio](https://github.com/haruosuz/DS4GD/blob/master/2024-04/README.md#r-rstudio)
+- Posit Cloud https://posit.cloud/content/4087602
 - [A Little Book of R For Bioinformatics](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md)
 - 配列類似性検索 [BLAST (Basic Local Alignment Search Tool)](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#blast)
-- []()
 - 細菌群集の系統組成を推定するツール [VITCOMIC2](https://github.com/haruosuz/bioinfo/blob/master/2022/CaseStudy.md#vitcomic2)
 - 微生物から「環境」を予測するウェブツール [LEA](https://github.com/haruosuz/bioinfo/blob/master/2022/CaseStudy.md#lea)
-- []()
 - []()
 
 ----------
