@@ -2,40 +2,67 @@
 
 ## Table of Contents
 
-- [references](#references)
 - [2024-10-12](#2024-10-12) 生態系をデータとしてとらえる／表現する
+- [references](#references)
 - [2024-09-12](#2024-09-12) 福井県立大学 | 分子進化学特論
 - [2024-02-23](#2024-02-23) eAsia-AMR & EnD-AMR-Asia Joint Workshop
-
-----------
-## references
-
-- [Antimicrobial Resistance Data Analysis • AMR (for R)](https://github.com/haruosuz/r4bioinfo/tree/master/R_microb#amr)
-- [Getting Started with R, Second Edition | R4All](https://github.com/haruosuz/books/tree/master/r4all)
-- [R for Data Science](https://github.com/haruosuz/books/tree/master/r4ds)
-- R for Data Science (2e) https://r4ds.hadley.nz/
-- Keio University Shonan Fujisawa Campus (SFC)
-  - 2024春 | 生命動態のデータサイエンス https://github.com/haruosuz/DS4GD/tree/master/2024-04
-  - 2023秋 | 生命動態のデータサイエンス https://github.com/haruosuz/DS4GD/tree/master/2023-10
-  - 2024 Spring | DATA SCIENCE FOR BIOINFORMATICS [DS2] (GIGA/GG/GI) https://github.com/haruosuz/introBI/tree/main/2024-04
-  - 2023秋 | バイオインフォマティクスのデータサイエンス https://github.com/haruosuz/introBI/tree/master/2023-10
-  - 2023 Spring | DATA SCIENCE FOR BIOINFORMATICS [DS2] (GIGA/GG/GI) https://github.com/haruosuz/introBI/tree/master/2023-04
-  - 2022秋 | バイオインフォマティクスのデータサイエンス / DATA SCIENCE FOR BIOINFORMATICS https://github.com/haruosuz/introBI/tree/master/2022
-    - R言語 R Language https://github.com/haruosuz/introBI/blob/master/2022/README.md#r-language
-- 福井県立大学小浜キャンパス | 集中講義「分子進化学特論」
-  - https://github.com/haruosuz/bioinfo/blob/master/2023/CaseStudy.md#2023-08-21
-  - https://github.com/haruosuz/bioinfo/blob/master/2022/CaseStudy.md#2022-08-22
 
 ----------
 ## 2024-10-12
 
 [Future Ideations Camp Vol.4｜生態系をデータとしてとらえる／表現する - シビック・クリエイティブ・ベース東京 [CCBT]](https://ccbt.rekibun.or.jp/events/future-ideations-camp04)
 
+- []()
 - 国際コンソーシアム [MetaSUB](https://github.com/haruosuz/metasub/blob/master/README.md)
+  - [GeoSeeq](https://portal.geoseeq.com/sample-groups/20ffce9b-f3f8-4ac8-b0d5-e2a85772b08a)
+- []()
+- 配列データ [Sequence Data](https://github.com/haruosuz/introBI/blob/main/2022/README.md#sequence-data)
+- R言語 [R Language](https://github.com/haruosuz/introBI/blob/main/2022/README.md#r-language)
+- [R RStudio](https://github.com/haruosuz/DS4GD/blob/master/2024-04/README.md#r-rstudio)
+- [A Little Book of R For Bioinformatics](https://github.com/haruosuz/r4bioinfo/blob/master/R_Avril_Coghlan/README.md)
 - 配列類似性検索 [BLAST (Basic Local Alignment Search Tool)](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#blast)
+- []()
 - 細菌群集の系統組成を推定するツール [VITCOMIC2](https://github.com/haruosuz/bioinfo/blob/master/2022/CaseStudy.md#vitcomic2)
 - 微生物から「環境」を予測するウェブツール [LEA](https://github.com/haruosuz/bioinfo/blob/master/2022/CaseStudy.md#lea)
-- [R and RStudio](https://github.com/haruosuz/DS4GD/blob/master/2024-04/README.md#r-rstudio)
+- []()
+- []()
+
+----------
+## references
+
+- []()
+- [ゲノムリード株式会社（NGS受託）](https://genome-lead.co.jp/)
+- []()
+- [VITCOMIC2 LEA](https://github.com/haruosuz/bioinfo/blob/master/2022/CaseStudy.md#2022-12-28)
+- [Narita City Metagenome](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9872656/)
+- [Keio University Metagenome](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11256853/)
+- [urban metagenome (ID 877858) - BioProject - NCBI](https://www.ncbi.nlm.nih.gov/bioproject/PRJDB14136)
+- [Urban Microbiomes in Japan. DNBSEQ_71 - BioSample - NCBI](https://www.ncbi.nlm.nih.gov/biosample/SAMD00643707/)
+- []()
+- [新型コロナ 流行状況をどのように把握すれば良い？（忽那賢志）](https://news.yahoo.co.jp/expert/articles/9a709d9886fcb1147208719a3ec653feed67187e)
+- [Coronavirus (COVID-19) infections in Japan - The Mainichi](https://mainichi.jp/english/covid19)
+- [新型コロナ・季節性インフルエンザ・RSウイルス リアルタイム流行・疫学情報](https://moderna-epi-report.jp/)
+- [約20種類の感染症 感染者数の推移・全国比較 最新ニュース - NHK](https://www3.nhk.or.jp/news/special/infection/dashboard/)
+- [私たちはなぜマスクを着けているのか？ コロナ時代の新しい概念「ユニバーサルマスク」とは？（忽那賢志）](https://news.yahoo.co.jp/expert/articles/b7091d7a8d26a290e266b2e02a14ffa84f32ad7e)
+- []()
+- [Antimicrobial Resistance Data Analysis • AMR (for R)](https://github.com/haruosuz/r4bioinfo/tree/master/R_microb#amr)
+- [Getting Started with R, Second Edition | R4All](https://github.com/haruosuz/books/tree/master/r4all)
+- [R for Data Science](https://github.com/haruosuz/books/tree/master/r4ds)
+- R for Data Science (2e) https://r4ds.hadley.nz/
+- Keio University Shonan Fujisawa Campus (SFC)
+  - 
+  - 2024秋 | DATA SCIENCE FOR GENOME DYNAMICS [DS2] https://github.com/haruosuz/DS4GD/tree/master/2024-10
+  - 2024春 | 生命動態のデータサイエンス https://github.com/haruosuz/DS4GD/tree/master/2024-04
+  - 2023秋 | DATA SCIENCE FOR GENOME DYNAMICS [DS2] (GIGA/GG/GI) https://github.com/haruosuz/DS4GD/tree/master/2023-10
+  - 2024秋 | バイオインフォマティクスのデータサイエンス https://github.com/haruosuz/introBI/tree/main/2024-10
+  - 2024 Spring | DATA SCIENCE FOR BIOINFORMATICS [DS2] (GIGA/GG/GI) https://github.com/haruosuz/introBI/tree/main/2024-04
+  - 2023秋 | バイオインフォマティクスのデータサイエンス https://github.com/haruosuz/introBI/tree/master/2023-10
+  - 2023 Spring | DATA SCIENCE FOR BIOINFORMATICS [DS2] (GIGA/GG/GI) https://github.com/haruosuz/introBI/tree/master/2023-04
+  - 2022秋 | バイオインフォマティクスのデータサイエンス https://github.com/haruosuz/introBI/tree/master/2022
+    - R言語 R Language https://github.com/haruosuz/introBI/blob/master/2022/README.md#r-language
+- 福井県立大学小浜キャンパス | 集中講義「分子進化学特論」
+  - https://github.com/haruosuz/bioinfo/blob/master/2023/CaseStudy.md#2023-08-21
+  - https://github.com/haruosuz/bioinfo/blob/master/2022/CaseStudy.md#2022-08-22
 
 ----------
 ## 2024-09-13
