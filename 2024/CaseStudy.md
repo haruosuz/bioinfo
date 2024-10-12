@@ -31,6 +31,9 @@ https://github.com/haruosuz/DS4GD/raw/master/2024-10/scripts_ds4gd.zip
 ----------
 ## references
 
+- 2011-06-10 Avril Coghlan - "A Little Book of R For Bioinformatics" https://github.com/haruosuz/r4bioinfo/tree/master/R_Avril_Coghlan
+- CAMPBELL BIOLOGY, 11th edition ; キャンベル生物学 原書11版, 丸善出版, (2018/3/20), 1704p. https://www.maruzen-publishing.co.jp/info/index.php?action=detail&news_no=19283
+  - 26章 系統と生命の樹 [Phylogeny and the Tree of Life](https://www.maruzen-publishing.co.jp/files/書籍営業部/講義用資料/2018/キャンベル11授業用パワポサンプル26_Lecture_Presentation.pdf)
 - []()
 - [ゲノムリード株式会社（NGS受託）](https://genome-lead.co.jp/)
 - []()
