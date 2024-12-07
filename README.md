@@ -436,16 +436,12 @@ GFF3形式ファイルの例(シロイヌナズナ; TAIR10_GFF3_genes.gff)
 ----------
 ## [gtf](http://genome.ucsc.edu/FAQ/FAQformat.html#format4)
 
-
-http://genomejack.net/download/gj31/ja/GenomeJackBrowserAppendix/browser_appendix_j/dataFileFormats/gtf.html
-GTFはGFFと良く似ている形式です。GTFはタブ区切りのテキストファイルで、最初の８つのフィールドはGFFと同じです。GTFの９番目のgroupフィールドはGFFと異なり、そこには各行のデータの属性（gene_idやtranscript_id、exon number等）のリストが記述されます。ここで記述される属性はそれぞれtype(ex. gene_id) とvalue(ex. “AB000123.1”)がを持っていおり、各属性の後ろには;が付き、スペースで区切られます。
-
 2017.06.11
 https://bi.biopapyrus.jp/format/gtf.html
 GTFファイル | 遺伝子アノテーションファイルの処理
 
 2017-06-10
-http://kazumaxneo.hatenablog.com/entry/2017/06/10/160701
+https://kazumaxneo.hatenablog.com/entry/2017/06/10/160701
 GTFとGFFフォーマット - macでインフォマティクス
 
 http://staffblog.amelieff.jp/entry/2015/07/31/143358
