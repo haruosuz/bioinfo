@@ -89,6 +89,16 @@ VITCOMIC2 Comparison calculates several statistical coefficients for pairwise co
 # LEA
 http://leamicrobe.jp/
 
+https://www.nig.ac.jp/nig/ja/2018/06/research-highlights_ja/20180619.html
+環境と微生物をビッグデータでつなぐ ～「環境」から微生物を検索し、微生物から「環境」を予測するウェブツール「LEA」を開発～
+
+https://pubmed.ncbi.nlm.nih.gov/29874232/
+PLoS Comput Biol
+. 2018 Jun 6;14(6):e1006143. doi: 10.1371/journal.pcbi.1006143. eCollection 2018 Jun.
+Latent environment allocation of microbial community data
+Koichi Higashi 1, Shinya Suzuki 2, Shin Kurosawa 2, Hiroshi Mori 1, Ken Kurokawa 1
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6005635/
+
 [START LEA 2D-embedding](http://snail.nig.ac.jp/lea2/)
 
 [HOW-TO-USE](http://133.39.177.105/lea/help_en.html)
@@ -104,16 +114,6 @@ click Data tab on the right side panel (figure below, 1). Click the Choose File 
 3.1 単一サンプルの環境予測
 |
 Dataタブをクリックして（下図 1）、「ファイルを選択」からyour_sample_id.clast_nocopy.clusterファイルを選び、Submitボタンをクリックしてください（2）。ユーザデータはマップ上で白十字マーカで表示されます（3）。マーカをクリックすると系統組成情報、トピック組成情報が右側パネルに表示されます。Project IDのリンクをクリックすると、予測されたトピック組成のデータをcsv形式でダウンロードすることができます。
-
-https://www.nig.ac.jp/nig/ja/2018/06/research-highlights_ja/20180619.html
-環境と微生物をビッグデータでつなぐ ～「環境」から微生物を検索し、微生物から「環境」を予測するウェブツール「LEA」を開発～
-
-https://pubmed.ncbi.nlm.nih.gov/29874232/
-PLoS Comput Biol
-. 2018 Jun 6;14(6):e1006143. doi: 10.1371/journal.pcbi.1006143. eCollection 2018 Jun.
-Latent environment allocation of microbial community data
-Koichi Higashi 1, Shinya Suzuki 2, Shin Kurosawa 2, Hiroshi Mori 1, Ken Kurokawa 1
-https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6005635/
 
 ----------
 ## video
