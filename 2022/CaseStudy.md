@@ -93,21 +93,17 @@ http://leamicrobe.jp/
 
 [HOW-TO-USE](http://133.39.177.105/lea/help_en.html)
 3. Global positioning of your data
-- 3.1 Place a single sample on the map
+|
+3.1 Place a single sample on the map
 |
 click Data tab on the right side panel (figure below, 1). Click the Choose File button (2), select the unzipped file, and press the Submit button. Calculation takes several seconds. After the calculation, global map will be automatically updated. The color of the existing sample will be darker and your sample will be displayed as a cross marker on the map (3). Cliking the cross, you will also get taxonomic composition and topic composition data of your sample. When you click the link at the "Project ID", you can download the csv file of topic compositions of your data. Results can be cleared by clicking the Reset button.
-- 3.2 Place multiple samples on the map
-|
-Multiple samples can be mapped simultaneously. To upload multiple samples, please put each VITCOMIC2-cluster file (NOTE: each cluster file should be unzipped) in a directory and make gzip compressed tar archive (.tar.gz file). Then, upload .tar.gz file and press Submit.
 
 [LEAの使い方・日本語版](http://133.39.177.105/lea/help_ja.html)
 3. ユーザデータの環境予測
-- 3.1 単一サンプルの環境予測
+|
+3.1 単一サンプルの環境予測
 |
 Dataタブをクリックして（下図 1）、「ファイルを選択」からyour_sample_id.clast_nocopy.clusterファイルを選び、Submitボタンをクリックしてください（2）。ユーザデータはマップ上で白十字マーカで表示されます（3）。マーカをクリックすると系統組成情報、トピック組成情報が右側パネルに表示されます。Project IDのリンクをクリックすると、予測されたトピック組成のデータをcsv形式でダウンロードすることができます。
-- 3.2 複数サンプルの環境予測
-|
-複数サンプルを同時にマップ上に配置することが可能です。複数サンプルをアップロードするためには、それぞれのサンプルのyour_sample_id.clast_nocopy.clusterファイル（※解凍済みのファイル）をひとつのディレクトリの中に全部まとめて、gzip形式tarアーカイブとして圧縮してください。（$tar czvf your_samples.tar.gz your_samples）それから、前述手順と同様、.tar.gzファイルをアップロードしてSubmitボタンをクリックしてください。
 
 https://www.nig.ac.jp/nig/ja/2018/06/research-highlights_ja/20180619.html
 環境と微生物をビッグデータでつなぐ ～「環境」から微生物を検索し、微生物から「環境」を予測するウェブツール「LEA」を開発～
