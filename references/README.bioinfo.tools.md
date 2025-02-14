@@ -29,7 +29,144 @@
 - [hmmer](#hmmer)
 - [domain](#domain)
 
+
 ----------
+
+
+https://biomedicalhacks.com/2020-05-19/biopython-basic-2/
+Biopython入門 - 中編 【NCBIデータベースやBlastへのアクセス】
+
+BiopythonからNCBI Entrezデータベースへのアクセス
+BiopythonからNCBIにアクセスする時には、まずEntrezユーザーガイドラインをよく読みましょう。
+
+特に大事なところを2点抜粋して意訳すると、
+
+Entrezユーザーガイドラインの特に重要な点
+アクセスの頻度が一秒に三回以下になるようにする
+自分のメールアドレスを指定する (問題があったときにNCBIから連絡ができるように)
+
+https://www.ncbi.nlm.nih.gov/books/NBK25497/#chapter2.Usage_Guidelines_and_Requiremen
+After that date, any site (IP address) posting more than 3 requests per second to the E-utilities without an API key will receive an error message.
+
+
+https://www.ncbi.nlm.nih.gov/home/tools/
+Software Tools - Download - NCBI
+
+----------
+
+
+----------
+## edirect
+
+Created: April 23, 2013; Last Update: December 23, 2024.
+https://www.ncbi.nlm.nih.gov/books/NBK179288/
+Entrez Direct: E-utilities on the Unix Command Line - Entrez Programming Utilities Help - NCBI Bookshelf
+
+Last upload: 6 months and 21 days ago
+https://anaconda.org/bioconda/entrez-direct
+To install this package run one of the following:
+```
+conda install bioconda::entrez-direct
+conda install bioconda/label/cf201901::entrez-direct
+```
+
+3 months ago
+https://github.com/schultzm/entrez_direct_tut/tree/master
+schultzm/entrez_direct_tut: Tutorial on using E-utilities
+
+2015/07/22
+https://www.youtube.com/watch?v=BLnYW33Mtb0
+Webinar: Entrez Direct (EDirect) Part 1 of 4, Introduction
+National Library of Medicine
+Part 1 introduces the E-Utilities, the API to NCBI's Entrez database system, and EDirect, which allows execution of E-Utility functions and provides additional filtering and output parsing capabilities without the requirement to write a Python or Perl script.
+
+2024年1月9日　更新
+https://koki-nishitsuji.studio.site/top/bioinformatics/how_to_use_soft
+Koki Nishitsuji Home page　西辻光希のホームページ
+ソフトウェアの使い方 & 解析方法
+・Entrez Direct (NCBIのAccession IDから遺伝子名や生物名を取得)
+https://koki-nishitsuji.studio.site/top/bioinformatics/how_to_use_soft/SRAtoolKit-1
+
+投稿日 2021年09月22日
+https://qiita.com/MaedaTaro_Umiushi/items/a6989e3595fbc2333c7e
+NCBIのGenome assemblyから元となったSRAデータのBioProject IDを取得する #bioinformatics - Qiita
+
+https://kazumaxneo.hatenablog.com/entry/2019/12/22/073000
+edirectとSRA toolsを組み合わせてBioprojectのfastqを全てダウンロードする - macでインフォマティクス
+
+Entrez Directのインストール
+```
+apt update && apt install -y ncbi-entrez-direct
+
+#conda
+conda install entrez-direct
+```
+
+https://kazumaxneo.hatenablog.com/entry/2017/08/10/181041
+NCBIで全データを一度にblast解析し、得られたリストをEntrez Directでアノテーションに変換する。 - macでインフォマティクス
+ここから先はDAVIDの変換ツールを使っても良いが、今回はEntrez Directのコマンドを使う。ターミナルで以下のコマンドをペーストしてツールをダウンロード。
+
+2:47 PM · Jul 15, 2023
+https://twitter.com/Tyu_Shi/status/1680091711555670021
+Hiroshi Mori on Twitter: "Entrez Directによるesearchやefetch使ったコマンドラインでのNCBIのデータ検索とメタデータ取得が非常に便利。慣れるとWebブラウザでNCBIにアクセスしてデータ取得する操作は不要になるレベル。" / X
+
+5:28 PM · Jun 11, 2018
+https://twitter.com/yayamamo/status/1006090787740835842
+山本 泰智 (Y. Yamamoto) on Twitter: "PubMedやGeneなど、NCBIの提供する豊富なウェブサービスをUNIXターミナルから利活用できるツール群Entrez Directの解説。パイプラインを用いたUNIXらしい処理が可能で有用性が高いと思います。 https://t.co/6CdOSsqPeL" / X
+
+https://www.scl.kyoto-u.ac.jp/Appli/
+Entrez Direct	コマンドラインからNCBIのデータベースにアクセス	entrez-direct	全て	制限なし(Public Domain)
+
+----------
+## E-utilities
+The Entrez Programming Utilities (E-utilities)
+
+- [Entrez Programming Utilities Help - NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK25501/)
+  - [Entrez Direct: E-utilities on the UNIX Command Line - Entrez Programming Utilities Help - NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK179288/)
+  - [The E-utilities In-Depth: Parameters, Syntax and More - Entrez Programming Utilities Help - NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK25499/)
+    - [Table 1 – Valid values of &retmode and &rettype for EFetch (null = empty string)](https://www.ncbi.nlm.nih.gov/books/NBK25499/table/chapter4.T._valid_values_of__retmode_and/?report=objectonly)
+
+| Record Type | &rettype | &retmode |
+|:-----------:|:--------:|:--------:|
+| Additional option for db = nuccore |
+| db = nuccore, nucest, nucgss, protein or popset |
+| FASTA | fasta | text |
+| GenBank flat file with full sequence (contigs) | gbwithparts | text |
+| CDS nucleotide FASTA | fasta_cds_na | text |
+| CDS protein FASTA | fasta_cds_aa | text |
+| db = sequences |
+| FASTA | fasta | text |
+
+https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#e-utilities
+
+https://sites.google.com/site/scriptofbioinformatics/r-tong-ji-guan-xi/rutiles-e-utilities-r
+rutiles / E-utilities（R） - script of bioinformatics
+E-utilitiesはNCBIが提供するAPIのサービス。
+rutilesはRでE-utilitesを使うためのパッケージ。
+
+2016年07月14日
+https://qiita.com/joemphilips/items/767c67524e4b7e328834
+Biopython を利用したNCBIのEntrez データベースへのアクセス
+
+2015年12月04日
+http://itnika.seesaa.net/article/430657489.html
+PubMed：E-utirities API hack 2
+
+2015年11月29日
+http://itnika.seesaa.net/article/430447225.html
+PubMed検索方法：Web Apiの勉強中
+
+http://sy41211.hatenablog.com/entry/2015/11/28/085754
+NCBIの "E-utilities" が結構便利な件 - バイオインフォマティクス初心者の日常
+
+2015年01月16日
+https://allabout.co.jp/gm/gc/450789/2/
+Ruby／Rubyの基礎知識
+APIからJSONデータを取得する(2ページ目)
+
+
+----------
+
 ## domain
 
 DoMosaics
@@ -238,90 +375,8 @@ The bottom line: use hmmsearch, not hmmscan.
 
 https://github.com/haruosuz/bioinfo/blob/master/2019/CaseStudy.md#domosaics
 
-----------
 
 
-https://biomedicalhacks.com/2020-05-19/biopython-basic-2/
-Biopython入門 - 中編 【NCBIデータベースやBlastへのアクセス】
-
-BiopythonからNCBI Entrezデータベースへのアクセス
-BiopythonからNCBIにアクセスする時には、まずEntrezユーザーガイドラインをよく読みましょう。
-
-特に大事なところを2点抜粋して意訳すると、
-
-Entrezユーザーガイドラインの特に重要な点
-アクセスの頻度が一秒に三回以下になるようにする
-自分のメールアドレスを指定する (問題があったときにNCBIから連絡ができるように)
-
-https://www.ncbi.nlm.nih.gov/books/NBK25497/#chapter2.Usage_Guidelines_and_Requiremen
-After that date, any site (IP address) posting more than 3 requests per second to the E-utilities without an API key will receive an error message.
-
-
-https://www.ncbi.nlm.nih.gov/home/tools/
-Software Tools - Download - NCBI
-
-----------
-## 
-
-https://www.ncbi.nlm.nih.gov/books/NBK179288/
-Entrez Direct: E-utilities on the Unix Command Line - Entrez Programming Utilities Help - NCBI Bookshelf
-
-
-2:47 PM · Jul 15, 2023
-https://twitter.com/Tyu_Shi/status/1680091711555670021
-Hiroshi Mori on Twitter: "Entrez Directによるesearchやefetch使ったコマンドラインでのNCBIのデータ検索とメタデータ取得が非常に便利。慣れるとWebブラウザでNCBIにアクセスしてデータ取得する操作は不要になるレベル。" / X
-
-5:28 PM · Jun 11, 2018
-https://twitter.com/yayamamo/status/1006090787740835842
-山本 泰智 (Y. Yamamoto) on Twitter: "PubMedやGeneなど、NCBIの提供する豊富なウェブサービスをUNIXターミナルから利活用できるツール群Entrez Directの解説。パイプラインを用いたUNIXらしい処理が可能で有用性が高いと思います。 https://t.co/6CdOSsqPeL" / X
-
-
-----------
-## E-utilities
-The Entrez Programming Utilities (E-utilities)
-
-- [Entrez Programming Utilities Help - NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK25501/)
-  - [Entrez Direct: E-utilities on the UNIX Command Line - Entrez Programming Utilities Help - NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK179288/)
-  - [The E-utilities In-Depth: Parameters, Syntax and More - Entrez Programming Utilities Help - NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK25499/)
-    - [Table 1 – Valid values of &retmode and &rettype for EFetch (null = empty string)](https://www.ncbi.nlm.nih.gov/books/NBK25499/table/chapter4.T._valid_values_of__retmode_and/?report=objectonly)
-
-| Record Type | &rettype | &retmode |
-|:-----------:|:--------:|:--------:|
-| Additional option for db = nuccore |
-| db = nuccore, nucest, nucgss, protein or popset |
-| FASTA | fasta | text |
-| GenBank flat file with full sequence (contigs) | gbwithparts | text |
-| CDS nucleotide FASTA | fasta_cds_na | text |
-| CDS protein FASTA | fasta_cds_aa | text |
-| db = sequences |
-| FASTA | fasta | text |
-
-https://github.com/haruosuz/DS4GD/blob/master/2018giga/CaseStudy.md#e-utilities
-
-https://sites.google.com/site/scriptofbioinformatics/r-tong-ji-guan-xi/rutiles-e-utilities-r
-rutiles / E-utilities（R） - script of bioinformatics
-E-utilitiesはNCBIが提供するAPIのサービス。
-rutilesはRでE-utilitesを使うためのパッケージ。
-
-2016年07月14日
-https://qiita.com/joemphilips/items/767c67524e4b7e328834
-Biopython を利用したNCBIのEntrez データベースへのアクセス
-
-2015年12月04日
-http://itnika.seesaa.net/article/430657489.html
-PubMed：E-utirities API hack 2
-
-2015年11月29日
-http://itnika.seesaa.net/article/430447225.html
-PubMed検索方法：Web Apiの勉強中
-
-http://sy41211.hatenablog.com/entry/2015/11/28/085754
-NCBIの "E-utilities" が結構便利な件 - バイオインフォマティクス初心者の日常
-
-2015年01月16日
-https://allabout.co.jp/gm/gc/450789/2/
-Ruby／Rubyの基礎知識
-APIからJSONデータを取得する(2ページ目)
 
 ----------
 ## dbcls
@@ -449,12 +504,6 @@ https://twitter.com/yokuyama/status/1122298158480904192
 8:35 PM - 27 Apr 2019
 http://kazumaxneo.hatenablog.com/entry/2019/04/10/073000
 blast結果を可視化するwebツール Kablammo - macでインフォマティクス
-
-https://twitter.com/Acinetobazza/status/1107892222257696768
-Dr Mark Schultz on Twitter: "I have written an introductory tutorial on using edirect command line tools to query NCBI's Entrez database for downloading read-sets and genbank assemblies https://t.co/t7Yv0ZirCp"
-2:31 AM - 19 Mar 2019
-https://github.com/schultzm/entrez_direct_tut/blob/master/README.md
-entrez_direct_tut/README.md at master · schultzm/entrez_direct_tut
 
 4:39 PM - 19 Mar 2019
 https://twitter.com/RodrigoATCG/status/1108105740663836675
