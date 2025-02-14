@@ -64,11 +64,6 @@ Entrez Direct: E-utilities on the Unix Command Line - Entrez Programming Utiliti
 
 Last upload: 6 months and 21 days ago
 https://anaconda.org/bioconda/entrez-direct
-To install this package run one of the following:
-```
-conda install bioconda::entrez-direct
-conda install bioconda/label/cf201901::entrez-direct
-```
 
 3 months ago
 https://github.com/schultzm/entrez_direct_tut/tree/master
