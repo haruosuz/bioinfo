@@ -13,6 +13,7 @@
 9月12日(木)に自己紹介（1人あたり最大5分）。この授業で解析したい対象（タンパク質、遺伝子、ゲノム、生物など）を述べる。  
 
 配列類似性検索 [BLAST (Basic Local Alignment Search Tool)](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#blast)
+ウェブブラウザとしてGoogle Chromeを使用する。
 
 ### preparation
 **準備**
@@ -22,7 +23,7 @@
   - パソコンに R と RStudio をインストールする。
 
 参考: 
-https://github.com/haruosuz/DS4GD/blob/master/2024-04/README.md#r-rstudio
+https://github.com/haruosuz/DS4GD/blob/master/2025-04/README.md#r-rstudio
 
 ### assignment
 **課題**
