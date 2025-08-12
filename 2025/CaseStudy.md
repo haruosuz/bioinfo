@@ -10,7 +10,7 @@
 
 福井県立大学小浜キャンパス | 集中講義「分子進化学特論」
 
-9月12日(木)に自己紹介（1人あたり最大5分）。この授業で解析したい対象（タンパク質、遺伝子、ゲノム、生物など）を述べる。  
+授業の最初に自己紹介（1人あたり最大5分）。この授業で解析したい対象（タンパク質、遺伝子、ゲノム、生物など）を述べる。  
 
 配列類似性検索 [BLAST (Basic Local Alignment Search Tool)](https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#blast)
 ウェブブラウザとしてGoogle Chromeを使用する。
