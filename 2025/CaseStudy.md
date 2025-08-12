@@ -2,8 +2,8 @@
 
 ## Table of Contents
 
-- [references](#references)
 - [2025-08-20](#2025-08-20) 福井県立大学 | 分子進化学特論
+- [references](#references)
 
 ----------
 ## 2025-08-20
