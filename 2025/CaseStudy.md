@@ -53,6 +53,7 @@ https://github.com/haruosuz/DS4GD/tree/master/2025-04
 26章 系統と生命の樹 [Phylogeny and the Tree of Life (pdf)](https://www.maruzen-publishing.co.jp/files/書籍営業部/講義用資料/2018/キャンベル11授業用パワポサンプル26_Lecture_Presentation.pdf)
 - 分子系統樹推定に適した配列データセットの作成 田辺晶史 https://www.fifthdimension.jp/documents/molphytextbook/datapreparation_lecture.pdf
 - http://nesseiken.info/Chiba_lab/index.php?cmd=read&page=授業%2FH24%2F進化生物学I%2F系統樹に関する基本用語
+- https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#ptme5
 - 相同性のテスト Test the homology https://github.com/haruosuz/DS4GD/blob/master/CaseStudy.md#ncbi-blast
 
 ----------
