@@ -132,7 +132,7 @@ Microbiol Resour Announc
 Shotgun metagenomic sequencing of swab samples from Japanese university campuses
 Megumu Tsujimoto 1, Dewa A P Rasmika Dewi 2 3, Christopher E Mason 4 5 6, Yuh Shiwa 7 8, Haruo Suzuki 1 9
 https://journals.asm.org/doi/10.1128/mra.00210-24
-https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11256853/
+https://pmc.ncbi.nlm.nih.gov/articles/PMC11256853/
 
 ### 2023-07-07
 https://pubmed.ncbi.nlm.nih.gov/37420286/
@@ -149,11 +149,15 @@ Microbiol Resour Announc
 . 2023 Jan 24;12(1):e0109222. doi: 10.1128/mra.01092-22. Epub 2022 Dec 14.
 Urban Microbiomes in Narita, Chiba, Japan: Shotgun Metagenome Sequences of a Train Station
 Dewa A P Rasmika Dewi 1 2, Yuh Shiwa 3 4, Krista Ryon 5 6 7, Christopher E Mason 5 6 7, Tetsuya Matsumoto 1 8, Haruo Suzuki 9 10
-https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9872656/
+https://journals.asm.org/doi/10.1128/mra.01092-22
+https://pmc.ncbi.nlm.nih.gov/articles/PMC9872656/
 
 - https://github.com/haruosuz/bioproject
 - https://github.com/haruosuz/bioproject/tree/main/PRJDB14136
 - https://www.ncbi.nlm.nih.gov/bioproject/PRJDB14136
+Urban microbiomes in Japan
+- https://www.ncbi.nlm.nih.gov/bioproject/PRJDB13760
+An umbrella project for MetaSUB
 - 
 - https://github.com/haruosuz/metasub/blob/master/README.md
 都市のマイクロバイオーム MetaSUB: Metagenomics & Metadesign of Subways & Urban Biomes 
