@@ -65,6 +65,8 @@ TXSearch is a NCBI Taxonomy retrieval system provided by DDBJ.
 https://www.ddbj.nig.ac.jp/services/txsearch.html
 TXSearch は、DDBJ が提供する NCBI Taxonomy の検索システムです。
 
+
+
 ----------
 ### ncbi_taxonomy_tree
 
@@ -76,7 +78,6 @@ Taxallnomy: an extension of NCBI Taxonomy that produces a hierarchically complet
 Tetsu Sakamoto 1 2, J Miguel Ortega 3
 https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-04304-3
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8323199/
-
 
 7.3 years ago
 https://support.bioconductor.org/p/81998/
@@ -91,7 +92,6 @@ Dealing with the NCBI Taxonomy database — ETE Toolkit - analysis and visualiza
 
 http://etetoolkit.org/docs/2.3/tutorial/tutorial_ncbitaxonomy.html
 Dealing with the NCBI Taxonomy database — A Python Environment for (phylogenetic) Tree Exploration
-
 
 9.2 years ago
 https://www.biostars.org/p/103447/
@@ -113,7 +113,6 @@ For a given set of NCBI taxonomy ids / species names, how to derive their specie
 phyloT were free until recently. Unfortunately, tree building from phyloT is no more free. 
 
 Below is the alternate solution to phyloT (to save some money ;) to generate phylogenetic tree from NCBI taxonomical ids.
-
 
 ----------
 ### amr
@@ -183,7 +182,7 @@ https://www.sciencedirect.com/science/article/abs/pii/S1673852721000837
 https://twitter.com/shenwei356/status/1352212268583305219
 Wei Shen on Twitter: "TaxonKit 0.7.0, a lightweight and efficient NCBI Taxonomy Toolkit, is 2X faster!!! It brings two new commands and add more examples and tutorials. https://t.co/GyWw7yj1NS https://t.co/mPTD2Ym1zh" / Twitter
 
-http://kazumaxneo.hatenablog.com/entry/2019/01/23/073000
+https://kazumaxneo.hatenablog.com/entry/2019/01/23/073000
 taxonomy ID、種名、系統情報など相互変換する taxonkit - macでインフォマティクス
 Donwloadよりmac、linux、windows向けバイナリをダウンロードできる。
 
