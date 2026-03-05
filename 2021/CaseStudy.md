@@ -3,14 +3,40 @@
 
 ## Table of Contents
 - [NCBI Taxonomy](#ncbi-taxonomy)
-  - [ncbi_taxonomy_tree](#ncbi_taxonomy_tree)
-  - [amr](#amr)
-  - [taxa](#taxa)
-  - [taxonomizr](#taxonomizr)
-  - [taxonkit](#taxonkit)
-  - [togows](#togows)
-- [2021-10-25](#2021-10-25) 東京大学 | 14.農学生命情報科学特論IV
+[ncbi_taxonomy_tree](#ncbi_taxonomy_tree)
+[amr](#amr)
+[taxa](#taxa)
+[taxonomizr](#taxonomizr)
+[taxonkit](#taxonkit)
+[togows](#togows)
+- [2021-10-25](#2021-10-25) 東京大学大学院農学生命科学研究科 | 農学生命情報科学特論IV
 - [2021-08-23](#2021-08-23) 石川県立大学
+
+----------
+## 2021-10-25
+
+東京大学大学院農学生命科学研究科 | 
+[14.農学生命情報科学特論IV | アグリバイオインフォマティクス教育研究ユニット](http://www.iu.a.u-tokyo.ac.jp/lectures/AG14/)
+
+### assignment
+**課題**
+
+次のURLから（Rスクリプトを含む）プロジェクト・ディレクトリをダウンロードして下さい。  
+Please download the project directory (including R scripts) from the following URL.  
+https://github.com/haruosuz/bioinfo/raw/master/2021/my_project_u-tokyo.zip
+
+RStudioでRスクリプトを開く。**Compile Report**コマンドでPDFまたはHTML形式のレポートを作成する。そのレポートを課題として提出する。  
+Open an R script in RStudio. Create report in PDF or HTML format using the **Compile Report** command.
+Submit the report as your assignment.
+
+[**Compile Report**](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#compile-report)
+
+----------
+## 2021-08-23
+
+石川県立大学
+
+https://github.com/haruosuz/bioinfo/raw/master/2021/scripts_ishikawa-pu.zip
 
 ----------
 ## references
@@ -26,9 +52,9 @@
 ## NCBI Taxonomy
 https://www.ncbi.nlm.nih.gov/taxonomy
 
-https://integbio.jp/dbcatalog/record/nbdc00700
-Taxonomy - NCBI - Integbio データベースカタログ
-NCBI Entrezデータベースに少なくとも1件以上登録されている全ての生物種と上位分類名を収集したデータベースです。
+https://catalog.integbio.jp/dbcatalog/record/nbdc00700
+NBDC00700 - Integbio データベースカタログ
+NCBI Entrezデータベースに少なくとも1件以上登録されている全ての生物種と上位分類名を収集したデータベースです。160,000以上の生物種が登録されています。各エントリーには、学名、英名、階層分類、上位階層、Entrezデータベース群の収録数とリンクが含まれています。このデータベースは、種々のデータベース間で生物名の表記を統一することを目的として構築しており、分類学や系統発生学の権威となるものではありません。採用されている生物名や系統分類は、分類学的、系統発生学的に普及している内容と異なる場合があります。
 
 2017.09.23
 https://doi.org/10.7875/togotv.2017.092
@@ -246,30 +272,6 @@ mytaxgrepl(pattern="Bacteria", x=mytax, ignore.case=FALSE)grepl(pattern="Prote
 
 ```
 
-----------
-## 2021-10-25
-
-[14.農学生命情報科学特論IV | アグリバイオインフォマティクス教育研究ユニット](http://www.iu.a.u-tokyo.ac.jp/lectures/AG14/)
-
-### assignment
-**課題**
-
-次のURLから（Rスクリプトを含む）プロジェクト・ディレクトリをダウンロードして下さい。  
-Please download the project directory (including R scripts) from the following URL.  
-https://github.com/haruosuz/bioinfo/raw/master/2021/my_project_u-tokyo.zip
-
-RStudioでRスクリプトを開く。**Compile Report**コマンドでPDFまたはHTML形式のレポートを作成する。そのレポートを課題として提出する。  
-Open an R script in RStudio. Create report in PDF or HTML format using the **Compile Report** command.
-Submit the report as your assignment.
-
-[**Compile Report**](https://github.com/haruosuz/DS4GD/blob/master/2020/CaseStudy.md#compile-report)
-
-----------
-## 2021-08-23
-
-石川県立大学
-
-https://github.com/haruosuz/bioinfo/raw/master/2021/scripts_ishikawa-pu.zip
 
 ----------
 
