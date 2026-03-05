@@ -169,14 +169,12 @@ Wei Shen 沈伟 on Twitter: "Yes, with the newly created GTDB-taxdump with Taxon
 https://twitter.com/shenwei356/status/1517021784918609921
 Wei Shen 沈伟 on Twitter: "The taxid-changelog even provides more details than the official taxon history. The new tool `taxonkit create-taxdump` can also apply to other genomes catalogs like MGV @kyrpides. The new tool is here, please try https://t.co/FJ1uZQzj8i" / Twitter
 
-
 https://pubmed.ncbi.nlm.nih.gov/34001434/
 J Genet Genomics
 . 2021 Sep 20;48(9):844-850. doi: 10.1016/j.jgg.2021.03.006. Epub 2021 Apr 15.
 TaxonKit: A practical and efficient NCBI taxonomy toolkit
 Wei Shen 1, Hong Ren 2
 https://www.sciencedirect.com/science/article/abs/pii/S1673852721000837
-
 
 8:11 PM · Jan 21, 2021
 https://twitter.com/shenwei356/status/1352212268583305219
@@ -186,6 +184,25 @@ https://kazumaxneo.hatenablog.com/entry/2019/01/23/073000
 taxonomy ID、種名、系統情報など相互変換する taxonkit - macでインフォマティクス
 Donwloadよりmac、linux、windows向けバイナリをダウンロードできる。
 
+2025-08-16
+https://pubmed.ncbi.nlm.nih.gov/40825471/
+Plasmid
+. 2025 Sep-Nov:134:102756. doi: 10.1016/j.plasmid.2025.102756. Epub 2025 Aug 16.
+Insights from public database sequences related to the replication initiation protein TrfA of the IncP-1 plasmid RK2
+Haruo Suzuki 1, Kazuki Moriguchi 2, Masaki Shintani 3, Masato Suzuki 4, Hideaki Nojiri 5
+https://www.sciencedirect.com/science/article/pii/S0147619X25000149?via%3Dihub
+
+NCBI taxonomy information was assigned using the `taxonkit` toolkit
+
+The full taxonomic lineage (i.e., a set of hierarchical taxonomic labels) corresponding to the Taxonomy IDs (https://www.ncbi.nlm.nih.gov/taxonomy) was retrieved using TaxonKit (NCBI Taxonomy Toolkit; https://bioinf.shenwei.me/taxonkit/) (Shen and Ren, 2021). For example, Escherichia coli (NCBI Taxonomy ID: 562) has the following lineage: "cellular organisms; Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Enterobacterales; Enterobacteriaceae; Escherichia”.
+
+Data availability
+To ensure the reproducibility and transparency of our work, we have openly shared all code, scripts, and input, intermediate, and output files used to generate the figures and tables in both the main text and the supplementary materials. These files are available for download on Figshare (DOI: 10.6084/m9.figshare.29662958).
+https://figshare.com/articles/dataset/RK2_TrfA2_zip/29662958
+```
+RK2_TrfA2/my_blastp_nr_CAJ85685_TrfA2/pbs.blastdbcmd.taxonkit.sh
+RK2_TrfA2/my_tblastn_nt_CAJ85685_TrfA2/pbs.blastdbcmd.taxonkit.sh
+```
 
 ----------
 ### togows
